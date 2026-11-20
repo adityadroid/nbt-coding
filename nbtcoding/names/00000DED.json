@@ -1,0 +1,12 @@
+{
+  "module": "HU_NBT",
+  "note": "Head unit CAFD for this car. Names/descriptions we confirm go here. Do NOT code this module while the Android Auto mod is installed.",
+  "schema_example": {
+    "3000:0:0:01": {
+      "name": "VIDEO_IN_MOTION",
+      "desc": "Allows video playback while driving.",
+      "values": {"0": "Off", "1": "On"}
+    }
+  },
+  "functions": {}
+}

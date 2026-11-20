@@ -1,0 +1,17 @@
+# Decoded BMW coding-description files (CAFD XML) and anything from PSdZData.
+# These are BMW data — never commit them. Drop your own into cafd/.
+/cafd/*
+!/cafd/.gitkeep
+/.local/
+
+# Coding backups written on every read (contain your car's coding + VIN).
+/backups/*
+!/backups/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.DS_Store

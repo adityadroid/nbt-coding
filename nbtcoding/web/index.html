@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMW Coding</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --line:#272b36; --fg:#e6e8ee; --dim:#9aa3b2;
+    --accent:#4a90e2; --warn:#e2a24a; --good:#5bbd7a; --chg:#e2cb4a; --off:#6b7280;
+    --toggle:#4a90e2; --choice:#a884e0; --value:#7a8396;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --bg:#f6f7f9; --panel:#fff; --line:#e2e5ea; --fg:#1a1d24; --dim:#5c6472;
+      --accent:#2b6cb0; --warn:#9a6a10; --good:#2f8a4e; --chg:#8a7410; --off:#9aa1ad;
+      --toggle:#2b6cb0; --choice:#7a52c0; --value:#6b7280;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif}
+  header{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:var(--panel)}
+  h1{font-size:16px;margin:0 12px 0 0}
+  .host{color:var(--dim);font-size:12px}
+  .banner{background:color-mix(in srgb,var(--warn) 16%,transparent);border:1px solid var(--warn);
+    color:var(--fg);padding:8px 12px;margin:12px 16px;border-radius:8px;font-size:13px}
+  .bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:8px 16px}
+  select,input,button{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);
+    border-radius:7px;padding:7px 10px}
+  button{background:var(--accent);border-color:var(--accent);color:#fff;cursor:pointer}
+  button.ghost{background:var(--bg);color:var(--fg)}
+  button:disabled{opacity:.5;cursor:not-allowed}
+  .sep{width:1px;height:22px;background:var(--line);margin:0 4px}
+  label.chk{display:inline-flex;gap:6px;align-items:center;color:var(--dim);font-size:13px;cursor:pointer}
+  #status{padding:2px 16px;color:var(--dim);min-height:18px;font-size:12px}
+  .wrap{padding:6px 16px 48px}
+
+  /* grouped sections */
+  .grp{border:1px solid var(--line);border-radius:10px;margin:10px 0;overflow:hidden;background:var(--panel)}
+  .grp>summary{list-style:none;cursor:pointer;padding:10px 14px;display:flex;gap:10px;align-items:center;
+    font-weight:600;user-select:none}
+  .grp>summary::-webkit-details-marker{display:none}
+  .grp>summary .caret{color:var(--dim);transition:transform .15s}
+  .grp[open]>summary .caret{transform:rotate(90deg)}
+  .grp .gcount{color:var(--dim);font-weight:400;font-size:12px;margin-left:auto}
+
+  /* one setting */
+  .row{padding:10px 14px;border-top:1px solid var(--line);display:grid;
+    grid-template-columns:1fr auto;gap:4px 14px;align-items:start}
+  .row:first-of-type{border-top:1px solid var(--line)}
+  .rtop{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .nm{font-weight:600}
+  .nm.unnamed{font-weight:400;color:var(--dim);font-style:italic}
+  .loc{font-family:ui-monospace,Menlo,monospace;color:var(--dim);font-size:11px}
+  .badge{font-size:11px;padding:1px 7px;border-radius:999px;border:1px solid;white-space:nowrap}
+  .badge.toggle{color:var(--toggle);border-color:var(--toggle)}
+  .badge.choice{color:var(--choice);border-color:var(--choice)}
+  .badge.value{color:var(--value);border-color:var(--value)}
+  .summary{color:var(--dim);font-size:12.5px;grid-column:1/-1}
+  .opts{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+
+  .state{display:flex;flex-direction:column;align-items:flex-end;gap:3px;min-width:92px}
+  .pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;border:1px solid var(--line);white-space:nowrap}
+  .pill.on{background:color-mix(in srgb,var(--good) 20%,transparent);border-color:var(--good);color:var(--fg)}
+  .pill.off{color:var(--off);border-color:var(--off)}
+  .pill.val{border-color:var(--accent);color:var(--accent)}
+  .pill.chg{border-color:var(--chg);color:var(--chg);box-shadow:0 0 0 1px color-mix(in srgb,var(--chg) 45%,transparent)}
+  .pill.na{color:var(--dim)}
+  .pill.opt{font-size:11px;color:var(--dim)}
+  .pill.opt.cur{border-color:var(--accent);color:var(--accent)}
+  .deftxt{font-size:11px;color:var(--dim)}
+  .chgtag{font-size:11px;color:var(--chg)}
+  .count{color:var(--dim);font-size:12px;margin-left:auto}
+  .legend{color:var(--dim);font-size:11.5px;padding:0 16px 6px;display:flex;gap:14px;flex-wrap:wrap}
+  .empty{padding:24px 16px;color:var(--dim)}
+</style>
+</head>
+<body>
+<header>
+  <h1>BMW Coding</h1>
+  <span class="host" id="carhost"></span>
+</header>
+
+<div class="banner" id="banner">
+  <b>Read-only.</b> This shows the car's coding and explains each setting. It does not change
+  anything yet — writing is off until the signer is built. Every read saves a full backup under
+  <code>.local/coding-backups/</code>. Do <b>not</b> code <code>HU_NBT</code> while the Android Auto mod is on.
+</div>
+
+<div class="bar">
+  <select id="module"></select>
+  <button id="btnRead">Read from car</button>
+  <span class="sep"></span>
+  <span class="dim" style="color:var(--dim);font-size:12px">browse offline:</span>
+  <input id="cafd" value="00000DED" size="9" title="decoded CAFD id">
+  <button class="ghost" id="btnOffline">Load CAFD</button>
+</div>
+
+<div class="bar">
+  <input id="q" placeholder="search name, description or location" size="30">
+  <label class="chk"><input type="checkbox" id="fCode" checked> changeable only</label>
+  <label class="chk"><input type="checkbox" id="fChg"> changed from default</label>
+  <label class="chk"><input type="checkbox" id="fNamed"> named only</label>
+  <label class="chk"><input type="checkbox" id="fGroup" checked> group by block</label>
+  <span class="count" id="count"></span>
+</div>
+
+<div class="legend">
+  <span><b>On/off</b> switch</span>
+  <span style="color:var(--choice)"><b>Choice</b> of values</span>
+  <span style="color:var(--value)"><b>Value</b> field</span>
+  <span><span class="pill chg" style="padding:0 8px">amber</span> = changed from factory</span>
+</div>
+
+<div id="status"></div>
+<div class="wrap" id="wrap"></div>
+
+<script>
+let FEATS=[], META={};
+const $=s=>document.querySelector(s);
+const esc=s=>(s==null?"":String(s)).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+async function j(u){const r=await fetch(u);return r.json();}
+
+async function init(){
+  const m=await j("/api/modules");
+  $("#carhost").textContent="car: "+m.host;
+  $("#module").innerHTML=m.modules.map(x=>
+    `<option value="${x.name}">${x.name} (${x.addr}) — ${esc(x.note)}</option>`).join("");
+  $("#module").value="CAS";
+}
+function setStatus(t){$("#status").textContent=t;}
+
+function load(res){
+  if(res.error){setStatus("⚠ "+res.error);FEATS=[];render();return;}
+  META=res; FEATS=res.features||[];
+  let s=`CAFD ${res.cafd_id} v${res.version||""}`;
+  if(res.module) s=res.module+" · "+s;
+  if(res.backup) s+=` · backup saved: ${res.backup}`;
+  if(res.source) s+=` · ${res.source} (offline, not read from car)`;
+  if(res.read_datagroups) s+=` · read blocks ${res.read_datagroups.join(", ")}`;
+  setStatus(s); render();
+}
+async function readCar(){
+  setStatus("reading "+$("#module").value+" from the car…");
+  load(await j("/api/read?module="+encodeURIComponent($("#module").value)));
+}
+async function offline(){
+  setStatus("loading CAFD "+$("#cafd").value+"…");
+  load(await j("/api/offline?cafd="+encodeURIComponent($("#cafd").value)));
+}
+
+function statePill(f){
+  if(f.current_label==="—"||f.current==null) return `<span class="pill na">not read</span>`;
+  let cls="val";
+  if(f.kind==="toggle") cls=f.on?"on":"off";
+  if(f.is_default===false) cls+=" chg";
+  return `<span class="pill ${cls}">${esc(f.current_label)}</span>`;
+}
+function rowHtml(f){
+  const named=!!f.name;
+  const title=named?`<span class="nm">${esc(f.name)}</span>`
+                   :`<span class="nm unnamed">Unnamed setting</span>`;
+  const badge=`<span class="badge ${f.kind}">${f.kind==="toggle"?"on/off":f.kind}</span>`;
+  const loc=`<span class="loc">${esc(f.datagroup)}·b${f.start}${f.end!=f.start?"-"+f.end:""}·${f.mask.toString(16).padStart(2,"0").toUpperCase()}</span>`;
+  // options row (only when there's a real menu)
+  let opts="";
+  if(f.option_labels&&f.option_labels.length>1){
+    opts=`<div class="opts">`+f.option_labels.map(o=>
+      `<span class="pill opt${o.cur?" cur":""}">${esc(o.label)}</span>`).join("")+`</div>`;
+  }
+  const def = (f.default_label&&f.default_label!=="—")
+      ? `<span class="deftxt">default ${esc(f.default_label)}</span>` : "";
+  return `<div class="row">
+    <div>
+      <div class="rtop">${title}${badge}${loc}</div>
+      <div class="summary">${esc(f.summary)}</div>
+      ${opts}
+    </div>
+    <div class="state">${statePill(f)}${def}</div>
+  </div>`;
+}
+
+function filtered(){
+  const q=$("#q").value.trim().toLowerCase();
+  const onlyCode=$("#fCode").checked, onlyChg=$("#fChg").checked, onlyNamed=$("#fNamed").checked;
+  return FEATS.filter(f=>{
+    if(onlyCode&&!f.codeable)return false;
+    if(onlyChg&&!(f.is_default===false))return false;
+    if(onlyNamed&&!f.name)return false;
+    if(q){const hay=(f.name+" "+f.desc+" "+f.summary+" "+f.datagroup+" "+f.key).toLowerCase();
+          if(!hay.includes(q))return false;}
+    return true;
+  });
+}
+function render(){
+  const rows=filtered();
+  $("#count").textContent=rows.length+" of "+FEATS.length+" settings";
+  const wrap=$("#wrap");
+  if(!FEATS.length){wrap.innerHTML=`<div class="empty">Pick a module and <b>Read from car</b>, or load a CAFD id to browse offline.</div>`;return;}
+  if(!rows.length){wrap.innerHTML=`<div class="empty">No settings match the filters.</div>`;return;}
+  if($("#fGroup").checked){
+    const groups={};
+    rows.forEach(f=>{(groups[f.datagroup]=groups[f.datagroup]||[]).push(f);});
+    wrap.innerHTML=Object.keys(groups).sort().map(dg=>{
+      const fs=groups[dg];
+      return `<details class="grp" open>
+        <summary><span class="caret">▶</span>Block ${esc(dg)}
+          <span class="gcount">${fs.length} setting${fs.length>1?"s":""}</span></summary>
+        ${fs.map(rowHtml).join("")}
+      </details>`;
+    }).join("");
+  }else{
+    wrap.innerHTML=`<div class="grp" style="padding-top:1px">${rows.map(rowHtml).join("")}</div>`;
+  }
+}
+
+$("#btnRead").onclick=readCar;
+$("#btnOffline").onclick=offline;
+["q","fCode","fChg","fNamed","fGroup"].forEach(id=>$("#"+id).addEventListener("input",render));
+init().then(render);
+</script>
+</body>
+</html>
