@@ -12,9 +12,11 @@ from tests.fake_ecu import FakeEcu                                # noqa: E402
 
 
 def _nbt_coding():
-    probe = json.load(open(sorted(glob.glob(os.path.join(decode.BACKUP_DIR, "probe-*.json")))[-1], encoding="utf-8"))
-    m = next(x for x in probe["modules"] if x["addr"] == "63")
-    return {a.upper(): bytes.fromhex(h) for a, h in m["datagroups"].items()}
+    for path in sorted(glob.glob(os.path.join(decode.BACKUP_DIR, "probe-*.json")), reverse=True):
+        m = next((x for x in json.load(open(path, encoding="utf-8"))["modules"] if x["addr"] == "63"), None)
+        if m:
+            return {a.upper(): bytes.fromhex(h) for a, h in m["datagroups"].items()}
+    raise SystemExit("SKIP: no saved probe with the head unit (63)")
 
 
 def run():
