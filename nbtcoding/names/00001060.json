@@ -1,0 +1,6263 @@
+{
+ "functions": {
+  "3000:0:0:01": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:0:0:02": {
+   "name": "LISTEN_ANZEIGE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:04": {
+   "name": "HINTERGRUNDBILD_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:08": {
+   "name": "BC_DATUM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:30": {
+   "name": "BC_DIGITAL_V_EINHEIT",
+   "values": {
+    "0": "pia_weg",
+    "1": "pia_geschwindigkeit",
+    "2": "km_h",
+    "3": "mph"
+   }
+  },
+  "3000:0:0:C0": {
+   "name": "BC_D_VERBRAUCH_VARIANTE",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:10:10:0F": {
+   "name": "LDM_ANFAHR_2BALKEN_ABST",
+   "values": {}
+  },
+  "3000:10:10:F0": {
+   "name": "LDM_ANFAHR_2LAEUFE_ABST",
+   "values": {}
+  },
+  "3000:11:11:FF": {
+   "name": "BC_ANSCHLAG_REICHWEITE_KM",
+   "values": {
+    "60": "600_km",
+    "80": "800_km"
+   }
+  },
+  "3000:12:12:FF": {
+   "name": "BC_ANSCHLAG_REICHWEITE_MLS",
+   "values": {
+    "40": "400_mls",
+    "50": "500_mls"
+   }
+  },
+  "3000:13:13:01": {
+   "name": "CHARAKTER_REKU",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:0E": {
+   "name": "HYBRID_GENERATION",
+   "values": {
+    "0": "kein_hybrid",
+    "1": "gen_1_5",
+    "2": "gen_2_0_v1",
+    "3": "gen_2_0_v2",
+    "4": "f18_phev"
+   }
+  },
+  "3000:13:13:30": {
+   "name": "BC_RW_KOMFORTVERBR",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv",
+    "2": "berechnung_aus_pnv_ist"
+   }
+  },
+  "3000:13:13:40": {
+   "name": "CC_TEXT_FARBE",
+   "values": {
+    "0": "weiss_orange",
+    "1": "symbolfarbe"
+   }
+  },
+  "3000:13:13:80": {
+   "name": "CC_OPTIMIERUNG_ENABLE",
+   "values": {
+    "0": "nicht_optimiert",
+    "1": "optimiert"
+   }
+  },
+  "3000:14:14:FF": {
+   "name": "GURT_FOND_V_SCHWELLE",
+   "values": {}
+  },
+  "3000:15:15:0F": {
+   "name": "MOST_LISTEN_TIMEOUT",
+   "values": {}
+  },
+  "3000:15:15:F0": {
+   "name": "MOST_CC_LISTEN_ENTPRELLUNG",
+   "values": {}
+  },
+  "3000:16:16:01": {
+   "name": "KL_PREDRIVE_AUSWAHL_00",
+   "values": {
+    "0": "nicht_belegen"
+   }
+  },
+  "3000:16:16:02": {
+   "name": "KL_PREDRIVE_F1_AIRBAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:04": {
+   "name": "KL_PREDRIVE_F2_GURT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:08": {
+   "name": "KL_PREDRIVE_F3_MIL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:10": {
+   "name": "KL_PREDRIVE_F41_ABS_SCHRIFT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:20": {
+   "name": "KL_PREDRIVE_F42_ABWL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:40": {
+   "name": "KL_PREDRIVE_F43_BRAKE_SCHRIFT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:80": {
+   "name": "KL_PREDRIVE_F51_DTC_SCHRIFT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:01": {
+   "name": "KL_PREDRIVE_F52_DSC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:02": {
+   "name": "KL_PREDRIVE_F61_PARK_SCHRIFT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:04": {
+   "name": "KL_PREDRIVE_F62_PARK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:08": {
+   "name": "KL_PREDRIVE_F63_AUTO_H",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:10": {
+   "name": "KL_PREDRIVE_F8_AFS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:20": {
+   "name": "KL_PREDRIVE_F9_ACC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:40": {
+   "name": "KL_PREDRIVE_F10_RPA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:80": {
+   "name": "KL_PREDRIVE_F13_ABS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:01": {
+   "name": "KL_PREDRIVE_F14_DSC_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:02": {
+   "name": "KL_PREDRIVE_F15_REKU_DEG",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:04": {
+   "name": "KL_PREDRIVE_F16_RBS",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:08": {
+   "name": "KL_PREDRIVE_F17_STA",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:10": {
+   "name": "KL_PREDRIVE_F18_CHARGE",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:20": {
+   "name": "KL_PREDRIVE_F19_READY",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:40": {
+   "name": "KL_PREDRIVE_F20_E_ENGINE",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:80": {
+   "name": "KL_PREDRIVE_F21_PLUG",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:01": {
+   "name": "KL_PREDRIVE_F22_SYSTEM",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:02": {
+   "name": "KL_PREDRIVE_F23_SOC",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:04": {
+   "name": "KL_PREDRIVE_F24_VSG",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:38": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:19:19:40": {
+   "name": "PREDRIVE_ABB_MOT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:80": {
+   "name": "PREDRIVE_START_MIT_OBD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:01": {
+   "name": "BC_RW_STARTWERTMATRIX_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:02": {
+   "name": "BC_DIGITAL_V",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:04": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:1:1:08": {
+   "name": "BC_LEERZEILE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:10": {
+   "name": "R_GANG_AKUSTIK_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:20": {
+   "name": "SITZ_L_UEBERWACHUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:40": {
+   "name": "BC_V_KORREKTUR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:80": {
+   "name": "GPS_UHR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:FF": {
+   "name": "PREDRIVE_PERIODENDAUER",
+   "values": {}
+  },
+  "3000:21:21:FF": {
+   "name": "CC_BLINKFREQUENZ_LANGSAM",
+   "values": {}
+  },
+  "3000:22:22:FF": {
+   "name": "CC_BLINKFREQUENZ_SCHNELL",
+   "values": {}
+  },
+  "3000:23:23:FF": {
+   "name": "CC_15_EIN",
+   "values": {
+    "1": "benzin",
+    "50": "diesel"
+   }
+  },
+  "3000:24:24:FF": {
+   "name": "CC_EHH_ANZ_MIN_TIME",
+   "values": {}
+  },
+  "3000:25:25:FF": {
+   "name": "CC_15_AUS",
+   "values": {}
+  },
+  "3000:26:26:FF": {
+   "name": "CC_R_EIN",
+   "values": {}
+  },
+  "3000:27:27:FF": {
+   "name": "CC_R_AUS",
+   "values": {}
+  },
+  "3000:28:28:FF": {
+   "name": "CC_ML",
+   "values": {}
+  },
+  "3000:29:29:FF": {
+   "name": "CC_RW_WARNUNG",
+   "values": {
+    "0": "0_km",
+    "48": "30_mls",
+    "50": "50_km"
+   }
+  },
+  "3000:2:2:FF": {
+   "name": "WARNUNG_GESCHW_LIMIT",
+   "values": {
+    "0": "nicht_aktiv",
+    "120": "120km/h"
+   }
+  },
+  "3000:30:30:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:31:31:FF": {
+   "name": "KL_MASKIERUNG_0",
+   "values": {
+    "174": "alle_anderen",
+    "222": "us"
+   }
+  },
+  "3000:32:32:FF": {
+   "name": "KL_MASKIERUNG_1",
+   "values": {
+    "127": "us",
+    "255": "alle_anderen"
+   }
+  },
+  "3000:33:33:FF": {
+   "name": "KL_MASKIERUNG_2",
+   "values": {
+    "1": "alle_laender",
+    "241": "china_lg",
+    "243": "china",
+    "35": "ece",
+    "37": "us"
+   }
+  },
+  "3000:34:34:FF": {
+   "name": "KL_MASKIERUNG_3",
+   "values": {
+    "4": "row",
+    "5": "row",
+    "7": "china"
+   }
+  },
+  "3000:35:35:0F": {
+   "name": "READY_FREQUENZ",
+   "values": {}
+  },
+  "3000:35:35:F0": {
+   "name": "HUD_STARTUP_TIME",
+   "values": {
+    "0": "aus",
+    "4": "ein",
+    "5": "ein_i12"
+   }
+  },
+  "3000:36:36:FF": {
+   "name": "M_DRIVE_BLINKFREQUENZ",
+   "values": {}
+  },
+  "3000:37:37:FF": {
+   "name": "VERB_TIME_HARMONISIERT",
+   "values": {
+    "0": "nicht_aktiv",
+    "3": "aktiv"
+   }
+  },
+  "3000:38:38:FF": {
+   "name": "VERB_V_SCHWELLE",
+   "values": {}
+  },
+  "3000:39:39:0F": {
+   "name": "BASISANZEIGE_DELAY_15EIN",
+   "values": {}
+  },
+  "3000:39:39:10": {
+   "name": "SPA_SPORT_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:39:39:20": {
+   "name": "SPRACHE_US_UK",
+   "values": {
+    "0": "ohne_uk",
+    "1": "mit_uk"
+   }
+  },
+  "3000:39:39:40": {
+   "name": "DSC_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:39:39:80": {
+   "name": "DATUM_ERWEITERT_ENABLE",
+   "values": {
+    "0": "date",
+    "1": "date_ext"
+   }
+  },
+  "3000:3:3:0F": {
+   "name": "LDM_ANZEIGE_DAUER",
+   "values": {
+    "0": "keine_anzeige",
+    "10": "acc_dcc"
+   }
+  },
+  "3000:3:3:F0": {
+   "name": "MOST_LISTEN_TIMEOUT_ERROR",
+   "values": {}
+  },
+  "3000:40:40:01": {
+   "name": "HYBRID_CHINA",
+   "values": {
+    "0": "row_variante",
+    "1": "china_variante"
+   }
+  },
+  "3000:40:40:02": {
+   "name": "FGS_KI_VORWARNUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:40:40:04": {
+   "name": "FGS_KI_AKUTWARNUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:40:40:08": {
+   "name": "DSC_OFF_ENTFLECHTUNG_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:40:40:10": {
+   "name": "NAVI_NBT_ENABLE",
+   "values": {
+    "0": "kein_nbt",
+    "1": "nbt_anzeige"
+   }
+  },
+  "3000:40:40:20": {
+   "name": "NAVICOLOR_TABLE",
+   "values": {
+    "0": "alte_farbtabelle",
+    "1": "neue_farbtabelle"
+   }
+  },
+  "3000:40:40:40": {
+   "name": "READY_PRE_DRIVE_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:40:40:80": {
+   "name": "HUD_VZA_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:41:41:01": {
+   "name": "HUD_TLC_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:41:41:02": {
+   "name": "LUPE_DZM_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:41:41:04": {
+   "name": "LUPE_TACHO_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:41:41:08": {
+   "name": "ECO_RW_GRAPHIK_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:41:41:10": {
+   "name": "SWITCH_MLS_MI",
+   "values": {
+    "0": "mls",
+    "1": "mi"
+   }
+  },
+  "3000:41:41:20": {
+   "name": "HUD_CC_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:41:41:40": {
+   "name": "CC_BREMSWARNL_NUR_ROT",
+   "values": {
+    "0": "gelb_rot",
+    "1": "nur_rot"
+   }
+  },
+  "3000:41:41:80": {
+   "name": "DIESEL_SCHRIFTZUG_ENABLE",
+   "values": {
+    "0": "benzin",
+    "1": "diesel"
+   }
+  },
+  "3000:42:42:01": {
+   "name": "MSA_VERFUEGBARANZEIGE_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:42:42:02": {
+   "name": "SOC_MARKER_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:42:42:04": {
+   "name": "BC_RWVERBRAUCH_NEBENVERBR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:42:42:08": {
+   "name": "BC_RWVERBRAUCH_REKU",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:42:42:F0": {
+   "name": "DIGITAL_TACHO_ENABLE",
+   "values": {
+    "0": "keine_anzeige",
+    "1": "kmh_mph",
+    "2": "mph_kmh",
+    "3": "kmh_kmh",
+    "4": "mph_mph",
+    "5": "mph_keine_anzeige",
+    "6": "keine_anzeige_kmh"
+   }
+  },
+  "3000:43:43:FF": {
+   "name": "SHIFT_LIGHT_BLINKFREQUENZ",
+   "values": {
+    "31": "1_6_hz"
+   }
+  },
+  "3000:44:44:0F": {
+   "name": "BMW_LOGO",
+   "values": {
+    "0": "bmw",
+    "1": "mpm",
+    "3": "bmw_i",
+    "8": "mpm_x5",
+    "9": "mpm_x6"
+   }
+  },
+  "3000:44:44:F0": {
+   "name": "MPM_LOGO",
+   "values": {
+    "0": "bmw",
+    "1": "mpm",
+    "3": "bmw_i",
+    "8": "mpm_x5",
+    "9": "mpm_x6"
+   }
+  },
+  "3000:45:45:FF": {
+   "name": "SOC_CHINA_RESERVE",
+   "values": {}
+  },
+  "3000:46:46:FF": {
+   "name": "SOC_HOLD_POS",
+   "values": {}
+  },
+  "3000:47:47:FF": {
+   "name": "CC_RW_WARNUNG_2",
+   "values": {
+    "0": "inaktiv",
+    "80": "50_mls",
+    "90": "90_km"
+   }
+  },
+  "3000:48:48:FF": {
+   "name": "CC_RW_WARNUNG_ELEKTRISCH",
+   "values": {
+    "0": "0_km",
+    "48": "30_mls",
+    "50": "50_km"
+   }
+  },
+  "3000:49:49:FF": {
+   "name": "RW_GELB_ANZEIGE_ELEKTRISCH",
+   "values": {
+    "0": "inaktiv",
+    "50": "50_km",
+    "80": "80_km"
+   }
+  },
+  "3000:4:4:FF": {
+   "name": "ZEIGER_AUFSTART_ZEIT",
+   "values": {}
+  },
+  "3000:50:50:01": {
+   "name": "CC_TEMPERATURWARNUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:50:50:02": {
+   "name": "HUD_WARPING_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:50:50:04": {
+   "name": "ABK_FCHUD_ENABLE",
+   "values": {
+    "0": "rg_hud_design",
+    "1": "fc_hud_design"
+   }
+  },
+  "3000:50:50:08": {
+   "name": "BLINKER_HUD_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:50:50:10": {
+   "name": "ROTATION_HUD_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:50:50:20": {
+   "name": "ST_VRS_HUD_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:50:50:40": {
+   "name": "OFF_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:50:50:80": {
+   "name": "OFF_PRE_DRIVE_ENABLE",
+   "values": {
+    "0": "aktiv"
+   }
+  },
+  "3000:51:51:FF": {
+   "name": "BC2_AUTORESET_ZEIT",
+   "values": {
+    "4": "4h"
+   }
+  },
+  "3000:52:52:0F": {
+   "name": "ZUSTARTGRENZE_ENABLE",
+   "values": {}
+  },
+  "3000:52:52:F0": {
+   "name": "GRAFIK_SET_PU",
+   "values": {
+    "0": "set_0",
+    "1": "set_1",
+    "2": "set_2",
+    "3": "set_3",
+    "4": "set_4",
+    "5": "set_5",
+    "6": "set_6"
+   }
+  },
+  "3000:53:53:01": {
+   "name": "HYBRID_FB_SOUND_EIN_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:53:53:02": {
+   "name": "HYBRID_FB_SOUND_AUS_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:53:53:0C": {
+   "name": "HUD_DEMOMODE_ENABLE",
+   "values": {
+    "0": "nich_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:53:53:30": {
+   "name": "AUSFUEHRUNG",
+   "values": {}
+  },
+  "3000:53:53:40": {
+   "name": "BC_D_VERBRAUCH_NEBENVERBR_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:53:53:80": {
+   "name": "BC_D_VERBRAUCH_REKUP_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:54:54:0F": {
+   "name": "BC_RW_HYSTERESE_STRICHE_AUS",
+   "values": {}
+  },
+  "3000:54:54:10": {
+   "name": "BC_M_VERBRAUCH_NEBENVERBR_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:54:54:20": {
+   "name": "BC_M_VERBRAUCH_REKUP_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:54:54:40": {
+   "name": "BC_RW_IHKA_PRAED_KL30",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:54:54:80": {
+   "name": "BC_M_ANZEIGENSYNCHRONISATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:55:55:FF": {
+   "name": "EFF_POWER_DISP",
+   "values": {}
+  },
+  "3000:56:56:FF": {
+   "name": "EFF_CHARGE_DISP",
+   "values": {}
+  },
+  "3000:57:57:FF": {
+   "name": "BC_RW_MIN_VERBRAUCH_ELEKTR",
+   "values": {}
+  },
+  "3000:58:58:FF": {
+   "name": "BC_RW_MAX_VERBRAUCH_ELEKTR",
+   "values": {}
+  },
+  "3000:59:59:FF": {
+   "name": "BC_RW_VERBRAUCH_ELEKTR",
+   "values": {}
+  },
+  "3000:5:5:FF": {
+   "name": "DIG_KVA_BEREICH",
+   "values": {
+    "20": "20_l/100km",
+    "30": "30_l/100km"
+   }
+  },
+  "3000:6:6:FF": {
+   "name": "RW_GELB_ANZEIGE",
+   "values": {
+    "0": "inaktiv",
+    "50": "50_km",
+    "80": "80_km"
+   }
+  },
+  "3000:7:7:0F": {
+   "name": "FDS_ANZEIGE_ZEIT",
+   "values": {}
+  },
+  "3000:7:7:30": {
+   "name": "GURT_FOND_STATUS",
+   "values": {
+    "0": "inaktiv",
+    "1": "2_sitze",
+    "2": "3_sitze"
+   }
+  },
+  "3000:7:7:C0": {
+   "name": "M_DIGI_TACHO_EINHEIT",
+   "values": {
+    "0": "pia",
+    "1": "km/h",
+    "2": "mph"
+   }
+  },
+  "3000:8:8:FF": {
+   "name": "ACC_FZG_BLINK_FREQ",
+   "values": {}
+  },
+  "3000:9:9:FF": {
+   "name": "IGR_REKU_FADE_TIME",
+   "values": {
+    "13": "hybrid",
+    "25": "kein_hybrid"
+   }
+  },
+  "3001:0:7:FF": {
+   "name": "CC_AKTIVIERUNG_1",
+   "values": {
+    "0": "aus",
+    "14987416608861847551": "ein_ohne_4_5_9",
+    "14987979558815268863": "ein_ohne_4_5",
+    "14987979559889010687": "ein_mit_38_ohne_4_5",
+    "18446744072635809791": "ein",
+    "18446744073709551615": "ein_mit_38"
+   }
+  },
+  "3001:104:111:FF": {
+   "name": "CC_AKTIVIERUNG_14",
+   "values": {
+    "0": "aus",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:112:119:FF": {
+   "name": "CC_AKTIVIERUNG_15",
+   "values": {
+    "0": "aus",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:120:127:FF": {
+   "name": "CC_AKTIVIERUNG_16",
+   "values": {
+    "0": "aus",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:16:23:FF": {
+   "name": "CC_AKTIVIERUNG_3",
+   "values": {
+    "0": "aus",
+    "18446726481523474431": "ein_ab_09_2011",
+    "18446726481523507199": "ein",
+    "18446744073709551615": "ein_mit_148"
+   }
+  },
+  "3001:24:31:FF": {
+   "name": "CC_AKTIVIERUNG_4",
+   "values": {
+    "0": "aus",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:32:39:FF": {
+   "name": "CC_AKTIVIERUNG_5",
+   "values": {
+    "0": "aus",
+    "15564440312192434175": "f03",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:40:47:FF": {
+   "name": "CC_AKTIVIERUNG_6",
+   "values": {
+    "0": "aus",
+    "18446743798831644671": "ein_ohne_350",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:48:55:FF": {
+   "name": "CC_AKTIVIERUNG_7",
+   "values": {
+    "0": "aus",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:56:63:FF": {
+   "name": "CC_AKTIVIERUNG_8",
+   "values": {
+    "0": "aus",
+    "18446744073172680703": "ein"
+   }
+  },
+  "3001:64:71:FF": {
+   "name": "CC_AKTIVIERUNG_9",
+   "values": {
+    "0": "aus",
+    "18446708889337462783": "ohne_533",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:72:79:FF": {
+   "name": "CC_AKTIVIERUNG_10",
+   "values": {
+    "0": "aus",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:80:87:FF": {
+   "name": "CC_AKTIVIERUNG_11",
+   "values": {
+    "0": "aus",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:88:95:FF": {
+   "name": "CC_AKTIVIERUNG_12",
+   "values": {
+    "0": "aus",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:8:15:FF": {
+   "name": "CC_AKTIVIERUNG_2",
+   "values": {
+    "0": "aus",
+    "18446744056529682431": "ein_ohne_90",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3001:96:103:FF": {
+   "name": "CC_AKTIVIERUNG_13",
+   "values": {
+    "0": "aus",
+    "18446744073709551615": "ein"
+   }
+  },
+  "3003:0:0:01": {
+   "name": "NAVI_VERBAUT",
+   "values": {
+    "0": "ohne_navi",
+    "1": "navi"
+   }
+  },
+  "3003:0:0:02": {
+   "name": "MSA_MOTOR_AUS_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:04": {
+   "name": "SPA_IST_GANG_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:08": {
+   "name": "SPA_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:F0": {
+   "name": "BR_KENNUNG",
+   "values": {
+    "0": "limousine_7",
+    "1": "f06",
+    "10": "f16",
+    "13": "i12",
+    "14": "rr_05",
+    "15": "rr_04",
+    "2": "limousine_7lux",
+    "3": "limousine_7s",
+    "4": "limousine_5",
+    "5": "touring_5",
+    "6": "coupe_6",
+    "7": "cabrio_6",
+    "8": "f25",
+    "9": "f15"
+   }
+  },
+  "3003:10:10:01": {
+   "name": "HUD_ENTERTAINMENT_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:02": {
+   "name": "HUD_ACC_DCC_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:04": {
+   "name": "HUD_TESTBILDER_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:08": {
+   "name": "HUD_NPI_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:10": {
+   "name": "HUD_SLI_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:20": {
+   "name": "HUD_NIVI_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:40": {
+   "name": "HUD_SHOW_MODE_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:80": {
+   "name": "HUD_TAG_NACHT_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:11:11:01": {
+   "name": "HUD_BLINKER_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:11:11:02": {
+   "name": "MOTORLEISTUNG_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:11:11:04": {
+   "name": "HUD_STA_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:11:11:08": {
+   "name": "SPA_KOMBISELECT_DISABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:11:11:10": {
+   "name": "E_MODE_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:11:11:20": {
+   "name": "EDA_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:11:11:C0": {
+   "name": "M_DRIVE_RUEKO",
+   "values": {
+    "0": "sonst",
+    "1": "1_Botschaft",
+    "2": "2_Botschaft"
+   }
+  },
+  "3003:12:12:03": {
+   "name": "E_RING_ENABLE",
+   "values": {}
+  },
+  "3003:12:12:04": {
+   "name": "I12_CHARGE_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:12:12:08": {
+   "name": "LADEKABEL_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:12:12:10": {
+   "name": "KOMPASS_GRAPH_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:12:12:20": {
+   "name": "BC_RW_PRAEDIKTION_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:12:12:40": {
+   "name": "CHARAKTER_VARIANTE",
+   "values": {
+    "0": "verbrenner",
+    "1": "elektrisch"
+   }
+  },
+  "3003:12:12:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:13:13:01": {
+   "name": "HMI_DEBUG_0",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:02": {
+   "name": "HMI_DEBUG_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:04": {
+   "name": "HMI_DEBUG_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:08": {
+   "name": "HMI_DEBUG_3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:10": {
+   "name": "HMI_DEBUG_4",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:20": {
+   "name": "HMI_DEBUG_5",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:40": {
+   "name": "HMI_DEBUG_6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:80": {
+   "name": "HMI_DEBUG_7",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:14:14:03": {
+   "name": "TNK_REX_RW_TANK_KOPPLUNG_VARIANTE",
+   "values": {}
+  },
+  "3003:14:14:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:15:15:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:1:1:03": {
+   "name": "LDM_VERBAUT",
+   "values": {
+    "0": "ldm_off",
+    "1": "dcc",
+    "2": "acc"
+   }
+  },
+  "3003:1:1:04": {
+   "name": "HDC_VERBAUT",
+   "values": {
+    "0": "alle_anderen",
+    "1": "hdc"
+   }
+  },
+  "3003:1:1:08": {
+   "name": "TLC_VERBAUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:10": {
+   "name": "NIVI_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:20": {
+   "name": "FDS_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:C0": {
+   "name": "GETRIEBE_ART",
+   "values": {
+    "0": "handschalter",
+    "1": "automatik"
+   }
+  },
+  "3003:2:2:01": {
+   "name": "E_FAHREN_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:2:2:02": {
+   "name": "HUD_VERBAUT",
+   "values": {
+    "0": "alle_anderen",
+    "1": "hud"
+   }
+  },
+  "3003:2:2:04": {
+   "name": "LL_RL_FZG",
+   "values": {
+    "0": "rechtslenker",
+    "1": "linkslenker"
+   }
+  },
+  "3003:2:2:08": {
+   "name": "ALLRAD",
+   "values": {
+    "0": "kein_allrad",
+    "1": "allrad"
+   }
+  },
+  "3003:2:2:10": {
+   "name": "DSC_MIT_RPA",
+   "values": {
+    "0": "ohne_RPA",
+    "1": "mit_RPA"
+   }
+  },
+  "3003:2:2:20": {
+   "name": "DC_LADEN_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:2:2:40": {
+   "name": "READY_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:2:2:80": {
+   "name": "BOOST_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:01": {
+   "name": "SLD_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:02": {
+   "name": "MPM_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:04": {
+   "name": "M_VARIANTE",
+   "values": {
+    "0": "ag_variante",
+    "1": "motorsport"
+   }
+  },
+  "3003:3:3:08": {
+   "name": "FCHUD_ENABLE",
+   "values": {
+    "0": "rgr",
+    "1": "rgb"
+   }
+  },
+  "3003:3:3:10": {
+   "name": "IBRAKE_VERBAUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:20": {
+   "name": "SHIFT_LIGHTS_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:40": {
+   "name": "VERBR_HISTORIE_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:80": {
+   "name": "HYBRID_VERB_VORTEIL_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:4:4:01": {
+   "name": "FGS_NIVI_KI_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:4:4:02": {
+   "name": "IBRAKE_ABSTAND_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:4:4:04": {
+   "name": "CHARAKTER_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:4:4:08": {
+   "name": "VZA_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:4:4:10": {
+   "name": "SEGELN_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:4:4:20": {
+   "name": "SOC_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:4:4:C0": {
+   "name": "EDA_ZEIGER_E_FAHREN_ENABLE",
+   "values": {
+    "0": "eda_position",
+    "1": "e_fahren_stufen",
+    "2": "aus"
+   }
+  },
+  "3003:5:8:FF": {
+   "name": "TEFU_ENABLE",
+   "values": {}
+  },
+  "3003:9:9:03": {
+   "name": "SPEED_LIMIT_GENERATION",
+   "values": {
+    "0": "inaktiv",
+    "1": "sli_gen_1",
+    "2": "sli_gen_2",
+    "3": "sli_gen_2_npi"
+   }
+  },
+  "3003:9:9:0C": {
+   "name": "CLUSTER_VARIANT",
+   "values": {
+    "0": "ece",
+    "1": "uk"
+   }
+  },
+  "3003:9:9:10": {
+   "name": "HUD_IBRAKE_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:9:9:20": {
+   "name": "HUD_STARTUP_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:9:9:40": {
+   "name": "STA_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:9:9:80": {
+   "name": "HUD_NAVI_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:01": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:0:0:02": {
+   "name": "MOST_NAK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:04": {
+   "name": "MOST_RINGBRUCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:08": {
+   "name": "FOT_TEMP_ABSCHALTUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:10": {
+   "name": "MOST_RESET_INIC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:20": {
+   "name": "MOST_LISTENFEHLER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:40": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:0:0:80": {
+   "name": "MOST_NTF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:01": {
+   "name": "LAMPENZUSTAND_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:02": {
+   "name": "ST_MDRV_2_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:04": {
+   "name": "ST_MDRV_2_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:08": {
+   "name": "ST_MDRV_2_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:10": {
+   "name": "ST_BLT_CT_SOCCU_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:20": {
+   "name": "ST_BLT_CT_SOCCU_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:40": {
+   "name": "ST_BLT_CT_SOCCU_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:80": {
+   "name": "ST_BLT_CT_SOCCU_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:11:11:01": {
+   "name": "FLLUPT_KLEMME_30G_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:11:11:06": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:11:11:08": {
+   "name": "FLLUPT_KLEMME_30G_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:11:11:10": {
+   "name": "CHNO_COV_V_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:11:11:60": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:11:11:80": {
+   "name": "CHNO_COV_V_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:01": {
+   "name": "DT_PT_2_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:02": {
+   "name": "DT_PT_2_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:04": {
+   "name": "DT_PT_2_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:08": {
+   "name": "DT_PT_2_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:10": {
+   "name": "STAT_ANHAENGER_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:20": {
+   "name": "DISP_COSA_HYB_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:40": {
+   "name": "STAT_GANG_RUECKWAERTS_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:80": {
+   "name": "STAT_GANG_RUECKWAERTS_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:13:13:01": {
+   "name": "STAT_ZV_KLAPPEN_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:13:13:06": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:13:13:08": {
+   "name": "STAT_ZV_KLAPPEN_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:13:13:10": {
+   "name": "DIMMUNG_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:13:13:60": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:13:13:80": {
+   "name": "DIMMUNG_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:14:14:01": {
+   "name": "MILE_VEH_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:14:14:02": {
+   "name": "MILE_VEH_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:14:14:04": {
+   "name": "MILE_VEH_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:14:14:08": {
+   "name": "MILE_VEH_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:14:14:10": {
+   "name": "RCOG_TRSG_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:14:14:60": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:14:14:80": {
+   "name": "RCOG_TRSG_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:01": {
+   "name": "ST_TYR_RDC_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:15:15:04": {
+   "name": "ST_TYR_RDC_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:08": {
+   "name": "CTR_HSTY_DISP_KI_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:10": {
+   "name": "ALIV_CODO_LIM_V_TIMEOUT",
+   "values": {
+    "0": "nicht_altiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:15:15:40": {
+   "name": "ALIV_CODO_LIM_V_ALIVE",
+   "values": {
+    "0": "nicht_altiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:16:16:01": {
+   "name": "ST_MAB_ASST_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:16:16:06": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:16:16:08": {
+   "name": "ST_MAB_ASST_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:16:16:10": {
+   "name": "STAT_FAHRLICHT_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:16:16:60": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:16:16:80": {
+   "name": "STAT_FAHRLICHT_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:17:17:01": {
+   "name": "FZZSTD_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:17:17:02": {
+   "name": "ST_COSP_FU_ENG_APPL_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:17:17:04": {
+   "name": "ST_COSP_FU_ENG_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:17:17:08": {
+   "name": "ST_COSP_FU_ENG_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:17:17:10": {
+   "name": "STATE_SBIL_PS_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:17:17:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:17:17:40": {
+   "name": "STATE_SBIL_PS_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:17:17:80": {
+   "name": "STATE_SBIL_PS_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:01": {
+   "name": "STATE_SBIL_DR_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:18:18:04": {
+   "name": "STATE_SBIL_DR_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:08": {
+   "name": "STATE_SBIL_DR_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:10": {
+   "name": "ST_LCS_VEH_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:18:18:40": {
+   "name": "ST_LCS_VEH_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:19:19:01": {
+   "name": "DISP_CC_DRDY_COOTD_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:19:19:02": {
+   "name": "DISP_CC_DRDY_COOTD_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:19:19:04": {
+   "name": "DISP_CC_DRDY_COOTD_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:19:19:08": {
+   "name": "DISP_CON_HYB_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:19:19:10": {
+   "name": "ST_HUD_2_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:19:19:20": {
+   "name": "LVDS_BACKLIGHT_FEEDBACK_HUD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:19:19:40": {
+   "name": "ST_HUD_2_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:19:19:80": {
+   "name": "ST_HUD_2_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:01": {
+   "name": "CAN_BUS_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:04": {
+   "name": "CAN_WAKEUPLEITUNG_FEHLER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:08": {
+   "name": "UNEXPECTED_VALUE",
+   "values": {
+    "0": "nich_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:10": {
+   "name": "TANK_LINKS_SENSOR_LOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:20": {
+   "name": "TANK_LINKS_SENSOR_HIGH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:40": {
+   "name": "TANK_RECHTS_SENSOR_LOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:80": {
+   "name": "TANK_RECHTS_SENSOR_HIGH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:20:20:01": {
+   "name": "STAT_OBJ_COOR_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:20:20:02": {
+   "name": "STAT_OBJ_COOR_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:20:20:04": {
+   "name": "ST_ECAL_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:20:20:08": {
+   "name": "ST_ECAL_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:20:20:10": {
+   "name": "TORQ_CRSH_1_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:20:20:20": {
+   "name": "TORQ_CRSH_1_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:20:20:40": {
+   "name": "ANG_ACPD_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:20:20:80": {
+   "name": "ANG_ACPD_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:01": {
+   "name": "ST_CABRF_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:02": {
+   "name": "ST_CABRF_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:04": {
+   "name": "DISP_CON_HYB_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:08": {
+   "name": "DISP_CON_HYB_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:10": {
+   "name": "BRIG_SURR_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:20": {
+   "name": "BRIG_SURR_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:40": {
+   "name": "SU_SW_DRDY_2_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:80": {
+   "name": "SU_SW_DRDY_2_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:22:22:01": {
+   "name": "DISPLAY_TEMP_SENSOR_LOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:22:22:02": {
+   "name": "DISPLAY_TEMP_SENSOR_HIGH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:22:22:04": {
+   "name": "KOMBI_PHOTOSENSOR_LOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:22:22:08": {
+   "name": "KOMBI_PHOTOSENSOR_HIGH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:22:22:10": {
+   "name": "KOMBITASTE_FEHLER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:22:22:20": {
+   "name": "A_TEMP_SENSOR_LOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:22:22:40": {
+   "name": "A_TEMP_SENSOR_HIGH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:22:22:80": {
+   "name": "KOMBI_GWSZ_FEHLER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:23:23:01": {
+   "name": "CBS_SC_NICHT_ABGESETZT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:23:23:02": {
+   "name": "CBS_MESSUNG_NICHT_EMPFANGEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:23:23:04": {
+   "name": "CBS_MESSUNG_FEHLERHAFT_EMPFANGEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:23:23:08": {
+   "name": "CTR_CR_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:23:23:10": {
+   "name": "CTR_CR_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:23:23:20": {
+   "name": "DXP_MOD_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:23:23:40": {
+   "name": "DXP_MOD_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:23:23:80": {
+   "name": "KOMBI_EEP_ID_ERROR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:01": {
+   "name": "RDA_KMCHK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:02": {
+   "name": "RDA_KIKM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:04": {
+   "name": "RDA_CASKM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:08": {
+   "name": "RDA_CAS2KI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:10": {
+   "name": "RDA_FGN_ERR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:20": {
+   "name": "RDA_KI2CAS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:40": {
+   "name": "RDA_CAS_BLOCK_CSUM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:80": {
+   "name": "KOMBI_DISPLAY_UEBERTEMP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:25:25:01": {
+   "name": "SYSTEMZEIT_BACKUP_FEHLER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:25:25:02": {
+   "name": "SYSTEMZEIT_RESET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:25:25:04": {
+   "name": "DZM_TEMP_SENSOR_LOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:25:25:08": {
+   "name": "DZM_TEMP_SENSOR_HIGH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:25:25:10": {
+   "name": "SP_REG_TEMP_SENSOR_LOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:25:25:20": {
+   "name": "SP_REG_TEMP_SENSOR_HIGH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:25:25:40": {
+   "name": "KOMBI_SP_REG_UEBERTEMP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:25:25:80": {
+   "name": "KOMBI_DZM_UEBERTEMP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:26:26:01": {
+   "name": "GSS_WAKE_UP_ERR_GEAR_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:26:26:02": {
+   "name": "RESET_GSS_WAKE_UP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:26:26:04": {
+   "name": "GANG_SPA_ANZ_AUS_KSS_WAKE_UP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:26:26:08": {
+   "name": "GSS_RUN_ERR_GEAR_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:26:26:10": {
+   "name": "GSS_UNTERSCHIED_KSS_CAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:26:26:20": {
+   "name": "GANG_SPA_ANZ_KSS_VORGABE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:26:26:40": {
+   "name": "GSS_GANG_SPA_CAN_ERR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:26:26:80": {
+   "name": "KOMBI_SPA_GANG_UNPLAUSIBLE_VORGABE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:01": {
+   "name": "UNTER_UEBER_SPANNUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:02": {
+   "name": "MOST_FOT_TEMP1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:04": {
+   "name": "MOST_FOT_TEMP2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:08": {
+   "name": "MOST_QUEUE_DMC_OVERFLOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:10": {
+   "name": "MOST_SUDDEN_LIGHT_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:20": {
+   "name": "MOST_UNLOCK_LONG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:40": {
+   "name": "MOST_CFG_STAT_ERR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:80": {
+   "name": "MOST_KLEMMENSTATUS_FEHLER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:28:28:01": {
+   "name": "KSS_DEBUG_ERR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:28:28:02": {
+   "name": "GSS_DEBUG_ERR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:28:28:04": {
+   "name": "KOMBI_GSS_WD_RESET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:28:28:08": {
+   "name": "KOMBI_KSS_WD_RESET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:28:28:10": {
+   "name": "KOMBI_EEP_ADRESSFEHLER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:28:28:20": {
+   "name": "KOMBI_EEP_BEREICHSFEHLER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:28:28:40": {
+   "name": "KOMBI_STACK_OVERFLOW_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:28:28:80": {
+   "name": "KOMBI_STACK_OVERFLOW_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:29:29:01": {
+   "name": "CAN_BUFFER_OVERFLOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:29:29:02": {
+   "name": "KOMBI_FPGA_DISPLAY_FREEZE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:29:29:04": {
+   "name": "KOMBI_INTERNE_SP_VERSORGUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:29:29:08": {
+   "name": "KOMBI_BACKLIGHT_HIGH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:29:29:10": {
+   "name": "KOMBI_URLAUB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:29:29:20": {
+   "name": "VSM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:29:29:40": {
+   "name": "DM_TEST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:29:29:80": {
+   "name": "KSS_MOST_BUS_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:2:2:01": {
+   "name": "KLEMMEN_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:2:2:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:2:2:04": {
+   "name": "KLEMMEN_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:2:2:08": {
+   "name": "KLEMMEN_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:2:2:10": {
+   "name": "RAW_DATA_TANK_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:2:2:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:2:2:40": {
+   "name": "BEDIENUNG_LENKSTOCK_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:2:2:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:30:30:01": {
+   "name": "RDA_CAS_BLOCK_N_EMPFANGEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:02": {
+   "name": "KOMBI_HUD_STATUS_UNTERSCHIEDLICH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:04": {
+   "name": "KOMBI_AUSFALL_KL_MPF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:08": {
+   "name": "KOMBI_AUSFALL_HB_CONTROLLER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:10": {
+   "name": "DT_HVSTO_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:20": {
+   "name": "DT_HVSTO_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:40": {
+   "name": "MOD_VC_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:80": {
+   "name": "MOD_VC_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:31:31:01": {
+   "name": "ST_STAB_DSC_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:31:31:02": {
+   "name": "ST_STAB_DSC_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:31:31:04": {
+   "name": "DISP_DCRN_ASST_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:31:31:08": {
+   "name": "ST_TYR_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:31:31:10": {
+   "name": "ST_TYR_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:31:31:20": {
+   "name": "DISP_CC_BYPA_02_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:31:31:40": {
+   "name": "DISP_CC_BYPA_02_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:31:31:80": {
+   "name": "DISP_CC_BYPA_02_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:32:32:01": {
+   "name": "DISP_DRASY_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:32:32:02": {
+   "name": "DISP_DRASY_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:32:32:04": {
+   "name": "DISP_DRASY_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:32:32:08": {
+   "name": "DISP_DRASY_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:32:32:10": {
+   "name": "DISP_CC_PMA_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:32:32:20": {
+   "name": "DISP_CC_PMA_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:32:32:40": {
+   "name": "DISP_CC_PMA_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:32:32:80": {
+   "name": "DISP_CC_DRASY_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:01": {
+   "name": "DISP_CC_DRASY_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:02": {
+   "name": "DISP_CC_DRASY_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:04": {
+   "name": "TLT_RW_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:08": {
+   "name": "TLT_RW_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:10": {
+   "name": "ACLNX_MASSCNTR_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:20": {
+   "name": "ACLNX_MASSCNTR_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:40": {
+   "name": "ACLNY_MASSCNTR_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:80": {
+   "name": "ACLNY_MASSCNTR_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:34:34:01": {
+   "name": "DT_RNG_CALC_2_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:34:34:02": {
+   "name": "DT_RNG_CALC_2_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:34:34:04": {
+   "name": "DT_HVSTO_2_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:34:34:08": {
+   "name": "DT_HVSTO_2_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:34:34:10": {
+   "name": "STAT_KLIMA_STAND_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:34:34:20": {
+   "name": "STAT_KLIMA_STAND_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:34:34:40": {
+   "name": "CHGNG_ST_2_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:34:34:80": {
+   "name": "CHGNG_ST_2_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:35:35:01": {
+   "name": "SYS_ST_EVEH_DRV_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:35:35:02": {
+   "name": "SYS_ST_EVEH_DRV_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:35:35:04": {
+   "name": "DT_RNG_CALC_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:35:35:08": {
+   "name": "DT_RNG_CALC_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:35:35:10": {
+   "name": "ST_CHGINTF_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:35:35:20": {
+   "name": "ST_CHGINTF_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:35:35:40": {
+   "name": "CHGNG_ST_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:35:35:80": {
+   "name": "CHGNG_ST_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:01": {
+   "name": "ST_VEH_TONE_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:02": {
+   "name": "ST_VEH_TONE_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:04": {
+   "name": "ST_VEH_TONE_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:08": {
+   "name": "HUD_DEBUG_PRIMAER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:10": {
+   "name": "HUD_DEBUG_SEKUNDAER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:20": {
+   "name": "SU_SOC_HLD_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:40": {
+   "name": "SU_SOC_HLD_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:80": {
+   "name": "ST_HVSTO_1_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:37:37:01": {
+   "name": "ST_HVSTO_1_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:37:37:02": {
+   "name": "CON_VEH_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:37:37:04": {
+   "name": "CON_VEH_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:37:37:08": {
+   "name": "TNK_GEBER_UNPLAUSIBEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:37:37:10": {
+   "name": "TNK_L_GEBER_KLEMMT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:37:37:20": {
+   "name": "TNK_R_GEBER_KLEMMT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:37:37:40": {
+   "name": "TNK_L_DYN_VERGLEICH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:37:37:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:38:38:01": {
+   "name": "TNK_VERBRAUCH_KUMULIERT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:38:38:02": {
+   "name": "TNK_L_DYNAMIK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:38:38:04": {
+   "name": "TNK_R_DYN_VERGLEICH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:38:38:08": {
+   "name": "TNK_R_DYNAMIK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:38:38:10": {
+   "name": "WMOM_DRV_1_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:38:38:20": {
+   "name": "WMOM_DRV_1_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:38:38:40": {
+   "name": "RQ_AIC_1_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:38:38:80": {
+   "name": "RQ_AIC_1_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:01": {
+   "name": "AVL_RPM_WHL_UPRT_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:02": {
+   "name": "AVL_RPM_WHL_UPRT_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:04": {
+   "name": "OP_PUBU_HUD_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:08": {
+   "name": "OP_PUBU_HUD_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:10": {
+   "name": "DISP_PWR_DRV_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:20": {
+   "name": "DISP_PWR_DRV_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:3:3:01": {
+   "name": "BLINKEN_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:3:3:06": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:3:3:08": {
+   "name": "BLINKEN_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:3:3:10": {
+   "name": "DISP_RPM_PT_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:3:3:20": {
+   "name": "DISP_RPM_PT_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:3:3:40": {
+   "name": "DISP_RPM_PT_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:3:3:80": {
+   "name": "DISP_RPM_PT_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:40:43:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:4:4:01": {
+   "name": "DT_DISP_GRDT_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:4:4:02": {
+   "name": "DT_DISP_GRDT_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:4:4:04": {
+   "name": "DT_DISP_GRDT_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:4:4:08": {
+   "name": "DT_DISP_GRDT_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:4:4:10": {
+   "name": "V_VEH_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:4:4:20": {
+   "name": "V_VEH_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:4:4:40": {
+   "name": "V_VEH_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:4:4:80": {
+   "name": "V_VEH_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:5:5:01": {
+   "name": "DISP_LDM_1_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:5:5:02": {
+   "name": "DISP_LDM_1_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:5:5:04": {
+   "name": "DISP_LDM_1_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:5:5:08": {
+   "name": "DISP_LDM_1_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:5:5:10": {
+   "name": "DISP_LDM_2_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:5:5:20": {
+   "name": "DISP_LDM_2_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:5:5:40": {
+   "name": "DISP_LDM_2_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:5:5:80": {
+   "name": "DISP_LDM_2_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:01": {
+   "name": "ST_TLC_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:6:6:04": {
+   "name": "ST_TLC_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:08": {
+   "name": "ST_TLC_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:10": {
+   "name": "DISP_CC_BYPA_01_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:20": {
+   "name": "DISP_CC_BYPA_01_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:40": {
+   "name": "DISP_CC_BYPA_01_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:7:7:01": {
+   "name": "ALIVE_ZGM_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:7:7:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:7:7:04": {
+   "name": "ALIVE_ZGM_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:7:7:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:7:7:10": {
+   "name": "ALIVE_ZAEHLER_TEL_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:7:7:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:7:7:40": {
+   "name": "ALIVE_ZAEHLER_TEL_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:7:7:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:8:8:01": {
+   "name": "ALIVE_COUNTER_SAFETY_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:8:8:04": {
+   "name": "ALIVE_COUNTER_SAFETY_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:8:8:10": {
+   "name": "DISP_CC_BYPA_00_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:20": {
+   "name": "DISP_CC_BYPA_00_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:40": {
+   "name": "DISP_CC_BYPA_00_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:9:9:01": {
+   "name": "SU_SW_DRDY_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:9:9:04": {
+   "name": "SU_SW_DRDY_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:08": {
+   "name": "SU_SW_DRDY_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:10": {
+   "name": "STAT_ENG_STA_AUTO_TIMEOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:20": {
+   "name": "STAT_ENG_STA_AUTO_CRC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:40": {
+   "name": "STAT_ENG_STA_AUTO_ALIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:80": {
+   "name": "DISP_COSA_HYB_APPL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:0:0:FF": {
+   "name": "TNK_SCHWELLE_RESERVE",
+   "values": {
+    "24": "6_liter",
+    "28": "7_liter",
+    "32": "8_liter",
+    "36": "9_liter",
+    "40": "10_liter",
+    "48": "12_liter",
+    "56": "14_liter"
+   }
+  },
+  "3005:18:27:FF": {
+   "name": "TNK_LITER_LINKS",
+   "values": {
+    "0": "5er_phev_liter_kl_links",
+    "185917081063380111448": "f15_liter_kl_links",
+    "18883059030341601882": "f25_liter_kl_links",
+    "37184837976324264021": "m5_liter_kl_links",
+    "74367118358926344773": "5er_f018_liter_kl_links",
+    "74368536789274479183": "7er_liter_kl_links_hybrid",
+    "74440595465610479433": "5er_liter_kl_links",
+    "92959112342683340373": "7er_liter_kl_links_ab_0712",
+    "92959112342683340886": "7er_liter_kl_links_vor_0712",
+    "92959397137534828098": "5er_hybrid_liter_kl_links"
+   }
+  },
+  "3005:1:1:FF": {
+   "name": "TNK_SCHWELLE_AUF_AB",
+   "values": {}
+  },
+  "3005:28:47:FF": {
+   "name": "TNK_OHM_RECHTS",
+   "values": {
+    "103700021306670259186611185022594610597768727160": "i12_mt1",
+    "115965324653779057837096101935969822159622636170": "i12",
+    "122655544809631872427546008160983346137313444520": "i12_mt2",
+    "202270701413288065392691297185410915591681081994": "5er_ohm_kl_rechts",
+    "209629730564656857864177063390733740073795518994": "7er_ohm_kl_rechts_vor_0712",
+    "211636869089537039374584218500368426630560350858": "f15_ohm_kl_rechts",
+    "212707353523339230067286705811601079975401620056": "7er_ohm_kl_rechts_hybrid",
+    "215138479124068229203599271206552165761785791123": "5er_hybrid_ohm_kl_rechts",
+    "215205027457502213003782225965562556648636482116": "7er_ohm_kl_rechts_ab_0712",
+    "215205078841936185974768578167083079189803434514": "f25_ohm_kl_rechts",
+    "215205226528720477480348635880155154019823714818": "m5_ohm_kl_rechts",
+    "217948343753101614129683907995956915985027301946": "5er_phev_ohm_kl_rechts",
+    "219665399386686507015823856325265084836798136890": "5er_f18_ohm_kl_rechts"
+   }
+  },
+  "3005:2:2:FF": {
+   "name": "TNK_BERUHIGUNGSZEIT",
+   "values": {}
+  },
+  "3005:3:3:FF": {
+   "name": "TNK_MITTLUNGSZEIT",
+   "values": {}
+  },
+  "3005:48:67:FF": {
+   "name": "TNK_OHM_LINKS",
+   "values": {
+    "0": "5er_phev_ohm_kl_links",
+    "207399871447514254555305251383996003156551533344": "5er_ohm_kl_links",
+    "211636654369374863992088723027075158231979524766": "f15_ohm_kl_links",
+    "212328242217718966219784497984660845402314965572": "7er_ohm_kl_links_ab_0712",
+    "213376494981425908970789887114705833597609181784": "7er_ohm_kl_links_hybrid",
+    "213867047740524671666597454963230571573048312338": "7er_ohm_kl_links_vor_0712",
+    "214982212269566430664573038391579797382226182720": "5er_hybrid_ohm_kl_links",
+    "214982276925568331943630867004081633785746555460": "m5_ohm_kl_links",
+    "215205321804667778597138310460344687606734914296": "f25_ohm_kl_links",
+    "219665436819668074409421372666583962514468373040": "5er_f18_ohm_kl_links"
+   }
+  },
+  "3005:4:4:FF": {
+   "name": "TNK_SICHERHEITSFAKTOR",
+   "values": {}
+  },
+  "3005:5:5:FF": {
+   "name": "TNK_FILTER_STEIGEND",
+   "values": {
+    "102": "90_liter_h",
+    "122": "108_liter_h",
+    "170": "150_liter_h",
+    "64": "57_liter_h",
+    "68": "60_liter_h",
+    "88": "78_liter_h",
+    "91": "80_liter_h"
+   }
+  },
+  "3005:68:68:FF": {
+   "name": "TNK_OHM_FEHLER_OG",
+   "values": {
+    "110": "1100_ohm",
+    "120": "1200_ohm",
+    "150": "1500_ohm",
+    "80": "800_ohm"
+   }
+  },
+  "3005:69:69:FF": {
+   "name": "TNK_OHM_FEHLER_UG",
+   "values": {
+    "10": "10_ohm",
+    "14": "14_ohm",
+    "20": "20_ohm",
+    "35": "35_ohm",
+    "5": "5_ohm"
+   }
+  },
+  "3005:6:6:FF": {
+   "name": "TNK_FILTER_FALLEND",
+   "values": {
+    "102": "90_liter_h",
+    "122": "108_liter_h",
+    "170": "150_liter_h",
+    "64": "57_liter_h",
+    "68": "60_liter_h",
+    "88": "78_liter_h",
+    "91": "80_liter_h"
+   }
+  },
+  "3005:70:70:FF": {
+   "name": "TNK_RED_REICHWEITE",
+   "values": {}
+  },
+  "3005:71:71:FF": {
+   "name": "TNK_RW_VERBRAUCH",
+   "values": {
+    "12": "6l/100km",
+    "14": "7l/100km",
+    "16": "8l/100km",
+    "20": "10l/100km",
+    "24": "12l/100km",
+    "26": "13l/100km",
+    "30": "15l/100km"
+   }
+  },
+  "3005:72:72:FF": {
+   "name": "TNK_VOLUMEN_SCHWALLTOPF",
+   "values": {
+    "0": "0_liter",
+    "32": "2_liter",
+    "35": "2_2_liter",
+    "64": "4_liter"
+   }
+  },
+  "3005:73:73:FF": {
+   "name": "TNK_SW_SCHWALLTOPF_VOLL",
+   "values": {
+    "0": "00_liter",
+    "35": "25_liter",
+    "70": "35_liter",
+    "74": "37_liter"
+   }
+  },
+  "3005:74:74:FF": {
+   "name": "TNK_SW_SCHWALLTOPF_DECR",
+   "values": {
+    "0": "0_1_liter",
+    "8": "0_5_liter"
+   }
+  },
+  "3005:75:75:01": {
+   "name": "TNK_MECH_DIAG_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:75:75:7E": {
+   "name": "TNK_UEBERTANKMENGE",
+   "values": {}
+  },
+  "3005:75:75:80": {
+   "name": "TNK_RESERVE_WARNUNG_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:76:76:0F": {
+   "name": "TNK_DIAG_MIN_VOLUMEN",
+   "values": {}
+  },
+  "3005:76:76:F0": {
+   "name": "TNK_DIAG_MAX_VOLUMEN",
+   "values": {}
+  },
+  "3005:77:77:FF": {
+   "name": "TNK_DELTA_VERBRAUCH_KUMULIERT",
+   "values": {
+    "0": "nicht_aktiv",
+    "10": "aktiv"
+   }
+  },
+  "3005:78:78:0F": {
+   "name": "TNK_STANDZEIT_VERBRAUCH_NEUBERECHNUNG",
+   "values": {}
+  },
+  "3005:78:78:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3005:79:79:FF": {
+   "name": "TNK_SCHWELLE_DYN_FZG",
+   "values": {
+    "0": "nicht_aktiv",
+    "10": "aktiv",
+    "100": "aktiv"
+   }
+  },
+  "3005:7:7:FF": {
+   "name": "TNK_VOLL_ANZEIGE",
+   "values": {
+    "120": "60_liter",
+    "130": "65_liter",
+    "132": "66_liter",
+    "140": "70_liter",
+    "146": "73_liter_hybrid",
+    "150": "75_liter",
+    "158": "79_liter",
+    "162": "81_liter",
+    "58": "30_liter",
+    "72": "36_liter",
+    "80": "i12",
+    "84": "42_liter"
+   }
+  },
+  "3005:80:80:FF": {
+   "name": "TNK_SCHWELLE_DYN_GEBER",
+   "values": {}
+  },
+  "3005:81:81:FF": {
+   "name": "TNK_DELTA_DYN_VERGLEICH",
+   "values": {
+    "0": "nicht_aktiv",
+    "10": "aktiv"
+   }
+  },
+  "3005:82:83:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3005:8:17:FF": {
+   "name": "TNK_LITER_RECHTS",
+   "values": {
+    "111841311442402953810": "f15_liter_kl_rechts",
+    "18737528740718590268": "5er_liter_kl_rechts",
+    "37112494470287731760": "f25_liter_kl_rechts",
+    "37183708769140487482": "5er_hybrid_liter_kl_rechts",
+    "55703635207168146761": "m5_liter_kl_rechts",
+    "55775976488107851074": "5er_f018_liter_kl_rechts",
+    "55849445893831211584": "7er_liter_kl_rechts_hybrid",
+    "56065902341304432444": "i12_mt1",
+    "74296189967540697661": "7er_liter_kl_rechts_ab_0712",
+    "74296189967641492285": "7er_liter_kl_rechts_vor_0712",
+    "74441159510763982934": "i12",
+    "74585837653054211400": "5er_phev_liter_kl_rechts",
+    "74657895238418187852": "i12_mt2"
+   }
+  },
+  "3006:0:0:FF": {
+   "name": "ATP_DELTA_K1",
+   "values": {}
+  },
+  "3006:1:1:FF": {
+   "name": "ATP_DELTA_K2",
+   "values": {}
+  },
+  "3006:2:2:FF": {
+   "name": "MOTORKONSTANTE",
+   "values": {}
+  },
+  "3006:3:3:0F": {
+   "name": "ATP_SPERR_FAKTOR",
+   "values": {}
+  },
+  "3006:3:3:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3006:4:4:FF": {
+   "name": "ATP_SPERR_OFFSET",
+   "values": {}
+  },
+  "3006:5:5:FF": {
+   "name": "ATP_ANZ_FEHLER_1",
+   "values": {
+    "128": "motorsport",
+    "24": "alt",
+    "54": "ag"
+   }
+  },
+  "3006:6:6:FF": {
+   "name": "ATP_ANZ_FEHLER_2",
+   "values": {}
+  },
+  "3007:0:0:FF": {
+   "name": "DIM_TOLERANZ_ALPHA",
+   "values": {}
+  },
+  "3007:10:10:FF": {
+   "name": "DIM_NACHT_EIN",
+   "values": {
+    "0": "nicht_aktiv",
+    "6": "aktiv"
+   }
+  },
+  "3007:11:11:FF": {
+   "name": "DIM_NACHT_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "38": "aktiv"
+   }
+  },
+  "3007:12:12:FF": {
+   "name": "DIM_KI_DELAY_TAG",
+   "values": {}
+  },
+  "3007:13:13:FF": {
+   "name": "DIM_KI_DELAY_NACHT",
+   "values": {}
+  },
+  "3007:14:14:FF": {
+   "name": "DIM_RLS_DELAY_TAG",
+   "values": {}
+  },
+  "3007:15:15:FF": {
+   "name": "DIM_RLS_DELAY_NACHT",
+   "values": {}
+  },
+  "3007:16:16:FF": {
+   "name": "DIM_RLS_NACHT_AUS",
+   "values": {
+    "0": "rls_inaktiv",
+    "16": "rls_aktiv"
+   }
+  },
+  "3007:17:17:FF": {
+   "name": "DIM_RLS_NACHT_EIN",
+   "values": {
+    "0": "rls_inaktiv",
+    "7": "rls_aktiv"
+   }
+  },
+  "3007:18:18:0F": {
+   "name": "DIM_RLS_DPF_DOWN",
+   "values": {}
+  },
+  "3007:18:18:F0": {
+   "name": "DIM_RLS_DPF_UP",
+   "values": {}
+  },
+  "3007:19:19:0F": {
+   "name": "DIM_PHOTOCELL_DPF_DOWN",
+   "values": {}
+  },
+  "3007:19:19:F0": {
+   "name": "DIM_PHOTOCELL_DPF_UP",
+   "values": {}
+  },
+  "3007:1:1:FF": {
+   "name": "DIM_TOLERANZ_ABS",
+   "values": {}
+  },
+  "3007:20:20:FF": {
+   "name": "DIM_DIFF_MAX2",
+   "values": {}
+  },
+  "3007:21:21:FF": {
+   "name": "DIM_RLS_CUT_OFF_THR",
+   "values": {}
+  },
+  "3007:22:22:0F": {
+   "name": "DIM_TUNNEL_DELAY",
+   "values": {}
+  },
+  "3007:22:22:30": {
+   "name": "DIM_WEG_CNT_DBL",
+   "values": {}
+  },
+  "3007:22:22:C0": {
+   "name": "DIM_TIME_CNT_DBL",
+   "values": {}
+  },
+  "3007:23:23:FF": {
+   "name": "DIM_PHOTOCELL_CUT_OFF_THR",
+   "values": {}
+  },
+  "3007:24:24:FF": {
+   "name": "DIM_TUNNEL_HELL",
+   "values": {}
+  },
+  "3007:25:25:FF": {
+   "name": "DIM_VORFELD_TAG_EIN",
+   "values": {}
+  },
+  "3007:26:26:01": {
+   "name": "DIM_VORFELD_VIA_HUD",
+   "values": {
+    "0": "ueber_brig_pfie",
+    "1": "ueber_hud"
+   }
+  },
+  "3007:26:26:02": {
+   "name": "DIM_TAG_NACHT_ALT",
+   "values": {
+    "0": "neu",
+    "1": "alt"
+   }
+  },
+  "3007:26:26:04": {
+   "name": "DIM_BRIG_ENVI_AUS",
+   "values": {
+    "0": "ueber_brig_envi",
+    "1": "ueber_brig_pfie"
+   }
+  },
+  "3007:26:26:08": {
+   "name": "DIM_HUD_SENSOR_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3007:26:26:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:27:35:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:2:2:7F": {
+   "name": "DIM_DTN",
+   "values": {}
+  },
+  "3007:2:2:80": {
+   "name": "DIM_SMOOTH_DIMWHEEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3007:3:3:0F": {
+   "name": "DIM_DIFF_THR",
+   "values": {
+    "3": "wer_01"
+   }
+  },
+  "3007:3:3:F0": {
+   "name": "DIM_DIFF_GAIN",
+   "values": {}
+  },
+  "3007:4:4:FF": {
+   "name": "DIM_TUNNEL_HELL_DELAY",
+   "values": {}
+  },
+  "3007:5:5:FF": {
+   "name": "DIM_DIFF_BIAS",
+   "values": {}
+  },
+  "3007:6:6:FF": {
+   "name": "DIM_DIFF_MAX",
+   "values": {}
+  },
+  "3007:7:7:FF": {
+   "name": "DIM_DIFF_MIN",
+   "values": {}
+  },
+  "3007:8:8:FF": {
+   "name": "DIM_UP_MIN",
+   "values": {}
+  },
+  "3007:9:9:FF": {
+   "name": "DIM_DOWN_MIN",
+   "values": {}
+  },
+  "3008:0:0:1F": {
+   "name": "SPRACHE",
+   "values": {
+    "0": "deutsch",
+    "1": "uk",
+    "10": "china_simple",
+    "11": "korea",
+    "12": "japan",
+    "13": "russisch",
+    "14": "franzoesisch_ca",
+    "15": "spanisch_us",
+    "16": "portugiesisch",
+    "17": "polnisch",
+    "18": "griechisch",
+    "19": "tuerkisch",
+    "2": "us",
+    "20": "ungarisch",
+    "21": "rumaenisch",
+    "22": "schwedisch",
+    "23": "slowakisch",
+    "24": "tschechisch",
+    "25": "slowenisch",
+    "26": "daenisch",
+    "27": "norwegisch",
+    "28": "finnisch",
+    "3": "spanien",
+    "4": "italien",
+    "5": "frankreich",
+    "6": "flaemisch",
+    "7": "niederlande",
+    "8": "arabisch",
+    "9": "china_traditionell"
+   }
+  },
+  "3008:0:0:20": {
+   "name": "DATUM",
+   "values": {
+    "0": "tt_mm_jj",
+    "1": "mm_tt_jj"
+   }
+  },
+  "3008:0:0:40": {
+   "name": "ZEIT",
+   "values": {
+    "0": "24h",
+    "1": "12h"
+   }
+  },
+  "3008:0:0:80": {
+   "name": "TEMPERATUR",
+   "values": {
+    "0": "grad_c",
+    "1": "grad_f"
+   }
+  },
+  "3008:10:10:FF": {
+   "name": "HUD_PIA_HELLIGKEIT",
+   "values": {
+    "0": "helligkeit"
+   }
+  },
+  "3008:11:14:FF": {
+   "name": "HUD_PIA_POSITION",
+   "values": {
+    "0": "position"
+   }
+  },
+  "3008:15:15:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:1:1:03": {
+   "name": "VERBRAUCH",
+   "values": {
+    "0": "l_100km",
+    "1": "mpg_uk",
+    "2": "mpg_us",
+    "3": "km_l"
+   }
+  },
+  "3008:1:1:0C": {
+   "name": "DRUCK",
+   "values": {
+    "0": "bar",
+    "1": "kPa",
+    "2": "psi"
+   }
+  },
+  "3008:1:1:10": {
+   "name": "WEG",
+   "values": {
+    "0": "km",
+    "1": "mls"
+   }
+  },
+  "3008:1:1:20": {
+   "name": "GESCHW_EINHEIT",
+   "values": {
+    "0": "km/h",
+    "1": "mph"
+   }
+  },
+  "3008:1:1:C0": {
+   "name": "VOLUMEN",
+   "values": {
+    "1": "liter",
+    "2": "galonen_uk",
+    "3": "galonen_us"
+   }
+  },
+  "3008:2:2:0F": {
+   "name": "KI_LETZTE_BC",
+   "values": {
+    "0": "reichweite"
+   }
+  },
+  "3008:2:2:F0": {
+   "name": "DATUM_ERWEITERT",
+   "values": {
+    "0": "tt_mm_jj",
+    "1": "mm_tt_jj",
+    "4": "jj_mm_tt_punkt",
+    "5": "jj_mm_tt_schraegstrich"
+   }
+  },
+  "3008:3:3:01": {
+   "name": "KI_PIA_ANALOG_RW_KVA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:3:3:02": {
+   "name": "KI_PIA_M_SPORT_DIGI_TACHO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:3:3:04": {
+   "name": "KI_PIA_NAVI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:3:3:08": {
+   "name": "KI_PIA_EDA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:3:3:10": {
+   "name": "KI_PIA_MVERBRAUCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:3:3:20": {
+   "name": "KI_PIA_SOC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:3:3:40": {
+   "name": "KI_PIA_LUPENENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:3:3:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:4:4:01": {
+   "name": "KI_PIA_SPA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:4:4:02": {
+   "name": "KI_PIA_REICHW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:4:4:04": {
+   "name": "KI_PIA_DVERBRAUCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:4:4:08": {
+   "name": "KI_PIA_DGESCHW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:4:4:10": {
+   "name": "KI_PIA_DISTANZ",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:4:4:20": {
+   "name": "KI_PIA_ANKUNFT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:4:4:40": {
+   "name": "KI_PIA_SPEED_LIMIT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:4:4:80": {
+   "name": "KI_PIA_DATUM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:5:5:01": {
+   "name": "HUD_PIA_BLINKER",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:5:5:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:5:5:04": {
+   "name": "HUD_PIA_M_SPORT",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:5:5:08": {
+   "name": "HUD_PIA_CC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:5:5:10": {
+   "name": "HUD_PIA_NAVI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:5:5:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:6:6:01": {
+   "name": "HUD_PIA_ENTERTAINMENT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:6:6:02": {
+   "name": "HUD_ECO_PRO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:6:6:04": {
+   "name": "HUD_PIA_FAS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:6:6:08": {
+   "name": "HUD_PIA_SPEED_LIM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:6:6:10": {
+   "name": "HUD_PIA_N_VISION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:6:6:20": {
+   "name": "HUD_PIA_IBRAKE_INFO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:6:6:40": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:6:6:80": {
+   "name": "HUD_PIA_BACKLIGHT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3008:7:7:FF": {
+   "name": "HUD_PIA_ROTATION",
+   "values": {
+    "0": "rotation"
+   }
+  },
+  "3008:8:8:0F": {
+   "name": "VERBRAUCH_ELEKTRISCH",
+   "values": {
+    "1": "kWh_100km",
+    "2": "mile_kWh",
+    "3": "km_kWh"
+   }
+  },
+  "3008:8:8:F0": {
+   "name": "DREHMOMENT",
+   "values": {
+    "1": "Nm",
+    "2": "lb_ft",
+    "3": "kgm"
+   }
+  },
+  "3008:9:9:0F": {
+   "name": "LEISTUNG",
+   "values": {
+    "1": "kW",
+    "2": "PS"
+   }
+  },
+  "3008:9:9:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:0:0:FF": {
+   "name": "CBS_ANZEIGE_SCHWELLE_WEG",
+   "values": {}
+  },
+  "3009:10:10:03": {
+   "name": "CBS_EINHEIT_BB_HINTEN",
+   "values": {
+    "1": "weg",
+    "2": "zeit",
+    "3": "weg_zeit"
+   }
+  },
+  "3009:10:10:0C": {
+   "name": "CBS_STATUS_BB_HINTEN",
+   "values": {
+    "0": "sperre",
+    "1": "anzeige",
+    "2": "erprobung"
+   }
+  },
+  "3009:10:10:10": {
+   "name": "CBS_STAT_SC_BB_HINTEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:10:10:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:11:11:03": {
+   "name": "CBS_EINHEIT_MOTOROEL",
+   "values": {
+    "1": "weg",
+    "2": "zeit",
+    "3": "weg_zeit"
+   }
+  },
+  "3009:11:11:0C": {
+   "name": "CBS_STATUS_MOTOROEL",
+   "values": {
+    "0": "sperre",
+    "1": "anzeige",
+    "2": "erprobung"
+   }
+  },
+  "3009:11:11:10": {
+   "name": "CBS_STAT_SC_MOTOROEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:11:11:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:12:19:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:1:1:FF": {
+   "name": "CBS_ANZEIGE_SCHWELLE_ZEIT",
+   "values": {}
+  },
+  "3009:20:20:FF": {
+   "name": "CBS_INT_ZEIT_FZGCHK_INTERN",
+   "values": {}
+  },
+  "3009:21:21:FF": {
+   "name": "CBS_INT_WEG_FZGCHK_INTERN",
+   "values": {}
+  },
+  "3009:22:22:03": {
+   "name": "CBS_EINHEIT_FZGCHK_INTERN",
+   "values": {
+    "1": "weg",
+    "2": "zeit",
+    "3": "weg_zeit"
+   }
+  },
+  "3009:22:22:0C": {
+   "name": "CBS_STATUS_FZGCHK_INTERN",
+   "values": {
+    "0": "sperre",
+    "1": "anzeige",
+    "2": "erprobung"
+   }
+  },
+  "3009:22:22:10": {
+   "name": "CBS_STAT_SC_FZGCHK_INTERN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:22:22:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:23:23:FF": {
+   "name": "CBS_INT_ZEIT_BREMSFL",
+   "values": {}
+  },
+  "3009:24:24:FF": {
+   "name": "CBS_INT_WEG_BREMSFL",
+   "values": {}
+  },
+  "3009:25:25:03": {
+   "name": "CBS_EINHEIT_BREMSFL",
+   "values": {
+    "1": "weg",
+    "2": "zeit",
+    "3": "weg_zeit"
+   }
+  },
+  "3009:25:25:0C": {
+   "name": "CBS_STATUS_BREMSFL",
+   "values": {
+    "0": "sperre",
+    "1": "anzeige",
+    "2": "erprobung"
+   }
+  },
+  "3009:25:25:10": {
+   "name": "CBS_STAT_SC_BREMSFL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:25:25:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:26:26:FF": {
+   "name": "CBS_INT_ZEIT_UEBERGABE",
+   "values": {}
+  },
+  "3009:27:27:FF": {
+   "name": "CBS_INT_WEG_UEBERGABE",
+   "values": {}
+  },
+  "3009:28:28:03": {
+   "name": "CBS_EINHEIT_UEBERGABE",
+   "values": {
+    "1": "weg",
+    "2": "zeit",
+    "3": "weg_zeit"
+   }
+  },
+  "3009:28:28:0C": {
+   "name": "CBS_STATUS_UEBERGABE",
+   "values": {
+    "0": "sperre",
+    "1": "anzeige",
+    "2": "erprobung"
+   }
+  },
+  "3009:28:28:10": {
+   "name": "CBS_STAT_SC_UEBERGABE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:28:28:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:29:29:FF": {
+   "name": "CBS_INT_ZEIT_EINF_KONTR",
+   "values": {}
+  },
+  "3009:2:2:FF": {
+   "name": "CBS_RES_SPERRE",
+   "values": {}
+  },
+  "3009:30:30:FF": {
+   "name": "CBS_INT_WEG_EINF_KONTR",
+   "values": {}
+  },
+  "3009:31:31:03": {
+   "name": "CBS_EINHEIT_EINF_KONTR",
+   "values": {
+    "1": "weg",
+    "2": "zeit",
+    "3": "weg_zeit"
+   }
+  },
+  "3009:31:31:0C": {
+   "name": "CBS_STATUS_EINF_KONTR",
+   "values": {
+    "0": "sperre",
+    "1": "anzeige",
+    "2": "erprobung"
+   }
+  },
+  "3009:31:31:10": {
+   "name": "CBS_STAT_SC_EINF_KONTR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:31:31:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:3:3:FF": {
+   "name": "CBS_GELB_WEG",
+   "values": {}
+  },
+  "3009:4:4:0F": {
+   "name": "CBS_GELB_HUAU",
+   "values": {}
+  },
+  "3009:4:4:F0": {
+   "name": "CBS_GELB_ZEIT",
+   "values": {}
+  },
+  "3009:5:5:0F": {
+   "name": "CBS_WEG_FAKTOR_FZGCHK_DEPEND",
+   "values": {
+    "1": "faktor_2",
+    "2": "faktor_3",
+    "3": "faktor_4",
+    "4": "faktor_5",
+    "6": "faktor_7",
+    "9": "faktor_10"
+   }
+  },
+  "3009:5:5:F0": {
+   "name": "CBS_ZEIT_FAKTOR_FZGCHK_DEPEND",
+   "values": {
+    "1": "faktor_2",
+    "2": "faktor_3",
+    "3": "faktor_4",
+    "4": "faktor_5",
+    "9": "faktor_10"
+   }
+  },
+  "3009:6:6:03": {
+   "name": "CBS_EINHEIT_FZGCHK_DEPEND",
+   "values": {
+    "1": "weg",
+    "2": "zeit",
+    "3": "weg_zeit"
+   }
+  },
+  "3009:6:6:0C": {
+   "name": "CBS_STATUS_FZGCHK_DEPEND",
+   "values": {
+    "0": "sperre",
+    "1": "anzeige",
+    "2": "erprobung"
+   }
+  },
+  "3009:6:6:10": {
+   "name": "CBS_STAT_SC_FZGCHK_DEPEND",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:6:6:60": {
+   "name": "CBS_STATUS_AU",
+   "values": {
+    "0": "sperre",
+    "1": "anzeige",
+    "2": "erprobung"
+   }
+  },
+  "3009:6:6:80": {
+   "name": "CBS_STAT_SC_AU",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:7:7:03": {
+   "name": "CBS_STATUS_HU",
+   "values": {
+    "0": "sperre",
+    "1": "anzeige",
+    "2": "erprobung"
+   }
+  },
+  "3009:7:7:04": {
+   "name": "CBS_STAT_SC_HU",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:7:7:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:8:8:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:9:9:03": {
+   "name": "CBS_EINHEIT_BB_VORNE",
+   "values": {
+    "1": "weg",
+    "2": "zeit",
+    "3": "weg_zeit"
+   }
+  },
+  "3009:9:9:0C": {
+   "name": "CBS_STATUS_BB_VORNE",
+   "values": {
+    "0": "sperre",
+    "1": "anzeige",
+    "2": "erprobung"
+   }
+  },
+  "3009:9:9:10": {
+   "name": "CBS_STAT_SC_BB_VORNE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:9:9:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300A:0:6:FF": {
+   "name": "FAHRGESTELL_NR_RDA",
+   "values": {}
+  },
+  "300B:0:3:FF": {
+   "name": "V_VEH_SPDM",
+   "values": {
+    "17856712": "geschw_x_kl"
+   }
+  },
+  "300B:10:11:FF": {
+   "name": "WARP_IMAGE_SIZE",
+   "values": {
+    "212": "wert_d4",
+    "214": "wert_d6",
+    "218": "wert_da",
+    "219": "wert_db"
+   }
+  },
+  "300B:12:12:FF": {
+   "name": "URLAUB_30F_ABSCHALTUNG",
+   "values": {
+    "0": "inaktiv",
+    "22": "22_tage"
+   }
+  },
+  "300B:13:13:01": {
+   "name": "KOMMUNIKATION_DM_CAN_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300B:13:13:02": {
+   "name": "KMT_ABFRAGE_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300B:13:13:04": {
+   "name": "HUD_TASTER_CAN_MOST",
+   "values": {
+    "0": "can",
+    "1": "most"
+   }
+  },
+  "300B:13:13:08": {
+   "name": "IST_MODUS_SCHALTER",
+   "values": {
+    "0": "fahrdynamik",
+    "1": "fahrerlebnis"
+   }
+  },
+  "300B:13:13:F0": {
+   "name": "TIMER_OFFSET_AUFSTARTZEIT",
+   "values": {
+    "0": "ohne_vorlauf",
+    "6": "mit_vorlauf"
+   }
+  },
+  "300B:14:14:FF": {
+   "name": "TACHO_DAMPING_FACTOR",
+   "values": {}
+  },
+  "300B:15:15:0F": {
+   "name": "DZM_VARIANTE_SKALA",
+   "values": {
+    "0": "endwert_7500",
+    "1": "endwert_6000"
+   }
+  },
+  "300B:15:15:F0": {
+   "name": "DZM_VARIANTE_WARNFELD",
+   "values": {
+    "0": "vwf_6500_7000",
+    "1": "vwf_5000_5400"
+   }
+  },
+  "300B:16:17:FF": {
+   "name": "TACHO_SKALA_ENDWERT",
+   "values": {
+    "160": "160_mph",
+    "260": "260_km_h",
+    "300": "300_km_h",
+    "330": "330_km_h"
+   }
+  },
+  "300B:18:18:FF": {
+   "name": "ACC_DAMPING_FACTOR",
+   "values": {}
+  },
+  "300B:19:19:FF": {
+   "name": "SPEEDO_DAMPING_FACTOR",
+   "values": {}
+  },
+  "300B:20:29:FF": {
+   "name": "SPEEDO_EFF_X",
+   "values": {
+    "11263294134028860": "km_h",
+    "140741783420930620": "km_h"
+   }
+  },
+  "300B:30:39:FF": {
+   "name": "SPEEDO_ANZ_Y",
+   "values": {
+    "14078086851463750": "km_h",
+    "143556576138365510": "km_h"
+   }
+  },
+  "300B:40:40:FF": {
+   "name": "RW_SCHWELLE_UNTEN",
+   "values": {
+    "36": "600km",
+    "44": "800km"
+   }
+  },
+  "300B:41:41:FF": {
+   "name": "RW_SCHWELLE_OBEN",
+   "values": {}
+  },
+  "300B:42:46:FF": {
+   "name": "OEL_KENNLINIE_X",
+   "values": {
+    "423231136710": "kl_x_benzin"
+   }
+  },
+  "300B:47:51:FF": {
+   "name": "OEL_KENNLINIE_Y",
+   "values": {
+    "842150500": "kl_y"
+   }
+  },
+  "300B:4:7:FF": {
+   "name": "BLINKER_VOLUME",
+   "values": {
+    "2158018815": "volume_y_kl"
+   }
+  },
+  "300B:52:52:0F": {
+   "name": "HUD_CC_TEXT_DELAY",
+   "values": {}
+  },
+  "300B:52:52:F0": {
+   "name": "HUD_CC_MAX_DISPLAY_TIME",
+   "values": {}
+  },
+  "300B:53:53:FF": {
+   "name": "MOTORLEISTUNG_HYSTERESE",
+   "values": {}
+  },
+  "300B:54:54:FF": {
+   "name": "T_WELCOME_DELAY",
+   "values": {}
+  },
+  "300B:55:55:FF": {
+   "name": "T_FADING_BMW",
+   "values": {}
+  },
+  "300B:56:56:FF": {
+   "name": "T_CLOUD_GROW",
+   "values": {}
+  },
+  "300B:57:57:FF": {
+   "name": "T_CLOUD_DELAY",
+   "values": {}
+  },
+  "300B:58:58:FF": {
+   "name": "T_TUBENSCHLIESSUNG_FPK",
+   "values": {}
+  },
+  "300B:59:59:FF": {
+   "name": "T_BACKGROUND",
+   "values": {}
+  },
+  "300B:60:60:FF": {
+   "name": "T_POINTERCAP",
+   "values": {}
+  },
+  "300B:61:61:FF": {
+   "name": "T_POINTER",
+   "values": {}
+  },
+  "300B:62:62:FF": {
+   "name": "T_UNIT_SCALE",
+   "values": {}
+  },
+  "300B:63:63:FF": {
+   "name": "T_TUBEN",
+   "values": {}
+  },
+  "300B:64:64:FF": {
+   "name": "T_BALKEN",
+   "values": {}
+  },
+  "300B:65:65:FF": {
+   "name": "T_ANZEIGE",
+   "values": {}
+  },
+  "300B:66:66:FF": {
+   "name": "T_DAY_NIGHT",
+   "values": {}
+  },
+  "300B:67:67:FF": {
+   "name": "T_VERSCHIEBEN",
+   "values": {}
+  },
+  "300B:68:68:01": {
+   "name": "SLOWAKISCH",
+   "values": {
+    "0": "nicht_vorhanden",
+    "1": "vorhanden"
+   }
+  },
+  "300B:68:68:02": {
+   "name": "TSCHECHISCH",
+   "values": {
+    "0": "nicht_vorhanden",
+    "1": "vorhanden"
+   }
+  },
+  "300B:68:68:04": {
+   "name": "SLOWENISCH",
+   "values": {
+    "0": "nicht_vorhanden",
+    "1": "vorhanden"
+   }
+  },
+  "300B:68:68:08": {
+   "name": "DAENISCH",
+   "values": {
+    "0": "nicht_vorhanden",
+    "1": "vorhanden"
+   }
+  },
+  "300B:68:68:10": {
+   "name": "NORWEGISCH",
+   "values": {
+    "0": "nicht_vorhanden",
+    "1": "vorhanden"
+   }
+  },
+  "300B:68:68:20": {
+   "name": "FINNISCH",
+   "values": {
+    "0": "nicht_vorhanden",
+    "1": "vorhanden"
+   }
+  },
+  "300B:68:68:40": {
+   "name": "DDT_CAN_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300B:68:68:80": {
+   "name": "AUTARKES_ENTERTAINMENT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300B:69:69:FF": {
+   "name": "DISP_TIMEOUT_LADESCREEN",
+   "values": {}
+  },
+  "300B:70:70:0F": {
+   "name": "DISP_TIMEOUT_UNPLUG",
+   "values": {}
+  },
+  "300B:70:70:F0": {
+   "name": "READY_V_ANZ",
+   "values": {}
+  },
+  "300B:71:71:0F": {
+   "name": "SOC_DPF",
+   "values": {}
+  },
+  "300B:71:71:F0": {
+   "name": "LADE_AKTIV_BALKEN_ZEIT",
+   "values": {}
+  },
+  "300B:72:72:FF": {
+   "name": "KLIMA_SYMBOL_ZYKLUSZEIT",
+   "values": {}
+  },
+  "300B:73:73:FF": {
+   "name": "KLIMA_SYMBOL_PULSDAUER",
+   "values": {}
+  },
+  "300B:74:74:0F": {
+   "name": "TIMER_COUNT_ANZAHL",
+   "values": {}
+  },
+  "300B:74:74:10": {
+   "name": "HUD_SIDEBAND_ENABLE",
+   "values": {
+    "0": "l6_architektur",
+    "1": "sideband_architektur"
+   }
+  },
+  "300B:74:74:20": {
+   "name": "HUD_SMEMORY_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300B:74:74:40": {
+   "name": "SEGEL_FASTA_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300B:74:74:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300B:75:75:FF": {
+   "name": "WARNING_INDICATION_TIMEOUT_ENABLE",
+   "values": {
+    "0": "inaktiv",
+    "6": "30_min"
+   }
+  },
+  "300B:76:76:FF": {
+   "name": "T_AUSFADEN",
+   "values": {}
+  },
+  "300B:77:77:FF": {
+   "name": "KOMPASS_DPF",
+   "values": {}
+  },
+  "300B:78:78:0F": {
+   "name": "KOMPASS_HYS",
+   "values": {}
+  },
+  "300B:78:78:70": {
+   "name": "TIMER_VARIANTE",
+   "values": {
+    "0": "timer_1_2",
+    "1": "timer_laden",
+    "2": "timer_woche"
+   }
+  },
+  "300B:78:78:80": {
+   "name": "TIMER_AKTIVIERUNG_VERRIEGELUNG",
+   "values": {
+    "0": "beide_aktiv",
+    "1": "ein_aktiv"
+   }
+  },
+  "300B:79:79:FF": {
+   "name": "CC_SOC_WARNUNG",
+   "values": {
+    "10": "10_km",
+    "8": "8_mls"
+   }
+  },
+  "300B:80:80:FF": {
+   "name": "T_FADING_BMW_I",
+   "values": {}
+  },
+  "300B:81:81:FF": {
+   "name": "BC_RW_SEGMENTLAENGE_GESCHW",
+   "values": {}
+  },
+  "300B:82:91:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300B:8:9:FF": {
+   "name": "WARP_CENTER",
+   "values": {}
+  },
+  "300C:0:0:0F": {
+   "name": "FDS_MENUE_TEXT_1",
+   "values": {
+    "0": "kein_menue",
+    "1": "menue_1",
+    "2": "menue_4"
+   }
+  },
+  "300C:0:0:F0": {
+   "name": "FDS_MENUE_SIGNAL_1",
+   "values": {
+    "0": "kein_menue",
+    "4": "menue_4",
+    "5": "menue_1"
+   }
+  },
+  "300C:10:10:0F": {
+   "name": "FDS_STATUS_TEXT_4",
+   "values": {
+    "9": "status"
+   }
+  },
+  "300C:10:10:F0": {
+   "name": "FDS_STATUS_SIGNAL_4",
+   "values": {
+    "1": "status"
+   }
+  },
+  "300C:11:11:0F": {
+   "name": "FDS_STATUS_TEXT_5",
+   "values": {
+    "10": "status"
+   }
+  },
+  "300C:11:11:F0": {
+   "name": "FDS_STATUS_SIGNAL_5",
+   "values": {
+    "6": "status"
+   }
+  },
+  "300C:12:12:0F": {
+   "name": "FDS_STATUS_TEXT_6",
+   "values": {
+    "15": "status_vor_0911",
+    "6": "status_ab_0911"
+   }
+  },
+  "300C:12:12:F0": {
+   "name": "FDS_STATUS_SIGNAL_6",
+   "values": {
+    "15": "status_vor_0911",
+    "7": "status_ab_0911"
+   }
+  },
+  "300C:13:13:0F": {
+   "name": "FDS_STATUS_TEXT_7",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:13:13:F0": {
+   "name": "FDS_STATUS_SIGNAL_7",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:14:14:0F": {
+   "name": "FDS_STATUS_TEXT_8",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:14:14:F0": {
+   "name": "FDS_STATUS_SIGNAL_8",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:15:15:0F": {
+   "name": "FDS_STATUS_TEXT_9",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:15:15:F0": {
+   "name": "FDS_STATUS_SIGNAL_9",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:16:16:0F": {
+   "name": "FDS_STATUS_TEXT_10",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:16:16:F0": {
+   "name": "FDS_STATUS_SIGNAL_10",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:17:17:0F": {
+   "name": "FDS_STATUS_TEXT_11",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:17:17:F0": {
+   "name": "FDS_STATUS_SIGNAL_11",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:18:18:0F": {
+   "name": "FDS_STATUS_TEXT_12",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:18:18:F0": {
+   "name": "FDS_STATUS_SIGNAL_12",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:19:19:0F": {
+   "name": "FDS_STATUS_TEXT_13",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:19:19:F0": {
+   "name": "FDS_STATUS_SIGNAL_13",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:1:1:0F": {
+   "name": "FDS_MENUE_TEXT_2",
+   "values": {
+    "0": "kein_menue",
+    "2": "menue_1",
+    "4": "menue_4"
+   }
+  },
+  "300C:1:1:F0": {
+   "name": "FDS_MENUE_SIGNAL_2",
+   "values": {
+    "0": "kein_menue",
+    "3": "menue_4",
+    "4": "menue_1"
+   }
+  },
+  "300C:20:20:0F": {
+   "name": "FDS_STATUS_TEXT_14",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:20:20:F0": {
+   "name": "FDS_STATUS_SIGNAL_14",
+   "values": {
+    "15": "status"
+   }
+  },
+  "300C:21:21:01": {
+   "name": "FDS_GELB",
+   "values": {
+    "0": "weiss_orange",
+    "1": "gelb"
+   }
+  },
+  "300C:21:21:0E": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:21:21:F0": {
+   "name": "ECO_TIPP_GWS_SPORT_DELAY",
+   "values": {}
+  },
+  "300C:22:26:FF": {
+   "name": "ECO_MEHRVERBRAUCH_REF",
+   "values": {}
+  },
+  "300C:27:27:0F": {
+   "name": "ECO_PRW_FAKTOR",
+   "values": {}
+  },
+  "300C:27:27:F0": {
+   "name": "ECO_VERZOEGERUNG",
+   "values": {}
+  },
+  "300C:28:28:0F": {
+   "name": "ECO_VERZOEGERUNG_TIME",
+   "values": {}
+  },
+  "300C:28:28:F0": {
+   "name": "ECO_SPA_TIME",
+   "values": {}
+  },
+  "300C:29:29:1F": {
+   "name": "ECO_GESCHWINDIGKEIT_HYS",
+   "values": {}
+  },
+  "300C:29:29:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:2:2:0F": {
+   "name": "FDS_MENUE_TEXT_3",
+   "values": {
+    "0": "kein_menue",
+    "3": "menue_1_vor_0911",
+    "4": "menue_1",
+    "6": "menue_4"
+   }
+  },
+  "300C:2:2:F0": {
+   "name": "FDS_MENUE_SIGNAL_3",
+   "values": {
+    "0": "kein_menue",
+    "3": "menue_1",
+    "7": "menue_4"
+   }
+  },
+  "300C:30:30:01": {
+   "name": "ECO_RW_DIGITAL_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300C:30:30:02": {
+   "name": "ECO_RW_ANALOG_ENABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300C:30:30:0C": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:30:30:F0": {
+   "name": "ECO_TIMER_UNTER_VERZ",
+   "values": {}
+  },
+  "300C:31:31:0F": {
+   "name": "EDA_ZEIGER_DPF",
+   "values": {}
+  },
+  "300C:31:31:10": {
+   "name": "EDA_AUSTRITT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300C:31:31:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:32:32:01": {
+   "name": "EDA_SYMBOL_LAST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300C:32:32:02": {
+   "name": "EDA_SYMBOL_GESCHW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300C:32:32:04": {
+   "name": "EDA_SYMBOL_G_PROG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300C:32:32:08": {
+   "name": "EDA_SYMBOL_GANG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300C:32:32:10": {
+   "name": "EDA_SYMBOL_KUPPLUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300C:32:32:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:33:33:FF": {
+   "name": "CHARAKTER_FAKTOR_DEFAULT",
+   "values": {}
+  },
+  "300C:34:34:FF": {
+   "name": "CHARAKTER_SCHWELLE",
+   "values": {}
+  },
+  "300C:35:35:FF": {
+   "name": "CHARAKTER_DPF_1",
+   "values": {}
+  },
+  "300C:36:36:FF": {
+   "name": "CHARAKTER_DPF_2",
+   "values": {}
+  },
+  "300C:37:37:FF": {
+   "name": "CHARAKTER_FILTER_MIN",
+   "values": {}
+  },
+  "300C:38:38:FF": {
+   "name": "CHARAKTER_FILTER_MAX",
+   "values": {}
+  },
+  "300C:39:39:1F": {
+   "name": "CHARAKTER_V_MIN_200",
+   "values": {}
+  },
+  "300C:39:39:20": {
+   "name": "CHARAKTER_FDS",
+   "values": {}
+  },
+  "300C:39:39:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:3:3:0F": {
+   "name": "FDS_MENUE_TEXT_4",
+   "values": {
+    "15": "kein_menue",
+    "4": "menue_1_vor_0911",
+    "5": "menue_2",
+    "6": "menue_3"
+   }
+  },
+  "300C:3:3:F0": {
+   "name": "FDS_MENUE_SIGNAL_4",
+   "values": {
+    "15": "kein_menue",
+    "2": "menue_2",
+    "7": "menue_3"
+   }
+  },
+  "300C:40:50:FF": {
+   "name": "CHARAKTER_GENERISCH",
+   "values": {}
+  },
+  "300C:4:4:0F": {
+   "name": "FDS_MENUE_TEXT_5",
+   "values": {
+    "15": "kein_menue",
+    "6": "menue_5"
+   }
+  },
+  "300C:4:4:F0": {
+   "name": "FDS_MENUE_SIGNAL_5",
+   "values": {
+    "15": "kein_menue",
+    "7": "menue_5"
+   }
+  },
+  "300C:51:51:FF": {
+   "name": "FDS_MENUE",
+   "values": {
+    "0": "kein_menue",
+    "1": "menue_1",
+    "2": "menue_2",
+    "3": "menue_3",
+    "4": "menue_4",
+    "5": "menue_5"
+   }
+  },
+  "300C:52:52:FF": {
+   "name": "CHARAKTER_NEIGUNG_MAX",
+   "values": {}
+  },
+  "300C:53:53:FF": {
+   "name": "ECO_LN_TOL",
+   "values": {}
+  },
+  "300C:54:54:FF": {
+   "name": "CHARAKTER_K_LASTPUNKT_ANHEBUNG",
+   "values": {}
+  },
+  "300C:55:55:FF": {
+   "name": "CHARAKTER_K_ASSIST",
+   "values": {}
+  },
+  "300C:56:56:FF": {
+   "name": "CHARAKTER_FAKTOR_DEFAULT_ETA_VM",
+   "values": {}
+  },
+  "300C:57:57:FF": {
+   "name": "CHARAKTER_FAKTOR_DEFAULT_ETA_EV",
+   "values": {}
+  },
+  "300C:58:68:FF": {
+   "name": "CHARAKTER_GENERISCH_ETA_EM",
+   "values": {}
+  },
+  "300C:5:5:0F": {
+   "name": "FDS_MENUE_TEXT_6",
+   "values": {
+    "15": "kein_menue"
+   }
+  },
+  "300C:5:5:F0": {
+   "name": "FDS_MENUE_SIGNAL_6",
+   "values": {
+    "15": "kein_menue"
+   }
+  },
+  "300C:69:79:FF": {
+   "name": "CHARAKTER_GENERISCH_ETA_VM",
+   "values": {}
+  },
+  "300C:6:6:0F": {
+   "name": "FDS_MENUE_TEXT_7",
+   "values": {
+    "15": "kein_menue"
+   }
+  },
+  "300C:6:6:F0": {
+   "name": "FDS_MENUE_SIGNAL_7",
+   "values": {
+    "15": "kein_menue"
+   }
+  },
+  "300C:7:7:0F": {
+   "name": "FDS_STATUS_TEXT_1",
+   "values": {
+    "1": "status"
+   }
+  },
+  "300C:7:7:F0": {
+   "name": "FDS_STATUS_SIGNAL_1",
+   "values": {
+    "5": "status"
+   }
+  },
+  "300C:80:80:0F": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:80:80:F0": {
+   "name": "BC_RW_V_LIM_LO",
+   "values": {}
+  },
+  "300C:81:81:FF": {
+   "name": "BC_RW_INIT_DGESCHWINDIGKEIT",
+   "values": {}
+  },
+  "300C:82:82:FF": {
+   "name": "BC_RW_DPF_ELEKTRISCH",
+   "values": {}
+  },
+  "300C:83:83:FF": {
+   "name": "BC_RW_DAEMPFUNG_GESCHW",
+   "values": {}
+  },
+  "300C:84:84:FF": {
+   "name": "BC_RW_SOC_SICHERHEITS_SCHWELLE",
+   "values": {}
+  },
+  "300C:85:85:FF": {
+   "name": "BC_RW_SKALIERUNG",
+   "values": {}
+  },
+  "300C:86:87:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:8:8:0F": {
+   "name": "FDS_STATUS_TEXT_2",
+   "values": {
+    "2": "status"
+   }
+  },
+  "300C:8:8:F0": {
+   "name": "FDS_STATUS_SIGNAL_2",
+   "values": {
+    "4": "status"
+   }
+  },
+  "300C:9:9:0F": {
+   "name": "FDS_STATUS_TEXT_3",
+   "values": {
+    "4": "status_vor_0911",
+    "5": "status_ab_0911"
+   }
+  },
+  "300C:9:9:F0": {
+   "name": "FDS_STATUS_SIGNAL_3",
+   "values": {
+    "2": "status"
+   }
+  },
+  "3100:0:127:FF": {
+   "name": "WARPING_BLOCK_1",
+   "values": {
+    "2013407578543827888187549897551808188043478968753220356939198661422288897655816060293810393794653457043310802382520025878032096561944626416664341065083235866359256647990751914476018235248397885391129911587206628951238731574714700112248282951753111619611439566319158858992774274234797856492405230182749767359": "5er_GT_RL",
+    "2013407578543827888187549897551808188043478968753220357082463093438980754132731013043768240210260610625927098426401287355826660471636672331873500447173403617299516468222475477146116139982875774194446768010248701186384479050100635492282071350741719732067498227857681307869692483302399468267939409401823821583": "5er_LL",
+    "2013407578543827888187549897551808188043478968753220357082463107095074312670672566359304707608391082668535583282598164677196782501452272606452956284309256024125265771381603030897720036291454946573333681369738141267430558483296664044488577038823311879052218365229625687537121127965650922453838538755253405823": "5er_RL",
+    "2013407578543827888187549897551808188043478968753220357096782552226265014003911181668373893154294966434787532032998587933944058014300610875004408623982459920931471358884415209726506162217641553947015126174813280082537223989386743629516530419186119919539121366742562053230729627212007958946801427042106736767": "F12_RL",
+    "2013407578543827888187549897551808188043478968753220357096782552226265014003911181668373893154678685411126549596212830472956810820713255242015546857757728560677179487666735526616242946026114632694841248784535878931948301040412038286658673894484941198699383814496881146701658107360506549480694291104468895439": "F12_LL",
+    "2013407578543827888187549897551808188043478968753220357118247746285309205457795548864808296610450507630009715072467681055546106228418901129934668283517752181127060000838879253385416480052588614396847263938783143866274867783715344818586194795819756505240371154949517236678307321253164229380258148624746610286": "5er_GT_LL",
+    "2013407578543827888187549897551808188043478968753220357125414464198165946050735250951058017148757766223156078512319593522897674996160562874682011089818800454895595142755345482397446325959386413239539356776319800982155172034923162808932212743356077509420908624837735767661919948572757033438359027063130817935": "7er_RL",
+    "2013407578543827888187549897551808188043478968753220357139740908077305398079019940472566743727187240360292282841673383151381684284249336645452942765991209200152558052479587886429713044141884891936297427978645386550749002857767851803134861599626949165508342468066567108707061278181590717146546415158998926031": "7er_LL",
+    "2013407578543827888187549897551808188043478968753220357254268556124938929009790294699700334594202330837788757820968044264021809577046711093454867066393307876585729417694521267377929306693736181049690962648020556069154447695474715487976997309141730022404723643046698770725496893164214647101430832183256548927": "5er_GT_RL_rgr",
+    "2013407578543827888187549897551808188043478968753220357254268556138274957875550003247860038174913551373492546679486628711942554942745973287544209889493744918260003630414612826972889079248986137131347653390892613525305406173665341172231123130060898680293231918026516623189407234877152862132368239673466945471": "5er_GT_LL_rgr",
+    "2013407578543827888187549897551808188043478968753220357254296517029844150908159542453256144555252482408321946649533215832888259093086483380378556947781814576928034340629384248548002742967483294606695324311469771705773366061783619323097840355854544110281386898998704370490426031595330998207549990937045696271": "5er_LL_rgr",
+    "2013407578543827888187549897551808188043478968753220357254296523824550858012731047740625119299856577052227436545751138733785942100826224466268038731942028928269173335707999132281513880424828076917688897544138945977456298421121223925001177144162391481425238160663165651119259933259733808685894982636945932847": "7er_LL_rgr",
+    "2013407578543827888187549897551808188043478968753220357254296523831218872445610902014704971091167178145134616212095145931708114296737356744326997379817651847155567033090239026744118966612850277932808301124421599418749127903752936065412645150131263112139615726816980457559982874096091396774478501878514517391": "7er_RL_rgr",
+    "2013407578543827888187549897551808188043478968753220357254296530685937709446101095768792611953382955735143374639740197966491254041886972852511383124226607774438315770528808195294058781109982956461600307211451954450096017024879473322949750454789764781545765630509511288235201508291361783446089395946770598000": "5er_RL_rgr"
+   }
+  },
+  "3101:0:127:FF": {
+   "name": "WARPING_BLOCK_2",
+   "values": {
+    "106751397538888089448242433383064946193499490318887580878929861138965862795210495612348874360045695206609354832800224494743980940824870991174867334496195513793171007617151573279182860030732663922132751964064286355557347727157539324018221231972859214220359175650788149978010556411436881520140514331423260263427": "5er_GT_RL_rgr",
+    "146756891934602324467660395479451426746605658666317889291329867475627890340416929928519970100927509637980541249742919770608855954830994009640992643155031299484744534171448901644632260488544573738100062586810332408304969775305787052740037763969824657875542692366016328436217374839727080985719206995276157885183": "5er_GT_LL",
+    "158706367684202118623455193203695716808611545820622325372380236114763878495102877130358072868678160440803599886579808928986235282871540433950678232707665284736943427781945056435253735363193168460652070398425129818685223241553708920565383218518583885079987175139213222876212641490960243625667160610280713484545": "7er_LL_rgr",
+    "166420201718452457438452312265080010065794446903953666121890572659258887794290197701648811524789535941552669581855339811594812499160641601698875407366165881444573246309277019360293606493648924384970951887772020318072118291770133855293089771941114527390684761208208133617867679827332576414256483912529505953024": "5er_LL_rgr",
+    "178377208876510305228441217134535684434672854172535112465330309173424962987042266951783000099748874866430751557807131339284989471872232927191307598301732464542660482789342886567283152421426771813170040066464651873729669033151125988642080060272409739219930582194011649958912803361177151165611827068999036835843": "7er_RL_rgr",
+    "24596523650701895585560503595724187834336578993352052875062408727589758007694510690341837247770557136243287040732300351187912544954245779254882703472586457565754201556670685837249794375282268393323138767296206131934883152891536869802011137994380379930252574698352989341160905826218552299546495035532963238403": "5er_RL_rgr",
+    "32307433178074289912436995032661081729628943048934012457194405813110270288629334826229441798146814303878355932300521952480949762006735199024236599958405865322887783816834047954302804730939069275054430071982852023325577421901911684885579077925523716833259846618540951415798341827638990174006806692299047649281": "7er_LL",
+    "33718737841540600034042322264592824056439090721555200540150667812479894345167660309317167196316025466198640401865325223991697180270496282440461910156946224588203217999765135630640790415221809093196989025124297713924945201884283994743029994101621391277723874571822201021291894916050145945919004881457169512451": "5er_GT_RL",
+    "35104328138925140772380787290417397196688107710515060972455739137076854959389816949640389190464685821553432060619981876908045621683570387031473096982649835312468897515041328662572287632131474443839343141462709327789774875285837120707740408781276469989003067795882014198946521604688313646017232838924957608192": "5er_LL",
+    "39339101722757390510021043458139585508793912221224253195039746769092091440789261232271674687957492841925547010873945902938191702993743539350422599164910542610865598240457455623678201097223422291907149132464402613009368151796263009435637568182549479998727617075935195726774785408438075477919833509636664683523": "F12_LL",
+    "56189731967378198230400167914925750406015966108313320754800259170068439175345813993308009153423839061342097472411435516813580140309234204925587130613704457455539351330964613318342555605192054229966269294743274160855239581769187173629154707688571355651868686729731654931897549544473087764211826349827770246403": "7er_RL",
+    "68815018615908385078645177708162420485506418479583239196109489115842839927453834887391088535518752174023497125509854815980900306134646208876102062875563420432674797748314544441669704078898010142227425084935021627619295822122942070930269360718636483943398012589309211488780090203066050575974599871030306508288": "F12_RL",
+    "72347911117977727343125007445812172603658596545482501775820088872481414695096408238300367258216652660108776506319710422850901323797676209472202537977981075695859501460963592404116567628806065792701610884985003603322784363058330708708988594734001296670895766569389475244193390734489648817286855596734239708931": "5er_RL",
+    "91284813279697840132045393384376257561086703525825516812145137069651468255620868848430888847065585958810922771646747222477183455278534731207568619018055980289567264803687739839246158302816969750629264583173843239552418345882704291893821083014038467059331053897526103608540641936795728986318022387565604097024": "5er_GT_LL_rgr"
+   }
+  },
+  "3102:0:127:FF": {
+   "name": "WARPING_BLOCK_3",
+   "values": {
+    "10772024000903906818387116013072648137236236766899544532606408958350508985088071467522256233105984396643829810159040168516021085014382921599341447450067078642212446886847162984689933544810828323475539736755091639193062127899638291453953834454923565454386340158587875427754316748818045229607779434343394561911": "7er_RL",
+    "111713925622857398654695230503646335345659910510860786545179651529346891025987815991839024449758115056352236691567040215440398007351948781845927530380424163980398885541193300032563555516660630872416209438684403449137176877485148339760992562626372713978142364167385782733841488495867266954203281034593186221905": "5er_GT_LL",
+    "112479246674961433887813862826403521862718607518985650422960494432260554658619400538142337240505796595461330249907723773815769905002033665407139779311857633143784518319142798510741309834904383340923811566004059016093813874702996097247991182066914840453288049817974322192712171794287701061234725410977658155103": "5er_LL_rgr",
+    "123007144165854229777124736299760309325544687455646639156492375287416770652206012977391153815329001004896850116426663461331594293440473676489283745676958243371035369370415189696744282572494035548645643510762725379016852118852510963668009909959642249466606905851266034315154022864574222499308498999690492317495": "5er_GT_RL",
+    "123199133744339362377470626579908692548311120309830898277856764095497073804665582613078860457865980334064921790801789873180492980505445742562858671789720263605875713879458304436046803649176026643419675593901905284282224518454111217272899125540733649043554361129549228398949066566019350026567881923063066116003": "5er_LL",
+    "123245766468126570117706155175652267186273608513454498734412864543307744556251006497653907553229320855629879370249409819820002691431423276763772374710736438030387144647537532168540616086849120239258432671805909501387396010215739629652739343032849576531178212173631619497688798241862792721011054073767140687793": "F12_RL",
+    "134432006928879332764851988684227085435061388013324582523300318933977726053468317306961317921171154148574869565998322700119961489389467268253485238623580151382075336795346690215926258939794177839264659000885220904655049561127732799388723905832999880432165422110412686316536626644182155907014990707763735302051": "F12_LL",
+    "145546879552144549822113611753934372165486542159788349977310929248444989981882750432618230557361108532945894074031343494368345549765615662240192639579508898697004371981524473061145121176708281672804208532740507246581785131540521915636680161605559390014901417113397464300717107281051257002162307460510712442722": "7er_LL",
+    "146246375142254857581884573083837278903532093435162084092797032934327329800135376005034327086594057957676812203059843705875673238352734647792920982664306992397876875299773438923996379010076914435987484257354399043258017193518969777673815569579834624773806395946382160757422081891762306448274672049707584389234": "5er_RL_rgr",
+    "156966262211632786071541336256476469714992660971026417300258750055176755738335280086154847243262263904355365879329216358890414390143516936897658358380730687599128997272440481382641110774763768820968199701794921030124335115667934230749980476439459707725572446902833005452869408449006717283362146218641207660470": "5er_RL",
+    "32937505546582153939127245871800777897300850204738841160249664307235304072040660092060846471532064159059961158264222150935306503404942554019008415197985435480171719841702156343193465682095461889984865766605706313595931382393787011776460137508955380084321447552141038694171048005120758179634759826720002098": "7er_RL_rgr",
+    "56038002238371701779561059071111772156571778726993277653993606549722962866234906057007894330484551145581911591258026965436702895190173094338161081387093742688483841244904333743366262160637869069624408942869896621612707720135872653838034588849431334672546955645146335118315286925528771348871115105360834330633": "5er_GT_LL_rgr",
+    "89695407550508931064232586375699465907131930994400765094065361724502030140638933230771484041306179481689713458701806179984654208761486318787175598937093895966422142382258510683317538833633807533087496119954422437047707759389019551455040167965828406031767964171300977545856399491142587398821128643137081839597": "5er_GT_RL_rgr",
+    "89873689853011462373645339712636697898070226870828098601523732074851903207259881706126134295504683687737120513208642430311885234713210727854871511207025677178214729645425280496876598552675181467254229419684356641649715360451684264142780909792333446264765591565651138767341979119824419017747684437294766452767": "7er_LL_rgr"
+   }
+  },
+  "3103:0:127:FF": {
+   "name": "WARPING_BLOCK_4",
+   "values": {
+    "1317773430449329389834253498470465941712864755849514455408541661657922574883678217270817093194065725652557938428990140208903108514800051437559682039417323021315134425246243886741345887171844779616963922702478797667163961494288607328175821439839616994312278103846419295760440496986328191847304749330857985216": "5er_LL_rgr",
+    "1359647989314086923035042862470619027227754934636257881009847773794070796776646064918144080127696596924911120704581434422447645598942310224148414964969356925042986463027964269517836474055849891610109764016319322975753884470604193047402266417469126701747447058469046095515637385134255933713697460993565918415": "5er_LL",
+    "179155981847051996497516069533225715929080720992660070374042860876706959191580588459841294336224038350193692673557522504613089066695711413401633247229980450643320315602644694796870194568781370890442314435539835328071169738224017601608378473573167637055665443598255872573744449881279588884149676523225847102528": "5er_RL_rgr",
+    "179197856405916754030678791264368837768187980773462226954179943506759945893905610684274157584168507996146210695054370570941505292005561413571004314423334643898746802934474980954232609449053693527230971618449016054233617028933277014300247400973831809318707427177009548458793121605115379345896688724731502984271": "5er_RL",
+    "262412400298361062678162191783732020611886501219665531644484999317427219826143964094676128794372945560323592800070371856156188168389385093892733091778873274340503203594890855523823256035380072176689068227492276017506890681900201735376555690746240145360056382529091354636024932509028949592646441862755319407": "F12_LL",
+    "307683667803213137185234918055433459233677904975412579906975384987068435438842335348231491040231025812326108770823155388992907482127291067852701468005766067084353211644838378303264001977275132440458045657645267700330671296131477271463684103113451270984752574608702187785700931334508516123341177397725953808": "7er_RL_rgr",
+    "349558218819367634244439331357548250668377750304161869771710899395653588831173379489595411067811432594408897779478026824167751702217901367786188907506395738338491381278392859539127581063270314446382414164590399466002593440226383262652715240421169949596038379125125458913844109118005826425493323186677546831": "7er_RL",
+    "351508377688927539931736679849445198711397078271676428304060994408709222623621093380482011638934658104568465463628418184463962469201508365490233505636786948289553057258046783709394885704702359753947836363098923469415201532124891294944171386893474948255029000955878213576553263093175974271381481791551438944": "7er_LL_rgr",
+    "392761401347167546557785579668890139748398170419422193597763803276404900995533384298671288323391191436464896170478331711615632419421554756969940964013981181049377062657131941864622195830468353504845637032479596979314119714062927188851805097334804347394931409379810917506238849354919428483464690642474041327": "5er_GT_RL",
+    "393382928706359530942473311525810013249405436547086030147617219223947935283688803515663446415271046446229589141192632696630371902722662070108250688486479104820452319371686444876612453409423189267709571515710567893225608305243546791224718491458176980080649682747933504929716835959480973047315227960050253887": "7er_LL",
+    "395118757053704903745924695166401993119291573884825147631802004722228440814967824442170565759175157344506621920335271306582135241878301941718964755958858634070700523379738306495885572323936407938693828816924548986790170922964217976457751076068809360480734991741376791168198264827698996194213149195164516912": "5er_GT_LL_rgr",
+    "436993315915907760969833257471211883980510144303550052479699840798408875777587874214783526855666164871022088935108849051959812561146285417512730263005101751603529609662193572599973614278284524454447681356329029182851044409727331005155151912184671842388594982016917044451043876245455496608281975131507589855": "5er_GT_LL",
+    "438643444500667204712051940579213931088860740527444695019138655063769401348937890555564028351503207823541070623803904520298502149791711812954714012043029464433820386795338583859469201919630785385199282123661194122796744639947982518062950408052409453390919711647216433375004482819620769507278187787964317456": "5er_GT_RL_rgr",
+    "525746373903432674853618171562092784577357930861282181193480927068179463075174563245174412972174440214747893019114652525713941360631159940758140898126260601646186749243003035769215191073312110260435565410080472615339708494867752716713239148024139513098298894374880277581389310302234116048719111330268906159": "F12_RL"
+   }
+  },
+  "3104:0:127:FF": {
+   "name": "WARPING_BLOCK_5",
+   "values": {
+    "102522282190552399628507956569598088519439652296247896529433362549095721723841019049769733909033915425054789101809131638931178406009125639058022309421391722494378977372250114301488916652908602410949086372859040280541262460709858646424955250037464386938104266757992706403705536800373574377547144511486681926142": "7er_LL",
+    "104639079715355426400444638756845702194902706817665455586111435514462240585520659580470731457108492915344141360859678374812884407525635142207154020774300873271938747229941500953101465989227818569531539191677963179848579221555417614214134601343527627315578202942359751421989416965946803309809652145810260935429": "5er_LL_rgr",
+    "105318158464761173239604784890208544612438028823592003807628863245214239328306432593914770503832318320092067993454423211221960008998850901301740755087872652616200777653678795154186092605700729112555773305365127195674742181335072705904423265928608723921209552138862176631511428000658250897880437831190832006135": "5er_RL_rgr",
+    "110243487409342266820747033300814091408976175842063983363920614150308634865178947899277420059226892298674299820403309072682318204762972717852311197944931034123915468856356542156627049371152164146812705296651506181851169047307621951090903271341607072861816086329415321795946460186091326749643554368991919069436": "7er_RL",
+    "153092691063436850310074984572789286381855851245295697721475485352582550305779412739935281359087983188932447041140913063706964889862304153662048705746009939126184593458508957616676041443445668152838211496129640196936522263297415731040566783831582784231764301573346648749963004163592272240360363272652969740037": "5er_LL",
+    "153771769812842597149235279444147102483725357155403741929719885315664343505385093014696270318790884334760773289602924158440203117264143086830312730075209608065952869761453401647359824326314461268964102245496070969240254101463795904433812333746477268928336905426807985469400916894302452053112286628113681483767": "5er_RL",
+    "154491652323990815148576170510347203029881876382998364119873452892505882402312227923177093143590145083514715389463133777502778159490095663585216555273548688585255687256207547882273234978784957776677327004070994562918818184238666254205945920818385878707453094275627116677243305889691278889501975673465742561794": "F12_RL",
+    "155182218650859037244945726604324722742912192789450093304594462240822853700072267837811018330956291870991441903463970395898808323171777947648003002668509443693794163475372856908798021059589534658650537570872408847390766709445342676451340836247583364400804252425090700473532145346877181282322395897248078631674": "F12_LL",
+    "22464650752209761746740116856833123024941417090834306122923386661386520340194328706081843986562429143030109091942338308439802194227696141069977133654476407116171757037867266350136613663157437398334944408685012040325574826405709938104075794379674553040917145025011222243997544808848045624955506022666292190460": "5er_GT_RL_rgr",
+    "40028478172741240312669017896399131610582131399320210519522202656291167231107538056341917178815191251266919430160660558993519107551724327516905774928413829794960001238898891319188955074194381344164872854398147899323255651979296720146078619445094202805979914287085181124612542603412539907222828336875982315010": "5er_GT_LL_rgr",
+    "45637514951344583928041621490750829324483886964622500452225482266137779066428151666757329075622553586023125759371273207371879975107385085617686842426213209451037487559341668171714973260839994294836544733814921742944295531223069362531896040850528331229156170239647645833797597478443165348479046378132426676476": "5er_GT_RL",
+    "58985095424356651744179428634363197313616902234159270769825891076168930706657389833185241947281030901840452210936617394280079333025350404820440063249830279183707041299008505930731944249734109976892136656711742011641867568157717843788202978888464484114713600793599121578484555080758670006209098823949711610367": "7er_LL_rgr",
+    "66705443519911080115028456977541089142708306493791875688424536941118181607091035822519080126291774426198749171791913449184892101983779503165001812580288946470157905976990930995864588805014425000152948473152286151877695680786585137440232527013720445352722018663845748990341239998013464321676593743411782131964": "7er_RL_rgr",
+    "87781579844611709834830802612944508493924112989714574291516561725024334745670350277758243491285331879126618984383066054557883424127129446178904721178103272836987240844520668292038533552234480431693965254189215675562837085505270877253611832365009480646351020766889925390971178576585220399745714092491351761155": "5er_GT_LL"
+   }
+  },
+  "3105:0:127:FF": {
+   "name": "WARPING_BLOCK_6",
+   "values": {
+    "100851439501090916626750384787544792040777677244569839863362008210236037134367030189837665877723934343731294765283239414414253720853856955169778594931921357884939411914933464421341118375032830311070724971940936460297601465885589216180677881321845571239560889455833682655482880498862383780080916608623642148863": "5er_GT_LL",
+    "101133842977968931030446247656856566350781948272819653637343250284251501097617199152523860159090791571213746110590508772190067683154403870822601522973178259633741602807402190978916074751779961769121233525076906305334560512835355073781142829748812970197736363481343439614531738920833361571907163996580697079807": "5er_RL",
+    "101646795608975500289824575225909562701825076232112684414932930818240916108058059650397350301542990417380597393553559467317162207486226721897916306502873209226116793325928587702475440177455594869110994811764711509689261651182032837855990008442225971160948599786881715445327611901595808103847226909684853112831": "5er_RL_rgr",
+    "134357859866919859681984462166407170692293761367823186471565128719493910579523932883634048270392077135795119397303264781642843389673427649245366109136929700772240518787380292402674057681265072380939359615477144733349334945758784108473522042854796352675126299352085980611160449516848227711215267796948338343935": "5er_GT_RL",
+    "134700778137344309462304930457459482766942700070095727295118882136264450536148950103730280272103783583607972403835546121407927701864212003143414708678032950936870259821151638492638657828732390000885590747344443728637406809332628835590831308358664856240073637014561750109945801894646645834974784062344258387967": "7er_LL",
+    "145947310377687534454570531098435555999167300990454841198406318090846009888961699769627657730708011839118468014334179141158561351253696387172096730250178366948429233147498514328199855933417290508701383734068930148918582193165897140238959715533031914030858449551148993208651280557719315905427513334584995479551": "7er_RL",
+    "157342049680724490206136470607852044660268369696723249536098545470795953582251175535925987979317610314636535853949959847264386047507444486395666599216183387448972459191246681556052059381617604789919856200681797025050246375539084669658133860067603238339877913233358097972009999602301127447843317110113826766847": "F12_RL",
+    "22731698171334046800609673353785292591949446155168129732897349714722322820410670052661444017032990025266064998941297201321005256816763908754356492797523123973266746011817864004546723706681587106220411691559653192043788935140765641609872042905945947241862440826796936583059441019088464694101924660988543500287": "5er_GT_RL_rgr",
+    "34123672313288280491890409330333600065884308463868121573343188510543812526821157157412514457427627922363867959264979234359062803670879959275543869799690809789752618456813975331305031848501401794617224477324902521217386351079418999443568571312150275735325937138682208240258292889357746116153099395374992326655": "7er_LL_rgr",
+    "45202925978267138350155299401205206361012144339730590615889577712607371453650520199895104541403293230785164755301473158941412943462484766009276162059193860693943881197260159661981160938272318973218375674907822386042175544469497627218634819980891676732732971273211007879545558579450188868645359806073224036351": "5er_GT_LL_rgr",
+    "78684771293543212975437033364815607119923501730726451967059360479153434092286792296783327705073203587500248385955598137790280747741753245976622169243183774581372589452590700851603852671612431774926151862229655065791513578438917311187308985812589866888418585825743250279259988334298065566296282109020412575743": "5er_LL",
+    "78714828450988753348964462727460789956443195836185723230968664747093819698094522592731346475961442467562507891431883508640457832885162497028220009513203206797144568510622894736192487669850930442725540702494481698706297825435911465166824057480056750959201631723311794138030429791369741880331772348086565732351": "F12_LL",
+    "79200466986747678307568759137565088047900262313794506207062742401346964477796066972065894122539717260194977017069394369374256451602097753450807861127041516009131057747588767057449260204731175150310248419609418266478044699177329291130352424561530221896663486360676098183276566601852917869226786736885494448127": "5er_LL_rgr",
+    "90323497137992953162952429403801998282953746237506694919147866892001036431581851403790791328726355530297077675576676937888496329420328884561042754361780878613833080355963693266768551185280656234798527301905552617894445829250646270812900228647127819715978808600439486311469540568458739989571185644050434752511": "7er_RL_rgr"
+   }
+  },
+  "3106:0:127:FF": {
+   "name": "WARPING_BLOCK_7",
+   "values": {}
+  },
+  "3110:0:1:FF": {
+   "name": "DIM_CURVE_X1",
+   "values": {}
+  },
+  "3110:10:11:FF": {
+   "name": "DIM_CURVE_X6",
+   "values": {}
+  },
+  "3110:12:13:FF": {
+   "name": "DIM_CURVE_X7",
+   "values": {}
+  },
+  "3110:14:15:FF": {
+   "name": "DIM_CURVE_X8",
+   "values": {}
+  },
+  "3110:16:17:FF": {
+   "name": "DIM_CURVE_Y1",
+   "values": {}
+  },
+  "3110:18:19:FF": {
+   "name": "DIM_CURVE_Y2",
+   "values": {}
+  },
+  "3110:20:21:FF": {
+   "name": "DIM_CURVE_Y3",
+   "values": {}
+  },
+  "3110:22:23:FF": {
+   "name": "DIM_CURVE_Y4",
+   "values": {}
+  },
+  "3110:24:25:FF": {
+   "name": "DIM_CURVE_Y5",
+   "values": {}
+  },
+  "3110:26:27:FF": {
+   "name": "DIM_CURVE_Y6",
+   "values": {}
+  },
+  "3110:28:29:FF": {
+   "name": "DIM_CURVE_Y7",
+   "values": {}
+  },
+  "3110:2:3:FF": {
+   "name": "DIM_CURVE_X2",
+   "values": {}
+  },
+  "3110:30:31:FF": {
+   "name": "DIM_CURVE_Y8",
+   "values": {}
+  },
+  "3110:32:33:FF": {
+   "name": "DIM_MEASUREMENT_RATIO",
+   "values": {}
+  },
+  "3110:34:35:FF": {
+   "name": "DIM_DELIMITER_GROWTH_RATE",
+   "values": {}
+  },
+  "3110:36:37:FF": {
+   "name": "DIM_DIFF_FILTER_TIME_CONST_1",
+   "values": {}
+  },
+  "3110:38:39:FF": {
+   "name": "DIM_DIFF_FILTER_TIME_CONST_2",
+   "values": {}
+  },
+  "3110:40:41:FF": {
+   "name": "DIM_DIFF_FILTER_TIME_CONST_3",
+   "values": {}
+  },
+  "3110:42:43:FF": {
+   "name": "DIM_DIFF_FILTER_TIME_CONST_4",
+   "values": {}
+  },
+  "3110:44:45:FF": {
+   "name": "DIM_PHOTOCELL_DAYNIGHT",
+   "values": {}
+  },
+  "3110:46:47:FF": {
+   "name": "DIM_PHOTOCELL_MAX",
+   "values": {}
+  },
+  "3110:48:49:FF": {
+   "name": "DIM_LD_MIN",
+   "values": {}
+  },
+  "3110:4:5:FF": {
+   "name": "DIM_CURVE_X3",
+   "values": {}
+  },
+  "3110:50:51:FF": {
+   "name": "DIM_LD_DAYNIGHT",
+   "values": {}
+  },
+  "3110:52:53:FF": {
+   "name": "DIM_LD_MAX",
+   "values": {}
+  },
+  "3110:54:55:FF": {
+   "name": "DIM_TIMER_NL",
+   "values": {}
+  },
+  "3110:56:56:FF": {
+   "name": "DIM_THUMB_POWERBASIS",
+   "values": {}
+  },
+  "3110:57:57:FF": {
+   "name": "DIM_THUMB_NIGHT_LIMIT",
+   "values": {}
+  },
+  "3110:58:58:FF": {
+   "name": "DIM_UPPER_THRESHOLD",
+   "values": {}
+  },
+  "3110:59:59:FF": {
+   "name": "DIM_LOWER_THRESHOLD",
+   "values": {}
+  },
+  "3110:60:60:FF": {
+   "name": "DIM_DELIMITER_EPS",
+   "values": {}
+  },
+  "3110:61:61:FF": {
+   "name": "DIM_FILTER_GAIN_1",
+   "values": {}
+  },
+  "3110:62:62:FF": {
+   "name": "DIM_FILTER_GAIN_2",
+   "values": {}
+  },
+  "3110:63:63:FF": {
+   "name": "DIM_FADE_TIME_T0",
+   "values": {}
+  },
+  "3110:64:64:FF": {
+   "name": "DIM_FADE_TIME_T1",
+   "values": {}
+  },
+  "3110:65:65:FF": {
+   "name": "DIM_FADE_TIME_T2",
+   "values": {}
+  },
+  "3110:66:66:FF": {
+   "name": "DIM_FADE_EXPO_T1",
+   "values": {}
+  },
+  "3110:67:67:FF": {
+   "name": "DIM_FADE_EXPO_T2",
+   "values": {}
+  },
+  "3110:68:68:01": {
+   "name": "EXTENDED_DERATING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3110:68:68:02": {
+   "name": "MSA_DERATING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3110:68:68:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3110:69:71:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3110:6:7:FF": {
+   "name": "DIM_CURVE_X4",
+   "values": {}
+  },
+  "3110:72:72:FF": {
+   "name": "TEMP_THRESHOLD1",
+   "values": {}
+  },
+  "3110:73:73:FF": {
+   "name": "TEMP_THRESHOLD2",
+   "values": {}
+  },
+  "3110:74:74:FF": {
+   "name": "TEMP_THRESHOLD3",
+   "values": {}
+  },
+  "3110:75:75:FF": {
+   "name": "TEMP_THRESHOLD4",
+   "values": {}
+  },
+  "3110:76:76:FF": {
+   "name": "DIM_THRESHOLD1",
+   "values": {}
+  },
+  "3110:77:77:FF": {
+   "name": "DIM_THRESHOLD2",
+   "values": {}
+  },
+  "3110:78:78:FF": {
+   "name": "DIM_THRESHOLD3",
+   "values": {}
+  },
+  "3110:79:79:FF": {
+   "name": "DIM_THRESHOLD4",
+   "values": {}
+  },
+  "3110:80:81:FF": {
+   "name": "LOG_TIME",
+   "values": {}
+  },
+  "3110:82:82:FF": {
+   "name": "LOG_REPETITION_RATE",
+   "values": {}
+  },
+  "3110:83:83:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3110:8:9:FF": {
+   "name": "DIM_CURVE_X5",
+   "values": {}
+  },
+  "37F0:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "37F1:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Anzeige_Konfiguration",
+  "3001": "CC_ID_Sperre",
+  "3003": "FZG_Ausstattung",
+  "3004": "ERM_Konfiguration",
+  "3005": "Tank",
+  "3006": "A_Temp",
+  "3007": "KI_Dimmung",
+  "3008": "PIA_Einheiten",
+  "3009": "CBS_Konfiguration",
+  "300A": "Fahrgestell_Nr",
+  "300B": "KI_Parameter",
+  "300C": "ECO_FDS",
+  "3100": "HUD_Warping_1",
+  "3101": "HUD_Warping_2",
+  "3102": "HUD_Warping_3",
+  "3103": "HUD_Warping_4",
+  "3104": "HUD_Warping_5",
+  "3105": "HUD_Warping_6",
+  "3106": "HUD_Warping_7",
+  "3110": "HUD_APIX_Parameter",
+  "37F0": "CAF_ID",
+  "37F1": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

@@ -1,0 +1,2438 @@
+{
+ "functions": {
+  "3000:0:0:01": {
+   "name": "TC_LOGIC_KL15_OFF_BELT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:02": {
+   "name": "TC_AUTH_TIMEOUT_CND_DOOR_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:04": {
+   "name": "TC_EV_BUTTON_HEV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:18": {
+   "name": "UNBELEGT",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3000:0:0:20": {
+   "name": "TC_AUTH_TRSP_COIL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:40": {
+   "name": "TC_KL15_OFF_CHARGE_HYBRID",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:80": {
+   "name": "TC_ENGINE_OFF_SEC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:FF": {
+   "name": "TC_RESERVED_BYTEA",
+   "values": {
+    "0": "initwert",
+    "10": "10_min",
+    "20": "20_min",
+    "30": "30_min"
+   }
+  },
+  "3000:11:11:FF": {
+   "name": "TC_TIME_KLR_OFF",
+   "values": {}
+  },
+  "3000:12:12:FF": {
+   "name": "TC_TIME_KL30B_OFF",
+   "values": {}
+  },
+  "3000:13:13:FF": {
+   "name": "TC_TIME_KL30B_OFF_SHORT",
+   "values": {}
+  },
+  "3000:14:14:FF": {
+   "name": "TC_TIME_DELAY_KEY_AUTH_KL",
+   "values": {}
+  },
+  "3000:15:15:07": {
+   "name": "ELV_VER_LIMIT",
+   "values": {}
+  },
+  "3000:15:15:F8": {
+   "name": "ELV_RESERVED_BYTEF",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:1:1:01": {
+   "name": "TC_STARTLOCK_BRAKE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:02": {
+   "name": "TC_STARTLOCK_PARK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:04": {
+   "name": "TC_STARTLOCK_CLUTCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:08": {
+   "name": "TC_STARTLOCK_DIESEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:10": {
+   "name": "TC_STARTLOCK_DRIVINGREADINESS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:20": {
+   "name": "TC_RQ_DRVG_RDI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:40": {
+   "name": "TC_RESERVED_BYTE1_BIT6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:80": {
+   "name": "TC_STARTLOCK_SHOWROOM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:01": {
+   "name": "TC_LOGIC_KLR_OFF_DOOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:02": {
+   "name": "TC_LOGIC_KLR_ON_SPEED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:04": {
+   "name": "TC_LOGIC_KL15_OFF_DOOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:08": {
+   "name": "TC_LOGIC_KL15_OFF_CLSY_SEC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:10": {
+   "name": "TC_LOGIC_KL15_OFF_OSFG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:20": {
+   "name": "TC_LOGIC_KL15_OFF_INHIBIT_OBD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:40": {
+   "name": "TC_LOGIC_NO_HW_PARK_SIGNAL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:80": {
+   "name": "TC_LOGIC_USAGE_L7",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:01": {
+   "name": "TC_THS1_MFS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:02": {
+   "name": "TC_THS2_MFS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:04": {
+   "name": "TC_MSA_SGR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:08": {
+   "name": "TC_MSA_KSOPT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:10": {
+   "name": "TC_MSA_DEFAULT_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:20": {
+   "name": "TC_MSA_MEMORY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:40": {
+   "name": "TC_RESERVED_BYTE3_BIT6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:80": {
+   "name": "TC_EWS_EGS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:01": {
+   "name": "TC_DEBUG_CANOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:02": {
+   "name": "TC_DEBUG_TEST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:04": {
+   "name": "ELV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:08": {
+   "name": "TC_RESERVED_BYTE4_BIT3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:10": {
+   "name": "TC_RESERVED_BYTE4_BIT4",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:20": {
+   "name": "TC_RESERVED_BYTE4_BIT5",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:C0": {
+   "name": "TC_TIME_ELV_TIMEOUT",
+   "values": {}
+  },
+  "3000:5:5:FF": {
+   "name": "TC_TIME_DELAY_KEY_AUTH",
+   "values": {}
+  },
+  "3000:6:6:FF": {
+   "name": "TC_TIME_BRAKE_CLUTCH",
+   "values": {}
+  },
+  "3000:7:7:FF": {
+   "name": "TC_TIME_START_DELAY",
+   "values": {}
+  },
+  "3000:8:8:FF": {
+   "name": "TC_TIME_KL50_TIMEOUT",
+   "values": {}
+  },
+  "3000:9:9:FF": {
+   "name": "TC_TIME_COMFORT_OFF",
+   "values": {}
+  },
+  "3001:0:0:01": {
+   "name": "CGM_ACTIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:02": {
+   "name": "CEM_ACTIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:04": {
+   "name": "CEM_ENABLE_TAGE_PASSENGER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:08": {
+   "name": "CEM_ENABLE_TAGE_REAR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:10": {
+   "name": "CGM_SEND_TAC_DATA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:20": {
+   "name": "CGM_SEND_TAC_DATA_15OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:40": {
+   "name": "CGM_CCM_ID0042_KL15",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:80": {
+   "name": "CGM_CCM_ID0042_ENG_RUN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:10:10:FF": {
+   "name": "CAM_NR_IDG",
+   "values": {}
+  },
+  "3001:11:11:FF": {
+   "name": "CGM_TIME_FLUP_CG_AUTH",
+   "values": {}
+  },
+  "3001:12:12:FF": {
+   "name": "CGM_TIME_AUTH_FT_OPEN",
+   "values": {}
+  },
+  "3001:13:13:FF": {
+   "name": "CEM_TIME_FLUP_CE_AUTH",
+   "values": {}
+  },
+  "3001:14:14:FF": {
+   "name": "CEM_TIME_FLUP_TRUNK_AUTH",
+   "values": {}
+  },
+  "3001:15:15:FF": {
+   "name": "CEM_TIME_DISABLE_LOCK",
+   "values": {}
+  },
+  "3001:16:16:FF": {
+   "name": "CEM_TIME_DISABLE_LOCK_CLOSE",
+   "values": {}
+  },
+  "3001:17:17:FF": {
+   "name": "CEM_MIN_TIME_TAGE_DETECT",
+   "values": {}
+  },
+  "3001:18:18:FF": {
+   "name": "CEM_SENSOR_TIME_OUT",
+   "values": {}
+  },
+  "3001:19:20:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "65535": "initwert"
+   }
+  },
+  "3001:1:1:01": {
+   "name": "CGM_AUTH_VEH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:02": {
+   "name": "CGM_AUTH_ONE_DOOR_OPEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:04": {
+   "name": "CGM_AUTH_ONE_DOOR_CLOSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:08": {
+   "name": "CGM_AUTH_DRD_OPEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:10": {
+   "name": "CGM_AUTH_DRD_CLOSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:20": {
+   "name": "CGM_AUTH_LAST_DOOR_CLOSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:40": {
+   "name": "CAM_RESERVED_BYTE1_BIT6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:80": {
+   "name": "CAM_RESERVED_BYTE1_BIT7",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:21:21:FF": {
+   "name": "CAH_TIME_SILENT_TEL",
+   "values": {}
+  },
+  "3001:22:22:FF": {
+   "name": "CAH_CFG_FBDREF",
+   "values": {}
+  },
+  "3001:23:23:FF": {
+   "name": "CAH_CFG_RSSI_THRESHOLD",
+   "values": {}
+  },
+  "3001:24:24:FF": {
+   "name": "CemTimeWaitNewAction",
+   "values": {}
+  },
+  "3001:25:25:FF": {
+   "name": "CEM_TIME_TAGE_COMFORT_CLOSE",
+   "values": {}
+  },
+  "3001:26:26:FF": {
+   "name": "CAM_NO_LOCK_IDG_INSIDE_TIME",
+   "values": {}
+  },
+  "3001:27:27:FF": {
+   "name": "CAM_RESERVED_BYTE1B",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:2:2:1F": {
+   "name": "UNBELEGT",
+   "values": {
+    "31": "initwert"
+   }
+  },
+  "3001:2:2:20": {
+   "name": "CAM_RESERVED_BYTE2_BIT5",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:2:2:40": {
+   "name": "CAM_RESERVED_BYTE2_BIT6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:2:2:80": {
+   "name": "CAM_RESERVED_BYTE2_BIT7",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:01": {
+   "name": "CEM_IDG_ACTIVE_ON_CLSY_ULOCK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:02": {
+   "name": "CEM_IDG_ACTIVE_ON_LAST_DOOR_CLOSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:04": {
+   "name": "CEM_IDG_ACTIVE_ON_DOOR_OPEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:08": {
+   "name": "CEM_IDG_ACTIVE_ON_IDG_BUTTON",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:10": {
+   "name": "CAM_RESERVED_BYTE3_BIT4",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:20": {
+   "name": "CAM_RESERVED_BYTE3_BIT5",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:40": {
+   "name": "CEM_IDG_DEACT_ON_RSCR_CLOSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:4:4:03": {
+   "name": "UNBELEGT",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3001:4:4:04": {
+   "name": "CEM_IDG_DEACT_ON_WINDOW_CLOSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:4:4:08": {
+   "name": "CEM_IDG_DEACT_ON_LAST_DOOR_CLOSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:4:4:10": {
+   "name": "CEM_IDG_DEACT_ON_CONVERTABLE_CLOSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:4:4:20": {
+   "name": "CEM_IDG_DEACT_ON_CLSY_LOCK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:4:4:40": {
+   "name": "CEM_IDG_DEACT_ON_CLSY_SECURE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:4:4:80": {
+   "name": "CEM_IDG_DEACT_ON_TRUNK_CLOSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:5:5:01": {
+   "name": "CEM_LAST_DOOR_CLOSE_REV_TO_LOCK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:5:5:02": {
+   "name": "CEM_LAST_DOOR_CLOSE_REV_TO_ULOCK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:5:5:04": {
+   "name": "CEM_CTR_TO_ULOCK_ON_DOOR_OPEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:5:5:08": {
+   "name": "CEM_INGNORE_CAP_SENSOR_TAGE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:5:5:10": {
+   "name": "CEM_CTR_TO_ULOCK_HK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:5:5:20": {
+   "name": "CEM_ENABLE_HKI_CLT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:5:5:40": {
+   "name": "CAM_RESERVED_BYTE5_BIT6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:5:5:80": {
+   "name": "CEM_ENABLE_HKL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:6:6:01": {
+   "name": "CEM_TRUNK_ENABLE_REOPEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:6:6:02": {
+   "name": "CEM_TRUNK_UNLOCK_CLSY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:6:6:04": {
+   "name": "CEM_TRUNK_REOPEN_IF_UNLOCKED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:6:6:08": {
+   "name": "CEM_TRUNK_ENABLE_RSCR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:6:6:10": {
+   "name": "CEM_TRUNK_INDICATE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:6:6:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:6:6:40": {
+   "name": "CEM_TRUNK_REV_ON_CLOSE_LID",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:6:6:80": {
+   "name": "CEM_TRUNK_REV_ON_CLOSE_SCREEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:7:7:01": {
+   "name": "CAH_SEARCH_INT_HIGHPOWER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:7:7:02": {
+   "name": "CAH_SEARCH_INT_TRUNK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:7:7:04": {
+   "name": "CAH_SEARCH_ANT_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:7:7:08": {
+   "name": "CAM_SEARCH_TRUNK_DOUBLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:7:7:30": {
+   "name": "CAM_SMART_OPENER",
+   "values": {}
+  },
+  "3001:7:7:40": {
+   "name": "CAM_RESERVED_BYTE7_BIT6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:7:7:80": {
+   "name": "CAM_RESERVED_BYTE7_BIT7",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:8:8:01": {
+   "name": "CAH_CFG_FBDREFCHECK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:8:8:02": {
+   "name": "CAH_CFG_SILENT_TEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:8:8:04": {
+   "name": "CAH_CFG_RSSI_LENGTH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:8:8:08": {
+   "name": "CAH_CFG_STOP_SHORTCIRCUIT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:8:8:30": {
+   "name": "CAH_TAGE_MAX_SPORADIC_ACTIVITY",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3001:8:8:40": {
+   "name": "CAH_CFG_MONITOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:8:8:80": {
+   "name": "CAH_CFG_CANOUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:9:9:03": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "3": "initwert"
+   }
+  },
+  "3001:9:9:04": {
+   "name": "CEM_TAGE_SENSOR_ZUG_DEAKT",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:9:9:38": {
+   "name": "UNBELEGT",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3001:9:9:40": {
+   "name": "CAM_RESERVED_BYTE9_BIT6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:9:9:80": {
+   "name": "CAM_RESERVED_BYTE9_BIT7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:0:0:01": {
+   "name": "SICHERHEITSFAHRZEUG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:02": {
+   "name": "MOTORHAUBENKONTAKT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:04": {
+   "name": "COACH_DOOR_MODUL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:08": {
+   "name": "HUPEN_BEI_FZG_SICHERN_IN_N",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:10": {
+   "name": "CLM_MSA_OFF_AT_SECURE",
+   "values": {
+    "0": "Nicht_Aktiv",
+    "1": "Aktiv"
+   }
+  },
+  "3002:0:0:20": {
+   "name": "CLM_HORN_AT_SECURE",
+   "values": {
+    "0": "Nicht_Aktiv",
+    "1": "Aktiv"
+   }
+  },
+  "3002:0:0:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3002:10:10:7F": {
+   "name": "UNBELEGT",
+   "values": {
+    "127": "initwert"
+   }
+  },
+  "3002:10:10:80": {
+   "name": "VER_AUT_X_MIN_DEFAULT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:11:11:7F": {
+   "name": "UNBELEGT",
+   "values": {
+    "127": "initwert"
+   }
+  },
+  "3002:11:11:80": {
+   "name": "VERRIEGELN_XKMH_DEFAULT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:12:12:7F": {
+   "name": "UNBELEGT",
+   "values": {
+    "127": "initwert"
+   }
+  },
+  "3002:12:12:80": {
+   "name": "SEL_ZV_SENDER_DEFAULT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:13:13:0F": {
+   "name": "BELEGUNG_3_IDG_TASTE",
+   "values": {
+    "0": "grosse_heckklappe_oeffnen",
+    "1": "kleine_heckklappe",
+    "13": "nicht_verfuegbar",
+    "14": "Fehler",
+    "15": "Signal_ungueltig",
+    "2": "entriegeln-grosse-heckklappe_oeffnen",
+    "3": "entriegeln_kleine-Heckklappe"
+   }
+  },
+  "3002:13:13:F0": {
+   "name": "BELEGUNG_DER_4_IDG-TASTE",
+   "values": {
+    "0": "grosse-heckklappe_oeffnen",
+    "1": "kleine-Heckklappe_heckscheibe_frontklappe_oeffnen",
+    "13": "nicht_verfuegbar",
+    "14": "Fehler",
+    "15": "signal_ungueltig",
+    "2": "entriegeln_grosse-heckklappe_oeffnen",
+    "3": "entriegeln_kleine-Heckklappe_Heckscheibe_frontklappe_oeffnen",
+    "4": "standkuehlen",
+    "5": "heimleuchten",
+    "6": "panikmode"
+   }
+  },
+  "3002:14:14:FF": {
+   "name": "RESERVIERT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:15:15:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "255": "initwert"
+   }
+  },
+  "3002:1:1:01": {
+   "name": "REAR_SCREEN_IS_PRIMARY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:02": {
+   "name": "REMOTE_KEY_SPECIAL_FCT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:04": {
+   "name": "VR_KLR_EINMALIG",
+   "values": {
+    "0": "aktiv"
+   }
+  },
+  "3002:1:1:08": {
+   "name": "VR_GESCHW_EINMALIG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:10": {
+   "name": "SPERRE_HECKKLAPPE_KLR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:20": {
+   "name": "OPEN_RSCR_WITH_PUBU_A_PILLAR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:40": {
+   "name": "OPEN_RSCR_WITH_REMOTE_KEY_SPFN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:80": {
+   "name": "ER_KEYOUT_AUTOVR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:01": {
+   "name": "ES_EINMALIG_CLT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:02": {
+   "name": "SCHAERFEN_ENTSCHAERFEN",
+   "values": {
+    "0": "schloss_und_fernbedienung",
+    "1": "nur_mit_fernbedienung"
+   }
+  },
+  "3002:2:2:04": {
+   "name": "ENTRIEGELN_OEFFNUNG_HECKKLAPPE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:08": {
+   "name": "VERBAU_MMI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:10": {
+   "name": "CLM_CCM_WASHMODE_M",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3002:2:2:40": {
+   "name": "MANTRAOFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:80": {
+   "name": "CCM_COOLANT_TEMP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:3:3:FF": {
+   "name": "SEND_MHK_CCM_LIMIT",
+   "values": {}
+  },
+  "3002:4:4:FF": {
+   "name": "TIMEOUT_HK",
+   "values": {}
+  },
+  "3002:5:5:FF": {
+   "name": "TIMEOUT_HK_SMO",
+   "values": {}
+  },
+  "3002:6:6:FF": {
+   "name": "VERRIEGELUNGSSCHWELLE",
+   "values": {}
+  },
+  "3002:7:7:FF": {
+   "name": "GESCHW_SPERRE_TOEHK",
+   "values": {}
+  },
+  "3002:8:8:FF": {
+   "name": "ZEIT_AUTO_ZV_VR",
+   "values": {}
+  },
+  "3002:9:9:0F": {
+   "name": "ZEIT_REMOTE_KEY_3RD_BUTTON",
+   "values": {}
+  },
+  "3002:9:9:10": {
+   "name": "HK_GESPERRT_IN_GESICHERT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:9:9:20": {
+   "name": "OPEN_BTL_RSCR_MUTEX",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:9:9:40": {
+   "name": "VERBAU_HECKKLAPPENWIPPE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:9:9:80": {
+   "name": "VERBAU_CENTERLOCKWIPPE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:01": {
+   "name": "FH_SICHERHEITSFAHRZEUG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:02": {
+   "name": "FH_CABRIO_VERDECK_MODUL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:04": {
+   "name": "FH_HINTEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:08": {
+   "name": "SCHIEBEHEBEDACH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:10": {
+   "name": "FH_RESESCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:20": {
+   "name": "FH_KINDERSICHERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:40": {
+   "name": "FH_UMLSCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:80": {
+   "name": "PANIC_ENABLED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:FF": {
+   "name": "ANSTEUERZEIT",
+   "values": {}
+  },
+  "3003:11:11:FF": {
+   "name": "KMFRT_OEFFNEN",
+   "values": {}
+  },
+  "3003:12:12:FF": {
+   "name": "KMFRT_SCHLIESSEN",
+   "values": {}
+  },
+  "3003:13:13:FF": {
+   "name": "MIND_KMFRT_NACH_UNTERB",
+   "values": {}
+  },
+  "3003:14:14:FF": {
+   "name": "MAX_KMFRT_UNTERB",
+   "values": {}
+  },
+  "3003:15:15:FF": {
+   "name": "MAX_KMFRT_UNTERB_FBD",
+   "values": {}
+  },
+  "3003:16:16:FF": {
+   "name": "MAX_KEYSEARCH_TMR",
+   "values": {}
+  },
+  "3003:17:17:FF": {
+   "name": "SLEEPTIMER_FH_KLRAUS",
+   "values": {}
+  },
+  "3003:18:18:FF": {
+   "name": "WCM_RESERVED_BYTE12",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:19:19:FF": {
+   "name": "WCM_RESERVED_BYTE13",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:1:1:01": {
+   "name": "FH_ECEFIN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:02": {
+   "name": "FH_ABSCHALTKRITERIUM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:04": {
+   "name": "FH_USACANADA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:08": {
+   "name": "FH_DISAKL15",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:10": {
+   "name": "FH_DISAKLR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:20": {
+   "name": "FH_DISASHD_KL15",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3003:2:2:01": {
+   "name": "KOMFORTOEFFNUNG_FB",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3003:2:2:02": {
+   "name": "KOMFORTSCHLIESSUNG_FB",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3003:2:2:04": {
+   "name": "KOMFORTOEFFNUNG",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3003:2:2:08": {
+   "name": "KOMFORTSCHLIESSUNG",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3003:2:2:10": {
+   "name": "FH_RESETTIMEOUTKL50",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:2:2:20": {
+   "name": "KOMFORTSCHLIESSUNG_PA",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3003:2:2:40": {
+   "name": "FH_TUERBED_EINSTG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:2:2:80": {
+   "name": "FH_SCHLIESSEN_EINSTG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:01": {
+   "name": "FH_DISTGDEFECT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:02": {
+   "name": "FH_KMFRTFBDTIM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:04": {
+   "name": "FH_DISCLSYDEFECT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:08": {
+   "name": "FH_DISFBDDEFCT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:10": {
+   "name": "FH_MIT_EKS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:20": {
+   "name": "EINSTIEGSHILFE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:40": {
+   "name": "KEYSEARCH_KLR_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3003:4:4:7F": {
+   "name": "UNBELEGT",
+   "values": {
+    "127": "initwert"
+   }
+  },
+  "3003:4:4:80": {
+   "name": "EINSTIEGSHILFE_DEFAULT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:5:5:FF": {
+   "name": "FH_OHNE_EKS_DELAY",
+   "values": {}
+  },
+  "3003:6:6:FF": {
+   "name": "KMFRT_OEFF_HINTEN",
+   "values": {}
+  },
+  "3003:7:7:FF": {
+   "name": "KMFRT_OEFF_SHD",
+   "values": {}
+  },
+  "3003:8:8:FF": {
+   "name": "KMFRT_SCHL_VORNE",
+   "values": {}
+  },
+  "3003:9:9:FF": {
+   "name": "KOMFORT_SCHL_SHD",
+   "values": {}
+  },
+  "3004:0:0:01": {
+   "name": "PIA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:02": {
+   "name": "PIA_Service_Mode",
+   "values": {
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:04": {
+   "name": "RCS_Sondertaste_Panikalarm",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:08": {
+   "name": "MOTORFERNSTART_GENERELL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:10": {
+   "name": "MOTORFERNSTART_CAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:20": {
+   "name": "RCS_AKTIV_KL15AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:40": {
+   "name": "RCS_AKTIV_KEYIN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:80": {
+   "name": "RCS_TESTKEY_AKTIV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:FF": {
+   "name": "DFZ_Version",
+   "values": {}
+  },
+  "3004:11:11:0F": {
+   "name": "DFZ_Timer_UI",
+   "values": {}
+  },
+  "3004:11:11:F0": {
+   "name": "DFZ_Timer_Switch",
+   "values": {}
+  },
+  "3004:1:1:01": {
+   "name": "SF_SD_active",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:02": {
+   "name": "SF_SD_TAC_avt",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:04": {
+   "name": "SF_SD_manUpdate_act",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:08": {
+   "name": "SF_SD_trsp_act",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:10": {
+   "name": "SF_SD_BiDi_act",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:20": {
+   "name": "SF_SD_Hybrid",
+   "values": {
+    "0": "Gen_1_5",
+    "1": "Gen_2_0"
+   }
+  },
+  "3004:1:1:40": {
+   "name": "SF_SD_reserved_bit6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:1:1:80": {
+   "name": "SF_SD_reserved_bit7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:2:2:FF": {
+   "name": "SF_SD_v1",
+   "values": {}
+  },
+  "3004:3:3:FF": {
+   "name": "SF_SD_s1",
+   "values": {}
+  },
+  "3004:4:4:FF": {
+   "name": "SF_SD_s2",
+   "values": {}
+  },
+  "3004:5:5:FF": {
+   "name": "SF_SD_CCM_Timeout",
+   "values": {}
+  },
+  "3004:6:6:FF": {
+   "name": "SF_SD_reserved_byte6",
+   "values": {
+    "0": "initwert",
+    "1": "Aktiv"
+   }
+  },
+  "3004:7:7:01": {
+   "name": "RCS_Auto_init",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:7:7:02": {
+   "name": "RCS_Fangbereich",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:7:7:0C": {
+   "name": "UNBELEGT",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3004:7:7:F0": {
+   "name": "RCS_Panik_Totzeit",
+   "values": {}
+  },
+  "3004:8:8:01": {
+   "name": "DFZ_Enable",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:02": {
+   "name": "DFZ_RF_Diagnostic",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:04": {
+   "name": "DFZ_Alarming",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:08": {
+   "name": "DFZ_Chipering",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:10": {
+   "name": "DFZ_Authentication",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:20": {
+   "name": "DFZ_Filter",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:8:8:40": {
+   "name": "DFZ_reserved_bit_6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:8:8:80": {
+   "name": "DFZ_reserved_bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:9:9:FF": {
+   "name": "DFZ_Session_Counter",
+   "values": {}
+  },
+  "3005:0:0:01": {
+   "name": "TRSP_ACTIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:0:0:02": {
+   "name": "TRSP_RESERVED_BYTE0_BIT1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:0:0:04": {
+   "name": "TRSP_RESERVED_BYTE0_BIT2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:0:0:08": {
+   "name": "TRSP_RESERVED_BYTE0_BIT3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:0:0:10": {
+   "name": "TRSP_RESERVED_BYTE0_BIT4",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:0:0:20": {
+   "name": "TRSP_RESERVED_BYTE0_BIT5",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:0:0:40": {
+   "name": "TRSP_RESERVED_BYTE0_BIT6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:0:0:80": {
+   "name": "TRSP_RESERVED_BYTE0_BIT7",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:1:1:FF": {
+   "name": "TRSP_CYCLETIME",
+   "values": {}
+  },
+  "3005:2:2:FF": {
+   "name": "TRSP_RESERVED_BYTE2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3005:3:3:FF": {
+   "name": "EWS_TRIGGER_KEY_SEARCH_CG",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3006:0:0:01": {
+   "name": "TAC_ACTIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3006:0:0:02": {
+   "name": "TAC_CBS_REQ",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3006:0:0:04": {
+   "name": "TAC_DTC_REQ",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3006:0:0:08": {
+   "name": "TAC_10KM_REQ",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3006:0:0:10": {
+   "name": "TAC_RESERVED_BYTE0_BIT4",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3006:0:0:20": {
+   "name": "TAC_RESERVED_BYTE0_BIT5",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3006:0:0:40": {
+   "name": "TAC_RESERVED_BYTE0_BIT6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3006:0:0:80": {
+   "name": "TAC_RESERVED_BYTE0_BIT7",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3006:1:1:FF": {
+   "name": "TAC_REQ_SPEED_LOW",
+   "values": {
+    "58": "initwert"
+   }
+  },
+  "3006:2:2:FF": {
+   "name": "TAC_REQ_SPEED_HIGH",
+   "values": {
+    "39": "initwert"
+   }
+  },
+  "3006:3:3:FF": {
+   "name": "TAC_RESERVED_BYTE3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3100:0:2:FF": {
+   "name": "CAH_LF_DRV_CONFIG_INFO",
+   "values": {}
+  },
+  "3101:0:32:FF": {
+   "name": "CAH_ANT_PARAMETER_1",
+   "values": {
+    "0": "F12_CG",
+    "36409971768849664980681509034235467328208343691903592634049054693046152593408": "F18_CA_PHEV",
+    "36409971768849664980681558421297434972064640175693357235756675633333619691520": "F18_CA_PHEV",
+    "36579589087068389374161065158942968856729995906799086748149330994684007344512": "F25_CA",
+    "36579589087068389374161065158942968856921404738236680475261752901260745435520": "F25_CA",
+    "36579589087068389374161065158943012979294229174801606990266850934054115666304": "F26_CA",
+    "36579589087068389374161065158943013458220393015186126499044951030715605118016": "F11_CA",
+    "36579589087068389374161065158943013458220398207482985033872579561211934338112": "F11_CA_LL",
+    "36579589087068389374161065158943013458220398207482985033872579561211952163632": "F11_CA_RL",
+    "36579589087068389374161065158943035758965591545809268034763147117883375545408": "F11_CA",
+    "36579589087068389374161065158943035758965591545809268044207952141216703900736": "F07_CA",
+    "36579589087068389374161077131564448572275136253199847269152187203783103670528": "F12_CA",
+    "36579589087068389374161078628141924231076079922928668054836069912153530886400": "F12_CA",
+    "36579589087068389374161078628141924231076079930534571656205446321133821422912": "F12_CA",
+    "36579589087068389374161078628141924231076085122831430191033074851630150643008": "F12_CA",
+    "36636128193141297773141370417775828011447760706358629259739013840682297126480": "RR04_CA",
+    "36636128193141297773141370417775828011447760706358629268003119156907157286480": "F01_CA",
+    "36636128193141297773141370417775828011447765898655487794566642371178626346576": "RR04_CA",
+    "36636128193141298174875881482522125318900543079625837655465898911262020005456": "RR05_CA",
+    "36636128193141298174875881482522303811974417307077240602277723378191034281552": "RR06_CA",
+    "36636128193141298174875881482523374073519374862761517010245931394735380950528": "F10_CA_TAF_LL",
+    "36636128193141298174875881482523374596193090453322996889399082139718310227536": "RR04EWB_CA",
+    "36636128193141298174875881482523374596193090453322996889989256352337315819008": "F06_CA_LL",
+    "36636128193141298174875881482523396374264573393384658545964204043096886930944": "F10_CA_TAF_RL",
+    "36636128193141298174875881482523396896938283791649279890879972527796513729792": "F18_CA",
+    "36636128193141298174875881482523396896938283791649279890879972527796530507264": "F10_CA",
+    "36636128193141298174875881482523396896938288983946138425707529000698821799424": "F13_CA",
+    "36636128193141298174875881482523396896938288983946138425707601058292859727360": "F10_CA",
+    "926336713898529563388567880069503262826159877325124512315660672063305037119488": "F01_CG",
+    "926336713898529563388567880233191446207221004163937213579884370264769481932800": "F25_CG"
+   }
+  },
+  "3101:132:164:FF": {
+   "name": "CAH_ANT_PARAMETER_5",
+   "values": {
+    "0": "F12_CG",
+    "499395789165513812634249836993737758815953436850430597622815807158033810718720": "RR05_CG",
+    "499395789165513812634249923288832685837994373370664028499379091585594875224064": "RR06_CG",
+    "499395789165513812634249923289472099740429730989227139123846148408667059257344": "F10_CG",
+    "499395789165513812634249923289472099740429730989227139123846288020255507742720": "F13_CG",
+    "499395789165513812634249923290659741345043500998297856919822051135716956606464": "F12_CG",
+    "499395789165513812634249923421098583983561300519126772640444360109822102732800": "RR04_CG",
+    "499395789165513812634249923421098584016228407743536865132928457531260672147456": "RR05_CG",
+    "499395789165513812634249923421098586771154450335454665329457728189468545908736": "F07_CG",
+    "499395789165513812634249923421098586771154450335454665332409279298856112095232": "F25_CG",
+    "499395789165513812634249923421103736849498736001236413731149627913086168989696": "F01_CG",
+    "499395789165513812634249923421103736849498736001236413737347733921852578332672": "F04_CG",
+    "499396343470442273089026072311714496477652650352938809386502283632786460901376": "F02_CG",
+    "499578328718114446674965429481849563235552762617961227367929246020345427656704": "F18_CA_PHEV",
+    "499578328718114446674965477372335215294579586316304278390042127380599372025856": "F18_CA_PHEV",
+    "499747391731404711115836999623746427555804119630932913502123927823525777244160": "F07_CG",
+    "499747391731404711115836999623746427555804119630932913505075478932913343430656": "F11_CG",
+    "499747946036333171068444961792937230123284446142039388175105619548423847941072": "F11_CA_RL",
+    "499747946036333171068444985600798902243692983680065313123356009743565305413632": "F07_CA",
+    "499747946036333171068444985738180056152797857991211687398686613591222964453376": "F11_CA",
+    "499747946036333171068445009552988318499400812302508561217174300119402805257984": "F12_CA",
+    "499747946036333171068445018531084577461621110188198649561290136985631847410304": "F12_CA",
+    "499804485142406079869159801929498017574685068228458242573427244665814877530720": "RR06_CA",
+    "499804485142406079869159801930137492804282707910003773159587792385592134788352": "F10_CA",
+    "499804485142406079869159801930137492804282707910003773159587792385592200849648": "F13_CA",
+    "499804485142406079869159801930137492804403004879180377176561760291773813418224": "F18_CA",
+    "499804485142406079869159802061763915753131782325891719932479767851613491822592": "RR04_CA",
+    "499804485142406079869159802061763915753131782325891719932479767851617424042592": "RR04_CA",
+    "499804485142406079869159802061763915753131782325891719934250790390682362112608": "RR05_CA",
+    "499804485142406079869159802061763982655076272544836544763752829206048582664192": "RR04_CA",
+    "499804485142406079869159802061763984016205740228590398617251258933121428488192": "F01_CA",
+    "499804485142406079869159802061763984016205740228590398617251258933125236974336": "F04_CA",
+    "499804485142406079869159822882224965580106943278025821159512888618616874865152": "F13_CA",
+    "499804485142406079869159822887888284424764192086065099886288485319783613469184": "F06_CA_LL",
+    "731332124510965561915586907736458075715382958574352977720135737007139826176976": "F26_CA",
+    "731332124510965561915586907736459502962884252782174644164586139927329103680464": "F25_CA",
+    "731332124510965561915586907736459502963075664534234036006105186502276208923600": "F25_CA"
+   }
+  },
+  "3101:165:197:FF": {
+   "name": "CAH_ANT_PARAMETER_6",
+   "values": {
+    "0": "F12_CG",
+    "383603699928197617210678851861735650312888518461354125822921843366651372765184": "RR05_CG",
+    "383603699928197617210678938278683276347393485786819779627205224558025813041152": "RR06_CG",
+    "383603699928197617210678938289096475513163489354460393333034493739878234193920": "RR05_CG",
+    "383955856799016975644874024674739254678641847733062722405913791391568375115776": "F12_CA",
+    "383955856799016975644874033654200875197661490051010024855009007973167609680384": "F12_CA",
+    "383955856799016975644874033654200875197873505475900604377605324602024925336064": "F12_CA_LL",
+    "383955856799016975644874033654200875197894772799314609373145058731833390273024": "F12_CA_RL",
+    "499395789165513812634249923289472099740429730989227139123846148408667059257344": "F10_CG",
+    "499395789165513812634249923289472099740429730989227139123846288020255507742720": "F13_CG",
+    "499395789165513812634249923421098583983561300519126772640444360109822102732800": "RR04_CG",
+    "499395789165513812634249923421098586771154450335454665329457728189468545908736": "F07_CG",
+    "499395789165513812634249923421098586771154450335454665332409279298856112095232": "F25_CG",
+    "499747391731404711115836999623746427555804119630932913502123927823525777244160": "F07_CG",
+    "499747391731404711115836999623746427555804119630932913505075478932913343430656": "F11_CG",
+    "499747946036333171068445018531353792144771220894766935602304930555602604714752": "F12_CA",
+    "615370417955430642098536414497936323127810443307009493298062119540610405761024": "F18_CA_PHEV",
+    "615370417955430642098536462387234505106505908384310193483534092876981473415168": "F18_CA_PHEV",
+    "615596574379722275292730786946224252696540388599052039089720665905857112893680": "F10_CA",
+    "615596574379722275292730786947137689858842428859965800818655681934754706418272": "RR04EWB_CA",
+    "615596574379722275292730786947137689858842428859965800818655790021145763310176": "RR04_CA",
+    "615596574379722275292730786947685754333679879765195713110898259660428490631408": "F18_CA",
+    "615596574379722275292730786957916264532059465934157012920374923237876263086320": "F13_CA",
+    "615596574379722275292730786957916264532059465934157012920374923241174797969648": "F06_CA_LL",
+    "615596574379722275292730786960839178995845457961784167371528264941788939216640": "RR05_CA",
+    "615596574379722275292730786960839178995845457961784167371528409054777991816960": "RR06_CA",
+    "615596574379722275292730787070451890508346257210477108803210413213961712304128": "RR04_CA",
+    "615596574379722275292730787070451890508637362583401708579092169804611139403776": "RR04_CA",
+    "615596574379722275292730787070451891869475724894230962656708842941034558128128": "F01_CA",
+    "615596574379722275292730787070451891869475724894230962656708842941038366614272": "F04_CA",
+    "731332124510965561915586907728511160562204762204491415473512098872350458516624": "F07_CA",
+    "731332124510965561915586955618996812621231585902836013920674086957948026748928": "F11_CA",
+    "847124213748281757339157892745145983568652943239993541759593321015052902340352": "F26_CA",
+    "847124213748281757339157892745148838063846943407696266490013173430378562590464": "F25_CA",
+    "847124213748281757339157892745148838064038355159756277301551862695463117395712": "F25_CA",
+    "847124213748281757339157916682441894444988158719304278736550676923062039876560": "F11_CA_RL",
+    "926336713898529563388567880069503262826159877325124512315660672063305037119488": "F01_CG",
+    "962564146114778594328533863455855368262578674663798669895178069953505096892416": "F04_CG"
+   }
+  },
+  "3101:198:230:FF": {
+   "name": "CAH_ANT_PARAMETER_7",
+   "values": {
+    "0": "F12_CG",
+    "731162507192746837522107396516391612081104984935662795565251644866541554499584": "F18_CA_PHEV",
+    "731162507192746837522107468352120090169522103660806113486297631124848684077056": "F18_CA_PHEV",
+    "731332124510965561915586916726155179368398705730742378078604018351994277204608": "F12_CA_LL",
+    "731332124510965561915586916726155179368398705730742378078604234524776390988416": "F12_CA",
+    "731332124510965561915586916726155179977844424886143166152428700984303392134400": "F12_CA",
+    "731332124510965561915586916844536812601456149508537060949494811081910993818528": "F12_CA",
+    "731332124510965561915586926081227160619874878487585450366273823608526652571648": "F11_CA_RL",
+    "731388663617038470515434513432302902630062242496691000997690550887849850311184": "F10_CA_TAF",
+    "731388663617038470716301721058023263049325518917254249861759084380001245598464": "RR04_CA",
+    "731388663617038470716301721072729533376449777422788043044008257101470717973248": "F18_CA",
+    "731388663617038470716301721074191035095108170834421193087001644170556740735504": "F10_CA_TAF_RL",
+    "731388663617038470716301721074191035095422694609598626337809304155917927846416": "F18_CA",
+    "731388663617038470716301721074191035095422694609598626341350993449677241717264": "F10_CA_LL",
+    "731388663617038470716301721078574826301927036115662253215950997327106461930496": "RR06_CA",
+    "731388663617038470716301721078575630522210475759338356364552668233924016608000": "F04_CA",
+    "731388663617038470716301721078575630522210475759338356385213120675670516568832": "F01_CA",
+    "731388663617038470716301721078575630522210475759338356385213134186469398680320": "F02_CA",
+    "731388663617038470716301768964676687072807504039336326312965925110698954723856": "F10_CA",
+    "731388663617038470716301768964676687072807504039340349618093602596592376877584": "F18_CA_TAF",
+    "731388663617038470716301768964676687073122032613842955341241904482694896554512": "F18_CA",
+    "731388663617038470716301768964676687889144902282667700161601608339515188974096": "F13_CA",
+    "731388663617038470716301792914303304390467271663179150886693511062449897346112": "RR05_CA",
+    "731388663617038470716301792914303304390467271663179150886693691206434992165952": "RR04EWB_CA",
+    "731388663617038470716301792914304018830651022886455696138409056598718535491328": "F13_CA_LL",
+    "731388663617038502855062606258380337141168882938914303660010643280690440835584": "RR04_CA",
+    "731388663617038502855062678094108815229709118486431201330753458775900641301568": "RR04_CA",
+    "847124213748281757339157901734843087221668690396382942118061602359907406844544": "F12_CA_RL",
+    "847124213748281757339157935035157894502658275002398313629312401659238205625728": "F07_CA",
+    "847180752854354665939005474495747984453818815313159265813567140852964195832336": "F10_CA_TAF_RL",
+    "847180752854354666139872706082878942948378155500061757126459228178469870375440": "F10_CA_RL",
+    "847180752854354666139872777922991926683921007552096260177866640606635103359504": "F13_CA_RL",
+    "926336713898529563388567880069503262826159877325124512315660672063305037119488": "F01_CG",
+    "926336713898529563388567880233191446207221004163937213579884370264769481932800": "F25_CG",
+    "926336713898529563388567880233191446904119291618019186752875566285030778994688": "F25_CA",
+    "926336713898529563388567975640018331865610667761757515508596510599927595823104": "F26_CA"
+   }
+  },
+  "3101:33:65:FF": {
+   "name": "CAH_ANT_PARAMETER_2",
+   "values": {
+    "0": "F12_CG",
+    "152202061006165860404252494042923375181795339204966538265957436380513927430144": "F18_CA_PHEV",
+    "152202061006165860404252543429985320524906437158133161331946784672439888547840": "F18_CA_PHEV",
+    "152371678324384584797732050167630876710313907242589591225919382097897331943808": "F25_CA",
+    "152371678324384584797732050167630876710313910163301139993174196836197885602176": "F25_CA",
+    "152371678324384584797732050167630898531941536069242924972461022220629749852544": "F26_CA",
+    "152371678324384584797732050167630899011062195189843560967548424262724659244096": "F11_CA",
+    "152371678324384584797732050167630899011062195189922789130062688600318203194432": "F11_CA_LL",
+    "152371678324384584797732050167630899011062195189922789130062688600318221019952": "F11_CA_RL",
+    "152371678324384584797732050167630943612552592251089844038984892998253935651904": "F11_CA",
+    "152371678324384584797732050167630943612552592251089844048429698021587264007232": "F07_CA",
+    "152371678324384584797732062140252356425862136958480423273373933084153663777024": "F12_CA",
+    "152371678324384584797732063636829809783917882097586102523339543144162585012480": "F12_CA",
+    "152371678324384584797732063636829809783918380558084521866791882071810261445952": "F12_CA",
+    "152371678324384584797732063636829809783918380558163750029306146409403805396288": "F12_CA",
+    "152428217430457493196712355426463735865034761411639205263960759721052857232976": "RR04_CA",
+    "152428217430457493196712355426463735865034761411639205272224865037277717392976": "F01_CA",
+    "152428217430457493196712355426463735865034761411718433426475024058646401183312": "RR04_CA",
+    "152428217430457493598446866491210010871742340062065641751656007950368288861776": "RR05_CA",
+    "152428217430457493598446866491210055386120451191472450015135053084726782914048": "F18_CA_TAF",
+    "152428217430457493598446866491210055386120451191551678177649317422320326864384": "F18_CA_TAF",
+    "152428217430457493598446866491210189364819537308800482979020915875079875784272": "RR06_CA",
+    "152428217430457493598446866491211259626361171845201321106436040433841649806848": "F10_CA_TAF_LL",
+    "152428217430457493598446866491211260149034887435762800985589191178824579083856": "RR04EWB_CA",
+    "152428217430457493598446866491211260149034887435762800986179365391443584675328": "F06_CA_LL",
+    "152428217430457493598446866491211304227851568906368376015358321392971117817344": "F10_CA_TAF",
+    "152428217430457493598446866491211304227851568906447604177872585730564661767680": "F10_CA_TAF_LL",
+    "152428217430457493598446866491211304750525284496929855895101718408167073836288": "F18_CA",
+    "152428217430457493598446866491211304750525284496929855895101718408167090613760": "F10_CA",
+    "152428217430457493598446866491211304750525284497009084051362464447179058638336": "F13_CA",
+    "152428217430457493598446866491211304750525284497009084057615910688166596636160": "F13_CA",
+    "152428217430457493598446866491211304750525284497009084057615982745760634564096": "F10_CA",
+    "926336713898529563388567880069503262826159877325124512315660672063305037119488": "F01_CG",
+    "926336713898529563388567880233191446207221004163937213579884370264769481932800": "F25_CG"
+   }
+  },
+  "3101:66:98:FF": {
+   "name": "CAH_ANT_PARAMETER_3",
+   "values": {
+    "0": "F12_CG",
+    "267994150243482055827823480431268828326991862885819879222289725689118798643200": "F18_CA_PHEV",
+    "267994150243482055827823528321754391183037892461671911526578623181270326218752": "F18_CA_PHEV",
+    "268163767561700780220121494583510251246196329391087541223481812809936395103744": "F12_CA",
+    "268163767561700780220121494583510340449182440506687933703185812809838023995136": "F12_CA",
+    "268163767561700780221303036672896438541235238272711855555933610655671971277632": "F26_CA",
+    "268163767561700780221303036672896438541239740062774689370662105539557250361680": "F11_CA",
+    "268163767561700780221303036672896438541239740062779022160799604370519343819904": "F11_CA_RL",
+    "268163767561700780221303036672896438541239740062779022160799604370519397296464": "F11_CA_LL",
+    "268163767561700780221303036672896527744216032395204421698806701249117995199296": "F25_CA",
+    "268163767561700780221303036672896527744216032395249606510240617629151813233472": "F25_CA",
+    "268163767561700780221303036672896527744220534185267255513535196133003220805968": "F25_CA",
+    "268163767561700780221303036672896527744220534185267255513535196133003274283344": "F11_CA",
+    "268163767561700780221303036672896527744220534185267255513535196133003274283840": "F07_CA",
+    "268163767561700780221303036672896527744220534185271588303672694963965421218624": "F07_CA",
+    "268163767561700780221303048645517851555990614949020429611135518483835460316416": "F12_CA",
+    "268220306667773688620283340809296062526249728533387397456603640766877173607504": "RR04_CA",
+    "268220306667773688620283340809296062526249728533387397456603640766877190384976": "RR04_CA",
+    "268220306667773688620283340809296062526249728533387397456603640766877207162448": "RR04_CA",
+    "268220306667773688620283340809296062526249728533387397464867746083102067322448": "F01_CA",
+    "268220306667773688620283340809296062526249728533391730255005244914064214257232": "F01_CA",
+    "268220306667773688620283340809296062526249728533456722098803622062271541341520": "RR04_CA",
+    "268220306667773689022017851382979081268873232192450239963763238402705839942912": "F13_CA",
+    "268220306667773689022017851382979081268878549185563018041861535326735932910336": "F18_CA",
+    "268220306667773689022017851382979081268878549185563018041861535326735966465280": "F10_CA",
+    "268220306667773689022017851382979081268878549205845427645513205750683217751296": "F18_CA",
+    "268220306667773689022017851874042828584913104516249285591434072702523333995776": "RR05_CA",
+    "268220306667773689022017851874043542208759457496254806586481279914523726245200": "RR04EWB_CA",
+    "268220306667773689022017852879556668692737026310530943731289779551563889568640": "F06_CA_LL",
+    "268220306667773689022017852879556668692742343303648053390599755691927013485824": "F10_CA_TAF",
+    "268220306667773689022017852879556757895717820433023509874162870145009913490304": "F13_CA",
+    "268220306667773689022017852879556757895721808177862425013948272054365505776896": "F10_CA",
+    "268220306667773689022017852879556757895723137426140619533472846285373037407488": "F10_CA_TAF",
+    "268220306667773689022017852879556757895723137446423029137124516709320288693504": "F18_CA_TAF",
+    "926336713898529563388567880069503262826159877325124512315660672063305037119488": "F01_CG",
+    "926336713898529563388567880233191446207221004163937213579884370264769481932800": "F25_CG"
+   }
+  },
+  "3101:99:131:FF": {
+   "name": "CAH_ANT_PARAMETER_4",
+   "values": {
+    "0": "F12_CG",
+    "369129688773533092782732565286324687648632567770281138096054578100919831887872": "RR04_CG",
+    "369129688773533092782732565286324690436225717586609030785067946180566275063808": "F07_CG",
+    "369129688773533092782732565286324690436225717586609030788019497289953841250304": "F25_CG",
+    "369129688773533092782732565286329840514570003252390779186759845904183898144768": "F01_CG",
+    "369129688773533092782732565286329840514570003252390779192957951912950307487744": "F04_CG",
+    "369130243078461553237508714176940600142723917604093174842112501623884190056448": "F02_CG",
+    "369481291339423991264319641488972531220875386882087278957734145814623506399232": "F07_CG",
+    "369481291339423991264319641488972531220875386882087278960685696924011072585728": "F11_CG",
+    "369481845644352451216927579712920507758842301544092693987833094364730281170944": "F25_CA",
+    "369481845644352451216927579712920507759033713296152704799371783629814835976192": "F25_CA",
+    "369481845644352451216927603658163333788355713393193753630715715942331638092752": "F11_CA_RL",
+    "369481845644352451216927627603406159817869125242366052854296709985130754605056": "F11_CA",
+    "369481845644352451216927627603406159817869125242366052854296831582320693608448": "F07_CA",
+    "369538384750425360017642443793440936361032883424048642797858185842799144921696": "RR04_CA",
+    "369538384750425360017642443926985648472144137574910344387308546763859723082496": "RR04_CA",
+    "369538384750425360017642443926990086320147539795990910219363047197146311819264": "RR04_CA",
+    "369538384750425360017642443926990087681277007479744764072861476924219157643264": "F01_CA",
+    "369538384750425360017642443926990087681277007479744764072861476924222966129408": "F04_CA",
+    "383603699928197617210678851851505138851572198033928331993907862229059844964352": "RR05_CG",
+    "383603699928197617210678938278683276347393485786819779627205224558025813041152": "RR06_CG",
+    "383603699928197617210678938278865964051847168927034599504020512602286706393088": "RR05_CG",
+    "383603699928197617210678938279414034102162024837770620553717049069826492858368": "F10_CG",
+    "383603699928197617210678938279414034102162024837770620553717188681414941343744": "F13_CG",
+    "383603699928197617210678938412410676130291315853486208600986776101908973092864": "RR04EWB_CG",
+    "383603699928197617210678947262351153718660415582030062402045000594839518089216": "F12_CG",
+    "383786239480798251251394444471654481818905581287096313026598928258837823619072": "F18_CA_PHEV",
+    "383786239480798251251394492362140133877932404985440911473760916344435391893504": "F18_CA_PHEV",
+    "383955856799016975644874024543930485971576101920213664521967131414050686107648": "F12_CA",
+    "383955856799016975644874033524679730655114638137228867129106385680062830667520": "F12_CA",
+    "383955856799016975644874033524679730872895352966629483745666134436394485999360": "F12_CA",
+    "384012395905089884445588816919526924842691631507253713302790383843788112060416": "RR04EWB_CA",
+    "384012395905089884445588816919942343178713648138452775522594968258647127287808": "F13_CA",
+    "384012395905089884445588816919942411387635526579138858818257474624084530751728": "F10_CA",
+    "384012395905089884445588816919942411387635526579138858818257614235672979237104": "F13_CA",
+    "384012395905089884445588816920074987956690720101580095116830183664654328325312": "RR05_CA",
+    "384012395905089884445588816920079427166135298727720454271324626157177274427632": "F18_CA",
+    "384012395905089884445588837871437218165613301182569296085288683908277265821952": "RR06_CA",
+    "392549800922099037023967111882620051901677343053760785916607474193891279771648": "F25_CA",
+    "392549800922099037023967159773105703960512754999974133971532522146397137403904": "F07_CA",
+    "392606340028171945824681976096689631823920637237352845190097167488295601438720": "F01_CA"
+   }
+  },
+  "3108:0:32:FF": {
+   "name": "CAH_ANT_PARAMETER_8",
+   "values": {
+    "0": "F12_CG",
+    "731162507192746837522107396637694932153769793011467897058945839670263873040384": "F18_CA_PHEV",
+    "731162507192746837522107468352120180423294846835094138832087579768005752557568": "F18_CA_PHEV",
+    "731332124510965561915586916726155180065073684666409908258210760860801723011968": "F12_CA_LL",
+    "731332124510965561915586916726155180065082989404357269932661712340811606135680": "F12_CA",
+    "731388663617038470515434537379742353150509244408237843551020416044766794410592": "F10_CA_TAF_RL",
+    "731388663617038470716301721077114038370084500446005996006783559488989106803216": "F10_CA_RL",
+    "731388663617038470716301792909919513918658314131839999381640125201057888342544": "F13_CA_RL",
+    "731388663617038470716301792914304018014313624643119680031153291031213746688528": "F06_CA_RL",
+    "847124213748281757339157901734843087831114409551783730191886284992216521774336": "F12_CA",
+    "847124213748281757339157901734843087918343669332050472297668344868714852651904": "F12_CA_RL",
+    "847124213748281757339157901853224720454726134174177624988952395089824123458208": "F12_CA",
+    "847180752854354665939005522388430261003783216697018533527141700202022798624928": "F10_CA_TAF",
+    "847180752854354666139872706066711170902595503582894813901216668387914375238400": "RR04_CA",
+    "847180752854354666139872706081417441229719762088428607083465791569787946537728": "F18_CA",
+    "847180752854354666139872706085801946223039961336469126791891794217781735461392": "F10_CA_LL",
+    "847180752854354666139872706085801946223039961336469126807239570855501002445328": "F18_CA",
+    "847180752854354666139872706085801946223354485111646560046241143496902236443152": "F10_CA_TAF_RL",
+    "847180752854354666139872706087262734155197020781302817255408351632746864448000": "RR04EWB_CA",
+    "847180752854354666139872706087262734155197020781302817255408351871890647683648": "RR05_CA",
+    "847180752854354666139872706087263538375480460424978920404010252241837146247936": "F04_CA",
+    "847180752854354666139872706087263538375480460424978920424670704683583646208768": "F01_CA",
+    "847180752854354666139872706087263538375480460424978920424670718194382528320256": "F02_CA",
+    "847180752854354666139872730028121769712901475099135964977478198304629534495248": "F13_CA",
+    "847180752854354666139872730031044772171225882692211960794275081115125165330960": "F10_CA",
+    "847180752854354666139872730031044772171225887491541156568201711208000606179856": "F18_CA",
+    "847180752854354666139872777918607421771928298797480563421097709208971017982480": "F13_CA_LL",
+    "847180752854354666139872777922991212504733831757179516415840822741164791750656": "RR06_CA",
+    "847180752854354666139872777922991925867583609308760244070610875039126876328464": "F06_CA_LL",
+    "847180752854354698278633591267068244994438867604554867699468227288603570475520": "RR04_CA",
+    "856227009826019993907339261124607788247565195791667027907999698175490116290720": "F18_CA_TAF",
+    "926336713898529563388567880069503262826159877325124512315660672063305037119488": "F01_CG",
+    "926336713898529563388567880233191446207221004163937213579884370264769481932800": "F25_CG",
+    "926336713898529563388567880233191446904119291618019186752875566285030778994688": "F25_CA",
+    "926336713898529563388567975640018331865610667761757515508596510599927595823104": "F26_CA",
+    "962916302985597952762728886744992497408636171315283647941759925391275667231488": "F07_CA"
+   }
+  },
+  "3109:0:36:FF": {
+   "name": "CAH_ANT_PARAMETER_9",
+   "values": {
+    "1151754611649650513188180185015578853129479295824046344844566626225915208772933180723200": "F26_CA",
+    "1151754611649650513188180185015578853129498630865158283055849423693726223473519798259712": "F11_CA_RL",
+    "1151754611649650513188180185015578853129498630865158283055849423693726453153596100841472": "F11_CA_LL",
+    "1151754611649650513188180185015579236253364512296260934431323413803211113457713726623744": "F25_CA",
+    "1151754611649650513188180185015579236253383847337372872642606211271022357840506950520832": "F07_CA",
+    "157350972441605447168076406254357467873208807172011085620160406252249055425520891593496": "RR06_CA",
+    "2146401084469223797498944732731236032503539941498099578287589864404868185919815047184388": "F12_CA",
+    "2146401084469223797498944732731237564999080807386957936634617014714051804658937230786564": "F12_CA",
+    "2146643918080752015789605398841621095525410135163089091577756555841577707006222886617092": "F06_CA_LL",
+    "3140319056454212435564877254090707563607226421800390538517209765092566320446501214490624": "F18_CA_PHEV",
+    "3978585891278293137243057985174566720803649206378781739523711815145275976100267004264448": "sonst",
+    "3978585891278293137243057985877602115166957451928390154922970453748739785880238869708800": "F26_CG",
+    "4135936863719898584411134391328470828160311375084014696892609761136744489736999211630592": "F10_CA_TAF_LL"
+   }
+  },
+  "310A:0:36:FF": {
+   "name": "CAH_ANT_PARAMETER_A",
+   "values": {
+    "2146401084469223797498944732166278486372252207077619050860383675296604998172484517232640": "F12_CA",
+    "3141290390900325300100369895135262775726408072926047788530083435928245829933991768498176": "F06_CA_LL",
+    "3638613627310111942255752143282083615826864223723395505970547412821405326946525144031232": "F06_CA_RL",
+    "3978585891278293137243057985174566720803649206378781739523711815145275976100267004264448": "sonst",
+    "3978585891278293137243057985877602115166957451928390154922970453748739785880238869708800": "F26_CG",
+    "3978585891278293137243058395646803404203272485105470048591634819886406364028137881206784": "F18_CA_PHEV",
+    "4135936863719898584411134391328470828160311375084014696892609761136744489736999211630592": "F10_CA_TAF_LL",
+    "654674208851392089323458654401178212193958176011671302233658195392823089146709581761632": "RR06_CA"
+   }
+  },
+  "310B:0:36:FF": {
+   "name": "CAH_ANT_PARAMETER_B",
+   "values": {
+    "3141047557288797081809709125672380782111813575828003816466307703882842005003407503532032": "F12_CA_RL",
+    "3638370793698583723965091270975166789636892091939777624072365119354994281672010844217344": "F12_CA_LL",
+    "3638370793698583723965091270975179049601219019050644490848582321828463231584988311986176": "F12_CA",
+    "3978585891278293137243057985174566720803649206378781739523711815145275976100267004264448": "sonst",
+    "3978585891278293137243057985877602115166957451928390154922970453748739785880238869708800": "F26_CG",
+    "3978585891278293137243058395646803404203272485105470048591634819886406364028137881206784": "F18_CA_PHEV",
+    "4135936863719898584411134391328470828160311375084014696892609761136744489736999211630592": "F10_CA_TAF_LL"
+   }
+  },
+  "3700:0:0:FF": {
+   "name": "VCM_TYPE_VEHICLE",
+   "values": {
+    "0": "F18",
+    "24": "F01",
+    "25": "F02",
+    "26": "F03",
+    "27": "F07",
+    "28": "F10",
+    "29": "F11",
+    "30": "F12",
+    "31": "F13",
+    "32": "F04",
+    "41": "F25",
+    "43": "RR04",
+    "47": "F18",
+    "50": "F06",
+    "53": "RR05",
+    "68": "F26",
+    "90": "RR06"
+   }
+  },
+  "3700:10:13:FF": {
+   "name": "VCM_CODE_PAINTWORK",
+   "values": {}
+  },
+  "3700:14:17:FF": {
+   "name": "VCM_CODE_UPHOLSTERY",
+   "values": {}
+  },
+  "3700:18:18:FF": {
+   "name": "VCM_GLOBAL_RESERVED_1",
+   "values": {}
+  },
+  "3700:19:19:FF": {
+   "name": "VCM_GLOBAL_RESERVED_2",
+   "values": {}
+  },
+  "3700:1:1:FF": {
+   "name": "VCM_TYPE_BODY",
+   "values": {
+    "0": "invalid",
+    "1": "limousine",
+    "2": "coupe",
+    "3": "touring",
+    "34": "Sports_Activity_Coupe",
+    "4": "cabrio",
+    "5": "roadster",
+    "6": "compact",
+    "7": "sicherheitsfahrzeug"
+   }
+  },
+  "3700:20:20:FF": {
+   "name": "VCM_GLOBAL_RESERVED_3",
+   "values": {}
+  },
+  "3700:21:21:FF": {
+   "name": "VCM_GLOBAL_RESERVED_4",
+   "values": {}
+  },
+  "3700:22:22:FF": {
+   "name": "VCM_GLOBAL_RESERVED_5",
+   "values": {}
+  },
+  "3700:23:23:FF": {
+   "name": "VCM_GLOBAL_RESERVED_6",
+   "values": {}
+  },
+  "3700:2:2:FF": {
+   "name": "VCM_QUANTITY_CYLINDER",
+   "values": {
+    "12": "12_zylinder",
+    "16": "10_zylinder",
+    "4": "4_zylinder",
+    "6": "6_zylinder",
+    "8": "8_zylinder"
+   }
+  },
+  "3700:3:3:FF": {
+   "name": "VCM_QUANTITY_GEAR",
+   "values": {
+    "5": "5_gaenge",
+    "6": "6_gaenge",
+    "7": "7_gaenge",
+    "8": "8_gaenge"
+   }
+  },
+  "3700:4:4:FF": {
+   "name": "VCM_TYPE_ENGINE",
+   "values": {
+    "4": "benzin_direkt",
+    "6": "diesel_direkt"
+   }
+  },
+  "3700:5:5:FF": {
+   "name": "VCM_TYPE_STEERING",
+   "values": {
+    "1": "linkslenker",
+    "2": "rechtslenker"
+   }
+  },
+  "3700:6:6:FF": {
+   "name": "VCM_TYPE_GEARBOX",
+   "values": {
+    "0": "handschaltung",
+    "1": "automatik",
+    "2": "schrittschaltung",
+    "3": "ssg_schaltung",
+    "4": "doppelkupplungsgetriebe"
+   }
+  },
+  "3700:7:7:FF": {
+   "name": "VCM_CLASS_POWER",
+   "values": {
+    "0": "UL",
+    "1": "ML",
+    "11": "SL",
+    "12": "UL",
+    "13": "ML",
+    "14": "OL",
+    "15": "invalid",
+    "2": "OL",
+    "3": "KL",
+    "7": "TL"
+   }
+  },
+  "3700:8:8:FF": {
+   "name": "VCM_COUNTRY",
+   "values": {
+    "1": "ece",
+    "10": "golf",
+    "11": "suedafrika",
+    "12": "kanada",
+    "13": "taiwan",
+    "14": "indien",
+    "15": "malaysia",
+    "16": "thailand",
+    "17": "indonesien",
+    "18": "philippinen",
+    "19": "vietnam",
+    "2": "us",
+    "20": "mexiko",
+    "21": "belgien",
+    "22": "china",
+    "23": "hongkong",
+    "3": "deutschland",
+    "4": "gb",
+    "5": "japan",
+    "6": "australien",
+    "7": "korea",
+    "8": "brasilien",
+    "9": "aegypten"
+   }
+  },
+  "3700:9:9:FF": {
+   "name": "VCM_TYPE_CAPACITY",
+   "values": {
+    "15": "B37D15",
+    "20": "n47D20",
+    "25": "n52b25",
+    "30": "n52b30",
+    "40": "n63b40",
+    "44": "n63b44",
+    "50": "n55b29",
+    "60": "n74b60",
+    "66": "n74b66"
+   }
+  },
+  "3701:0:1:FF": {
+   "name": "SF_SD_CBS_Var",
+   "values": {}
+  },
+  "3701:2:2:FF": {
+   "name": "SF_SD_Data_Var",
+   "values": {}
+  },
+  "3701:3:3:FF": {
+   "name": "VCM_CC_RESERED_BYTE3",
+   "values": {}
+  },
+  "3702:0:0:FF": {
+   "name": "VCM_BATTERY_CLASS",
+   "values": {
+    "1": "80ah",
+    "10": "80ah_agm",
+    "12": "105ah_agm",
+    "2": "90ah",
+    "4": "70ah",
+    "7": "70ah_agm",
+    "8": "90ah_agm"
+   }
+  },
+  "3702:1:1:FF": {
+   "name": "VCM_BATTERY_CURRENT_SILENT",
+   "values": {}
+  },
+  "3702:2:2:FF": {
+   "name": "VCM_BATTERY_CURRENT_MAX",
+   "values": {}
+  },
+  "3702:3:3:FF": {
+   "name": "VCM_BATTERY_CURRENT_MIN",
+   "values": {}
+  },
+  "37FC:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "37FD:0:15:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "TC",
+  "3001": "CAM",
+  "3002": "CLM",
+  "3003": "FH_Master",
+  "3004": "RCS",
+  "3005": "TRSP",
+  "3006": "TAC",
+  "3100": "CAH_DRV",
+  "3101": "CAH_ANT1-7",
+  "3108": "CAH_ANT8",
+  "3109": "CAH_ANT9",
+  "310A": "CAH_ANTA",
+  "310B": "CAH_ANTB",
+  "3700": "VCM_GLOBAL",
+  "3701": "VCM_CC_DATA",
+  "3702": "VCM_AEP_DATA",
+  "37FC": "CAF_ID",
+  "37FD": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

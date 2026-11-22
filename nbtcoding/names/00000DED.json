@@ -1,12 +1,7973 @@
 {
-  "module": "HU_NBT",
-  "note": "Head unit CAFD for this car. Names/descriptions we confirm go here. Do NOT code this module while the Android Auto mod is installed.",
-  "schema_example": {
-    "3000:0:0:01": {
-      "name": "VIDEO_IN_MOTION",
-      "desc": "Allows video playback while driving.",
-      "values": {"0": "Off", "1": "On"}
-    }
+ "functions": {
+  "3000:0:0:01": {
+   "name": "SL01",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
   },
-  "functions": {}
+  "3000:0:0:02": {
+   "name": "SL02_ES",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:04": {
+   "name": "SL03_IMPORT_EXPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:08": {
+   "name": "SL04_PIA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:10": {
+   "name": "SL05",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:20": {
+   "name": "SL06_IBA_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:40": {
+   "name": "SL07_IBA_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:80": {
+   "name": "SL08_NUMMEREINGABE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:100:100:01": {
+   "name": "ACOUSTICAL_LOCK_CONFIRM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:100:100:02": {
+   "name": "MOMENTDISTRIBUTION_MENU",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:100:100:04": {
+   "name": "NANP_FORMAT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:100:100:08": {
+   "name": "ENABLE_SW_INFO_REQUEST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:100:100:10": {
+   "name": "HDC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:100:100:20": {
+   "name": "BASIS_KOMBI_MMI_LIST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:100:100:40": {
+   "name": "DATUMSFORMAT_AR_ASIA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:100:100:80": {
+   "name": "NAVI_INTERMODAL_ROUTING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:101:101:01": {
+   "name": "NAVI_AUGMENTED_REALITY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:101:101:02": {
+   "name": "NAVI_VIOCE_OUTPUT_2_STEP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:101:101:04": {
+   "name": "NAVI_AUTOZOOM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:101:101:08": {
+   "name": "NAVI_SCROLLING_ALONG_ROUTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:101:101:10": {
+   "name": "NAVI_ROUTENMAGNET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:101:101:20": {
+   "name": "NAVI_LAST_MILE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:101:101:40": {
+   "name": "NAVI_FREIE_ZIELEINGABE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:101:101:80": {
+   "name": "NAVI_ALERT_POI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:102:102:01": {
+   "name": "NAVI_AVOID_AREA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:102:102:02": {
+   "name": "NAVI_ONLINE_OPTIMIZATION_BUTTON",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:102:102:04": {
+   "name": "NAVI_REICHWEITENKARTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:102:102:08": {
+   "name": "NAVI_ROUTE_EXPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:102:102:F0": {
+   "name": "A4A_LEGAL_DISCLAIMER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "10.25_1280x480",
+    "3": "10.25_1600x600",
+    "4": "rse_9.2_800x480",
+    "5": "rse_10.x_1280x72"
+   }
+  },
+  "3000:103:103:01": {
+   "name": "NAVI_HUD_AVAILABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:103:103:06": {
+   "name": "TI_DYNAMIC_ROUTING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "benzin_diesel",
+    "2": "benzin_diesel_ladestation"
+   }
+  },
+  "3000:103:103:08": {
+   "name": "NAVI_TRIPLIST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:103:103:10": {
+   "name": "MESSAGE_DICTATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:103:103:60": {
+   "name": "MAX_DICTATION_TIME_SEC",
+   "values": {
+    "0": "none",
+    "1": "v005",
+    "2": "v010"
+   }
+  },
+  "3000:103:103:80": {
+   "name": "TERMINAL_UI_LINK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:104:104:07": {
+   "name": "MANEUVER_LIST",
+   "values": {
+    "1": "aktiv"
+   }
+  },
+  "3000:104:104:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:104:104:10": {
+   "name": "HIST_GAS_CONSUMP_SCALE_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:104:104:20": {
+   "name": "HIST_GAS_CONSUMP_SCALE_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:104:104:40": {
+   "name": "HIST_GAS_CONSUMP_SCALE_3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:104:104:80": {
+   "name": "HIST_GAS_CONSUMP_SCALE_4",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:105:105:01": {
+   "name": "HIST_HYB_CONSUMP_SCALE_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:105:105:02": {
+   "name": "HIST_HYB_CONSUMP_SCALE_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:105:105:04": {
+   "name": "HIST_HYB_CONSUMP_SCALE_3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:105:105:08": {
+   "name": "HIST_BEV_CONSUMP_SCALE_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:105:105:10": {
+   "name": "HIST_BEV_CONSUMP_SCALE_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:105:105:20": {
+   "name": "HIST_BEV_CONSUMP_SCALE_3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:105:105:C0": {
+   "name": "HIST_BEV_RECUP_SCALE_1",
+   "values": {
+    "0": "00",
+    "1": "01",
+    "2": "10",
+    "3": "11"
+   }
+  },
+  "3000:106:106:07": {
+   "name": "HIST_BEV_RECUP_SCALE_2",
+   "values": {
+    "0": "wert_1_250ms",
+    "1": "wert_2_1000ms",
+    "2": "wert_3_1750ms",
+    "3": "wert_4_2500ms",
+    "4": "wert_5_3250ms",
+    "5": "wert_6_4000ms"
+   }
+  },
+  "3000:106:106:08": {
+   "name": "HIST_BEV_RECUP_SCALE_3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:106:106:10": {
+   "name": "ADAS_2D_HORIZON",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:106:106:20": {
+   "name": "ADAS_1D_HORIZON",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:106:106:40": {
+   "name": "ADAS_GPS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:106:106:80": {
+   "name": "ADAS_SYS_INF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:107:107:01": {
+   "name": "ADAS_CUR_SEG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:107:107:02": {
+   "name": "ECO_CSC_KOMBI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:107:107:04": {
+   "name": "ECO_SLOPE_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:107:107:08": {
+   "name": "ECO_CURVE_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:107:107:70": {
+   "name": "ECO_TRANS_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "restricted"
+   }
+  },
+  "3000:107:107:80": {
+   "name": "ECO_AUX_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:108:108:01": {
+   "name": "ECO_FERRY_CONS",
+   "values": {
+    "0": "0.00",
+    "1": "0.25"
+   }
+  },
+  "3000:108:108:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:108:108:04": {
+   "name": "HIST_Y_SCALE_STEP_1",
+   "values": {
+    "0": "000",
+    "1": "001"
+   }
+  },
+  "3000:108:108:08": {
+   "name": "HIST_Y_SCALE_STEP_2",
+   "values": {
+    "0": "000",
+    "1": "001"
+   }
+  },
+  "3000:108:108:30": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "sia",
+    "2": "kuzu",
+    "3": "initwert"
+   }
+  },
+  "3000:108:108:40": {
+   "name": "HIST_Y_SCALE_STEP_3",
+   "values": {
+    "0": "000",
+    "1": "001"
+   }
+  },
+  "3000:108:108:80": {
+   "name": "HIST_Y_SCALE_STEP_4",
+   "values": {
+    "0": "000",
+    "1": "001"
+   }
+  },
+  "3000:109:109:01": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:109:109:02": {
+   "name": "HIST_Y_SCALE_STEP_5",
+   "values": {
+    "0": "000",
+    "1": "001"
+   }
+  },
+  "3000:109:109:04": {
+   "name": "HIST_Y_SCALE_STEP_6",
+   "values": {
+    "0": "000",
+    "1": "001"
+   }
+  },
+  "3000:109:109:08": {
+   "name": "HUD_KOMPRIMIERUNG_ART",
+   "values": {
+    "0": "rle_1",
+    "1": "rle_2"
+   }
+  },
+  "3000:109:109:70": {
+   "name": "HUD_AUFLOESUNG",
+   "values": {
+    "0": "aufloesung_1",
+    "1": "aufloesung_2",
+    "2": "urban",
+    "3": "modern",
+    "4": "luxury"
+   }
+  },
+  "3000:109:109:80": {
+   "name": "KOMBI_AUFLOESUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:03": {
+   "name": "ENT_HU_DRIVE",
+   "values": {
+    "0": "none",
+    "1": "cd",
+    "2": "dvd",
+    "3": "blu-ray"
+   }
+  },
+  "3000:10:10:04": {
+   "name": "ENT_VIDEO_HMI",
+   "values": {
+    "0": "dvd_hmi",
+    "1": "title_list"
+   }
+  },
+  "3000:10:10:08": {
+   "name": "OE_ENABLED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:10": {
+   "name": "OE_RSE_ENABLED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:20": {
+   "name": "MOMENTANVERBRAUCHSANZEIGE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:C0": {
+   "name": "RHMI_LIST_SPEEDLOCK_LEVEL",
+   "values": {
+    "1": "level_1",
+    "2": "level_2"
+   }
+  },
+  "3000:110:110:01": {
+   "name": "LOUPE_TACHO_KOMBI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:110:110:02": {
+   "name": "DRIVE_MODE_KOMBI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:110:110:04": {
+   "name": "CALMING_KOMBI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:110:110:08": {
+   "name": "MFID_KOMBI_VARIANT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:110:110:10": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:110:110:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:110:110:40": {
+   "name": "DATUMSFORMAT_AR_ASIA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:110:110:80": {
+   "name": "A4A_SWT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:111:111:01": {
+   "name": "NAVI_AUGMENTED_REALITY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:111:111:02": {
+   "name": "NAVI_VIOCE_OUTPUT_2_STEP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:111:111:04": {
+   "name": "NAVI_AUTOZOOM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:111:111:08": {
+   "name": "NAVI_SCROLLING_ALONG_ROUTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:111:111:10": {
+   "name": "NAVI_ROUTENMAGNET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:111:111:20": {
+   "name": "NAVI_LAST_MILE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:111:111:40": {
+   "name": "NAVI_FREIE_ZIELEINGABE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:111:111:80": {
+   "name": "NAVI_ALERT_POI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:112:112:01": {
+   "name": "NAVI_AVOID_AREA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:112:112:02": {
+   "name": "NAVI_ONLINE_OPTIMIZATION_BUTTON",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:112:112:04": {
+   "name": "NAVI_REICHWEITENKARTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:112:112:08": {
+   "name": "NAVI_ROUTE_EXPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:112:112:10": {
+   "name": "A4A_LEGAL_DISCLAIMER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:112:112:20": {
+   "name": "NAVI_HUD_AVAILABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:112:112:40": {
+   "name": "TI_DYNAMIC_ROUTING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:112:112:80": {
+   "name": "NAVI_TRIPLIST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:113:113:01": {
+   "name": "MESSAGE_DICTATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:113:113:0E": {
+   "name": "MAX_DICTATION_TIME_SEC",
+   "values": {
+    "1": "v005",
+    "2": "v010",
+    "3": "v015",
+    "4": "v020",
+    "6": "v030"
+   }
+  },
+  "3000:113:113:10": {
+   "name": "TERMINAL_UI_LINK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:113:113:20": {
+   "name": "MANEUVER_LIST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:113:113:40": {
+   "name": "RANGE_CORRECTION_KI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:113:113:80": {
+   "name": "LETZTE_LADESTATIONEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:114:114:FF": {
+   "name": "HIST_GAS_CONSUMP_SCALE_1",
+   "values": {
+    "20": "20",
+    "30": "30"
+   }
+  },
+  "3000:115:115:FF": {
+   "name": "HIST_GAS_CONSUMP_SCALE_2",
+   "values": {
+    "60": "60",
+    "80": "80"
+   }
+  },
+  "3000:116:116:FF": {
+   "name": "HIST_GAS_CONSUMP_SCALE_3",
+   "values": {
+    "50": "50",
+    "60": "60"
+   }
+  },
+  "3000:117:117:FF": {
+   "name": "HIST_GAS_CONSUMP_SCALE_4",
+   "values": {
+    "20": "20",
+    "30": "30",
+    "40": "40"
+   }
+  },
+  "3000:118:118:FF": {
+   "name": "HIST_HYB_CONSUMP_SCALE_1",
+   "values": {
+    "20": "20"
+   }
+  },
+  "3000:119:119:FF": {
+   "name": "HIST_HYB_CONSUMP_SCALE_2",
+   "values": {
+    "20": "20"
+   }
+  },
+  "3000:11:11:01": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:11:11:06": {
+   "name": "ENT_MC_ACTIV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "hoch_mittel",
+    "3": "hoch_mittel_gering"
+   }
+  },
+  "3000:11:11:18": {
+   "name": "ENT_MC_COVER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "variante_2",
+    "3": "variante_3"
+   }
+  },
+  "3000:11:11:20": {
+   "name": "ENT_MC_VIDEO_SUPPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:11:11:40": {
+   "name": "ENT_MC_PLAYLIST_IMPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:11:11:80": {
+   "name": "ENT_MC_ASIA_INPUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:120:120:FF": {
+   "name": "HIST_HYB_CONSUMP_SCALE_3",
+   "values": {
+    "30": "30"
+   }
+  },
+  "3000:121:121:FF": {
+   "name": "HIST_BEV_CONSUMP_SCALE_1",
+   "values": {
+    "40": "40",
+    "45": "45",
+    "50": "50",
+    "60": "60"
+   }
+  },
+  "3000:122:122:FF": {
+   "name": "HIST_BEV_CONSUMP_SCALE_2",
+   "values": {
+    "10": "10",
+    "12": "12",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "8": "8"
+   }
+  },
+  "3000:123:123:FF": {
+   "name": "HIST_BEV_CONSUMP_SCALE_3",
+   "values": {
+    "10": "10",
+    "12": "12",
+    "15": "15",
+    "18": "18",
+    "9": "9"
+   }
+  },
+  "3000:124:124:FF": {
+   "name": "HIST_BEV_RECUP_SCALE_1",
+   "values": {
+    "10": "10",
+    "12": "12",
+    "20": "20",
+    "6": "6",
+    "8": "8"
+   }
+  },
+  "3000:125:125:FF": {
+   "name": "HIST_BEV_RECUP_SCALE_2",
+   "values": {
+    "12": "12",
+    "20": "20",
+    "24": "24",
+    "30": "30"
+   }
+  },
+  "3000:126:126:FF": {
+   "name": "HIST_BEV_RECUP_SCALE_3",
+   "values": {
+    "24": "24",
+    "30": "30",
+    "36": "36"
+   }
+  },
+  "3000:127:127:01": {
+   "name": "ADAS_2D_HORIZON",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:127:127:02": {
+   "name": "ADAS_1D_HORIZON",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:127:127:04": {
+   "name": "ADAS_GPS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:127:127:08": {
+   "name": "ADAS_SYS_INF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:127:127:10": {
+   "name": "ADAS_CUR_SEG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:127:127:20": {
+   "name": "ECO_CSC_KOMBI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:127:127:40": {
+   "name": "ECO_SLOPE_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:127:127:80": {
+   "name": "ECO_CURVE_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:128:128:01": {
+   "name": "ECO_TRANS_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:128:128:02": {
+   "name": "ECO_AUX_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:128:128:1C": {
+   "name": "ECO_FERRY_CONS",
+   "values": {
+    "0": "0.00",
+    "1": "0.25",
+    "2": "0.50",
+    "3": "0.75",
+    "4": "1.00",
+    "5": "2.00",
+    "6": "4.00"
+   }
+  },
+  "3000:128:128:20": {
+   "name": "IAK_FANGMODUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:128:128:40": {
+   "name": "RANGE_ASSISTANT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:128:128:80": {
+   "name": "RETURN_JOURNEY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:129:129:07": {
+   "name": "HIST_Y_SCALE_STEP_1",
+   "values": {
+    "0": "000",
+    "1": "001",
+    "2": "010",
+    "3": "011",
+    "4": "100"
+   }
+  },
+  "3000:129:129:38": {
+   "name": "HIST_Y_SCALE_STEP_2",
+   "values": {
+    "0": "000",
+    "1": "001",
+    "2": "010",
+    "3": "011",
+    "4": "100"
+   }
+  },
+  "3000:129:129:40": {
+   "name": "DOOR_LOCK_AFTER_DRIVING_AWAY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:129:129:80": {
+   "name": "A4A_VOICE_APP_SUPPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:12:12:01": {
+   "name": "ENT_MC_AUTO_RIP_IMPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:12:12:02": {
+   "name": "ENT_MC_AUTO_BACKUPRESTORE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:12:12:0C": {
+   "name": "ENT_MC_WLAN_STREAM_DMP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "rex"
+   }
+  },
+  "3000:12:12:10": {
+   "name": "IPCE_WEBSERVER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:12:12:20": {
+   "name": "ENT_MC_DELETE_MUSICSEARCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:12:12:C0": {
+   "name": "ENT_MC_SONG_BOOKMARKS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "10",
+    "3": "11"
+   }
+  },
+  "3000:130:130:07": {
+   "name": "HIST_Y_SCALE_STEP_3",
+   "values": {
+    "0": "000",
+    "1": "001",
+    "2": "010",
+    "3": "011",
+    "4": "100"
+   }
+  },
+  "3000:130:130:38": {
+   "name": "HIST_Y_SCALE_STEP_4",
+   "values": {
+    "0": "000",
+    "1": "001",
+    "2": "010",
+    "3": "011",
+    "4": "100"
+   }
+  },
+  "3000:130:130:40": {
+   "name": "DEPARTURE_TIME_CLIMATE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:130:130:80": {
+   "name": "COVER_FLOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:131:131:07": {
+   "name": "HIST_Y_SCALE_STEP_5",
+   "values": {
+    "0": "000",
+    "1": "001",
+    "2": "010",
+    "3": "011",
+    "4": "100"
+   }
+  },
+  "3000:131:131:38": {
+   "name": "HIST_Y_SCALE_STEP_6",
+   "values": {
+    "0": "000",
+    "1": "001",
+    "2": "010",
+    "3": "011",
+    "4": "100"
+   }
+  },
+  "3000:131:131:C0": {
+   "name": "HUD_KOMPRIMIERUNG_ART",
+   "values": {
+    "0": "rle_1",
+    "1": "rle_2"
+   }
+  },
+  "3000:132:132:0F": {
+   "name": "HUD_AUFLOESUNG",
+   "values": {
+    "0": "aufloesung_1",
+    "1": "aufloesung_2"
+   }
+  },
+  "3000:132:132:30": {
+   "name": "KOMBI_AUFLOESUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:132:132:40": {
+   "name": "LOUPE_TACHO_KOMBI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:132:132:80": {
+   "name": "DRIVE_MODE_KOMBI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:133:133:01": {
+   "name": "CALMING_KOMBI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:133:133:02": {
+   "name": "MFID_KOMBI_VARIANT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:133:133:3C": {
+   "name": "HMI_BRAND",
+   "values": {
+    "0": "bmw",
+    "1": "bmw_i",
+    "2": "mini",
+    "3": "rr",
+    "4": "nev"
+   }
+  },
+  "3000:133:133:40": {
+   "name": "M_VEHICLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:133:133:80": {
+   "name": "M_DRIVE_SYSTEMS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:134:134:01": {
+   "name": "KI_SELECTION_SOC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:134:134:06": {
+   "name": "CHARGING_CABLE_SIDE",
+   "values": {
+    "0": "kein_stecker",
+    "1": "links",
+    "2": "rechts"
+   }
+  },
+  "3000:134:134:08": {
+   "name": "TRACTION_DEMAND_CONTROL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:134:134:10": {
+   "name": "BARGEIN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:134:134:20": {
+   "name": "ADAS_1DH_PHEV_EXT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:134:134:40": {
+   "name": "GOOGLE_LOCAL_VOICE_SEARCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:134:134:80": {
+   "name": "EWS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:135:135:01": {
+   "name": "A4A_STT_SPELLER_INPUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:135:135:02": {
+   "name": "A4A_STATUS_BAR_NOTIFICATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:135:135:04": {
+   "name": "A4A_CALENDER_WIDGET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:135:135:08": {
+   "name": "ROUTE_FLIGHT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:135:135:10": {
+   "name": "NAVI_GEO_COORDINATE_INPUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:135:135:60": {
+   "name": "EV_CONFIG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "ac_3.7 kw",
+    "2": "ac_7.4 kw",
+    "3": "dc"
+   }
+  },
+  "3000:135:135:80": {
+   "name": "ECO_TIPS_LAYOUT_NEW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:136:136:07": {
+   "name": "COLOUR_SWITCH_ENSEMBLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "10_eintraege",
+    "2": "7_eintraege"
+   }
+  },
+  "3000:136:136:78": {
+   "name": "RANGE_MAX",
+   "values": {
+    "0": "1200",
+    "1": "1000",
+    "2": "900",
+    "3": "800",
+    "4": "700",
+    "5": "600",
+    "6": "300",
+    "7": "200"
+   }
+  },
+  "3000:136:136:80": {
+   "name": "ECO_TIPPS_ONEPADDLEDRIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:137:137:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "255": "initwert"
+   }
+  },
+  "3000:138:138:3F": {
+   "name": "UNBELEGT",
+   "values": {
+    "63": "initwert"
+   }
+  },
+  "3000:138:138:40": {
+   "name": "LANGUAGE_ISPEECH_RU_RU",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:138:138:80": {
+   "name": "LANGUAGE_ISPEECH_PT_PT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:139:139:03": {
+   "name": "LANGUAGE_GERMAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:139:139:0C": {
+   "name": "LANGUAGE_ENGLISH_UK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:139:139:30": {
+   "name": "LANGUAGE_ENGLISH_US",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:139:139:C0": {
+   "name": "LANGUAGE_SPANISH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:13:13:01": {
+   "name": "ENT_MC_TIMESHIFT_REC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:02": {
+   "name": "ENT_MC_PIA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:04": {
+   "name": "ENT_MC_COVER_SCALE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:08": {
+   "name": "ENT_GRACENOTE_INSTALLED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:10": {
+   "name": "NIVI_2_OBJ_DETECTION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:20": {
+   "name": "X_VIEW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:40": {
+   "name": "ENT_GRACENOTE_USB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:80": {
+   "name": "ENT_GRACENOTE_MLT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:140:140:03": {
+   "name": "LANGUAGE_FRENCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:140:140:0C": {
+   "name": "LANGUAGE_ITALIAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:140:140:30": {
+   "name": "LANGUAGE_HUNGARIAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:140:140:C0": {
+   "name": "LANGUAGE_DUTCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:141:141:03": {
+   "name": "LANGUAGE_POLISH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:141:141:0C": {
+   "name": "LANGUAGE_PORTUGUESE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:141:141:30": {
+   "name": "LANGUAGE_RUSSIAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:141:141:C0": {
+   "name": "LANGUAGE_SWEDISH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:142:142:03": {
+   "name": "LANGUAGE_TURKISH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:142:142:0C": {
+   "name": "LANGUAGE_GREEK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:142:142:30": {
+   "name": "LANGUAGE_ARABIC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:142:142:C0": {
+   "name": "LANGUAGE_CHINESE_SIMPLIFIED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:143:143:03": {
+   "name": "LANGUAGE_CHINESE_TRADITIONAL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:143:143:0C": {
+   "name": "LANGUAGE_JAPANESE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:143:143:30": {
+   "name": "LANGUAGE_KOREAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:143:143:C0": {
+   "name": "LANGUAGE_CZECH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:144:144:03": {
+   "name": "LANGUAGE_SLOVENIAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:144:144:0C": {
+   "name": "LANGUAGE_SLOVAKIAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:144:144:30": {
+   "name": "LANGUAGE_DANISH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:144:144:C0": {
+   "name": "LANGUAGE_FINNISH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:145:145:03": {
+   "name": "LANGUAGE_NORWEGIAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "master",
+    "2": "list"
+   }
+  },
+  "3000:145:145:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "63": "initwert"
+   }
+  },
+  "3000:146:151:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "281474976710655": "initwert"
+   }
+  },
+  "3000:14:14:01": {
+   "name": "ENT_GRACENOTE_SERVICE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:02": {
+   "name": "ENT_CODEC_OGG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:04": {
+   "name": "ENT_CODEC_XVID",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:08": {
+   "name": "ENT_CODEC_VCD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:10": {
+   "name": "SWITCH_MLS_MI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:20": {
+   "name": "SLI_NAVI_DISPLAY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:40": {
+   "name": "TRAFFIC_CATEGORIES",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:80": {
+   "name": "AUTO_JUNCTION_VIEW_CID",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:01": {
+   "name": "AUTO_MAP_ZOOM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:02": {
+   "name": "TIME_DEPENDING_ROUTING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:04": {
+   "name": "TMC_MEDIA_MOBILE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:08": {
+   "name": "TMC_ITIS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:10": {
+   "name": "STREET_NAME_VOICE_GUIDING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:40": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:80": {
+   "name": "HUD_ENTERTAINMENTLIST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:01": {
+   "name": "HUD_VZA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:02": {
+   "name": "ECO_ROUTE_TEXT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:04": {
+   "name": "MMI_STATISTIK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:08": {
+   "name": "LOGIC7_SYMBOL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:10": {
+   "name": "CONNECTED_DRIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:20": {
+   "name": "HYBRID",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:40": {
+   "name": "HEADLIGHT_SETTING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:80": {
+   "name": "APPLE_ENHANCEMENTS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:01": {
+   "name": "SPEECH_FEEDBACK_CHANNEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:02": {
+   "name": "IGNORE_ENGINE_RUN_TOURIST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:04": {
+   "name": "SERVICE_HISTORY_WHO",
+   "values": {
+    "0": "default",
+    "1": "eco_state_2"
+   }
+  },
+  "3000:17:17:08": {
+   "name": "NAVI_CONSUMPTION_DIFF",
+   "values": {
+    "0": "none",
+    "1": "percent"
+   }
+  },
+  "3000:17:17:10": {
+   "name": "RSE_SERVING_SETTINGS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "basic"
+   }
+  },
+  "3000:17:17:20": {
+   "name": "SLD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:40": {
+   "name": "KEY_CONF_TAILGATE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:80": {
+   "name": "KEY_CONF_COMFORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:01": {
+   "name": "KEY_CONF_COMFORT_TAILGATE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:02": {
+   "name": "KEY_CONF_COMFORT_COOLING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:04": {
+   "name": "KEY_CONF_TAILGATE_SMALL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:18:18:08": {
+   "name": "SPECIAL_VEHICLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "security"
+   }
+  },
+  "3000:18:18:30": {
+   "name": "ECO_TYPE_DRIVETRAIN",
+   "values": {
+    "0": "konv_otto",
+    "1": "konv_diesel",
+    "2": "bev_rex"
+   }
+  },
+  "3000:18:18:C0": {
+   "name": "KEY_CONF_TAILGATE_SMALL_NAME",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "rear_window",
+    "2": "tailgate"
+   }
+  },
+  "3000:19:19:01": {
+   "name": "KEY_CONF_UNLOCK_VEHICLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:06": {
+   "name": "KEY_CONF_COMFORT_HOMELIGHT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "navigation"
+   }
+  },
+  "3000:19:19:08": {
+   "name": "X_VIEW_GRAPHIC_SLOP",
+   "values": {
+    "0": "linear",
+    "1": "trajectory1"
+   }
+  },
+  "3000:19:19:10": {
+   "name": "X_VIEW_GRAPHIC_ROLL",
+   "values": {
+    "0": "linear",
+    "1": "trajectory1"
+   }
+  },
+  "3000:19:19:20": {
+   "name": "EINBAUWINKEL_HU_PITCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:40": {
+   "name": "EINBAUWINKEL_HU_ROLL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:80": {
+   "name": "EINBAUWINKEL_HU_YAW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:01": {
+   "name": "SL09",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:02": {
+   "name": "SL10",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:04": {
+   "name": "SL11",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:08": {
+   "name": "SL12",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:10": {
+   "name": "SL13",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:20": {
+   "name": "SL14",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:40": {
+   "name": "SL15",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:80": {
+   "name": "SL16_ADD_CEDEVICE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:01": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:02": {
+   "name": "RANGE_VALUE_KOMBI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:3C": {
+   "name": "HIGH_END_AUDIO_MENUE",
+   "values": {
+    "0": "kein_menue",
+    "1": "keine_insz",
+    "2": "nur_lichtinsz",
+    "3": "volle_insz",
+    "4": "200",
+    "5": "500"
+   }
+  },
+  "3000:20:20:40": {
+   "name": "M_LAPTIMER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:80": {
+   "name": "GUIDING_PLUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:21:21:01": {
+   "name": "NAVI_VARIANTE",
+   "values": {
+    "0": "keine_navi",
+    "1": "ece"
+   }
+  },
+  "3000:21:21:02": {
+   "name": "NAVI_SHOW_GEOCORDINATES",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:21:21:04": {
+   "name": "GYRO_INTERN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:21:21:08": {
+   "name": "NAVI_FLEET_MODE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:21:21:10": {
+   "name": "NAVI_MAPMODE_AUTOMATIC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:21:21:60": {
+   "name": "NAVI_MECCA_INDICATOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "nur_lichtinsz",
+    "3": "volle_insz"
+   }
+  },
+  "3000:21:21:80": {
+   "name": "NAVI_USE_WHILE_UPDATE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:01": {
+   "name": "NAVI_TRAFFIC_INFO_MAP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:02": {
+   "name": "NAVI_ROAD_PREVIEW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:04": {
+   "name": "NAVI_2D_MAP_OPTIONS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:08": {
+   "name": "NAVI_3D_MAP_OPTIONS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:10": {
+   "name": "NAVI_MAPSCROLL_LIGHTBEAM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:20": {
+   "name": "GUIDED_TOURS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:40": {
+   "name": "POI_DETAILS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:80": {
+   "name": "IPD_BEHANDLUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:23:23:01": {
+   "name": "ROUTEN_ID_GUIDEDTOURS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:23:23:02": {
+   "name": "NAVI_FUELSTOP_PROPOSAL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:23:23:04": {
+   "name": "NAVI_PFEILANSICHT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:23:23:18": {
+   "name": "NAVI_KREUZUNGSZOOM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:23:23:60": {
+   "name": "NAVI_TRIP_IMPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "skipping",
+    "3": "browsing"
+   }
+  },
+  "3000:23:23:80": {
+   "name": "NAVI_TRIP_EXPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:24:24:01": {
+   "name": "NAVI_DEST_IMPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:24:24:02": {
+   "name": "NAVI_DEST_EXPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:24:24:04": {
+   "name": "NAVI_MYPOI_IMPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:24:24:08": {
+   "name": "NAVI_MYPOI_EXPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:24:24:30": {
+   "name": "NAVI_ROUTE_RECORD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:24:24:C0": {
+   "name": "AVOID_VIGNETTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "authority_marked",
+    "3": "authority_unmarked"
+   }
+  },
+  "3000:25:25:FF": {
+   "name": "MAP_SCROLL_3D",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "bev_rex",
+    "3": "hev_otto",
+    "4": "hev_diesel",
+    "5": "phev_otto",
+    "6": "phev_diesel",
+    "7": "bev_ohne_rex"
+   }
+  },
+  "3000:26:26:03": {
+   "name": "ZIELEINGABE_MEHRDEUTIG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "tailgate",
+    "3": "frontgate"
+   }
+  },
+  "3000:26:26:04": {
+   "name": "NAVI_MAP_ARROWVIEW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:26:26:08": {
+   "name": "NAVI_SPLIT_GUIDINGPOPUP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:26:26:30": {
+   "name": "NAVI_FULL_GUIDINGPOPUP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "trajectory2",
+    "3": "trajectory3"
+   }
+  },
+  "3000:26:26:C0": {
+   "name": "NAVI_ROUTE_STUDY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "trajectory2",
+    "3": "trajectory3"
+   }
+  },
+  "3000:27:28:FF": {
+   "name": "KOMBIGUIDING_SCHALTBAR",
+   "values": {
+    "4171": "p_75",
+    "4191": "p_95",
+    "4196": "p_100",
+    "4228": "p_132",
+    "4236": "p_140",
+    "4286": "p_190",
+    "4314": "p_218",
+    "4376": "p_280",
+    "4396": "p_300",
+    "9072": "n_880"
+   }
+  },
+  "3000:29:30:FF": {
+   "name": "ALTERNATIV_ROUTEN",
+   "values": {
+    "4096": "p_0"
+   }
+  },
+  "3000:2:2:01": {
+   "name": "SL17_ASIA_NAVI_POI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:02": {
+   "name": "SL18_ASIA_SEARCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:04": {
+   "name": "SL19_ASIA_SETTINGS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:08": {
+   "name": "SL20_OPP_TRANSFER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:10": {
+   "name": "SL21_IBA_3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:20": {
+   "name": "SERVICE_HISTORY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:40": {
+   "name": "IBA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:80": {
+   "name": "CDMM_AUX_HU",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:31:32:FF": {
+   "name": "GUIDING_TIMING_KM",
+   "values": {
+    "4096": "p_0",
+    "4151": "p_55",
+    "4156": "p_60",
+    "4164": "p_68",
+    "4168": "p_72",
+    "4173": "p_77",
+    "5896": "p_1800",
+    "8192": "n_0",
+    "8247": "n_55",
+    "8252": "n_60",
+    "8260": "n_68",
+    "8264": "n_72",
+    "8269": "n_77"
+   }
+  },
+  "3000:33:33:07": {
+   "name": "GUIDING_TIMING_MLS",
+   "values": {
+    "0": "permanent",
+    "1": "r_min",
+    "2": "r_max",
+    "3": "r_min_und_r_max"
+   }
+  },
+  "3000:33:33:08": {
+   "name": "COMINGSTREET_KOMBI_HUD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:33:33:10": {
+   "name": "ROTATION_WERTE_EINHEITEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:33:33:20": {
+   "name": "BMAP_JUNCTION_VIEW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:33:33:40": {
+   "name": "JUNCTION_VIEW_HUD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:33:33:80": {
+   "name": "EINHEITEN_WEGSTRECKE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "mls_yrd"
+   }
+  },
+  "3000:34:34:01": {
+   "name": "ETC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:34:34:02": {
+   "name": "TYPE_OF_FUEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "benzin"
+   }
+  },
+  "3000:34:34:1C": {
+   "name": "GUIDING_KOMBI_HUD",
+   "values": {
+    "0": "no_details",
+    "1": "rueko_mit_hud",
+    "7": "whole_text"
+   }
+  },
+  "3000:34:34:E0": {
+   "name": "NAVI_RNC_MAINMAP_TEXT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "one_page",
+    "7": "whole_text"
+   }
+  },
+  "3000:35:35:07": {
+   "name": "GUIDING_TIMING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "ece",
+    "7": "whole_text"
+   }
+  },
+  "3000:35:35:38": {
+   "name": "TIMER_VOLLBILDKARTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "handbrake",
+    "2": "gearbox_p",
+    "3": "handbrake_and_gearbox_p",
+    "4": "handbrake_or_gearbox_p"
+   }
+  },
+  "3000:35:35:C0": {
+   "name": "SPEEDLOCK_X_KMH_MIN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deaktivierung_bmw",
+    "2": "deaktivierung_mini"
+   }
+  },
+  "3000:36:55:FF": {
+   "name": "SPEEDLOCK_X_KMH_MAX",
+   "values": {
+    "1461501637330902918203684832716283019655932542975": "initwert"
+   }
+  },
+  "3000:3:4:FF": {
+   "name": "ENT_GEN_META_DATA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:56:56:01": {
+   "name": "SPRECHERWAHL1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "weiblich"
+   }
+  },
+  "3000:56:56:0E": {
+   "name": "SPRECHERWAHL2",
+   "values": {
+    "0": "none",
+    "1": "weiblich",
+    "2": "maennlich",
+    "3": "handbrake_and_gearbox_p",
+    "4": "handbrake_or_gearbox_p"
+   }
+  },
+  "3000:56:56:F0": {
+   "name": "SPRECHERWAHL3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "weiblich",
+    "2": "maennlich",
+    "3": "frontgate",
+    "4": "splitdoors"
+   }
+  },
+  "3000:57:57:07": {
+   "name": "SYSTEM_GPS_RECEIVER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "gearbox_p",
+    "3": "handbrake_and_gearbox_p",
+    "4": "handbrake_or_gearbox_p"
+   }
+  },
+  "3000:57:57:08": {
+   "name": "SERVICE_MENUE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:57:57:30": {
+   "name": "ENTWICKLER_MENUE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "nur_lichtinsz",
+    "3": "volle_insz"
+   }
+  },
+  "3000:57:57:40": {
+   "name": "ENTWICKLER_MENUE_ASIEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:57:57:80": {
+   "name": "LANGUAGE_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:58:58:3F": {
+   "name": "LANGUAGE_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch",
+    "10": "chinesisch_trad",
+    "2": "english_uk",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:58:58:40": {
+   "name": "LANGUAGE_3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:58:58:80": {
+   "name": "LANGUAGE_4",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:59:59:01": {
+   "name": "LANGUAGE_5",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:59:59:02": {
+   "name": "LANGUAGE_6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:59:59:04": {
+   "name": "LANGUAGE_7",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:59:59:08": {
+   "name": "LANGUAGE_8",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:59:59:10": {
+   "name": "LANGUAGE_9",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:59:59:20": {
+   "name": "LANGUAGE_10",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:59:59:40": {
+   "name": "LANGUAGE_11",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:59:59:80": {
+   "name": "LANGUAGE_12",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:5:5:01": {
+   "name": "COMPASS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:5:5:02": {
+   "name": "ENT_HU_DRIVE_COVER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:5:5:04": {
+   "name": "VIDEO_HANDBRAKE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:5:5:08": {
+   "name": "ENT_HU_DRIVE_WIND_SPEED",
+   "values": {
+    "0": "var1",
+    "1": "var2"
+   }
+  },
+  "3000:5:5:10": {
+   "name": "VIDEO_FRONT_LOCKED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:5:5:E0": {
+   "name": "ENT_RSE_EXT_OPTIONS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:60:60:01": {
+   "name": "LANGUAGE_13",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:60:60:02": {
+   "name": "LANGUAGE_14",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:60:60:04": {
+   "name": "LANGUAGE_15",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:60:60:08": {
+   "name": "LANGUAGE_16",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:60:60:10": {
+   "name": "LANGUAGE_MASTER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:60:60:20": {
+   "name": "LANGUAGE_UPDATE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:60:60:40": {
+   "name": "KOMBI_AR_PRES",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:60:60:80": {
+   "name": "TEXTKUERZUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:61:61:01": {
+   "name": "DAYDRIVING_LIGHT",
+   "values": {
+    "0": "perm_off",
+    "1": "perm_on"
+   }
+  },
+  "3000:61:61:02": {
+   "name": "WELCOME_LIGHT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:61:61:04": {
+   "name": "TRAFFIC_MODE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:61:61:08": {
+   "name": "TRAFFIC_MODE_AUTO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:61:61:10": {
+   "name": "MAXGLOBALREMOTECOMMANDS",
+   "values": {
+    "0": "v0",
+    "1": "v5"
+   }
+  },
+  "3000:61:61:20": {
+   "name": "MAXLOCALREMOTECOMMANDS",
+   "values": {
+    "0": "v0",
+    "1": "v2"
+   }
+  },
+  "3000:61:61:40": {
+   "name": "LANGUAGE_DEFAULT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch"
+   }
+  },
+  "3000:61:61:80": {
+   "name": "A4A_PROD_MONTH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "jan"
+   }
+  },
+  "3000:62:62:01": {
+   "name": "A4A_PROD_YEAR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:62:62:02": {
+   "name": "RSE",
+   "values": {
+    "0": "kein_rse",
+    "1": "rse_mid"
+   }
+  },
+  "3000:62:62:04": {
+   "name": "RSE_KLEER",
+   "values": {
+    "0": "kein",
+    "1": "kopfhoerer"
+   }
+  },
+  "3000:62:62:08": {
+   "name": "NAVI_POI_ONLINE_SEARCH",
+   "values": {
+    "0": "browser",
+    "1": "nativ"
+   }
+  },
+  "3000:62:62:10": {
+   "name": "NAVI_POSITION_MENU",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:62:62:20": {
+   "name": "RSE_BLUETOOTH",
+   "values": {
+    "0": "kein",
+    "1": "tastatur_mit_trackball"
+   }
+  },
+  "3000:62:62:40": {
+   "name": "HUD_DISTANCE_INFO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:62:62:80": {
+   "name": "SVS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:63:63:FF": {
+   "name": "EXT_MUSIC_MANAGEMENT",
+   "values": {
+    "0": "nicht_aktiv",
+    "10": "value_1",
+    "20": "value_2",
+    "253": "nicht_aktiv",
+    "254": "reserved_2",
+    "255": "dynamic"
+   }
+  },
+  "3000:64:64:FF": {
+   "name": "ONE_SHOT_DEST_INPUT",
+   "values": {
+    "0": "nicht_aktiv",
+    "14": "value_2",
+    "253": "nicht_aktiv",
+    "254": "reserved_2",
+    "255": "dynamic",
+    "6": "value_1"
+   }
+  },
+  "3000:65:65:01": {
+   "name": "CDMM_TV_AUTOSTORE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:65:65:02": {
+   "name": "TVM_VARIANTEN",
+   "values": {
+    "0": "kein_tvm",
+    "1": "tvm_verbaut"
+   }
+  },
+  "3000:65:65:04": {
+   "name": "CDMM_TV_BML",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:65:65:08": {
+   "name": "CDMM_TV_TELETEXT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:65:65:70": {
+   "name": "SPEEDLOCK_FREISCHALTMENU",
+   "values": {
+    "1": "aktiv",
+    "2": "mls_feet",
+    "3": "km_only"
+   }
+  },
+  "3000:65:65:80": {
+   "name": "CDMM_USB_COMPOSER_MSD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:66:66:FF": {
+   "name": "CDMM_TV_SUBTITLES",
+   "values": {
+    "1": "aktiv",
+    "2": "diesel",
+    "3": "alle_kraftstoffe",
+    "4": "diesel_und_harnstoff",
+    "5": "elektro",
+    "6": "benzin_diesel_elektro",
+    "8": "lh2"
+   }
+  },
+  "3000:67:67:FF": {
+   "name": "CDMM_TV_PAY_BROWSER_LIST",
+   "values": {
+    "1": "aktiv",
+    "2": "l6_kombi_hud"
+   }
+  },
+  "3000:68:68:FF": {
+   "name": "CDMM_TV_FOLLOWING",
+   "values": {
+    "0": "nicht_aktiv",
+    "255": "permanent",
+    "5": "10_sekunden"
+   }
+  },
+  "3000:69:69:FF": {
+   "name": "CDMM_TV_PRESETLIST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "us",
+    "3": "australien"
+   }
+  },
+  "3000:6:6:01": {
+   "name": "SYSTEM_TTS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:6:6:02": {
+   "name": "ENT_CHANGER_INSTALLED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:6:6:04": {
+   "name": "ENT_CHANGER_COVER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:6:6:08": {
+   "name": "ENT_PERSONALRADIO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:6:6:10": {
+   "name": "ENT_MULTICHANNEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:6:6:20": {
+   "name": "ENT_HUDRIVE_INSTALLED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:6:6:40": {
+   "name": "ENT_VIDEO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:6:6:80": {
+   "name": "ECO_INFO_DISPLAY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:70:70:FF": {
+   "name": "CDMM_TV_AUDIOTRACK",
+   "values": {
+    "0": "nicht_aktiv",
+    "255": "permanent",
+    "5": "10_sekunden"
+   }
+  },
+  "3000:71:71:FF": {
+   "name": "CDMM_TV_EPG",
+   "values": {
+    "0": "nicht_aktiv",
+    "3": "3_kmh",
+    "8": "8_kmh"
+   }
+  },
+  "3000:72:72:FF": {
+   "name": "M_DIGITAL_TACHO_EINH",
+   "values": {
+    "0": "nicht_aktiv",
+    "10": "10_kmh",
+    "3": "3_kmh"
+   }
+  },
+  "3000:73:73:0F": {
+   "name": "MDRIVE_CONFIG",
+   "values": {
+    "1": "1_menu",
+    "2": "maennlich"
+   }
+  },
+  "3000:73:73:F0": {
+   "name": "M_DIGITAL_TACHO",
+   "values": {
+    "1": "aktiv",
+    "2": "maennlich"
+   }
+  },
+  "3000:74:74:0F": {
+   "name": "MDRIVE",
+   "values": {
+    "1": "aktiv",
+    "2": "maennlich"
+   }
+  },
+  "3000:74:74:10": {
+   "name": "HUD_M",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:74:74:20": {
+   "name": "DSC_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:74:74:40": {
+   "name": "DSC_MENUE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:74:74:80": {
+   "name": "EDC_CIC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:75:75:FF": {
+   "name": "COMFORT_OPENING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:76:76:FF": {
+   "name": "OELSTANDSMENUE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:77:77:FF": {
+   "name": "OELSTAND_OENS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:78:78:FF": {
+   "name": "EFF_DYN_SYS_CID",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:79:79:FF": {
+   "name": "HIST_GAS_CONSUMP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:7:7:FF": {
+   "name": "ENT_VIDEO_DVD_AREA_CODE",
+   "values": {
+    "0": "alle_anderen",
+    "1": "area_code_1",
+    "2": "area_code_2",
+    "3": "area_code_3",
+    "4": "area_code_4",
+    "5": "area_code_5",
+    "6": "area_code_6"
+   }
+  },
+  "3000:80:80:FF": {
+   "name": "FDS_NAMING_MODE",
+   "values": {
+    "0": "ab_0711",
+    "1": "bis_0711",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:81:81:FF": {
+   "name": "EFF_DYN_SPORT_CID",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:82:82:FF": {
+   "name": "ECO_MODE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:83:83:FF": {
+   "name": "ECO_TIPPS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:84:84:FF": {
+   "name": "ECO_MODE_CONF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:85:85:FF": {
+   "name": "ECO_LIMIT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:86:86:FF": {
+   "name": "ECO_ROUTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:87:87:FF": {
+   "name": "ECO_PRO_ROUTE_ALPINE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:88:88:FF": {
+   "name": "MAPVIEWER_FARBSET_AUSWAHL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:89:89:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "initwert",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:8:8:FF": {
+   "name": "ENT_VIDEO_BLUERAYD_AREA_CODE",
+   "values": {
+    "0": "alle_anderen",
+    "1": "area_code_a",
+    "2": "area_code_b",
+    "3": "area_code_c"
+   }
+  },
+  "3000:90:90:FF": {
+   "name": "MICROMAP_KOMBI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:91:91:FF": {
+   "name": "CAR_TYPE_POI",
+   "values": {
+    "0": "ladestation",
+    "1": "benzin_diesel",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "benzin_diesel_ladestation",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:92:92:01": {
+   "name": "HYBRID_EFFICIENCY_GRAPHIC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:92:92:02": {
+   "name": "DAC",
+   "values": {
+    "0": "none",
+    "1": "dac_ccm"
+   }
+  },
+  "3000:92:92:04": {
+   "name": "EFF_DYN_SAILING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:92:92:18": {
+   "name": "EFF_DYN_FORECAST_HYB",
+   "values": {
+    "0": "perm_off",
+    "1": "perm_on",
+    "2": "standard"
+   }
+  },
+  "3000:92:92:20": {
+   "name": "HIST_HYB_CONSUMP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:92:92:40": {
+   "name": "HIST_BEV_CONSUMP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:92:92:80": {
+   "name": "HIST_ZOOM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:93:93:0F": {
+   "name": "HIST_FDS_MODE_NAME",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "v400",
+    "11": "v500",
+    "12": "v750",
+    "13": "v1000",
+    "2": "v20",
+    "3": "v40",
+    "4": "v60",
+    "5": "v80",
+    "6": "v100",
+    "7": "v150",
+    "8": "v200",
+    "9": "v300"
+   }
+  },
+  "3000:93:93:F0": {
+   "name": "HIST_FDS_MODE_COLOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "10": "v100",
+    "11": "v200",
+    "2": "v4",
+    "3": "v6",
+    "4": "v8",
+    "5": "v10",
+    "6": "v15",
+    "7": "v20",
+    "8": "v30",
+    "9": "v50"
+   }
+  },
+  "3000:94:94:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "deutsch",
+    "10": "chinesisch_trad",
+    "11": "chinesisch_simp",
+    "12": "koreanisch",
+    "13": "japanisch",
+    "14": "portugiesisch",
+    "15": "franzoesisch_can",
+    "16": "spanisch_us",
+    "17": "russisch",
+    "18": "polnisch",
+    "19": "griechisch",
+    "2": "english_uk",
+    "20": "tuerkisch",
+    "21": "ungarisch",
+    "22": "rumaenisch",
+    "23": "schwedisch",
+    "240": "choicelanguage_1",
+    "3": "english_us",
+    "4": "spanisch",
+    "5": "italienisch",
+    "6": "franzoesisch",
+    "7": "flaemisch",
+    "8": "niederlaendisch",
+    "9": "arabisch"
+   }
+  },
+  "3000:95:95:0F": {
+   "name": "HIST_CONSUMP_AVERAGE",
+   "values": {
+    "1": "01",
+    "10": "okt",
+    "11": "nov",
+    "12": "dez",
+    "2": "10",
+    "3": "11",
+    "4": "apr",
+    "5": "may",
+    "6": "jun",
+    "7": "jul",
+    "8": "aug",
+    "9": "sep"
+   }
+  },
+  "3000:95:95:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "2": "2012",
+    "3": "2013",
+    "4": "2014",
+    "5": "2015",
+    "6": "2016",
+    "7": "2017"
+   }
+  },
+  "3000:96:96:07": {
+   "name": "ZBE_TOUCH_INTERACTIVE_MAP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "rse_high"
+   }
+  },
+  "3000:96:96:38": {
+   "name": "ZBE_TOUCH_SPELLER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "fernbedienung",
+    "3": "kopfh_fernbedinung"
+   }
+  },
+  "3000:96:96:40": {
+   "name": "ZBE_TOUCH_BROWSER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:96:96:80": {
+   "name": "ADAPTIV_DESTINATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:97:97:07": {
+   "name": "ADAPTIV_MAP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:97:97:08": {
+   "name": "FAVORED_POI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:97:97:10": {
+   "name": "EFF_DYN_SPORT_UNIT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:97:97:20": {
+   "name": "HIST_HYB_CONSUMP_SWITCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:97:97:40": {
+   "name": "REMOTE_HMI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:97:97:80": {
+   "name": "A4A",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:98:98:0F": {
+   "name": "A4A_REMOTE_APPS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:98:98:10": {
+   "name": "TERMINAL_UI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:98:98:20": {
+   "name": "NAVI_EXPRESS_ROADS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:98:98:40": {
+   "name": "NAVI_CARPOOL_ROADS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:98:98:80": {
+   "name": "TERMINAL_UI_PORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "sia"
+   }
+  },
+  "3000:99:99:01": {
+   "name": "CDMM_AUX_SIMPLE_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:99:99:02": {
+   "name": "CDMM_AUX_SIMPLE_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:99:99:04": {
+   "name": "SPEEDLOCK_HMI_TUNER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:99:99:08": {
+   "name": "RSE_BRIGHTNESS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:99:99:10": {
+   "name": "COLOUR_SWITCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:99:99:20": {
+   "name": "HELLIGKEIT_AMBILIGHT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:99:99:40": {
+   "name": "COLOUR_SWITCH_LINES",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "sport"
+   }
+  },
+  "3000:99:99:80": {
+   "name": "HIGH_BEAM_ASSISTANT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:01": {
+   "name": "ENT_MC_WLAN_STREAM_DMP_COVERART",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:02": {
+   "name": "ENT_MC_WLAN_STREAM_DMP_VIDEO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:04": {
+   "name": "ENT_BTAS_IAP_COVERART",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:08": {
+   "name": "CDMM_TV_EPG_PRES_SCOPE",
+   "values": {
+    "0": "standard",
+    "1": "advanced"
+   }
+  },
+  "3000:9:9:30": {
+   "name": "CDMM_USB_AUDIO",
+   "values": {
+    "0": "none",
+    "1": "first",
+    "2": "second",
+    "3": "all"
+   }
+  },
+  "3000:9:9:C0": {
+   "name": "ENT_RSE_DRIVE",
+   "values": {
+    "1": "dvd",
+    "2": "blu-ray"
+   }
+  },
+  "3001:0:0:01": {
+   "name": "FBM_ENT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:02": {
+   "name": "FBM_TEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:04": {
+   "name": "FBM_NAVI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:08": {
+   "name": "FBM_IBA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:10": {
+   "name": "FBM_MENUJUMPS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:20": {
+   "name": "FBM_OTHER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:40": {
+   "name": "FBM_SHORT_INFO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:80": {
+   "name": "FBM_DETAILED_INFO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:10:10:FF": {
+   "name": "RSE_INTERNAL_VIDEO_PLAYBACK",
+   "values": {}
+  },
+  "3001:11:11:FF": {
+   "name": "AUX2_IN_RSE",
+   "values": {}
+  },
+  "3001:12:12:FF": {
+   "name": "AUX3_IN_RSE",
+   "values": {}
+  },
+  "3001:13:13:0F": {
+   "name": "GATEWAYTABLE",
+   "values": {
+    "0": "table_0",
+    "1": "table_1",
+    "2": "table_2",
+    "3": "table_3",
+    "4": "table_4",
+    "5": "table_5",
+    "6": "table_6",
+    "7": "table_7",
+    "8": "table_8",
+    "9": "table_9"
+   }
+  },
+  "3001:13:13:70": {
+   "name": "MACRO_PMA_EINPARKEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "gen1",
+    "2": "gen2_ohne_konf",
+    "3": "gen2_mit_konf"
+   }
+  },
+  "3001:13:13:80": {
+   "name": "MACRO_PMA_AUSPARKEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:14:14:FF": {
+   "name": "DEBOUNCE_KOMBI_BASIS",
+   "values": {
+    "30": "defaultwert_30"
+   }
+  },
+  "3001:15:15:FF": {
+   "name": "TVC_WIDTH",
+   "values": {}
+  },
+  "3001:16:16:01": {
+   "name": "MACRO_NV_C",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:16:16:02": {
+   "name": "MACRO_TV_C",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:16:16:04": {
+   "name": "MACRO_RV_C",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:16:16:08": {
+   "name": "MACRO_SV_C",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:16:16:10": {
+   "name": "MACRO_K_C",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:16:16:20": {
+   "name": "SMG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:16:16:40": {
+   "name": "ACC_SGN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:16:16:80": {
+   "name": "ACC_CIC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:17:17:01": {
+   "name": "DCC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:17:17:02": {
+   "name": "FGR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:17:17:04": {
+   "name": "BRAKE_ASSISTENT_3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:17:17:08": {
+   "name": "BRAKE_ASSISTENT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:17:17:10": {
+   "name": "LANE_CHANGE_WARNING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:17:17:20": {
+   "name": "PDC_DIRECTION",
+   "values": {
+    "0": "vertikal",
+    "1": "horizontal"
+   }
+  },
+  "3001:17:17:40": {
+   "name": "HVAC_SEATHEAT_DISTR_FRONT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:17:17:80": {
+   "name": "HVAC_SEATHEAT_DISTR_FOND",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:18:18:01": {
+   "name": "CLIMATE_ACT_ONE_TIMER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:18:18:06": {
+   "name": "PDC_SENSOR_HINTEN",
+   "values": {
+    "0": "kein_sensor",
+    "1": "4_sensoren",
+    "2": "5_sensoren",
+    "3": "6_sensoren"
+   }
+  },
+  "3001:18:18:08": {
+   "name": "VIDEO_WATCHDOG_SIDEVIEW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:18:18:10": {
+   "name": "VIDEO_WATCHDOG_REARVIEW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:18:18:20": {
+   "name": "VIDEO_WATCHDOG_TOPVIEW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:18:18:40": {
+   "name": "VIDEO_WATCHDOG_NIGHTVISION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:18:18:80": {
+   "name": "VIDEO_WATCHDOG_KAFAS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:19:19:FF": {
+   "name": "EARLY_VIDEO_LEGALDISCL",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:1:1:01": {
+   "name": "FBM_DEFAULT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:0E": {
+   "name": "FBM_SELECTION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "eight_buttons",
+    "2": "six_buttons_us",
+    "3": "six_buttons_japan",
+    "4": "two_buttons",
+    "5": "six_buttons"
+   }
+  },
+  "3001:1:1:10": {
+   "name": "RDC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:20": {
+   "name": "RDC_SAFETY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:40": {
+   "name": "RPA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:80": {
+   "name": "HVAC_INDEPENDENT_AIR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:20:20:FF": {
+   "name": "CAM_INT_BRIGHTNESS_MIN",
+   "values": {}
+  },
+  "3001:21:21:FF": {
+   "name": "CAM_INT_BRIGHTNESS_MAX",
+   "values": {}
+  },
+  "3001:22:22:FF": {
+   "name": "CAM_INT_CONTRAST_MIN",
+   "values": {}
+  },
+  "3001:23:23:FF": {
+   "name": "CAM_INT_CONTRAST_MAX",
+   "values": {}
+  },
+  "3001:24:24:FF": {
+   "name": "CAM_INT_COLOUR_MIN",
+   "values": {}
+  },
+  "3001:25:25:FF": {
+   "name": "CAM_INT_COLOUR_MAX",
+   "values": {}
+  },
+  "3001:26:26:FF": {
+   "name": "CAM_INT_TINT_MIN",
+   "values": {}
+  },
+  "3001:27:27:FF": {
+   "name": "CAM_INT_TINT_MAX",
+   "values": {}
+  },
+  "3001:28:28:FF": {
+   "name": "CAM_EXT_BRIGHTNESS_MIN",
+   "values": {}
+  },
+  "3001:29:29:FF": {
+   "name": "CAM_EXT_BRIGHTNESS_MAX",
+   "values": {}
+  },
+  "3001:2:2:01": {
+   "name": "HVAC_FOND_ACTIVATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:2:2:02": {
+   "name": "HVAC_INDEPENDENT_HEATING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:2:2:04": {
+   "name": "HVAC_MSA_EFFICIENCY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:2:2:08": {
+   "name": "ASSIST_REMOTE_HVAC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:2:2:30": {
+   "name": "KOMBI_CIC",
+   "values": {
+    "0": "kombi_high",
+    "1": "kombi_mid",
+    "2": "kombi_low"
+   }
+  },
+  "3001:2:2:40": {
+   "name": "LANE_DEPARTURE_WARNING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:2:2:80": {
+   "name": "SPEEDLIMIT_INFO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:30:30:FF": {
+   "name": "CAM_EXT_CONTRAST_MIN",
+   "values": {}
+  },
+  "3001:31:31:FF": {
+   "name": "CAM_EXT_CONTRAST_MAX",
+   "values": {}
+  },
+  "3001:32:32:FF": {
+   "name": "CAM_EXT_COLOUR_MIN",
+   "values": {}
+  },
+  "3001:33:33:FF": {
+   "name": "CAM_EXT_COLOUR_MAX",
+   "values": {}
+  },
+  "3001:34:34:FF": {
+   "name": "CAM_EXT_TINT_MIN",
+   "values": {}
+  },
+  "3001:35:35:FF": {
+   "name": "CAM_EXT_TINT_MAX",
+   "values": {}
+  },
+  "3001:36:36:FF": {
+   "name": "ENT_AN_BRIGHTNESS_MIN",
+   "values": {}
+  },
+  "3001:37:37:FF": {
+   "name": "ENT_AN_BRIGHTNESS_MAX",
+   "values": {}
+  },
+  "3001:38:38:FF": {
+   "name": "ENT_AN_CONTRAST_MIN",
+   "values": {}
+  },
+  "3001:39:39:FF": {
+   "name": "ENT_AN_CONTRAST_MAX",
+   "values": {}
+  },
+  "3001:3:3:01": {
+   "name": "BRAKE_ASSISTANT_FCW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:02": {
+   "name": "BRAKE_ASSISTANT_CCM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:04": {
+   "name": "USB_AVAILABLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:08": {
+   "name": "MACRO_PDC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:30": {
+   "name": "PDC_SENSOR_VORN",
+   "values": {
+    "0": "kein_sensor",
+    "1": "4_sensoren",
+    "2": "5_sensoren",
+    "3": "6_sensoren"
+   }
+  },
+  "3001:3:3:40": {
+   "name": "MACRO_L6_PARKMENU",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:3:3:80": {
+   "name": "BACKDOOR_OPENINGANGLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:40:40:FF": {
+   "name": "ENT_AN_COLOUR_MIN",
+   "values": {}
+  },
+  "3001:41:41:FF": {
+   "name": "ENT_AN_COLOUR_MAX",
+   "values": {}
+  },
+  "3001:42:42:FF": {
+   "name": "ENT_AN_TINT_MIN",
+   "values": {}
+  },
+  "3001:43:43:FF": {
+   "name": "ENT_AN_TINT_MAX",
+   "values": {}
+  },
+  "3001:44:44:FF": {
+   "name": "ENT_DIG_BRIGHTNESS_MIN",
+   "values": {}
+  },
+  "3001:45:45:FF": {
+   "name": "ENT_DIG_BRIGHTNESS_MAX",
+   "values": {}
+  },
+  "3001:46:46:FF": {
+   "name": "ENT_DIG_CONTRAST_MIN",
+   "values": {}
+  },
+  "3001:47:47:FF": {
+   "name": "ENT_DIG_CONTRAST_MAX",
+   "values": {}
+  },
+  "3001:48:48:FF": {
+   "name": "ENT_DIG_COLOUR_MIN",
+   "values": {}
+  },
+  "3001:49:49:FF": {
+   "name": "ENT_DIG_COLOUR_MAX",
+   "values": {}
+  },
+  "3001:4:4:FF": {
+   "name": "TRSVC",
+   "values": {}
+  },
+  "3001:50:50:FF": {
+   "name": "ENT_DIG_TINT_MIN",
+   "values": {}
+  },
+  "3001:51:51:FF": {
+   "name": "ENT_DIG_TINT_MAX",
+   "values": {}
+  },
+  "3001:52:52:FF": {
+   "name": "MACRO_CAM_LEGALDISCLAIMER",
+   "values": {
+    "0": "kein_ld",
+    "255": "permanent",
+    "6": "ld_mit_timeout"
+   }
+  },
+  "3001:53:53:FF": {
+   "name": "MACRO_NIVICAM_LDISCLAIMER",
+   "values": {
+    "0": "kein_ld",
+    "255": "permanent",
+    "6": "ld_mit_timeout"
+   }
+  },
+  "3001:54:54:01": {
+   "name": "MACRO_TRAILER_COUPLING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:54:54:06": {
+   "name": "HVAC_AIRLAMINATION_DRV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "hvac_low",
+    "2": "hvac_high"
+   }
+  },
+  "3001:54:54:18": {
+   "name": "HVAC_AIRLAMINATION_CODRV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "hvac_low",
+    "2": "hvac_high"
+   }
+  },
+  "3001:54:54:20": {
+   "name": "HVAC_AUTOMATIC_INTENSITY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:54:54:40": {
+   "name": "HVAC_POPUP_AIRDISTR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:54:54:80": {
+   "name": "HVAC_CABRIO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:55:55:01": {
+   "name": "HVAC_POPUP_AUTO_TOGGLE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:55:55:02": {
+   "name": "HVAC_SEATVENTILATION_FRONT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:55:55:04": {
+   "name": "HVAC_POPUP_SEATCLIMATE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:55:55:18": {
+   "name": "MACRO_FDS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "only_popup",
+    "2": "popup_and_config"
+   }
+  },
+  "3001:55:55:20": {
+   "name": "FDS_POPUP_DEACTIVATE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:55:55:40": {
+   "name": "HEADUP_DISPLAY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:55:55:80": {
+   "name": "HUD_TURNSIGNAL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:56:56:01": {
+   "name": "HUD_ROTATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:56:56:02": {
+   "name": "HUD_POSITION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:56:56:04": {
+   "name": "HUD_ACTIVATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:56:56:08": {
+   "name": "AUDIO_REMOTE_CONTROL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:56:56:10": {
+   "name": "DOORLOCKING_SEATMEMORY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:56:56:60": {
+   "name": "SCHNEEKETTENERKENNUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "aktiv_mit_popup"
+   }
+  },
+  "3001:56:56:80": {
+   "name": "DWA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:57:57:FF": {
+   "name": "DISPLAY_VARIANTE",
+   "values": {
+    "1": "schmales_display",
+    "2": "breites_display",
+    "3": "flap_display",
+    "4": "schmales_flap"
+   }
+  },
+  "3001:58:58:FF": {
+   "name": "LEGAL_DISCLAIMER_TIME",
+   "values": {
+    "0": "kein_ld",
+    "10": "ld_mit_timeout",
+    "255": "permanent"
+   }
+  },
+  "3001:59:59:FF": {
+   "name": "AUX1_IN_HU",
+   "values": {}
+  },
+  "3001:5:5:FF": {
+   "name": "NVC",
+   "values": {}
+  },
+  "3001:60:60:FF": {
+   "name": "AUX4_IN_HU",
+   "values": {}
+  },
+  "3001:61:61:0F": {
+   "name": "CAMERA_SYSTEM",
+   "values": {
+    "0": "none",
+    "1": "TRSVC",
+    "2": "icam_low",
+    "3": "icam_high_tvc3",
+    "4": "icam_high_tvc4",
+    "5": "icam_high_tvc5",
+    "6": "rvc_standalone",
+    "7": "rvc_without_pdc",
+    "8": "rvc_without_pdc"
+   }
+  },
+  "3001:61:61:70": {
+   "name": "FAS_INSZENIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "inszenierungstafeln",
+    "2": "sarah_vorstufe",
+    "3": "sarah_vollkonzept",
+    "4": "sarah_vollkonzept_mini"
+   }
+  },
+  "3001:61:61:80": {
+   "name": "GEZIELTES_ANLEUCHTEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:62:62:01": {
+   "name": "PERSONEN_WARNUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:62:62:06": {
+   "name": "STARTUP_TYPE",
+   "values": {
+    "0": "black",
+    "1": "splash",
+    "2": "animation"
+   }
+  },
+  "3001:62:62:78": {
+   "name": "STARTUP_EMBLEM",
+   "values": {
+    "0": "variant_00",
+    "1": "variant_01",
+    "2": "variant_02",
+    "3": "variant_03",
+    "4": "variant_04",
+    "5": "variant_05",
+    "6": "variant_06",
+    "7": "variant_07",
+    "8": "variant_08",
+    "9": "variant_09"
+   }
+  },
+  "3001:62:62:80": {
+   "name": "PDC_3D",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:63:63:FF": {
+   "name": "DMB",
+   "values": {}
+  },
+  "3001:64:64:01": {
+   "name": "HUD_SPEEDCONTROL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:64:64:02": {
+   "name": "FAHRSTILANALYSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:64:64:04": {
+   "name": "FAHRSTILANALYSE_ANIMATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:64:64:08": {
+   "name": "EIN_AUSTIEGSHILFE_FA_SITZ",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:64:64:10": {
+   "name": "ACTIVE_PDC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:64:64:20": {
+   "name": "TSM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:64:64:40": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:64:64:80": {
+   "name": "ICAM_PBA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:65:65:01": {
+   "name": "ICAM_TV_360",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:65:65:02": {
+   "name": "ICAM_SV2_180",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:65:65:04": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:65:65:18": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "no_pm",
+    "1": "gen1",
+    "2": "gen2"
+   }
+  },
+  "3001:65:65:20": {
+   "name": "VSG_HMI_MENUE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:65:65:40": {
+   "name": "AUTO_PDC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:65:65:80": {
+   "name": "RDC_FORTSCHRITTSANZEIGE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:66:66:03": {
+   "name": "REIFENUEBERWACHUNG_RDC_RPA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "rpa",
+    "2": "rdc"
+   }
+  },
+  "3001:66:66:0C": {
+   "name": "RDC_DRUCK_TEMP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "druck",
+    "2": "druck_und_temperatur"
+   }
+  },
+  "3001:66:66:10": {
+   "name": "SPA_CHECKBOX",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:66:66:20": {
+   "name": "REARVIEW_REGULATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:66:66:C0": {
+   "name": "SOC_DISP_SIGNAL",
+   "values": {
+    "0": "kein_signal",
+    "1": "hev_signal",
+    "2": "phev_signal"
+   }
+  },
+  "3001:67:67:07": {
+   "name": "HUD_GENERATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "can",
+    "2": "apix"
+   }
+  },
+  "3001:67:67:18": {
+   "name": "AUTOTEMPOMAT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "gen_1"
+   }
+  },
+  "3001:67:67:60": {
+   "name": "AUTOLIMITER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "gen_1"
+   }
+  },
+  "3001:67:67:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "initwert"
+   }
+  },
+  "3001:68:68:0F": {
+   "name": "VOFFSET_MIN_KMH",
+   "values": {
+    "0": "n_00",
+    "1": "n_02",
+    "10": "n_20",
+    "11": "n_22",
+    "12": "n_24",
+    "13": "n_26",
+    "14": "n_28",
+    "15": "n_30",
+    "2": "n_04",
+    "3": "n_06",
+    "4": "n_08",
+    "5": "n_10",
+    "6": "n_12",
+    "7": "n_14",
+    "8": "n_16",
+    "9": "n_18"
+   }
+  },
+  "3001:68:68:F0": {
+   "name": "VOFFSET_MAX_KMH",
+   "values": {
+    "0": "p_00",
+    "1": "p_02",
+    "10": "p_20",
+    "11": "p_22",
+    "12": "p_24",
+    "13": "p_26",
+    "14": "p_28",
+    "15": "p_30",
+    "2": "p_04",
+    "3": "p_06",
+    "4": "p_08",
+    "5": "p_10",
+    "6": "p_12",
+    "7": "p_14",
+    "8": "p_16",
+    "9": "p_18"
+   }
+  },
+  "3001:69:69:0F": {
+   "name": "VOFFSET_MIN_MPH",
+   "values": {
+    "0": "n_00",
+    "1": "n_01",
+    "10": "n_10",
+    "11": "n_11",
+    "12": "n_12",
+    "13": "n_13",
+    "14": "n_14",
+    "15": "n_15",
+    "2": "n_02",
+    "3": "n_03",
+    "4": "n_04",
+    "5": "n_05",
+    "6": "n_06",
+    "7": "n_07",
+    "8": "n_08",
+    "9": "n_09"
+   }
+  },
+  "3001:69:69:F0": {
+   "name": "VOFFSET_MAX_MPH",
+   "values": {
+    "0": "p_00",
+    "1": "p_01",
+    "10": "p_10",
+    "11": "p_11",
+    "12": "p_12",
+    "13": "p_13",
+    "14": "p_14",
+    "15": "p_15",
+    "2": "p_02",
+    "3": "p_03",
+    "4": "p_04",
+    "5": "p_05",
+    "6": "p_06",
+    "7": "p_07",
+    "8": "p_08",
+    "9": "p_09"
+   }
+  },
+  "3001:6:6:FF": {
+   "name": "MMC",
+   "values": {}
+  },
+  "3001:70:150:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "1167984798111281975972139931059274579172666497855631342228273284582214442805421410945513679697247078343332431250840168271536308408672112127552681297848886832192510636636227827221215793215130566655": "initwert"
+   }
+  },
+  "3001:7:7:FF": {
+   "name": "TV",
+   "values": {}
+  },
+  "3001:8:8:FF": {
+   "name": "KAFAS",
+   "values": {}
+  },
+  "3001:9:9:FF": {
+   "name": "HU_INTERNAL_VIDEO_PLAYBACK",
+   "values": {}
+  },
+  "3002:0:0:0F": {
+   "name": "RADIO_COUNTRY",
+   "values": {
+    "0": "ece",
+    "1": "us",
+    "2": "japan",
+    "3": "australien"
+   }
+  },
+  "3002:0:0:10": {
+   "name": "FM_DEEMPHASIS",
+   "values": {
+    "0": "50us",
+    "1": "75us"
+   }
+  },
+  "3002:0:0:20": {
+   "name": "AF_FUNKTION",
+   "values": {
+    "0": "af_aus",
+    "1": "af_ein"
+   }
+  },
+  "3002:0:0:40": {
+   "name": "TIME_LAG_IMG",
+   "values": {
+    "0": "standard"
+   }
+  },
+  "3002:0:0:80": {
+   "name": "TIME_LAG_IDG",
+   "values": {
+    "0": "standard"
+   }
+  },
+  "3002:1:1:FF": {
+   "name": "TIME_DIST_SAME_PRIO",
+   "values": {
+    "5": "standard"
+   }
+  },
+  "3002:20:20:FF": {
+   "name": "UPDATE_MIXER_LEVEL",
+   "values": {
+    "2": "standard"
+   }
+  },
+  "3002:21:21:03": {
+   "name": "AUDIO_SYSTEM_VAR",
+   "values": {
+    "0": "variant1",
+    "1": "variant2",
+    "2": "variant3",
+    "3": "variant4"
+   }
+  },
+  "3002:21:21:04": {
+   "name": "ANZEIGE_FREQ",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:21:21:18": {
+   "name": "RADIO_SDARS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "antdiag"
+   }
+  },
+  "3002:21:21:20": {
+   "name": "TI_CAT_DEFAULT_WEATHER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:21:21:40": {
+   "name": "TI_CAT_VMAP_WEATHER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:21:21:80": {
+   "name": "TI_CAT_VMAP_PARK_PUBL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:22:22:01": {
+   "name": "TI_CAT_VMAP_ONROUTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:22:22:02": {
+   "name": "TI_CAT_DEFAULT_FLOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:22:22:04": {
+   "name": "TI_CAT_DEFAULT_FORECAST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:22:22:08": {
+   "name": "TI_CAT_DEFAULT_INCIDENTS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:22:22:10": {
+   "name": "TI_CAT_DEFAULT_ROADWORKS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:22:22:20": {
+   "name": "TI_CAT_DEFAULT_CLOSED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:22:22:40": {
+   "name": "TI_CAT_DEFAULT_PARK_PUBL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:22:22:80": {
+   "name": "TI_CAT_DEFAULT_ONROUTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:23:23:01": {
+   "name": "TI_XFCD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:23:23:02": {
+   "name": "TI_TMC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:23:23:04": {
+   "name": "TI_CA_TMC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:23:23:08": {
+   "name": "TI_TPEG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:23:23:10": {
+   "name": "TI_CA_TPEG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:23:23:20": {
+   "name": "TI_TMC_REGIONAL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:23:23:40": {
+   "name": "TI_FALLBACK_DISABLED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:23:23:80": {
+   "name": "TI_USE_COMBI_DISABLED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:24:24:01": {
+   "name": "TI_VICS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:24:24:02": {
+   "name": "TI_VINFO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:24:24:04": {
+   "name": "TI_CAT_VMAP_FLOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:24:24:08": {
+   "name": "TI_CAT_VMAP_FORECAST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:24:24:10": {
+   "name": "TI_CAT_VMAP_INCIDENTS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:24:24:20": {
+   "name": "TI_CAT_VMAP_ROADWORKS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:24:24:40": {
+   "name": "TI_CAT_VMAP_CLOSED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:24:24:80": {
+   "name": "TI_TRAFFIC_INFOMAP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktv"
+   }
+  },
+  "3002:25:25:01": {
+   "name": "TI_CAT_VMAP_FREEFLOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:25:25:02": {
+   "name": "TI_CAT_DEFAULT_FREEFLOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:25:25:0C": {
+   "name": "MUTE_PIN",
+   "values": {
+    "0": "no_function",
+    "1": "mute_ent",
+    "2": "mono_in",
+    "3": "stereo_in"
+   }
+  },
+  "3002:25:25:30": {
+   "name": "MICROPHONE_POSITION",
+   "values": {}
+  },
+  "3002:25:25:C0": {
+   "name": "MICROPHONE_PARAMETER",
+   "values": {}
+  },
+  "3002:26:26:01": {
+   "name": "TLAM_VOLUME",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:26:26:06": {
+   "name": "AUDIO_PROFILE",
+   "values": {}
+  },
+  "3002:26:26:38": {
+   "name": "SOUND_SIGNAL_SET",
+   "values": {
+    "0": "bmw",
+    "1": "mini",
+    "2": "rolls_royce",
+    "3": "bmw_i"
+   }
+  },
+  "3002:26:26:40": {
+   "name": "CATEGORIES_DEACTIVATED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:26:26:80": {
+   "name": "REFERENCE_CHANNEL_TEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:27:27:03": {
+   "name": "REFERENCE_CHANNEL_TEL_MODE",
+   "values": {}
+  },
+  "3002:27:27:04": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:27:27:08": {
+   "name": "TI_DETOUR_BUTTON_DISABLED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:27:27:10": {
+   "name": "FM_BAND_LW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:27:27:20": {
+   "name": "RADIO_IBOC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:27:27:40": {
+   "name": "CHECKBOX_TP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:27:27:80": {
+   "name": "RADIO_WEATHERBAND",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:28:28:01": {
+   "name": "RADIO_DAB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:28:28:02": {
+   "name": "DAB_STANDARD",
+   "values": {
+    "0": "dab",
+    "1": "dab_plus"
+   }
+  },
+  "3002:28:28:04": {
+   "name": "RADIO_DAB_VARIANTEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:28:28:38": {
+   "name": "HMI_FUER_DAB_DMB",
+   "values": {
+    "0": "dab_dmb_radio",
+    "1": "dmb_statt_tv",
+    "2": "dmb_audio",
+    "3": "dmb_video",
+    "7": "nicht_aktiv"
+   }
+  },
+  "3002:28:28:C0": {
+   "name": "AUDIO_SYSTEM",
+   "values": {
+    "2": "tophifi"
+   }
+  },
+  "3002:29:29:03": {
+   "name": "AMPLIFIER_VARIANT",
+   "values": {
+    "0": "internal",
+    "1": "external"
+   }
+  },
+  "3002:29:29:3C": {
+   "name": "TPEG_TAP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "tophifi",
+    "3": "individual_sound",
+    "4": "hk_surroundsound",
+    "5": "highpremium",
+    "6": "hifi_system_harmankardon"
+   }
+  },
+  "3002:29:29:C0": {
+   "name": "MULTICHANNEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "most"
+   }
+  },
+  "3002:2:2:FF": {
+   "name": "TIME_OUT_GONG",
+   "values": {
+    "250": "standard"
+   }
+  },
+  "3002:30:30:01": {
+   "name": "AUTOSTORE_ANALOG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:30:30:02": {
+   "name": "DAB_FOLLOWING_CHECKB_HMI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:30:30:04": {
+   "name": "TLAM_KENNFELD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "wert1"
+   }
+  },
+  "3002:30:30:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:30:30:F0": {
+   "name": "2_CE_PLATFORM",
+   "values": {
+    "1": "aktiv",
+    "10": "wert10",
+    "11": "wert11",
+    "12": "wert12",
+    "2": "wert2",
+    "3": "wert3",
+    "4": "wert4",
+    "5": "wert5",
+    "6": "wert6",
+    "7": "wert7",
+    "8": "wert8",
+    "9": "wert9"
+   }
+  },
+  "3002:31:31:01": {
+   "name": "USB_BULK_TRANSFER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:31:31:02": {
+   "name": "DAB_LAENDERVARIANTEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "ece"
+   }
+  },
+  "3002:31:31:04": {
+   "name": "FOLLOWING_DAB_FM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:31:31:08": {
+   "name": "DAB_DABFOLLOWING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:31:31:F0": {
+   "name": "DAB_BAND",
+   "values": {
+    "15": "initwert"
+   }
+  },
+  "3002:32:51:FF": {
+   "name": "DMB_MAX_FRAMERATE",
+   "values": {
+    "1461501637330902918203684832716283019655932542975": "initwert"
+   }
+  },
+  "3002:3:3:FF": {
+   "name": "VOL_MAX_ON",
+   "values": {
+    "25": "standard"
+   }
+  },
+  "3002:4:4:FF": {
+   "name": "RSE_MAX_VOLUME_ON",
+   "values": {
+    "25": "standard"
+   }
+  },
+  "3002:52:52:03": {
+   "name": "DAB_SLIDESHOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "audio"
+   }
+  },
+  "3002:52:52:04": {
+   "name": "DAB_JOURNALINE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:52:52:08": {
+   "name": "AUDIO_OFFSET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:52:52:30": {
+   "name": "DAB_ANNOUNCEMENTS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "traffic_only",
+    "2": "all",
+    "3": "60seconds"
+   }
+  },
+  "3002:52:52:40": {
+   "name": "MICROPHONE_NUMBER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:52:52:80": {
+   "name": "DAB_EPG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "now_next_detail"
+   }
+  },
+  "3002:53:53:01": {
+   "name": "AUDIO_SIGNAL_ROUTING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:53:53:02": {
+   "name": "DAB_HMI_LIST_VIEW",
+   "values": {
+    "0": "show_checkbox_on",
+    "1": "show_checkbox_off"
+   }
+  },
+  "3002:53:53:7C": {
+   "name": "AM_FM_HMI_LIST_VIEW",
+   "values": {
+    "0": "show_checkbox_on",
+    "1": "show_checkbox_off",
+    "16": "singapur",
+    "17": "china",
+    "2": "hide_checkbox_on",
+    "4": "korea",
+    "8": "kanada"
+   }
+  },
+  "3002:53:53:80": {
+   "name": "TV_HMI_LIST_VIEW",
+   "values": {
+    "0": "show_checkbox_on",
+    "1": "show_checkbox_off"
+   }
+  },
+  "3002:54:54:01": {
+   "name": "SDARS_HMI_LIST_VIEW",
+   "values": {
+    "0": "show_checkbox_on",
+    "1": "show_checkbox_off"
+   }
+  },
+  "3002:54:54:0E": {
+   "name": "CDMM_TV_CA_ID_MENUE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "band_l",
+    "3": "beide"
+   }
+  },
+  "3002:54:54:70": {
+   "name": "UNBELEGT",
+   "values": {}
+  },
+  "3002:54:54:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:55:55:01": {
+   "name": "DAB_JOURNALINE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:55:55:02": {
+   "name": "AUDIO_OFFSET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:55:55:0C": {
+   "name": "DAB_ANNOUNCEMENTS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "traffic_only",
+    "2": "all"
+   }
+  },
+  "3002:55:55:30": {
+   "name": "MICROPHONE_NUMBER",
+   "values": {}
+  },
+  "3002:55:55:C0": {
+   "name": "DAB_EPG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "now_next_detail",
+    "2": "now_next_detail_dayview"
+   }
+  },
+  "3002:56:79:FF": {
+   "name": "AUDIO_SIGNAL_ROUTING",
+   "values": {
+    "23466696037410152585279176527483713499291143520691159285": "standard"
+   }
+  },
+  "3002:5:6:FF": {
+   "name": "RSE_MAX_VOLUME_STEP",
+   "values": {
+    "13903": "wert_364F",
+    "15439": "standard"
+   }
+  },
+  "3002:7:19:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "20282409603651670423947251286015": "initwert"
+   }
+  },
+  "3002:80:80:03": {
+   "name": "DAB_HMI_LIST_VIEW",
+   "values": {
+    "0": "show_checkbox_on",
+    "1": "show_checkbox_off",
+    "2": "hide_checkbox_on",
+    "3": "hide_checkbox_off"
+   }
+  },
+  "3002:80:80:0C": {
+   "name": "AM_FM_HMI_LIST_VIEW",
+   "values": {
+    "0": "show_checkbox_on",
+    "1": "show_checkbox_off",
+    "2": "hide_checkbox_on",
+    "3": "hide_checkbox_off"
+   }
+  },
+  "3002:80:80:30": {
+   "name": "TV_HMI_LIST_VIEW",
+   "values": {
+    "0": "show_checkbox_on",
+    "1": "show_checkbox_off",
+    "2": "hide_checkbox_on",
+    "3": "hide_checkbox_off"
+   }
+  },
+  "3002:80:80:C0": {
+   "name": "SDARS_HMI_LIST_VIEW",
+   "values": {
+    "0": "show_checkbox_on",
+    "1": "show_checkbox_off",
+    "2": "hide_checkbox_on",
+    "3": "hide_checkbox_off"
+   }
+  },
+  "3002:81:81:01": {
+   "name": "CDMM_TV_CA_ID_MENUE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:81:81:02": {
+   "name": "A4A_ANDROID",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:81:81:04": {
+   "name": "RDS_FUNCTION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:81:81:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "31": "initwert"
+   }
+  },
+  "3002:82:149:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "57586096570152913699974892898380567793532123114264532903689671329431521032595044740083720782129802971518987656109067457577065805510327036019308994315074097345724415": "initwert"
+   }
+  },
+  "3003:0:0:FF": {
+   "name": "HEAD_BOOT_UP_TIMEOUT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:10:10:01": {
+   "name": "BLUETOOTH_2ND_HFP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:02": {
+   "name": "LAST_MILE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:04": {
+   "name": "BLUETOOTH_WRITEBACK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:08": {
+   "name": "MACRO_PIM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:10": {
+   "name": "PIM_OVERVIEW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:20": {
+   "name": "PIM_CROSS_USE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:40": {
+   "name": "PIM_ADR_VALID",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:10:10:80": {
+   "name": "PIM_TTS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:11:11:07": {
+   "name": "PIM_DRIVING_TEXT_LENGTH",
+   "values": {
+    "0": "no_details",
+    "1": "one_page",
+    "2": "up_to_three_lines",
+    "7": "whole_text"
+   }
+  },
+  "3003:11:11:08": {
+   "name": "PIM_NAVI_TO_MEETING_LOCATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:11:11:10": {
+   "name": "PIM_SPEECH_TO_TEXT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:11:11:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3003:12:12:01": {
+   "name": "PIM_NEW_ELEMENT_VOICE_EMAIL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:12:12:02": {
+   "name": "PIM_ACCEPT_CAL_EVENT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:12:12:04": {
+   "name": "PIM_NOTES_USB_EXPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:12:12:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "initwert"
+   }
+  },
+  "3003:12:12:10": {
+   "name": "PIM_BON_EMAIL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:12:12:20": {
+   "name": "PIM_EXCHANGE_SUPPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:12:12:40": {
+   "name": "PIM_HTML_EMAIL_BROWSER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:12:12:80": {
+   "name": "PIM_CREATE_NEW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:01": {
+   "name": "PIM_REMINDER_POPUPS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:0E": {
+   "name": "UNBELEGT",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3003:13:13:70": {
+   "name": "PIM_2WAY_SYNC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "sync_cal",
+    "2": "sync_tasks",
+    "4": "sync_txt_notes"
+   }
+  },
+  "3003:13:13:80": {
+   "name": "PIM_MULTIPLE_CE_DEVICES",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:14:14:01": {
+   "name": "PIM_MESSAGE_SENDING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:14:14:02": {
+   "name": "RDU_CONTROL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:14:14:04": {
+   "name": "SVR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:14:14:08": {
+   "name": "HEATING_CONTROL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:14:14:10": {
+   "name": "VENTILATION_CONTROL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:14:14:20": {
+   "name": "LIGHT_CONTROL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:14:14:40": {
+   "name": "HORN_CONTROL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:14:14:80": {
+   "name": "ASSIST_VEHICLEFINDER_SHOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:15:15:01": {
+   "name": "ASSIST_SVR_SHOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:15:15:02": {
+   "name": "CONTACT_NUMBERS_BCALL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:15:15:04": {
+   "name": "CONTACT_NUMBERS_DEALER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:15:15:08": {
+   "name": "CONTACT_NUMBERS_HOTLINE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:15:15:30": {
+   "name": "ONLINE_BROWSER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "nur_bmw_online_aktiv",
+    "2": "nur_bmw_internet_aktiv",
+    "3": "beide_aktiv"
+   }
+  },
+  "3003:15:15:40": {
+   "name": "STARTUP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:15:15:80": {
+   "name": "ONLINE_SERVICES",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:16:16:01": {
+   "name": "ONLINE_SERVICES_GLS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:16:16:02": {
+   "name": "TELEX",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:16:16:3C": {
+   "name": "NGTP_KEY_TABLE",
+   "values": {
+    "0": "table_0",
+    "1": "table_1",
+    "10": "table_10",
+    "11": "table_11",
+    "12": "table_12",
+    "13": "table_13",
+    "14": "table_14",
+    "15": "table_15",
+    "2": "table_2",
+    "3": "table_3",
+    "4": "table_4",
+    "5": "table_5",
+    "6": "table_6",
+    "7": "table_7",
+    "8": "table_8",
+    "9": "table_9"
+   }
+  },
+  "3003:16:16:40": {
+   "name": "TDA_CFG_HLC_DATA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:16:16:80": {
+   "name": "ASSIST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:17:17:FF": {
+   "name": "CONFIG_INDEX",
+   "values": {
+    "0": "config_table_0",
+    "1": "config_table_1",
+    "10": "config_table_10",
+    "2": "config_table_2",
+    "3": "config_table_3",
+    "4": "config_table_4",
+    "5": "config_table_5",
+    "6": "config_table_6",
+    "7": "config_table_7",
+    "8": "config_table_8",
+    "9": "config_table_9"
+   }
+  },
+  "3003:18:18:01": {
+   "name": "GPS_FROM_NAVI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:18:18:02": {
+   "name": "TOL_CFG_EXP_USB_OVERWRITE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:18:18:0C": {
+   "name": "ONLINE_BROWSER_LIVE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:18:18:10": {
+   "name": "DATACOMM_CSIM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:18:18:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:18:18:40": {
+   "name": "ENT_BTAS_IAP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:18:18:80": {
+   "name": "TDA_CFG_BDA_REMOTE_HELP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:19:19:01": {
+   "name": "ENT_BTAS_METADATA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:19:19:02": {
+   "name": "ENT_BTAS_BROWSING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:19:19:04": {
+   "name": "CONTACTS_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:19:19:08": {
+   "name": "PIM_BILDER_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:19:19:10": {
+   "name": "CALENDAR_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:19:19:20": {
+   "name": "TASK_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:19:19:40": {
+   "name": "REMINDER_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:19:19:80": {
+   "name": "OGG_CODEC _ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:01": {
+   "name": "CDMM_GLOBAL_COVER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:02": {
+   "name": "CBS_MOBIGUAR_LIFELONG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:04": {
+   "name": "RSE_SERVICE_MESSAGES",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:08": {
+   "name": "VANITY_DIALING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:10": {
+   "name": "SPEECH_2_TEXT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:20": {
+   "name": "CDMM_USB_POD_BOOK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:40": {
+   "name": "TIMESTAMP_DISPLAY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:80": {
+   "name": "NEW_TALKING_HEAD_CONCEPT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:20:20:01": {
+   "name": "TEXT_NOTES_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:20:20:02": {
+   "name": "AUDIO_NOTES_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:20:20:04": {
+   "name": "SMS_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:20:20:08": {
+   "name": "EMAIL_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:20:20:10": {
+   "name": "WLAN_DIAGNOSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:20:20:20": {
+   "name": "WLAN_STATUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:20:20:40": {
+   "name": "WLAN_MODUS",
+   "values": {
+    "0": "ap",
+    "1": "client"
+   }
+  },
+  "3003:20:20:80": {
+   "name": "WLAN_ENCRYPTION",
+   "values": {
+    "0": "wpa_wpa2",
+    "1": "wapi"
+   }
+  },
+  "3003:21:21:03": {
+   "name": "WLAN_WPS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "both",
+    "3": "wifi_direct"
+   }
+  },
+  "3003:21:21:0C": {
+   "name": "WLAN_SIGNAL_STRENGTH",
+   "values": {
+    "0": "outdoor",
+    "1": "incar"
+   }
+  },
+  "3003:21:21:10": {
+   "name": "WLAN_FREQUENCY",
+   "values": {
+    "0": "band_a",
+    "1": "band_bg"
+   }
+  },
+  "3003:21:21:20": {
+   "name": "API_MSD_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:21:21:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "band_a",
+    "1": "band_bg",
+    "2": "band_abg"
+   }
+  },
+  "3003:22:22:01": {
+   "name": "API_IPOD_2WIRE_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:22:22:0E": {
+   "name": "UNBELEGT",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3003:22:22:10": {
+   "name": "API_APPLE_AUTH_CHIP_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:22:22:20": {
+   "name": "API_USB_READ_WRITE",
+   "values": {
+    "1": "aktiv"
+   }
+  },
+  "3003:22:22:40": {
+   "name": "API_CAR_TYPE_IPOD_LOGO",
+   "values": {
+    "0": "none",
+    "1": "bmw"
+   }
+  },
+  "3003:22:22:80": {
+   "name": "API_MP4_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:23:23:03": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "none",
+    "1": "initwert",
+    "2": "mini",
+    "3": "rr"
+   }
+  },
+  "3003:23:23:04": {
+   "name": "CDMM_USB_TAG_MGR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:23:23:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "initwert"
+   }
+  },
+  "3003:23:23:10": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:23:23:E0": {
+   "name": "USB1_IPOD_AUDIO",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3003:24:24:03": {
+   "name": "USB2_IPOD_AUDIO",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3003:24:24:0C": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "digital",
+    "1": "analog",
+    "2": "auto"
+   }
+  },
+  "3003:24:24:30": {
+   "name": "DPAS_INDEX",
+   "values": {
+    "0": "dpas_0",
+    "1": "dpas_1",
+    "2": "dpas_2"
+   }
+  },
+  "3003:24:24:C0": {
+   "name": "WLAN_CHANNEL",
+   "values": {
+    "3": "channel_3"
+   }
+  },
+  "3003:25:25:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "dpas_0",
+    "1": "dpas_1",
+    "10": "dpas_10",
+    "11": "dpas_11",
+    "12": "dpas_12",
+    "13": "dpas_13",
+    "14": "dpas_14",
+    "15": "dpas_15",
+    "2": "dpas_2",
+    "3": "initwert",
+    "4": "dpas_4",
+    "5": "dpas_5",
+    "6": "dpas_6",
+    "7": "dpas_7",
+    "8": "dpas_8",
+    "9": "dpas_9"
+   }
+  },
+  "3003:26:26:0F": {
+   "name": "CDMM_USB_COVER_ART",
+   "values": {
+    "1": "aktiv",
+    "10": "channel_10",
+    "11": "channel_11",
+    "12": "channel_12",
+    "13": "channel_13",
+    "14": "channel_14",
+    "2": "channel_2",
+    "3": "channel_3",
+    "4": "channel_4",
+    "5": "channel_5",
+    "6": "channel_6",
+    "7": "channel_7",
+    "8": "channel_8",
+    "9": "channel_9"
+   }
+  },
+  "3003:26:26:30": {
+   "name": "CDMM_USB_COVER_ART_IPOD",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3003:26:26:40": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:26:26:80": {
+   "name": "SWUP_INSTALL_SPEED_LOCK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:27:27:7F": {
+   "name": "NAVI_INFO_INSTANCE_ID",
+   "values": {
+    "127": "initwert"
+   }
+  },
+  "3003:27:27:80": {
+   "name": "SWUP_CYCLIC_RESET_THRESHOLD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:28:28:FF": {
+   "name": "SWUP_CYCLIC_RESET_TIMEOUT",
+   "values": {}
+  },
+  "3003:29:29:FF": {
+   "name": "SWUP_CYCLIC_MONITORING_PERIOD",
+   "values": {}
+  },
+  "3003:2:2:03": {
+   "name": "UNBELEGT",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3003:2:2:1C": {
+   "name": "API_TYPE",
+   "values": {
+    "0": "none",
+    "5": "nbt",
+    "6": "entry_nav_media"
+   }
+  },
+  "3003:2:2:20": {
+   "name": "API_MTP_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:2:2:40": {
+   "name": "API_IPOD_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:2:2:80": {
+   "name": "DEBUG_HCI_TRACE_EIN_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:30:30:FF": {
+   "name": "SWUP_ENABLE_SW_UPDATES",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3003:31:31:FF": {
+   "name": "SWUP_ENABLE_ENG_UPDATES",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3003:32:32:01": {
+   "name": "SWUP_ASK_CONF_ENABLED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:32:32:02": {
+   "name": "SWUP_SOURCE_USBMSCDD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:32:32:04": {
+   "name": "SWUP_SOURCE_ONLINE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:32:32:08": {
+   "name": "PIM_NEW_ELEMENT_EMAIL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:32:32:10": {
+   "name": "PIM_NEW_ELEMENT_SMS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:32:32:20": {
+   "name": "PIM_NEW_ELEMENT_TEXT_NOTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:32:32:40": {
+   "name": "PIM_NEW_ELEMENT_AUDIO_NOTE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:32:32:80": {
+   "name": "API_USB_VIDEO",
+   "values": {
+    "0": "none",
+    "1": "first_usb"
+   }
+  },
+  "3003:33:33:01": {
+   "name": "API_IPOD_VIDEO",
+   "values": {
+    "0": "none",
+    "1": "first_usb"
+   }
+  },
+  "3003:33:33:06": {
+   "name": "SWUP_SOURCE_WLAN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "second_usb",
+    "3": "both"
+   }
+  },
+  "3003:33:33:18": {
+   "name": "SWUP_SOURCE_DEVICE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "second_usb",
+    "3": "both"
+   }
+  },
+  "3003:33:33:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "initwert"
+   }
+  },
+  "3003:33:33:40": {
+   "name": "ECALL_INSTANCE_ID",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:33:33:80": {
+   "name": "M_SECURITY_MODE_ASH",
+   "values": {
+    "1": "des_cbc_mac"
+   }
+  },
+  "3003:34:34:FF": {
+   "name": "M_SECURITY_MODE_AEH",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3003:35:35:0F": {
+   "name": "M_SECURITY_MODE_ASP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "des_cbc_mac"
+   }
+  },
+  "3003:35:35:F0": {
+   "name": "M_SECURITY_MODE_AEP",
+   "values": {
+    "0": "nicht_aktiv",
+    "2": "des_cbc"
+   }
+  },
+  "3003:36:36:0F": {
+   "name": "API_VIDEO_DELAY_USB",
+   "values": {
+    "0": "0ms",
+    "1": "des_cbc_mac",
+    "3": "hmac_sha_1",
+    "5": "hmac_sha_256"
+   }
+  },
+  "3003:36:36:F0": {
+   "name": "API_VIDEO_DELAY_IPOD",
+   "values": {
+    "0": "nicht_aktiv",
+    "2": "des_cbc",
+    "4": "aes_128"
+   }
+  },
+  "3003:37:37:FF": {
+   "name": "SWUP_AGENT_TYPE",
+   "values": {
+    "0": "client"
+   }
+  },
+  "3003:38:38:FF": {
+   "name": "SWUP_SEPARATE_UPDATES",
+   "values": {
+    "128": "800ms"
+   }
+  },
+  "3003:39:39:01": {
+   "name": "SWUP_ENABLE_POPUP_SCREENS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:39:39:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:39:39:04": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:39:39:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "31": "initwert"
+   }
+  },
+  "3003:3:3:01": {
+   "name": "AUDIO_PLAYER_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:02": {
+   "name": "DUN_PROFILE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:04": {
+   "name": "PAN_PROFILE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "initwert"
+   }
+  },
+  "3003:3:3:10": {
+   "name": "TWO_PHONES_PARALLEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:3:3:E0": {
+   "name": "TELEMATIC_ECU",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "tcb",
+    "2": "tpl"
+   }
+  },
+  "3003:40:149:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "8061134813471454564702450331367746071149403778627342561766978592325956765086744071570087522699847227396765060321916636335485039665263146015175460486800225477728068298324662539195732386420081192825687147647265448061340763744378078290380812053940375922997109693874175": "initwert"
+   }
+  },
+  "3003:4:4:FF": {
+   "name": "PHONE_TYPE",
+   "values": {
+    "0": "no_phone",
+    "6": "nbt_becker"
+   }
+  },
+  "3003:5:5:01": {
+   "name": "PHONE_RSE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:5:5:02": {
+   "name": "PHONE_MPC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:5:5:04": {
+   "name": "PHONE_OBJPUSH_MENUE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:5:5:08": {
+   "name": "PHONE_CONFERENCE_CALL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:5:5:10": {
+   "name": "PHONE_RESPONSE_HOLD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:5:5:20": {
+   "name": "PHONEBOOK_NAME_DISPL_ORD",
+   "values": {
+    "0": "lastname_firstname",
+    "1": "firstname_lastname"
+   }
+  },
+  "3003:5:5:40": {
+   "name": "PHONEBOOK_NAME_ORD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:5:5:80": {
+   "name": "MICROPHONE_SENSITIVITY",
+   "values": {
+    "0": "L4_mic",
+    "1": "L6_mic"
+   }
+  },
+  "3003:6:6:0F": {
+   "name": "PIM_AUDIO_RECORDING_LENGTH",
+   "values": {
+    "0": "nicht_aktiv",
+    "3": "wert_90sec",
+    "4": "wert_2min",
+    "8": "wert_4min"
+   }
+  },
+  "3003:6:6:10": {
+   "name": "ADRESSBOOK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:6:6:20": {
+   "name": "BT_MODUL_ON_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:6:6:40": {
+   "name": "EXTERNAL_CALL_LISTS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:6:6:80": {
+   "name": "INBAND_RINGING",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:7:7:FF": {
+   "name": "PB_DOWNLOAD_PRIORITY",
+   "values": {}
+  },
+  "3003:8:8:03": {
+   "name": "RINGTONE",
+   "values": {
+    "0": "bmw",
+    "1": "mini",
+    "2": "rueko",
+    "3": "rr"
+   }
+  },
+  "3003:8:8:04": {
+   "name": "CONTACTS_NAVI_SEPARATED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:8:8:08": {
+   "name": "SINGLE_OR_MULTILINK",
+   "values": {
+    "0": "singlelink",
+    "1": "multilink"
+   }
+  },
+  "3003:8:8:10": {
+   "name": "CONTACT_NUMBERS_BT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:8:8:20": {
+   "name": "CONTACT_BOOK_PICTURES",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:8:8:40": {
+   "name": "BLUETOOTH_HANDSET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:8:8:80": {
+   "name": "BLUETOOTH_SAP_SUPPORT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:9:9:FF": {
+   "name": "BT_PHONE_INSTANCE_ID",
+   "values": {}
+  },
+  "3004:0:0:FF": {
+   "name": "PIA_RESERVED",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3004:10:10:01": {
+   "name": "EXTERNER_MOST",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:02": {
+   "name": "EXTERNE_MOST_DIAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:04": {
+   "name": "EINHEITEN_MASTER",
+   "values": {
+    "0": "HMI",
+    "1": "kombi_l6"
+   }
+  },
+  "3004:10:10:08": {
+   "name": "HTTP_ILEVEL_UPDATE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:10:30": {
+   "name": "ZBE_TOUCH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "pia_service",
+    "3": "kombi_l6_new"
+   }
+  },
+  "3004:10:10:40": {
+   "name": "TRACE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "ext_tracing"
+   }
+  },
+  "3004:10:10:80": {
+   "name": "SLEEPDELAY_CLAMP30B_MIN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:11:11:FF": {
+   "name": "SLEEPDELAY_TIMERVALUE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "ext_tracing",
+    "2": "int_tracing"
+   }
+  },
+  "3004:12:12:FF": {
+   "name": "ASD",
+   "values": {
+    "144": "wert_1440s",
+    "234": "wert_2340s",
+    "255": "nicht_aktiv",
+    "42": "wert_420s"
+   }
+  },
+  "3004:13:13:FF": {
+   "name": "TEILNETZBETIEB",
+   "values": {
+    "0": "nicht_aktiv",
+    "30": "wert_300s",
+    "54": "wert_540s"
+   }
+  },
+  "3004:14:14:01": {
+   "name": "ENT_MODE_TELEFONIE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:14:14:06": {
+   "name": "ENT_MODE_NAVIGATION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "aktiv_mit_autorisierung"
+   }
+  },
+  "3004:14:14:18": {
+   "name": "CAN__ANSCHLUSS_HEADUNIT",
+   "values": {
+    "0": "hu_an_body_can",
+    "1": "hu_an_ik_can",
+    "2": "aktiv_mit_autorisierung",
+    "3": "initwert"
+   }
+  },
+  "3004:14:14:60": {
+   "name": "ENT_MODE_BMW_SERVICES",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "aktiv_mit_autorisierung"
+   }
+  },
+  "3004:14:14:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "hu_an_body_can",
+    "1": "hu_an_ik_can"
+   }
+  },
+  "3004:15:15:03": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "aktiv_mit_autorisierung"
+   }
+  },
+  "3004:15:15:0C": {
+   "name": "TEILNETZBETRIEB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv_2013",
+    "2": "aktiv_2015"
+   }
+  },
+  "3004:15:15:30": {
+   "name": "ENT_MODE_CONNECTIVITY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "aktiv_mit_autorisierung"
+   }
+  },
+  "3004:15:15:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3004:16:16:0F": {
+   "name": "PRODUKTLINIE",
+   "values": {
+    "0": "unknown",
+    "1": "lg",
+    "2": "lk",
+    "3": "lu_b",
+    "4": "lu_m",
+    "6": "li",
+    "7": "lr"
+   }
+  },
+  "3004:16:16:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "15": "initwert"
+   }
+  },
+  "3004:17:149:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "197658450495420525734858737030192682665582665785295037457911482448662440984370455949180062208434691889831130726871886632216610095103313942252942773379627451095231859645084337269987214591887906583241960623508540106017585433031926463494241558251132379239072320812850360890950600210186037629088210457662115491511433340911615": "initwert"
+   }
+  },
+  "3004:1:1:01": {
+   "name": "PIA_PORTIERUNGSMASTER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:02": {
+   "name": "PIA_RUECKSETZEN_AUF_DEFAULT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:1C": {
+   "name": "PIA_MMI",
+   "values": {
+    "0": "kein_pia_menue",
+    "1": "pia_menue",
+    "2": "alle_ausser_portierung",
+    "3": "alle_ausser_portierung_und_loeschen"
+   }
+  },
+  "3004:1:1:20": {
+   "name": "KOPIEREN_VON_PROFILEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:40": {
+   "name": "PORTIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:1:1:80": {
+   "name": "TEMPORAERER_PROFILWECHSEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:2:2:01": {
+   "name": "PERMANENTER_PROFILWECHSEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:2:2:02": {
+   "name": "L4_L6_KOMMUNIKATIONSSCHALTER",
+   "values": {
+    "0": "L4_aktiv",
+    "1": "L6_aktiv"
+   }
+  },
+  "3004:2:2:1C": {
+   "name": "IHKA_VARIANTE",
+   "values": {
+    "0": "keine_ihka",
+    "1": "ihka_l2",
+    "2": "ihka_e89",
+    "3": "ihka_basis_l4",
+    "4": "ihka_high_l4"
+   }
+  },
+  "3004:2:2:20": {
+   "name": "PRODUKTLINIE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "l6-w"
+   }
+  },
+  "3004:2:2:40": {
+   "name": "BEHANDLUNG_2s_TIMER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:2:2:80": {
+   "name": "COUNTRY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "australien"
+   }
+  },
+  "3004:3:3:01": {
+   "name": "BAUREIHE",
+   "values": {
+    "0": "Unbekannt",
+    "1": "F01"
+   }
+  },
+  "3004:3:3:FE": {
+   "name": "SHUTDOWN_DELAY_TIMER_1",
+   "values": {
+    "1": "australien",
+    "10": "ece",
+    "11": "us",
+    "2": "deutschland",
+    "3": "aegypten",
+    "4": "kanada",
+    "5": "japan",
+    "6": "china",
+    "7": "korea",
+    "8": "hongkong",
+    "9": "taiwan"
+   }
+  },
+  "3004:4:4:FF": {
+   "name": "SHUTDOWN_DELAY_TIMER_2",
+   "values": {
+    "0": "wert_0s",
+    "1": "F01",
+    "10": "F10",
+    "11": "F11",
+    "112": "F45",
+    "113": "F46",
+    "114": "F47",
+    "115": "F48",
+    "116": "F49",
+    "12": "F12",
+    "128": "F80",
+    "13": "F13",
+    "130": "F82",
+    "131": "F83",
+    "133": "F85",
+    "134": "F86",
+    "135": "F87",
+    "144": "RR05",
+    "145": "RR11",
+    "146": "RR12",
+    "148": "RR14",
+    "149": "RR06",
+    "15": "wert_15s",
+    "16": "RR04",
+    "17": "F16",
+    "18": "F18",
+    "2": "F02",
+    "20": "F20",
+    "21": "F21",
+    "22": "F22",
+    "23": "F23",
+    "25": "F25",
+    "26": "F26",
+    "3": "F03",
+    "4": "F04",
+    "48": "M13",
+    "6": "F06",
+    "64": "F30",
+    "65": "F31",
+    "66": "F32",
+    "67": "F33",
+    "68": "F34",
+    "69": "F35",
+    "7": "F07",
+    "70": "F36",
+    "82": "F52",
+    "84": "F54",
+    "85": "F55",
+    "86": "F56",
+    "87": "F57",
+    "90": "F60",
+    "96": "I01",
+    "97": "I12"
+   }
+  },
+  "3004:5:5:FF": {
+   "name": "DEFAULT_DATUM",
+   "values": {
+    "0": "mm_dd_yyyy",
+    "20": "wert_20s"
+   }
+  },
+  "3004:6:6:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "wert_0s",
+    "15": "wert_15s"
+   }
+  },
+  "3004:7:7:07": {
+   "name": "SOFTWARE_UPDATE_MANAGER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "4": "yyyy_mm_dd_dot",
+    "5": "yyyy_mm_dd_slash"
+   }
+  },
+  "3004:7:7:08": {
+   "name": "SOFTWARE_UPDATE_ASSISTANT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:7:7:10": {
+   "name": "CONNECTIVITY_SYSTEM_VER",
+   "values": {
+    "0": "teilenummer",
+    "1": "ecu_sw_vid"
+   }
+  },
+  "3004:7:7:20": {
+   "name": "DEFAULT_WEG_EINHEIT",
+   "values": {
+    "0": "km",
+    "1": "mls"
+   }
+  },
+  "3004:7:7:40": {
+   "name": "DEFAULT_DRUCK_EINHEIT",
+   "values": {
+    "0": "kpa",
+    "1": "bar"
+   }
+  },
+  "3004:7:7:80": {
+   "name": "DEFAULT_TEMPERATUR",
+   "values": {
+    "0": "fahrenheit",
+    "1": "celcius"
+   }
+  },
+  "3004:8:8:03": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "kpa",
+    "1": "initwert",
+    "2": "psi"
+   }
+  },
+  "3004:8:8:04": {
+   "name": "DEFAULT_ZEIT_EINHEIT",
+   "values": {
+    "0": "24h",
+    "1": "12h"
+   }
+  },
+  "3004:8:8:08": {
+   "name": "EINSTELLUNG_MEILEN",
+   "values": {
+    "0": "mls_us",
+    "1": "mls_uk"
+   }
+  },
+  "3004:8:8:10": {
+   "name": "VERBRAUCH",
+   "values": {
+    "0": "alle_anderen",
+    "1": "mpg_uk"
+   }
+  },
+  "3004:8:8:20": {
+   "name": "GETRIEBETYP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "handschalter"
+   }
+  },
+  "3004:8:8:C0": {
+   "name": "BAUART",
+   "values": {
+    "0": "sicherheitsfahrzeug",
+    "1": "limousine",
+    "2": "touring",
+    "3": "coupe"
+   }
+  },
+  "3004:9:9:03": {
+   "name": "DEFAULT_SVS_DIALOG",
+   "values": {
+    "0": "standard",
+    "1": "kurz",
+    "2": "automatik"
+   }
+  },
+  "3004:9:9:7C": {
+   "name": "ANTRIEB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "touring",
+    "3": "coupe",
+    "4": "cabrio",
+    "5": "compact",
+    "6": "sports_activity_tourer",
+    "7": "light_protection",
+    "8": "gelaendefahrzeug"
+   }
+  },
+  "3004:9:9:80": {
+   "name": "ZBE_LOW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:0:1:FF": {
+   "name": "DIM_CURVE_X1",
+   "values": {}
+  },
+  "3005:10:11:FF": {
+   "name": "DIM_CURVE_Y3",
+   "values": {}
+  },
+  "3005:12:13:FF": {
+   "name": "DIM_FILT_CHANGE_SENS",
+   "values": {}
+  },
+  "3005:14:14:FF": {
+   "name": "DIM_TOLERANCE_ALPHA",
+   "values": {
+    "15": "wert 15"
+   }
+  },
+  "3005:15:15:FF": {
+   "name": "DIM_TOLERANCE_ABS",
+   "values": {}
+  },
+  "3005:16:16:FF": {
+   "name": "DIM_DIFF_GAIN",
+   "values": {}
+  },
+  "3005:17:17:FF": {
+   "name": "DIM_DIFF_THRESHOLD",
+   "values": {}
+  },
+  "3005:18:18:FF": {
+   "name": "DIM_DIFF_BIAS",
+   "values": {}
+  },
+  "3005:19:19:FF": {
+   "name": "DIM_DIFF_MAX",
+   "values": {}
+  },
+  "3005:20:20:FF": {
+   "name": "DIM_DIFF_MIN",
+   "values": {}
+  },
+  "3005:21:21:FF": {
+   "name": "DIM_UP_MIN",
+   "values": {}
+  },
+  "3005:22:22:FF": {
+   "name": "DIM_DOWN_MIN",
+   "values": {}
+  },
+  "3005:23:23:FF": {
+   "name": "DIM_MAX_OFFSET_BRIG",
+   "values": {}
+  },
+  "3005:24:24:FF": {
+   "name": "DIM_FADE_TIME_T0",
+   "values": {}
+  },
+  "3005:25:25:FF": {
+   "name": "DIM_FADE_TIME_T1",
+   "values": {}
+  },
+  "3005:26:26:FF": {
+   "name": "DIM_FADE_TIME_T2",
+   "values": {}
+  },
+  "3005:27:27:FF": {
+   "name": "DIM_FADE_EXPO_T1",
+   "values": {}
+  },
+  "3005:28:28:FF": {
+   "name": "DIM_FADE_EXPO_T2",
+   "values": {}
+  },
+  "3005:29:29:FF": {
+   "name": "DIM_MIN_OFFSET_BRIG",
+   "values": {}
+  },
+  "3005:2:3:FF": {
+   "name": "DIM_CURVE_X2",
+   "values": {}
+  },
+  "3005:30:30:FF": {
+   "name": "ENDIANESS_ADAPTED",
+   "values": {}
+  },
+  "3005:31:31:FF": {
+   "name": "PADDING3",
+   "values": {}
+  },
+  "3005:32:33:FF": {
+   "name": "TEMP_THRESHOLD1",
+   "values": {}
+  },
+  "3005:34:35:FF": {
+   "name": "TEMP_THRESHOLD2",
+   "values": {}
+  },
+  "3005:36:37:FF": {
+   "name": "TEMP_THRESHOLD3",
+   "values": {}
+  },
+  "3005:38:39:FF": {
+   "name": "TEMP_THRESHOLD4",
+   "values": {}
+  },
+  "3005:40:41:FF": {
+   "name": "UNBELEGT",
+   "values": {}
+  },
+  "3005:42:43:FF": {
+   "name": "ZIN_DIM_CURVE_X2",
+   "values": {}
+  },
+  "3005:44:45:FF": {
+   "name": "ZIN_DIM_CURVE_X3",
+   "values": {}
+  },
+  "3005:46:47:FF": {
+   "name": "ZIN_DIM_CURVE_Y1",
+   "values": {}
+  },
+  "3005:48:49:FF": {
+   "name": "ZIN_DIM_CURVE_Y2",
+   "values": {}
+  },
+  "3005:4:5:FF": {
+   "name": "DIM_CURVE_X3",
+   "values": {}
+  },
+  "3005:50:51:FF": {
+   "name": "ZIN_DIM_CURVE_Y3",
+   "values": {}
+  },
+  "3005:52:52:FF": {
+   "name": "ZIN_DIM_MAX_OFFSET_BRIG",
+   "values": {}
+  },
+  "3005:53:53:FF": {
+   "name": "ZIN_DIM_MIN_OFFSET_BRIG",
+   "values": {}
+  },
+  "3005:54:54:FF": {
+   "name": "ZIN_DIM_DOWN_MIN",
+   "values": {}
+  },
+  "3005:55:55:FF": {
+   "name": "ZIN_DIM_UP_MIN",
+   "values": {}
+  },
+  "3005:56:56:FF": {
+   "name": "ZIN_DIM_FADE_IN_T1",
+   "values": {}
+  },
+  "3005:57:57:FF": {
+   "name": "ZIN_DIM_FADE_IN_T2",
+   "values": {}
+  },
+  "3005:58:58:FF": {
+   "name": "ZIN_DIM_FADE_IN_T3",
+   "values": {}
+  },
+  "3005:59:59:FF": {
+   "name": "ZIN_DIM_TIME_OUT_T1",
+   "values": {}
+  },
+  "3005:60:60:FF": {
+   "name": "ZIN_DIM_TIME_OUT_T2",
+   "values": {}
+  },
+  "3005:61:61:FF": {
+   "name": "ZIN_DIM_TIME_OUT_T3",
+   "values": {}
+  },
+  "3005:62:62:FF": {
+   "name": "ZIN_CRC_CALC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:63:63:01": {
+   "name": "ZIN_ANIMATION_CONFIG1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:63:63:02": {
+   "name": "ZIN_ANIMATION_CONFIG2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:63:63:04": {
+   "name": "ZIN_ANIMATION_CONFIG3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:63:63:08": {
+   "name": "ZIN_ANIMATION_CONFIG4",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:63:63:10": {
+   "name": "ZIN_ANIMATION_CONFIG5",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:63:63:20": {
+   "name": "ZIN_ANIMATION_CONFIG6",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:63:63:40": {
+   "name": "ZIN_ANIMATION_CONFIG7",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:63:63:80": {
+   "name": "ZIN_ANIMATION_CONFIG8",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:64:64:FF": {
+   "name": "ZIN_VARIANT",
+   "values": {
+    "0": "kein_zin",
+    "1": "6_5_zoll",
+    "2": "8_8_zoll",
+    "3": "radio_zin"
+   }
+  },
+  "3005:65:66:FF": {
+   "name": "ZIN_MAX_TARGET_BRIGHTNESS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3005:67:67:01": {
+   "name": "ZIN_BLOWER_VARIANT",
+   "values": {
+    "0": "base",
+    "1": "high"
+   }
+  },
+  "3005:67:67:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "127": "initwert"
+   }
+  },
+  "3005:68:68:FF": {
+   "name": "ZIN_PERMANENT_DISPLAY",
+   "values": {
+    "0": "off",
+    "1": "drehzahl",
+    "10": "jcw",
+    "2": "driving_mode",
+    "3": "always_open",
+    "4": "blue",
+    "5": "yellow",
+    "6": "orange",
+    "7": "pink",
+    "8": "green",
+    "9": "red"
+   }
+  },
+  "3005:69:69:01": {
+   "name": "ZIN_SEMI_PERMANENT_DISPLAYS_HEARTBEAT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:69:69:02": {
+   "name": "ZIN_SEMI_PERMANENT_DISPLAYS_MSA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:69:69:04": {
+   "name": "ZIN_SEMI_PERMANENT_DISPLAYS_NAVI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:69:69:08": {
+   "name": "ZIN_SEMI_PERMANENT_DISPLAYS_PDC_PMA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:69:69:10": {
+   "name": "ZIN_SEMI_PERMANENT_DISPLAYS_TELEPHONE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:69:69:20": {
+   "name": "ZIN_SEMI_PERMANENT_DISPLAYS_USB_BLUETOOTH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:69:69:40": {
+   "name": "ZIN_SEMI_PERMANENT_DISPLAYS_CLIMATE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:69:69:80": {
+   "name": "ZIN_SEMI_PERMANENT_DISPLAYS_AUDIO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:6:7:FF": {
+   "name": "DIM_CURVE_Y1",
+   "values": {}
+  },
+  "3005:70:70:01": {
+   "name": "ZIN_SEMI_PERMANENT_DISPLAYS_SDE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:70:70:02": {
+   "name": "ZIN_SEMI_PERMANENT_DISPLAYS_ID4",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3005:70:70:04": {
+   "name": "DIMMUNGSVARIANTE",
+   "values": {
+    "0": "alte_dimmung",
+    "1": "neue_dimmung"
+   }
+  },
+  "3005:70:70:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "31": "initwert"
+   }
+  },
+  "3005:71:149:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "17822033662586700072817076584766762987864173856439687228824970773044043621908896041038721919208482030385321521771853153557377752817872804680674458280164899172859354196719784961261227313463295": "initwert"
+   }
+  },
+  "3005:8:9:FF": {
+   "name": "DIM_CURVE_Y2",
+   "values": {}
+  },
+  "3006:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3007:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "HMI",
+  "3001": "EXBOX",
+  "3002": "AUDIO_TUNER_TRAFFIC",
+  "3003": "TELEFON_TELEMATIK_ONLINE",
+  "3004": "SYSTEM_EINSTELLUNGEN",
+  "3005": "APIX CID",
+  "3006": "CAF_ID",
+  "3007": "SIGNATURE"
+ },
+ "module": "HU_NBT",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
 }
