@@ -8,6 +8,8 @@ from nbtcoding import sign
 class FakeEcu:
     def __init__(self, coding, l3: sign.Key, ncd: sign.Key, caf, btld: int, tester_id: int = 0):
         self.coding = {a.upper(): bytearray(b) for a, b in coding.items()}
+        self.committed = {a: bytearray(b) for a, b in self.coding.items()}   # what survives a reset
+        self.cps = bytearray(b"D000000")
         self.l3, self.ncd, self.btld, self.tester_id = l3, ncd, btld, tester_id
         self.content, self.sign_dg = sign.scheme_from_caf(caf)
         self.session = 0x01
@@ -48,17 +50,25 @@ class FakeEcu:
             if not self.unlocked:
                 return self._nrc(sid, 0x33)               # securityAccessDenied
             did = "%02X%02X" % (uds[1], uds[2])
+            if did == "37FE":                             # Coding Production Stamp: commits the coding
+                self.cps = bytearray(uds[3:])
+                self.committed = {a: bytearray(b) for a, b in self.coding.items()}
+                return bytes([0x6E, uds[1], uds[2]])
             self.coding[did] = bytearray(uds[3:])
             return bytes([0x6E, uds[1], uds[2]])
         if sid == 0x22:                                   # read datagroup
             did = "%02X%02X" % (uds[1], uds[2])
+            if did == "37FE":
+                return bytes([0x62, uds[1], uds[2]]) + bytes(self.cps)
             return bytes([0x62, uds[1], uds[2]]) + bytes(self.coding.get(did, b""))
         if sid == 0x31:                                   # CheckCodingSignature
             coding = {a: bytes(b) for a, b in self.coding.items()}
             ok = sign.verify(coding, self.content, self.sign_dg, self.ncd)
             status = b"\x00" if ok else b"\x01"
             return bytes([0x71, uds[1], uds[2], uds[3]]) + status
-        if sid == 0x11:                                   # reset
+        if sid == 0x11:                                   # reset: uncommitted coding is dropped, like the car
             self.reset_done = True
+            self.coding = {a: bytearray(b) for a, b in self.committed.items()}
+            self.session, self.unlocked = 0x01, False
             return bytes([0x51, uds[1]])
         return self._nrc(sid, 0x11)

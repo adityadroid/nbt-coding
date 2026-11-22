@@ -9,7 +9,7 @@ The write that a module accepts (for the original-NBT-era F-series, offline-sign
     2E <signDg> <signature>   write the re-signed signature datagroup LAST (nbtcoding.sign)
     (read each back, compare)
     31 01 0F01                CheckCodingSignature — status bytes must be all zero
-    2E 37FE <cps>             coding protection status
+    2E 37FE <cps>             Coding Production Stamp, written back as read: this commits the coding
     11 01                     ECU reset; the module reboots and re-verifies
 
 This module builds that plan (sign.verify must pass locally first) and can execute it against anything exposing
@@ -117,6 +117,12 @@ def commit(conn, tgt: int, module: str, before: dict, after: dict, caf, ncd_key:
     if not have_backup:
         raise PermissionError("refused: no backup confirmed for %s" % module)
     btld = int(sign.BTLD[module], 16)
+    # Coding Production Stamp: read it now, write it back after the signature check. That write is what makes the
+    # module keep the new coding; without it the module drops the change at the reset (car, FRM, 2026-11-22).
+    cps_resp = _req(conn, bytes([0x22, DID_CPS >> 8, DID_CPS & 0xFF]), tgt)
+    cps = cps_resp[3:] if cps_resp and cps_resp[0] == 0x62 else b""
+    if not cps or all(b == 0xFF for b in cps):
+        raise RuntimeError("the module's coding production stamp (37FE) is empty; refusing to write")
     _req(conn, bytes([0x10, SESSION_EXTENDED]), tgt)
     _req(conn, bytes([0x10, SESSION_CODING]), tgt)
     seed = _req(conn, bytes([0x27, SA_SEED_LEVEL]) + tester_id.to_bytes(4, "big"), tgt)[2:]
@@ -136,8 +142,12 @@ def commit(conn, tgt: int, module: str, before: dict, after: dict, caf, ncd_key:
     status = resp[4:]
     if status and any(status):
         raise RuntimeError("CheckCodingSignature not OK (%s); no reset. Read back and decide." % resp.hex())
+    _req(conn, bytes([0x2E, DID_CPS >> 8, DID_CPS & 0xFF]) + cps, tgt)
+    cps_back = _req(conn, bytes([0x22, DID_CPS >> 8, DID_CPS & 0xFF]), tgt)[3:]
+    if cps_back != cps:
+        raise RuntimeError("coding production stamp read-back mismatch; no reset")
     _req(conn, bytes([0x11, 0x01]), tgt)
-    return {"dry_run": False, "wrote": p["changed"], "check_coding": resp.hex()}
+    return {"dry_run": False, "wrote": p["changed"], "check_coding": resp.hex(), "cps_written": True}
 
 
 def _main() -> int:
