@@ -32,6 +32,18 @@ python3 -m nbtcoding        # starts the GUI at http://127.0.0.1:8733
 Plug the ENET cable into the OBD port. The car answers on a link-local address
 (`169.254.199.99` on the NBT). Set `NBT_HOST` to change it.
 
+## Car probe (first step at the car)
+
+```bash
+python3 -m nbtcoding.probe          # ~1 min, ignition on, ENET cable in
+```
+
+Finds the gateway (HSFZ broadcast), then asks each known F-series module for its SVK (which CAFD it needs) and its raw
+coding datagroups (`22 3000..300F`). **Read-only**: only ReadDataByIdentifier, plus a switch to the extended
+diagnostic session and back if a module refuses reads in its default session. Everything goes to
+`backups/probe-<time>.json` (git-ignored: it holds the VIN). The summary lists the CAFD ids to decode next.
+`--scan` also tries every other address 0x01..0x7F.
+
 ## You must supply the CAFD files
 
 This repo ships **no BMW data**. To decode a module you need its CAFD XML (from your own
