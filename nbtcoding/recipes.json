@@ -1,0 +1,61 @@
+{
+  "note": "Named coding changes, possibly across several modules. Each step names the module, BMW's function name and the value label to set. The recipe tool resolves names against the module's own CAFD at run time, batches all steps of one module into one signed write, and refuses a step whose name or value the CAFD does not have.",
+  "recipes": {
+    "welcome-lights-full": {
+      "title": "Welcome lights with low beams and front fogs",
+      "risk": "low",
+      "steps": [
+        ["FRM", "WL_FUNKTION_AL", "soft_on"],
+        ["FRM", "WL_FUNKTION_NSW", "soft_on"]
+      ],
+      "test": "iDrive Settings > Lighting > Welcome light ticked; switch on low beam (or AUTO in the dark); lock, wait, unlock.",
+      "status": "written and verified on the car 2026-11-22"
+    },
+    "digital-speed": {
+      "title": "Digital speed in the trip computer list",
+      "risk": "low",
+      "steps": [["KOMBI", "BC_DIGITAL_V", "aktiv"]],
+      "test": "Scroll the trip computer with the stalk button: a km/h readout appears."
+    },
+    "start-stop-memory": {
+      "title": "Auto start/stop remembers your last choice",
+      "risk": "medium (CAS)",
+      "steps": [["CAS", "TC_MSA_MEMORY", "aktiv"]],
+      "test": "Switch auto start/stop off, restart the car: it stays off."
+    },
+    "lock-horn": {
+      "title": "Short horn chirp when locking",
+      "risk": "medium (CAS)",
+      "steps": [["CAS", "CLM_HORN_AT_SECURE", "Aktiv"]],
+      "test": "Lock with the key: a short chirp."
+    },
+    "mirror-fold-door-handle": {
+      "title": "Fold mirrors and close windows by holding the door-handle lock area",
+      "risk": "medium (CAS)",
+      "steps": [["CAS", "KOMFORTSCHLIESSUNG_PA", "aktiv"]],
+      "test": "Keep a finger on the handle's lock area: windows close, mirrors fold."
+    },
+    "key-parked-ventilation": {
+      "title": "Key fob 4th button (headlight button) starts parked ventilation",
+      "risk": "medium (CAS + IHKA)",
+      "steps": [
+        ["CAS", "BELEGUNG_DER_4_IDG-TASTE", "standkuehlen"],
+        ["IHKA", "STANDKUEHLEN", "aktiv"]
+      ],
+      "test": "Engine off, press the 4th button: the blower runs with outside air. No cold air: this car's compressor is engine-driven. The button stops lighting the headlights (home light).",
+      "status": "untested: the IHKA may need its parked-climate timer path; check the blower and the KOMBI message."
+    },
+    "remote-engine-start": {
+      "title": "EXPERIMENTAL remote engine start from the key (for A/C before getting in)",
+      "risk": "high (CAS immobiliser + FZD; the DME has no remote-start setting, so its software may refuse)",
+      "steps": [
+        ["CAS", "MOTORFERNSTART_GENERELL", "aktiv"],
+        ["CAS", "MOTORFERNSTART_CAN", "aktiv"],
+        ["CAS", "REMOTE_KEY_SPECIAL_FCT", "aktiv"],
+        ["FZD", "Motorfernstart", "aktiv"]
+      ],
+      "test": "Only with the car locked, in P, nobody inside, outdoors. Try the BMW remote-start gesture (lock, then hold the 3rd button for ZEIT_REMOTE_KEY_3RD_BUTTON). Watch for Check Control messages; revert from the backup if anything looks wrong.",
+      "status": "unproven on this car; see bmw/PLAN-remote-climate.md"
+    }
+  }
+}

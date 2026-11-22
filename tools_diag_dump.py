@@ -6,7 +6,7 @@ import json, os, sys, time
 sys.path.insert(0, os.path.dirname(__file__))
 from nbtcoding.hsfz import Hsfz
 
-GW, SRC = "169.254.101.24", 0xF5
+GW, SRC = "169.254.101.24", 0xF4   # nbt_health on the head unit uses F5
 OUT = os.path.join(os.path.dirname(__file__), "backups", "diag-%s.json" % time.strftime("%Y%m%d-%H%M%S"))
 MODS = {0x01: "ACSM", 0x12: "DME", 0x18: "EGS", 0x29: "DSC", 0x30: "EPS", 0x40: "CAS", 0x56: "FZD", 0x60: "KOMBI",
         0x63: "HU_NBT", 0x64: "PDC", 0x72: "FRM", 0x78: "IHKA", 0x10: "ZGW", 0x0D: "SZL?", 0x1C: "ICM?", 0x5F: "?5F",
