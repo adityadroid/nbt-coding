@@ -101,7 +101,7 @@ class Scheme:
 # sec_ncdkeys entry is 32 bytes, not an RSA key, so CAS coding uses a different signature (a symmetric scheme, to be
 # worked out) — and CAS is the immobiliser module, so it stays last and most careful regardless.
 BTLD = {"HU_NBT": "00001275", "FRM": "0000106B", "KOMBI": "000016E4"}
-PROVEN = {"HU_NBT"}   # verify() reproduced the car's own signature; others need a full read to confirm
+PROVEN = {"HU_NBT", "FRM", "KOMBI"}   # verify() reproduced the car's own signature (FRM/KOMBI confirmed 2026-11-22 full read)
 CAS_BTLD = "0000074B"   # CAS signs with AES-128-CMAC (16-byte key/tag), not RSA — see cas_mac.py
 
 
