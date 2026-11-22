@@ -102,6 +102,17 @@ class Scheme:
 # worked out) — and CAS is the immobiliser module, so it stays last and most careful regardless.
 BTLD = {"HU_NBT": "00001275", "FRM": "0000106B", "KOMBI": "000016E4"}
 PROVEN = {"HU_NBT"}   # verify() reproduced the car's own signature; others need a full read to confirm
+CAS_BTLD = "0000074B"   # CAS signs with AES-128-CMAC (16-byte key/tag), not RSA — see cas_mac.py
+
+
+def load_cas_key(btld: str) -> bytes | None:
+    """The 16-byte CAS AES-CMAC key from keys/cas_mac_<btld>.json. None if not present."""
+    import json as _json
+    for name in ("cas_mac_%s.json" % btld.lower(), "cas_mac_%s.json" % btld.upper()):
+        path = os.path.join(KEYS_DIR, name)
+        if os.path.exists(path):
+            return bytes.fromhex(_json.load(open(path, encoding="utf-8"))["key_hex"])
+    return None
 
 
 def scheme_from_caf(caf) -> tuple:
@@ -131,22 +142,29 @@ def _main() -> int:
             continue
         cafd = next((e["id"] for e in m.get("svk", []) if e.get("class") == "CAFD"), None)
         xml = decode.find_cafd_xml(cafd) if cafd else None
-        key = load_key(BTLD.get(name, ""))
         coding = {a.upper(): bytes.fromhex(h) for a, h in m.get("datagroups", {}).items()}
-        if key is None:
-            print("  %-7s key for BTLD %s not in keys/ (recover it)" % (name, BTLD.get(name)))
+        cas_key = load_cas_key(CAS_BTLD) if name == "CAS" else None
+        key = load_key(BTLD.get(name, "")) if name in BTLD else None
+        if key is None and cas_key is None:
+            print("  %-7s key not in keys/ (recover it)" % name)
             continue
         if not xml:
             print("  %-7s key present; CAFD %s not decrypted yet" % (name, cafd))
             continue
         content, sign_dg = scheme_from_caf(cafmod.parse(xml))
         missing = [("%04X" % d) for d in content if ("%04X" % d) not in coding]
+        scheme = "AES-CMAC" if name == "CAS" else "RSA"
         if missing:
-            print("  %-7s key + CAFD ready; read these datagroups to verify: %s" % (name, " ".join(missing)))
+            print("  %-7s key + CAFD ready (%s); read these datagroups to verify: %s"
+                  % (name, scheme, " ".join(missing)))
+            continue
+        if name == "CAS":
+            from . import cas_mac
+            ok = cas_mac.verify(coding, content, sign_dg, cas_key)
         else:
             ok = verify(coding, content, sign_dg, key)
-            print("  %-7s signature %s (sign@%04X, %d datagroups)"
-                  % (name, "VERIFIED against the car" if ok else "did NOT verify", sign_dg, len(content)))
+        print("  %-7s %s signature %s (sign@%04X, %d datagroups)"
+              % (name, scheme, "VERIFIED against the car" if ok else "did NOT verify", sign_dg, len(content)))
     return 0
 
 

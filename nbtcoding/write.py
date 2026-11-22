@@ -61,20 +61,29 @@ def apply_change(coding: dict, func, new_scalar: int) -> dict:
     return {a: bytes(b) for a, b in out.items()}
 
 
-def resign(coding: dict, caf, ncd_key: sign.Key) -> dict:
-    """Return a copy of coding with the signature datagroup recomputed for the current content."""
+def _signer(module: str):
+    """(sign_fn, verify_fn) for a module: RSA for the head-unit-class modules, AES-CMAC for CAS (cas_mac)."""
+    if module == "CAS":
+        from . import cas_mac
+        return cas_mac.sign, cas_mac.verify
+    return sign.sign, sign.verify
+
+
+def resign(coding: dict, caf, key, module: str = "HU_NBT") -> dict:
+    """Return a copy of coding with the signature/MAC datagroup recomputed for the current content."""
     content, sign_dg = sign.scheme_from_caf(caf)
-    page = sign.sign(coding, content, ncd_key)
+    sign_fn, _ = _signer(module)
     out = dict(coding)
-    out["%04X" % sign_dg] = page
+    out["%04X" % sign_dg] = sign_fn(coding, content, key)
     return out
 
 
-def plan(before: dict, after: dict, caf, ncd_key: sign.Key) -> dict:
+def plan(before: dict, after: dict, caf, key, module: str = "HU_NBT") -> dict:
     """What a write would send. Verifies the new signature locally; lists changed datagroups, signature last."""
     content, sign_dg = sign.scheme_from_caf(caf)
-    after = resign(after, caf, ncd_key)
-    if not sign.verify(after, content, sign_dg, ncd_key):
+    _, verify_fn = _signer(module)
+    after = resign(after, caf, key, module)
+    if not verify_fn(after, content, sign_dg, key):
         raise ValueError("the re-signed coding does not self-verify; refusing to plan a write")
     changed = [a for a in ("%04X" % d for d in content) if before.get(a) != after.get(a) and a in after]
     changed_sig = before.get("%04X" % sign_dg) != after.get("%04X" % sign_dg)
@@ -98,7 +107,7 @@ def commit(conn, tgt: int, module: str, before: dict, after: dict, caf, ncd_key:
            *, dry_run: bool = True, unlock: str = "", have_backup: bool = False, tester_id: int = 0) -> dict:
     """Execute (or rehearse) the write. Real write refused unless dry_run is False AND unlock==UNLOCK AND have_backup
     AND the module's signer is proven. Reads everything back and checks the coding signature before the reset."""
-    p = plan(before, after, caf, ncd_key)
+    p = plan(before, after, caf, ncd_key, module)
     if dry_run:
         return {"dry_run": True, "steps": p["steps"], "changed": p["changed"]}
     if unlock != UNLOCK:
@@ -149,9 +158,10 @@ def _main() -> int:
     cafd = next((e["id"] for e in m.get("svk", []) if e.get("class") == "CAFD"), None)
     c = cafmod.parse(decode.find_cafd_xml(cafd))
     coding = {a.upper(): bytes.fromhex(h) for a, h in m["datagroups"].items()}
-    ncd = sign.load_key(sign.BTLD.get(sys.argv[2].upper(), ""), "ncd") if sys.argv[2].upper() in sign.BTLD else None
+    mod = sys.argv[2].upper()
+    ncd = sign.load_cas_key(sign.CAS_BTLD) if mod == "CAS" else (sign.load_key(sign.BTLD.get(mod, ""), "ncd") if mod in sign.BTLD else None)
     if not ncd:
-        print("no NCD key for %s — cannot plan a signed write" % sys.argv[2])
+        print("no signing key for %s — cannot plan a signed write" % sys.argv[2])
         return 1
     bykey = {f.key(): f for f in c.all_funcs()}
     want = sys.argv[3] if len(sys.argv) > 3 else None
@@ -166,7 +176,7 @@ def _main() -> int:
                     and fdict[f.key()].current is not None)
     after = apply_change(coding, func, 1)
     try:
-        p = plan(coding, after, c, ncd)
+        p = plan(coding, after, c, ncd, sys.argv[2].upper())
     except ValueError as e:
         print("cannot plan: %s" % e)
         return 1
