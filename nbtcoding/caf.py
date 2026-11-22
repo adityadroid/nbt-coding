@@ -33,6 +33,10 @@ from dataclasses import dataclass, field
 from xml.etree import ElementTree as ET
 
 
+class CafEncrypted(Exception):
+    """The CAF file is still encrypted (raw PSdZData); it must be decrypted by E-Sys first."""
+
+
 def _mask_to_int(s: str) -> int:
     """'00000001b' -> 1, 'FF' / '0xFF' -> 255. Returns 0xFF for a full/absent mask."""
     s = (s or "").strip()
@@ -152,6 +156,12 @@ def parse(path: str, series: str = "F010") -> Caf:
     (an F10 is mainSeries F010)."""
     tree = ET.parse(path)
     root = tree.getroot()
+
+    # Raw PSdZData ships CAFDs encrypted (a CMS/PKCS7 <encryptedData> envelope, isEncrypted="true"), in the full SDP
+    # and in the Lite bundles alike. E-Sys decrypts them with its keystore into isEncrypted="false" XML (how the NBT
+    # cafd_00000ded here was produced). We cannot read an encrypted one; say so instead of returning an empty model.
+    if root.get("isEncrypted") == "true" or any(_localname(e.tag) == "encryptedData" for e in root):
+        raise CafEncrypted(path)
 
     cafd_id = version = ""
     sign_addr = ""

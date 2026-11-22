@@ -58,16 +58,24 @@ class Feature:
     summary: str                     # one-line plain-English explanation
 
 
-def find_cafd_xml(cafd_id: str) -> str | None:
+def find_cafd_xml(cafd_id: str, version: str = "") -> str | None:
+    """The coding file for a CAFD id: PSdZData names it cafd_<id>.caf.<MMM_mmm_ppp> (plain XML); older decoded copies
+    are cafd_<id>.xml. With `version` ("005.025.037") the exact version wins; otherwise the newest version found."""
     cafd_id = cafd_id.lower()
+    want = version.replace(".", "_") if version else ""
+    hits: list[str] = []
     for base in CAFD_SEARCH:
         if not base:
             continue
-        for pat in ("cafd_%s.xml" % cafd_id, "cafd_%s*.xml" % cafd_id, "*%s*.xml" % cafd_id):
-            hits = glob.glob(os.path.join(base, pat))
-            if hits:
-                return hits[0]
-    return None
+        if want:
+            exact = glob.glob(os.path.join(base, "cafd_%s.caf.%s" % (cafd_id, want)))
+            if exact:
+                return exact[0]
+        hits += glob.glob(os.path.join(base, "cafd_%s.caf.*" % cafd_id))
+        hits += glob.glob(os.path.join(base, "cafd_%s*.xml" % cafd_id))
+    if not hits:
+        return None
+    return sorted(hits)[-1]   # .caf.<version> sorts by version; a single .xml copy is used when nothing else exists
 
 
 def _popcount(x: int) -> int:

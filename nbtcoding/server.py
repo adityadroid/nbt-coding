@@ -34,7 +34,10 @@ def _offline(cafd_id: str) -> dict:
     xml = decode_mod.find_cafd_xml(cafd_id)
     if not xml:
         return {"error": "no decoded CAFD XML found for %s under .local/psdz" % cafd_id}
-    c = caf_mod.parse(xml)
+    try:
+        c = caf_mod.parse(xml)
+    except caf_mod.CafEncrypted:
+        return {"error": "CAFD %s is still encrypted (raw PSdZData): decrypt it with E-Sys first" % cafd_id}
     overlay = names_mod.load(c.cafd_id)
     feats = decode_mod.build_features(c, None, overlay)
     return {
@@ -63,7 +66,7 @@ def _probes() -> dict:
             mods.append({"addr": m.get("addr"), "name": m.get("name", ""),
                          "cafd": cafd["id"] if cafd else "", "cafd_version": cafd["version"] if cafd else "",
                          "datagroups": len(m.get("datagroups", {})),
-                         "decodable": bool(cafd and decode_mod.find_cafd_xml(cafd["id"]))})
+                         "decodable": bool(cafd and decode_mod.find_cafd_xml(cafd["id"], cafd["version"]))})
         out.append({"file": os.path.basename(path), "saved": d.get("saved", ""), "modules": mods})
     return {"probes": out}
 
@@ -85,12 +88,17 @@ def _probe(fname: str, addr: str) -> dict:
     raw = {k.upper(): v for k, v in m.get("datagroups", {}).items()}
     if not cafd:
         return {"error": "module %s reported no CAFD (nothing codeable)" % addr}
-    xml = decode_mod.find_cafd_xml(cafd["id"])
+    xml = decode_mod.find_cafd_xml(cafd["id"], cafd["version"])
     if not xml:
         return {"error": "no coding file for CAFD %s %s yet: put cafd_%s.caf.%s into cafd/ (from PSdZData)"
                          % (cafd["id"], cafd["version"], cafd["id"].lower(), cafd["version"].replace(".", "_")),
                 "raw_datagroups": raw}
-    c = caf_mod.parse(xml)
+    try:
+        c = caf_mod.parse(xml)
+    except caf_mod.CafEncrypted:
+        return {"error": "the coding file for CAFD %s is still encrypted (raw PSdZData). E-Sys must decrypt it first, "
+                         "the way cafd_00000ded here was decrypted; a Lite bundle ships it encrypted too." % cafd["id"],
+                "raw_datagroups": raw}
     coding = {a: bytes.fromhex(h) for a, h in raw.items()}
     # the CAF names datagroups like "3000"; the probe stored "%04X": match case-insensitively
     by_upper = {dg.addr.upper(): dg.addr for dg in c.datagroups}
