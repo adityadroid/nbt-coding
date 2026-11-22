@@ -92,12 +92,12 @@ def _shift(mask: int) -> int:
 
 
 def _scalar(vals: list[int], mask: int, shift: int) -> int | None:
-    """Right-aligned integer for a single-byte field value (masked). None if multi-byte/empty."""
-    if not vals:
+    """Integer for a single-byte CAF value or default. The CAF stores these already right-aligned (a 2-bit field at
+    bits 2-3 lists 00..03, checked across every function of every CAFD here), so only the field width is applied.
+    None if multi-byte/empty."""
+    if not vals or len(vals) > 1:
         return None
-    if len(vals) > 1:
-        return None
-    return (vals[0] & mask) >> shift
+    return vals[0] & (mask >> shift)
 
 
 def _label(scalar: int | None, raw: list[int] | None, kind: str, overlay_vals: dict) -> str:
@@ -131,7 +131,11 @@ def build_features(c: caf_mod.Caf, coding: dict | None, overlay: dict) -> list[F
             dg_bytes = coding[f.dg_addr]
             cur = f.decode(dg_bytes)
             cur_scalar = f.scalar(dg_bytes)
-            is_def = bool(f.default) and cur == [d & f.mask for d in f.default]
+            def_sc = _scalar(f.default, f.mask, shift)
+            if nbytes == 1:
+                is_def = bool(f.default) and def_sc == cur_scalar
+            else:
+                is_def = bool(f.default) and cur == [d & f.mask for d in f.default]
 
         # provisional kind; the option menu is built once, then kind may be corrected
         if nbytes == 1 and _popcount(f.mask) == 1:
@@ -151,7 +155,8 @@ def build_features(c: caf_mod.Caf, coding: dict | None, overlay: dict) -> list[F
             if lab in seen:
                 continue
             seen.add(lab)
-            option_labels.append({"scalar": sc, "label": lab, "cur": cur is not None and vm == cur})
+            is_cur = cur is not None and (sc == cur_scalar if sc is not None else vm == cur)
+            option_labels.append({"scalar": sc, "label": lab, "cur": is_cur})
         if kind == "choice" and len(option_labels) <= 1:
             kind = "value"                  # only one real value: not a choice
             for o in option_labels:         # relabel under the corrected kind
@@ -162,8 +167,7 @@ def build_features(c: caf_mod.Caf, coding: dict | None, overlay: dict) -> list[F
 
         def_scalar = _scalar(f.default, f.mask, shift)
         current_label = _label(cur_scalar, cur, kind, overlay_vals)
-        default_label = _label(def_scalar, [d & f.mask for d in f.default] if f.default else None,
-                               kind, overlay_vals)
+        default_label = _label(def_scalar, list(f.default) if f.default else None, kind, overlay_vals)
 
         summary = _summary(kind, name=meta.get("name", ""), desc=meta.get("desc", ""),
                            current_label=current_label, default_label=default_label,
@@ -209,6 +213,10 @@ def save_backup(module: str, cafd_id: str, coding: dict, vin: str = "") -> str:
     os.makedirs(BACKUP_DIR, exist_ok=True)
     stamp = time.strftime("%Y%m%d-%H%M%S")
     path = os.path.join(BACKUP_DIR, "%s-%s-%s.json" % (module, cafd_id, stamp))
+    n = 1
+    while os.path.exists(path):          # never overwrite a backup (two saves in the same second)
+        n += 1
+        path = os.path.join(BACKUP_DIR, "%s-%s-%s-%d.json" % (module, cafd_id, stamp, n))
     blob = {
         "module": module, "cafd_id": cafd_id, "vin": vin, "saved": stamp,
         "datagroups": {a: b.hex() for a, b in coding.items()},
