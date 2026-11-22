@@ -20,6 +20,7 @@ import json
 import os
 import socket
 import struct
+import subprocess
 import sys
 import time
 
@@ -43,25 +44,43 @@ CODING_DIDS = list(range(0x3000, 0x3010))
 SESSION_NRCS = (0x7F, 0x22, 0x33, 0x7E)   # not in this session / conditions / security: worth trying 10 03
 
 
-def enet_source() -> str | None:
-    """Local 169.254.x.x address the ENET cable uses (None if the route points elsewhere, e.g. a VPN)."""
+def enet_source() -> tuple[str | None, str | None]:
+    """(local 169.254.x.x address, interface name) of the ENET cable, found through the route to the head unit.
+    (Car 2026-11-22: a route test to 169.254.1.1 picked the Wi-Fi, so the broadcast never reached the car.)"""
+    ip = ifname = None
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        s.connect(("169.254.1.1", 9))
+        s.connect((NBT_HOST, 9))
         ip = s.getsockname()[0]
         s.close()
-        return ip if ip.startswith("169.254.") else None
     except OSError:
-        return None
+        pass
+    if not ip or not ip.startswith("169.254."):
+        return None, None
+    try:
+        out = subprocess.run(["route", "-n", "get", NBT_HOST], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+                             timeout=3).stdout.decode()
+        for line in out.splitlines():
+            if line.strip().startswith("interface:"):
+                ifname = line.split(":", 1)[1].strip()
+    except (OSError, subprocess.SubprocessError):
+        pass
+    return ip, ifname
 
 
-def discover(src: str | None, timeout: float = 4.0) -> tuple[str, str] | None:
-    """HSFZ identification broadcast -> (gateway IP, VIN) or None."""
+def discover(src: tuple[str | None, str | None], timeout: float = 4.0) -> tuple[str, str] | None:
+    """HSFZ identification broadcast on the ENET interface -> (gateway IP, VIN) or None."""
+    ip, ifname = src
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-    if src:
+    if ifname and sys.platform == "darwin":
+        try:   # macOS IP_BOUND_IF: send the broadcast out of this interface, not the default route (Wi-Fi)
+            s.setsockopt(socket.IPPROTO_IP, 25, socket.if_nametoindex(ifname))
+        except OSError:
+            pass
+    if ip:
         try:
-            s.bind((src, 0))
+            s.bind((ip, 0))
         except OSError:
             pass
     s.settimeout(timeout)
