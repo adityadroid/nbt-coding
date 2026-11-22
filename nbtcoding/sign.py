@@ -65,23 +65,38 @@ def load_key(btld: str, kind: str = "ncd") -> Key | None:
     return None
 
 
+def page_format(page: bytes, key: Key) -> str:
+    """How a module stores its signature page, read from its word-count header:
+    "ws"   big-endian count + little-endian signature with each 32-bit word reversed (NBT, FRM, KOMBI, most modules)
+    "le"   little-endian count + plain little-endian signature (DME / Bosch, car 2026-11-22)"""
+    words = key.size // 4
+    if page[:4] == words.to_bytes(4, "little") and page[:4] != words.to_bytes(4, "big"):
+        return "le"
+    return "ws"
+
+
 def verify(coding: dict, content_dgs, sign_dg: int, key: Key) -> bool:
     """Reproduce the ECU's check: does the stored signature match the content's MD5 under this key? Writes nothing."""
     page = coding.get("%04X" % sign_dg, b"")
     if len(page) < 4 + key.size:
         return False
     sig = page[4:4 + key.size]
-    recovered = pow(int.from_bytes(_wordswap(sig), "little"), key.public_exponent, key.modulus)
+    raw = sig if page_format(page, key) == "le" else _wordswap(sig)
+    recovered = pow(int.from_bytes(raw, "little"), key.public_exponent, key.modulus)
     return recovered.bit_length() <= 128 and recovered.to_bytes(16, "little") == content_digest(coding, content_dgs)
 
 
-def sign(coding: dict, content_dgs, key: Key) -> bytes:
-    """The signature-datagroup payload for the current content. Needs the private exponent. Writes nothing to the car."""
+def sign(coding: dict, content_dgs, key: Key, fmt: str = "ws") -> bytes:
+    """The signature-datagroup payload for the current content, in the module's page format (page_format of the page
+    the module holds now). Needs the private exponent. Writes nothing to the car."""
     if key.private_exponent is None:
         raise ValueError("no private exponent in the key: recover it from your own PSdZData")
     m = int.from_bytes(content_digest(coding, content_dgs), "little")
-    s = pow(m, key.private_exponent, key.modulus)
-    return (key.size // 4).to_bytes(4, "big") + _wordswap(s.to_bytes(key.size, "little"))
+    s = pow(m, key.private_exponent, key.modulus).to_bytes(key.size, "little")
+    words = key.size // 4
+    if fmt == "le":
+        return words.to_bytes(4, "little") + s
+    return words.to_bytes(4, "big") + _wordswap(s)
 
 
 # Per-module signing scheme. content_dgs and sign_dg come from the module's CAFD (ncdSignAddress); "proven" means
@@ -100,13 +115,15 @@ class Scheme:
 # NBT/FRM/KOMBI sign with a 1024-bit RSA NCD key (this module's scheme). CAS (BTLD 0000074B) is NOT here: its
 # sec_ncdkeys entry is 32 bytes, not an RSA key, so CAS coding uses a different signature (a symmetric scheme, to be
 # worked out) — and CAS is the immobiliser module, so it stays last and most careful regardless.
-BTLD = {"HU_NBT": "00001275", "FRM": "0000106B", "KOMBI": "000016E4"}
-PROVEN = {"HU_NBT", "FRM", "KOMBI"}   # verify() reproduced the car's own signature (FRM/KOMBI confirmed 2026-11-22 full read)
-CAS_BTLD = "0000074B"   # CAS signs with AES-128-CMAC (16-byte key/tag), not RSA — see cas_mac.py
+from .modules import MODULES as _ALL
+BTLD = {m[1]: m[3] for m in _ALL if m[4] == "rsa"}     # module -> BTLD of its RSA coding key
+# verify() reproduced the car's own signature/tag for every coded module from the 2026-11-22 full read
+PROVEN = {m[1] for m in _ALL}
+CAS_BTLD = "0000074B"   # CAS protects its coding with a keyed MD5 (16-byte key/tag), not RSA — see cas_mac.py
 
 
 def load_cas_key(btld: str) -> bytes | None:
-    """The 16-byte CAS AES-CMAC key from keys/cas_mac_<btld>.json. None if not present."""
+    """The 16-byte CAS coding key from keys/cas_mac_<btld>.json. None if not present."""
     import json as _json
     for name in ("cas_mac_%s.json" % btld.lower(), "cas_mac_%s.json" % btld.upper()):
         path = os.path.join(KEYS_DIR, name)
@@ -135,7 +152,7 @@ def _main() -> int:
     with open(files[0], encoding="utf-8") as f:
         probe = json.load(f)
     print("signatures in", os.path.basename(files[0]))
-    by_addr = {"63": "HU_NBT", "72": "FRM", "60": "KOMBI", "40": "CAS"}
+    by_addr = {"%02X" % m[0]: m[1] for m in _ALL}
     for m in probe.get("modules", []):
         name = by_addr.get(m.get("addr", ""))
         if not name:
@@ -153,7 +170,7 @@ def _main() -> int:
             continue
         content, sign_dg = scheme_from_caf(cafmod.parse(xml))
         missing = [("%04X" % d) for d in content if ("%04X" % d) not in coding]
-        scheme = "AES-CMAC" if name == "CAS" else "RSA"
+        scheme = "keyed-MD5" if name == "CAS" else "RSA"
         if missing:
             print("  %-7s key + CAFD ready (%s); read these datagroups to verify: %s"
                   % (name, scheme, " ".join(missing)))

@@ -21,7 +21,7 @@ from __future__ import annotations
 
 import hashlib
 
-from . import sign
+from . import modules, sign
 
 SESSION_EXTENDED, SESSION_CODING = 0x03, 0x41
 SA_SEED_LEVEL, SA_KEY_LEVEL = 0x01, 0x02
@@ -62,7 +62,7 @@ def apply_change(coding: dict, func, new_scalar: int) -> dict:
 
 
 def _signer(module: str):
-    """(sign_fn, verify_fn) for a module: RSA for the head-unit-class modules, AES-CMAC for CAS (cas_mac)."""
+    """(sign_fn, verify_fn) for a module: RSA for the head-unit-class modules, keyed MD5 for CAS (cas_mac)."""
     if module == "CAS":
         from . import cas_mac
         return cas_mac.sign, cas_mac.verify
@@ -74,7 +74,11 @@ def resign(coding: dict, caf, key, module: str = "HU_NBT") -> dict:
     content, sign_dg = sign.scheme_from_caf(caf)
     sign_fn, _ = _signer(module)
     out = dict(coding)
-    out["%04X" % sign_dg] = sign_fn(coding, content, key)
+    if module == "CAS":
+        out["%04X" % sign_dg] = sign_fn(coding, content, key)
+    else:   # keep the page format the module uses now (DME stores it little-endian, most others word-swapped)
+        fmt = sign.page_format(coding.get("%04X" % sign_dg, b""), key)
+        out["%04X" % sign_dg] = sign_fn(coding, content, key, fmt)
     return out
 
 
@@ -116,7 +120,7 @@ def commit(conn, tgt: int, module: str, before: dict, after: dict, caf, ncd_key:
         raise PermissionError("refused: the signer for %s is not proven against this car yet" % module)
     if not have_backup:
         raise PermissionError("refused: no backup confirmed for %s" % module)
-    btld = int(sign.BTLD[module], 16)
+    btld = int(modules.BY_NAME[module][3], 16)
     # Coding Production Stamp: read it now, write it back after the signature check. That write is what makes the
     # module keep the new coding; without it the module drops the change at the reset (car, FRM, 2026-11-22).
     cps_resp = _req(conn, bytes([0x22, DID_CPS >> 8, DID_CPS & 0xFF]), tgt)
@@ -160,7 +164,8 @@ def _main() -> int:
         print("usage: python3 -m nbtcoding.write <probe.json> <MODULE> [location_key]  (dry run only)")
         return 2
     probe = json.load(open(sys.argv[1], encoding="utf-8"))
-    addr = {"HU_NBT": "63", "FRM": "72", "KOMBI": "60", "CAS": "40"}.get(sys.argv[2].upper(), sys.argv[2])
+    from .modules import BY_NAME
+    addr = "%02X" % BY_NAME[sys.argv[2].upper()][0] if sys.argv[2].upper() in BY_NAME else sys.argv[2]
     m = next((x for x in probe["modules"] if x["addr"] == addr), None)
     if not m:
         print("module %s not in the probe" % sys.argv[2])
