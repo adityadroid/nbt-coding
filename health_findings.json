@@ -1,0 +1,1875 @@
+{
+ "car": "F10 530d N57 2014 India",
+ "dids": [
+  {
+   "module": "DME",
+   "did": "402B",
+   "name": "ibs_battery_temp",
+   "meaning": "Battery temperature from IBS",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": true,
+    "factor": 0.1,
+    "offset": 0,
+    "unit": "degC"
+   },
+   "decoded_idle": [
+    35.2,
+    35.2,
+    35.2
+   ],
+   "decoded_engine_off": 35.2,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "Job STATUS_MESSWERTE_IBS (0x22402B). Field order T,U,I then 22 info bytes = 28 bytes, matches length. Ranges in SGBD fix the scaling."
+  },
+  {
+   "module": "DME",
+   "did": "402B",
+   "name": "ibs_battery_voltage",
+   "meaning": "Battery voltage at the battery (IBS)",
+   "decode": {
+    "byte_offset": 2,
+    "length": 2,
+    "signed": false,
+    "factor": 0.00025,
+    "offset": 6.0,
+    "unit": "V"
+   },
+   "decoded_idle": [
+    14.752,
+    14.748,
+    14.754
+   ],
+   "decoded_engine_off": 12.298,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "Idle 14.75 V matches DME target 14.8 V in 0x4016; engine-off 12.30 V matches the 12.2 V seen."
+  },
+  {
+   "module": "DME",
+   "did": "402B",
+   "name": "ibs_battery_current",
+   "meaning": "Battery current (IBS). In this data positive = discharge (engine-off ign-on draws ~15 A), ~0 at idle (battery full)",
+   "decode": {
+    "byte_offset": 4,
+    "length": 2,
+    "signed": false,
+    "factor": 0.08,
+    "offset": -200.0,
+    "unit": "A"
+   },
+   "decoded_idle": [
+    -0.72,
+    -0.8,
+    -0.72
+   ],
+   "decoded_engine_off": 14.72,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "Sign convention inferred from samples, not stated in SGBD."
+  },
+  {
+   "module": "DME",
+   "did": "4016",
+   "name": "alternator_target_voltage",
+   "meaning": "Board-net voltage target from intelligent alternator control (IGR), DREC_IGRINFO[2]",
+   "decode": {
+    "byte_offset": 2,
+    "length": 1,
+    "signed": false,
+    "factor": 0.1,
+    "offset": 0,
+    "unit": "V"
+   },
+   "decoded_idle": [
+    14.8,
+    14.8,
+    14.8
+   ],
+   "decoded_engine_off": 10.6,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "Byte0 = IGR status bits (bit0 coded, bit5 battery regeneration active). Engine-off value meaningless."
+  },
+  {
+   "module": "DME",
+   "did": "4023",
+   "name": "battery_soc_today",
+   "meaning": "Battery state of charge, current day (AEPINFO2[17])",
+   "decode": {
+    "byte_offset": 17,
+    "length": 1,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "%"
+   },
+   "decoded_idle": [
+    68,
+    68,
+    68
+   ],
+   "decoded_engine_off": 68,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "Previous days in bytes 18..22 (69,66,66,65,64 %). Byte 2 (SOC_FIT) reads 68->73 %. Byte 0 = 106: likely battery capacity Ah (coded); byte1 SOH=0x81 looks invalid."
+  },
+  {
+   "module": "DME",
+   "did": "4023",
+   "name": "battery_capacity",
+   "meaning": "Battery capacity known to the energy manager (AEPINFO2[0])",
+   "decode": {
+    "byte_offset": 0,
+    "length": 1,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "Ah"
+   },
+   "decoded_idle": [
+    106,
+    106,
+    106
+   ],
+   "decoded_engine_off": 106,
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "106 Ah is not a stock F10 size (90/105 Ah AGM); check registered battery."
+  },
+  {
+   "module": "KOMBI",
+   "did": "D11F",
+   "name": "fuel_level_damped",
+   "meaning": "Fuel in tank, damped sum of both senders (displayed value)",
+   "decode": {
+    "byte_offset": 6,
+    "length": 2,
+    "signed": false,
+    "factor": 0.0078125,
+    "offset": 0,
+    "unit": "l"
+   },
+   "decoded_idle": [
+    44.68,
+    44.68,
+    44.656
+   ],
+   "decoded_engine_off": 44.625,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/",
+   "note": "RES_0xD11F: right 2B, left 2B, sum 2B, damped 2B, phase 1B (1 = OK). Matches DME 0x4050 tank 44.0 l."
+  },
+  {
+   "module": "KOMBI",
+   "did": "D11F",
+   "name": "fuel_level_right",
+   "meaning": "Right tank chamber",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.0078125,
+    "offset": 0,
+    "unit": "l"
+   },
+   "decoded_idle": [
+    30.0,
+    30.0,
+    30.0
+   ],
+   "decoded_engine_off": 30.0,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "KOMBI",
+   "did": "D11F",
+   "name": "fuel_level_left",
+   "meaning": "Left tank chamber",
+   "decode": {
+    "byte_offset": 2,
+    "length": 2,
+    "signed": false,
+    "factor": 0.0078125,
+    "offset": 0,
+    "unit": "l"
+   },
+   "decoded_idle": [
+    13.086,
+    13.055,
+    13.055
+   ],
+   "decoded_engine_off": 13.141,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "KOMBI",
+   "did": "D11F",
+   "name": "fuel_sender_phase",
+   "meaning": "Tank phase: 1 OK, 2 a sender faulty, 3 = 2 and no consumption",
+   "decode": {
+    "byte_offset": 8,
+    "length": 1,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "enum"
+   },
+   "decoded_idle": [
+    1,
+    1,
+    1
+   ],
+   "decoded_engine_off": 1,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "DME",
+   "did": "4050",
+   "name": "fuel_tank_content",
+   "meaning": "Tank content as known to DME (CBS data block, TANKINHALT)",
+   "decode": {
+    "byte_offset": 59,
+    "length": 2,
+    "signed": false,
+    "factor": 0.1,
+    "offset": 0,
+    "unit": "l"
+   },
+   "decoded_idle": [
+    44.0,
+    44.0,
+    44.0
+   ],
+   "decoded_engine_off": 44.0,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "Offsets derived by walking the CBS_RESET_DATEN_LESEN result list; value matches KOMBI."
+  },
+  {
+   "module": "KOMBI",
+   "did": "D126",
+   "name": "bc_range",
+   "meaning": "On-board computer range",
+   "decode": {
+    "byte_offset": 6,
+    "length": 2,
+    "signed": false,
+    "factor": 0.1,
+    "offset": 0,
+    "unit": "km"
+   },
+   "decoded_idle": [
+    592.0,
+    592.0,
+    592.0
+   ],
+   "decoded_engine_off": 592.0,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "KOMBI",
+   "did": "D126",
+   "name": "bc_avg_consumption",
+   "meaning": "On-board computer average consumption",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "l/100km"
+   },
+   "decoded_idle": [
+    10.13,
+    10.13,
+    10.13
+   ],
+   "decoded_engine_off": 10.13,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "KOMBI",
+   "did": "D125",
+   "name": "lifetime_avg_consumption",
+   "meaning": "Lifetime (\"ewiger\") average consumption",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "l/100km"
+   },
+   "decoded_idle": [
+    10.3,
+    10.3,
+    10.3
+   ],
+   "decoded_engine_off": 10.3,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/",
+   "note": "Matches DME 0x404F: 8398 l / 81380 km = 10.32."
+  },
+  {
+   "module": "KOMBI",
+   "did": "D125",
+   "name": "avg_consumption_10000km",
+   "meaning": "Average consumption over last 10 000 km",
+   "decode": {
+    "byte_offset": 2,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "l/100km"
+   },
+   "decoded_idle": [
+    7.36,
+    7.36,
+    7.36
+   ],
+   "decoded_engine_off": 7.36,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "DME",
+   "did": "404F",
+   "name": "fuel_total_used",
+   "meaning": "Absolute fuel used (CBS oil history, COZ_KVBVERBRABS)",
+   "decode": {
+    "byte_offset": 8,
+    "length": 4,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "l"
+   },
+   "decoded_idle": [
+    8398.32,
+    8398.32,
+    8398.32
+   ],
+   "decoded_engine_off": 8398.34,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "DME",
+   "did": "404F",
+   "name": "distance_for_fuel_total",
+   "meaning": "Distance for fuel total (COZ_KMVERBR)",
+   "decode": {
+    "byte_offset": 4,
+    "length": 4,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "km"
+   },
+   "decoded_idle": [
+    81380,
+    81380,
+    81380
+   ],
+   "decoded_engine_off": 81380,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "KOMBI",
+   "did": "D10D",
+   "name": "odometer",
+   "meaning": "Odometer (RAM copy; EEPROM copy in bytes 4..7)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 4,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "km"
+   },
+   "decoded_idle": [
+    81817,
+    81817,
+    81817
+   ],
+   "decoded_engine_off": 81817,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "DME",
+   "did": "4050",
+   "name": "odometer_dme",
+   "meaning": "Odometer received from KOMBI over CAN (FZG_KM_KOMBI_CAN)",
+   "decode": {
+    "byte_offset": 9,
+    "length": 4,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "km"
+   },
+   "decoded_idle": [
+    81806,
+    81806,
+    81806
+   ],
+   "decoded_engine_off": 81806,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "DME",
+   "did": "4050",
+   "name": "operating_time",
+   "meaning": "DME operating-time counter (ENGINE_BETRIEBSZEIT); same time base as DPF last-regen time",
+   "decode": {
+    "byte_offset": 18,
+    "length": 4,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "s"
+   },
+   "decoded_idle": [
+    12721134,
+    12721154,
+    12721174
+   ],
+   "decoded_engine_off": 12721289,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "Also counts with ignition on. 12.72e6 s = 3534 h. Same counter as 0x4AB4 (0.1 s)."
+  },
+  {
+   "module": "KOMBI",
+   "did": "D113",
+   "name": "kombi_clock_hour",
+   "meaning": "KOMBI clock hour (bytes: h,m,s,day,month,year(2B),format)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 1,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "h"
+   },
+   "decoded_idle": [
+    18,
+    18,
+    18
+   ],
+   "decoded_engine_off": 18,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "KOMBI",
+   "did": "D127",
+   "name": "trip_distance",
+   "meaning": "Trip computer distance",
+   "decode": {
+    "byte_offset": 8,
+    "length": 2,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "km"
+   },
+   "decoded_idle": [
+    13,
+    13,
+    13
+   ],
+   "decoded_engine_off": 13,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "DME",
+   "did": "4AB4",
+   "name": "operating_time_fine",
+   "meaning": "DME operating-time counter in 0.1 s (equals 0x4050 operating_time x10)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 4,
+    "signed": false,
+    "factor": 0.1,
+    "offset": 0,
+    "unit": "s"
+   },
+   "decoded_idle": [
+    12721135.0,
+    12721154.0,
+    12721175.0
+   ],
+   "decoded_engine_off": 12721289.0,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "Not documented in the SGBD; identified by matching 0x4050. Not a health value."
+  },
+  {
+   "module": "KOMBI",
+   "did": "D112",
+   "name": "outside_temp_display",
+   "meaning": "Outside temperature as displayed",
+   "decode": {
+    "byte_offset": 0,
+    "length": 1,
+    "signed": false,
+    "factor": 0.5,
+    "offset": -40,
+    "unit": "degC"
+   },
+   "decoded_idle": [
+    25.5,
+    25.5,
+    25.5
+   ],
+   "decoded_engine_off": 25.5,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "KOMBI",
+   "did": "D112",
+   "name": "outside_temp_raw",
+   "meaning": "Outside temperature sensor raw (heat-soaked when parked/idling)",
+   "decode": {
+    "byte_offset": 1,
+    "length": 1,
+    "signed": false,
+    "factor": 0.5,
+    "offset": -40,
+    "unit": "degC"
+   },
+   "decoded_idle": [
+    45.5,
+    44.0,
+    43.5
+   ],
+   "decoded_engine_off": 44.5,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "dpf_soot_mass_model",
+   "meaning": "Soot mass in DPF, continuous model (MSOT_K)",
+   "decode": {
+    "byte_offset": 42,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "g"
+   },
+   "decoded_idle": [
+    4.05,
+    4.05,
+    4.05
+   ],
+   "decoded_engine_off": 4.06,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "DATENRETTUNG CSF Partikelfilterwerte 0x5FB4 (96 B); field layout from table CSF_WERTE, data offset = POS-4 (POS counts 62 5F B4 + 1). Last-regen odometer and time line up with live counters."
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "dpf_soot_mass_noncont",
+   "meaning": "Soot mass, non-continuous model (MSOT_NK)",
+   "decode": {
+    "byte_offset": 40,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "g"
+   },
+   "decoded_idle": [
+    4.1,
+    4.1,
+    4.1
+   ],
+   "decoded_engine_off": 4.1,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "dpf_fuel_since_regen",
+   "meaning": "Fuel used since last successful regeneration (QFL)",
+   "decode": {
+    "byte_offset": 44,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "l"
+   },
+   "decoded_idle": [
+    0.78,
+    0.78,
+    0.78
+   ],
+   "decoded_engine_off": 0.79,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "dpf_regen_count",
+   "meaning": "Number of successful regenerations (ERFREG)",
+   "decode": {
+    "byte_offset": 46,
+    "length": 2,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "count"
+   },
+   "decoded_idle": [
+    131,
+    131,
+    131
+   ],
+   "decoded_engine_off": 131,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "131 over ~82k km = one per ~625 km, plausible. Next field ANFREG reads 2050 (implausible, not used)."
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "dpf_last_regen_distance",
+   "meaning": "DME distance counter at last successful regeneration (LSUM)",
+   "decode": {
+    "byte_offset": 8,
+    "length": 4,
+    "signed": false,
+    "factor": 0.001,
+    "offset": 0,
+    "unit": "km"
+   },
+   "decoded_idle": [
+    82581.974,
+    82581.974,
+    82581.974
+   ],
+   "decoded_engine_off": 82581.974,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "82582 km vs KOMBI 81817 km: DME counter runs ~765 km ahead; use only as a delta against DME distance."
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "dpf_last_regen_time",
+   "meaning": "DME operating time at last successful regeneration (TIRGN). Hours since regen = (0x4050 operating_time - this)/3600",
+   "decode": {
+    "byte_offset": 24,
+    "length": 4,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "s"
+   },
+   "decoded_idle": [
+    12715424,
+    12715424,
+    12715424
+   ],
+   "decoded_engine_off": 12715424,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "Idle: 12721134-12715424 = 5710 s = 1.6 h of operating time since last regen."
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "dpf_avg_load_at_regen",
+   "meaning": "Average soot load when regeneration triggered (RSOTMOD)",
+   "decode": {
+    "byte_offset": 68,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "g/l"
+   },
+   "decoded_idle": [
+    7.52,
+    7.52,
+    7.52
+   ],
+   "decoded_engine_off": 7.52,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "dpf_fuel_since_filter_new",
+   "meaning": "Fuel used since DPF fitted (QFLTOT)",
+   "decode": {
+    "byte_offset": 52,
+    "length": 4,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "l"
+   },
+   "decoded_idle": [
+    7947.94,
+    7947.94,
+    7947.94
+   ],
+   "decoded_engine_off": 7947.94,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "egt_max_before_oxicat",
+   "meaning": "Peak exhaust temp before oxi-cat (drag pointer)",
+   "decode": {
+    "byte_offset": 56,
+    "length": 2,
+    "signed": false,
+    "factor": 0.1,
+    "offset": -273.1,
+    "unit": "degC"
+   },
+   "decoded_idle": [
+    686.9,
+    686.9,
+    686.9
+   ],
+   "decoded_engine_off": 686.9,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "egt_max_before_dpf",
+   "meaning": "Peak exhaust temp before DPF (drag pointer)",
+   "decode": {
+    "byte_offset": 58,
+    "length": 2,
+    "signed": false,
+    "factor": 0.1,
+    "offset": -273.1,
+    "unit": "degC"
+   },
+   "decoded_idle": [
+    635.8,
+    635.8,
+    635.8
+   ],
+   "decoded_engine_off": 635.8,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "DME",
+   "did": "5FB4",
+   "name": "egt_max_before_dpf_regen",
+   "meaning": "Peak exhaust temp before DPF during regeneration",
+   "decode": {
+    "byte_offset": 62,
+    "length": 2,
+    "signed": false,
+    "factor": 0.1,
+    "offset": -273.1,
+    "unit": "degC"
+   },
+   "decoded_idle": [
+    652.1,
+    652.1,
+    652.1
+   ],
+   "decoded_engine_off": 652.1,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "DME",
+   "did": "5FD6",
+   "name": "dpf_total_regen_time",
+   "meaning": "Total regeneration operating time (BDRG)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 4,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "s"
+   },
+   "decoded_idle": [
+    292862.5,
+    292862.5,
+    292862.5
+   ],
+   "decoded_engine_off": 292862.5,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "292862 s = 81 h over 131 regens (~37 min each, on the long side)."
+  },
+  {
+   "module": "DME",
+   "did": "5FF1",
+   "name": "idle_speed_abs",
+   "meaning": "Idle speed (absolute, LLABS)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.5,
+    "offset": 0,
+    "unit": "rpm"
+   },
+   "decoded_idle": [
+    680.0,
+    681.0,
+    678.0
+   ],
+   "decoded_engine_off": 0.0,
+   "confidence": "high",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "680 rpm = OBD rpm."
+  },
+  {
+   "module": "DME",
+   "did": "5FC1",
+   "name": "consumption_calibration",
+   "meaning": "Consumption characteristic trim (VER), valid 80..120 %",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01220703125,
+    "offset": 0,
+    "unit": "%"
+   },
+   "decoded_idle": [
+    96.997,
+    96.997,
+    96.997
+   ],
+   "decoded_engine_off": 96.997,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+  },
+  {
+   "module": "DME",
+   "did": "5FD8",
+   "name": "fuel_total_dme",
+   "meaning": "Total fuel used (QFLCSFRES, first 4 bytes; normal fuel in bytes 4..7)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 4,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "l"
+   },
+   "decoded_idle": [
+    7249.82,
+    7249.82,
+    7249.82
+   ],
+   "decoded_engine_off": 7250.32,
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "SGBD says 14 bytes, ECU returns 8."
+  },
+  {
+   "module": "DME",
+   "did": "5FDA",
+   "name": "oil_pressure_sensor",
+   "meaning": "Oil pressure sensor value (OILP)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": true,
+    "factor": 1,
+    "offset": 0,
+    "unit": "hPa"
+   },
+   "decoded_idle": [
+    9528,
+    9529,
+    9528
+   ],
+   "decoded_engine_off": -971,
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "Engine-off -971 hPa = minus baro (OBD 0x33 = 97 kPa), so it looks like gauge pressure with sensor unpowered. Idle 9528 hPa (9.5 bar) is too high for a hot N57 at idle; do not show until checked against live 0x4B5E."
+  },
+  {
+   "module": "DME",
+   "did": "60B6",
+   "name": "boost_actuator_duty",
+   "meaning": "Boost-pressure actuator (VNT) duty cycle",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "%"
+   },
+   "decoded_idle": [
+    94.63,
+    94.62,
+    94.63
+   ],
+   "decoded_engine_off": 10.0,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "STELLER table (STEUERN_WERT_LESEN). 0x61xx twin reads near-identical = probably actual/feedback of the same actuator."
+  },
+  {
+   "module": "DME",
+   "did": "60BD",
+   "name": "metering_unit_duty",
+   "meaning": "Fuel metering unit (MRV/ZME) duty",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "%"
+   },
+   "decoded_idle": [
+    46.46,
+    46.48,
+    46.53
+   ],
+   "decoded_engine_off": 100.0,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "STELLER table (STEUERN_WERT_LESEN). 0x61xx twin reads near-identical = probably actual/feedback of the same actuator."
+  },
+  {
+   "module": "DME",
+   "did": "60B3",
+   "name": "rail_pressure_valve_duty",
+   "meaning": "Rail pressure control valve (DRV) duty",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "%"
+   },
+   "decoded_idle": [
+    31.73,
+    31.87,
+    31.84
+   ],
+   "decoded_engine_off": 9.01,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "STELLER table (STEUERN_WERT_LESEN). 0x61xx twin reads near-identical = probably actual/feedback of the same actuator."
+  },
+  {
+   "module": "DME",
+   "did": "60DA",
+   "name": "radiator_fan_duty",
+   "meaning": "Electric radiator fan duty (8..93 % active range; 7 % = off)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "%"
+   },
+   "decoded_idle": [
+    7.1,
+    7.1,
+    7.1
+   ],
+   "decoded_engine_off": 7.1,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "STELLER table (STEUERN_WERT_LESEN). 0x61xx twin reads near-identical = probably actual/feedback of the same actuator."
+  },
+  {
+   "module": "DME",
+   "did": "60D8",
+   "name": "fuel_prefeed_pump_flow",
+   "meaning": "Pre-feed fuel pump (EKP) flow request",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "l/h"
+   },
+   "decoded_idle": [
+    185.24,
+    185.02,
+    184.95
+   ],
+   "decoded_engine_off": 0.0,
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "STELLER table (STEUERN_WERT_LESEN). 0x61xx twin reads near-identical = probably actual/feedback of the same actuator."
+  },
+  {
+   "module": "DME",
+   "did": "60BC",
+   "name": "swirl_flap_duty",
+   "meaning": "Swirl flap duty",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01220703125,
+    "offset": 0,
+    "unit": "%"
+   },
+   "decoded_idle": [
+    21.497,
+    21.497,
+    21.497
+   ],
+   "decoded_engine_off": 0.0,
+   "confidence": "medium",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "STELLER table (STEUERN_WERT_LESEN). 0x61xx twin reads near-identical = probably actual/feedback of the same actuator."
+  }
+ ],
+ "untested_measurement_dids": [
+  {
+   "module": "DME",
+   "did": "4B60",
+   "name": "oil_temp",
+   "meaning": "Engine oil temperature (sump sensor)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": -100,
+    "unit": "degC"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4517",
+   "name": "oil_temp_filtered",
+   "meaning": "Filtered oil temperature",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": -100,
+    "unit": "degC"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4578",
+   "name": "oil_level_cl",
+   "meaning": "Oil level (ABK interface)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 1,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "cl"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "451E",
+   "name": "oil_level_image",
+   "meaning": "Oil-level display image code (see OELNIVEAU_TAB: 0x19 MIN .. 0x55 MAX, 0x7A check OK, 0xFF invalid)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 1,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "enum"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4B5E",
+   "name": "oil_pressure",
+   "meaning": "Oil pressure sensor signal",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "hPa"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4520",
+   "name": "oil_km",
+   "meaning": "Oil kilometres (since oil service)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 10,
+    "offset": 0,
+    "unit": "km"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "463B",
+   "name": "oil_remaining_distance",
+   "meaning": "Remaining oil service distance",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.5,
+    "offset": -16317.5,
+    "unit": "km?"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "461B",
+   "name": "coolant_temp",
+   "meaning": "Coolant temperature",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": -100,
+    "unit": "degC"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4459",
+   "name": "fuel_temp",
+   "meaning": "Fuel temperature",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": -50,
+    "unit": "degC"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4458",
+   "name": "fuel_level_dme",
+   "meaning": "Fuel tank level (DME)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.001907,
+    "offset": 0,
+    "unit": "l"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4748",
+   "name": "rail_pressure_actual",
+   "meaning": "Rail pressure actual",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.045777,
+    "offset": 0,
+    "unit": "bar"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4715",
+   "name": "rail_pressure_target",
+   "meaning": "Rail pressure target",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.045777,
+    "offset": 0,
+    "unit": "bar"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4841",
+   "name": "boost_actual",
+   "meaning": "Boost pressure actual (absolute)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.091554,
+    "offset": 0,
+    "unit": "hPa"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "42C8",
+   "name": "boost_target",
+   "meaning": "Boost pressure target (absolute)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.091554,
+    "offset": 0,
+    "unit": "hPa"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "47DC",
+   "name": "maf_actual",
+   "meaning": "Total HFM air mass flow",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.1,
+    "offset": 0,
+    "unit": "kg/h"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4872",
+   "name": "air_mass_target",
+   "meaning": "Air mass target per stroke",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.030518,
+    "offset": 0,
+    "unit": "mg/stroke"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "44B9",
+   "name": "dpf_soot_measured",
+   "meaning": "DPF soot mass, measured (diff-pressure based)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "g"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "44BA",
+   "name": "dpf_soot_simulated",
+   "meaning": "DPF soot mass, simulated",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "g"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "44ED",
+   "name": "dpf_diff_pressure",
+   "meaning": "DPF differential pressure",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.045777,
+    "offset": -1000,
+    "unit": "hPa"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "44BF",
+   "name": "dpf_distance_since_regen",
+   "meaning": "Distance since last successful regeneration",
+   "decode": {
+    "byte_offset": 0,
+    "length": 4,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "m"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "44B7",
+   "name": "dpf_time_since_regen",
+   "meaning": "Operating time since last successful regeneration",
+   "decode": {
+    "byte_offset": 0,
+    "length": 4,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "s"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "44BC",
+   "name": "dpf_fuel_since_regen_live",
+   "meaning": "Fuel since last successful regeneration",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.01,
+    "offset": 0,
+    "unit": "l"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "44BB",
+   "name": "dpf_regen_request",
+   "meaning": "Regeneration request status",
+   "decode": {
+    "byte_offset": 0,
+    "length": 1,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "enum"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "44C7",
+   "name": "dpf_avg_regen_interval",
+   "meaning": "Average regeneration interval",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 1,
+    "offset": 0,
+    "unit": "km"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4500",
+   "name": "egt_before_oxicat",
+   "meaning": "Exhaust temp before oxi-cat",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.031281,
+    "offset": -50,
+    "unit": "degC"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4502",
+   "name": "egt_before_dpf",
+   "meaning": "Exhaust temp before DPF",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.031281,
+    "offset": -50,
+    "unit": "degC"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "4286",
+   "name": "ibs_current_live",
+   "meaning": "Battery current (IBS)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.08,
+    "offset": -200,
+    "unit": "A"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "428D",
+   "name": "ibs_voltage_live",
+   "meaning": "Battery voltage (IBS)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.00025,
+    "offset": 6,
+    "unit": "V"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "56DF",
+   "name": "glow_plug_temp",
+   "meaning": "Current glow temperature",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.1,
+    "offset": -273.14,
+    "unit": "degC"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "46F0",
+   "name": "gearbox_oil_temp",
+   "meaning": "Gearbox oil temperature (from EGS via CAN)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 1,
+    "signed": false,
+    "factor": 1,
+    "offset": -40,
+    "unit": "degC"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  },
+  {
+   "module": "DME",
+   "did": "50A6",
+   "name": "ambient_temp_dme",
+   "meaning": "Ambient temperature (DME)",
+   "decode": {
+    "byte_offset": 0,
+    "length": 2,
+    "signed": false,
+    "factor": 0.1,
+    "offset": -273.14,
+    "unit": "degC"
+   },
+   "confidence": "low",
+   "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+   "note": "In SG_FUNKTIONEN (SERVICE 22;2C) of d73n57e0 and d70bx7a0 with the same scaling (except 0x4841 factor 0.15259 in d70bx7a0). Did not answer / was not in the 0x22 scan. Try 22 <DID> in extended session (10 03); if refused, define a dynamic DID: 2C 01 F300 <DID> 01 <len>, then 22 F300."
+  }
+ ],
+ "faults": {
+  "DME": {
+   "24F7": {
+    "text": "Kraftstofffilterheizung, Ansteuerung: Unterbrechung (fuel filter heater, control circuit open)",
+    "meaning": "DME sees an open circuit on the fuel-filter heater output. Status 0x2E = failed this drive, pending, confirmed, failed since clear; not failing at the moment of reading. Usual causes: heater element or connector at the filter housing, wiring.",
+    "severity_hint": "low in India climate (heater only matters below ~0 C, diesel waxing). Fix at next service; not urgent.",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/"
+   }
+  },
+  "CAS": {
+   "93076B": {
+    "text": "Deaktivierung Klemme 30B: OSFG erreicht",
+    "meaning": "CAS switched off terminal 30B because the standby energy budget ran out (car woke/stayed awake too long while parked).",
+    "severity_hint": "info; watch if it repeats (parasitic drain).",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/cas4_2/"
+   },
+   "9308A7": {
+    "text": "Fond-Fernbedienung (FFB): Unterspannung Batterie",
+    "meaning": "Rear-seat entertainment remote reports a low battery.",
+    "severity_hint": "info; replace the remote battery.",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/cas4_2/"
+   }
+  },
+  "KOMBI": {
+   "B7F67D": {
+    "text": "KOMBI: Überwachungsschaltung hat Reset ausgelöst",
+    "meaning": "Cluster watchdog reset (stored, status 0x08 = confirmed only, not active).",
+    "severity_hint": "info unless repeating.",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/"
+   }
+  },
+  "HU_NBT": {
+   "B7F84D": {
+    "text": "Verbindung Head-Unit zum Mikrophon 1: Leitungsunterbrechung",
+    "meaning": "Mic 1 line open.",
+    "severity_hint": "watch (hands-free mic).",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/nbt/"
+   },
+   "B7F884": {
+    "text": "Flash File System fehlerhaft",
+    "meaning": "NBT flash file system error.",
+    "severity_hint": "watch (may relate to our file writes).",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/nbt/"
+   },
+   "B7F8AE": {
+    "text": "Ethernet Verbindung Head-Unit zum RSE High: Link Status nicht ok",
+    "meaning": "Ethernet link HU to rear entertainment not up.",
+    "severity_hint": "info/watch.",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/nbt/"
+   },
+   "B7F8E5": {
+    "text": "Telnet/SSH Mode aktiv",
+    "meaning": "SSH/telnet enabled on NBT (expected after our unlock).",
+    "severity_hint": "info, expected.",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/nbt/"
+   },
+   "E1C440": {
+    "text": "Reset (MOST block of NBT fault table)",
+    "meaning": "NBT reset event.",
+    "severity_hint": "info.",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/nbt/"
+   }
+  },
+  "FRM": {
+   "800F93": {
+    "text": "Heimleuchten Wiederholsperre aktiv",
+    "meaning": "Follow-me-home lights repeat lock active.",
+    "severity_hint": "info.",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/frm3/"
+   }
+  },
+  "IHKA": {
+   "8011CE": {
+    "text": "ON/OFF-Lautstärke-Regler: Taste klemmt",
+    "meaning": "Climate panel on/off-volume knob button reported stuck.",
+    "severity_hint": "info.",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/ihka01/"
+   }
+  },
+  "ZGW": {
+   "801C15": {
+    "text": "Fehlerhaftes Einschlafen bei 30B",
+    "meaning": "Bus did not go to sleep correctly with 30B (links to CAS 93076B).",
+    "severity_hint": "watch: parasitic drain risk.",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/zgw_01/"
+   },
+   "801C20": {
+    "text": "Zentraler Fehlerspeicher voll",
+    "meaning": "Central fault memory full.",
+    "severity_hint": "info; clear old faults.",
+    "source_url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/zgw_01/"
+   }
+  },
+  "5F": {
+   "800608": {
+    "text": "not found",
+    "meaning": "Module 0x5F not identified; SGBD not checked.",
+    "severity_hint": "unknown",
+    "source_url": null
+   }
+  }
+ },
+ "health_rules": [
+  {
+   "value": "oil_temp (0x4B60, once readable)",
+   "ok": "80-115 C",
+   "watch": "115-130 C or <60 C after 20 min driving",
+   "act": ">130 C",
+   "reason": "N57 oil runs ~90-110 C; >130 C means cooling/oil problem."
+  },
+  {
+   "value": "coolant (OBD PID 05 / 0x461B)",
+   "ok": "80-105 C",
+   "watch": "105-112 C",
+   "act": ">112 C or not reaching 75 C after 15 min",
+   "reason": "Map thermostat holds 90-105 C; >112 C is near boil; low = thermostat stuck open."
+  },
+  {
+   "value": "ibs_battery_voltage engine running",
+   "ok": "13.6-15.0 V",
+   "watch": "13.0-13.6 or 15.0-15.5 V",
+   "act": "<13.0 or >15.5 V",
+   "reason": "IGR targets ~14-14.8 V; outside = alternator/regulator fault."
+  },
+  {
+   "value": "ibs_battery_voltage engine off (rested >1 h)",
+   "ok": ">=12.4 V",
+   "watch": "12.1-12.4 V",
+   "act": "<12.1 V",
+   "reason": "AGM rest voltage maps to SoC; <12.1 V ~ <50 % and start risk."
+  },
+  {
+   "value": "battery_soc_today (0x4023 byte 17)",
+   "ok": ">=70 %",
+   "watch": "50-70 %",
+   "act": "<50 %",
+   "reason": "BMW energy manager starts cutting loads below ~50-60 %."
+  },
+  {
+   "value": "ibs_battery_current engine off, ign on",
+   "ok": "<25 A",
+   "watch": "25-40 A",
+   "act": ">40 A",
+   "reason": "Big draw with engine off drains battery fast; parked (sleep) should be <0.1 A, not visible here."
+  },
+  {
+   "value": "ibs_battery_temp",
+   "ok": "0-45 C",
+   "watch": "45-55 C",
+   "act": ">55 C",
+   "reason": "Boot-mounted AGM; heat shortens life."
+  },
+  {
+   "value": "fuel_level_damped",
+   "ok": ">15 l",
+   "watch": "8-15 l",
+   "act": "<8 l",
+   "reason": "Reserve warning ~8-10 l; running low risks sucking air into the common-rail system."
+  },
+  {
+   "value": "fuel_sender_phase",
+   "ok": "1",
+   "watch": "2",
+   "act": "3",
+   "reason": "2/3 = a tank sender faulty."
+  },
+  {
+   "value": "dpf_soot_mass_model / measured (g)",
+   "ok": "<20 g",
+   "watch": "20-35 g",
+   "act": ">35 g or rising with no regen",
+   "reason": "N57 regen triggers ~20-30 g; well above that = regen not completing (short trips). Thresholds approximate."
+  },
+  {
+   "value": "hours/km since last regen (0x4050 time - 0x5FB4 time, or 0x44BF)",
+   "ok": "<10 h / <800 km",
+   "watch": "10-20 h / 800-1500 km",
+   "act": ">20 h / >1500 km",
+   "reason": "Typical interval here ~625 km; long gaps mean regens are being aborted."
+  },
+  {
+   "value": "dpf_diff_pressure at warm idle (0x44ED)",
+   "ok": "<15 hPa",
+   "watch": "15-30 hPa",
+   "act": ">30 hPa",
+   "reason": "High idle back-pressure = loaded/ash-blocked DPF. Approximate."
+  },
+  {
+   "value": "egt_max_before_dpf peak",
+   "ok": "<700 C",
+   "watch": "700-800 C",
+   "act": ">800 C",
+   "reason": "Regen runs ~600-650 C; peaks >800 C risk DPF cracking."
+  },
+  {
+   "value": "rail pressure actual vs target (0x4748/0x4715)",
+   "ok": "within 5 %",
+   "watch": "5-10 %",
+   "act": ">10 % or >100 bar for >2 s",
+   "reason": "Persistent deviation = pump/metering-unit/injector leak-off issue (DME will log 3xxx faults)."
+  },
+  {
+   "value": "boost actual vs target (0x4841/0x42C8) under load",
+   "ok": "within 100 hPa",
+   "watch": "100-200 hPa",
+   "act": ">200 hPa",
+   "reason": "Under-boost = boost leak/VNT sticking; over-boost = VNT stuck closed."
+  },
+  {
+   "value": "oil_level (0x4578 / 0x451E code)",
+   "ok": "1/2 to MAX (0x35-0x55)",
+   "watch": "MIN to 1/4 (0x19-0x26)",
+   "act": "below MIN (0x0C) or above MAX (0x5F)",
+   "reason": "From OELNIVEAU_TAB. Overfill on a diesel can mean fuel dilution from DPF regens."
+  },
+  {
+   "value": "outside_temp_display",
+   "ok": "any",
+   "watch": "-",
+   "act": "-",
+   "reason": "Context only (raw sensor heat-soaks when parked)."
+  },
+  {
+   "value": "idle_speed_abs warm",
+   "ok": "650-750 rpm",
+   "watch": "750-900 rpm",
+   "act": "<550 rpm or hunting",
+   "reason": "Warm idle ~680 rpm; raised idle is normal during regen/low battery."
+  },
+  {
+   "value": "radiator_fan_duty",
+   "ok": "<50 % at idle",
+   "watch": ">50 % with coolant <100 C",
+   "act": ">90 % sustained",
+   "reason": "Fan working hard at normal temps hints at A/C or cooling issue."
+  },
+  {
+   "value": "DTC count failing now (status bit0)",
+   "ok": "0",
+   "watch": "only bit3 confirmed/stored",
+   "act": "any bit0 testFailed on DME/EGS/DSC",
+   "reason": "Active faults matter more than history."
+  }
+ ],
+ "sources": {
+  "used": [
+   {
+    "sgbd": "d73n57e0",
+    "url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57e0/",
+    "why": "N57 DDE7.31 F-series UDS. SG_FUNKTIONEN, ABGLEICH, STELLER, CSF_WERTE tables, 0x40xx jobs (IBS, CBS, AEP), DTC text 24F7."
+   },
+   {
+    "sgbd": "d70bx7a0",
+    "url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d70bx7a0/",
+    "why": "N57O1 DDE7.41 F-series. Matches more of our DIDs (0x5F92 232 B, 0x5F93 110 B, 0x5E24-0x5E2F exist only here), so the car may run this generation; same measurement IDs/scaling."
+   },
+   {
+    "sgbd": "d73n57a0",
+    "url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/d73n57a0/",
+    "why": "Older N57 DDE7.3 F01/F10 UDS; fewer matches."
+   },
+   {
+    "sgbd": "komb01",
+    "url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/komb01/",
+    "why": "F01-family KOMBI (UDS). All KOMBI DIDs used here."
+   },
+   {
+    "sgbd": "cas4_2, nbt, frm3, ihka01, zgw_01",
+    "url": "https://emdzej.github.io/ediabasx-docs-sgbd/sgbd/",
+    "why": "DTC texts."
+   }
+  ],
+  "not_found": [
+   "No SGBD matched the SVK ids directly (docs pages do not list SWFL/HWEL), so the exact DME SGBD (d73n57e0 vs d70bx7a0) is not confirmed.",
+   "Oil temperature, oil level, live rail/boost/DPF diff pressure, EGT, glow plugs, coolant via UDS: their DIDs (0x41xx-0x59xx SG_FUNKTIONEN) were not in the answered scan. Listed under untested_measurement_dids.",
+   "Byte layouts for 0x5FD1 (oil condition), 0x5FD2 (oil level calibration), 0x4017/0x4022/0x403B, 0x5F94, 0x404E: not decoded.",
+   "KOMBI 0x4040/0x4041/0x4250/0x4254/0x45F3/0x4012: not in komb01 tables.",
+   "CBS service items (oil/brakes/inspection due) not in the scanned KOMBI DIDs.",
+   "Gearbox oil temp: EGS not scanned; DME mirror 0x46F0 untested.",
+   "Module 0x5F DTC 800608 not looked up."
+  ]
+ }
+}
