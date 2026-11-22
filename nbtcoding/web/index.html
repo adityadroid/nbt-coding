@@ -88,6 +88,13 @@
   code,pre{font-family:ui-monospace,Menlo,monospace;font-size:12px}
   pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px;margin:0;white-space:pre-wrap}
   .phrase{user-select:all;background:var(--bg);border:1px dashed var(--line);padding:2px 6px;border-radius:5px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;padding:4px 16px 8px}
+  .card{border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+  .card h3{margin:0;font-size:14px}
+  .card .t{color:var(--dim);font-size:12.5px}
+  .risk{font-size:11px;padding:1px 8px;border-radius:999px;border:1px solid;align-self:flex-start}
+  .risk.low{color:var(--good);border-color:var(--good)} .risk.medium{color:var(--warn);border-color:var(--warn)} .risk.high{color:var(--bad);border-color:var(--bad)}
+  h2.sec{font-size:14px;margin:14px 16px 2px}
   @media (max-width:560px){ .row{grid-template-columns:1fr} .state{align-items:flex-start} }
 </style>
 </head>
@@ -98,11 +105,14 @@
 </header>
 
 <div class="banner" id="banner">
-  Read a module to see every setting with BMW's own names. To change one, pick a new value, press <b>Review</b>, then
+  Pick a popular change below, or read a module to see every setting with BMW's own names. To change one, pick a new value, press <b>Review</b>, then
   <b>Write</b>. Every read and every review saves a full backup you can restore. Keep the engine running or a charger on while writing.
   The head unit (HU_NBT) is never written: the Android Auto mod lives there.
 </div>
 
+<h2 class="sec">Popular changes</h2>
+<div class="cards" id="cards"></div>
+<h2 class="sec">Advanced: every setting of one module</h2>
 <div class="bar">
   <select id="module"></select>
   <button id="btnRead">Read from car</button>
@@ -325,6 +335,47 @@ async function doWrite(){
   if(r.features){ FEATS=r.features; PENDING={}; tray(); render(); loadBackups(MODULE); }
 }
 
+async function loadCards(){
+  const r=await j("/api/recipes");
+  $("#cards").innerHTML=(r.recipes||[]).map(x=>{
+    const lvl=x.risk.split(" ")[0];
+    const blocked=x.modules.filter(m=>!m.writable);
+    return `<div class="card"><h3>${esc(x.title)}</h3><span class="risk ${lvl}">${esc(x.risk)}</span>
+      <div class="t">Changes: ${x.modules.map(m=>esc(m.module)).join(", ")}</div>
+      ${x.status?`<div class="t">${esc(x.status)}</div>`:""}
+      ${blocked.length?`<div class="t">Can't write: ${blocked.map(m=>esc(m.module+" ("+m.why+")")).join("; ")}</div>`
+        :`<button onclick="reviewRecipe('${x.id}')">Review</button>`}</div>`;}).join("");
+}
+let RPLAN=null;
+async function reviewRecipe(id){
+  dialog("Review", `<div>Reading every module this change touches and saving backups…</div>`, `<button class="ghost" onclick="closeDlg()">Cancel</button>`);
+  const p=await post("/api/recipe-review",{id}); RPLAN=p;
+  if(p.error){dialog("Review",`<div class="banner bad">⚠ ${esc(p.error)}</div>`,`<button class="ghost" onclick="closeDlg()">Close</button>`);return;}
+  const todo=p.plans.filter(x=>!x.nothing_to_do);
+  let body=p.plans.map(x=>`<div><b>${esc(x.module)}</b> <span class="lbl">backup ${esc(x.backup)}</span>`+
+    (x.nothing_to_do?` — already set`:`<table>${x.changes.map(c=>`<tr><td><code>${esc(c.name)}</code></td><td>${esc(nice(c.from))}</td><td>→</td><td><b>${esc(nice(c.to))}</b></td></tr>`).join("")}</table>`)+`</div>`).join("");
+  body+=`<div class="lbl">How to test: ${esc(p.test)}</div>`;
+  let foot=`<button class="ghost" onclick="closeDlg()">Cancel</button>`;
+  if(!todo.length){dialog(p.title,body+`<div>Nothing to write: the car already has this.</div>`,foot);return;}
+  body+=`<label class="chk"><input type="checkbox" id="pwr"> The engine is running or a battery charger is connected</label>
+    <div>Type <span class="phrase">${esc(p.unlock_phrase)}</span> to confirm:</div><input id="unlock" autocomplete="off" spellcheck="false" style="width:100%">`;
+  foot+=`<button class="danger" id="btnWrite" disabled onclick="writeRecipe()">Write to car</button>`;
+  dialog(p.title+" ("+p.risk+")",body,foot);
+  const gate=()=>{$("#btnWrite").disabled=!($("#pwr").checked&&$("#unlock").value===p.unlock_phrase);};
+  $("#pwr").onchange=gate;$("#unlock").oninput=gate;
+}
+async function writeRecipe(){
+  const unlock=$("#unlock").value, done=[];
+  for(const x of RPLAN.plans.filter(x=>!x.nothing_to_do)){
+    dialog("Writing", `<div>Writing ${esc(x.module)}… do not switch off.</div>`+done.join(""), "");
+    const r=await post("/api/write",{token:x.token,unlock});
+    if(r.error||!r.verified){
+      dialog("Stopped",done.join("")+`<div class="banner bad">⚠ ${esc(x.module)}: ${esc(r.error||r.warning)}. Later modules were not written. Undo with the backup ${esc(x.backup)}.</div>`,`<button class="ghost" onclick="closeDlg()">Close</button>`);return;}
+    done.push(`<div class="banner good">✓ ${esc(x.module)} written and verified</div>`);
+  }
+  dialog("Done",done.join("")+`<div class="lbl">How to test: ${esc(RPLAN.test)}</div>`,`<button onclick="closeDlg()">OK</button>`);
+}
+
 $("#btnRead").onclick=readCar;
 $("#btnOffline").onclick=offline;
 $("#btnProbe").onclick=showProbe;
@@ -335,7 +386,7 @@ $("#btnReview").onclick=()=>review({module:MODULE, changes:Object.entries(PENDIN
 $("#btnRestore").onclick=()=>review({module:MODULE, restore:$("#backupSel").value});
 document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{$("#q").value=c.dataset.q;$("#fNamed").checked=true;render();});
 ["q","fCode","fChg","fNamed","fGroup"].forEach(id=>$("#"+id).addEventListener("input",render));
-init().then(loadProbes).then(render);
+init().then(loadProbes).then(loadCards).then(render);
 </script>
 </body>
 </html>

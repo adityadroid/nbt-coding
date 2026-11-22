@@ -301,6 +301,52 @@ def _write(body: dict) -> dict:
     return out
 
 
+def _recipes() -> dict:
+    from . import recipe as recipe_mod
+    out = []
+    for key, r in recipe_mod.load().items():
+        mods = []
+        for mod, _steps in recipe_mod.grouped(r):
+            ok, why = edit_mod.writable(mod)
+            mods.append({"module": mod, "writable": ok, "why": why})
+        out.append({"id": key, "title": r["title"], "risk": r["risk"], "test": r.get("test", ""),
+                    "status": r.get("status", ""), "modules": mods})
+    return {"recipes": out}
+
+
+def _recipe_review(body: dict) -> dict:
+    """Review every module of a recipe: fresh read + backup + plan each (no write). One token per module to write."""
+    from . import recipe as recipe_mod
+    r = recipe_mod.load().get(body.get("id", ""))
+    if not r:
+        return {"error": "unknown recipe"}
+    plans = []
+    for mod, steps in recipe_mod.grouped(r):
+        if mod not in WRITE_MODULES:
+            return {"error": "%s cannot be written from this tool" % mod}
+        with CAR_LOCK:
+            try:
+                conn = connect()
+            except Exception as e:  # noqa: BLE001
+                return {"error": "cannot reach the car: %s" % e}
+            try:
+                c, _before, _vin = read_module(conn, mod)
+            except Exception as e:  # noqa: BLE001
+                return {"error": "%s: %s" % (mod, e)}
+            finally:
+                conn.close()
+        try:
+            changes = [{"key": x["key"], "scalar": x["scalar"]} for x in recipe_mod.resolve(c, steps)]
+        except ValueError as e:
+            return {"error": "%s: %s" % (mod, e)}
+        p = _plan({"module": mod, "changes": changes})
+        if p.get("error"):
+            return {"error": "%s: %s" % (mod, p["error"])}
+        plans.append(p)
+    return {"id": body["id"], "title": r["title"], "risk": r["risk"], "test": r.get("test", ""), "plans": plans,
+            "unlock_phrase": write_mod.UNLOCK}
+
+
 # ---------------------------------------------------------------- HTTP
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, *_):
@@ -341,6 +387,8 @@ class Handler(BaseHTTPRequestHandler):
             self._json(_probe(q.get("file", ""), q.get("module", "")))
         elif parsed.path == "/api/read":
             self._json(_read(q["module"]) if q.get("module") else {"error": "module required"})
+        elif parsed.path == "/api/recipes":
+            self._json(_recipes())
         elif parsed.path == "/api/backups":
             self._json(_backups(q.get("module", "")))
         else:
@@ -358,6 +406,8 @@ class Handler(BaseHTTPRequestHandler):
             self._json(_plan(body))
         elif parsed.path == "/api/write":
             self._json(_write(body))
+        elif parsed.path == "/api/recipe-review":
+            self._json(_recipe_review(body))
         else:
             self._json({"error": "not found"}, 404)
 
