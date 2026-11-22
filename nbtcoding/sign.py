@@ -96,7 +96,10 @@ class Scheme:
 
 # Per-module BTLD (selects the NCD key) and whether the signer is proven against this car's own signature.
 # The sign address and content datagroups now come from the decrypted CAFD (scheme_from_caf), not hardcoded.
-BTLD = {"HU_NBT": "00001275", "FRM": "0000106B", "KOMBI": "000016E4", "CAS": "0000074B"}
+# NBT/FRM/KOMBI sign with a 1024-bit RSA NCD key (this module's scheme). CAS (BTLD 0000074B) is NOT here: its
+# sec_ncdkeys entry is 32 bytes, not an RSA key, so CAS coding uses a different signature (a symmetric scheme, to be
+# worked out) — and CAS is the immobiliser module, so it stays last and most careful regardless.
+BTLD = {"HU_NBT": "00001275", "FRM": "0000106B", "KOMBI": "000016E4"}
 PROVEN = {"HU_NBT"}   # verify() reproduced the car's own signature; others need a full read to confirm
 
 

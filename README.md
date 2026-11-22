@@ -62,7 +62,21 @@ PSdZData). Put the decoded files in `cafd/` (e.g. `cafd/cafd_00000ded.xml`), or 
   location. As you confirm what one does, add it to `nbtcoding/names/<CAFD_ID>.json` and it
   shows up named, with your description, in the GUI — no restart of meaning, just reload.
 
-### Friendly names overlay
+### Finding what a setting does (the safe way)
+
+BMW ships the CAFDs with every setting named `"."`, so a setting is known only by its location. To find which one
+controls a feature (mirror fold on lock, needle sweep, welcome lights, ...), don't guess a byte — **diff**:
+
+1. `python3 -m nbtcoding.probe` (or GUI *Read from car*) — the "before".
+2. Toggle the feature in the car: iDrive menu, key fob, whatever changes it.
+3. Read again — the "after".
+4. `python3 -m nbtcoding.diff before.json after.json <MODULE>` — it prints exactly the setting(s) that changed, with
+   location and old → new value. That location is the feature.
+5. Add that location to `nbtcoding/names/<CAFD>.json` and it shows up named everywhere.
+
+No guessing, no risk: you only read, and you confirm the location against a real change you made.
+
+## Friendly names overlay
 
 ```json
 {
