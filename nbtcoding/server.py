@@ -135,14 +135,16 @@ def _read(module: str) -> dict:
                              ".local/psdz. Decode that CAFD first." % cafd_id}
         c = caf_mod.parse(xml)
         coding = {}
-        for d in c.user_datagroups():
+        # read EVERY datagroup the CAFD declares (not only USER): the signature covers all of them, so a signer
+        # check and a full backup need them all. The signature datagroup itself is read last, for the backup.
+        for d in c.datagroups:
             dr = ecu_mod.read_datagroup(hu, tgt, d.addr)
             if dr.ok:
                 coding[d.addr] = dr.data
-        # also read the signature datagroup, for the backup only
-        sig = ecu_mod.read_datagroup(hu, tgt, c.sign_addr)
-        if sig.ok:
-            coding[c.sign_addr] = sig.data
+        if c.sign_addr not in coding:
+            sig = ecu_mod.read_datagroup(hu, tgt, c.sign_addr)
+            if sig.ok:
+                coding[c.sign_addr] = sig.data
     finally:
         hu.close()
     backup = decode_mod.save_backup(module, c.cafd_id, coding, vin)

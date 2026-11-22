@@ -94,22 +94,26 @@ class Scheme:
     proven: bool = False
 
 
-SCHEMES = {
-    "HU_NBT": Scheme("00001275", tuple(range(0x3000, 0x3007)), 0x3007, proven=True),
-    # FRM / KOMBI / CAS: sign address and content range unknown until their CAFD is decoded (keys recovered for FRM/KOMBI)
-    "FRM":    Scheme("0000106B", (), 0, proven=False),
-    "KOMBI":  Scheme("000016E4", (), 0, proven=False),
-    "CAS":    Scheme("0000074B", (), 0, proven=False),
-}
+# Per-module BTLD (selects the NCD key) and whether the signer is proven against this car's own signature.
+# The sign address and content datagroups now come from the decrypted CAFD (scheme_from_caf), not hardcoded.
+BTLD = {"HU_NBT": "00001275", "FRM": "0000106B", "KOMBI": "000016E4", "CAS": "0000074B"}
+PROVEN = {"HU_NBT"}   # verify() reproduced the car's own signature; others need a full read to confirm
+
+
+def scheme_from_caf(caf) -> tuple:
+    """(content_dgs, sign_dg) from a parsed CAFD: every datagroup below ncdSignAddress, in order, signed together."""
+    sign_dg = int(caf.sign_addr, 16)
+    content = tuple(sorted(int(d.addr, 16) for d in caf.datagroups if int(d.addr, 16) < sign_dg))
+    return content, sign_dg
 
 
 def _main() -> int:
-    """python3 -m nbtcoding.sign [probe.json]  — verify each module's current signature against its recovered key."""
+    """python3 -m nbtcoding.sign [probe.json] — verify each module's signature against its key + decrypted CAFD."""
     import glob
     import sys
-    from .decode import BACKUP_DIR
+    from . import caf as cafmod, decode
     arg = sys.argv[1] if len(sys.argv) > 1 else ""
-    files = [arg] if arg else sorted(glob.glob(os.path.join(BACKUP_DIR, "probe-*.json")), reverse=True)
+    files = [arg] if arg else sorted(glob.glob(os.path.join(decode.BACKUP_DIR, "probe-*.json")), reverse=True)
     if not files:
         print("no probe given and none in backups/ (run: python3 -m nbtcoding.probe)")
         return 2
@@ -119,19 +123,28 @@ def _main() -> int:
     by_addr = {"63": "HU_NBT", "72": "FRM", "60": "KOMBI", "40": "CAS"}
     for m in probe.get("modules", []):
         name = by_addr.get(m.get("addr", ""))
-        if not name or name not in SCHEMES:
+        if not name:
             continue
-        sc = SCHEMES[name]
-        key = load_key(sc.btld)
+        cafd = next((e["id"] for e in m.get("svk", []) if e.get("class") == "CAFD"), None)
+        xml = decode.find_cafd_xml(cafd) if cafd else None
+        key = load_key(BTLD.get(name, ""))
         coding = {a.upper(): bytes.fromhex(h) for a, h in m.get("datagroups", {}).items()}
         if key is None:
-            print("  %-7s key for BTLD %s not in keys/ (recover it)" % (name, sc.btld))
-        elif not sc.proven:
-            print("  %-7s key present; scheme unproven (needs the decrypted CAFD for its sign address)" % name)
+            print("  %-7s key for BTLD %s not in keys/ (recover it)" % (name, BTLD.get(name)))
+            continue
+        if not xml:
+            print("  %-7s key present; CAFD %s not decrypted yet" % (name, cafd))
+            continue
+        content, sign_dg = scheme_from_caf(cafmod.parse(xml))
+        missing = [("%04X" % d) for d in content if ("%04X" % d) not in coding]
+        if missing:
+            print("  %-7s key + CAFD ready; read these datagroups to verify: %s" % (name, " ".join(missing)))
         else:
-            ok = verify(coding, sc.content_dgs, sc.sign_dg, key)
-            print("  %-7s signature %s" % (name, "VERIFIED against the car" if ok else "did NOT verify"))
+            ok = verify(coding, content, sign_dg, key)
+            print("  %-7s signature %s (sign@%04X, %d datagroups)"
+                  % (name, "VERIFIED against the car" if ok else "did NOT verify", sign_dg, len(content)))
     return 0
+
 
 
 if __name__ == "__main__":
