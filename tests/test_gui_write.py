@@ -54,10 +54,13 @@ def run():
     decode.BACKUP_DIR = tmp
     try:
         start = bytes(ecu.coding["3050"])
+        labels = {0: "nicht_aktiv", 1: "soft_on", 2: "hard_on", 3: "soft_on_LED"}
+        cur = (start[30] & 0x0C) >> 2
+        want = 2 if cur != 2 else 1                      # a value the module does not hold now
         # review: one change, described in BMW's words, nothing written yet
-        p = server._plan({"module": "FRM", "changes": [{"key": WL_AL, "scalar": 1}]})
+        p = server._plan({"module": "FRM", "changes": [{"key": WL_AL, "scalar": want}]})
         assert p.get("token") and p["writable"], p
-        assert [(x["name"], x["from"], x["to"]) for x in p["changes"]] == [("WL_FUNKTION_AL", "nicht_aktiv", "soft_on")], p["changes"]
+        assert [(x["name"], x["from"], x["to"]) for x in p["changes"]] == [("WL_FUNKTION_AL", labels[cur], labels[want])], p["changes"]
         assert p["datagroups"][-1] == c.sign_addr.upper(), "signature datagroup must be written last"
         assert bytes(ecu.coding["3050"]) == start, "a review must not write"
         review_backup = p["backup"]
@@ -67,7 +70,7 @@ def run():
         # real write: accepted by the simulated module's signature check, reset, read back
         r = server._write({"token": p["token"], "unlock": write.UNLOCK})
         assert r.get("ok") and r.get("verified"), r
-        assert ecu.reset_done and ecu.coding["3050"][30] == 0x06, ecu.coding["3050"][30]
+        assert ecu.reset_done and (ecu.coding["3050"][30] & 0x0C) >> 2 == want, ecu.coding["3050"][30]
         assert "error" in server._write({"token": p["token"], "unlock": write.UNLOCK}), "a review token is single-use"
 
         # restore the backup taken at review: back to the original bytes, signature still valid
@@ -84,7 +87,7 @@ def run():
         assert "error" in server._plan({"module": "FRM", "changes": [{"key": WL_AL, "scalar": 9}]}), "undefined value"
         assert "error" in server._plan({"module": "FRM", "changes": [{"key": "3050:99:99:01", "scalar": 1}]}), "unknown key"
         # drift: the car changed between review and write
-        p3 = server._plan({"module": "FRM", "changes": [{"key": WL_AL, "scalar": 2}]})
+        p3 = server._plan({"module": "FRM", "changes": [{"key": WL_AL, "scalar": want}]})
         ecu.coding["3050"][29] ^= 0x01
         r3 = server._write({"token": p3["token"], "unlock": write.UNLOCK})
         assert "error" in r3 and "changed since" in r3["error"], r3

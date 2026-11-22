@@ -6,15 +6,15 @@ the re-signed signature datagroup are written, signature last, and the plan self
 
 Who may be written (writable()):
   - HU_NBT never: the Android Auto mod lives there.
-  - Only modules whose signer reproduced the car's own signature (sign.PROVEN). CAS is not, until its AES-CMAC tag is
-    reproduced from a full read.
+  - Only modules whose signer reproduced the car's own signature (sign.PROVEN). CAS is, since 2026-11-22 (keyed MD5);
+    it is the immobiliser module, so the GUI asks for extra care.
 Executing (execute()) additionally needs the exact owner unlock phrase and the car still holding the coding the plan was
 built from. Pure Python standard library.
 """
 from __future__ import annotations
 
 from . import caf as caf_mod
-from . import sign, write
+from . import modules, sign, write
 
 NEVER = {"HU_NBT": "the head unit carries the Android Auto mod; coding it is off-limits in this tool"}
 
@@ -23,12 +23,10 @@ def writable(module: str) -> tuple[bool, str]:
     if module in NEVER:
         return False, NEVER[module]
     if module not in sign.PROVEN:
-        if module == "CAS":
-            return False, "CAS's coding tag (AES-CMAC) is not reproduced from this car yet, so a write could be rejected"
         return False, "the signer for %s has not reproduced this car's own signature yet" % module
     if not signer_key(module):
         return False, "no signing key for %s in keys/" % module
-    if module in sign.BTLD and not sign.load_key(sign.BTLD[module], "l3"):
+    if module in modules.BY_NAME and not sign.load_key(modules.BY_NAME[module][3], "l3"):
         return False, "no SecurityAccess key for %s in keys/" % module
     return True, "signer proven against this car"
 
@@ -37,7 +35,7 @@ def signer_key(module: str):
     if module == "CAS":
         return sign.load_cas_key(sign.CAS_BTLD)
     if module in sign.BTLD:
-        return sign.load_key(sign.BTLD[module], "ncd")
+        return sign.load_key(modules.BY_NAME[module][3], "ncd")
     return None
 
 
@@ -96,6 +94,6 @@ def execute(conn, tgt: int, module: str, c: caf_mod.Caf, before: dict, after: di
     drift = [a for a in after if a in before and current.get(a) != before.get(a)]
     if drift:
         raise RuntimeError("the car's coding changed since the review (%s); review again" % ", ".join(sorted(drift)))
-    l3 = sign.load_key(sign.BTLD[module], "l3")
+    l3 = sign.load_key(modules.BY_NAME[module][3], "l3")
     return write.commit(conn, tgt, module, before, after, c, signer_key(module), l3,
                         dry_run=False, unlock=unlock, have_backup=True)

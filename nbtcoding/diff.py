@@ -20,7 +20,8 @@ from . import caf as caf_mod
 from . import decode as decode_mod
 from . import names as names_mod
 
-ADDR_NAME = {"63": "HU_NBT", "40": "CAS", "72": "FRM", "60": "KOMBI"}
+from .modules import MODULES as _ALL
+ADDR_NAME = {"%02X" % m[0]: m[1] for m in _ALL}
 
 
 def _load(path: str) -> dict:

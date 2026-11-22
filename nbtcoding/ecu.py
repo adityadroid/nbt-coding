@@ -21,14 +21,8 @@ from dataclasses import dataclass
 from .hsfz import Hsfz, HsfzError
 
 # Friendly module name -> (HSFZ diagnostic address, note). Addresses are standard F-series.
-MODULES = {
-    "HU_NBT": (0x63, "Head unit (our Android Auto mod lives here; do not code it)"),
-    "CAS":    (0x40, "Car Access System: keys, locks, mirrors, start/stop memory"),
-    "FRM":    (0x72, "Footwell module: lights, welcome lights, indicators"),
-    "KOMBI":  (0x60, "Instrument cluster"),
-    "FEM":    (0x40, "Front Electronic Module (not on F10; CAS instead)"),
-    "JBBFE":  (0x00, "Junction box (address varies; confirm from SVT)"),
-}
+from .modules import MODULES as _ALL
+MODULES = {name: (addr, desc) for addr, name, desc, _btld, _scheme in _ALL}   # every coded module of this car
 
 SVK_CLASS = {1: "HWEL", 2: "HWAP", 3: "HWFR", 4: "GWTB", 5: "CAFD",
              6: "BTLD", 7: "FLSL", 8: "SWFL", 9: "SWFF", 10: "SWPF", 11: "ONPS"}
