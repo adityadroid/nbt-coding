@@ -7,50 +7,53 @@
 <style>
   :root{
     --bg:#0f1115; --panel:#171a21; --line:#272b36; --fg:#e6e8ee; --dim:#9aa3b2;
-    --accent:#4a90e2; --warn:#e2a24a; --good:#5bbd7a; --chg:#e2cb4a; --off:#6b7280;
+    --accent:#4a90e2; --warn:#e2a24a; --good:#5bbd7a; --bad:#e25c5c; --chg:#e2cb4a; --off:#6b7280;
     --toggle:#4a90e2; --choice:#a884e0; --value:#7a8396;
   }
   @media (prefers-color-scheme: light){
     :root:not([data-theme="dark"]){
       --bg:#f6f7f9; --panel:#fff; --line:#e2e5ea; --fg:#1a1d24; --dim:#5c6472;
-      --accent:#2b6cb0; --warn:#9a6a10; --good:#2f8a4e; --chg:#8a7410; --off:#9aa1ad;
+      --accent:#2b6cb0; --warn:#9a6a10; --good:#2f8a4e; --bad:#b83232; --chg:#8a7410; --off:#9aa1ad;
       --toggle:#2b6cb0; --choice:#7a52c0; --value:#6b7280;
     }
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif}
+  body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif;padding-bottom:80px}
   header{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:var(--panel)}
   h1{font-size:16px;margin:0 12px 0 0}
   .host{color:var(--dim);font-size:12px}
-  .banner{background:color-mix(in srgb,var(--warn) 16%,transparent);border:1px solid var(--warn);
-    color:var(--fg);padding:8px 12px;margin:12px 16px;border-radius:8px;font-size:13px}
+  .banner{border:1px solid var(--line);background:var(--panel);padding:8px 12px;margin:12px 16px;border-radius:8px;font-size:13px}
+  .banner.warn{background:color-mix(in srgb,var(--warn) 14%,transparent);border-color:var(--warn)}
+  .banner.good{background:color-mix(in srgb,var(--good) 14%,transparent);border-color:var(--good)}
+  .banner.bad{background:color-mix(in srgb,var(--bad) 14%,transparent);border-color:var(--bad)}
   .bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:8px 16px}
-  select,input,button{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);
-    border-radius:7px;padding:7px 10px}
+  select,input,button{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:7px;padding:7px 10px}
   button{background:var(--accent);border-color:var(--accent);color:#fff;cursor:pointer}
   button.ghost{background:var(--bg);color:var(--fg)}
+  button.danger{background:var(--bad);border-color:var(--bad)}
   button:disabled{opacity:.5;cursor:not-allowed}
   .sep{width:1px;height:22px;background:var(--line);margin:0 4px}
+  .lbl{color:var(--dim);font-size:12px}
   label.chk{display:inline-flex;gap:6px;align-items:center;color:var(--dim);font-size:13px;cursor:pointer}
   #status{padding:2px 16px;color:var(--dim);min-height:18px;font-size:12px}
   .wrap{padding:6px 16px 48px}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;padding:0 16px 6px}
+  .chip{font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--fg);cursor:pointer}
+  .chip:hover{border-color:var(--accent)}
 
-  /* grouped sections */
   .grp{border:1px solid var(--line);border-radius:10px;margin:10px 0;overflow:hidden;background:var(--panel)}
-  .grp>summary{list-style:none;cursor:pointer;padding:10px 14px;display:flex;gap:10px;align-items:center;
-    font-weight:600;user-select:none}
+  .grp>summary{list-style:none;cursor:pointer;padding:10px 14px;display:flex;gap:10px;align-items:center;font-weight:600;user-select:none}
   .grp>summary::-webkit-details-marker{display:none}
   .grp>summary .caret{color:var(--dim);transition:transform .15s}
   .grp[open]>summary .caret{transform:rotate(90deg)}
+  .grp .gname{font-weight:400;color:var(--dim);font-family:ui-monospace,Menlo,monospace;font-size:12px}
   .grp .gcount{color:var(--dim);font-weight:400;font-size:12px;margin-left:auto}
 
-  /* one setting */
-  .row{padding:10px 14px;border-top:1px solid var(--line);display:grid;
-    grid-template-columns:1fr auto;gap:4px 14px;align-items:start}
-  .row:first-of-type{border-top:1px solid var(--line)}
+  .row{padding:10px 14px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:4px 14px;align-items:start}
+  .row.pending{background:color-mix(in srgb,var(--chg) 10%,transparent)}
   .rtop{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-  .nm{font-weight:600}
-  .nm.unnamed{font-weight:400;color:var(--dim);font-style:italic}
+  .nm{font-weight:600;font-family:ui-monospace,Menlo,monospace;font-size:13px}
+  .nm.unnamed{font-weight:400;color:var(--dim);font-style:italic;font-family:inherit}
   .loc{font-family:ui-monospace,Menlo,monospace;color:var(--dim);font-size:11px}
   .badge{font-size:11px;padding:1px 7px;border-radius:999px;border:1px solid;white-space:nowrap}
   .badge.toggle{color:var(--toggle);border-color:var(--toggle)}
@@ -58,21 +61,34 @@
   .badge.value{color:var(--value);border-color:var(--value)}
   .summary{color:var(--dim);font-size:12.5px;grid-column:1/-1}
   .opts{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
-
-  .state{display:flex;flex-direction:column;align-items:flex-end;gap:3px;min-width:92px}
+  .state{display:flex;flex-direction:column;align-items:flex-end;gap:4px;min-width:110px}
   .pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;border:1px solid var(--line);white-space:nowrap}
-  .pill.on{background:color-mix(in srgb,var(--good) 20%,transparent);border-color:var(--good);color:var(--fg)}
+  .pill.on{background:color-mix(in srgb,var(--good) 20%,transparent);border-color:var(--good)}
   .pill.off{color:var(--off);border-color:var(--off)}
   .pill.val{border-color:var(--accent);color:var(--accent)}
-  .pill.chg{border-color:var(--chg);color:var(--chg);box-shadow:0 0 0 1px color-mix(in srgb,var(--chg) 45%,transparent)}
+  .pill.chg{border-color:var(--chg);color:var(--chg)}
   .pill.na{color:var(--dim)}
   .pill.opt{font-size:11px;color:var(--dim)}
   .pill.opt.cur{border-color:var(--accent);color:var(--accent)}
   .deftxt{font-size:11px;color:var(--dim)}
-  .chgtag{font-size:11px;color:var(--chg)}
   .count{color:var(--dim);font-size:12px;margin-left:auto}
-  .legend{color:var(--dim);font-size:11.5px;padding:0 16px 6px;display:flex;gap:14px;flex-wrap:wrap}
   .empty{padding:24px 16px;color:var(--dim)}
+  select.edit{padding:4px 8px;font-size:12px;max-width:190px}
+
+  #tray{position:fixed;left:0;right:0;bottom:0;background:var(--panel);border-top:1px solid var(--line);padding:10px 16px;display:none;gap:10px;align-items:center;flex-wrap:wrap;z-index:5}
+  #tray .t{font-size:13px}
+  dialog{border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--fg);max-width:720px;width:calc(100% - 32px);padding:0}
+  dialog::backdrop{background:rgba(0,0,0,.5)}
+  .dh{padding:14px 18px;border-bottom:1px solid var(--line);font-weight:600}
+  .db{padding:14px 18px;display:flex;flex-direction:column;gap:10px;font-size:13px}
+  .df{padding:12px 18px;border-top:1px solid var(--line);display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+  table{border-collapse:collapse;width:100%;font-size:12.5px}
+  td,th{border-bottom:1px solid var(--line);padding:5px 6px;text-align:left;vertical-align:top}
+  th{color:var(--dim);font-weight:500}
+  code,pre{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+  pre{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px;margin:0;white-space:pre-wrap}
+  .phrase{user-select:all;background:var(--bg);border:1px dashed var(--line);padding:2px 6px;border-radius:5px}
+  @media (max-width:560px){ .row{grid-template-columns:1fr} .state{align-items:flex-start} }
 </style>
 </head>
 <body>
@@ -82,140 +98,167 @@
 </header>
 
 <div class="banner" id="banner">
-  <b>Read-only.</b> This shows the car's coding and explains each setting. It does not change
-  anything yet — writing is off until the signer is built. Every read saves a full backup under
-  <code>.local/coding-backups/</code>. Do <b>not</b> code <code>HU_NBT</code> while the Android Auto mod is on.
+  Read a module to see every setting with BMW's own names. To change one, pick a new value, press <b>Review</b>, then
+  <b>Write</b>. Every read and every review saves a full backup you can restore. Keep the engine running or a charger on while writing.
+  The head unit (HU_NBT) is never written: the Android Auto mod lives there.
 </div>
 
 <div class="bar">
   <select id="module"></select>
   <button id="btnRead">Read from car</button>
-  <span class="sep"></span>
-  <span class="dim" style="color:var(--dim);font-size:12px">browse offline:</span>
-  <input id="cafd" value="00000DED" size="9" title="decoded CAFD id">
-  <button class="ghost" id="btnOffline">Load CAFD</button>
+  <span id="modnote" class="lbl"></span>
 </div>
 
 <div class="bar">
-  <span style="color:var(--dim);font-size:12px">from a car probe (no car needed):</span>
+  <span class="lbl">no car needed:</span>
   <select id="probeFile"></select>
   <select id="probeMod"></select>
-  <button class="ghost" id="btnProbe">Show</button>
+  <button class="ghost" id="btnProbe">Show saved read</button>
+  <span class="sep"></span>
+  <input id="cafd" value="0000106D" size="9" title="CAFD id">
+  <button class="ghost" id="btnOffline">Browse CAFD</button>
 </div>
 
-<div class="banner" id="warn" style="display:none"></div>
+<div class="banner warn" id="warn" style="display:none"></div>
 
 <div class="bar">
-  <input id="q" placeholder="search name, description or location" size="30">
+  <input id="q" placeholder="search name, block or location" size="30">
   <label class="chk"><input type="checkbox" id="fCode" checked> changeable only</label>
   <label class="chk"><input type="checkbox" id="fChg"> changed from default</label>
   <label class="chk"><input type="checkbox" id="fNamed"> named only</label>
   <label class="chk"><input type="checkbox" id="fGroup" checked> group by block</label>
   <span class="count" id="count"></span>
 </div>
+<div class="chips" id="chips">
+  <span class="lbl" style="align-self:center">shortcuts:</span>
+  <span class="chip" data-q="WL_">Welcome lights (FRM)</span>
+  <span class="chip" data-q="ASP_">Mirrors (FRM)</span>
+  <span class="chip" data-q="QUITT">Lock confirm flash (FRM)</span>
+  <span class="chip" data-q="MSA">Auto start/stop (CAS)</span>
+  <span class="chip" data-q="HORN">Lock horn (CAS)</span>
+  <span class="chip" data-q="KOMFORT">Comfort open/close (CAS)</span>
+  <span class="chip" data-q="ZEIGER">Gauges (KOMBI)</span>
+</div>
 
-<div class="legend">
-  <span><b>On/off</b> switch</span>
-  <span style="color:var(--choice)"><b>Choice</b> of values</span>
-  <span style="color:var(--value)"><b>Value</b> field</span>
-  <span><span class="pill chg" style="padding:0 8px">amber</span> = changed from factory</span>
+<div class="bar" id="restoreBar" style="display:none">
+  <span class="lbl">undo:</span>
+  <select id="backupSel"></select>
+  <button class="ghost" id="btnRestore">Review restore</button>
 </div>
 
 <div id="status"></div>
 <div class="wrap" id="wrap"></div>
 
-<script>
-let FEATS=[], META={};
-const $=s=>document.querySelector(s);
-const esc=s=>(s==null?"":String(s)).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+<div id="tray">
+  <span class="t" id="trayText"></span>
+  <button class="ghost" id="btnClear">Clear</button>
+  <button id="btnReview">Review</button>
+</div>
 
+<dialog id="dlg">
+  <div class="dh" id="dlgTitle">Review</div>
+  <div class="db" id="dlgBody"></div>
+  <div class="df" id="dlgFoot"></div>
+</dialog>
+
+<script>
+let FEATS=[], META={}, MODS={}, PENDING={}, PLAN=null, MODULE="";
+const $=s=>document.querySelector(s);
+const esc=s=>(s==null?"":String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const nice=s=>(s||"").replace(/_/g," ");
 async function j(u){const r=await fetch(u);return r.json();}
+async function post(u,b){const r=await fetch(u,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)});return r.json();}
+function setStatus(t){$("#status").textContent=t;}
 
 async function init(){
   const m=await j("/api/modules");
   $("#carhost").textContent="car: "+m.host;
-  $("#module").innerHTML=m.modules.map(x=>
-    `<option value="${x.name}">${x.name} (${x.addr}) — ${esc(x.note)}</option>`).join("");
-  $("#module").value="CAS";
+  m.modules.forEach(x=>MODS[x.name]=x);
+  $("#module").innerHTML=m.modules.map(x=>`<option value="${x.name}">${x.name} (${x.addr}) — ${esc(x.note)}${x.writable?"":" · read only"}</option>`).join("");
+  $("#module").value="FRM"; modNote();
 }
-function setStatus(t){$("#status").textContent=t;}
+function modNote(){const x=MODS[$("#module").value]; $("#modnote").textContent=x?(x.writable?"✓ can be written":"read only: "+x.write_note):"";}
 
 let PROBES=[];
 async function loadProbes(){
   const r=await j("/api/probes"); PROBES=r.probes||[];
-  $("#probeFile").innerHTML=PROBES.length?PROBES.map(p=>`<option>${p.file}</option>`).join(""):"<option value=''>no probes yet: python3 -m nbtcoding.probe</option>";
+  $("#probeFile").innerHTML=PROBES.length?PROBES.map(p=>`<option>${p.file}</option>`).join(""):"<option value=''>no saved reads yet</option>";
   fillProbeMods();
 }
 function fillProbeMods(){
   const p=PROBES.find(x=>x.file===$("#probeFile").value);
-  $("#probeMod").innerHTML=p?p.modules.filter(m=>m.cafd).map(m=>
-    `<option value="${m.addr}">${m.addr} ${esc(m.name)} — CAFD ${m.cafd} ${m.decodable?"":"(file missing)"}</option>`).join(""):"";
+  $("#probeMod").innerHTML=p?p.modules.filter(m=>m.cafd).map(m=>`<option value="${m.addr}">${m.addr} ${esc(m.name)} — CAFD ${m.cafd}${m.decodable?"":" (file missing)"}</option>`).join(""):"";
 }
-async function showProbe(){
-  setStatus("decoding "+$("#probeMod").value+" from the saved probe…");
-  load(await j("/api/probe?file="+encodeURIComponent($("#probeFile").value)+"&module="+encodeURIComponent($("#probeMod").value)));
+async function loadBackups(module){
+  const r=await j("/api/backups?module="+encodeURIComponent(module));
+  const b=r.backups||[];
+  $("#backupSel").innerHTML=b.map(f=>`<option>${f}</option>`).join("");
+  $("#restoreBar").style.display=(b.length&&META.writable)?"":"none";
 }
-function load(res){
+
+function load(res, module){
   const w=$("#warn");
-  if(res.warning){w.textContent="⚠ "+res.warning;w.style.display="";}else{w.style.display="none";}
-  if(res.error){setStatus("⚠ "+res.error);FEATS=[];render();return;}
-  META=res; FEATS=res.features||[];
-  let s=`CAFD ${res.cafd_id} v${res.version||""}`;
+  if(res.warning){w.textContent="⚠ "+res.warning;w.style.display="";}else w.style.display="none";
+  if(res.error){setStatus("⚠ "+res.error);FEATS=[];META={};render();return;}
+  META=res; FEATS=res.features||[]; MODULE=module||""; PENDING={}; tray();
+  let s=`CAFD ${res.cafd_id} v${res.version||""} · ${res.named||0} of ${FEATS.length} settings named`;
   if(res.module) s=res.module+" · "+s;
-  if(res.backup) s+=` · backup saved: ${res.backup}`;
-  if(res.source) s+=` · ${res.source} (offline, not read from car)`;
-  if(res.read_datagroups) s+=` · read blocks ${res.read_datagroups.join(", ")}`;
+  if(res.backup) s+=` · backup ${res.backup}`;
+  if(res.source) s+=` · ${res.source} (not live)`;
+  s+= res.writable?" · ✓ editable":(res.write_note?" · read only: "+res.write_note:"");
   setStatus(s); render();
+  if(MODULE) loadBackups(MODULE);
 }
 async function readCar(){
-  setStatus("reading "+$("#module").value+" from the car…");
-  load(await j("/api/read?module="+encodeURIComponent($("#module").value)));
+  const m=$("#module").value;
+  setStatus("reading "+m+" from the car (every block)…");
+  load(await j("/api/read?module="+encodeURIComponent(m)), m);
+}
+async function showProbe(){
+  setStatus("decoding saved read…");
+  load(await j("/api/probe?file="+encodeURIComponent($("#probeFile").value)+"&module="+encodeURIComponent($("#probeMod").value)));
 }
 async function offline(){
   setStatus("loading CAFD "+$("#cafd").value+"…");
   load(await j("/api/offline?cafd="+encodeURIComponent($("#cafd").value)));
 }
 
+function editable(f){
+  return META.writable && f.codeable && f.end===f.start && f.option_labels && f.option_labels.length>1
+         && f.option_labels.every(o=>o.scalar!==null) && f.datagroup.toUpperCase()!==(META.sign_addr||"").toUpperCase();
+}
 function statePill(f){
   if(f.current_label==="—"||f.current==null) return `<span class="pill na">not read</span>`;
-  let cls="val";
-  if(f.kind==="toggle") cls=f.on?"on":"off";
-  if(f.is_default===false) cls+=" chg";
-  return `<span class="pill ${cls}">${esc(f.current_label)}</span>`;
+  let cls="val"; if(f.kind==="toggle") cls=f.on?"on":"off"; if(f.is_default===false) cls+=" chg";
+  return `<span class="pill ${cls}">${esc(nice(f.current_label))}</span>`;
+}
+function editor(f){
+  const pend=PENDING[f.key];
+  const cur=pend!==undefined?pend:f.current_scalar;
+  return `<select class="edit" data-key="${esc(f.key)}">`+f.option_labels.map(o=>
+    `<option value="${o.scalar}"${o.scalar===cur?" selected":""}>${esc(nice(o.label))}${o.scalar===f.current_scalar?" (now)":""}</option>`).join("")+`</select>`;
 }
 function rowHtml(f){
-  const named=!!f.name;
-  const title=named?`<span class="nm">${esc(f.name)}</span>`
-                   :`<span class="nm unnamed">Unnamed setting</span>`;
+  const title=f.name?`<span class="nm">${esc(f.name)}</span>`:`<span class="nm unnamed">Unnamed setting</span>`;
   const badge=`<span class="badge ${f.kind}">${f.kind==="toggle"?"on/off":f.kind}</span>`;
   const loc=`<span class="loc">${esc(f.datagroup)}·b${f.start}${f.end!=f.start?"-"+f.end:""}·${f.mask.toString(16).padStart(2,"0").toUpperCase()}</span>`;
-  // options row (only when there's a real menu)
   let opts="";
-  if(f.option_labels&&f.option_labels.length>1){
-    opts=`<div class="opts">`+f.option_labels.map(o=>
-      `<span class="pill opt${o.cur?" cur":""}">${esc(o.label)}</span>`).join("")+`</div>`;
-  }
-  const def = (f.default_label&&f.default_label!=="—")
-      ? `<span class="deftxt">default ${esc(f.default_label)}</span>` : "";
-  return `<div class="row">
-    <div>
-      <div class="rtop">${title}${badge}${loc}</div>
-      <div class="summary">${esc(f.summary)}</div>
-      ${opts}
-    </div>
-    <div class="state">${statePill(f)}${def}</div>
-  </div>`;
+  if(!editable(f)&&f.option_labels&&f.option_labels.length>1)
+    opts=`<div class="opts">`+f.option_labels.map(o=>`<span class="pill opt${o.cur?" cur":""}">${esc(nice(o.label))}</span>`).join("")+`</div>`;
+  const def=(f.default_label&&f.default_label!=="—")?`<span class="deftxt">default ${esc(nice(f.default_label))}</span>`:"";
+  return `<div class="row${PENDING[f.key]!==undefined?" pending":""}">
+    <div><div class="rtop">${title}${badge}${loc}</div><div class="summary">${esc(f.summary)}</div>${opts}</div>
+    <div class="state">${statePill(f)}${editable(f)?editor(f):""}${def}</div></div>`;
 }
-
 function filtered(){
   const q=$("#q").value.trim().toLowerCase();
   const onlyCode=$("#fCode").checked, onlyChg=$("#fChg").checked, onlyNamed=$("#fNamed").checked;
+  const G=META.groups||{};
   return FEATS.filter(f=>{
     if(onlyCode&&!f.codeable)return false;
     if(onlyChg&&!(f.is_default===false))return false;
     if(onlyNamed&&!f.name)return false;
-    if(q){const hay=(f.name+" "+f.desc+" "+f.summary+" "+f.datagroup+" "+f.key).toLowerCase();
-          if(!hay.includes(q))return false;}
+    if(q){const hay=(f.name+" "+f.desc+" "+f.summary+" "+f.datagroup+" "+(G[f.datagroup]||"")+" "+f.key).toLowerCase(); if(!hay.includes(q))return false;}
     return true;
   });
 }
@@ -223,28 +266,74 @@ function render(){
   const rows=filtered();
   $("#count").textContent=rows.length+" of "+FEATS.length+" settings";
   const wrap=$("#wrap");
-  if(!FEATS.length){wrap.innerHTML=`<div class="empty">Pick a module and <b>Read from car</b>, or load a CAFD id to browse offline.</div>`;return;}
-  if(!rows.length){wrap.innerHTML=`<div class="empty">No settings match the filters.</div>`;return;}
+  if(!FEATS.length){wrap.innerHTML=`<div class="empty">Pick a module and <b>Read from car</b>, or show a saved read.</div>`;return;}
+  if(!rows.length){wrap.innerHTML=`<div class="empty">No settings match.</div>`;return;}
+  const G=META.groups||{};
   if($("#fGroup").checked){
-    const groups={};
-    rows.forEach(f=>{(groups[f.datagroup]=groups[f.datagroup]||[]).push(f);});
-    wrap.innerHTML=Object.keys(groups).sort().map(dg=>{
-      const fs=groups[dg];
-      return `<details class="grp" open>
-        <summary><span class="caret">▶</span>Block ${esc(dg)}
-          <span class="gcount">${fs.length} setting${fs.length>1?"s":""}</span></summary>
-        ${fs.map(rowHtml).join("")}
-      </details>`;
-    }).join("");
-  }else{
-    wrap.innerHTML=`<div class="grp" style="padding-top:1px">${rows.map(rowHtml).join("")}</div>`;
+    const groups={}; rows.forEach(f=>{(groups[f.datagroup]=groups[f.datagroup]||[]).push(f);});
+    wrap.innerHTML=Object.keys(groups).sort().map(dg=>`<details class="grp" open>
+      <summary><span class="caret">▶</span>Block ${esc(dg)} <span class="gname">${esc(G[dg]||"")}</span>
+      <span class="gcount">${groups[dg].length} setting${groups[dg].length>1?"s":""}</span></summary>
+      ${groups[dg].map(rowHtml).join("")}</details>`).join("");
+  }else wrap.innerHTML=`<div class="grp">${rows.map(rowHtml).join("")}</div>`;
+}
+document.addEventListener("change",e=>{
+  if(!e.target.matches("select.edit"))return;
+  const f=FEATS.find(x=>x.key===e.target.dataset.key); const v=parseInt(e.target.value,10);
+  if(v===f.current_scalar) delete PENDING[f.key]; else PENDING[f.key]=v;
+  tray(); render();
+});
+function tray(){
+  const n=Object.keys(PENDING).length;
+  $("#tray").style.display=n?"flex":"none";
+  $("#trayText").textContent=`${n} change${n>1?"s":""} to ${MODULE} not written yet`;
+}
+
+function dialog(title, body, foot){ $("#dlgTitle").textContent=title; $("#dlgBody").innerHTML=body; $("#dlgFoot").innerHTML=foot; if(!$("#dlg").open) $("#dlg").showModal(); }
+function closeDlg(){ $("#dlg").close(); }
+
+async function review(payload){
+  dialog("Review", `<div>Reading ${esc(payload.module)} again and saving a backup…</div>`, `<button class="ghost" onclick="closeDlg()">Cancel</button>`);
+  const p=await post("/api/plan", payload); PLAN=p;
+  if(p.error){ dialog("Review", `<div class="banner bad">⚠ ${esc(p.error)}</div>`, `<button class="ghost" onclick="closeDlg()">Close</button>`); return; }
+  if(p.nothing_to_do){ dialog("Review", `<div>The car already has these values. Nothing to write.</div>`, `<button class="ghost" onclick="closeDlg()">Close</button>`); return; }
+  const rows=p.changes.map(c=>`<tr><td><code>${esc(c.name)}</code><div class="lbl">${esc(c.group)} · ${esc(c.key)}</div></td><td>${esc(nice(c.from))}</td><td>→</td><td><b>${esc(nice(c.to))}</b></td></tr>`).join("");
+  let body=`<table><tr><th>Setting</th><th>Now</th><th></th><th>New</th></tr>${rows}</table>
+    <div class="lbl">Blocks written: ${p.datagroups.map(esc).join(", ")} (signature last) · backup saved: <code>${esc(p.backup)}</code></div>
+    <details><summary class="lbl">Exact steps sent to ${esc(p.module)}</summary><pre>${p.steps.map(esc).join("\n")}</pre></details>`;
+  let foot=`<button class="ghost" onclick="closeDlg()">Cancel</button>`;
+  if(!p.writable){ body+=`<div class="banner warn">Can't be written yet: ${esc(p.write_note)}</div>`; }
+  else{
+    body+=`<label class="chk"><input type="checkbox" id="pwr"> The engine is running or a battery charger is connected</label>
+      <div>Type <span class="phrase">${esc(p.unlock_phrase)}</span> to confirm:</div>
+      <input id="unlock" autocomplete="off" spellcheck="false" style="width:100%">
+      <div class="lbl">After writing, ${esc(p.module)} restarts (lights may blink). To undo, restore the backup above.</div>`;
+    foot+=`<button class="danger" id="btnWrite" disabled onclick="doWrite()">Write to car</button>`;
   }
+  dialog("Review: "+p.module, body, foot);
+  const gate=()=>{const b=$("#btnWrite"); if(b) b.disabled=!($("#pwr").checked && $("#unlock").value===p.unlock_phrase);};
+  if($("#pwr")){ $("#pwr").onchange=gate; $("#unlock").oninput=gate; }
+}
+async function doWrite(){
+  const unlock=$("#unlock").value;
+  dialog("Writing "+PLAN.module, `<div>Writing, checking the signature, restarting ${esc(PLAN.module)} and reading it back. Do not switch off.</div>`, "");
+  const r=await post("/api/write",{token:PLAN.token, unlock});
+  if(r.error){ dialog("Write failed", `<div class="banner bad">⚠ ${esc(r.error)}</div>`, `<button class="ghost" onclick="closeDlg()">Close</button>`); return; }
+  const cls=r.verified?"good":"warn";
+  dialog("Written", `<div class="banner ${cls}">${r.verified?"✓ Written and verified: the module accepted the signature, restarted, and reads back the new values.":"Written. "+esc(r.warning||"")}</div>
+    <div class="lbl">Blocks: ${(r.wrote||[]).map(esc).join(", ")}</div>`, `<button onclick="closeDlg()">Done</button>`);
+  if(r.features){ FEATS=r.features; PENDING={}; tray(); render(); loadBackups(MODULE); }
 }
 
 $("#btnRead").onclick=readCar;
 $("#btnOffline").onclick=offline;
 $("#btnProbe").onclick=showProbe;
 $("#probeFile").onchange=fillProbeMods;
+$("#module").onchange=modNote;
+$("#btnClear").onclick=()=>{PENDING={};tray();render();};
+$("#btnReview").onclick=()=>review({module:MODULE, changes:Object.entries(PENDING).map(([key,scalar])=>({key,scalar}))});
+$("#btnRestore").onclick=()=>review({module:MODULE, restore:$("#backupSel").value});
+document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{$("#q").value=c.dataset.q;$("#fNamed").checked=true;render();});
 ["q","fCode","fChg","fNamed","fGroup"].forEach(id=>$("#"+id).addEventListener("input",render));
 init().then(loadProbes).then(render);
 </script>
