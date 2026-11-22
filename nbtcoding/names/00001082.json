@@ -1,0 +1,5413 @@
+{
+ "functions": {
+  "3000:0:0:7F": {
+   "name": "ANHEB_LWR_TFL_WERT",
+   "values": {
+    "0": "initwert",
+    "16": "F01 552 SAE"
+   }
+  },
+  "3000:0:0:80": {
+   "name": "ANHEB_LWR_TFL_VORZ",
+   "values": {
+    "0": "F01_LED"
+   }
+  },
+  "3000:10:11:FF": {
+   "name": "Disabled_Errors_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:12:13:FF": {
+   "name": "Disabled_Errors_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:14:15:FF": {
+   "name": "Disabled_Errors_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:16:17:FF": {
+   "name": "Disabled_Errors_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:18:19:FF": {
+   "name": "Disabled_Errors_6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:1:1:7F": {
+   "name": "OFFSET_LWR_WERT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:1:1:80": {
+   "name": "OFFSET_LWR_VORZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:20:21:FF": {
+   "name": "Disabled_Errors_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:22:23:FF": {
+   "name": "Disabled_Errors_8",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:24:25:FF": {
+   "name": "Disabled_Errors_9",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:26:27:FF": {
+   "name": "Disabled_Errors_10",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:28:28:FF": {
+   "name": "FMH_MaxActivationTime_10s",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3000:29:29:7F": {
+   "name": "ANHEB_LWR_FL_WERT",
+   "values": {
+    "0": "initwert",
+    "9": "F01 552 SAE"
+   }
+  },
+  "3000:29:29:80": {
+   "name": "ANHEB_LWR_FL_VORZ",
+   "values": {
+    "0": "F01_LED"
+   }
+  },
+  "3000:2:2:7F": {
+   "name": "OFFSET_AHL_WERT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:2:2:80": {
+   "name": "OFFSET_AHL_VORZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:30:30:01": {
+   "name": "ANHEB_LWR_FL_TFL_IGNORE_IN_RESP",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:30:30:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:31:32:FF": {
+   "name": "Bestr_BiXK_abh_LV",
+   "values": {
+    "49152": "initwert"
+   }
+  },
+  "3000:33:33:01": {
+   "name": "DAYTIME_RUNNING_LIGHT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:33:33:02": {
+   "name": "POSITION_LIGHT_MODE1",
+   "values": {
+    "0": "initwert",
+    "1": "F01_LED"
+   }
+  },
+  "3000:33:33:04": {
+   "name": "POSITION_LIGHT_MODE2",
+   "values": {
+    "0": "initwert",
+    "1": "F01_LED"
+   }
+  },
+  "3000:33:33:08": {
+   "name": "POSITION_LIGHT_MODE3",
+   "values": {
+    "0": "initwert",
+    "1": "F01_LED"
+   }
+  },
+  "3000:33:33:10": {
+   "name": "PARKING_LIGHT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:33:33:20": {
+   "name": "WELCOME_LIGHT_MODE1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:33:33:40": {
+   "name": "WELCOME_LIGHT_MODE2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:33:33:80": {
+   "name": "WELCOME_LIGHT_MODE3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:34:34:01": {
+   "name": "WELCOME_LIGHT_MODE4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:34:34:02": {
+   "name": "FPOLLOW_ME_HOME_LIGHT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:34:34:04": {
+   "name": "REMOTE_LIGHT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:34:34:08": {
+   "name": "FLASHING_MAIN_BEAM",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:34:34:10": {
+   "name": "DWA_ALARM",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:34:34:20": {
+   "name": "PANIC_MODE",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:34:34:40": {
+   "name": "ATTACK_ALARM",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:34:34:80": {
+   "name": "INDICATOR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:35:35:01": {
+   "name": "SIDEMARKER",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:35:35:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:36:247:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:3:4:FF": {
+   "name": "TMS-ID",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:7:FF": {
+   "name": "TMS_VARIANTENKENNUNG",
+   "values": {
+    "0": "initwert",
+    "1024": "F01_AHL_ECE",
+    "24836": "F25_LED_ECE",
+    "24841": "F32_LED_ECE",
+    "24864": "F15_LED_ECE",
+    "25345": "F07_LED_ECE",
+    "25346": "F10_F11_F18_LED_ECE",
+    "25600": "F01_LED_ECE",
+    "25605": "RR04_05_06_LED_ECE",
+    "260": "F25_AHL_ECE",
+    "265": "F32_AHL_ECE",
+    "288": "F15_AHL_ECE",
+    "28932": "F25_LED_US",
+    "28937": "F32_LED_US",
+    "28960": "F15_LED_US",
+    "29441": "F07_LED_US",
+    "29442": "F10_F11_F18_LED_SAE",
+    "29696": "F01_LED_SAE",
+    "29701": "RR04_05_06_LED_US",
+    "4356": "F25_AHL_US",
+    "4361": "F32_AHL_US",
+    "4384": "F15_AHL_SAE",
+    "4866": "F10_F11_F18_AHL_SEA",
+    "5120": "F01_AHL_SAE",
+    "770": "F10_F11_F18_AHL_ECE"
+   }
+  },
+  "3000:8:9:FF": {
+   "name": "Disabled_Errors_1",
+   "values": {
+    "0": "F32"
+   }
+  },
+  "3001:0:0:01": {
+   "name": "KL_ENABLE_LI",
+   "values": {
+    "0": "KL_Aus",
+    "1": "KL_Ein"
+   }
+  },
+  "3001:0:0:02": {
+   "name": "UNBELEGT0",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:0:0:04": {
+   "name": "KL_TEST_LI",
+   "values": {
+    "0": "Test_Aus",
+    "1": "Test_Ein"
+   }
+  },
+  "3001:0:0:08": {
+   "name": "UNBELEGT1",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:0:0:10": {
+   "name": "UNBELEGT2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:0:0:20": {
+   "name": "KL_FLANKE_SEN_ERR_LI",
+   "values": {
+    "0": "Aus",
+    "1": "Ein"
+   }
+  },
+  "3001:0:0:40": {
+   "name": "KL_TREIBER_ERR_LI",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3001:0:0:80": {
+   "name": "KL_TREIBER_BEW_LI",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3001:112:127:FF": {
+   "name": "GESCHW_KL_3",
+   "values": {
+    "24855863687586129600117103338385377397": "F10_F11",
+    "28230902598594257947496864998135826843": "F32_F33_F15_F25_AHL_SEA",
+    "29404377772158937930521865352230799874": "F32_F33_F15_F25_LED",
+    "31367092684939761715133876116284246700": "F32_F33_F15_F25_AHL_ECE",
+    "64728054459958413454858809291525854727": "F01 neu_RR04",
+    "65429024122597636225858934621898479172": "F01 alt"
+   }
+  },
+  "3001:11:12:FF": {
+   "name": "KL_NUL_LAGE_SENSOR_LI",
+   "values": {
+    "15": "F32_F33",
+    "32783": "RR04_RR05_RR06",
+    "8": "F10_F11"
+   }
+  },
+  "3001:128:143:FF": {
+   "name": "GESCHW_KL_4",
+   "values": {
+    "10036846577219301497287780826849936234": "F10_F11",
+    "11402439190656658447333904492988466145": "F32_F33_F15__F25_AHL_SEA",
+    "11874944701580906715092420822416360458": "F32_F33_F15_F25_LED",
+    "12669376896114328224476147644823241807": "F32_F33_F15_F25_AHL_ECE",
+    "26143570818164844137546505698485340389": "F01 neu_RR04",
+    "26418766433900346674753822476987468029": "F01 alt"
+   }
+  },
+  "3001:13:14:FF": {
+   "name": "KL_ABST_POSIT_LI",
+   "values": {
+    "18": "F10_F11",
+    "25": "F32_F33",
+    "30": "F01_F02_F03_F04_RR04",
+    "32798": "RR04_RR05_RR06"
+   }
+  },
+  "3001:144:159:FF": {
+   "name": "GESCHW_LWR",
+   "values": {
+    "109693477880180952236962925340687467130": "F10_F11",
+    "123624539177812945903251690718311940811": "F32_F33",
+    "139388498221491673588835879387078460198": "RR04",
+    "141283704084442798879696822873731892017": "F01_XEN",
+    "144227763657972618872616349556531004226": "F01_alt",
+    "156159772125507006529692716518067012487": "F01_LED"
+   }
+  },
+  "3001:15:15:FF": {
+   "name": "KL_HS_GRAD_HIGH_LI",
+   "values": {
+    "0": "initwert",
+    "1": "F01_F02_F03_F04_RR04"
+   }
+  },
+  "3001:160:161:FF": {
+   "name": "UNTER_KORREKT_WERT",
+   "values": {
+    "11": "F32_F33",
+    "21": "F10_F11",
+    "6": "F01_F02_F03_F04_RR04"
+   }
+  },
+  "3001:162:162:1F": {
+   "name": "GESCHW_NOT_PROGR",
+   "values": {
+    "20": "initwert",
+    "25": "F01_RR04",
+    "26": "F32_F33"
+   }
+  },
+  "3001:162:162:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:163:163:FF": {
+   "name": "UNBELEGT19B",
+   "values": {
+    "255": "initwert"
+   }
+  },
+  "3001:164:164:FF": {
+   "name": "UNTERSPANNUNG",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:165:165:01": {
+   "name": "SPIKE_ERR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:165:165:02": {
+   "name": "SPIKE_U_SENS",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:165:165:04": {
+   "name": "SCHR0_FEH_ANTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:165:165:08": {
+   "name": "SCHR1_FEH_ANTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:165:165:10": {
+   "name": "SCHR2_FEH_ANTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:165:165:20": {
+   "name": "SCHR3_FEH_ANTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:165:165:40": {
+   "name": "SCHR4_FEH_ANTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:165:165:80": {
+   "name": "SCHR5_FEH_ANTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:166:167:FF": {
+   "name": "WARN_GRENZ",
+   "values": {
+    "113": "F10_F11",
+    "39": "RR04",
+    "46": "F01_F02_F03_F04_RR04",
+    "78": "F32_F33"
+   }
+  },
+  "3001:168:168:FF": {
+   "name": "WARN_COUNT",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3001:169:170:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:16:16:FF": {
+   "name": "KL_HS_GRAD_LOW_LI",
+   "values": {
+    "144": "F32_F33_F15_F25_LED",
+    "146": "F10_F11",
+    "27": "F32_F33_F15_F25_AHL_ECE",
+    "30": "F32_F33_F15_F25_AHL_SEA",
+    "7": "F01_F02_F03_F04_RR04"
+   }
+  },
+  "3001:171:172:FF": {
+   "name": "OFFSET_FEHL_EINTR",
+   "values": {
+    "10": "F32_F33",
+    "20": "F10_F11",
+    "5": "F01_F02_F03_F04_RR04"
+   }
+  },
+  "3001:173:173:FF": {
+   "name": "BASE_FEHL_EINTR",
+   "values": {
+    "10": "F01_F02_F03_F04_RR04",
+    "20": "F32_F33",
+    "23": "F10_F11"
+   }
+  },
+  "3001:174:174:FF": {
+   "name": "KL_TRAG_PARAM",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:175:175:FF": {
+   "name": "OFFSET_LI_WINK",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:176:176:FF": {
+   "name": "TEMP_STROMERH",
+   "values": {
+    "0": "initwert",
+    "20": "AL_Saia_Motor",
+    "28": "F01_F02_F03_F04_RR04",
+    "30": "AL_NMB_Motor"
+   }
+  },
+  "3001:177:177:FF": {
+   "name": "DAUER_STROMERH",
+   "values": {
+    "0": "initwert",
+    "24": "AL_Saia_Motor",
+    "6": "AL_NMB_Motor",
+    "60": "F10_F11"
+   }
+  },
+  "3001:178:179:FF": {
+   "name": "V_MAX_TIEFTEMP_KL",
+   "values": {
+    "0": "F15",
+    "3150": "F10_F11",
+    "5639": "RR04_RR05_RR06"
+   }
+  },
+  "3001:17:17:FF": {
+   "name": "KL_HS_GRAD_WERT_LI",
+   "values": {
+    "10": "F32_F33_F15_F25_AHL_ECE",
+    "201": "F01_F02_F03_F04_RR04",
+    "39": "F10_F11",
+    "50": "F32_F33_F15_F25_LED"
+   }
+  },
+  "3001:180:181:FF": {
+   "name": "V_MAX_TIEFTEMP_LWR",
+   "values": {
+    "0": "F15",
+    "1835": "F10_F11"
+   }
+  },
+  "3001:182:182:FF": {
+   "name": "STROM_RAMPE_KL",
+   "values": {
+    "107": "F01_F02_F03_F04_RR04",
+    "110": "AL_ALV_Modul",
+    "113": "AL_LED_Modul",
+    "121": "initwert",
+    "95": "AL_AFX_Modul"
+   }
+  },
+  "3001:183:183:FF": {
+   "name": "STROM_RAMPE_KL_TIEFT",
+   "values": {
+    "107": "F01_F02_F03_F04_RR04",
+    "160": "F10_F11",
+    "23": "initwert"
+   }
+  },
+  "3001:184:184:FF": {
+   "name": "STROM_NORMAL_KL",
+   "values": {
+    "107": "F01_F02_F03_F04_RR04",
+    "110": "AL_ALV_Modul",
+    "113": "AL_LED_Modul",
+    "121": "initwert",
+    "95": "AL_AFX_Modul"
+   }
+  },
+  "3001:185:185:FF": {
+   "name": "STROM_NORMAL_KL_TIEFT",
+   "values": {
+    "107": "F01_F02_F03_F04_RR04",
+    "160": "F10_F11",
+    "23": "initwert"
+   }
+  },
+  "3001:186:186:FF": {
+   "name": "STROM_HALT_KL",
+   "values": {
+    "19": "AL_ALV_Modul",
+    "24": "AL_LED_Modul",
+    "37": "F01_F02_F03_F04_RR04"
+   }
+  },
+  "3001:187:187:FF": {
+   "name": "STROM_HALT_KL_TIEFT",
+   "values": {
+    "110": "F10_F11",
+    "160": "AL_LED_Modul",
+    "23": "initwert",
+    "37": "F01_F02_F03_F04_RR04",
+    "80": "RR04_RR05_RR06"
+   }
+  },
+  "3001:188:188:FF": {
+   "name": "STROM_RAMPE_LWR",
+   "values": {
+    "107": "F01_F02_F03_F04_RR04",
+    "113": "F32_F33",
+    "121": "initwert"
+   }
+  },
+  "3001:189:189:FF": {
+   "name": "STROM_RAMPE_LWR_TIEFT",
+   "values": {
+    "160": "F32_F33",
+    "177": "F01_F02_F03_F04_RR04",
+    "23": "initwert"
+   }
+  },
+  "3001:18:18:07": {
+   "name": "KL_MAX_WERT_START",
+   "values": {
+    "1": "F01_F02_F03_F04_RR04",
+    "3": "F32_F33"
+   }
+  },
+  "3001:18:18:F8": {
+   "name": "KL_MAX_WERR_SPEED",
+   "values": {
+    "25": "initwert"
+   }
+  },
+  "3001:190:190:FF": {
+   "name": "STROM_NORMAL_LWR",
+   "values": {
+    "107": "F01_F02_F03_F04_RR04",
+    "113": "F32_F33",
+    "121": "initwert"
+   }
+  },
+  "3001:191:191:FF": {
+   "name": "STROM_NORMAL_LWR_TIEFT",
+   "values": {
+    "160": "F32_F33",
+    "177": "F01_F02_F03_F04_RR04",
+    "23": "initwert"
+   }
+  },
+  "3001:192:192:FF": {
+   "name": "STROM_HALT_LWR",
+   "values": {
+    "19": "F32_F33",
+    "37": "initwert"
+   }
+  },
+  "3001:193:193:FF": {
+   "name": "STROM_HALT_LWR_TIEFT",
+   "values": {
+    "0": "initwert",
+    "107": "F32_F33_F15_F25_ALV_Modul",
+    "113": "F10_F11",
+    "160": "F32_F33_F15_F25_AFX_LED_Modul"
+   }
+  },
+  "3001:194:194:01": {
+   "name": "STROMHALBIERUNG_KL",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:194:194:02": {
+   "name": "STROMHALBIERUNG_LWR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:194:194:0C": {
+   "name": "UNBELEGT21",
+   "values": {
+    "2": "initwert"
+   }
+  },
+  "3001:194:194:30": {
+   "name": "SCHRITT_MOD_KL",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:194:194:C0": {
+   "name": "SCHRITT_MOD_LWR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:195:195:FF": {
+   "name": "SCHR_VER_NOT_GRENZE",
+   "values": {
+    "5": "initwert"
+   }
+  },
+  "3001:196:196:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:197:197:01": {
+   "name": "TEMP_TIEFTEMP",
+   "values": {
+    "1": "unbelegte_Baureihe"
+   }
+  },
+  "3001:197:197:02": {
+   "name": "TEMPAUSW_TERMMMOD_MOT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:197:197:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:198:247:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:19:19:FF": {
+   "name": "KL_VORBEST_ZEIT",
+   "values": {
+    "78": "initwert"
+   }
+  },
+  "3001:1:1:01": {
+   "name": "KL_ERROR_STAT_LI",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:1:1:02": {
+   "name": "KL_DYN_POSIT_TOL_LI",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:1:1:0C": {
+   "name": "KL_ERROR_MOT_LI",
+   "values": {
+    "0": "initwert",
+    "1": "initwert"
+   }
+  },
+  "3001:1:1:10": {
+   "name": "UNBELEGT3",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:1:1:20": {
+   "name": "UNBELEGT4",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:1:1:40": {
+   "name": "KL_TIME_OUT_LI",
+   "values": {
+    "0": "Aus",
+    "1": "Ein"
+   }
+  },
+  "3001:1:1:80": {
+   "name": "UNBELEGT5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:20:20:FF": {
+   "name": "KL_SCHRITT_ANZ_REF2",
+   "values": {
+    "120": "F32_F33",
+    "20": "F01_F02_F03_F04_RR04"
+   }
+  },
+  "3001:21:21:FF": {
+   "name": "KL_SCHRITT_ABST_REF2",
+   "values": {
+    "26": "initwert"
+   }
+  },
+  "3001:22:23:FF": {
+   "name": "REF_SPEED_KL",
+   "values": {
+    "2196": "F32_F33",
+    "4440": "F10_F11",
+    "8008": "F01_F02_F03_F04_RR04"
+   }
+  },
+  "3001:24:24:FF": {
+   "name": "KL_RAMP_BESCH",
+   "values": {
+    "16": "F10_F11"
+   }
+  },
+  "3001:25:25:FF": {
+   "name": "KL_RAMP_BREMS",
+   "values": {
+    "16": "F32_F33_LED",
+    "21": "F01_F02_F03_F04_RR04",
+    "26": "F32_F33_AHL_SEA"
+   }
+  },
+  "3001:26:26:FF": {
+   "name": "KL_SIZE_RAMP_BESCH",
+   "values": {
+    "23": "F32_F33_LED",
+    "40": "F01_F02_F03_F04_RR04",
+    "57": "F10_F11",
+    "80": "F32_F33_AHL_SEA"
+   }
+  },
+  "3001:27:27:FF": {
+   "name": "KL_SIZE_RAMP_BREMS",
+   "values": {
+    "20": "F01_F02_F03_F04_RR04",
+    "23": "F32_F33_LED",
+    "40": "F32_F33_AHL_SEA",
+    "57": "F10_F11"
+   }
+  },
+  "3001:28:28:7F": {
+   "name": "KL_ASWE_OFFSET_WERT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:28:28:80": {
+   "name": "KL_ASWE_OFFSET_VORZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:29:31:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:2:2:01": {
+   "name": "KL_POSIT_RECHTS_LI",
+   "values": {
+    "0": "F25_F26",
+    "1": "F32_F33_F15_F25_AHL_ECE"
+   }
+  },
+  "3001:2:2:02": {
+   "name": "KL_SENSOR_PULLUP_LI",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:2:2:04": {
+   "name": "KL_SENS_INVERT_LI",
+   "values": {
+    "0": "initwert",
+    "1": "F32_F33_F15_F25_AHL_ECE"
+   }
+  },
+  "3001:2:2:08": {
+   "name": "UNBELEGT7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:2:2:10": {
+   "name": "UNBELEGT8",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:2:2:20": {
+   "name": "KL_SENSOR_AUSWERT_LI",
+   "values": {
+    "0": "Aus",
+    "1": "Ein"
+   }
+  },
+  "3001:2:2:40": {
+   "name": "KL_KOMFORT_LI",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:2:2:80": {
+   "name": "KL_AUSR_VOR_REFERENZ_LI",
+   "values": {
+    "0": "F32_F33_F15_F25_NICHT_AHL_ECE",
+    "1": "F32_F33_F15_F25_AHL_ECE"
+   }
+  },
+  "3001:32:32:01": {
+   "name": "LWR_ENABLE_TMS",
+   "values": {
+    "0": "LWR_Aus",
+    "1": "LWR_Ein"
+   }
+  },
+  "3001:32:32:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:32:32:04": {
+   "name": "LWR_TEST_TMS",
+   "values": {
+    "0": "Ein"
+   }
+  },
+  "3001:32:32:38": {
+   "name": "UNBELEGT9",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:32:32:40": {
+   "name": "LWR_TREIBER_ERR_TMS",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3001:32:32:80": {
+   "name": "LWR_TREIBER_BEW_TMS",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3001:33:33:01": {
+   "name": "LWR_ERROR_STAT_TMS",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:33:33:02": {
+   "name": "LWR_DYN_POSIT_TOL_TMS",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:33:33:0C": {
+   "name": "LWR_ERROR_MOT_TMS",
+   "values": {
+    "0": "initwert",
+    "1": "initwert"
+   }
+  },
+  "3001:33:33:30": {
+   "name": "UNBELEGT10",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3001:33:33:40": {
+   "name": "LWR_TIME_OUT_TMS",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:33:33:80": {
+   "name": "UNBELEGT11",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:34:34:01": {
+   "name": "LWR_POSIT_RECHTS",
+   "values": {
+    "0": "F01_F02_F03_F04_RR04",
+    "1": "F32_F33"
+   }
+  },
+  "3001:34:34:7E": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:34:34:80": {
+   "name": "LWR_AUSR_VOR_REFERENZ",
+   "values": {
+    "0": "F01_F02_F03_F04_RR04",
+    "1": "F32_F33"
+   }
+  },
+  "3001:35:36:FF": {
+   "name": "LWR_ANSCHLAG_OPT_TMS",
+   "values": {
+    "32932": "F10_F11_LED_AHL_SAE",
+    "32968": "RR04",
+    "32985": "F01_LED",
+    "33002": "F32_F33",
+    "33010": "initwert",
+    "33014": "F10_F11_AHL_ECE",
+    "33019": "RR04",
+    "33020": "RR04",
+    "33100": "F01_XEN"
+   }
+  },
+  "3001:37:38:FF": {
+   "name": "LWR_ANSCHLAG_WEICH_TMS",
+   "values": {
+    "0": "initwert",
+    "272": "F10_F11_AHL_ECE",
+    "331": "F01_XEN",
+    "350": "F32_F33",
+    "354": "F10_F11_LED_AHL_SAE",
+    "359": "RR04",
+    "376": "RR04",
+    "402": "RR04",
+    "415": "F01_LED"
+   }
+  },
+  "3001:39:40:FF": {
+   "name": "LWR_MAX_WINKEL_MIN_TMS",
+   "values": {
+    "142": "RR04",
+    "148": "F10_F11_LED_AHL_SAE",
+    "179": "RR04",
+    "198": "F01_LED",
+    "214": "F32_F33",
+    "230": "F10_F11_AHL_ECE",
+    "232": "initwert",
+    "311": "F01_XEN"
+   }
+  },
+  "3001:3:4:FF": {
+   "name": "KL_ANSCHLAG_OPT_LI",
+   "values": {
+    "160": "F01_LED",
+    "164": "F01_BFL_ECE",
+    "165": "F10_F11",
+    "170": "F01_AHL_SAE",
+    "185": "F32_F33_F15_F25_AHL_ECE",
+    "230": "RR04",
+    "32853": "F32_F33_F15_F25_AHL_SEA",
+    "32856": "F32_F33_F15_F25_LED"
+   }
+  },
+  "3001:41:42:FF": {
+   "name": "LWR_MAX_WINKEL_PL_TMS",
+   "values": {
+    "186": "F10_F11_AHL_ECE",
+    "212": "initwert",
+    "255": "F01_XEN",
+    "259": "F32_F33",
+    "268": "F10_F11_LED_AHL_SAE",
+    "284": "RR04",
+    "298": "RR04",
+    "306": "RR04",
+    "340": "F01_LED"
+   }
+  },
+  "3001:43:44:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:45:46:FF": {
+   "name": "LWR_ABST_POSIT_TMS",
+   "values": {
+    "0": "RR04"
+   }
+  },
+  "3001:47:47:FF": {
+   "name": "LWR_HS_GRAD_HIGH_TMS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:48:48:FF": {
+   "name": "LWR_HS_GRAD_LOW_TMS",
+   "values": {
+    "142": "F10_F11",
+    "147": "F01_XEN",
+    "149": "RR04",
+    "154": "F01_LED",
+    "155": "RR04",
+    "42": "F32_F33"
+   }
+  },
+  "3001:49:49:FF": {
+   "name": "LWR_HS_GRAD_WERT_TMS",
+   "values": {
+    "150": "1_5_Grad",
+    "200": "2_0_Grad",
+    "50": "0_5_Grad"
+   }
+  },
+  "3001:50:50:07": {
+   "name": "LWR_MAX_WERT_START_TMS",
+   "values": {
+    "3": "F32_F33"
+   }
+  },
+  "3001:50:50:F8": {
+   "name": "LWR_MAX_WERR_SPEED_TMS",
+   "values": {
+    "25": "initwert"
+   }
+  },
+  "3001:51:51:FF": {
+   "name": "LWR_VORBEST_ZEIT_TMS",
+   "values": {
+    "78": "initwert"
+   }
+  },
+  "3001:52:52:FF": {
+   "name": "LWR_SCHRITT_ANZ_REF2_TMS",
+   "values": {
+    "24": "initwert"
+   }
+  },
+  "3001:53:53:FF": {
+   "name": "LWR_SCHRITT_ABST_REF2_TMS",
+   "values": {
+    "48": "initwert"
+   }
+  },
+  "3001:54:55:FF": {
+   "name": "REF_SPEED_LWR_TMS",
+   "values": {
+    "1494": "F32_F33"
+   }
+  },
+  "3001:56:56:FF": {
+   "name": "LWR_RAMP_BESCH_TMS",
+   "values": {
+    "32": "F01_F02_F03_F04_RR04",
+    "79": "initwert"
+   }
+  },
+  "3001:57:57:FF": {
+   "name": "LWR_RAMP_BREMS_TMS",
+   "values": {
+    "32": "F01_F02_F03_F04_RR04",
+    "79": "initwert"
+   }
+  },
+  "3001:58:58:FF": {
+   "name": "LWR_SIZE_RAMP_BESCH_TMS",
+   "values": {
+    "32": "F32_F33"
+   }
+  },
+  "3001:59:59:FF": {
+   "name": "LWR_SIZE_RAMP_BREMS_TMS",
+   "values": {
+    "32": "F32_F33"
+   }
+  },
+  "3001:5:6:FF": {
+   "name": "KL_ANSCHLAG_WEICH_LI",
+   "values": {
+    "130": "initwert",
+    "140": "F01_LED",
+    "150": "F10_F11",
+    "180": "F32_F33_F15_F25_AHL_SEA",
+    "193": "F32_F33_F15_F25_LED",
+    "270": "F32_F33_F15_F25_AHL_ECE",
+    "60": "RR04"
+   }
+  },
+  "3001:60:60:7F": {
+   "name": "LWR_ASWE_OFFSET_WERT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:60:60:80": {
+   "name": "LWR_ASWE_OFFSET_VORZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:61:63:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:64:64:01": {
+   "name": "NOT_U_SENS",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:64:64:02": {
+   "name": "NOT_SENS_DEF_SN",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:64:64:04": {
+   "name": "NOT_SENS_NOK_S",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:64:64:08": {
+   "name": "NOT_SCHR_NOK_S",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:64:64:10": {
+   "name": "NOT_LIN_DEF",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:64:64:20": {
+   "name": "NOT_SENS_NOK_N",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:64:64:40": {
+   "name": "NOT_SCHR_NOK_N",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:64:64:80": {
+   "name": "NOT_USEN_NOK_NS",
+   "values": {
+    "0": "ohne_AHL",
+    "1": "mit_AHL"
+   }
+  },
+  "3001:65:66:FF": {
+   "name": "DEF_POSIT_KL",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:67:68:FF": {
+   "name": "DEF_POSIT_LWR",
+   "values": {
+    "164": "F10_F11_LED_AHL_US",
+    "200": "RR04",
+    "210": "initwert",
+    "217": "F01_LED",
+    "234": "F25",
+    "246": "F10_F11_XEN",
+    "252": "RR04",
+    "263": "F01_LED",
+    "332": "F01_XEN"
+   }
+  },
+  "3001:69:70:FF": {
+   "name": "LWR_ABSENK_WINK",
+   "values": {
+    "100": "F10_F11_LED",
+    "80": "RR04",
+    "95": "F32_F33"
+   }
+  },
+  "3001:71:71:01": {
+   "name": "LWR_ABS_SENS_DEF",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:71:71:02": {
+   "name": "LWR_ABS_SENS_NOK",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:71:71:04": {
+   "name": "LWR_ABS_SCHR_NOK",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:71:71:08": {
+   "name": "LWR_ABS_MOTOR_DEF",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:71:71:10": {
+   "name": "LWR_ABS_USEN_NOK",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:71:71:20": {
+   "name": "LWR_ABS_RECHTS_VERK",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:71:71:40": {
+   "name": "LWR_ABS_LINKS_VERK",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:71:71:80": {
+   "name": "LWR_MOTOR_NOT_PROGRAMM",
+   "values": {
+    "0": "ohne_AHL",
+    "1": "mit_AHL"
+   }
+  },
+  "3001:72:72:01": {
+   "name": "KL_CHIP_CLEAR_ERR_USPG",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:72:72:02": {
+   "name": "LWR_CHIP_CLEAR_ERR_USPG_TMS",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3001:72:72:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:73:73:03": {
+   "name": "notProgrWlz_beiSensorDefekt",
+   "values": {
+    "0": "initwert",
+    "3": "RR04"
+   }
+  },
+  "3001:73:73:0C": {
+   "name": "notProgrWlz_beiSensorNOK",
+   "values": {
+    "0": "initwert",
+    "3": "RR04"
+   }
+  },
+  "3001:73:73:30": {
+   "name": "notProgrWlz_beiSchrittVerlustZuGross",
+   "values": {
+    "0": "initwert",
+    "2": "RR04"
+   }
+  },
+  "3001:73:73:C0": {
+   "name": "notProgrWlz_beiWlzMotorDefekt",
+   "values": {
+    "0": "initwert",
+    "2": "RR04"
+   }
+  },
+  "3001:74:74:03": {
+   "name": "notProgrWlz_beiUsensNOK",
+   "values": {
+    "0": "initwert",
+    "3": "RR04"
+   }
+  },
+  "3001:74:74:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:75:75:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:76:76:FF": {
+   "name": "lwrPosition1BeiWalzeDefekt",
+   "values": {
+    "21": "RR04",
+    "23": "F32_F33_F15_F25_AHL_ECE",
+    "24": "F10_F11_F18_ 524 ECE",
+    "33": "F01 524 ECE"
+   }
+  },
+  "3001:77:77:FF": {
+   "name": "ahlPosition1BeiWalzeDefekt",
+   "values": {
+    "0": "F01 524 ECE"
+   }
+  },
+  "3001:78:78:FF": {
+   "name": "lwrPosition2BeiWalzeDefekt",
+   "values": {
+    "2": "F01 524 ECE"
+   }
+  },
+  "3001:79:79:FF": {
+   "name": "ahlPosition2BeiWalzeDefekt_LI",
+   "values": {
+    "153": "RR04_LL_nicht 807",
+    "163": "F10_F11_F18_ 524 ECE_LL_nicht 807",
+    "50": "RR04_RL_oder 807",
+    "75": "F10_F11_F18_ 524 ECE_RL_oder 807"
+   }
+  },
+  "3001:7:8:FF": {
+   "name": "KL_MAX_WINKEL_MIN_LI",
+   "values": {
+    "100": "F01_XEN",
+    "50": "RR04",
+    "70": "F32_F33_F15_F25_AHL_SEA",
+    "75": "F32_F33_F15_F25_LED"
+   }
+  },
+  "3001:80:95:FF": {
+   "name": "GESCHW_KL_1",
+   "values": {
+    "152380411951247152572093505978227766235": "F10_F11",
+    "173077189127011219840790155163468249830": "F32_F33_F15__F25_AHL_SEA",
+    "339368475131366680693382790985174451979": "F01 neu_RR04",
+    "339368475132163373692236174435624978561": "F01 alt",
+    "39347825994153836516753685437063241114": "F32_F33_F15_F25_AHL_ECE",
+    "41315736531470318971207320536119320341": "F32_F33_F15_F25_LED"
+   }
+  },
+  "3001:96:111:FF": {
+   "name": "GESCHW_KL_2",
+   "values": {
+    "160272810611073697944476538538846205578": "F01 neu_RR04",
+    "162012253748226244567739808400417961760": "F01 alt",
+    "39347825994153836516753685437063240302": "F32_F33_F15_F25_AHL_ECE",
+    "41315736531470318971207320536063416519": "F32_F33_F15_F25_LED",
+    "61545133147280496028848460760081569009": "F10_F11",
+    "69899652645083639647829381805576034249": "F32_F33_F15_F26_AHL_SEA"
+   }
+  },
+  "3001:9:10:FF": {
+   "name": "KL_MAX_WINKEL_PL_LI",
+   "values": {
+    "100": "RR04",
+    "120": "F15_AHL_ECE_F25_Versuchstraeger",
+    "150": "F32_F33_F15_F25_LED"
+   }
+  },
+  "3002:0:0:01": {
+   "name": "BLENDE_ENABLE_LI",
+   "values": {
+    "0": "BLENDE_Aus",
+    "1": "BLENDE_Ein"
+   }
+  },
+  "3002:0:0:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:0:0:04": {
+   "name": "WLZ_TEST_LI",
+   "values": {
+    "0": "Test_Aus",
+    "1": "Test_Ein"
+   }
+  },
+  "3002:0:0:08": {
+   "name": "WLZ_UNBELEGT1",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3002:0:0:10": {
+   "name": "WLZ_UNBELEGT2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:0:0:20": {
+   "name": "WLZ_FLANKE_SEN_ERR_LI",
+   "values": {
+    "0": "Aus",
+    "1": "Ein"
+   }
+  },
+  "3002:0:0:40": {
+   "name": "WLZ_TREIBER_ERR_LI",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3002:0:0:80": {
+   "name": "WLZ_TREIBER_BEW_LI",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3002:115:122:FF": {
+   "name": "DIRSPEED_WLZ_0",
+   "values": {
+    "18446744073709551615": "initwert"
+   }
+  },
+  "3002:11:12:FF": {
+   "name": "WLZ_NULL_LAGE_SENSOR_LI",
+   "values": {
+    "0": "F32_F33"
+   }
+  },
+  "3002:123:130:FF": {
+   "name": "DIRSPEED_WLZ_1",
+   "values": {
+    "18412967296406631303": "F10_F11_Hella_LL nicht 807",
+    "18413108033894953887": "F32_F33_F15_F25_AL_LL nicht 807",
+    "18413116829988010887": "F10_F11_Hella_RL oder 807",
+    "18413117416394177439": "F32_F33_F15_F25_AL_RL oder 807",
+    "18436948744520020899": "initwert",
+    "18437124666380497831": "F01 LL nicht 807",
+    "18437124666380497863": "RR04 LL nicht 807",
+    "18437135661496775591": "F01 RL oder 807",
+    "18437135661496775623": "RR04 RL oder 807"
+   }
+  },
+  "3002:131:138:FF": {
+   "name": "DIRSPEED_WLZ_2",
+   "values": {
+    "17940089335532729223": "F10_F11_Hella_LL nicht 807",
+    "17940230073021051807": "F32_F33_F15_F25_AL_LL nicht 807",
+    "17940238869114108807": "F10_F11_Hella_RL oder 807",
+    "17940239455520275359": "F32_F33_F15_F25_AL_RL oder 807",
+    "18301840755698906019": "initwert",
+    "18302016677559382951": "F01 LL nicht 807",
+    "18302016677559382983": "RR04 LL nicht 807",
+    "18302027672675660711": "F01 RL oder 807",
+    "18302027672675660743": "RR04 RL oder 807"
+   }
+  },
+  "3002:139:146:FF": {
+   "name": "DIRSPEED_WLZ_3",
+   "values": {
+    "17910534462978110343": "F10_F11_Hella_LL nicht 807",
+    "17910675200466432927": "F32_F33_F15_F25_AL_LL nicht 807",
+    "17910683996559489927": "F10_F11_Hella_RL oder 807",
+    "17910684582965656479": "F32_F33_F15_F25_AL_RL oder 807",
+    "18293396506397586339": "initwert",
+    "18293571328746435495": "F01 LL nicht 807",
+    "18293571328746435527": "RR04 LL nicht 807",
+    "18293580124839457703": "F01 RL oder 807",
+    "18293580124839457735": "RR04 RL oder 807"
+   }
+  },
+  "3002:13:14:FF": {
+   "name": "WLZ_ABST_POSIT_LI",
+   "values": {
+    "13": "initwert",
+    "32773": "F10_F11",
+    "32774": "RR04_vor_PVL",
+    "32782": "RR04",
+    "32839": "F32_F33"
+   }
+  },
+  "3002:147:154:FF": {
+   "name": "DIRSPEED_WLZ_4",
+   "values": {
+    "17294086671795729287": "F10_F11_Hella_RL oder 807",
+    "17524617976256607143": "F01 LL nicht 807",
+    "17524617976256607175": "RR04 LL nicht 807",
+    "17524617976256639911": "F01 RL oder 807",
+    "17524617976256639943": "RR04 RL oder 807",
+    "17908828020931769247": "F32_F33_F15_F25_AL_LL nicht 807",
+    "17908828020931801991": "F10_F11_Hella_LL nicht 807",
+    "17908837403430992799": "F32_F33_F15_F25_AL_RL oder 807",
+    "18293055657792975779": "initwert"
+   }
+  },
+  "3002:155:162:FF": {
+   "name": "DIRSPEED_WLZ_5",
+   "values": {
+    "17908721368303909767": "F10_F11_Hella_RL oder 807",
+    "17908721954710076319": "F32_F33_F15_F25_AL_RL oder 807",
+    "18293022672444142499": "initwert",
+    "18293022672444175271": "F01 RL oder 807",
+    "18293022672444175303": "RR04 LL nicht 807"
+   }
+  },
+  "3002:15:15:FF": {
+   "name": "WLZ_HS_GRAD_HIGH_LI",
+   "values": {
+    "0": "F01_F02_F03_F04"
+   }
+  },
+  "3002:163:170:FF": {
+   "name": "DIRSPEED_WLZ_6",
+   "values": {
+    "18139298577375280007": "F10_F11_Hella_RL oder 807",
+    "18139298614025632671": "F32_F33_F15_F25_AL_RL oder 807",
+    "18293021298054607779": "initwert",
+    "18293021298054640551": "F01 RL oder 807",
+    "18293021298054640583": "RR04 LL nicht 807"
+   }
+  },
+  "3002:16:16:FF": {
+   "name": "WLZ_HS_GRAD_LOW_LI",
+   "values": {
+    "1": "F32_F33",
+    "2": "F10_F11"
+   }
+  },
+  "3002:171:178:FF": {
+   "name": "DIRSPEED_WLZ_7",
+   "values": {
+    "17524406923854295967": "F32_F33_F15_F25_AL_RL oder 807",
+    "18139289010478723999": "F32_F33_F15_F25_AL_LL nicht 807",
+    "18139298354036980615": "F10_F11_Hella_RL oder 807",
+    "18293021212155261859": "initwert",
+    "18293021212155294631": "F01 RL oder 807",
+    "18293021212155294663": "RR04 nicht 807"
+   }
+  },
+  "3002:179:186:FF": {
+   "name": "DIRSPEED_WLZ_8",
+   "values": {
+    "17524406873388430239": "F32_F33_F15_F25_AL_RL oder 807",
+    "18139288960012858271": "F32_F33_F15_F25_AL_LL nicht 807",
+    "18139298340078336903": "F10_F11_Hella_RL oder 807",
+    "18293021206786552739": "initwert",
+    "18293021206786585511": "F01 RL oder 807",
+    "18293021206786585543": "RR04 LL nicht 807"
+   }
+  },
+  "3002:17:17:FF": {
+   "name": "WLZ_HS_GRAD_WERT_LI",
+   "values": {
+    "1": "F15"
+   }
+  },
+  "3002:187:194:FF": {
+   "name": "DIRSPEED_WLZ_9",
+   "values": {
+    "17524406870234313631": "F32_F33_F15_F25_AL_RL oder 807",
+    "18139288956858741663": "F32_F33_F15_F25_AL_LL nicht 807",
+    "18139298339205921671": "F10_F11_Hella_RL oder 807",
+    "18293021206451010979": "initwert",
+    "18293021206451043751": "F01 RL oder 807",
+    "18293021206451043783": "RR04 LL nicht 807"
+   }
+  },
+  "3002:18:18:07": {
+   "name": "WLZ_MAX_WERT_START_LI",
+   "values": {
+    "1": "F15"
+   }
+  },
+  "3002:18:18:F8": {
+   "name": "WLZ_MAX_WERR_SPEED_LI",
+   "values": {
+    "25": "initwert"
+   }
+  },
+  "3002:195:202:FF": {
+   "name": "DIRSPEED_WLZ_10",
+   "values": {
+    "17524406870171399071": "F32_F33_F15_F25_AL_RL oder 807",
+    "18139288956795827103": "F32_F33_F15_F25_AL_LL nicht 807",
+    "18139298339151395719": "F10_F11_Hella_RL oder 807",
+    "18293021206430039459": "initwert",
+    "18293021206430072231": "F01 RL oder 807",
+    "18293021206430072263": "RR04 LL nicht 807"
+   }
+  },
+  "3002:19:19:FF": {
+   "name": "WLZ_VORBEST_ZEIT_LI",
+   "values": {
+    "116": "F01_524_ECE",
+    "78": "initwert"
+   }
+  },
+  "3002:1:1:01": {
+   "name": "WLZ_ERROR_STAT_LI",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3002:1:1:02": {
+   "name": "WLZ_DYN_POSIT_TOL_LI",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:1:1:0C": {
+   "name": "WLZ_ERROR_MOT_LI",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:1:1:10": {
+   "name": "WLZ_OHNE_ANSCHL_REF_DIR",
+   "values": {
+    "0": "F10_XEN_ECE",
+    "1": "F15_F25_F32_XEN_ECE"
+   }
+  },
+  "3002:1:1:20": {
+   "name": "WLZ_OHNE_ANSCHL_REF_EDGE",
+   "values": {
+    "0": "F10_XEN_ECE",
+    "1": "F15_F25_F32_XEN_ECE"
+   }
+  },
+  "3002:1:1:40": {
+   "name": "WLZ_KL_TIME_OUT_LI",
+   "values": {
+    "0": "Aus",
+    "1": "Ein"
+   }
+  },
+  "3002:1:1:80": {
+   "name": "WLZ_UNBELEGT5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:203:210:FF": {
+   "name": "DIRSPEED_WLZ_11",
+   "values": {
+    "17524406870167466911": "F32_F33_F15_F25_AL_RL oder 807",
+    "18139288956791894943": "F32_F33_F15_F25_AL_LL nicht 807",
+    "18139298339147987847": "F10_F11_Hella_RL oder 807",
+    "18293021206428728739": "initwert",
+    "18293021206428761511": "F01 RL oder 807",
+    "18293021206428761543": "RR04 LL nicht 807"
+   }
+  },
+  "3002:20:20:FF": {
+   "name": "WLZ_SCHRITT_ANZ_REF2_LI",
+   "values": {
+    "20": "F15"
+   }
+  },
+  "3002:211:218:FF": {
+   "name": "DIRSPEED_WLZ_12",
+   "values": {
+    "17524406870024123271": "F10_F11_Hella_RL oder 807",
+    "17678270474793383335": "F01 RL oder 807",
+    "17678270474793383367": "RR04 RL oder 807",
+    "18139148219160195975": "F10_F11_Hella_LL nicht 807",
+    "18139298339147742111": "F32_F33_F15_F25_AL_RL oder 807",
+    "18293011823929456039": "F01 LL nicht 807",
+    "18293011823929456071": "RR04 LL nicht 807",
+    "18293021206428646819": "initwert"
+   }
+  },
+  "3002:219:226:FF": {
+   "name": "DIRSPEED_WLZ_13",
+   "values": {
+    "17908713451820191623": "F10_F11_Hella_RL oder 807",
+    "17985575471866814367": "F32_F33_F15_F25_AL_RL oder 807",
+    "18293021206417457059": "initwert",
+    "18293021206417489831": "F01 RL oder 807",
+    "18293021206417489863": "RR04 LL nicht 807"
+   }
+  },
+  "3002:21:21:FF": {
+   "name": "WLZ_SCHRITT_ABST_REF2_LI",
+   "values": {
+    "26": "F01_F02_F03_F04"
+   }
+  },
+  "3002:227:234:FF": {
+   "name": "DIRSPEED_WLZ_14",
+   "values": {
+    "17524406870024074235": "F32_F33_F15_F25_AL_RL oder 807",
+    "17678129737304987131": "RR04 RL oder 807",
+    "17831852604585900027": "initwert"
+   }
+  },
+  "3002:22:23:FF": {
+   "name": "WLZ_REF_SPEED_LI",
+   "values": {
+    "1451": "F10_F11",
+    "3268": "F32_F33"
+   }
+  },
+  "3002:235:242:FF": {
+   "name": "DIRSPEED_WLZ_15",
+   "values": {
+    "17754991170945443439": "F32_F33_F15_F25_AL_RL oder 807",
+    "18293021206428638559": "RR04 RL oder 807",
+    "18369882640069095023": "F10_F11_Hella_RL oder 807",
+    "18446744073709551487": "initwert"
+   }
+  },
+  "3002:243:246:FF": {
+   "name": "SensorFilterParam",
+   "values": {
+    "0": "initwert",
+    "2576980377": "RR04"
+   }
+  },
+  "3002:247:247:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:24:24:FF": {
+   "name": "WLZ__RAMP_BESCH_LI",
+   "values": {
+    "36": "F32_F33"
+   }
+  },
+  "3002:25:25:FF": {
+   "name": "WLZ_RAMP_BREMS_LI",
+   "values": {
+    "36": "unbelegte_Baureihe"
+   }
+  },
+  "3002:26:26:FF": {
+   "name": "WLZ_SIZE_RAMP_BESCH_LI",
+   "values": {
+    "14": "F32_F33",
+    "26": "RR04",
+    "32": "RR04",
+    "40": "unbelegte_Baureihe"
+   }
+  },
+  "3002:27:27:FF": {
+   "name": "WLZ_SIZE_RAMP_BREMS_LI",
+   "values": {
+    "14": "F32_F33",
+    "20": "unbelegte_Baureihe",
+    "26": "RR04",
+    "32": "RR04"
+   }
+  },
+  "3002:28:28:01": {
+   "name": "dynamicPosition1",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:28:28:02": {
+   "name": "dynamicPosition2",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:28:28:04": {
+   "name": "dynamicPosition3",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:28:28:08": {
+   "name": "dynamicPosition4",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:28:28:10": {
+   "name": "dynamicPosition5",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:28:28:20": {
+   "name": "dynamicPosition6",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:28:28:40": {
+   "name": "dynamicPosition7",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:28:28:80": {
+   "name": "dynamicPosition8",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:29:29:01": {
+   "name": "dynamicPosition9",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:29:29:02": {
+   "name": "dynamicPosition10",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:29:29:04": {
+   "name": "dynamicPosition11",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:29:29:08": {
+   "name": "dynamicPosition12",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:29:29:10": {
+   "name": "dynamicPosition13",
+   "values": {
+    "1": "F01 524 ECE"
+   }
+  },
+  "3002:29:29:20": {
+   "name": "dynamicPosition14",
+   "values": {
+    "0": "F01 524 ECE"
+   }
+  },
+  "3002:29:29:40": {
+   "name": "dynamicPosition15",
+   "values": {
+    "0": "F01 524 ECE"
+   }
+  },
+  "3002:29:29:80": {
+   "name": "free",
+   "values": {
+    "0": "F01 524 ECE"
+   }
+  },
+  "3002:2:2:01": {
+   "name": "WLZ_POSIT_RECHTS_LI",
+   "values": {
+    "0": "F32_F33_F15_F25_RL oder 807",
+    "1": "F32_F33_F15_F25_LL nicht 807"
+   }
+  },
+  "3002:2:2:02": {
+   "name": "WLZ_SENSOR_PULLUP",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3002:2:2:04": {
+   "name": "WLZ_SENS_INVERT_LI",
+   "values": {
+    "0": "F32_F33_F15_F25_RL oder 807",
+    "1": "F32_F33_F15_F25_LL nicht 807"
+   }
+  },
+  "3002:2:2:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:2:2:10": {
+   "name": "WLZ_UNBELEGT8",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:2:2:20": {
+   "name": "WLZ_SENSOR_AUSWERT_LI",
+   "values": {
+    "0": "Aus",
+    "1": "Ein"
+   }
+  },
+  "3002:2:2:40": {
+   "name": "WLZ_KOMFORT_LI",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:2:2:80": {
+   "name": "WLZ_AUSR_VOR_REFERENZ_LI",
+   "values": {
+    "0": "F32_F33_F15_F25_RL oder 807",
+    "1": "F32_F33_F15_F25_LL nicht 807"
+   }
+  },
+  "3002:30:31:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:32:47:FF": {
+   "name": "GESCHW_WALZE",
+   "values": {
+    "173075752378942825915925640946183701395": "F32_F33",
+    "23391602062393153184678462363553694382": "F10_F11",
+    "41803681231454486409788734656822575607": "RR04",
+    "41803681231454486409995623326040590146": "RR04_vor_PVL"
+   }
+  },
+  "3002:3:4:FF": {
+   "name": "WLZ_ANSCHLAG_OPT_LI",
+   "values": {
+    "100": "F10_F11",
+    "124": "F01_F02_F03_F04",
+    "144": "RR04",
+    "165": "initwert",
+    "32847": "F32_F33_F15_F25_RL oder 807"
+   }
+  },
+  "3002:48:49:FF": {
+   "name": "UNTER_KORREKT_WERT_WLZ",
+   "values": {
+    "5": "initwert"
+   }
+  },
+  "3002:50:50:07": {
+   "name": "GESCHW_NOT_PROGR_WLZ",
+   "values": {
+    "4": "initwert"
+   }
+  },
+  "3002:50:50:38": {
+   "name": "GESCHW_REF_LANG_WLZ",
+   "values": {
+    "2": "initwert"
+   }
+  },
+  "3002:50:50:40": {
+   "name": "WLZ_CHIP_CLEAR_ERR_USPG",
+   "values": {
+    "1": "Clear_Error_Undervoltage"
+   }
+  },
+  "3002:50:50:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:51:51:01": {
+   "name": "BIX_KL_VERBAUT",
+   "values": {
+    "0": "Verbau_Walze_00",
+    "1": "Verbau_BIX_Klappe_01"
+   }
+  },
+  "3002:51:51:06": {
+   "name": "PRIO_FERLICHT_ANSTEUERUNG",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3002:51:51:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:51:51:F0": {
+   "name": "WLZ_SENS_DEBOUNCE",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3002:52:52:FF": {
+   "name": "UNTER_SPANNUNG_WLZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:53:53:01": {
+   "name": "SPIKE_ERR_WLZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:53:53:02": {
+   "name": "SPIKE_U_SENS_WLZ",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3002:53:53:04": {
+   "name": "SCHR0_FEH_EINTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:53:53:08": {
+   "name": "SCHR1_FEH_EINTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:53:53:10": {
+   "name": "SCHR2_FEH_EINTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:53:53:20": {
+   "name": "SCHR3_FEH_EINTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:53:53:40": {
+   "name": "SCHR4_FEH_EINTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:53:53:80": {
+   "name": "SCHR5_FEH_EINTR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:54:55:FF": {
+   "name": "WARN_GRENZ_WLZ",
+   "values": {
+    "9": "initwert"
+   }
+  },
+  "3002:56:56:FF": {
+   "name": "WARN_COUNT_WLZ",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3002:57:58:FF": {
+   "name": "ANZ_FS_PER_360_GR",
+   "values": {
+    "110": "F32_F33",
+    "200": "F10_F11",
+    "248": "F01_F02_F03_F04",
+    "288": "RR04"
+   }
+  },
+  "3002:59:60:FF": {
+   "name": "OFFSET_FEHL_EINTR_WLZ",
+   "values": {
+    "4": "F32_F33"
+   }
+  },
+  "3002:5:6:FF": {
+   "name": "WLZ_ANSCHLAG_WEICH_LI",
+   "values": {
+    "100": "F10_F11",
+    "124": "F01_F02_F03_F04",
+    "130": "unbelegte_Baureihe",
+    "140": "F32_F33",
+    "144": "RR04"
+   }
+  },
+  "3002:61:61:FF": {
+   "name": "BASE_FEHL_EINTR_WLZ",
+   "values": {
+    "2": "F32_F33"
+   }
+  },
+  "3002:62:62:FF": {
+   "name": "WLZ_TRAG_PARAM",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:63:63:FF": {
+   "name": "OFFSET_LI_WINK_WLZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:64:64:FF": {
+   "name": "TEMP_STROMERH_WLZ",
+   "values": {
+    "0": "F01_F02_F03_F04",
+    "30": "F15_F16_F25"
+   }
+  },
+  "3002:65:65:FF": {
+   "name": "DAUER_STROMERH_WLZ",
+   "values": {
+    "0": "F01_F02_F03_F04",
+    "12": "F10_F11",
+    "6": "F32_F33",
+    "9": "RR04"
+   }
+  },
+  "3002:66:67:FF": {
+   "name": "V_MAX_TIEFTEMP_WLZ",
+   "values": {
+    "0": "initwert",
+    "2000": "RR04_RR05_RR06"
+   }
+  },
+  "3002:68:68:FF": {
+   "name": "STROM_RAMPE_WLZ",
+   "values": {
+    "160": "RR04",
+    "227": "Bixenonklappe",
+    "67": "F10_F11",
+    "95": "F32_F33"
+   }
+  },
+  "3002:69:69:FF": {
+   "name": "STROM_RAMPE_WLZ_TIEFT",
+   "values": {
+    "121": "F01_XEN_ECE",
+    "160": "F15_F16_F25",
+    "227": "Bixenonklappe",
+    "95": "F10_F11"
+   }
+  },
+  "3002:70:70:FF": {
+   "name": "STROM_NORMAL_WLZ",
+   "values": {
+    "121": "RR04",
+    "141": "F10_F11_Bixenonklappe",
+    "197": "F15_F25_F32_Bixenonklappe",
+    "67": "F10_F11_Walze",
+    "95": "F32_F33"
+   }
+  },
+  "3002:71:71:FF": {
+   "name": "STROM_NORMAL_WLZ_TIEFT",
+   "values": {
+    "121": "Bixenonklappe",
+    "141": "F10_F11_Bixenonklappe",
+    "160": "F15",
+    "197": "F15_F25_F32_Bixenonklappe",
+    "95": "F10_F11_Walze"
+   }
+  },
+  "3002:72:72:FF": {
+   "name": "STROM_HALT_WLZ",
+   "values": {
+    "12": "F10_F11",
+    "23": "RR04",
+    "24": "F32_F33",
+    "37": "initwert"
+   }
+  },
+  "3002:73:73:FF": {
+   "name": "STROM_HALT_WLZ_TIEFT",
+   "values": {
+    "0": "F01_F02_F03_F04",
+    "12": "F10_F11",
+    "121": "RR04",
+    "160": "F32_F33",
+    "37": "initwert"
+   }
+  },
+  "3002:74:74:01": {
+   "name": "STROMHALBIERUNG_WLZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:74:74:06": {
+   "name": "SCHRITT_MOD_WLZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:74:74:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:75:75:FF": {
+   "name": "SCHR_VER_NOT_GRENZE_WLZ",
+   "values": {
+    "5": "initwert"
+   }
+  },
+  "3002:76:77:FF": {
+   "name": "WLZ_BLENDFREI_MIN_WERT",
+   "values": {
+    "0": "RR04_vor_PVL",
+    "32786": "initwert",
+    "32789": "F01_F02_F03_F04",
+    "32797": "RR04",
+    "32803": "F15_F16_F26",
+    "32843": "F32_F33",
+    "9": "F10_F11"
+   }
+  },
+  "3002:78:79:FF": {
+   "name": "WLZ_BLENDFREI_MAX_WERT",
+   "values": {
+    "0": "RR04_vor_PVL",
+    "32771": "RR04",
+    "32772": "initwert",
+    "32775": "F01_F02_F03_F04",
+    "32797": "F15_F16_F25",
+    "32820": "F32_F33",
+    "9": "F10_F11"
+   }
+  },
+  "3002:7:8:FF": {
+   "name": "WLZ_MAX_WINKEL_MIN_LI",
+   "values": {
+    "100": "unbelegte_Baureihe",
+    "124": "F01_F02_F03_F04",
+    "144": "RR04",
+    "71": "F32_F33"
+   }
+  },
+  "3002:80:80:01": {
+   "name": "NOT_U_SENS_WLZ",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3002:80:80:02": {
+   "name": "NOT_SENS_DEF_SN_WLZ",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3002:80:80:04": {
+   "name": "NOT_SENS_NOK_S_WLZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:80:80:08": {
+   "name": "NOT_SCHR_NOK_S_WLZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:80:80:10": {
+   "name": "NOT_LIN_DEF_WLZ",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3002:80:80:20": {
+   "name": "NOT_SENS_NOK_N_WLZ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:80:80:40": {
+   "name": "NOT_SCHR_NOK_N_WLZ",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3002:80:80:80": {
+   "name": "NOT_USEN_NOK_NS_WLZ",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3002:81:82:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:83:98:FF": {
+   "name": "LV_WALZE_1",
+   "values": {
+    "170164549152864810019409594539642585090": "F01 RL oder 807",
+    "170164549152864810019411846337308852230": "RR04_ RL oder 807",
+    "170247627170271310597952719621986451459": "initwert",
+    "170247627170271310597960600923481964546": "F01 LL nicht 807",
+    "170289166178974560887233289363487129606": "RR04_ LL nicht 807",
+    "170289166178974560887238918863021342726": "RR04_ LL nicht 807",
+    "170351474692029436321153018129518526470": "RR04_ LL_vor_PVL",
+    "2139193029380332459294225203238": "F10_F11_Hella_RL oder 807",
+    "368658702241346317325087314071191605": "F32_F33_F15_F25_RL oder 807",
+    "633834971668249229662089248806": "F10_F11_Hella_LL nicht 807",
+    "72693265230688006233116053225275445": "F32_F33_F15_F25_LL_nicht 807"
+   }
+  },
+  "3002:99:114:FF": {
+   "name": "LV_WALZE_2",
+   "values": {
+    "170164548954796217196270778285336821828": "RR04_ LL_vor_PVL",
+    "207695518903360751292961953881325657": "F10_F11_Hella_LL nicht 807",
+    "207695518903360751292961953881915484": "F10_F11_Hella_RL oder 807",
+    "223271300256884261029077690794213487": "F32_F33_RL oder 807",
+    "223271300256884261029077858297938031": "F15_F25_RL oder 807",
+    "36346949535247762668363412202717293": "initwert",
+    "36346949546128288736552273656414317": "F01 RL oder 807",
+    "41539167171664806590818086716178524": "RR04_LL nicht 807",
+    "41539484084314900541656612606050396": "RR04_LL nicht 807"
+   }
+  },
+  "3002:9:10:FF": {
+   "name": "WLZ_MAX_WINKEL_PL_LI",
+   "values": {
+    "100": "F10_F11",
+    "111": "F32_F33",
+    "124": "F01_F02_F03_F04",
+    "144": "RR04",
+    "150": "unbelegte_Baureihe"
+   }
+  },
+  "3003:0:15:FF": {
+   "name": "1_Rampe_0",
+   "values": {
+    "31574745419848343060738006787046836966": "Hella_Schwenk3_AHL_Rampe_0",
+    "42561694694337515538521999020876892357": "AL_NMB_PL25_AHL_Rampe_0",
+    "51923623018510610322286827524923986070": "ZKW_AHL_BESCHL_0",
+    "54343189461285143855922549394728881879": "AL_AHL_BESCHL_0"
+   }
+  },
+  "3003:112:127:FF": {
+   "name": "1_Rampe_7",
+   "values": {
+    "10467828925549129560510073456123969536": "ZKW_AHL_BREMS_2",
+    "5690757356954171080869423976825225216": "Hella_Schwenk3_AHL_Rampe_7",
+    "7165478129774290266427521941083784475": "AL_AHL_BESCHL_7"
+   }
+  },
+  "3003:128:143:FF": {
+   "name": "1_Rampe_8",
+   "values": {
+    "0": "initwert",
+    "6734511072939229357677903876493935836": "AL_AHL_BESCHL_8"
+   }
+  },
+  "3003:144:159:FF": {
+   "name": "1_Rampe_9",
+   "values": {
+    "0": "initwert",
+    "6459315853355419982428290404289610972": "AL_AHL_BESCHL_9"
+   }
+  },
+  "3003:160:175:FF": {
+   "name": "1_Rampe_10",
+   "values": {
+    "0": "initwert",
+    "83077360275378393524835541098247621274": "AL_AHL_BREMS_0"
+   }
+  },
+  "3003:16:31:FF": {
+   "name": "1_Rampe_1",
+   "values": {
+    "10878018158825248277769061687452173809": "AL_NMB_PL25_AHL_Rampe_1",
+    "13733824927939498282322616506787497960": "Hella_Schwenk3_AHL_Rampe_1",
+    "19725836757955981119971925438823336510": "AL_AHL_BESCHL_1",
+    "20556597679032258772942724762211322615": "ZKW_AHL_BESCHL_1"
+   }
+  },
+  "3003:176:191:FF": {
+   "name": "1_Rampe_11",
+   "values": {
+    "0": "initwert",
+    "14092101413280843953192912438269183907": "AL_AHL_BREMS_1"
+   }
+  },
+  "3003:192:207:FF": {
+   "name": "1_Rampe_12",
+   "values": {
+    "0": "initwert",
+    "9803201300139496844530436815967946267": "AL_AHL_BREMS_2"
+   }
+  },
+  "3003:208:223:FF": {
+   "name": "1_Rampe_13",
+   "values": {
+    "0": "initwert",
+    "7944332958349833783511131198611588419": "AL_AHL_BREMS_3"
+   }
+  },
+  "3003:224:239:FF": {
+   "name": "1_Rampe_14",
+   "values": {
+    "0": "initwert",
+    "6885089187182707462301982371480339676": "AL_AHL_BREMS_4"
+   }
+  },
+  "3003:240:247:FF": {
+   "name": "1_Rampe_15",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:32:47:FF": {
+   "name": "1_Rampe_2",
+   "values": {
+    "10213399565696947400237222491733755524": "Hella_Schwenk3_AHL_Rampe_2",
+    "13178244410359924686655368551178831939": "AL_AHL_BESCHL_2",
+    "14081717215812184126506839228799453406": "ZKW_AHL_BESCHL_2",
+    "7643174115256141653951390934757408768": "AL_NMB_PL25_AHL_Rampe_2"
+   }
+  },
+  "3003:48:63:FF": {
+   "name": "1_Rampe_3",
+   "values": {
+    "10753407629602539346070085120328599332": "AL_AHL_BESCHL_3",
+    "11578995744505587418554004978124457984": "ZKW_AHL_BESCHL_3",
+    "8489532526810574214610092162254177707": "Hella_Schwenk3_AHL_Rampe_3"
+   }
+  },
+  "3003:64:79:FF": {
+   "name": "1_Rampe_4",
+   "values": {
+    "10556099715178304165089317487528380368": "ZKW_AHL_BESCHL_4",
+    "7419903845006474515486409361719690517": "Hella_Schwenk3_AHL_Rampe_4",
+    "9346274898237433097461349988135732837": "AL_AHL_BESCHL_4"
+   }
+  },
+  "3003:80:95:FF": {
+   "name": "1_Rampe_5",
+   "values": {
+    "51923521525261431325914654068776307488": "ZKW_AHL_BREMS_0",
+    "6677394460588777700901069954296710310": "Hella_Schwenk3_AHL_Rampe_5",
+    "8401263004851343039325423326913496539": "AL_AHL_BESCHL_5"
+   }
+  },
+  "3003:96:111:FF": {
+   "name": "1_Rampe_6",
+   "values": {
+    "13770169025195612430394947910072469498": "ZKW_AHL_BREMS_1",
+    "6116618160016011517940210809035097167": "Hella_Schwenk3_AHL_Rampe_6",
+    "7705484925996640249017269659656521072": "AL_AHL_BESCHL_6"
+   }
+  },
+  "3004:0:15:FF": {
+   "name": "2_Rampe_0",
+   "values": {
+    "54343131940653869144075299649571261127": "AL_LWR_0"
+   }
+  },
+  "3004:112:127:FF": {
+   "name": "2_Rampe_7",
+   "values": {
+    "2518301610334789443824200676839326160": "LEAR_WALZE_3",
+    "3234800942867197612574499213104119808": "RR04_WALZE_3",
+    "3234850777381419084842845552248881152": "RR04_WALZE_3",
+    "3401005386811652397986125287101694532": "ZKW_WALZE_3",
+    "4013705448263481442542348631926768302": "HELLA_WALZE_3"
+   }
+  },
+  "3004:128:143:FF": {
+   "name": "2_Rampe_8",
+   "values": {
+    "0": "initwer",
+    "2970038409208380873195379427029942792": "ZKW_WALZE_4"
+   }
+  },
+  "3004:144:159:FF": {
+   "name": "2_Rampe_9",
+   "values": {
+    "0": "initwert",
+    "2668880754572186044115439445642051584": "ZKW_WALZE_5"
+   }
+  },
+  "3004:160:175:FF": {
+   "name": "2_Rampe_10",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:16:31:FF": {
+   "name": "2_Rampe_1",
+   "values": {
+    "14320573171046911266154335207599900752": "AL_LWR_1"
+   }
+  },
+  "3004:176:191:FF": {
+   "name": "2_Rampe_11",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:192:207:FF": {
+   "name": "2_Rampe_12",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:208:223:FF": {
+   "name": "2_Rampe_13",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:224:239:FF": {
+   "name": "2_Rampe_14",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:240:247:FF": {
+   "name": "2_Rampe_15",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:32:47:FF": {
+   "name": "2_Rampe_2",
+   "values": {
+    "10701482284115494984613521221182686909": "AL_LWR_2"
+   }
+  },
+  "3004:48:63:FF": {
+   "name": "2_Rampe_3",
+   "values": {
+    "8775112973954887652362500842917332438": "AL_LWR_3"
+   }
+  },
+  "3004:64:79:FF": {
+   "name": "2_Rampe_4",
+   "values": {
+    "10384738864988017581130744308387218471": "RR04_WALZE_0",
+    "13946674871792240009011117559289218159": "ZKW_WALZE_0",
+    "16968634348047200024852810737675535562": "AL_SHT_NMB_PM25_0",
+    "23391559675503924225502604540028192195": "HELLA_WALZE_0",
+    "51923623018505771077101491917874138180": "LEAR_WALZE_0"
+   }
+  },
+  "3004:80:95:FF": {
+   "name": "2_Rampe_5",
+   "values": {
+    "13811692663175932995026870445066159020": "LEAR_WALZE_1",
+    "5233911372779510500347182357549941508": "RR04_WALZE_1",
+    "5576607719200260803280379819007214383": "ZKW_WALZE_1",
+    "5966034975029894135341137552604135424": "AL_SHT_NMB_PM25_1",
+    "7113548664309153756507450173657121751": "HELLA_WALZE_1"
+   }
+  },
+  "3004:96:111:FF": {
+   "name": "2_Rampe_6",
+   "values": {
+    "3894280481319315194341546913459405436": "RR04_WALZE_2",
+    "4107167742464729972925097925726110364": "ZKW_WALZE_2",
+    "4257739676803935703831338988761252340": "LEAR_WALZE_2",
+    "4937947361914463902359638901233550102": "HELLA_WALZE_2"
+   }
+  },
+  "3005:0:15:FF": {
+   "name": "Tagfahrlicht",
+   "values": {
+    "0": "initwert",
+    "15576890580440193370653836089425920": "F01 524 ECE",
+    "15576890580440193370935311066202112": "F01 552 US",
+    "15617613855982006866633012002619906": "F10",
+    "20769187438975013793987878579273728": "RR04_05_06_LED_US",
+    "20769187438975020999184332418646016": "F32_552_US",
+    "20769187438975020999465807395422208": "F01 552 ECE",
+    "20769187438975020999747282372067328": "F10_552",
+    "20769187440183939613321032777334784": "F25_524_ECE",
+    "20769187440183946819080436570128384": "F15_524_ECE",
+    "77884452896156301726399008889569280": "F25_524_ECE"
+   }
+  },
+  "3005:112:127:FF": {
+   "name": "Welcome Light 3",
+   "values": {
+    "0": "initwert",
+    "15576890579231267551039206006718464": "F01 524 ECE",
+    "15576921527732249684983127759716352": "F01 552 SAE",
+    "15576921527732249685546078484824064": "F01 524 SAE"
+   }
+  },
+  "3005:128:143:FF": {
+   "name": "Welcome Light 4",
+   "values": {
+    "0": "initwert",
+    "15842621836313591765796244445990170": "F01 524 ECE",
+    "15842652784866962652909501325577498": "F01 552 SAE",
+    "15842652784866962653472452050685210": "F01 524 SAE"
+   }
+  },
+  "3005:144:159:FF": {
+   "name": "Follow Me Home",
+   "values": {
+    "0": "initwert",
+    "15576890579231260345279802213924864": "F25_524_ECE",
+    "15576890579231267551039205956386816": "F10_524_ECE",
+    "15576890579231267551039206006718464": "F32_524_US",
+    "15576890579231267551039206008815616": "F15_552_ECE",
+    "15576921527732242479786674641698816": "RR04_05_06_LED_US",
+    "15576921527732242479786674692030464": "F25_552_US",
+    "15576921527732249684983127759716352": "F01 552 SAE",
+    "15576921527732249685546078434492416": "F10_524_US",
+    "15576921527732249685546078484824064": "F32_552_US",
+    "15576921527732249685546078486921216": "F15_552_US",
+    "15617613854773081047018381919912450": "F32_524_ECE",
+    "15617644803274063181525254398018050": "F15_524_ECE",
+    "77884452896156301726399007981568000": "F25_524_ECE",
+    "77884483831359099845144959537905664": "F25_552_US"
+   }
+  },
+  "3005:160:175:FF": {
+   "name": "Remote Light",
+   "values": {
+    "0": "initwert",
+    "15576890579231260345279802213924864": "F25_524_ECE",
+    "15576890579231267551039205956386816": "F10_524_ECE",
+    "15576890579231267551039206006718464": "F32_524_US",
+    "15576890579231267551039206008815616": "F15_552_ECE",
+    "15576890580440193370653835181424640": "F01 524 ECE",
+    "15576921527732242479786674641698816": "RR04_05_06_LED_US",
+    "15576921527732242479786674692030464": "F25_552_US",
+    "15576921527732249684983127759716352": "F01 552 SAE",
+    "15576921527732249685546078434492416": "F10_524_US",
+    "15576921527732249685546078484824064": "F32_552_US",
+    "15576921527732249685546078486921216": "F15_552_US",
+    "15617613854773073841258977355366914": "F15_524_ECE",
+    "77884452896156301726399007981568000": "F25_524_ECE",
+    "77884483831359099845144959537905664": "F25_552_US"
+   }
+  },
+  "3005:16:31:FF": {
+   "name": "Standlicht Modus 1",
+   "values": {
+    "0": "initwert",
+    "15576890579231260345279801442172928": "F07_552",
+    "15576890579231260345279802213924864": "F25_524_ECE",
+    "15576890579231267551039205956386816": "F10_524_ECE",
+    "15576890579231267551039206006718464": "F32_524_US",
+    "15576890579231267551039206008815616": "F15_552_ECE",
+    "15576890593738377394859004632825856": "F01 552 SAE",
+    "15576921527732242479786674641698816": "RR04_05_06_LED_US",
+    "15576921527732242479786674692030464": "F25_552_US",
+    "15576921527732249684983127759716352": "F01 552 ECE",
+    "15576921527732249685546078434492416": "F10_524_US",
+    "15576921527732249685546078484824064": "F32_552_US",
+    "15576921527732249685546078486921216": "F15_552_US",
+    "15617613854773081047018381919912450": "F32_524_ECE",
+    "15617644803274063181525254398018050": "F15_524_ECE",
+    "77884452896156301726399007981568000": "F25_524_ECE",
+    "77884483831359099845144959537905664": "F25_552_US"
+   }
+  },
+  "3005:176:191:FF": {
+   "name": "Fernlichtblinken",
+   "values": {
+    "0": "initwert",
+    "15576890580440186164612955640037376": "F25_524_US",
+    "15576890580440186164612957317758976": "F25_524_ECE",
+    "15576890580440193370372361110552576": "F32_524_ECE",
+    "15576890580440193370653836087328768": "F01 552 ECE",
+    "15576890593738377386133282032320512": "F01 524 ECE",
+    "72692156036412548274594708686241792": "F25_552_ECE",
+    "72692156036412548277972406729834496": "F32_552_US",
+    "72692156036412548277972408407556096": "RR04_05_06_LED_ECE",
+    "72692156036412555483731812200349696": "F32_552_ECE",
+    "77884452896156301726399007210536960": "F25_524_US",
+    "77884452896156301726399008887406592": "F25_524_ECE"
+   }
+  },
+  "3005:192:207:FF": {
+   "name": "DWA-Blinken",
+   "values": {
+    "0": "initwert",
+    "10384593735203542555502554930675712": "F25_524_ECE",
+    "10384593735203542555502556608397312": "F25_524_US",
+    "10384593735203549757602785703100416": "F15_524_US",
+    "10384593735203549761261960401190912": "F32_524_US",
+    "132933184172226790832932549408267042816": "RR04_05_06_LED_ECE",
+    "132933184172226790832932549408267894784": "F01 552 ECE",
+    "132933184172226790832932549409944764416": "F15_552_US",
+    "132933184172226790832936208582965133312": "F15_552_ECE",
+    "132933184172226790840138308813737558016": "F01 524 SAE",
+    "132938376469085325660564739079294353408": "F25_552_ECE",
+    "132938376469085325660564739080971223040": "F25_552_US",
+    "77884452896156301726399007210536960": "F25_524_ECE",
+    "77884452896156301726399008887406592": "F25_524_US"
+   }
+  },
+  "3005:208:223:FF": {
+   "name": "Panik-Modus",
+   "values": {
+    "0": "initwert",
+    "10384593735203542551843380232585216": "RR04_05_06_LED_ECE",
+    "10384593735203542555502554930675712": "F25_524_ECE",
+    "10384593735203542555502556608397312": "F25_524_US",
+    "10384593735203549757602785703100416": "F15_524_US",
+    "10384593735203549761261960401190912": "F32_524_US",
+    "132933184172226790832932549408267894784": "F01 552 ECE",
+    "132933184172226790832932549409944764416": "F15_552_US",
+    "132933184172226790832936208582965133312": "F01 524 ECE",
+    "132933184172226790840138308813737558016": "F01 524 SAE",
+    "132938376469085325660564739080971223040": "F25_552_US",
+    "77884452896156301726399007210536960": "F25_524_ECE",
+    "77884452896156301726399008887406592": "F25_524_US"
+   }
+  },
+  "3005:224:239:FF": {
+   "name": "Ueberfallalarm",
+   "values": {
+    "0": "initwert",
+    "10384593735203542551843380232585216": "F25_524_US",
+    "10384593735203542551843381910306816": "F25_524_ECE",
+    "10384593735203549757602785703100416": "F32_524_ECE",
+    "132933184172225581907112934780770058240": "F25_552_ECE",
+    "132933184172226790832932549409944764416": "F15_552_ECE",
+    "132933184172226790840138308813737558016": "F01 524 ECE",
+    "132938376469084116734745124451796516864": "F25_552_ECE",
+    "132995491734527999838658678436442013696": "RR04_05_06_LED_ECE",
+    "132995491734527999845864437840234807296": "F32_552_ECE",
+    "72692156036412548277972406729834496": "F32_552_US",
+    "77884452894947375906784379712700416": "F25_524_ECE",
+    "77884452896156301726399007210536960": "F25_524_US"
+   }
+  },
+  "3005:240:247:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3005:32:47:FF": {
+   "name": "Standlicht Modus 2",
+   "values": {
+    "0": "initwert",
+    "15576890579231260345279802213924864": "F25_524_ECE",
+    "15576890579231267551039205956386816": "F10_524_ECE",
+    "15576890579231267551039206006718464": "F32_524_US",
+    "15576890579231267551039206008815616": "F15_552_ECE",
+    "15576890593738377394859004632825856": "F01 552 SAE",
+    "15576921527732242479786674641698816": "RR04_05_06_LED_US",
+    "15576921527732242479786674692030464": "F25_552_ECE",
+    "15576921527732249684983127759716352": "F01 552 ECE",
+    "15576921527732249685546078434492416": "F10_524_US",
+    "15576921527732249685546078484824064": "F32_552_US",
+    "15576921527732249685546078486921216": "F15_552_US",
+    "15617613854773081047018381919912450": "F10_524_ECE",
+    "15617644803274063181525254398018050": "F10_524_US",
+    "77884452896156301726399007981568000": "F25_524_ECE",
+    "77884483831359099845144959537905664": "F25_552_US"
+   }
+  },
+  "3005:48:63:FF": {
+   "name": "Standlicht Modus 3",
+   "values": {
+    "0": "initwert",
+    "10384593720696432716749305112952832": "F32_552_US",
+    "10384593720696439922508709679595520": "F15_524_ECE",
+    "10384624669197422057015582157701120": "F15_524_US",
+    "15576890579231260345279801442172928": "F07_552",
+    "15576890579231267551039205956386816": "F10_524_ECE",
+    "15576890579231267551039206006718464": "F01 524 ECE",
+    "15576890593738370189099600840032256": "F01 552 SAE",
+    "15576921527732242479223723966922752": "F01 552 ECE",
+    "15576921527732242479786673920278528": "F01 524 SAE",
+    "15576921527732242479786674641698816": "RR04_05_06_LED_US",
+    "15576921527732249685546078434492416": "F10_524_US",
+    "15576921527732249685546078484824064": "F10_552",
+    "176538093193810916829725187647995904": "F25_524_ECE",
+    "176538093193810924035484592212541440": "F15_524_ECE",
+    "176538093193810924035484592214638592": "F15_524_ECE",
+    "176538124142311906169991464690647040": "F15_524_US",
+    "176538124142311906169991464692744192": "F15_524_US",
+    "176599178107118896260465904356426242": "F32_524_ECE",
+    "176599209055619885600732181399077378": "F15_524_ECE",
+    "77884452896156301726399007210536960": "F25_524_ECE"
+   }
+  },
+  "3005:64:79:FF": {
+   "name": "Parklicht",
+   "values": {
+    "0": "initwert",
+    "15576890579231260345279802163593216": "RR04_05_06_LED_US",
+    "15576890579231260345279802213924864": "F25_524_ECE",
+    "15576890579231267550476255281610752": "F01 552 SAE",
+    "15576890579231267551039205956386816": "F10_524",
+    "15576890579231267551039206006718464": "F32_552_US",
+    "15576890579231267551039206008815616": "F15_552_US",
+    "15617613854773081047018381919912450": "F15_524_ECE",
+    "77884452896156301726399007981568000": "F25_524_ECE"
+   }
+  },
+  "3005:80:95:FF": {
+   "name": "Welcome Light 1",
+   "values": {
+    "0": "initwert",
+    "15576890579231260345279802213924864": "F25_524_ECE",
+    "15576890579231267551039205956386816": "F10_524_ECE",
+    "15576890579231267551039206006718464": "F32_524_US",
+    "15576890579231267551039206008815616": "F15_552_ECE",
+    "15576921527732242479786674641698816": "RR04_05_06_LED_US",
+    "15576921527732242479786674692030464": "F25_552_US",
+    "15576921527732249684983127759716352": "F01 552 SAE",
+    "15576921527732249685546078434492416": "F10_524_US",
+    "15576921527732249685546078484824064": "F32_552_US",
+    "15576921527732249685546078486921216": "F15_552_US",
+    "15842621836313591765796244445990170": "F32_524_ECE",
+    "15842652784866962653472452050685210": "F15_524_ECE",
+    "77884452896156301726399007981568000": "F25_524_ECE",
+    "77884483831359099845144959537905664": "F25_552_US"
+   }
+  },
+  "3005:96:111:FF": {
+   "name": "Welcome Light 2",
+   "values": {
+    "0": "initwert",
+    "15576890579231267551039206006718464": "F01 524 ECE",
+    "15576921527732249684983127759716352": "F01 552 SAE",
+    "15576921527732249685546078484824064": "F01 524 SAE"
+   }
+  },
+  "3006:0:15:FF": {
+   "name": "Blinken",
+   "values": {
+    "0": "initwert",
+    "10384593735203542555502554930675712": "F25_524_ECE",
+    "132933184172226790832932267933291184128": "RR04_05_06_LED_US",
+    "132933184172226790832932549408267894784": "F01 552 SAE",
+    "132933184172226790832936208582965133312": "F25_552_US",
+    "132933184172226790832950282331800666112": "F15_552_US",
+    "132938376469085325660564739079294353408": "F25_552_ECE",
+    "77884452896156301726399007210536960": "F15_524_US"
+   }
+  },
+  "3006:16:31:FF": {
+   "name": "Seitenmarkierungsleuchte",
+   "values": {
+    "0": "initwert",
+    "77884452896156301726399007210536960": "F01 524 SAE",
+    "77884483828941248205915700417462272": "F01 552 SAE",
+    "77884483844657283860905879688642560": "F10_524_US"
+   }
+  },
+  "3006:32:247:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:0:1:FF": {
+   "name": "KAN_ZUORD_IDC",
+   "values": {
+    "0": "F32_524",
+    "1792": "F25_552",
+    "3840": "RR04_05_06"
+   }
+  },
+  "3007:101:102:FF": {
+   "name": "WERT_R_LED_LK_2",
+   "values": {
+    "0": "initwert",
+    "13315": "F32_552_ECE",
+    "56325": "F32"
+   }
+  },
+  "3007:103:104:FF": {
+   "name": "WERT_R_LED_LK_3",
+   "values": {
+    "0": "F01_LED",
+    "35850": "F32",
+    "56325": "F32_552_ECE"
+   }
+  },
+  "3007:105:106:FF": {
+   "name": "WERT_R_LED_LK_4",
+   "values": {
+    "0": "F01_LED",
+    "17430": "F10",
+    "35850": "F32_552_ECE",
+    "57365": "F32"
+   }
+  },
+  "3007:107:108:FF": {
+   "name": "WERT_R_LED_LK_5",
+   "values": {
+    "0": "F01_LED",
+    "57365": "F32_552_ECE"
+   }
+  },
+  "3007:109:110:FF": {
+   "name": "WERT_R_LED_LK_6",
+   "values": {
+    "0": "F01_LED"
+   }
+  },
+  "3007:10:10:FF": {
+   "name": "IDC_STROM_LK2",
+   "values": {
+    "0": "initwert",
+    "106": "F10_552",
+    "120": "F15_LED",
+    "21": "RR04_05_06_ECE",
+    "22": "RR04_05_06_ECE",
+    "47": "F32_LED_ECE",
+    "48": "F01_XEN",
+    "50": "RR04_05_06_ECE",
+    "68": "F32_LED_SAE",
+    "76": "F01_LED"
+   }
+  },
+  "3007:111:112:FF": {
+   "name": "WERT_R_LED_LK_7",
+   "values": {
+    "0": "F01_LED"
+   }
+  },
+  "3007:113:114:FF": {
+   "name": "WERT_R_TFL_LK_0",
+   "values": {
+    "0": "initwert",
+    "4135": "F32",
+    "44545": "F01_LED",
+    "47115": "F01_XEN",
+    "54785": "RR04_05_06"
+   }
+  },
+  "3007:115:116:FF": {
+   "name": "WERT_R_TFL_LK_1",
+   "values": {
+    "0": "initwert",
+    "13315": "F01_LED",
+    "31760": "F01_XEN",
+    "33315": "F15",
+    "57365": "F10",
+    "59395": "RR04_05_06"
+   }
+  },
+  "3007:117:118:FF": {
+   "name": "WERT_R_TFL_LK_2",
+   "values": {
+    "0": "initwert",
+    "15375": "F10",
+    "2055": "RR04_05_06",
+    "31775": "F15",
+    "50710": "F01_XEN",
+    "56325": "F01_LED"
+   }
+  },
+  "3007:119:120:FF": {
+   "name": "WERT_R_TFL_LK_3",
+   "values": {
+    "0": "F01_LED",
+    "17435": "F32",
+    "19485": "F25",
+    "2080": "F01_XEN",
+    "35850": "F10",
+    "58380": "RR04_05_06"
+   }
+  },
+  "3007:11:11:FF": {
+   "name": "IDC_STROM_LK3",
+   "values": {
+    "0": "initwert",
+    "102": "F15_LED",
+    "120": "F25 552",
+    "18": "RR04_05_06_ECE",
+    "40": "F32_552_ECE",
+    "60": "F32_552_SAE",
+    "96": "F10_552"
+   }
+  },
+  "3007:121:122:FF": {
+   "name": "WERT_R_TFL_LK_4",
+   "values": {
+    "0": "initwert",
+    "17435": "F25",
+    "23065": "F32"
+   }
+  },
+  "3007:123:124:FF": {
+   "name": "WERT_R_TFL_LK_5",
+   "values": {
+    "0": "initwert",
+    "23065": "F25",
+    "38935": "F32"
+   }
+  },
+  "3007:125:126:FF": {
+   "name": "WERT_R_TFL_LK_6",
+   "values": {
+    "0": "initwert",
+    "29205": "F32",
+    "38935": "F25"
+   }
+  },
+  "3007:127:128:FF": {
+   "name": "WERT_R_TFL_LK_7",
+   "values": {
+    "0": "initwert",
+    "29205": "F25",
+    "32275": "F32"
+   }
+  },
+  "3007:129:130:FF": {
+   "name": "WERT_R_TFL_LK_8",
+   "values": {
+    "0": "initwert",
+    "32275": "F25",
+    "45585": "F32"
+   }
+  },
+  "3007:12:12:FF": {
+   "name": "IDC_STROM_LK4",
+   "values": {
+    "0": "initwert",
+    "35": "F32_552_ECE",
+    "52": "F32_552_SAE",
+    "90": "F15_LED"
+   }
+  },
+  "3007:131:132:FF": {
+   "name": "WERT_R_TFL_LK_9",
+   "values": {
+    "0": "initwert",
+    "45585": "F25",
+    "46095": "F32"
+   }
+  },
+  "3007:133:134:FF": {
+   "name": "WERT_R_TFL_LK_10",
+   "values": {
+    "0": "initwert",
+    "38925": "F32",
+    "46095": "F25"
+   }
+  },
+  "3007:135:136:FF": {
+   "name": "WERT_R_TFL_LK_11",
+   "values": {
+    "0": "initwert",
+    "38925": "F25",
+    "49675": "F32"
+   }
+  },
+  "3007:137:138:FF": {
+   "name": "WERT_R_TFL_LK_12",
+   "values": {
+    "0": "initwert",
+    "49675": "F25"
+   }
+  },
+  "3007:139:140:FF": {
+   "name": "WERT_R_TFL_LK_13",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:13:13:FF": {
+   "name": "IDC_STROM_LK5",
+   "values": {
+    "0": "initwert",
+    "31": "F32_552_ECE"
+   }
+  },
+  "3007:141:141:FF": {
+   "name": "LED_VOLT_OFFSET",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:142:142:FF": {
+   "name": "TFL_VOLT_OFFSET",
+   "values": {
+    "0": "initwert",
+    "15": "F01_LED"
+   }
+  },
+  "3007:143:143:FF": {
+   "name": "I_OP_LOAD_BKL",
+   "values": {
+    "0": "initwert",
+    "10": "RR04_05_06",
+    "15": "RR04_05_06",
+    "17": "RR04_05_06",
+    "36": "F01_XEN",
+    "40": "F32_552_SAE",
+    "48": "F01_LED",
+    "53": "F01_LED",
+    "54": "F15_552",
+    "59": "F10_552",
+    "60": "F25_552",
+    "65": "F10_552"
+   }
+  },
+  "3007:144:144:FF": {
+   "name": "I_OP_LOAD_SML",
+   "values": {
+    "0": "initwert",
+    "10": "RR04_05_06",
+    "14": "F01_XEN",
+    "16": "F10_524_SAE",
+    "24": "RR04_05_06",
+    "3": "F01_LED",
+    "30": "F15_552_SAE",
+    "36": "F32_552",
+    "8": "F25_552_SAE"
+   }
+  },
+  "3007:145:145:FF": {
+   "name": "I_OP_LOAD_AZL",
+   "values": {
+    "0": "initwert",
+    "11": "F10_552",
+    "14": "F15_552",
+    "20": "F32_552",
+    "8": "F10_524"
+   }
+  },
+  "3007:146:146:FF": {
+   "name": "I_OV_LOAD_BKL",
+   "values": {
+    "0": "initwert",
+    "120": "RR04_05_06",
+    "124": "F32_552_SAE",
+    "150": "F01_LED",
+    "162": "F10_552",
+    "170": "F25_552",
+    "180": "F10_552",
+    "60": "RR04_05_06_ECE"
+   }
+  },
+  "3007:147:147:FF": {
+   "name": "I_OV_LOAD_SML",
+   "values": {
+    "0": "initwert",
+    "110": "RR04_05_06",
+    "115": "RR04_05_06",
+    "120": "F15_524_SAE",
+    "150": "F32_552_US",
+    "30": "F01_LED",
+    "50": "F10_552",
+    "55": "F10_524_SAE",
+    "60": "F25_552_SAE",
+    "64": "F10_552",
+    "70": "F07_R_SML_Falsch",
+    "80": "RR04_05_06",
+    "90": "F15_552_SAE",
+    "95": "F15_552_SAE"
+   }
+  },
+  "3007:148:148:FF": {
+   "name": "I_OV_LOAD_AZL",
+   "values": {
+    "0": "initwert",
+    "100": "F15_524",
+    "120": "F32_552_US",
+    "50": "F10_552",
+    "55": "F10_552",
+    "60": "F10_524",
+    "70": "F01_XEN",
+    "80": "F15_552"
+   }
+  },
+  "3007:149:149:FF": {
+   "name": "I_OP_LOAD_TFL",
+   "values": {
+    "0": "F01_XEN",
+    "51": "F01_LED"
+   }
+  },
+  "3007:14:14:FF": {
+   "name": "IDC_STROM_LK6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:150:150:FF": {
+   "name": "I_OV_LOAD_TFL",
+   "values": {
+    "0": "F01_XEN",
+    "110": "F01_LED"
+   }
+  },
+  "3007:151:151:FF": {
+   "name": "U_OP_LOAD_TFL",
+   "values": {
+    "0": "F01_LED",
+    "133": "F25_524",
+    "150": "F01_XEN",
+    "158": "F32_552",
+    "163": "F01_XEN",
+    "170": "F01_XEN",
+    "175": "F15_552",
+    "200": "F10_552",
+    "90": "F25"
+   }
+  },
+  "3007:152:152:FF": {
+   "name": "U_OV_LOAD_TFL",
+   "values": {
+    "0": "F01_LED",
+    "10": "F25",
+    "30": "RR04_05_06"
+   }
+  },
+  "3007:153:153:FF": {
+   "name": "LED_DC_DC_ERROR_LIMIT_DELTA_VOLTAGE_2HIGH",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3007:154:154:FF": {
+   "name": "LED_DC_DC_ERROR_LIMIT_DELTA_VOLAGE_2LOW",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3007:155:155:FF": {
+   "name": "LED_DC_DC_ERROR_DEBOUNCE",
+   "values": {
+    "10": "initwert"
+   }
+  },
+  "3007:156:156:FF": {
+   "name": "TFL_DC_DC_ERROR_LIMIT_DELTA_VOLTAGE_2HIGH",
+   "values": {
+    "0": "initwert",
+    "45": "F01_LED"
+   }
+  },
+  "3007:157:157:FF": {
+   "name": "TFL_DC_DC_ERROR_LIMIT_DELTA_VOLTAGE_2LOW",
+   "values": {
+    "0": "F01_LED"
+   }
+  },
+  "3007:158:158:FF": {
+   "name": "TFL_DC_DC_ERROR_LIMIT_DELTA_CURRENT_2HIGH",
+   "values": {
+    "0": "initwert",
+    "20": "RR04_05_06"
+   }
+  },
+  "3007:159:159:FF": {
+   "name": "TFL_DC_DC_ERROR_LIMIT_DELTA_CURRENT_2LOW",
+   "values": {
+    "0": "initwert",
+    "20": "F01_XEN",
+    "30": "F10_524"
+   }
+  },
+  "3007:15:15:FF": {
+   "name": "IDC_STROM_LK7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:160:160:FF": {
+   "name": "TFL_DC_DC_ERROR_DEBOUNCE",
+   "values": {
+    "10": "initwert"
+   }
+  },
+  "3007:161:161:FF": {
+   "name": "TFL_OVER_VOLTAGE_TURN_OFF_VOLTAGE",
+   "values": {
+    "80": "initwert"
+   }
+  },
+  "3007:162:162:FF": {
+   "name": "TFL_OVER_VOLTAGE_TURN_OFF_TIME",
+   "values": {
+    "10": "initwert"
+   }
+  },
+  "3007:163:163:01": {
+   "name": "SwitchOffLampAtPartialDefect_IDC",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3007:163:163:02": {
+   "name": "SwitchOffLampAtPartialDefect_SML",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3007:163:163:04": {
+   "name": "SwitchOffLampAtPartialDefect_AZL",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3007:163:163:08": {
+   "name": "SwitchOffLampAtPartialDefect_TFL",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3007:163:163:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:164:164:FF": {
+   "name": "GAMMA_KAN_0",
+   "values": {
+    "0": "initwert",
+    "30": "RR04_05_06"
+   }
+  },
+  "3007:165:165:FF": {
+   "name": "GAMMA_KAN_1",
+   "values": {
+    "0": "initwert",
+    "30": "RR04_05_06"
+   }
+  },
+  "3007:166:166:FF": {
+   "name": "GAMMA_KAN_2",
+   "values": {
+    "0": "initwert",
+    "30": "RR04_05_06"
+   }
+  },
+  "3007:167:167:FF": {
+   "name": "GAMMA_KAN_3",
+   "values": {
+    "0": "initwert",
+    "30": "RR04_05_06"
+   }
+  },
+  "3007:168:168:FF": {
+   "name": "GAMMA_KAN_4",
+   "values": {
+    "0": "initwert",
+    "30": "RR04_05_06"
+   }
+  },
+  "3007:169:169:FF": {
+   "name": "GAMMA_KAN_5",
+   "values": {
+    "0": "initwert",
+    "30": "RR04_05_06"
+   }
+  },
+  "3007:16:16:FF": {
+   "name": "SML_STROM_LK0",
+   "values": {
+    "0": "initwert",
+    "16": "F25_552_SAE",
+    "22": "F10_552",
+    "24": "F25_552_SAE",
+    "28": "F01_XEN",
+    "32": "F10_524_SAE",
+    "48": "RR04_05_06_US",
+    "6": "F01_LED",
+    "60": "F15_552_SAE",
+    "72": "F32_552_SAE"
+   }
+  },
+  "3007:170:170:FF": {
+   "name": "GAMMA_KAN_6",
+   "values": {
+    "0": "initwert",
+    "30": "RR04_05_06"
+   }
+  },
+  "3007:171:171:FF": {
+   "name": "GAMMA_KAN_7",
+   "values": {
+    "0": "initwert",
+    "29": "RR04_05_06",
+    "30": "F32"
+   }
+  },
+  "3007:172:172:FF": {
+   "name": "GAMMA_KAN_8",
+   "values": {
+    "0": "initwert",
+    "30": "F32"
+   }
+  },
+  "3007:173:173:FF": {
+   "name": "tflTeachInErrorLimitDeltaCurrent2High",
+   "values": {
+    "0": "initwert",
+    "20": "F01_LED"
+   }
+  },
+  "3007:174:174:FF": {
+   "name": "tflTeachInErrorLimitDeltaCurrent2Low",
+   "values": {
+    "0": "initwert",
+    "20": "F01_LED"
+   }
+  },
+  "3007:175:175:3F": {
+   "name": "tflVoltageGradient_mVperK",
+   "values": {
+    "0": "initwert",
+    "24": "F01_LED"
+   }
+  },
+  "3007:175:175:C0": {
+   "name": "tflVoltageGradientSensorSelect",
+   "values": {
+    "0": "initwert",
+    "1": "F01_LED"
+   }
+  },
+  "3007:176:176:0F": {
+   "name": "lowestTeachInTemperature_10degCp40",
+   "values": {
+    "0": "initwert",
+    "2": "F01_LED"
+   }
+  },
+  "3007:176:176:F0": {
+   "name": "highestTeachInTemperature_10degCm50",
+   "values": {
+    "0": "initwert",
+    "7": "F01_LED"
+   }
+  },
+  "3007:177:177:FF": {
+   "name": "teachInTemperatureRangeSensorSelectBits",
+   "values": {
+    "0": "initwert",
+    "31": "F01_LED"
+   }
+  },
+  "3007:178:178:FF": {
+   "name": "externalNtcType",
+   "values": {
+    "0": "F01",
+    "1": "RR04_05_06",
+    "2": "F10",
+    "3": "F32"
+   }
+  },
+  "3007:179:179:01": {
+   "name": "tflConverterOperatingMode",
+   "values": {
+    "0": "initwert",
+    "1": "F25"
+   }
+  },
+  "3007:179:179:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:17:17:FF": {
+   "name": "SML_STROM_LK1",
+   "values": {
+    "0": "initwert",
+    "18": "F10_552",
+    "24": "F01_XEN",
+    "26": "F10_524_SAE",
+    "5": "F01_LED",
+    "72": "F32_552_ECE"
+   }
+  },
+  "3007:180:247:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:18:18:FF": {
+   "name": "SML_STROM_LK2",
+   "values": {
+    "0": "initwert",
+    "14": "F10_552",
+    "20": "F01_XEN",
+    "22": "F10_524_SAE",
+    "3": "F01_LED"
+   }
+  },
+  "3007:19:19:FF": {
+   "name": "SML_STROM_LK3",
+   "values": {
+    "0": "initwert",
+    "10": "F10_552",
+    "18": "F10_524_SAE"
+   }
+  },
+  "3007:20:20:FF": {
+   "name": "SML_STROM_LK4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:21:21:FF": {
+   "name": "SML_STROM_LK5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:22:22:FF": {
+   "name": "SML_STROM_LK6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:23:23:FF": {
+   "name": "SML_STROM_LK7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:24:24:FF": {
+   "name": "AZL_STROM_LK0",
+   "values": {
+    "0": "initwert",
+    "16": "F10_552",
+    "19": "F10_524",
+    "28": "F15_552",
+    "40": "F32_552_SAE"
+   }
+  },
+  "3007:25:25:FF": {
+   "name": "AZL_STROM_LK1",
+   "values": {
+    "0": "initwert",
+    "14": "F10_552",
+    "16": "F10_524",
+    "19": "F01_LED",
+    "20": "F01_XEN",
+    "40": "F32_LED_SAE"
+   }
+  },
+  "3007:26:26:FF": {
+   "name": "AZL_STROM_LK2",
+   "values": {
+    "0": "initwert",
+    "14": "F10_524",
+    "16": "F01_LED",
+    "30": "F32_LED_SAE",
+    "40": "F32_LED_ECE"
+   }
+  },
+  "3007:27:27:FF": {
+   "name": "AZL_STROM_LK3",
+   "values": {
+    "0": "initwert",
+    "30": "F32_LED_SAE"
+   }
+  },
+  "3007:28:28:FF": {
+   "name": "AZL_STROM_LK4",
+   "values": {
+    "0": "initwert",
+    "24": "F32_LED_SAE",
+    "30": "F32_LED_ECE"
+   }
+  },
+  "3007:29:29:FF": {
+   "name": "AZL_STROM_LK5",
+   "values": {
+    "0": "initwert",
+    "24": "F32_552_ECE"
+   }
+  },
+  "3007:2:3:FF": {
+   "name": "KAN_ZUORD_SML",
+   "values": {
+    "0": "F32_524",
+    "8192": "F32_552_SAE"
+   }
+  },
+  "3007:30:30:FF": {
+   "name": "AZL_STROM_LK6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:31:31:FF": {
+   "name": "AZL_STROM_LK7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:32:32:FF": {
+   "name": "TFL_STROM_LK0",
+   "values": {
+    "0": "initwert",
+    "100": "F32_552",
+    "110": "F10_552",
+    "140": "F01_XEN",
+    "154": "F10_524",
+    "155": "F32_524",
+    "160": "F15_524",
+    "166": "F25",
+    "170": "F25",
+    "68": "F01_LED",
+    "70": "RR04_05_06_ECE",
+    "80": "RR04_05_06_ECE"
+   }
+  },
+  "3007:33:33:FF": {
+   "name": "TFL_STROM_LK1",
+   "values": {
+    "0": "initwert",
+    "104": "F01_XEN",
+    "134": "F10_524",
+    "165": "F25",
+    "53": "F01_LED",
+    "56": "RR04_05_06_ECE",
+    "63": "RR04_05_06_ECE",
+    "92": "F15_552",
+    "94": "F10_552",
+    "97": "F15_552"
+   }
+  },
+  "3007:34:34:FF": {
+   "name": "TFL_STROM_LK2",
+   "values": {
+    "0": "initwert",
+    "114": "F10_524",
+    "156": "F25",
+    "40": "RR04_05_06_ECE",
+    "47": "F01_LED",
+    "56": "RR04_05_06_ECE",
+    "82": "F10_552",
+    "88": "F15_552",
+    "92": "F15_552"
+   }
+  },
+  "3007:35:35:FF": {
+   "name": "TFL_STROM_LK3",
+   "values": {
+    "0": "initwert",
+    "150": "F25",
+    "30": "RR04_05_06_ECE",
+    "69": "F01_XEN",
+    "70": "F10_552",
+    "85": "F15_552",
+    "89": "F15_552",
+    "98": "F10_524"
+   }
+  },
+  "3007:36:36:FF": {
+   "name": "TFL_STROM_LK4",
+   "values": {
+    "0": "initwert",
+    "144": "F25",
+    "82": "F15_552",
+    "85": "F15_552"
+   }
+  },
+  "3007:37:37:FF": {
+   "name": "TFL_STROM_LK5",
+   "values": {
+    "0": "initwert",
+    "139": "F25",
+    "78": "F15_552",
+    "82": "F15_552"
+   }
+  },
+  "3007:38:38:FF": {
+   "name": "TFL_STROM_LK6",
+   "values": {
+    "0": "initwert",
+    "133": "F25",
+    "73": "F15_552",
+    "78": "F15_552"
+   }
+  },
+  "3007:39:39:FF": {
+   "name": "TFL_STROM_LK7",
+   "values": {
+    "0": "initwert",
+    "125": "F25",
+    "68": "F15_552",
+    "74": "F15_552"
+   }
+  },
+  "3007:40:40:FF": {
+   "name": "TFL_STROM_LK8",
+   "values": {
+    "0": "initwert",
+    "116": "F25",
+    "63": "F15_552",
+    "68": "F15_552"
+   }
+  },
+  "3007:41:41:FF": {
+   "name": "TFL_STROM_LK9",
+   "values": {
+    "0": "initwert",
+    "107": "F25",
+    "56": "F15_552",
+    "63": "F15_552"
+   }
+  },
+  "3007:42:42:FF": {
+   "name": "TFL_STROM_LK10",
+   "values": {
+    "0": "initwert",
+    "48": "F15_552",
+    "57": "F15_552",
+    "96": "F25"
+   }
+  },
+  "3007:43:43:FF": {
+   "name": "TFL_STROM_LK11",
+   "values": {
+    "0": "initwert",
+    "40": "F15_552",
+    "48": "F15_552",
+    "82": "F25"
+   }
+  },
+  "3007:44:44:FF": {
+   "name": "TFL_STROM_LK12",
+   "values": {
+    "0": "F15_552",
+    "40": "F15_552",
+    "68": "F25"
+   }
+  },
+  "3007:45:45:FF": {
+   "name": "TFL_STROM_LK13",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:46:46:FF": {
+   "name": "PEAKSTROM_TFL_POL_LOW_BRIGHT",
+   "values": {
+    "0": "F01_LED",
+    "100": "F15_552",
+    "105": "F15_552",
+    "110": "F10_552",
+    "116": "F10_552",
+    "140": "F01_XEN",
+    "154": "F10_524",
+    "160": "F15_524",
+    "170": "F25",
+    "172": "F25",
+    "48": "RR04_05_06",
+    "50": "F15_552",
+    "58": "F10_552",
+    "80": "RR04_05_06",
+    "86": "F25"
+   }
+  },
+  "3007:47:47:FF": {
+   "name": "PEAKSTROM_TFL_POL_HIGH_BRIGHT",
+   "values": {
+    "0": "initwert",
+    "100": "F15_552",
+    "105": "F32_552",
+    "110": "F10_552",
+    "116": "F10_552",
+    "140": "F01_XEN",
+    "154": "F10_524",
+    "155": "F15_524",
+    "160": "F32_524",
+    "166": "F25",
+    "170": "F25",
+    "172": "F25",
+    "80": "RR04_05_06",
+    "96": "F01_LED"
+   }
+  },
+  "3007:48:48:FF": {
+   "name": "PEAKSTROM_TFL_PO_BRIGHT_SCHWELLE",
+   "values": {
+    "20": "RR04_05_06",
+    "50": "F32"
+   }
+  },
+  "3007:49:49:FF": {
+   "name": "MIN_U_LED",
+   "values": {
+    "0": "initwert",
+    "37": "F15_524",
+    "40": "F01_XEN",
+    "50": "F32_552",
+    "52": "F10_524",
+    "63": "F15_552",
+    "65": "F25_552",
+    "75": "F10_552",
+    "80": "F01_LED"
+   }
+  },
+  "3007:4:5:FF": {
+   "name": "KAN_ZUORD_AZL",
+   "values": {
+    "0": "F15_524_F25_Versuchstraeger",
+    "16384": "F32_552_SAE"
+   }
+  },
+  "3007:50:50:FF": {
+   "name": "MAX_U_LED",
+   "values": {
+    "0": "initwert",
+    "100": "F01_LED",
+    "105": "F10_552",
+    "58": "F15_524",
+    "68": "RR04_05_06",
+    "74": "F32_552",
+    "76": "RR04_05_06",
+    "81": "F01_XEN",
+    "84": "F10_524",
+    "95": "F25 552",
+    "98": "F15_552"
+   }
+  },
+  "3007:51:51:FF": {
+   "name": "MIN_U_TFL",
+   "values": {
+    "0": "RR04_05_06",
+    "100": "F01_LED"
+   }
+  },
+  "3007:52:52:FF": {
+   "name": "MAX_U_TFL",
+   "values": {
+    "0": "F01_XEN",
+    "115": "F15_524",
+    "118": "F32_524",
+    "130": "F01_LED",
+    "133": "F10_524",
+    "134": "F15_552",
+    "150": "RR04_05_06",
+    "152": "F32_552",
+    "170": "F10_552",
+    "42": "F25",
+    "76": "F25"
+   }
+  },
+  "3007:53:54:FF": {
+   "name": "KAN_BIN_LK_COD",
+   "values": {
+    "0": "F01_LED",
+    "3840": "F01_XEN"
+   }
+  },
+  "3007:55:56:FF": {
+   "name": "MIN_BIN_COD_RESISTOR",
+   "values": {
+    "0": "F01_LED",
+    "12800": "F01_XEN"
+   }
+  },
+  "3007:57:58:FF": {
+   "name": "MAX_BIN_COD_RESISTOR",
+   "values": {
+    "0": "F01_LED",
+    "62465": "F01_XEN"
+   }
+  },
+  "3007:59:59:FF": {
+   "name": "BIN_BINNING_TABLE_SIZE",
+   "values": {
+    "0": "F01_LED",
+    "4": "F01_XEN"
+   }
+  },
+  "3007:60:91:FF": {
+   "name": "BIN_BINNING_TABLE_ENTRY",
+   "values": {
+    "0": "initwert",
+    "105315505544645704678469111607855114644100139806536676839981580288": "F01_XEN"
+   }
+  },
+  "3007:6:7:FF": {
+   "name": "KAN_ZUORD_TFL",
+   "values": {
+    "0": "initwert",
+    "32768": "RR04_05_06",
+    "32769": "F01_LED"
+   }
+  },
+  "3007:8:8:FF": {
+   "name": "IDC_STROM_LK0",
+   "values": {
+    "0": "initwert",
+    "106": "F01_LED",
+    "120": "F25_552",
+    "130": "F10_552",
+    "30": "RR04_05_06_ECE",
+    "34": "RR04_05_06_ECE",
+    "70": "RR04_05_06_ECE",
+    "80": "F32_552_SAE"
+   }
+  },
+  "3007:92:92:0F": {
+   "name": "LK_RES_KAN_0",
+   "values": {
+    "0": "F32_552",
+    "15": "F01_XEN",
+    "2": "F10_552",
+    "3": "RR04_05_06"
+   }
+  },
+  "3007:92:92:F0": {
+   "name": "LK_RES_KAN_1",
+   "values": {
+    "0": "F32_552",
+    "15": "F01_XEN",
+    "2": "F10_552",
+    "3": "RR04_05_06"
+   }
+  },
+  "3007:93:93:0F": {
+   "name": "LK_RES_KAN_2",
+   "values": {
+    "0": "F32_552",
+    "15": "F01_XEN",
+    "2": "F10_552",
+    "3": "RR04_05_06"
+   }
+  },
+  "3007:93:93:F0": {
+   "name": "LK_RES_KAN_3",
+   "values": {
+    "0": "F32_552",
+    "15": "F01_LED",
+    "3": "RR04_05_06"
+   }
+  },
+  "3007:94:94:0F": {
+   "name": "LK_RES_KAN_4",
+   "values": {
+    "0": "F01_LED",
+    "15": "F01_XEN"
+   }
+  },
+  "3007:94:94:F0": {
+   "name": "LK_RES_KAN_5",
+   "values": {
+    "15": "initwert",
+    "5": "F10_552"
+   }
+  },
+  "3007:95:95:0F": {
+   "name": "LK_RES_KAN_6",
+   "values": {
+    "15": "F15_524_F25_Versuchstraeger",
+    "6": "F32_552"
+   }
+  },
+  "3007:95:95:F0": {
+   "name": "LK_RES_KAN_7",
+   "values": {
+    "15": "F32_524",
+    "7": "F01_XEN"
+   }
+  },
+  "3007:96:96:0F": {
+   "name": "LK_RES_KAN_8",
+   "values": {
+    "15": "F01_XEN",
+    "8": "F01_LED"
+   }
+  },
+  "3007:96:96:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:97:98:FF": {
+   "name": "WERT_R_LED_LK_0",
+   "values": {
+    "0": "initwert",
+    "10240": "F32_552_ECE",
+    "44545": "F32"
+   }
+  },
+  "3007:99:100:FF": {
+   "name": "WERT_R_LED_LK_1",
+   "values": {
+    "0": "initwert",
+    "13315": "F32",
+    "44545": "F32_552_ECE"
+   }
+  },
+  "3007:9:9:FF": {
+   "name": "IDC_STROM_LK1",
+   "values": {
+    "0": "initwert",
+    "120": "F10_552",
+    "24": "RR04_05_06_ECE",
+    "26": "RR04_05_06_ECE",
+    "55": "F32_LED_ECE",
+    "60": "RR04_05_06_ECE",
+    "62": "F01_XEN",
+    "75": "F32_LED_SAE",
+    "88": "F01_LED"
+   }
+  },
+  "3008:0:0:01": {
+   "name": "Temp_Derat_Enable_IDC",
+   "values": {
+    "0": "F01 524",
+    "1": "F01 552"
+   }
+  },
+  "3008:0:0:02": {
+   "name": "Temp_Derat_Enable_SML",
+   "values": {
+    "0": "initwert",
+    "1": "F10 524_SAE"
+   }
+  },
+  "3008:0:0:04": {
+   "name": "Temp_Derat_Enable_AZL",
+   "values": {
+    "0": "initwert",
+    "1": "F32 552"
+   }
+  },
+  "3008:0:0:08": {
+   "name": "Temp_Derat_Enable_TFL",
+   "values": {
+    "0": "F01 524",
+    "1": "F10 524"
+   }
+  },
+  "3008:0:0:10": {
+   "name": "Temp_Derat_Enable_LED_DC/DC",
+   "values": {
+    "0": "F01 524",
+    "1": "F01 552"
+   }
+  },
+  "3008:0:0:20": {
+   "name": "Temp_Derat_Enable_TFL_DC/DC",
+   "values": {
+    "0": "F01 524",
+    "1": "F01 552"
+   }
+  },
+  "3008:0:0:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:100:100:FF": {
+   "name": "Temperatur_LED_DC_DC_2",
+   "values": {
+    "0": "F01 524",
+    "160": "F01 552"
+   }
+  },
+  "3008:101:101:FF": {
+   "name": "Temperatur_LED_DC_DC_3",
+   "values": {
+    "0": "F01 524",
+    "200": "F01 552"
+   }
+  },
+  "3008:102:102:FF": {
+   "name": "Temperatur_LED_DC_DC_4",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:103:103:FF": {
+   "name": "Temperatur_LED_DC_DC_5",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:104:104:FF": {
+   "name": "Wert_Temp_Derat_LED_DC_DC_1",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:105:105:FF": {
+   "name": "Wert_Temp_Derat_LED_DC_DC_2",
+   "values": {
+    "0": "F01 524",
+    "2": "F01 552"
+   }
+  },
+  "3008:106:106:FF": {
+   "name": "Wert_Temp_Derat_LED_DC_DC_3",
+   "values": {
+    "0": "F01 524",
+    "3": "F01 552"
+   }
+  },
+  "3008:107:107:FF": {
+   "name": "Wert_Temp_Derat_LED_DC_DC_4",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:108:108:FF": {
+   "name": "Wert_Temp_Derat_LED_DC_DC_5",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:109:109:FF": {
+   "name": "Voltage_LED_DC_DC_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:10:10:FF": {
+   "name": "Temp_Derat_Ramp_Time_TFL",
+   "values": {
+    "0": "F01 524",
+    "1": "F10 552"
+   }
+  },
+  "3008:110:110:FF": {
+   "name": "Voltage_LED_DC_DC_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:111:111:FF": {
+   "name": "Voltage_LED_DC_DC_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:112:112:FF": {
+   "name": "Voltage_LED_DC_DC_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:113:113:FF": {
+   "name": "Voltage_LED_DC_DC_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:114:114:FF": {
+   "name": "Wert_Voltage_Derat_LED_DC_DC_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:115:115:FF": {
+   "name": "Wert_Voltage_Derat_LED_DC_DC_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:116:116:FF": {
+   "name": "Wert_Voltage_Derat_LED_DC_DC_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:117:117:FF": {
+   "name": "Wert_Voltage_Derat_LED_DC_DC_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:118:118:FF": {
+   "name": "Wert_Voltage_Derat_LED_DC_DC_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:119:119:FF": {
+   "name": "Temperatur_TFL_DC_DC_1",
+   "values": {
+    "0": "F01 524",
+    "105": "F01 552"
+   }
+  },
+  "3008:11:11:FF": {
+   "name": "Temp_Derat_Ramp_Time_LED_DC_DC",
+   "values": {
+    "0": "F01 524",
+    "1": "F01 552"
+   }
+  },
+  "3008:120:120:FF": {
+   "name": "Temperatur_TFL_DC_DC_2",
+   "values": {
+    "0": "F01 524",
+    "130": "F01 552"
+   }
+  },
+  "3008:121:121:FF": {
+   "name": "Temperatur_TFL_DC_DC_3",
+   "values": {
+    "0": "F01 524",
+    "165": "F01 552"
+   }
+  },
+  "3008:122:122:FF": {
+   "name": "Temperatur_TFL_DC_DC_4",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:123:123:FF": {
+   "name": "Temperatur_TFL_DC_DC_5",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:124:124:FF": {
+   "name": "Wert_Temp_Derat_TFL_DC_DC_1",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:125:125:FF": {
+   "name": "Wert_Temp_Derat_TFL_DC_DC_2",
+   "values": {
+    "0": "F01 524",
+    "6": "F01 552"
+   }
+  },
+  "3008:126:126:FF": {
+   "name": "Wert_Temp_Derat_TFL_DC_DC_3",
+   "values": {
+    "0": "F01 524",
+    "12": "F01 552"
+   }
+  },
+  "3008:127:127:FF": {
+   "name": "Wert_Temp_Derat_TFL_DC_DC_4",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:128:128:FF": {
+   "name": "Wert_Temp_Derat_TFL_DC_DC_5",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:129:129:FF": {
+   "name": "Voltage_TFL_DC_DC_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:12:12:FF": {
+   "name": "Temp_Derat_Ramp_Time_TFL_DC_DC",
+   "values": {
+    "0": "F01 524",
+    "1": "F01 552"
+   }
+  },
+  "3008:130:130:FF": {
+   "name": "Voltage_TFL_DC_DC_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:131:131:FF": {
+   "name": "Voltage_TFL_DC_DC_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:132:132:FF": {
+   "name": "Voltage_TFL_DC_DC_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:133:133:FF": {
+   "name": "Voltage_TFL_DC_DC_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:134:134:FF": {
+   "name": "Wert_Voltage_Derat_TFL_DC_DC_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:135:135:FF": {
+   "name": "Wert_Voltage_Derat_TFL_DC_DC_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:136:136:FF": {
+   "name": "Wert_Voltage_Derat_TFL_DC_DC_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:137:137:FF": {
+   "name": "Wert_Voltage_Derat_TFL_DC_DC_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:138:138:FF": {
+   "name": "Wert_Voltage_Derat_TFL_DC_DC_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:139:139:FF": {
+   "name": "DTC_Temperature_1_ECU",
+   "values": {
+    "160": "initwert"
+   }
+  },
+  "3008:13:13:FF": {
+   "name": "Volt_Derat_Ramp_Time_IDC",
+   "values": {
+    "0": "F01 524",
+    "1": "F01 552"
+   }
+  },
+  "3008:140:140:FF": {
+   "name": "DTC_Temperature_1_IDC",
+   "values": {
+    "160": "initwert"
+   }
+  },
+  "3008:141:141:FF": {
+   "name": "DTC_Temperature_1_SML",
+   "values": {
+    "160": "initwert"
+   }
+  },
+  "3008:142:142:FF": {
+   "name": "DTC_Temperature_1_AZL",
+   "values": {
+    "160": "initwert"
+   }
+  },
+  "3008:143:143:FF": {
+   "name": "DTC_Temperature_1_TFL",
+   "values": {
+    "160": "initwert"
+   }
+  },
+  "3008:144:144:FF": {
+   "name": "DTC_Temperature_2_ECU",
+   "values": {
+    "160": "initwert"
+   }
+  },
+  "3008:145:145:FF": {
+   "name": "DTC_Temperature_2_IDC",
+   "values": {
+    "160": "initwert"
+   }
+  },
+  "3008:146:146:FF": {
+   "name": "DTC_Temperature_2_SML",
+   "values": {
+    "160": "initwert"
+   }
+  },
+  "3008:147:147:FF": {
+   "name": "DTC_Temperature_2_AZL",
+   "values": {
+    "160": "initwert"
+   }
+  },
+  "3008:148:148:FF": {
+   "name": "DTC_Temperature_2_TFL",
+   "values": {
+    "160": "initwert"
+   }
+  },
+  "3008:149:247:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:14:14:FF": {
+   "name": "Volt_Derat_Ramp_Time_SML",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:15:15:FF": {
+   "name": "Volt_Derat_Ramp_Time_AZL",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:16:16:FF": {
+   "name": "Volt_Derat_Ramp_Time_TFL",
+   "values": {
+    "0": "initwert",
+    "1": "F01 524"
+   }
+  },
+  "3008:17:17:FF": {
+   "name": "Volt_Derat_Ramp_Time_LED_DC_DC",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:18:18:FF": {
+   "name": "Volt_Derat_Ramp_Time_TFL_DC_DC",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:19:19:FF": {
+   "name": "Temperatur_IDC_1",
+   "values": {
+    "0": "F01 524",
+    "130": "F10 552",
+    "135": "F32 552",
+    "145": "F25 552",
+    "150": "F25 552"
+   }
+  },
+  "3008:1:1:01": {
+   "name": "Volt_Derat_Enable_IDC",
+   "values": {
+    "0": "F01 524",
+    "1": "F01 552"
+   }
+  },
+  "3008:1:1:02": {
+   "name": "Volt_Derat_Enable_SML",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:1:1:04": {
+   "name": "Volt_Derat_Enable_AZL",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:1:1:08": {
+   "name": "Volt_Derat_Enable_TFL",
+   "values": {
+    "0": "initwert",
+    "1": "F01 524"
+   }
+  },
+  "3008:1:1:10": {
+   "name": "Volt_Derat_Enable_LED_DC/DC",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:1:1:20": {
+   "name": "Volt_Derat_Enable_TFL_DC/DC",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:1:1:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:20:20:FF": {
+   "name": "Temperatur_IDC_2",
+   "values": {
+    "0": "F01 524",
+    "140": "F10 552",
+    "145": "F15 552",
+    "150": "F32 552",
+    "160": "F25 552",
+    "165": "F25 552"
+   }
+  },
+  "3008:21:21:FF": {
+   "name": "Temperatur_IDC_3",
+   "values": {
+    "0": "F01 524",
+    "150": "F10 552",
+    "155": "F15 552",
+    "160": "F32 552",
+    "190": "F25 552"
+   }
+  },
+  "3008:22:22:FF": {
+   "name": "Temperatur_IDC_4",
+   "values": {
+    "0": "F01 524",
+    "152": "F01 552",
+    "190": "F32 552"
+   }
+  },
+  "3008:23:23:FF": {
+   "name": "Temperatur_IDC_5",
+   "values": {
+    "0": "F01 524",
+    "160": "F01 552"
+   }
+  },
+  "3008:24:24:FF": {
+   "name": "Wert_Temp_Derat_IDC_1",
+   "values": {
+    "0": "F01 524",
+    "106": "F01 552",
+    "120": "F15 552",
+    "130": "F10 552",
+    "80": "F32_552"
+   }
+  },
+  "3008:25:25:FF": {
+   "name": "Wert_Temp_Derat_IDC_2",
+   "values": {
+    "0": "F01 524",
+    "100": "F10 552",
+    "108": "F15 552",
+    "50": "F32 552",
+    "84": "F25 552",
+    "96": "F01 552"
+   }
+  },
+  "3008:26:26:FF": {
+   "name": "Wert_Temp_Derat_IDC_3",
+   "values": {
+    "0": "F01 524",
+    "40": "F32 552",
+    "50": "F10 552",
+    "60": "F25 552",
+    "72": "F01 552",
+    "96": "F15 552"
+   }
+  },
+  "3008:27:27:FF": {
+   "name": "Wert_Temp_Derat_IDC_4",
+   "values": {
+    "0": "F01 524",
+    "40": "F32 552",
+    "50": "F10 552",
+    "60": "F01 552",
+    "96": "F15 552"
+   }
+  },
+  "3008:28:28:FF": {
+   "name": "Wert_Temp_Derat_IDC_5",
+   "values": {
+    "0": "F01 524",
+    "60": "F01 552"
+   }
+  },
+  "3008:29:29:FF": {
+   "name": "Voltage_IDC_1",
+   "values": {
+    "0": "F01 524",
+    "29": "F01 552"
+   }
+  },
+  "3008:2:2:01": {
+   "name": "Temp_Derat_Curve_Delta_V_IDC",
+   "values": {
+    "0": "F32 552"
+   }
+  },
+  "3008:2:2:02": {
+   "name": "Temp_Derat_Curve_Delta_V_SML",
+   "values": {
+    "0": "F32 552"
+   }
+  },
+  "3008:2:2:04": {
+   "name": "Temp_Derat_Curve_Delta_V_AZL",
+   "values": {
+    "0": "F32 552"
+   }
+  },
+  "3008:2:2:08": {
+   "name": "Temp_Derat_Curve_Delta_V_TFL",
+   "values": {
+    "0": "F32 552",
+    "1": "F01 552"
+   }
+  },
+  "3008:2:2:10": {
+   "name": "Temp_Derat_Curve_Delta_V_LED_DC/DC",
+   "values": {
+    "0": "F01 524",
+    "1": "F01 552"
+   }
+  },
+  "3008:2:2:20": {
+   "name": "Temp_Derat_Curve_Delta_V_TFL_DC/DC",
+   "values": {
+    "0": "F01 524",
+    "1": "F01 552"
+   }
+  },
+  "3008:2:2:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:30:30:FF": {
+   "name": "Voltage_IDC_2",
+   "values": {
+    "0": "F01 524",
+    "40": "F01 552"
+   }
+  },
+  "3008:31:31:FF": {
+   "name": "Voltage_IDC_3",
+   "values": {
+    "0": "F01 524",
+    "81": "F01 552"
+   }
+  },
+  "3008:32:32:FF": {
+   "name": "Voltage_IDC_4",
+   "values": {
+    "0": "F01 524",
+    "82": "F01 552"
+   }
+  },
+  "3008:33:33:FF": {
+   "name": "Voltage_IDC_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:34:34:FF": {
+   "name": "Wert_Voltage_Derat_IDC_1",
+   "values": {
+    "0": "F01 524",
+    "12": "F15 552",
+    "13": "F10 552",
+    "73": "F01 552",
+    "8": "F32 552"
+   }
+  },
+  "3008:35:35:FF": {
+   "name": "Wert_Voltage_Derat_IDC_2",
+   "values": {
+    "0": "F01 552",
+    "120": "F15 552",
+    "130": "F10 552",
+    "80": "F32 552"
+   }
+  },
+  "3008:36:36:FF": {
+   "name": "Wert_Voltage_Derat_IDC_3",
+   "values": {
+    "0": "F01 552",
+    "120": "F15 552",
+    "130": "F10 552",
+    "80": "F32 552"
+   }
+  },
+  "3008:37:37:FF": {
+   "name": "Wert_Voltage_Derat_IDC_4",
+   "values": {
+    "0": "initwert",
+    "106": "F01 552"
+   }
+  },
+  "3008:38:38:FF": {
+   "name": "Wert_Voltage_Derat_IDC_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:39:39:FF": {
+   "name": "Temperatur_SML_1",
+   "values": {
+    "0": "initwert",
+    "135": "F15_524",
+    "145": "F10 524_SAE",
+    "150": "F25 552 SAE",
+    "153": "F10 552",
+    "155": "F32 552"
+   }
+  },
+  "3008:3:3:01": {
+   "name": "Volt_Derat_Curve_Delta_V_IDC",
+   "values": {
+    "0": "F32 552",
+    "1": "F01 552"
+   }
+  },
+  "3008:3:3:02": {
+   "name": "Volt_Derat_Curve_Delta_V_SML",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:3:3:04": {
+   "name": "Volt_Derat_Curve_Delta_V_AZL",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:3:3:08": {
+   "name": "Volt_Derat_Curve_Delta_V_TFL",
+   "values": {
+    "0": "Folgederivate",
+    "1": "F01 552"
+   }
+  },
+  "3008:3:3:10": {
+   "name": "Volt_Derat_Curve_Delta_V_LED_DC/DC",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:3:3:20": {
+   "name": "Volt_Derat_Curve_Delta_V_TFL_DC/DC",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:3:3:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:40:40:FF": {
+   "name": "Temperatur_SML_2",
+   "values": {
+    "0": "initwert",
+    "150": "F15_524",
+    "155": "F10 524_SAE",
+    "157": "F10 552",
+    "160": "F15 552",
+    "165": "F25 552 SAE"
+   }
+  },
+  "3008:41:41:FF": {
+   "name": "Temperatur_SML_3",
+   "values": {
+    "0": "initwert",
+    "165": "F32 552",
+    "190": "F10 552"
+   }
+  },
+  "3008:42:42:FF": {
+   "name": "Temperatur_SML_4",
+   "values": {
+    "0": "initwert",
+    "190": "F32 552"
+   }
+  },
+  "3008:43:43:FF": {
+   "name": "Temperatur_SML_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:44:44:FF": {
+   "name": "Wert_Temp_Derat_SML_1",
+   "values": {
+    "0": "initwert",
+    "16": "F10 552",
+    "32": "F10 524_SAE",
+    "60": "F15 552",
+    "72": "F32 552"
+   }
+  },
+  "3008:45:45:FF": {
+   "name": "Wert_Temp_Derat_SML_2",
+   "values": {
+    "0": "initwert",
+    "10": "F10 524_SAE",
+    "11": "F25 552 SAE",
+    "30": "F15_524",
+    "54": "F32 552"
+   }
+  },
+  "3008:46:46:FF": {
+   "name": "Wert_Temp_Derat_SML_3",
+   "values": {
+    "0": "initwert",
+    "10": "F10 524_SAE",
+    "30": "F15_524",
+    "36": "F32 552",
+    "48": "F15 552",
+    "8": "F25 552 SAE"
+   }
+  },
+  "3008:47:47:FF": {
+   "name": "Wert_Temp_Derat_SML_4",
+   "values": {
+    "0": "initwert",
+    "36": "F32 552",
+    "48": "F15 552"
+   }
+  },
+  "3008:48:48:FF": {
+   "name": "Wert_Temp_Derat_SML_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:49:49:FF": {
+   "name": "Voltage_SML_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:4:4:0F": {
+   "name": "Sensorauswahl_IDC",
+   "values": {
+    "0": "F01 524",
+    "2": "F01 552",
+    "5": "F10 552"
+   }
+  },
+  "3008:4:4:F0": {
+   "name": "Sensorauswahl_SML",
+   "values": {
+    "0": "initwert",
+    "2": "F15 524",
+    "5": "F15 552"
+   }
+  },
+  "3008:50:50:FF": {
+   "name": "Voltage_SML_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:51:51:FF": {
+   "name": "Voltage_SML_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:52:52:FF": {
+   "name": "Voltage_SML_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:53:53:FF": {
+   "name": "Voltage_SML_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:54:54:FF": {
+   "name": "Wert_Voltage_Derat_SML_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:55:55:FF": {
+   "name": "Wert_Voltage_Derat_SML_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:56:56:FF": {
+   "name": "Wert_Voltage_Derat_SML_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:57:57:FF": {
+   "name": "Wert_Voltage_Derat_SML_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:58:58:FF": {
+   "name": "Wert_Voltage_Derat_SML_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:59:59:FF": {
+   "name": "Temperatur_AZL_1",
+   "values": {
+    "0": "initwert",
+    "135": "F15_524",
+    "145": "F10 524",
+    "155": "F32 552"
+   }
+  },
+  "3008:5:5:0F": {
+   "name": "Sensorauswahl_AZL",
+   "values": {
+    "0": "initwert",
+    "2": "F15 524",
+    "5": "F32 552"
+   }
+  },
+  "3008:5:5:F0": {
+   "name": "Sensorauswahl_TFL",
+   "values": {
+    "0": "F01 524",
+    "3": "F10 524",
+    "4": "F15 524"
+   }
+  },
+  "3008:60:60:FF": {
+   "name": "Temperatur_AZL_2",
+   "values": {
+    "0": "initwert",
+    "150": "F15_524",
+    "155": "F10 524",
+    "160": "F32 552"
+   }
+  },
+  "3008:61:61:FF": {
+   "name": "Temperatur_AZL_3",
+   "values": {
+    "0": "initwert",
+    "165": "F32 552",
+    "190": "F15_524"
+   }
+  },
+  "3008:62:62:FF": {
+   "name": "Temperatur_AZL_4",
+   "values": {
+    "0": "initwert",
+    "190": "F32 552"
+   }
+  },
+  "3008:63:63:FF": {
+   "name": "Temperatur_AZL_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:64:64:FF": {
+   "name": "Wert_Temp_Derat_AZL_1",
+   "values": {
+    "0": "initwert",
+    "16": "F10 524",
+    "28": "F15 552",
+    "40": "F32 552"
+   }
+  },
+  "3008:65:65:FF": {
+   "name": "Wert_Temp_Derat_AZL_2",
+   "values": {
+    "0": "initwert",
+    "10": "F10 524",
+    "25": "F15 552",
+    "26": "F15_524",
+    "36": "F32 552"
+   }
+  },
+  "3008:66:66:FF": {
+   "name": "Wert_Temp_Derat_AZL_3",
+   "values": {
+    "0": "initwert",
+    "10": "F10 524",
+    "22": "F15 552",
+    "26": "F15_524",
+    "32": "F32 552"
+   }
+  },
+  "3008:67:67:FF": {
+   "name": "Wert_Temp_Derat_AZL_4",
+   "values": {
+    "0": "initwert",
+    "22": "F15 552",
+    "32": "F32 552"
+   }
+  },
+  "3008:68:68:FF": {
+   "name": "Wert_Temp_Derat_AZL_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:69:69:FF": {
+   "name": "Voltage_AZL_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:6:6:0F": {
+   "name": "Sensorauswahl_LED_DC_DC",
+   "values": {
+    "0": "F01 524",
+    "2": "F01 552"
+   }
+  },
+  "3008:6:6:F0": {
+   "name": "Sensorauswahl_TFL_DC_DC",
+   "values": {
+    "0": "F01 524",
+    "4": "F01 552"
+   }
+  },
+  "3008:70:70:FF": {
+   "name": "Voltage_AZL_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:71:71:FF": {
+   "name": "Voltage_AZL_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:72:72:FF": {
+   "name": "Voltage_AZL_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:73:73:FF": {
+   "name": "Voltage_AZL_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:74:74:FF": {
+   "name": "Wert_Voltage_Derat_AZL_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:75:75:FF": {
+   "name": "Wert_Voltage_Derat_AZL_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:76:76:FF": {
+   "name": "Wert_Voltage_Derat_AZL_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:77:77:FF": {
+   "name": "Wert_Voltage_Derat_AZL_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:78:78:FF": {
+   "name": "Wert_Voltage_Derat_AZL_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:79:79:FF": {
+   "name": "Temperatur_TFL_1",
+   "values": {
+    "0": "F01 524",
+    "130": "F32 524",
+    "135": "F01 552",
+    "145": "F10 552",
+    "155": "F15 552"
+   }
+  },
+  "3008:7:7:FF": {
+   "name": "Temp_Derat_Ramp_Time_IDC",
+   "values": {
+    "0": "F01 524",
+    "1": "F01 552"
+   }
+  },
+  "3008:80:80:FF": {
+   "name": "Temperatur_TFL_2",
+   "values": {
+    "0": "F01 524",
+    "140": "F32 524",
+    "145": "F15_524",
+    "150": "F01 552",
+    "155": "F10 552",
+    "165": "F15 552"
+   }
+  },
+  "3008:81:81:FF": {
+   "name": "Temperatur_TFL_3",
+   "values": {
+    "0": "F01 524",
+    "170": "F01 552",
+    "190": "F10 552"
+   }
+  },
+  "3008:82:82:FF": {
+   "name": "Temperatur_TFL_4",
+   "values": {
+    "0": "F01 524",
+    "190": "F01 552"
+   }
+  },
+  "3008:83:83:FF": {
+   "name": "Temperatur_TFL_5",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:84:84:FF": {
+   "name": "Wert_Temp_Derat_TFL_1",
+   "values": {
+    "0": "F01 552",
+    "100": "F32 552",
+    "110": "F10 552",
+    "154": "F10 524",
+    "155": "F32 524",
+    "160": "F15_524",
+    "166": "F25",
+    "70": "RR04_05_06"
+   }
+  },
+  "3008:85:85:FF": {
+   "name": "Wert_Temp_Derat_TFL_2",
+   "values": {
+    "0": "F01 524",
+    "119": "F25 524",
+    "136": "F25 552",
+    "144": "F25 524",
+    "21": "RR04_05_06",
+    "60": "F10 552",
+    "7": "F01 552",
+    "80": "F32 552"
+   }
+  },
+  "3008:86:86:FF": {
+   "name": "Wert_Temp_Derat_TFL_3",
+   "values": {
+    "0": "F01 524",
+    "21": "F01 552",
+    "60": "F10 552",
+    "80": "F32 552",
+    "85": "F25"
+   }
+  },
+  "3008:87:87:FF": {
+   "name": "Wert_Temp_Derat_TFL_4",
+   "values": {
+    "0": "F01 524",
+    "35": "F01 552"
+   }
+  },
+  "3008:88:88:FF": {
+   "name": "Wert_Temp_Derat_TFL_5",
+   "values": {
+    "0": "F01 552"
+   }
+  },
+  "3008:89:89:FF": {
+   "name": "Voltage_TFL_1",
+   "values": {
+    "0": "initwert",
+    "29": "F01 524"
+   }
+  },
+  "3008:8:8:FF": {
+   "name": "Temp_Derat_Ramp_Time_SML",
+   "values": {
+    "0": "initwert",
+    "1": "F10 552"
+   }
+  },
+  "3008:90:90:FF": {
+   "name": "Voltage_TFL_2",
+   "values": {
+    "0": "initwert",
+    "40": "F01 524"
+   }
+  },
+  "3008:91:91:FF": {
+   "name": "Voltage_TFL_3",
+   "values": {
+    "0": "initwert",
+    "81": "F01 524",
+    "90": "F15_552"
+   }
+  },
+  "3008:92:92:FF": {
+   "name": "Voltage_TFL_4",
+   "values": {
+    "0": "initwert",
+    "82": "F01 524",
+    "91": "F15_552"
+   }
+  },
+  "3008:93:93:FF": {
+   "name": "Voltage_TFL_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:94:94:FF": {
+   "name": "Wert_Voltage_Derat_TFL_1",
+   "values": {
+    "0": "initwert",
+    "10": "F32 552",
+    "11": "F10 552",
+    "126": "F01 524",
+    "15": "F10 524",
+    "16": "F15 524",
+    "60": "F01 552"
+   }
+  },
+  "3008:95:95:FF": {
+   "name": "Wert_Voltage_Derat_TFL_2",
+   "values": {
+    "0": "F01 552",
+    "100": "F32 552",
+    "110": "F10 552",
+    "154": "F10 524",
+    "160": "F32 524",
+    "166": "F25"
+   }
+  },
+  "3008:96:96:FF": {
+   "name": "Wert_Voltage_Derat_TFL_3",
+   "values": {
+    "0": "F01 552",
+    "100": "F32 552",
+    "110": "F10 552",
+    "154": "F10 524",
+    "160": "F32 524",
+    "166": "F25"
+   }
+  },
+  "3008:97:97:FF": {
+   "name": "Wert_Voltage_Derat_TFL_4",
+   "values": {
+    "0": "initwert",
+    "140": "F01 524",
+    "68": "F01 552"
+   }
+  },
+  "3008:98:98:FF": {
+   "name": "Wert_Voltage_Derat_TFL_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:99:99:FF": {
+   "name": "Temperatur_LED_DC_DC_1",
+   "values": {
+    "0": "F01 524",
+    "80": "F01 552"
+   }
+  },
+  "3008:9:9:FF": {
+   "name": "Temp_Derat_Ramp_Time_AZL",
+   "values": {
+    "0": "initwert",
+    "1": "F32 552"
+   }
+  },
+  "306A:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "306B:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Licht_Basis_System",
+  "3001": "SM_Daten_AHL_LWR",
+  "3002": "SM_Daten_WALZE",
+  "3003": "1_Rampen",
+  "3004": "2_Rampen",
+  "3005": "Leuchtmittelmatrix 1",
+  "3006": "Leuchtmittelmatrix 2",
+  "3007": "LED_Daten",
+  "3008": "LED_Derating",
+  "306A": "CAF_ID",
+  "306B": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

@@ -1,0 +1,3436 @@
+{
+ "functions": {
+  "3000:0:0:01": {
+   "name": "Powerdownruecknahme",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "initwert"
+   }
+  },
+  "3000:0:0:02": {
+   "name": "SA_Nachlaufzeit",
+   "values": {
+    "0": "Wert_00",
+    "1": "Wert_15"
+   }
+  },
+  "3000:0:0:1C": {
+   "name": "SA_Klemmen_FKT",
+   "values": {
+    "0": "Klemme_30",
+    "1": "Klemme_R",
+    "2": "Klemme_15",
+    "3": "Modus_FA_SLV"
+   }
+  },
+  "3000:0:0:20": {
+   "name": "Anschluss_Klemme",
+   "values": {
+    "0": "KL_30",
+    "1": "KL_30B"
+   }
+  },
+  "3000:0:0:40": {
+   "name": "TTB_Enable",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:80": {
+   "name": "SA_Konfig_SHZ",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:01": {
+   "name": "SA_Konfig_SKL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:02": {
+   "name": "SA_Konfig_AS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:04": {
+   "name": "SA_Konfig_LD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:08": {
+   "name": "SA_Konfig_MS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:10": {
+   "name": "SA_Konfig_SKL_Regelung",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:20": {
+   "name": "UEKB_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "vor_aktiv"
+   }
+  },
+  "3000:1:1:40": {
+   "name": "EA_Hilfe",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:80": {
+   "name": "Kunden_Memory",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:01": {
+   "name": "Gentleman",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:02": {
+   "name": "Fernbedienung_BF",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3000:2:2:04": {
+   "name": "Automl_KHV_SIH_Paket_FOND",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:08": {
+   "name": "Automl_Rest_POS_FOND",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:F0": {
+   "name": "Verstell_Schalter_Typ",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:3:3:01": {
+   "name": "Lehnenver_Kontakt",
+   "values": {
+    "0": "nicht_vorhanden",
+    "1": "vorhanden"
+   }
+  },
+  "3000:3:3:02": {
+   "name": "FEH_Schalter",
+   "values": {
+    "0": "nicht_vorhanden",
+    "1": "vorhanden"
+   }
+  },
+  "3000:3:3:04": {
+   "name": "Nachlauf_Schalter",
+   "values": {
+    "0": "Wert_00",
+    "1": "Wert_15"
+   }
+  },
+  "3000:3:3:08": {
+   "name": "SVS_Klemmend",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:10": {
+   "name": "PIA_Portierung",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:20": {
+   "name": "LS_Timeout_TTB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:C0": {
+   "name": "Suchbeleuchtung_Offset",
+   "values": {
+    "0": "Klemme_30",
+    "1": "Klemme_R",
+    "2": "Klemme_15"
+   }
+  },
+  "3000:4:4:03": {
+   "name": "Funktionsbeleuchtung_Offset",
+   "values": {
+    "0": "Wert_00",
+    "1": "Wert_15",
+    "3": "Wert_Dauer"
+   }
+  },
+  "3000:4:4:FC": {
+   "name": "VAR_ID_SVS",
+   "values": {
+    "0": "Wert_0ms",
+    "37": "Wert_740ms"
+   }
+  },
+  "3000:5:5:03": {
+   "name": "KF_LKV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "KL_30F"
+   }
+  },
+  "3000:5:5:04": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3000:5:5:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:0:0:3F": {
+   "name": "SA_Konfig_SAL",
+   "values": {
+    "1": "aktiv",
+    "12": "LIN_Schalter_mit_Memory",
+    "18": "4_Kanal_Schalter_LD",
+    "19": "4_Kanal_Schalter_LD",
+    "2": "4_Kanal_Schalter",
+    "8": "LIN_Schalter"
+   }
+  },
+  "3001:0:0:40": {
+   "name": "KHV_Einbauhilfe",
+   "values": {
+    "0": "Wert_00",
+    "1": "Wert_01"
+   }
+  },
+  "3001:0:0:80": {
+   "name": "Airbag_POS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:1:1:03": {
+   "name": "Crashdaten_POS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "Wert_30",
+    "3": "Wert_45"
+   }
+  },
+  "3001:1:1:7C": {
+   "name": "AutoVerst_aktiv_bei_UEKB_def",
+   "values": {
+    "2": "Wert_07",
+    "7": "Wert_07"
+   }
+  },
+  "3001:1:1:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:2:2:FF": {
+   "name": "MAX_Motor_Laufzeit",
+   "values": {
+    "16": "Wert_0x10",
+    "17": "Wert_0x11",
+    "18": "Wert_0x12_M5_BK2_Lord_li",
+    "2": "Wert_0x02",
+    "20": "Wert_0x14",
+    "21": "Wert_0x15",
+    "22": "Wert_0x16_M5_BK2_Lord_re",
+    "24": "Wert_0x18",
+    "25": "Wert_0x19",
+    "255": "Wert_0xFF",
+    "28": "Wert_0x1C_RR04_RR05",
+    "29": "Wert_0x1D_RR04_RR05",
+    "3": "Wert_0x03",
+    "30": "Wert_0x1E_RR04_ohneSA455_LCI_0714",
+    "31": "Wert_0x1F_RR04_ohneSA455_LCI_0714",
+    "33": "Wert_0x21_M5_BK2_li",
+    "34": "Wert_0x22_M5_BK2_re",
+    "39": "Wert_0x27_F85_F86",
+    "4": "initwert",
+    "41": "Wert_0x29_F85_F86",
+    "5": "Wert_0x05",
+    "6": "Wert_0x06",
+    "7": "Wert_0x07",
+    "8": "Wert_0x08",
+    "9": "Wert_0x09"
+   }
+  },
+  "3001:3:3:FF": {
+   "name": "Motor_Schutz_Hysterese",
+   "values": {
+    "255": "Wert_0xFF"
+   }
+  },
+  "3001:4:4:FF": {
+   "name": "LKV_BEREICH",
+   "values": {
+    "25": "Wert_25"
+   }
+  },
+  "3001:5:5:FF": {
+   "name": "LNV_BEREICH",
+   "values": {
+    "5": "Wert_5"
+   }
+  },
+  "3001:6:7:FF": {
+   "name": "SLV_2_FEH_START_ZEIT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:0:0:03": {
+   "name": "Zeit_ST3_nach_ST2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "vor_aktiv",
+    "2": "zurueck_aktiv",
+    "3": "beide_aktiv"
+   }
+  },
+  "3002:0:0:04": {
+   "name": "Zieltemp_Stufe_1_KI",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:0:0:08": {
+   "name": "Zieltemp_Stufe_2_KI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:10": {
+   "name": "Zieltemp_Stufe_3_KI",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3002:0:0:20": {
+   "name": "ABST_ENDT_VOR_PH_2_KI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:40": {
+   "name": "PWR_Limit_Theta1_KI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:80": {
+   "name": "PWR_Limit_Time1_KI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:10:11:FF": {
+   "name": "PWR_Limit_PWM_Max_LE",
+   "values": {
+    "40": "Wert_01"
+   }
+  },
+  "3002:12:13:FF": {
+   "name": "MAX_PWM_PH_1_LE",
+   "values": {
+    "1000": "Wert_1000"
+   }
+  },
+  "3002:14:15:FF": {
+   "name": "REGLER_INIT_LE",
+   "values": {
+    "2802": "Wert_2802"
+   }
+  },
+  "3002:16:17:FF": {
+   "name": "MIN_T_n_MIN",
+   "values": {
+    "3000": "Wert_3000"
+   }
+  },
+  "3002:18:18:FF": {
+   "name": "Zeitfenster_fuer_MIN_T",
+   "values": {
+    "15": "initwert"
+   }
+  },
+  "3002:19:19:FF": {
+   "name": "P_Reglerfaktor",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:1:1:01": {
+   "name": "PWR_Limit_Theta2_KI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:02": {
+   "name": "PWR_Limit_Time2_KI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:04": {
+   "name": "PWR_Limit_PWM_Max_KI",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:08": {
+   "name": "MAX_PWM_PH_1_KI",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:10": {
+   "name": "REGLER_INIT_KI",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:E0": {
+   "name": "Zieltemp_Stufe_1_LE",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:2:2:FF": {
+   "name": "Zieltemp_Stufe_2_LE",
+   "values": {
+    "5": "initwert"
+   }
+  },
+  "3002:3:4:FF": {
+   "name": "Zieltemp_Stufe_3_LE",
+   "values": {
+    "120": "Wert_12_F007",
+    "34": "Wert_3_4_F001"
+   }
+  },
+  "3002:5:6:FF": {
+   "name": "ABST_ENDT_VOR_PH_2_LE",
+   "values": {
+    "40": "Wert_4"
+   }
+  },
+  "3002:7:7:FF": {
+   "name": "PWR_Limit_Theta1_LE",
+   "values": {
+    "80": "Wert_80"
+   }
+  },
+  "3002:8:8:FF": {
+   "name": "PWR_Limit_Time1_LE",
+   "values": {
+    "60": "Wert_60"
+   }
+  },
+  "3002:9:9:0F": {
+   "name": "PWR_Limit_Theta2_LE",
+   "values": {
+    "4": "initwert"
+   }
+  },
+  "3002:9:9:F0": {
+   "name": "PWR_Limit_Time2_LE",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3003:0:0:01": {
+   "name": "UEKB_MAX_WEG_NOT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:02": {
+   "name": "UEKB_POS2_WART",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:04": {
+   "name": "UEKB_MAX_PER_FAKT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:0:0:F8": {
+   "name": "UEKB_I_SLR_UP",
+   "values": {
+    "2": "FRONT_F25",
+    "3": "FRONT_BK2",
+    "4": "FRONT_LGIS"
+   }
+  },
+  "3003:100:100:FF": {
+   "name": "LKV_BLOCKERKENNUNG_PAR4",
+   "values": {
+    "0": "Wert_01"
+   }
+  },
+  "3003:101:101:FF": {
+   "name": "LKV_BLOCKERKENNUNG_PAR5",
+   "values": {
+    "14": "LGIS",
+    "17": "BK2",
+    "26": "Wert_01"
+   }
+  },
+  "3003:102:103:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:10:10:FF": {
+   "name": "UEKB_S1_ADA_INIT",
+   "values": {
+    "42": "Wert_01"
+   }
+  },
+  "3003:11:12:FF": {
+   "name": "UEKB_S1_SCHW20",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:13:13:01": {
+   "name": "UEKB_S1_ADA_UPD",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:02": {
+   "name": "UEKB_S1_A_LAUF_LIMIT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:13:13:04": {
+   "name": "UEKB_S1_NULL_POS",
+   "values": {
+    "0": "nicht_invertiert",
+    "1": "invertiert"
+   }
+  },
+  "3003:13:13:F8": {
+   "name": "UEKB_S1_BACK_POS",
+   "values": {
+    "1": "FRONT_BK2",
+    "14": "FRONT_F25",
+    "2": "FRONT_LGIS",
+    "3": "FRONT_BK2"
+   }
+  },
+  "3003:14:14:FF": {
+   "name": "UEKB_S1_ADA_REVK_LEN",
+   "values": {
+    "1": "FRONT_BK2",
+    "10": "FRONT_F25",
+    "2": "FRONT_L6"
+   }
+  },
+  "3003:15:16:FF": {
+   "name": "UEKB_S1_ADA_REVK",
+   "values": {
+    "509": "FRONT_F25",
+    "56": "FRONT_L7",
+    "65": "FRONT_BK2",
+    "82": "FRONT_L6",
+    "86": "FRONT_LU_UKL",
+    "98": "FRONT_LGIS"
+   }
+  },
+  "3003:17:18:FF": {
+   "name": "UEKB_S1_REV_WEG",
+   "values": {
+    "421": "FRONT_LU_UKL",
+    "473": "FRONT_L6",
+    "614": "FRONT_L7",
+    "645": "FRONT_F25",
+    "740": "FRONT_BK2",
+    "798": "FRONT_LGIS",
+    "799": "FRONT_BK2",
+    "823": "FRONT_BK2"
+   }
+  },
+  "3003:19:19:FF": {
+   "name": "UEKB_S2_ID2_REF_ADR",
+   "values": {
+    "18": "BK2",
+    "53": "Wert_01"
+   }
+  },
+  "3003:1:1:FF": {
+   "name": "UEKB_I_SLR_DN",
+   "values": {
+    "3": "FOND_F01_F02_F03_F04",
+    "4": "FRONT_F25",
+    "5": "FRONT_BK2",
+    "6": "FRONT_LGIS"
+   }
+  },
+  "3003:20:20:FF": {
+   "name": "UEKB_S2_ADA_INIT",
+   "values": {
+    "6": "Wert_01"
+   }
+  },
+  "3003:21:21:FF": {
+   "name": "UEKB_S2_SCHW20",
+   "values": {
+    "5": "Wert_01"
+   }
+  },
+  "3003:22:22:FF": {
+   "name": "UEKB_S2_ADA_UPD",
+   "values": {
+    "0": "Wert_01"
+   }
+  },
+  "3003:23:23:FF": {
+   "name": "UEKB_S2_A_LAUF_LIMIT",
+   "values": {
+    "37": "BK2",
+    "66": "Wert_01"
+   }
+  },
+  "3003:24:25:FF": {
+   "name": "UEKB_S2_NULL_POS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:26:26:01": {
+   "name": "UEKB_S2_BACK_POS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:26:26:02": {
+   "name": "UEKB_S2_ADA_REVK_LEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:26:26:04": {
+   "name": "UEKB_S2_ADA_REVK",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:26:26:F8": {
+   "name": "UEKB_S2_REV_WEG",
+   "values": {
+    "11": "FRONT_BK2",
+    "17": "FRONT_LGIS_RR05",
+    "26": "FOND_F07",
+    "7": "FRONT_LGIS",
+    "8": "FOND_F01_F02_F03_F04",
+    "9": "FRONT_F25"
+   }
+  },
+  "3003:27:27:FF": {
+   "name": "UEKB_KONFIG_VER",
+   "values": {
+    "34": "FOND_F07",
+    "4": "FRONT_LGIS",
+    "5": "FRONT_F25",
+    "6": "FRONT_BK2"
+   }
+  },
+  "3003:28:29:FF": {
+   "name": "LNV_VERSTELLWEG_PHYS",
+   "values": {
+    "100": "FOND_F01_F02_F03_F04",
+    "1125": "FOND_F07",
+    "280": "FRONT_LGIS",
+    "540": "FRONT_F25",
+    "580": "FRONT_L6",
+    "588": "FRONT_LU_UKL",
+    "630": "FRONT_BK2"
+   }
+  },
+  "3003:2:3:FF": {
+   "name": "UEKB_I_WINOFFS",
+   "values": {
+    "100": "FOND_F07",
+    "223": "FRONT_BK2_RR4",
+    "230": "FRONT_F10_ALLRAD",
+    "232": "FRONT_BK2_F15_US",
+    "240": "FRONT_LGIS_US",
+    "245": "FRONT_MFS_L6",
+    "248": "FRONT_BK2_F07_US",
+    "250": "FRONT_LU_UKL",
+    "251": "FRONT_F25",
+    "263": "FRONT_BK2",
+    "70": "FOND_F01_F02_F03_F04"
+   }
+  },
+  "3003:30:31:FF": {
+   "name": "LNV_VERSTELLWEG_HALL",
+   "values": {
+    "1195": "FRONT_L6",
+    "1350": "FRONT_F25",
+    "1392": "FRONT_BK2",
+    "1431": "FRONT_BK2",
+    "282": "FOND_F01_F02_F03_F04",
+    "935": "FRONT_LGIS",
+    "975": "FRONT_LU_UKL",
+    "995": "FOND_F07"
+   }
+  },
+  "3003:32:32:FF": {
+   "name": "LNV_BLOCKERKENNUNG_PAR1",
+   "values": {
+    "32": "BK2",
+    "37": "Wert_01"
+   }
+  },
+  "3003:33:33:FF": {
+   "name": "LNV_BLOCKERKENNUNG_PAR2",
+   "values": {
+    "7": "Wert_01"
+   }
+  },
+  "3003:34:34:FF": {
+   "name": "LNV_BLOCKERKENNUNG_PAR3",
+   "values": {
+    "7": "Wert_01"
+   }
+  },
+  "3003:35:35:FF": {
+   "name": "LNV_BLOCKERKENNUNG_PAR4",
+   "values": {
+    "0": "Wert_01"
+   }
+  },
+  "3003:36:36:FF": {
+   "name": "LNV_BLOCKERKENNUNG_PAR5",
+   "values": {
+    "35": "BK2",
+    "39": "Wert_01"
+   }
+  },
+  "3003:37:38:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:39:39:01": {
+   "name": "SNV_MOTOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:39:39:02": {
+   "name": "SNV_HALL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:39:39:04": {
+   "name": "SNV_DREHRICHTUNG",
+   "values": {
+    "0": "nicht_invertiert",
+    "1": "invertiert"
+   }
+  },
+  "3003:39:39:F8": {
+   "name": "SNV_SOFTBLOCK_DISTANZ_PHYS",
+   "values": {
+    "1": "FRONT_BK2",
+    "12": "FRONT_F25",
+    "2": "FRONT_L7",
+    "5": "FRONT_LGIS"
+   }
+  },
+  "3003:40:40:FF": {
+   "name": "SNV_MAX_TOLERANZ_PHYS",
+   "values": {
+    "1": "FRONT_L6",
+    "13": "FRONT_F25",
+    "2": "FRONT_BK2",
+    "5": "FRONT_LGIS"
+   }
+  },
+  "3003:41:42:FF": {
+   "name": "SNV_VERSTELLWEG_PHYS",
+   "values": {
+    "483": "FRONT_F25",
+    "59": "FRONT_L6",
+    "62": "FOND_F01_F02_F03_F04",
+    "70": "FRONT_LU_UKL"
+   }
+  },
+  "3003:43:44:FF": {
+   "name": "SNV_VERSTELLWEG_HALL",
+   "values": {
+    "181": "FRONT_LGIS",
+    "188": "FRONT_LU_UKL",
+    "422": "FOND_F01_F02_F03_F04",
+    "433": "FRONT_BK2",
+    "493": "FRONT_F25",
+    "499": "FRONT_BK2",
+    "612": "FRONT_L6"
+   }
+  },
+  "3003:45:45:FF": {
+   "name": "SNV_BLOCKERKENNUNG_PAR1",
+   "values": {
+    "18": "Wert_02",
+    "28": "Wert_01",
+    "6": "BK2"
+   }
+  },
+  "3003:46:46:FF": {
+   "name": "SNV_BLOCKERKENNUNG_PAR2",
+   "values": {
+    "6": "Wert_01"
+   }
+  },
+  "3003:47:47:FF": {
+   "name": "SNV_BLOCKERKENNUNG_PAR3",
+   "values": {
+    "4": "Wert_01"
+   }
+  },
+  "3003:48:48:FF": {
+   "name": "SNV_BLOCKERKENNUNG_PAR4",
+   "values": {
+    "0": "Wert_01"
+   }
+  },
+  "3003:49:49:FF": {
+   "name": "SNV_BLOCKERKENNUNG_PAR5",
+   "values": {
+    "17": "BK2",
+    "40": "Wert_02",
+    "48": "Wert_01"
+   }
+  },
+  "3003:4:5:FF": {
+   "name": "UEKB_ADAP_LIMIT",
+   "values": {
+    "285": "FOND_F01_F02_F03_F04",
+    "402": "FOND_F07",
+    "519": "FRONT_LGIS_US",
+    "541": "FRONT_LGIS",
+    "543": "FRONT_L7_2_TUERER",
+    "598": "FRONT_BK2_RR4_US",
+    "612": "FRONT_F10_ALLRAD",
+    "623": "FRONT_BK2_F15_US",
+    "651": "FRONT_MFS_L6",
+    "666": "FRONT_BK2_F07_US",
+    "700": "FRONT_BK2_RR4_ECE",
+    "706": "FRONT_BK2",
+    "708": "FRONT_LU_UKL",
+    "815": "FRONT_F25",
+    "986": "FRONT_BASIS_L6"
+   }
+  },
+  "3003:50:51:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:52:52:01": {
+   "name": "KHV_MOTOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:52:52:02": {
+   "name": "KHV_HALL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:52:52:04": {
+   "name": "KHV_DREHRICHTUNG",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:52:52:F8": {
+   "name": "KHV_SOFTBLOCK_DISTANZ_PHYS",
+   "values": {
+    "2": "FRONT_BK2"
+   }
+  },
+  "3003:53:53:FF": {
+   "name": "KHV_MAX_TOLERANZ_PHYS",
+   "values": {
+    "3": "FRONT_BK2"
+   }
+  },
+  "3003:54:55:FF": {
+   "name": "KHV_VERSTELLWEG_PHYS",
+   "values": {
+    "107": "FRONT_MFS_L6",
+    "50": "FRONT_BK2_US",
+    "60": "FOND_F01_F02_F03_F04",
+    "80": "FRONT_BK2"
+   }
+  },
+  "3003:56:57:FF": {
+   "name": "KHV_VERSTELLWEG_HALL",
+   "values": {
+    "232": "FRONT_BK2_US",
+    "277": "FOND_F01_F02_F03_F04",
+    "283": "FOND_F07",
+    "360": "FRONT_BK2",
+    "368": "FRONT_BASIS_L6",
+    "371": "FRONT_BK2",
+    "492": "FRONT_MFS_L6"
+   }
+  },
+  "3003:58:58:FF": {
+   "name": "KHV_BLOCKERKENNUNG_PAR1",
+   "values": {
+    "12": "LGIS",
+    "15": "Wert_01"
+   }
+  },
+  "3003:59:59:FF": {
+   "name": "KHV_BLOCKERKENNUNG_PAR2",
+   "values": {
+    "4": "Wert_01"
+   }
+  },
+  "3003:60:60:FF": {
+   "name": "KHV_BLOCKERKENNUNG_PAR3",
+   "values": {
+    "3": "Wert_01"
+   }
+  },
+  "3003:61:61:FF": {
+   "name": "KHV_BLOCKERKENNUNG_PAR4",
+   "values": {
+    "0": "Wert_01"
+   }
+  },
+  "3003:62:62:FF": {
+   "name": "KHV_BLOCKERKENNUNG_PAR5",
+   "values": {
+    "25": "BK2",
+    "26": "Wert_01"
+   }
+  },
+  "3003:63:64:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:65:65:01": {
+   "name": "STV_MOTOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:65:65:02": {
+   "name": "STV_HALL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:65:65:04": {
+   "name": "STV_DREHRICHTUNG",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:65:65:F8": {
+   "name": "STV_SOFTBLOCK_DISTANZ_PHYS",
+   "values": {
+    "3": "FRONT_BK2",
+    "4": "FRONT_LGIS"
+   }
+  },
+  "3003:66:66:FF": {
+   "name": "STV_MAX_TOLERANZ_PHYS",
+   "values": {
+    "3": "FRONT_BK2",
+    "5": "FRONT_L6",
+    "6": "FRONT_LGIS"
+   }
+  },
+  "3003:67:68:FF": {
+   "name": "STV_VERSTELLWEG_PHYS",
+   "values": {
+    "60": "FRONT_BK2",
+    "70": "FRONT_L6"
+   }
+  },
+  "3003:69:70:FF": {
+   "name": "STV_VERSTELLWEG_HALL",
+   "values": {
+    "121": "FRONT_LGIS",
+    "196": "FRONT_L6",
+    "279": "FRONT_BK2",
+    "288": "FRONT_BK2"
+   }
+  },
+  "3003:6:6:FF": {
+   "name": "UEKB_ADAP_CLR_DELTA",
+   "values": {
+    "24": "Wert_01"
+   }
+  },
+  "3003:71:71:FF": {
+   "name": "STV_BLOCKERKENNUNG_PAR1",
+   "values": {
+    "11": "Wert_01"
+   }
+  },
+  "3003:72:72:FF": {
+   "name": "STV_BLOCKERKENNUNG_PAR2",
+   "values": {
+    "4": "Wert_01"
+   }
+  },
+  "3003:73:73:FF": {
+   "name": "STV_BLOCKERKENNUNG_PAR3",
+   "values": {
+    "7": "Wert_01"
+   }
+  },
+  "3003:74:74:FF": {
+   "name": "STV_BLOCKERKENNUNG_PAR4",
+   "values": {
+    "0": "Wert_01"
+   }
+  },
+  "3003:75:75:FF": {
+   "name": "STV_BLOCKERKENNUNG_PAR5",
+   "values": {
+    "20": "Wert_01"
+   }
+  },
+  "3003:76:77:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:78:78:01": {
+   "name": "LBV_MOTOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:78:78:02": {
+   "name": "LBV_HALL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:78:78:04": {
+   "name": "LBV_DREHRICHTUNG",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:78:78:F8": {
+   "name": "LBV_SOFTBLOCK_DISTANZ_PHYS",
+   "values": {
+    "3": "FRONT_BK2",
+    "7": "FRONT_L6"
+   }
+  },
+  "3003:79:79:FF": {
+   "name": "LBV_MAX_TOLERANZ_PHYS",
+   "values": {
+    "1": "FRONT_BK2",
+    "2": "FRONT_LGIS",
+    "3": "FRONT_L6"
+   }
+  },
+  "3003:7:7:FF": {
+   "name": "UEKB_ADAP_ERR_NULL",
+   "values": {
+    "6": "Wert_01"
+   }
+  },
+  "3003:80:81:FF": {
+   "name": "LBV_VERSTELLWEG_PHYS",
+   "values": {
+    "15": "FRONT_LGIS",
+    "23": "FRONT_BK2",
+    "56": "FRONT_L6"
+   }
+  },
+  "3003:82:83:FF": {
+   "name": "LBV_VERSTELLWEG_HALL",
+   "values": {
+    "129": "FRONT_LGIS",
+    "229": "FRONT_L6",
+    "397": "FRONT_BK2",
+    "680": "FRONT_BK2"
+   }
+  },
+  "3003:84:84:FF": {
+   "name": "LBV_BLOCKERKENNUNG_PAR1",
+   "values": {
+    "10": "BK2",
+    "32": "Wert_01"
+   }
+  },
+  "3003:85:85:FF": {
+   "name": "LBV_BLOCKERKENNUNG_PAR2",
+   "values": {
+    "6": "Wert_01"
+   }
+  },
+  "3003:86:86:FF": {
+   "name": "LBV_BLOCKERKENNUNG_PAR3",
+   "values": {
+    "8": "Wert_01"
+   }
+  },
+  "3003:87:87:FF": {
+   "name": "LBV_BLOCKERKENNUNG_PAR4",
+   "values": {
+    "0": "Wert_01"
+   }
+  },
+  "3003:88:88:FF": {
+   "name": "LBV_BLOCKERKENNUNG_PAR5",
+   "values": {
+    "48": "BK2",
+    "53": "Wert_01"
+   }
+  },
+  "3003:89:90:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:8:8:FF": {
+   "name": "UEKB_ADAP_ERR_BACK",
+   "values": {
+    "7": "Wert_01"
+   }
+  },
+  "3003:91:91:01": {
+   "name": "LKV_MOTOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:91:91:02": {
+   "name": "LKV_HALL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:91:91:04": {
+   "name": "LKV_DREHRICHTUNG",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:91:91:F8": {
+   "name": "LKV_SOFTBLOCK_DISTANZ_PHYS",
+   "values": {
+    "1": "FRONT_L6",
+    "10": "FRONT_BK2",
+    "29": "FRONT_LGIS",
+    "7": "FOND_F07",
+    "9": "FOND_F01_F02_F03_F04"
+   }
+  },
+  "3003:92:92:FF": {
+   "name": "LKV_MAX_TOLERANZ_PHYS",
+   "values": {
+    "1": "FRONT_L6",
+    "21": "FRONT_LGIS",
+    "5": "FRONT_BK2",
+    "6": "FOND_F01_F02_F03_F04"
+   }
+  },
+  "3003:93:94:FF": {
+   "name": "LKV_VERSTELLWEG_PHYS",
+   "values": {
+    "14": "FRONT_L6",
+    "150": "FRONT_BK2_US",
+    "152": "FRONT_LGIS",
+    "190": "FRONT_BK2",
+    "200": "FOND_F01_F02_F03_F04"
+   }
+  },
+  "3003:95:96:FF": {
+   "name": "LKV_VERSTELLWEG_HALL",
+   "values": {
+    "195": "FRONT_L6",
+    "320": "FRONT_BK2_US",
+    "405": "FRONT_BK2",
+    "408": "FOND_F07",
+    "414": "FOND_F01_F02_F03_F04",
+    "488": "FRONT_BK2",
+    "95": "FRONT_LGIS"
+   }
+  },
+  "3003:97:97:FF": {
+   "name": "LKV_BLOCKERKENNUNG_PAR1",
+   "values": {
+    "6": "LGIS",
+    "8": "Wert_01"
+   }
+  },
+  "3003:98:98:FF": {
+   "name": "LKV_BLOCKERKENNUNG_PAR2",
+   "values": {
+    "6": "Wert_01"
+   }
+  },
+  "3003:99:99:FF": {
+   "name": "LKV_BLOCKERKENNUNG_PAR3",
+   "values": {
+    "9": "Wert_01"
+   }
+  },
+  "3003:9:9:FF": {
+   "name": "UEKB_S1_ID2_REF_ADR",
+   "values": {
+    "0": "Wert_01"
+   }
+  },
+  "3004:0:0:01": {
+   "name": "PIA_SLV_OFFSET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:02": {
+   "name": "PIA_SLV_GES_L",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:04": {
+   "name": "PIA_SLV_GES_H",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:08": {
+   "name": "PIA_SHV_OFFSET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:10": {
+   "name": "PIA_SHV_GES_L",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:20": {
+   "name": "PIA_SHV_GES_H",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:40": {
+   "name": "PIA_SNV_OFFSET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:0:0:80": {
+   "name": "PIA_SNV_GES_L",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:10:11:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:12:12:01": {
+   "name": "NRM_LNV_MINUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:02": {
+   "name": "NRM_LNV_PLUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:04": {
+   "name": "NRM_LNV_MINUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:08": {
+   "name": "NRM_LNV_PLUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:10": {
+   "name": "NRM_LNV_MINUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:20": {
+   "name": "NRM_LNV_PLUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:40": {
+   "name": "NRM_LNV_MINUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:12:12:80": {
+   "name": "NRM_LNV_PLUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:13:13:FF": {
+   "name": "NRM_LNV_MINUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "34": "FOND_F07",
+    "4": "FRONT_LGIS",
+    "5": "FOND_F01_F02_F03_F04",
+    "6": "FRONT_L6"
+   }
+  },
+  "3004:14:14:FF": {
+   "name": "NRM_LNV_PLUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "34": "FOND_F07",
+    "4": "FRONT_LGIS",
+    "5": "FOND_F01_F02_F03_F04",
+    "6": "FRONT_L6"
+   }
+  },
+  "3004:15:15:01": {
+   "name": "NRM_LNV_MINUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:02": {
+   "name": "NRM_LNV_PLUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:04": {
+   "name": "NRM_LNV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:08": {
+   "name": "NRM_LNV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_MODUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:10": {
+   "name": "NRM_LNV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_NB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:15:15:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:16:17:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:18:18:01": {
+   "name": "NRM_SNV_MINUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:02": {
+   "name": "NRM_SNV_PLUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:04": {
+   "name": "NRM_SNV_MINUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:08": {
+   "name": "NRM_SNV_PLUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:10": {
+   "name": "NRM_SNV_MINUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:20": {
+   "name": "NRM_SNV_PLUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:40": {
+   "name": "NRM_SNV_MINUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:18:18:80": {
+   "name": "NRM_SNV_PLUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:19:19:FF": {
+   "name": "NRM_SNV_MINUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "1": "FRONT_L6",
+    "13": "FRONT_F25",
+    "2": "FOND_F01_F02_F03_F04",
+    "5": "FRONT_LGIS"
+   }
+  },
+  "3004:1:1:FF": {
+   "name": "PIA_SNV_GES_H",
+   "values": {
+    "3": "FOND_F07",
+    "4": "FRONT_F25",
+    "5": "FRONT_L6",
+    "6": "FRONT_L7"
+   }
+  },
+  "3004:20:20:FF": {
+   "name": "NRM_SNV_PLUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "1": "FRONT_L6",
+    "13": "FRONT_F25",
+    "2": "FOND_F01_F02_F03_F04",
+    "5": "FRONT_LGIS"
+   }
+  },
+  "3004:21:21:01": {
+   "name": "NRM_SNV_MINUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:02": {
+   "name": "NRM_SNV_PLUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:04": {
+   "name": "NRM_SNV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:08": {
+   "name": "NRM_SNV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_MODUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:10": {
+   "name": "NRM_SNV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_NB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:21:21:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:22:23:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:24:24:01": {
+   "name": "NRM_KHV_MINUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:02": {
+   "name": "NRM_KHV_PLUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:04": {
+   "name": "NRM_KHV_MINUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:08": {
+   "name": "NRM_KHV_PLUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:10": {
+   "name": "NRM_KHV_MINUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:20": {
+   "name": "NRM_KHV_PLUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:40": {
+   "name": "NRM_KHV_MINUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:24:24:80": {
+   "name": "NRM_KHV_PLUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:25:25:FF": {
+   "name": "NRM_KHV_MINUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "3": "FOND_F07"
+   }
+  },
+  "3004:26:26:FF": {
+   "name": "NRM_KHV_PLUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "3": "FOND_F07"
+   }
+  },
+  "3004:27:27:01": {
+   "name": "NRM_KHV_MINUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:02": {
+   "name": "NRM_KHV_PLUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:04": {
+   "name": "NRM_KHV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:08": {
+   "name": "NRM_KHV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_MODUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:10": {
+   "name": "NRM_KHV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_NB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:27:27:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:28:29:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:2:2:FF": {
+   "name": "PIA_STV_OFFSET",
+   "values": {
+    "3": "FOND_F07",
+    "4": "FRONT_F25",
+    "5": "FRONT_L6",
+    "6": "FRONT_L7"
+   }
+  },
+  "3004:30:30:01": {
+   "name": "NRM_STV_MINUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:02": {
+   "name": "NRM_STV_PLUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:04": {
+   "name": "NRM_STV_MINUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:08": {
+   "name": "NRM_STV_PLUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:10": {
+   "name": "NRM_STV_MINUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:20": {
+   "name": "NRM_STV_PLUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:40": {
+   "name": "NRM_STV_MINUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:30:30:80": {
+   "name": "NRM_STV_PLUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:31:31:FF": {
+   "name": "NRM_STV_MINUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "5": "FRONT_L6",
+    "6": "FRONT_LGIS"
+   }
+  },
+  "3004:32:32:FF": {
+   "name": "NRM_STV_PLUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "5": "FRONT_L6",
+    "6": "FRONT_LGIS"
+   }
+  },
+  "3004:33:33:01": {
+   "name": "NRM_STV_MINUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:02": {
+   "name": "NRM_STV_PLUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:04": {
+   "name": "NRM_STV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:08": {
+   "name": "NRM_STV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_MODUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:10": {
+   "name": "NRM_STV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_NB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:33:33:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:34:35:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:36:36:01": {
+   "name": "NRM_LBV_MINUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:02": {
+   "name": "NRM_LBV_PLUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:04": {
+   "name": "NRM_LBV_MINUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:08": {
+   "name": "NRM_LBV_PLUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:10": {
+   "name": "NRM_LBV_MINUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:20": {
+   "name": "NRM_LBV_PLUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:40": {
+   "name": "NRM_LBV_MINUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:36:36:80": {
+   "name": "NRM_LBV_PLUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:37:37:FF": {
+   "name": "NRM_LBV_MINUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "2": "FRONT_LGIS",
+    "3": "FRONT_L6"
+   }
+  },
+  "3004:38:38:FF": {
+   "name": "NRM_LBV_PLUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "2": "FRONT_LGIS",
+    "3": "FRONT_L6"
+   }
+  },
+  "3004:39:39:01": {
+   "name": "NRM_LBV_MINUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:02": {
+   "name": "NRM_LBV_PLUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:04": {
+   "name": "NRM_LBV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:08": {
+   "name": "NRM_LBV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_MODUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:10": {
+   "name": "NRM_LBV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_NB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:39:39:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:3:3:01": {
+   "name": "PIA_STV_GES_L",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:3:3:02": {
+   "name": "PIA_STV_GES_H",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:3:3:04": {
+   "name": "PIA_LNV_OFFSET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:3:3:08": {
+   "name": "PIA_LNV_GES_L",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:3:3:10": {
+   "name": "PIA_LNV_GES_H",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:3:3:E0": {
+   "name": "PIA_LKV_OFFSET",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:40:41:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:42:42:01": {
+   "name": "NRM_LKV_MINUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:42:42:02": {
+   "name": "NRM_LKV_PLUS_HB_PLAUSIBILISIERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:42:42:04": {
+   "name": "NRM_LKV_MINUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:42:42:08": {
+   "name": "NRM_LKV_PLUS_HB_LOESCHEN_BEIM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:42:42:10": {
+   "name": "NRM_LKV_MINUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:42:42:20": {
+   "name": "NRM_LKV_PLUS_HB_LOESCHEN_BEIM_NB_HERANZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:42:42:40": {
+   "name": "NRM_LKV_MINUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:42:42:80": {
+   "name": "NRM_LKV_PLUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:43:43:FF": {
+   "name": "NRM_LKV_MINUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "1": "FRONT_L6",
+    "21": "FRONT_LGIS",
+    "5": "FOND_F07",
+    "6": "FOND_F01_F02_F03_F04"
+   }
+  },
+  "3004:44:44:FF": {
+   "name": "NRM_LKV_PLUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "1": "FRONT_L6",
+    "21": "FRONT_LGIS",
+    "5": "FOND_F07",
+    "6": "FOND_F01_F02_F03_F04"
+   }
+  },
+  "3004:45:45:01": {
+   "name": "NRM_LKV_MINUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:45:45:02": {
+   "name": "NRM_LKV_PLUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:45:45:04": {
+   "name": "NRM_LKV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:45:45:08": {
+   "name": "NRM_LKV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_MODUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:45:45:10": {
+   "name": "NRM_LKV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_NB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:45:45:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:46:47:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:4:5:FF": {
+   "name": "PIA_LKV_GES_L",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:6:6:01": {
+   "name": "PIA_LKV_GES_H",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:02": {
+   "name": "PIA_KHV_OFFSET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:04": {
+   "name": "PIA_KHV_GES_L",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:08": {
+   "name": "PIA_KHV_GES_H",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:10": {
+   "name": "PIA_LBV_OFFSET",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:20": {
+   "name": "PIA_LBV_GES_L",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:40": {
+   "name": "PIA_LBV_GES_H",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:6:6:80": {
+   "name": "NRM_SHV_PLUS_NB_MITZIEHEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:7:7:FF": {
+   "name": "NRM_SHV_MINUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "1": "FRONT_L7",
+    "10": "FRONT_F25",
+    "2": "FRONT_LGIS"
+   }
+  },
+  "3004:8:8:FF": {
+   "name": "NRM_SHV_PLUS_NB_HERANZIEHEN_PHYS",
+   "values": {
+    "1": "FRONT_L7",
+    "10": "FRONT_F25",
+    "2": "FRONT_LGIS"
+   }
+  },
+  "3004:9:9:01": {
+   "name": "NRM_SHV_MINUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:02": {
+   "name": "NRM_SHV_PLUS_ENTNORM_UEBERFAHREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:04": {
+   "name": "NRM_SHV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:08": {
+   "name": "NRM_SHV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_MODUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:10": {
+   "name": "NRM_SHV_NB_PLAUSIBILISIERUNG_GEGENANSCHLAG_NB",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3004:9:9:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3005:0:0:FF": {
+   "name": "KF_SB",
+   "values": {
+    "5": "Wert_01"
+   }
+  },
+  "3005:10:10:FF": {
+   "name": "KF_SB_SNV_P2",
+   "values": {
+    "100": "UKL",
+    "105": "BK2",
+    "112": "F25",
+    "160": "BASIS_L6",
+    "74": "LGIS"
+   }
+  },
+  "3005:11:11:FF": {
+   "name": "KF_SB_SNV_P3",
+   "values": {
+    "15": "BASIS_L6",
+    "16": "MFS_L6",
+    "17": "UKL",
+    "18": "BK2",
+    "19": "LGIS"
+   }
+  },
+  "3005:12:12:FF": {
+   "name": "KF_SB_SNV_P4",
+   "values": {
+    "40": "BASIS_L6",
+    "42": "UKL",
+    "45": "MFS_L6",
+    "46": "F25",
+    "56": "BK2"
+   }
+  },
+  "3005:13:13:FF": {
+   "name": "KF_SB_SNV_P5",
+   "values": {
+    "105": "F25",
+    "137": "BK2",
+    "89": "MFS_L6"
+   }
+  },
+  "3005:14:14:FF": {
+   "name": "UEKB_SLV_PLUS_A_LAUF_LIMIT",
+   "values": {
+    "26": "BASIS_L6",
+    "28": "MFS_L6",
+    "33": "F25",
+    "41": "BK2"
+   }
+  },
+  "3005:15:15:FF": {
+   "name": "UEKB_SLV_PLUS_OFF_HINTEN_PHYS",
+   "values": {
+    "10": "Wert_10"
+   }
+  },
+  "3005:16:16:FF": {
+   "name": "UEKB_SLV_PLUS_OFF_VORNE_PHYS",
+   "values": {
+    "10": "Wert_10",
+    "130": "Wert_04",
+    "162": "Wert_02",
+    "200": "Wert_03",
+    "243": "Wert_01"
+   }
+  },
+  "3005:17:17:FF": {
+   "name": "UEKB_SLV_PLUS_ADA_REVK_LEN",
+   "values": {
+    "52": "MFS_L6",
+    "53": "BK2"
+   }
+  },
+  "3005:18:18:FF": {
+   "name": "UEKB_SLV_PLUS_ADA_REVK",
+   "values": {
+    "15": "BASIS_L6",
+    "16": "MFS_L6",
+    "17": "UKL",
+    "18": "BK2",
+    "19": "LGIS"
+   }
+  },
+  "3005:19:19:FF": {
+   "name": "UEKB_SLV_PLUS_REV_WEG_PHYS",
+   "values": {
+    "115": "Wert_03",
+    "117": "Wert_04",
+    "141": "Wert_01",
+    "35": "Wert_35",
+    "94": "Wert_02"
+   }
+  },
+  "3005:1:1:FF": {
+   "name": "KF_SB_KAL",
+   "values": {
+    "50": "Wert_01"
+   }
+  },
+  "3005:20:20:FF": {
+   "name": "UEKB_SLV_MINUS_ID2_REF_ADR",
+   "values": {
+    "100": "UKL",
+    "105": "BK2",
+    "112": "F25",
+    "160": "BASIS_L6",
+    "74": "LGIS"
+   }
+  },
+  "3005:21:21:FF": {
+   "name": "UEKB_SLV_MINUS_ADA_INIT",
+   "values": {
+    "15": "BASIS_L6",
+    "16": "MFS_L6",
+    "17": "UKL",
+    "18": "BK2",
+    "19": "LGIS"
+   }
+  },
+  "3005:22:22:FF": {
+   "name": "UEKB_SLV_MINUS_SCHW20",
+   "values": {
+    "40": "BASIS_L6",
+    "42": "UKL",
+    "45": "MFS_L6",
+    "46": "F25",
+    "56": "BK2"
+   }
+  },
+  "3005:23:23:FF": {
+   "name": "UEKB_SLV_MINUS_ADA_UPD",
+   "values": {
+    "105": "F25",
+    "137": "BK2",
+    "89": "MFS_L6"
+   }
+  },
+  "3005:24:24:FF": {
+   "name": "UEKB_SLV_MINUS_A_LAUF_LIMIT",
+   "values": {
+    "26": "BASIS_L6",
+    "28": "MFS_L6",
+    "33": "F25",
+    "41": "BK2"
+   }
+  },
+  "3005:25:25:FF": {
+   "name": "UEKB_SLV_MINUS_OFF_HINTEN_PHYS",
+   "values": {
+    "10": "Wert_10"
+   }
+  },
+  "3005:26:26:FF": {
+   "name": "UEKB_SLV_MINUS_OFF_VORNE_PHYS",
+   "values": {
+    "10": "Wert_10",
+    "130": "Wert_04",
+    "162": "Wert_02",
+    "200": "Wert_03",
+    "243": "Wert_01"
+   }
+  },
+  "3005:27:27:FF": {
+   "name": "UEKB_SLV_MINUS_ADA_REVK_LEN",
+   "values": {
+    "52": "MFS_L6",
+    "53": "BK2"
+   }
+  },
+  "3005:28:28:FF": {
+   "name": "UEKB_SLV_MINUS_ADA_REVK",
+   "values": {
+    "15": "BASIS_L6",
+    "16": "MFS_L6",
+    "17": "UKL",
+    "18": "BK2",
+    "19": "LGIS"
+   }
+  },
+  "3005:29:29:FF": {
+   "name": "UEKB_SLV_MINUS_REV_WEG_PHYS",
+   "values": {
+    "115": "Wert_03",
+    "117": "Wert_04",
+    "141": "Wert_01",
+    "35": "Wert_35",
+    "94": "Wert_02"
+   }
+  },
+  "3005:2:2:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "20": "Wert_01"
+   }
+  },
+  "3005:30:30:FF": {
+   "name": "UEKB_KONFIG_VER",
+   "values": {
+    "103": "LGIS",
+    "135": "L7_4_TUERER",
+    "168": "BK2",
+    "200": "L7_2_TUERER",
+    "232": "UKL",
+    "39": "BASIS_L6",
+    "7": "MFS_L6",
+    "71": "F25"
+   }
+  },
+  "3005:3:3:FF": {
+   "name": "KF_SB_Stufe",
+   "values": {
+    "1": "MFS_L6",
+    "2": "BK2"
+   }
+  },
+  "3005:4:4:FF": {
+   "name": "KF_SB_SLV_P1",
+   "values": {
+    "130": "Wert_01"
+   }
+  },
+  "3005:5:5:FF": {
+   "name": "KF_SB_SLV_P2",
+   "values": {
+    "160": "Wert_01"
+   }
+  },
+  "3005:6:6:FF": {
+   "name": "KF_SB_SLV_P3",
+   "values": {
+    "29": "BASIS_L6",
+    "32": "MFS_L6",
+    "36": "F25",
+    "44": "BK2"
+   }
+  },
+  "3005:7:7:FF": {
+   "name": "KF_SB_SLV_P4",
+   "values": {
+    "255": "Wert_01"
+   }
+  },
+  "3005:8:8:FF": {
+   "name": "KF_SB_SLV_P5",
+   "values": {
+    "10": "Wert_01",
+    "20": "Wert_20",
+    "7": "Wert_02",
+    "9": "Wert_03"
+   }
+  },
+  "3005:9:9:FF": {
+   "name": "KF_SB_SNV_P1",
+   "values": {
+    "110": "Wert_01",
+    "20": "Wert_20",
+    "59": "Wert_04",
+    "74": "Wert_02",
+    "91": "Wert_03"
+   }
+  },
+  "3006:0:1:FF": {
+   "name": "PIA_OFFSET_SLV",
+   "values": {
+    "0": "F01_Basis"
+   }
+  },
+  "3006:10:11:FF": {
+   "name": "PIA_GES_L_LNV",
+   "values": {
+    "540": "FRONT_F25",
+    "580": "F01_Basis"
+   }
+  },
+  "3006:12:13:FF": {
+   "name": "PIA_OFFSET_SNV",
+   "values": {
+    "0": "F01_Basis"
+   }
+  },
+  "3006:14:15:FF": {
+   "name": "PIA_GES_L_SNV",
+   "values": {
+    "100": "F01_Basis"
+   }
+  },
+  "3006:16:17:FF": {
+   "name": "PIA_OFFSET_KHV",
+   "values": {
+    "0": "F01_Basis"
+   }
+  },
+  "3006:18:19:FF": {
+   "name": "PIA_GES_L_KHV",
+   "values": {
+    "100": "F01_Basis"
+   }
+  },
+  "3006:20:21:FF": {
+   "name": "PIA_OFFSET_STV",
+   "values": {
+    "0": "F01_Basis"
+   }
+  },
+  "3006:22:23:FF": {
+   "name": "PIA_GES_L_STV",
+   "values": {
+    "100": "F01_Basis"
+   }
+  },
+  "3006:24:25:FF": {
+   "name": "PIA_OFFSET_LBV",
+   "values": {
+    "0": "F01_Basis"
+   }
+  },
+  "3006:26:27:FF": {
+   "name": "PIA_GES_L_LBV",
+   "values": {
+    "100": "F01_Basis"
+   }
+  },
+  "3006:28:29:FF": {
+   "name": "PIA_OFFSET_LKV",
+   "values": {
+    "0": "F01_Basis"
+   }
+  },
+  "3006:2:3:FF": {
+   "name": "PIA_GES_L_SLV",
+   "values": {
+    "100": "F01_Basis"
+   }
+  },
+  "3006:30:31:FF": {
+   "name": "PIA_GES_L_LKV",
+   "values": {
+    "100": "F01_Basis"
+   }
+  },
+  "3006:4:5:FF": {
+   "name": "PIA_OFFSET_SHV",
+   "values": {
+    "0": "F01_Basis"
+   }
+  },
+  "3006:6:7:FF": {
+   "name": "PIA_GES_L_SHV",
+   "values": {
+    "100": "F01_Basis"
+   }
+  },
+  "3006:8:9:FF": {
+   "name": "PIA_OFFSET_LNV",
+   "values": {
+    "0": "F01_Basis"
+   }
+  },
+  "3007:0:0:03": {
+   "name": "SHZ_TYP",
+   "values": {
+    "1": "1_Kreis",
+    "2": "2_Kreis"
+   }
+  },
+  "3007:0:0:04": {
+   "name": "SHZ_RESERVIERT1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:0:0:08": {
+   "name": "SHZ_RESERVIERT2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:0:0:F0": {
+   "name": "SHZ_RESERVIERT3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:10:10:FF": {
+   "name": "SHZ_MAX_PWM_PH1_KI",
+   "values": {
+    "100": "Default"
+   }
+  },
+  "3007:11:11:FF": {
+   "name": "SHZ_REGLER_INIT_KI",
+   "values": {
+    "60": "Parametersatz1_2",
+    "80": "Parametersatz3_4"
+   }
+  },
+  "3007:12:12:FF": {
+   "name": "SHZ_TEMP_SOLL_ST1_LE",
+   "values": {
+    "28": "MFS_2Kr_F01_F02_F03_F04_F07_F10_F11_F18_ab_0909",
+    "29": "Basis_2Kr_RR04",
+    "32": "Default",
+    "34": "MFS_2Kr_Leder_Klima_F85_F86",
+    "35": "Basis_2Kr_F01_F02_F03_F04_ab_1207",
+    "36": "Basis_2Kr_Klima_RR05",
+    "37": "MFS_2Kr_Leder_Klima_F85_F86",
+    "38": "Basis_2Kr_Klima",
+    "39": "MFS_2Kr_F10M5",
+    "40": "MFS_2Kr_Klima_M6"
+   }
+  },
+  "3007:13:13:FF": {
+   "name": "SHZ_TEMP_SOLL_ST2_LE",
+   "values": {
+    "33": "Basis_2Kr_RR04",
+    "37": "Default",
+    "38": "Basis_2Kr_F01_F02_F03_F04_ab_1207",
+    "39": "Sport_2Kr_F01_F02_F03_F04_bis_1207",
+    "40": "Sport_2Kr_F01_F02_F03_F04_ab_1207",
+    "42": "MFS_2Kr_Leder_Klima_F85_F86",
+    "43": "Basis_2Kr_Klima",
+    "44": "MFS_2Kr_Leder_Klima_F06_F12_F13_LGIS"
+   }
+  },
+  "3007:14:14:FF": {
+   "name": "SHZ_TEMP_SOLL_ST3_LE",
+   "values": {
+    "42": "Basis_2Kr_F01_F02_F03_F04_ab_1207",
+    "43": "Basis_2Kr_RR04",
+    "44": "Sport_2Kr_F01_F02_F03_F04_ab_1207",
+    "45": "Default",
+    "46": "MFS_2Kr_F10M5",
+    "47": "MFS_2Kr_Klima_F10M5",
+    "48": "MFS_2Kr_Leder_F15F16",
+    "49": "MFS_2Kr_Leder_Klima_F85_F86",
+    "50": "Sport_2Kr_Klima",
+    "51": "Basis_2Kr_Klima",
+    "52": "MFS_2Kr_M6"
+   }
+  },
+  "3007:15:15:FF": {
+   "name": "SHZ_ABST_ENDT_VOR_PH2_LE",
+   "values": {
+    "24": "Default"
+   }
+  },
+  "3007:16:16:FF": {
+   "name": "SHZ_PWR_LIMIT_P1_TEMP_LE",
+   "values": {
+    "246": "Wert_1"
+   }
+  },
+  "3007:17:17:FF": {
+   "name": "SHZ_PWR_LIMIT_P1_ZEIT_LE",
+   "values": {
+    "40": "Wert_1"
+   }
+  },
+  "3007:18:18:FF": {
+   "name": "SHZ_PWR_LIMIT_P2_TEMP_LE",
+   "values": {
+    "25": "Wert_1"
+   }
+  },
+  "3007:19:19:FF": {
+   "name": "SHZ_PWR_LIMIT_P2_ZEIT_LE",
+   "values": {
+    "25": "Wert_1"
+   }
+  },
+  "3007:1:1:FF": {
+   "name": "SHZ_TEMP_SOLL_ST1_KI",
+   "values": {
+    "28": "Sport_1Kr_Stoff_L7",
+    "29": "Basis_1Kr_Stoff_L7",
+    "30": "Default",
+    "31": "Basis_1Kr_Leder_F06_F12_F13_LGIS",
+    "32": "Basis_1Kr_F25",
+    "33": "Sport_1Kr_KLED_F33_LGIS",
+    "34": "Basis_1Kr_KLED_F33_LGIS",
+    "35": "LU_Sport_1Kr_F4X",
+    "36": "LU_Sport_1Kr_F4X_Leder",
+    "37": "Sport_2Kr_Klima",
+    "38": "Sport_1Kr_Leder_L7_F83",
+    "39": "MFS_2Kr_M6"
+   }
+  },
+  "3007:20:20:FF": {
+   "name": "SHZ_PWR_LIMIT_MAX_PWM_LE",
+   "values": {
+    "80": "Wert_1"
+   }
+  },
+  "3007:21:21:FF": {
+   "name": "SHZ_MAX_PWM_PH1_LE",
+   "values": {
+    "100": "Default"
+   }
+  },
+  "3007:22:22:FF": {
+   "name": "SHZ_REGLER_INIT_LE",
+   "values": {
+    "60": "Parametersatz1_2",
+    "80": "Parametersatz3_4"
+   }
+  },
+  "3007:23:23:FF": {
+   "name": "SHZ_MINDEST_TEMP_ANSTIEG",
+   "values": {}
+  },
+  "3007:24:24:FF": {
+   "name": "SHZ_MINDEST_TEMP_ANSTIEG_ZEITFENSTER",
+   "values": {
+    "36": "Wert_03"
+   }
+  },
+  "3007:25:25:FF": {
+   "name": "SHZ_REGLERFAKTOR1",
+   "values": {
+    "64": "Default"
+   }
+  },
+  "3007:26:26:FF": {
+   "name": "SHZ_REGLERFAKTOR2",
+   "values": {
+    "6": "Default"
+   }
+  },
+  "3007:27:27:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:2:2:FF": {
+   "name": "SHZ_TEMP_SOLL_ST2_KI",
+   "values": {
+    "31": "UKL_Sport-STOFF_1Kr_F5x",
+    "32": "UKL_Sport-KLED_1Kr_F5x",
+    "33": "Sport_1Kr_Stoff_L7",
+    "34": "Basis_1Kr_Stoff_LGIS",
+    "35": "Basis_1Kr_KLED_F07_F10_F11_F18_ab_1307",
+    "36": "Basis_1Kr_KLED_F33_LGIS",
+    "37": "Sport_1Kr_KLED_F33_LGIS",
+    "38": "Basis_1Kr_Stoff_F33_LGIS",
+    "39": "LU_Sport_1Kr_F4X",
+    "40": "Sport_1Kr_STOFF_F07_F10_F11_F18_ab_1307",
+    "41": "Sport_1Kr_Klima_F07_F10_F11_F18_bis_1307",
+    "42": "MFS_2Kr_Klima_M6"
+   }
+  },
+  "3007:3:3:FF": {
+   "name": "SHZ_TEMP_SOLL_ST3_KI",
+   "values": {
+    "34": "UKL_Sport-STOFF_1Kr_F5x",
+    "36": "UKL_Sport-KLED_1Kr_F5x",
+    "38": "Basis_1Kr_KLED_F07_F10_F11_F18_ab_1307",
+    "39": "Basis_1Kr_Stoff_LGIS",
+    "40": "Basis_1Kr_KLED_F33_LGIS",
+    "41": "Sport_1Kr_KLED_F33_LGIS",
+    "42": "Sport_1Kr_Leder_F07_F10_F11_F18_ab_1307",
+    "43": "Basis_1Kr_Stoff_F33_LGIS",
+    "44": "Sport_1Kr_F07_F10_F11_F18_bis_1307",
+    "45": "Sport_1Kr_Stoff_F33_LGIS",
+    "46": "Sport_1Kr_STOFF_F07_F10_F11_F18_ab_1307",
+    "48": "Sport_1Kr_Leder_L7_F83",
+    "49": "Sport_1Kr_Klima_F07_F10_F11_F18_bis_1307",
+    "50": "UKL_Sport-STOFF_1Kr_F5x"
+   }
+  },
+  "3007:4:4:FF": {
+   "name": "SHZ_ABST_ENDT_VOR_PH2_KI",
+   "values": {
+    "32": "Default"
+   }
+  },
+  "3007:5:5:FF": {
+   "name": "SHZ_PWR_LIMIT_P1_TEMP_KI",
+   "values": {
+    "246": "Wert_1"
+   }
+  },
+  "3007:6:6:FF": {
+   "name": "SHZ_PWR_LIMIT_P1_ZEIT_KI",
+   "values": {
+    "40": "Wert_1"
+   }
+  },
+  "3007:7:7:FF": {
+   "name": "SHZ_PWR_LIMIT_P2_TEMP_KI",
+   "values": {
+    "25": "Wert_1"
+   }
+  },
+  "3007:8:8:FF": {
+   "name": "SHZ_PWR_LIMIT_P2_ZEIT_KI",
+   "values": {
+    "25": "Wert_1"
+   }
+  },
+  "3007:9:9:FF": {
+   "name": "SHZ_PWR_LIMIT_MAX_PWM_KI",
+   "values": {
+    "80": "Wert_1"
+   }
+  },
+  "3008:0:0:FF": {
+   "name": "SKL_ZEIT_ST3_NACH_ST2",
+   "values": {
+    "0": "nicht_aktiv",
+    "10": "Wert_10",
+    "15": "Wert_15"
+   }
+  },
+  "3008:10:10:FF": {
+   "name": "SKL_PWM_ST3_BEI_SHZ_EIN",
+   "values": {
+    "55": "initwert"
+   }
+  },
+  "3008:11:11:0F": {
+   "name": "SKL_VERZ_EINSATZ_REGELUNG_IN_ST3",
+   "values": {
+    "6": "initwert"
+   }
+  },
+  "3008:11:11:F0": {
+   "name": "SKL_PAUSENZEIT_NACH_RUECKSCHALTUNG",
+   "values": {
+    "2": "initwert"
+   }
+  },
+  "3008:12:12:FF": {
+   "name": "SKL_SCHWELLE_AC_SUPPORT",
+   "values": {
+    "95": "initwert"
+   }
+  },
+  "3008:13:13:FF": {
+   "name": "SKL_HL_A",
+   "values": {
+    "40": "initwert"
+   }
+  },
+  "3008:14:14:FF": {
+   "name": "SKL_HL_B",
+   "values": {
+    "65": "initwert"
+   }
+  },
+  "3008:15:15:FF": {
+   "name": "SKL_V_A",
+   "values": {
+    "28": "initwert"
+   }
+  },
+  "3008:16:16:FF": {
+   "name": "SKL_V_B",
+   "values": {
+    "65": "initwert"
+   }
+  },
+  "3008:17:17:FF": {
+   "name": "SKL_T_A",
+   "values": {
+    "16": "initwert"
+   }
+  },
+  "3008:18:18:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "2": "initwert"
+   }
+  },
+  "3008:1:1:FF": {
+   "name": "SKL_TEMP_SOLL_ST1_KI",
+   "values": {
+    "35": "initwert"
+   }
+  },
+  "3008:2:2:FF": {
+   "name": "SKL_TEMP_SOLL_ST2_KI",
+   "values": {
+    "33": "initwert"
+   }
+  },
+  "3008:3:3:FF": {
+   "name": "SKL_TEMP_SOLL_ST3_KI",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3008:4:4:FF": {
+   "name": "SKL_TEMP_SOLL_ST1_LE",
+   "values": {
+    "35": "initwert"
+   }
+  },
+  "3008:5:5:FF": {
+   "name": "SKL_TEMP_SOLL_ST2_LE",
+   "values": {
+    "33": "initwert"
+   }
+  },
+  "3008:6:6:FF": {
+   "name": "SKL_TEMP_SOLL_ST3_LE",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3008:7:7:0F": {
+   "name": "SKL_MIN_DELTA_TEMP",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:7:7:F0": {
+   "name": "SKL_MAX_DELTA_TEMP",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3008:8:8:FF": {
+   "name": "SKL_PWM_ST1_BEI_SHZ_EIN",
+   "values": {
+    "55": "initwert"
+   }
+  },
+  "3008:9:9:FF": {
+   "name": "SKL_PWM_ST2_BEI_SHZ_EIN",
+   "values": {
+    "55": "initwert"
+   }
+  },
+  "3009:0:0:FF": {
+   "name": "AS_SCHWELLE_GESCHW",
+   "values": {
+    "20": "kmh20",
+    "255": "nicht_aktiv"
+   }
+  },
+  "3009:1:1:FF": {
+   "name": "AS_MEM_SCHWELLE_QUERBESCHL",
+   "values": {
+    "3": "ms2_3"
+   }
+  },
+  "300A:0:0:FF": {
+   "name": "KF_LKV_P1_LNV_PHYS",
+   "values": {
+    "70": "initwert"
+   }
+  },
+  "300A:1:1:FF": {
+   "name": "KF_LKV_P1_LKV_PHYS",
+   "values": {
+    "65": "initwert"
+   }
+  },
+  "300B:0:0:01": {
+   "name": "KF_SB_KAL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300B:0:0:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300B:11:12:FF": {
+   "name": "KF_SB_P3_SLV_PHYS",
+   "values": {
+    "26": "initwert"
+   }
+  },
+  "300B:13:14:FF": {
+   "name": "KF_SB_P3_SNV_PHYS",
+   "values": {
+    "54": "initwert"
+   }
+  },
+  "300B:15:16:FF": {
+   "name": "KF_SB_P4_SLV_PHYS",
+   "values": {
+    "6": "initwert"
+   }
+  },
+  "300B:17:18:FF": {
+   "name": "KF_SB_P4_SNV_PHYS",
+   "values": {
+    "45": "initwert"
+   }
+  },
+  "300B:19:20:FF": {
+   "name": "KF_SB_P5_SLV_PHYS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300B:1:2:FF": {
+   "name": "KF_SB_STUFE_SNV_PHYS",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "300B:21:22:FF": {
+   "name": "KF_SB_P5_SNV_PHYS",
+   "values": {
+    "43": "initwert"
+   }
+  },
+  "300B:3:4:FF": {
+   "name": "KF_SB_P1_SLV_PHYS",
+   "values": {
+    "56": "initwert"
+   }
+  },
+  "300B:5:6:FF": {
+   "name": "KF_SB_P1_SNV_PHYS",
+   "values": {
+    "63": "initwert"
+   }
+  },
+  "300B:7:8:FF": {
+   "name": "KF_SB_P2_SLV_PHYS",
+   "values": {
+    "51": "initwert"
+   }
+  },
+  "300B:9:10:FF": {
+   "name": "KF_SB_P2_SNV_PHYS",
+   "values": {
+    "62": "initwert"
+   }
+  },
+  "300C:0:0:01": {
+   "name": "KF_RW_KAL",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:0:0:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:1:1:FF": {
+   "name": "KF_RW_STUFE_LNV_PHYS",
+   "values": {
+    "24": "initwert"
+   }
+  },
+  "300C:2:2:FF": {
+   "name": "KF_RW_STUFE_SLV_PHYS",
+   "values": {
+    "17": "initwert"
+   }
+  },
+  "300C:3:4:FF": {
+   "name": "KF_RW_P1_SLV_PHYS",
+   "values": {
+    "51": "initwert"
+   }
+  },
+  "300C:5:6:FF": {
+   "name": "KF_RW_P1_LNV_PHYS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300C:7:8:FF": {
+   "name": "KF_RW_P2_SLV_PHYS",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "300C:9:10:FF": {
+   "name": "KF_RW_P2_LNV_PHYS",
+   "values": {
+    "70": "initwert"
+   }
+  },
+  "300D:0:1:FF": {
+   "name": "KF_LK_P1_SLV_PHYS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300D:10:11:FF": {
+   "name": "KF_LK_P3_SHV_PHYS",
+   "values": {
+    "42": "initwert",
+    "62": "FRONT_LGIS_F033",
+    "70": "FRONT_LGIS_F033",
+    "72": "initwert"
+   }
+  },
+  "300D:12:13:FF": {
+   "name": "KF_LK_P4_SLV_PHYS",
+   "values": {
+    "251": "initwert"
+   }
+  },
+  "300D:14:15:FF": {
+   "name": "KF_LK_P4_SHV_PHYS",
+   "values": {
+    "22": "initwert",
+    "27": "FRONT_LGIS_F033",
+    "5": "FRONT_LGIS_F033",
+    "50": "initwert"
+   }
+  },
+  "300D:16:17:FF": {
+   "name": "KF_LK_P5_SLV_PHYS",
+   "values": {
+    "251": "initwert"
+   }
+  },
+  "300D:18:19:FF": {
+   "name": "KF_LK_P5_SHV_PHYS",
+   "values": {
+    "22": "initwert",
+    "27": "FRONT_LGIS_F033",
+    "5": "FRONT_LGIS_F033",
+    "50": "initwert"
+   }
+  },
+  "300D:20:21:FF": {
+   "name": "KF_LK_P8_SLV_PHYS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300D:22:23:FF": {
+   "name": "KF_LK_P8_SHV_PHYS",
+   "values": {
+    "22": "initwert",
+    "27": "FRONT_LGIS_F033",
+    "5": "FRONT_LGIS_F033",
+    "50": "initwert"
+   }
+  },
+  "300D:24:24:FF": {
+   "name": "KF_LK_MINDEST_WEG_SLV_PHYS",
+   "values": {
+    "5": "initwert"
+   }
+  },
+  "300D:25:26:FF": {
+   "name": "KF_LK_MEM_RESTORE_PAUSE",
+   "values": {
+    "3000": "initwert"
+   }
+  },
+  "300D:27:27:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300D:2:3:FF": {
+   "name": "KF_LK_P1_SHV_PHYS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300D:4:5:FF": {
+   "name": "KF_LK_P2_SLV_PHYS",
+   "values": {
+    "116": "initwert",
+    "56": "FRONT_LGIS_F033"
+   }
+  },
+  "300D:6:7:FF": {
+   "name": "KF_LK_P2_SHV_PHYS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300D:8:9:FF": {
+   "name": "KF_LK_P3_SLV_PHYS",
+   "values": {
+    "112": "FRONT_LGIS_F033",
+    "127": "FRONT_LGIS_F033",
+    "177": "initwert"
+   }
+  },
+  "300E:0:1:FF": {
+   "name": "KF_KHV_OBEN_P1_SHV_PHYS",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "300E:10:11:FF": {
+   "name": "KF_KHV_OBEN_P3_LNV_PHYS",
+   "values": {
+    "35": "FRONT_LGIS_F033",
+    "50": "initwert"
+   }
+  },
+  "300E:12:13:FF": {
+   "name": "KF_KHV_OBEN_P4_SHV_PHYS",
+   "values": {
+    "15": "initwert",
+    "72": "FRONT_LGIS_F033"
+   }
+  },
+  "300E:14:15:FF": {
+   "name": "KF_KHV_OBEN_P4_LNV_PHYS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300E:16:17:FF": {
+   "name": "KF_KHV_MITTE_P1_SHV_PHYS",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "300E:18:19:FF": {
+   "name": "KF_KHV_MITTE_P1_LNV_PHYS",
+   "values": {
+    "230": "initwert",
+    "70": "FRONT_LGIS_F033"
+   }
+  },
+  "300E:20:21:FF": {
+   "name": "KF_KHV_MITTE_P2_SHV_PHYS",
+   "values": {
+    "56": "initwert",
+    "72": "FRONT_LGIS_F033"
+   }
+  },
+  "300E:22:23:FF": {
+   "name": "KF_KHV_MITTE_P2_LNV_PHYS",
+   "values": {
+    "70": "FRONT_LGIS_F033",
+    "97": "initwert"
+   }
+  },
+  "300E:24:25:FF": {
+   "name": "KF_KHV_MITTE_P3_SHV_PHYS",
+   "values": {
+    "39": "initwert",
+    "72": "FRONT_LGIS_F033"
+   }
+  },
+  "300E:26:27:FF": {
+   "name": "KF_KHV_MITTE_P3_LNV_PHYS",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300E:28:29:FF": {
+   "name": "KF_KHV_UNTEN_P1_SHV_PHYS",
+   "values": {
+    "72": "FRONT_LGIS_F033",
+    "76": "initwert"
+   }
+  },
+  "300E:2:3:FF": {
+   "name": "KF_KHV_OBEN_P1_LNV_PHYS",
+   "values": {
+    "308": "initwert",
+    "70": "FRONT_LGIS_F033"
+   }
+  },
+  "300E:30:31:FF": {
+   "name": "KF_KHV_UNTEN_P1_LNV_PHYS",
+   "values": {
+    "70": "FRONT_LGIS_F033",
+    "81": "initwert"
+   }
+  },
+  "300E:4:5:FF": {
+   "name": "KF_KHV_OBEN_P2_SHV_PHYS",
+   "values": {
+    "44": "initwert",
+    "72": "FRONT_LGIS_F033"
+   }
+  },
+  "300E:6:7:FF": {
+   "name": "KF_KHV_OBEN_P2_LNV_PHYS",
+   "values": {
+    "173": "initwert",
+    "70": "FRONT_LGIS_F033"
+   }
+  },
+  "300E:8:9:FF": {
+   "name": "KF_KHV_OBEN_P3_SHV_PHYS",
+   "values": {
+    "18": "initwert",
+    "72": "FRONT_LGIS_F033"
+   }
+  },
+  "300F:0:42:FF": {
+   "name": "INIT_ABLAUF",
+   "values": {
+    "149830980029767664987769344784649619392958352557627842640986346953956199434597499300960886702299152383": "Ablauf_1",
+    "289815026415880428147611519561806071391444157480245173083055918662791248895288141523691306413381910527": "Ablauf_2",
+    "35835915874844867368919076489095108449946327955754392558399825615420669938882575126094039892345713852415": "Ablauf_255",
+    "429799072801993191312596188830058560020520836350361764072318169621737985463757261609883722179630071807": "Ablauf_3",
+    "569783119188097965959940786918917064344271787117784641638200647722651309793632138653319576312944263167": "Ablauf_4"
+   }
+  },
+  "3010:0:1:FF": {
+   "name": "PRCR_VERST_ZEIT",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3010:2:3:FF": {
+   "name": "PRCR_MAX_POS_LNV_PHYS",
+   "values": {
+    "20": "initwert"
+   }
+  },
+  "3010:4:5:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3011:0:0:07": {
+   "name": "NWR_PARAMETERSATZ",
+   "values": {
+    "0": "Parametersatz_0",
+    "1": "Parametersatz_1",
+    "2": "Parametersatz_2",
+    "3": "Parametersatz_3",
+    "4": "Parametersatz_4",
+    "5": "Parametersatz_5",
+    "6": "Parametersatz_6"
+   }
+  },
+  "3011:0:0:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3011:1:5:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3012:0:1:FF": {
+   "name": "EAH_VERFAHRWEG_SLV_PHYS",
+   "values": {
+    "60": "initwert"
+   }
+  },
+  "3012:2:3:FF": {
+   "name": "EAH_ANFAHRHYSTERESE_SLV_PHYS",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3012:4:5:FF": {
+   "name": "EAH_SCHUTZFREIRAUM_HINTEN_SLV_PHYS",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "3012:6:9:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3051:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3052:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "SM-Global",
+  "3001": "Sitzverstellung",
+  "3002": "Sonderausstattung",
+  "3003": "UEKB",
+  "3004": "PIA",
+  "3005": "Kennfeld",
+  "3006": "PIA",
+  "3007": "SITZHEIZUNG",
+  "3008": "SITZKLIMA",
+  "3009": "AKTIVSITZ_MASSAGE",
+  "300A": "KF_LKV",
+  "300B": "KF_SB",
+  "300C": "KF_RW",
+  "300D": "KF_LK",
+  "300E": "KF_KHV",
+  "300F": "INITIALISIERUNG",
+  "3010": "PRECRASH",
+  "3011": "NWR",
+  "3012": "EAH",
+  "3051": "CAF_ID",
+  "3052": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

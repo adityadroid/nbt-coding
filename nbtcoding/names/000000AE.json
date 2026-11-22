@@ -1,0 +1,633 @@
+{
+ "functions": {
+  "3000:0:0:01": {
+   "name": "FLA_Ausgefallen",
+   "values": {
+    "0": "CC_Meldung nicht aktiv",
+    "1": "CC_Meldung aktiv"
+   }
+  },
+  "3000:0:0:02": {
+   "name": "FLA_Gestoert",
+   "values": {
+    "0": "CC_Meldung nicht aktiv",
+    "1": "CC_Meldung aktiv"
+   }
+  },
+  "3000:0:0:04": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:0:0:08": {
+   "name": "FLA_Empfindlichkeit_verstellt",
+   "values": {
+    "0": "CC_Meldung nicht aktiv",
+    "1": "CC_Meldung aktiv"
+   }
+  },
+  "3000:0:0:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:10:15:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:1:1:01": {
+   "name": "Enable_Slowaim",
+   "values": {
+    "0": "Disabled",
+    "1": "Enabled"
+   }
+  },
+  "3000:1:1:02": {
+   "name": "Enable_Fastaim",
+   "values": {
+    "0": "Disabled",
+    "1": "Enabled"
+   }
+  },
+  "3000:1:1:04": {
+   "name": "Enable_YAW-Shift",
+   "values": {
+    "0": "Disabled",
+    "1": "Enabled"
+   }
+  },
+  "3000:1:1:08": {
+   "name": "Enable_YAW_Classifier",
+   "values": {
+    "0": "Disabled",
+    "1": "Enabled"
+   }
+  },
+  "3000:1:1:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:2:2:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:3:3:FF": {
+   "name": "Lucid_Nominal_TL_Width",
+   "values": {
+    "0": "Non-Lucid",
+    "125": "Lucid"
+   }
+  },
+  "3000:4:4:FF": {
+   "name": "Lucid_Nominal_HL_Width",
+   "values": {
+    "0": "Non-Lucid",
+    "115": "Lucid"
+   }
+  },
+  "3000:5:5:FF": {
+   "name": "Lucid_Imager_Heigth",
+   "values": {
+    "0": "Non-Lucid",
+    "122": "Lucid"
+   }
+  },
+  "3000:6:6:FF": {
+   "name": "Lucid_HL_Heigth",
+   "values": {
+    "0": "Non-Lucid",
+    "64": "Lucid"
+   }
+  },
+  "3000:7:7:FF": {
+   "name": "Lucid Hood Length",
+   "values": {
+    "0": "Non-Lucid",
+    "160": "Lucid"
+   }
+  },
+  "3000:8:8:FF": {
+   "name": "Lucid_BR_Offset",
+   "values": {
+    "0": "Lucid"
+   }
+  },
+  "3000:9:9:FF": {
+   "name": "HL_Angle_Adjustment",
+   "values": {
+    "0": "Lucid"
+   }
+  },
+  "3001:0:0:01": {
+   "name": "Typ_Lenkung",
+   "values": {
+    "0": "LL",
+    "1": "RL"
+   }
+  },
+  "3001:0:0:02": {
+   "name": "Typ_Frontscheibe",
+   "values": {
+    "0": "Serienscheibe",
+    "1": "Klimakomfortscheibe"
+   }
+  },
+  "3001:0:0:04": {
+   "name": "Nebelerkennung",
+   "values": {
+    "0": "Nebelerkennung_deaktiviert",
+    "1": "Nebelerkennung_aktiviert"
+   }
+  },
+  "3001:0:0:08": {
+   "name": "village_typ",
+   "values": {
+    "0": "ECE",
+    "1": "US"
+   }
+  },
+  "3001:0:0:10": {
+   "name": "HeadlampType",
+   "values": {
+    "0": "Halogen",
+    "1": "Xenon"
+   }
+  },
+  "3001:0:0:20": {
+   "name": "Twostate_Halogen_Enabled",
+   "values": {
+    "0": "Disabled",
+    "1": "Enabled"
+   }
+  },
+  "3001:0:0:40": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "Verbaut"
+   }
+  },
+  "3001:0:0:80": {
+   "name": "Laendervariante",
+   "values": {
+    "0": "Nicht Verbaut",
+    "1": "ECE"
+   }
+  },
+  "3001:10:10:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3001:11:11:FF": {
+   "name": "Zeit_Aufblenden_Entgegenkommend_schnell_maximum",
+   "values": {
+    "12": "initwert"
+   }
+  },
+  "3001:12:12:0F": {
+   "name": "DLS_LAA_Multiplier",
+   "values": {
+    "0": "DLS_LAA_10",
+    "1": "DLS_LAA_12",
+    "10": "DLS_LAA_30",
+    "11": "DLS_LAA_32",
+    "12": "DLS_LAA_34",
+    "13": "DLS_LAA_36",
+    "14": "DLS_LAA_38",
+    "15": "DLS_LAA_40",
+    "2": "DLS_LAA_14",
+    "3": "DLS_LAA_16",
+    "4": "DLS_LAA_18",
+    "5": "initwert",
+    "6": "DLS_LAA_22",
+    "7": "DLS_LAA_24",
+    "8": "DLS_LAA_26",
+    "9": "DLS_LAA_28"
+   }
+  },
+  "3001:12:12:F0": {
+   "name": "DLS_SAA_Multiplier",
+   "values": {
+    "0": "DLS_SAA_01",
+    "1": "DLS_SAA_02",
+    "10": "DLS_SAA_20",
+    "11": "DLS_SAA_22",
+    "12": "DLS_SAA_24",
+    "13": "DLS_SAA_26",
+    "14": "DLS_SAA_28",
+    "2": "DLS_SAA_04",
+    "3": "DLS_SAA_06",
+    "4": "initwert",
+    "5": "DLS_SAA_10",
+    "6": "DLS_SAA_12",
+    "7": "DLS_SAA_14",
+    "8": "DLS_SAA_16",
+    "9": "DLS_SAA_18"
+   }
+  },
+  "3001:13:15:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:1:1:0F": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "ECE",
+    "2": "US"
+   }
+  },
+  "3001:1:1:10": {
+   "name": "Vertikal_Bild_Offset",
+   "values": {
+    "0": "nicht verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3001:1:1:E0": {
+   "name": "Richtung_Bild_Offset",
+   "values": {
+    "0": "auf"
+   }
+  },
+  "3001:2:2:7F": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "G11",
+    "11": "F012_LCI",
+    "13": "F025_LCI",
+    "14": "F016",
+    "15": "initwert",
+    "20": "F020",
+    "21": "F001_LCI",
+    "24": "F030",
+    "26": "F025",
+    "3": "F001",
+    "35": "F007_LCI",
+    "38": "F012",
+    "5": "F32",
+    "7": "F010",
+    "8": "F032"
+   }
+  },
+  "3001:2:2:80": {
+   "name": "Geschwindigkeit_Deaktivierung_Hart",
+   "values": {
+    "0": "auf",
+    "1": "ab"
+   }
+  },
+  "3001:3:3:FF": {
+   "name": "Geschwindigkeit_Aktivierung",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:4:4:FF": {
+   "name": "Geschwindigkeit_Deaktivierung_Weich",
+   "values": {
+    "15": "CHINA",
+    "25": "initwert"
+   }
+  },
+  "3001:5:5:FF": {
+   "name": "Zeit_Aufblenden_Entgegenkommend_schnell",
+   "values": {
+    "30": "CHINA",
+    "40": "ECE"
+   }
+  },
+  "3001:6:6:FF": {
+   "name": "Zeit_Aufblenden_Vorausfahrend",
+   "values": {
+    "20": "CHINA",
+    "29": "US",
+    "30": "initwert"
+   }
+  },
+  "3001:7:7:FF": {
+   "name": "Zeit_Aufblenden_langsam_berholen",
+   "values": {
+    "6": "initwert"
+   }
+  },
+  "3001:8:8:FF": {
+   "name": "Zeit_Aufblenden_Entgegenkommend_langsam",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3001:9:9:FF": {
+   "name": "Zeit_Aufblenden_Entgegenkommend_schnell_maximum",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3002:0:1:FF": {
+   "name": "City_Short_AVG_Ambient_Threshold",
+   "values": {
+    "100": "US",
+    "20": "initwert",
+    "45": "ECE"
+   }
+  },
+  "3002:10:10:FF": {
+   "name": "City_VD_Highway_Speed",
+   "values": {
+    "100": "ECE"
+   }
+  },
+  "3002:11:11:FF": {
+   "name": "City_AVG_Number_of_Pks_X16_Threshold",
+   "values": {
+    "130": "US",
+    "48": "ECE",
+    "64": "initwert"
+   }
+  },
+  "3002:12:12:FF": {
+   "name": "City_Ambient_Pk_Total_Threshold",
+   "values": {
+    "150": "initwert",
+    "250": "ECE"
+   }
+  },
+  "3002:13:13:0F": {
+   "name": "City_Short_AVG_Timeconstant",
+   "values": {
+    "3": "ECE"
+   }
+  },
+  "3002:13:13:F0": {
+   "name": "City_Long_AVG_Timeconstant",
+   "values": {
+    "9": "ECE"
+   }
+  },
+  "3002:14:14:0F": {
+   "name": "City_SL_Brightness_Timeconstant",
+   "values": {
+    "3": "ECE"
+   }
+  },
+  "3002:14:14:F0": {
+   "name": "City_max_Short_SVG_Timeconstant",
+   "values": {
+    "5": "US",
+    "9": "initwert"
+   }
+  },
+  "3002:15:15:0F": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:15:15:F0": {
+   "name": "City_SL_Timeconstant",
+   "values": {
+    "2": "ECE",
+    "3": "US"
+   }
+  },
+  "3002:2:3:FF": {
+   "name": "City_Long_AVG_Ambient_Threshold",
+   "values": {
+    "23": "initwert",
+    "25": "ECE",
+    "27": "US"
+   }
+  },
+  "3002:4:5:FF": {
+   "name": "City_SL_Brigthness_Threshold_Village",
+   "values": {
+    "13": "ECE",
+    "20": "US"
+   }
+  },
+  "3002:6:7:FF": {
+   "name": "City_SL_Brigthness_Threshold_Highway",
+   "values": {
+    "20": "ECE"
+   }
+  },
+  "3002:8:8:FF": {
+   "name": "City_Number_of_SL_X16_Village",
+   "values": {
+    "28": "ECE",
+    "64": "US",
+    "80": "US"
+   }
+  },
+  "3002:9:9:FF": {
+   "name": "City_Number_of_SL_X16_Highway",
+   "values": {
+    "64": "US",
+    "80": "US"
+   }
+  },
+  "3003:0:0:FF": {
+   "name": "HL_Propability_Threshold_Halogen",
+   "values": {
+    "50": "initwert"
+   }
+  },
+  "3003:10:10:FF": {
+   "name": "TL_Output_Sensitivity",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "3003:11:11:FF": {
+   "name": "HL_Output_Sensitivity_Xenon",
+   "values": {
+    "100": "initwert",
+    "85": "initwert"
+   }
+  },
+  "3003:12:12:FF": {
+   "name": "HL_Output_Sensitivity_Halogen",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "3003:13:13:FF": {
+   "name": "TL_Input_Sensitivity",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "3003:14:14:FF": {
+   "name": "HL_Input_Sensitivity_Xenon",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "3003:15:15:FF": {
+   "name": "HL_Input_Sensitivity_Halogen",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "3003:1:1:FF": {
+   "name": "TL_Propability_Threshold_Bixenon",
+   "values": {
+    "50": "initwert",
+    "56": "F032_special"
+   }
+  },
+  "3003:2:2:FF": {
+   "name": "TL_Propability_Threshold",
+   "values": {
+    "50": "initwert"
+   }
+  },
+  "3003:3:3:FF": {
+   "name": "AC_Propability_Threshold",
+   "values": {
+    "45": "initwert"
+   }
+  },
+  "3003:4:4:FF": {
+   "name": "BiX_on_Threshold",
+   "values": {
+    "10": "initwert"
+   }
+  },
+  "3003:5:5:FF": {
+   "name": "BiX_off_Threshold",
+   "values": {
+    "20": "F032_special",
+    "24": "initwert"
+   }
+  },
+  "3003:6:6:FF": {
+   "name": "Halo_on_Threshold",
+   "values": {
+    "31": "initwert"
+   }
+  },
+  "3003:7:7:FF": {
+   "name": "Halo_off_Threshold",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3003:8:8:FF": {
+   "name": "LED_on_Threshold",
+   "values": {
+    "31": "initwert"
+   }
+  },
+  "3003:9:9:FF": {
+   "name": "LED_off_Threshold",
+   "values": {
+    "1": "initwert",
+    "31": "initwert"
+   }
+  },
+  "3004:0:0:FF": {
+   "name": "WS_correction_red_HID",
+   "values": {
+    "100": "IR",
+    "107": "F32_special"
+   }
+  },
+  "3004:1:1:FF": {
+   "name": "WS_correction_red_HALO",
+   "values": {
+    "110": "Clear",
+    "116": "F032_special",
+    "117": "2013_Common"
+   }
+  },
+  "3004:2:2:FF": {
+   "name": "WS_correction_red_TL",
+   "values": {
+    "110": "Clear",
+    "116": "F032_special",
+    "117": "2013_Common"
+   }
+  },
+  "3004:3:3:FF": {
+   "name": "WS_correction_cyan_HID",
+   "values": {
+    "100": "IR",
+    "93": "F032_special"
+   }
+  },
+  "3004:4:4:FF": {
+   "name": "WS_correction_cyan_HALO",
+   "values": {
+    "83": "2013_Common",
+    "84": "F032_special",
+    "90": "Clear"
+   }
+  },
+  "3004:5:5:FF": {
+   "name": "WS_correction_cyan_TL",
+   "values": {
+    "83": "2013_Common",
+    "84": "F032_special",
+    "90": "Clear"
+   }
+  },
+  "3004:6:6:FF": {
+   "name": "WS_HID_UCR_Point",
+   "values": {
+    "32": "F032_special",
+    "37": "IR"
+   }
+  },
+  "3004:7:7:FF": {
+   "name": "WS_HALO_UCR_Point",
+   "values": {
+    "52": "2013_Common",
+    "54": "F032_special",
+    "61": "Clear"
+   }
+  },
+  "3004:8:8:FF": {
+   "name": "WS_TL_UCR_Point",
+   "values": {
+    "62": "Clear"
+   }
+  },
+  "3004:9:15:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3005:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3006:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "CC-Meldungen",
+  "3001": "Fzg_und_Laendervarianten",
+  "3002": "Ortserkennung",
+  "3003": "Empfindlichkeits Einstellungen",
+  "3004": "Windscreen compensation",
+  "3005": "CAF_ID",
+  "3006": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

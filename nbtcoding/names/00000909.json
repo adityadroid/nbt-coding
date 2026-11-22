@@ -1,0 +1,1171 @@
+{
+ "functions": {
+  "3000:0:0:01": {
+   "name": "Airbag_Fahrer_Stufe_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:02": {
+   "name": "Airbag_Fahrer_Stufe_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:04": {
+   "name": "Adaptiver_Airbag_Fahrer_Vent",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:08": {
+   "name": "Airbag_Beifahrer_Stufe_1",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:10": {
+   "name": "Airbag_Beifahrer_Stufe_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:20": {
+   "name": "Adaptiver_Airbag_Beifahrer_Vent",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:40": {
+   "name": "Gurtstrammer_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:80": {
+   "name": "Endbeschlagstrammer_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:01": {
+   "name": "RESERVE_Sensorik_Byte_10_Bit_0",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:10:10:02": {
+   "name": "Sitzpositionssensor_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:04": {
+   "name": "Sitzpositionserkennung_Sitzmemory_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:08": {
+   "name": "SBR_Sensor_Beifahrer_LIN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:10": {
+   "name": "SBR_Sensor_Beifahrer_widerstandscodiert",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:20": {
+   "name": "RESERVE_Sensorik_Byte_10_Bit_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:10:10:40": {
+   "name": "CIS_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:80": {
+   "name": "RESERVE_Sensorik_Byte_10_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:11:11:01": {
+   "name": "RESERVE_Byte_11_Bit_0",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:11:11:02": {
+   "name": "RESERVE_Byte_11_Bit_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:11:11:04": {
+   "name": "RESERVE_Byte_11_Bit_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:11:11:08": {
+   "name": "RESERVE_Byte_11_Bit_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:11:11:10": {
+   "name": "RESERVE_Byte_11_Bit_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:11:11:20": {
+   "name": "RESERVE_Byte_11_Bit_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:11:11:40": {
+   "name": "RESERVE_Byte_11_Bit_6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:11:11:80": {
+   "name": "RESERVE_Byte_11_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:12:12:01": {
+   "name": "RESERVE_Byte_12_Bit_0",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:12:12:02": {
+   "name": "POL_HW",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:12:12:04": {
+   "name": "RESERVE_Byte_12_Bit_2",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:12:12:08": {
+   "name": "RESERVE_Byte_12_Bit_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:12:12:10": {
+   "name": "RESERVE_Byte_12_Bit_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:12:12:20": {
+   "name": "RESERVE_Byte_12_Bit_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:12:12:40": {
+   "name": "RESERVE_Byte_12_Bit_6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:12:12:80": {
+   "name": "RESERVE_Byte_12_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:13:13:01": {
+   "name": "SLV_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:02": {
+   "name": "SLV_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:04": {
+   "name": "RESERVE_Byte_13_Bit_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:13:13:08": {
+   "name": "Sicherheitsfahrzeug_ABK_UeFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:10": {
+   "name": "RESERVE_Byte_13_Bit_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:13:13:20": {
+   "name": "RESERVE_Byte_13_Bit_5",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:40": {
+   "name": "Trommelspeicher",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:80": {
+   "name": "RESERVE_Byte_13_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:14:14:FF": {
+   "name": "RESERVE_Byte_14_Bit_0",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:15:15:01": {
+   "name": "RESERVE_Byte_14_Bit_1",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:02": {
+   "name": "RESERVE_Byte_14_Bit_2",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:04": {
+   "name": "RESERVE_Byte_14_Bit_3",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:08": {
+   "name": "RESERVE_Byte_14_Bit_4",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:10": {
+   "name": "RESERVE_Byte_14_Bit_5",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:20": {
+   "name": "RESERVE_Byte_14_Bit_6",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:40": {
+   "name": "RESERVE_Byte_14_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:15:15:80": {
+   "name": "Initialwarnung_GWF_IW",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3000:16:16:01": {
+   "name": "SeatBeltReminder_SBR_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:02": {
+   "name": "SeatBeltReminder_SBR_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:04": {
+   "name": "Gurtzustandsanzeige_Fahrer_GWF_GZA_FA",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3000:16:16:08": {
+   "name": "Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3000:16:16:10": {
+   "name": "Gurtzustandsanzeige_Fondsitze_GWF_GZAF",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3000:16:16:20": {
+   "name": "RESERVE_Byte_15_Bit_6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:16:16:40": {
+   "name": "RESERVE_Byte_15_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:16:16:80": {
+   "name": "SBR_PreWarning_Fahrer",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3000:17:17:01": {
+   "name": "SBR_PreWarning_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:02": {
+   "name": "RESERVE_Byte_16_Bit_2",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:04": {
+   "name": "RESERVE_Byte_16_Bit_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:17:17:08": {
+   "name": "RESERVE_Byte_16_Bit_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:17:17:10": {
+   "name": "RESERVE_Byte_16_Bit_5",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:20": {
+   "name": "RESERVE_Byte_16_Bit_6",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:40": {
+   "name": "RESERVE_Byte_16_Bit_7",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:80": {
+   "name": "Passenger_Airbag_Off_Schalter",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3000:1:1:01": {
+   "name": "Adaptiver_Gurt_Kraftbegrenzer_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:02": {
+   "name": "Gurtstrammer_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:04": {
+   "name": "Endbeschlagstrammer_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:08": {
+   "name": "Adaptiver_Gurt_Kraftbegrenzer_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:10": {
+   "name": "Kniearbag_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:20": {
+   "name": "Knieairbag_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:40": {
+   "name": "Aktive_Kopfstuetze_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:80": {
+   "name": "Aktive_Kopfstuetze_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:01": {
+   "name": "Gurtstrammer_hinten_links",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:02": {
+   "name": "Gurtstrammer_hinten_rechts",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:04": {
+   "name": "Automatenstrammer_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:08": {
+   "name": "Automatenstrammer_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:10": {
+   "name": "Sitzairbag_Thorax_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:20": {
+   "name": "Sitzairbag_Thorax_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:40": {
+   "name": "RESERVE_Sitzairbag_FA_Vent",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:2:2:80": {
+   "name": "RESERVE_Sitzairbag_BF_Vent",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:3:3:01": {
+   "name": "Curtain_links",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:02": {
+   "name": "Curtain_rechts",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:04": {
+   "name": "Sicherheitsbatterieklemme",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:08": {
+   "name": "Sicherheitsbatterieklemme_2",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:10": {
+   "name": "Rollover_Schutz_links_pyrotechnisch",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:20": {
+   "name": "Rollover_Schutz_rechts_pyrotechnisch",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:40": {
+   "name": "Rollover_Schutz_links_magnetisch",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:80": {
+   "name": "Rollover_Schutz_rechts_magnetisch",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:01": {
+   "name": "Zuendkreis_FGS_vorne_links",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:02": {
+   "name": "Zuendkreis_FGS_vorne_rechts",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:04": {
+   "name": "Zuendkreis_FGS_hinten_links",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:08": {
+   "name": "Zuendkreis_FGS_hinten_rechts",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:10": {
+   "name": "Sicherheitsbatterieklemme_3",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:20": {
+   "name": "RESERVE_Byte_4_Bit_5",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:40": {
+   "name": "RESERVE_Byte_4_Bit_6",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:80": {
+   "name": "RESERVE_Byte_4_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:5:01": {
+   "name": "RESERVE_Byte_5_Bit_0",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:5:02": {
+   "name": "RESERVE_Byte_5_Bit_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:5:04": {
+   "name": "RESERVE_Byte_5_Bit_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:5:08": {
+   "name": "RESERVE_Byte_5_Bit_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:5:10": {
+   "name": "RESERVE_Byte_5_Bit_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:5:20": {
+   "name": "RESERVE_Byte_5_Bit_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:5:40": {
+   "name": "RESERVE_Byte_5_Bit_6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:5:80": {
+   "name": "RESERVE_Byte_5_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:6:6:01": {
+   "name": "RESERVE_Byte_6_Bit_0",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:6:6:02": {
+   "name": "RESERVE_Byte_6_Bit_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:6:6:04": {
+   "name": "RESERVE_Byte_6_Bit_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:6:6:08": {
+   "name": "RESERVE_Byte_6_Bit_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:6:6:10": {
+   "name": "RESERVE_Byte_6_Bit_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:6:6:20": {
+   "name": "RESERVE_Byte_6_Bit_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:6:6:40": {
+   "name": "RESERVE_Byte_6_Bit_6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:6:6:80": {
+   "name": "RESERVE_Byte_6_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:7:7:01": {
+   "name": "UpFront-Sensoren",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:7:7:02": {
+   "name": "RESERVE_Byte_7_Bit_1",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:7:7:04": {
+   "name": "RESERVE_Byte_7_Bit_2",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:7:7:08": {
+   "name": "Satelliten_Tuer_Druck",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:7:7:10": {
+   "name": "RESERVE_Satelliten_C-Saeule",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:7:7:20": {
+   "name": "RESERVE_Byte_7_Bit_5",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:7:7:40": {
+   "name": "FGS-Sensorik_ Beschleunigung",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:7:7:80": {
+   "name": "FGS_Sensor_Sensorband",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:8:8:01": {
+   "name": "RESERVE_Sensorik_Byte_8_Bit_0",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:8:8:02": {
+   "name": "Zentralsensor_Rollover_y-z_low_g",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:8:8:04": {
+   "name": "Zentralsensor_ICM_2-Slot_Uebertragung",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:8:8:08": {
+   "name": "RESERVE_Sensorik_Byte_8_Bit_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:8:8:10": {
+   "name": "RESERVE_Sensorik_Byte_8_Bit_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:8:8:20": {
+   "name": "RESERVE_Sensorik_Byte_8_Bit_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:8:8:40": {
+   "name": "RESERVE_Sensorik_Byte_8_Bit_6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:8:8:80": {
+   "name": "Zentralsensor_Koerperschall",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:01": {
+   "name": "Gurtkontakt_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:02": {
+   "name": "Gurtkontakt_Beifahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:04": {
+   "name": "Gurtkontakt_hinten_links",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:08": {
+   "name": "Gurtkontakt_hinten_rechts",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:10": {
+   "name": "Gurtkontakt_hinten_mitte",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:20": {
+   "name": "Sitzpositionssensor_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:40": {
+   "name": "Sitzpositionserkennung_Sitzmemory_Fahrer",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:80": {
+   "name": "RESERVE_Byte_9_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:0:0:FF": {
+   "name": "GWF_SBR_DISTANCE",
+   "values": {}
+  },
+  "3001:10:10:FF": {
+   "name": "RESERVE_BYTE_10_SBR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:11:11:FF": {
+   "name": "RESERVE_BYTE_11_SBR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:1:1:FF": {
+   "name": "GWF_SBR_GESCHWINDIGKEIT",
+   "values": {}
+  },
+  "3001:2:2:FF": {
+   "name": "GWF_SBR_MONITOR",
+   "values": {
+    "1": "Wert_01s",
+    "15": "Wert_15s"
+   }
+  },
+  "3001:3:3:FF": {
+   "name": "GWF_SBR_WARNDAUER",
+   "values": {}
+  },
+  "3001:4:4:FF": {
+   "name": "GWF_SBE_UP",
+   "values": {}
+  },
+  "3001:5:5:FF": {
+   "name": "GWF_SBE_DOWN",
+   "values": {}
+  },
+  "3001:6:6:FF": {
+   "name": "GWF_IW_DAUER",
+   "values": {}
+  },
+  "3001:7:7:FF": {
+   "name": "GWF_IW_VERZOEGERUNG",
+   "values": {}
+  },
+  "3001:8:8:FF": {
+   "name": "RESERVE_BYTE_8_SBR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:9:9:FF": {
+   "name": "RESERVE_BYTE_9_SBR",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:0:1:FF": {
+   "name": "BMW_Werkskennung",
+   "values": {}
+  },
+  "3003:0:2:FF": {
+   "name": "HaendlerNummer",
+   "values": {}
+  },
+  "3003:3:5:FF": {
+   "name": "Codierdatum",
+   "values": {}
+  },
+  "3003:6:6:FF": {
+   "name": "Baureihenkennung",
+   "values": {
+    "112": "F25",
+    "113": "F26",
+    "117": "F15",
+    "118": "F16",
+    "119": "F85",
+    "120": "F86",
+    "128": "F20",
+    "129": "F22",
+    "130": "F23",
+    "131": "F30",
+    "132": "F31",
+    "133": "F32",
+    "134": "F33",
+    "135": "F21",
+    "136": "F34",
+    "137": "F35",
+    "144": "F34",
+    "147": "F87",
+    "160": "F80",
+    "161": "F82",
+    "162": "F83",
+    "163": "F36",
+    "64": "F01",
+    "65": "F02",
+    "66": "F03",
+    "67": "F04",
+    "68": "F07",
+    "80": "F10",
+    "81": "F11",
+    "82": "F12",
+    "83": "F13",
+    "84": "F18",
+    "85": "F06",
+    "96": "RR4",
+    "97": "RR5",
+    "98": "RR6"
+   }
+  },
+  "3004:0:0:FF": {
+   "name": "MINIMALWERT_POL_DIMMUNG_PWM",
+   "values": {}
+  },
+  "3004:1:1:FF": {
+   "name": "MAXIMALWERT_POL_DIMMUNG_PWM",
+   "values": {}
+  },
+  "3004:2:2:FF": {
+   "name": "CRASH_NACHLAUFZEIT",
+   "values": {}
+  },
+  "3004:3:3:FF": {
+   "name": "ENTPRELLUNG_AACN_UP",
+   "values": {}
+  },
+  "3004:4:4:FF": {
+   "name": "ENTPRELLUNG_AACN_DOWN",
+   "values": {}
+  },
+  "3005:0:19:FF": {
+   "name": "CIS-Parameter",
+   "values": {
+    "0": "Parameter"
+   }
+  },
+  "3010:0:0:01": {
+   "name": "LENKSEITE",
+   "values": {
+    "0": "Linkslenker",
+    "1": "Rechtslenker"
+   }
+  },
+  "3010:0:0:02": {
+   "name": "RESERVE_Byte_0_Bit_1",
+   "values": {
+    "0": "Schwelle_niedrig",
+    "1": "Schwelle_hoch"
+   }
+  },
+  "3010:0:0:04": {
+   "name": "US_SCHWELLEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3010:0:0:08": {
+   "name": "SELEKTIVES_SICHERHEITSFAHRZEUG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3010:0:0:10": {
+   "name": "RESERVE_Byte_0_Bit_4",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3010:0:0:20": {
+   "name": "RESERVE_Byte_0_Bit_5",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3010:0:0:40": {
+   "name": "RESERVE_Byte_0_Bit_6",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3010:0:0:80": {
+   "name": "RESERVE_Byte_0_Bit_7",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3010:1:1:01": {
+   "name": "CURTAIN_IM_SCHRAEGCRASH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3010:1:1:02": {
+   "name": "GURTSTRAMMER_IM_SEITENCRASH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3010:1:1:04": {
+   "name": "THORAXAIRBAG_BEI_ROLLOVER",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3010:1:1:08": {
+   "name": "INVERTIERUNG_AIRBAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3010:1:1:10": {
+   "name": "THORAX_IM_SCHRAEGCRASH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3010:1:1:20": {
+   "name": "AUFROLLSTRAMMER_IM_SEITENCRASH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3010:1:1:40": {
+   "name": "RESERVE_Byte_1_Bit_6",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3010:1:1:80": {
+   "name": "RESERVE_Byte_1_Bit_7",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3018:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3019:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Ausstattungsflags",
+  "3001": "Seat_Belt_Reminder",
+  "3002": "BMW_Werkskennung",
+  "3003": "HaendlerNummer CodierDatum Baureihe",
+  "3004": "Abgleichparameter",
+  "3005": "CIS-Parameter",
+  "3010": "CRS_Flags",
+  "3018": "CAF_ID",
+  "3019": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

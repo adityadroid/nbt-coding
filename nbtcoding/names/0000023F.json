@@ -1,0 +1,136 @@
+{
+ "functions": {
+  "3000:0:0:07": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:0:0:08": {
+   "name": "Pochen",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:10": {
+   "name": "Segeln",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:20": {
+   "name": "MSA",
+   "values": {
+    "0": "nicht_aktiv_MSA2.2",
+    "1": "aktiv_MSA2.1"
+   }
+  },
+  "3000:0:0:40": {
+   "name": "Sportschalter_alt",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:80": {
+   "name": "NIC_alt",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3000:1:1:01": {
+   "name": "Sportschalter",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:02": {
+   "name": "Allrad",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:04": {
+   "name": "Baustand",
+   "values": {
+    "0": "ab_0713",
+    "1": "vor_0713"
+   }
+  },
+  "3000:1:1:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:1:1:10": {
+   "name": "MAB Variante",
+   "values": {}
+  },
+  "3000:1:1:20": {
+   "name": "Stop / Go",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:40": {
+   "name": "COS",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3000:1:1:80": {
+   "name": "LC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:01": {
+   "name": "NIC",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht_aktiv"
+   }
+  },
+  "3001:0:0:3E": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:0:0:C0": {
+   "name": "MIL_SCAN_TOOL",
+   "values": {}
+  },
+  "3001:1:1:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3003:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Applikation",
+  "3001": "Elektronik",
+  "3002": "CAF_ID",
+  "3003": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

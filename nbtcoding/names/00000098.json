@@ -1,0 +1,1441 @@
+{
+ "functions": {
+  "3000:0:0:FF": {
+   "name": "Punkt 0 Foerdermenge Q",
+   "values": {
+    "1": "1 lph"
+   }
+  },
+  "3000:10:11:FF": {
+   "name": "Punkt 3 Drehzahl n",
+   "values": {
+    "1885": "Bosch XLP-CR Diesel DR",
+    "2200": "Bosch XLP-CR Diesel DR",
+    "2796": "Bosch XLP-CR Diesel DR",
+    "2884": "E3LM - F15 DR Diesel",
+    "3007": "DPI 42 14T",
+    "3699": "DHD",
+    "4478": "DCSS 19T - F25 DZR",
+    "4546": "E5LM",
+    "4551": "DCSS 17T",
+    "4578": "DCSS 19T - F1x/F18 DZR SA1AK China",
+    "4650": "Bosch FP-G.46-DC fuer F8x",
+    "4807": "HPI 46 12T",
+    "5121": "HPI 46 12T",
+    "5186": "Bosch FP-G.46-DC",
+    "5282": "DCSS 19T - F10 LDZR 5,0 bar",
+    "5329": "HPI 46 12T DZR 5,0 bar",
+    "5453": "DCSS 17T",
+    "5500": "E5LM F10 LDZR 6 bar",
+    "5529": "E5LM DR 5,95 bar",
+    "5540": "DCSS 19T - F25 LDZR 5,0 bar",
+    "5627": "DCSS 19T - F10 LDZR 5,95 bar",
+    "5664": "E5LM - F15 LDZR 5,95 bar",
+    "5715": "DCSS 17T",
+    "5720": "E5 3850 DCSS 23T",
+    "5727": "E5 DCSS 18T",
+    "5729": "E5 38 DHD 23T 6mm - F15 Diesel",
+    "5736": "Bosch XLP-CO Benzin DZR",
+    "5816": "E5 DCSS 23T",
+    "5876": "PL7 HPI4.6 DR",
+    "5886": "DCSS 19T - F10 LDZR 5,95 bar",
+    "5963": "DCSS 19T - F15 LDZR 5,95 bar",
+    "5970": "Bosch FP-G.42-DC",
+    "5972": "DCSS 19T - F25 LDZR 5,95 bar",
+    "6128": "HPI 46 12T LDZR 5,0 bar",
+    "6188": "HPI 46 12T LDZR 5,8 bar",
+    "6276": "HPI 46 12T LDZR 5,8 bar",
+    "6561": "Bosch XLP-CO Benzin LDZR",
+    "6810": "Bosch XLP-CO Benzin LDZR",
+    "7019": "Bosch XLP-CO Benzin LDZR",
+    "7041": "PL7 HPI4.6 LDZR",
+    "7227": "Bosch XLP-CO Benzin LDZR",
+    "7600": "Notlauf 7600 Umin"
+   }
+  },
+  "3000:12:12:FF": {
+   "name": "Punkt 4 Foerdermenge Q",
+   "values": {
+    "150": "150 l pro h",
+    "170": "170 l pro h",
+    "180": "180 l pro h"
+   }
+  },
+  "3000:13:14:FF": {
+   "name": "Punkt 4 Drehzahl n",
+   "values": {
+    "2539": "Bosch XLP-CR Diesel DR",
+    "2650": "Bosch XLP-CR Diesel DR",
+    "3669": "E3LM - F15 DR Diesel",
+    "3934": "Bosch XLP-CR Diesel DR",
+    "4141": "DPI 42 14T",
+    "4647": "DHD",
+    "5400": "Bosch FP-G.46-DC fuer F8x",
+    "5428": "DCSS 17T",
+    "5459": "DCSS 19T - F25 DZR",
+    "5559": "DCSS 19T - F1x/F18 DZR SA1AK China",
+    "5730": "HPI 46 12T",
+    "5992": "E5LM",
+    "6056": "HPI 46 12T",
+    "6116": "Bosch FP-G.46-DC",
+    "6191": "DCSS 19T - F10 LDZR 5,0 bar",
+    "6229": "HPI 46 12T DZR 5,0 bar",
+    "6335": "DCSS 17T",
+    "6346": "E5LM DR 5,95 bar",
+    "6350": "E5LM F10 LDZR 6 bar",
+    "6370": "DCSS 19T - F25 LDZR 5,0 bar",
+    "6481": "E5LM - F15 LDZR 5,95 bar",
+    "6530": "DCSS 19T - F25 LDZR 5,95 bar",
+    "6536": "DCSS 19T - F10 LDZR 5,95 bar",
+    "6562": "E5 38 DHD 23T 6mm - F15 Diesel",
+    "6596": "E5 DCSS 18T",
+    "6651": "E5 3850 DCSS 23T",
+    "6658": "E5 DCSS 23T",
+    "6730": "DCSS 19T - F15 LDZR 5,95 bar",
+    "6795": "DCSS 19T - F10 LDZR 5,95 bar",
+    "6870": "Bosch FP-G.42-DC",
+    "6940": "DCSS 17T",
+    "7000": "HPI 46 12T LDZR 5,0 bar",
+    "7053": "PL7 HPI4.6 DR",
+    "7071": "HPI 46 12T LDZR 5,8 bar",
+    "7072": "Bosch XLP-CO Benzin DZR",
+    "7075": "E5 3850 DCSS 16T F15 LDZR 5,95 bar",
+    "7511": "HPI 46 12T LDZR 5,8 bar",
+    "7600": "Notlauf 7600 Umin",
+    "7905": "Bosch XLP-CO Benzin LDZR",
+    "8027": "Bosch XLP-CO Benzin LDZR",
+    "8223": "PL7 HPI4.6 LDZR",
+    "8394": "Bosch XLP-CO Benzin LDZR",
+    "8591": "Bosch XLP-CO Benzin LDZR"
+   }
+  },
+  "3000:15:15:FF": {
+   "name": "Punkt 5 Foerdermenge Q",
+   "values": {
+    "180": "180 l pro h",
+    "200": "200 l pro h"
+   }
+  },
+  "3000:16:17:FF": {
+   "name": "Punkt 5 Drehzahl n",
+   "values": {
+    "3193": "Bosch XLP-CR Diesel DR",
+    "3200": "Bosch XLP-CR Diesel DR",
+    "4453": "E3LM - F15 DR Diesel",
+    "5071": "Bosch XLP-CR Diesel DR",
+    "5275": "DPI 42 14T",
+    "5596": "DHD",
+    "6116": "Bosch FP-G.46-DC",
+    "6191": "DCSS 19T - F10 LDZR 5,0 bar",
+    "6200": "Bosch FP-G.46-DC fuer F8x",
+    "6304": "DCSS 17T",
+    "6370": "DCSS 19T - F25 LDZR 5,0 bar",
+    "6440": "DCSS 19T - F25 DZR",
+    "6530": "DCSS 19T - F25 LDZR 5,95 bar",
+    "6536": "DCSS 19T - F10 LDZR 5,95 bar",
+    "6540": "DCSS 19T - F1x/F18 DZR SA1AK China",
+    "6651": "E5 3850 DCSS 23T",
+    "6653": "HPI 46 12T",
+    "6658": "E5 DCSS 23T",
+    "6730": "DCSS 19T - F15 LDZR 5,95 bar",
+    "6795": "DCSS 19T - F10 LDZR 5,95 bar",
+    "6865": "DCSS 17T",
+    "6870": "Bosch FP-G.42-DC",
+    "6940": "DCSS 17T",
+    "6991": "HPI 46 12T",
+    "7000": "HPI 46 12T LDZR 5,0 bar",
+    "7046": "Bosch FP-G.46-DC",
+    "7075": "E5 3850 DCSS 16T F15 LDZR 5,95 bar",
+    "7129": "HPI 46 12T DZR 5,0 bar",
+    "7162": "E5LM DR 5,95 bar",
+    "7298": "E5LM - F15 LDZR 5,95 bar",
+    "7300": "E5LM F10 LDZR 6 bar",
+    "7395": "E5 38 DHD 23T 6mm - F15 Diesel",
+    "7438": "E5LM",
+    "7464": "E5 DCSS 18T",
+    "7511": "HPI 46 12T LDZR 5,8 bar",
+    "7521": "DCSS 19T - F10 LDZR",
+    "7600": "Notlauf 7600 Umin",
+    "8027": "Bosch XLP-CO Benzin LDZR",
+    "8229": "PL7 HPI4.6 DR",
+    "8394": "Bosch XLP-CO Benzin LDZR",
+    "8407": "Bosch XLP-CO Benzin DZR",
+    "8591": "Bosch XLP-CO Benzin LDZR",
+    "9249": "Bosch XLP-CO Benzin LDZR",
+    "9405": "PL7 HPI4.6 LDZR"
+   }
+  },
+  "3000:18:18:FF": {
+   "name": "Punkt 6 Foerdermenge Q",
+   "values": {
+    "254": "254 l pro h"
+   }
+  },
+  "3000:19:20:FF": {
+   "name": "Punkt 6 Drehzahl n",
+   "values": {
+    "10682": "PL7 HPI4.6 LDZR",
+    "10700": "Bosch XLP-CO Benzin LDZR",
+    "3750": "Bosch XLP-CR Diesel DR",
+    "3900": "Bosch XLP-CR Diesel DR",
+    "5300": "E3LM - F15 DR Diesel",
+    "6116": "Bosch FP-G.46-DC",
+    "6191": "DCSS 19T - F10 LDZR 5,0 bar",
+    "6200": "Bosch FP-G.46-DC fuer F8x",
+    "6300": "Bosch XLP-CR Diesel DR",
+    "6370": "DCSS 19T - F25 LDZR 5,0 bar",
+    "6500": "DPI 42 14T",
+    "6530": "DCSS 19T - F25 LDZR 5,95 bar",
+    "6536": "DCSS 19T - F10 LDZR 5,95 bar",
+    "6620": "DHD",
+    "6651": "E5 3850 DCSS 23T",
+    "6658": "E5 DCSS 23T",
+    "6730": "DCSS 19T - F15 LDZR 5,95 bar",
+    "6795": "DCSS 19T - F10 LDZR 5,95 bar",
+    "6865": "DCSS 17T",
+    "6870": "Bosch FP-G.42-DC",
+    "6940": "DCSS 17T",
+    "7000": "HPI 46 12T LDZR 5,0 bar",
+    "7075": "E5 3850 DCSS 16T F15 LDZR 5,95 bar",
+    "7162": "E5LM F15 LDZR 5,95 bar",
+    "7250": "DCSS 17T",
+    "7300": "Bosch FP-G.42-DC F8xS55",
+    "7396": "E5LM F15 LDZR 5,95 bar",
+    "7464": "E5 DCSS 18T",
+    "7500": "DCSS 19T - F25 DZR",
+    "7511": "HPI 46 12T LDZR 5,8 bar",
+    "7600": "DCSS 19T - F10 DZR + DR 5,0 bar",
+    "7650": "HPI 46 12T",
+    "8000": "HPI 46 12T",
+    "8027": "Bosch XLP-CO Benzin LDZR",
+    "8100": "HPI 46 12T DZR 5,0 bar",
+    "8180": "E5LM - F15 LDZR 5,95 bar",
+    "8200": "Bosch FP-G.42-DC F8xS55",
+    "8295": "E5 38 DHD 23T 6mm - F15 Diesel",
+    "8394": "Bosch XLP-CO Benzin LDZR",
+    "8491": "DCSS 19T - F10 LDZR",
+    "8591": "Bosch XLP-CO Benzin LDZR",
+    "9000": "E5LM DR 5,95 bar",
+    "9500": "PL7 HPI4.6 DR",
+    "9850": "Bosch XLP-CO Benzin DZR"
+   }
+  },
+  "3000:1:2:FF": {
+   "name": "Punkt 0 Drehzahl n",
+   "values": {
+    "1100": "Bosch XLP-CR Diesel DR",
+    "1600": "Bosch XLP-CR Diesel DR",
+    "2000": "Bosch XLP-CR Diesel DR",
+    "2100": "E3LM - F15 DR Diesel",
+    "2750": "DHD",
+    "3100": "E5LM",
+    "3200": "Bosch FP-G.46-DC fuer F8x",
+    "3344": "Bosch FP-G.46-DC",
+    "3400": "DCSS 19T - F10 DZR + DR 5,0 bar",
+    "3482": "DCSS 19T - F10 LDZR 5,0 bar",
+    "3500": "DCSS 19T - F25 DZR",
+    "3578": "DCSS 19T - F25 LDZR 5,0 bar",
+    "3600": "DCSS 19T F25",
+    "3700": "HPI 46 12T",
+    "3706": "DCSS 17T",
+    "3827": "DCSS 19T - F10 LDZR 5,95 bar",
+    "3879": "E5 3850 DCSS 23T",
+    "3900": "Bosch XLP-CO Benzin LDZR",
+    "3912": "E5LM F15 LDZR 5,95 bar",
+    "3950": "E5LM F10 LDZR 6 bar",
+    "3983": "DCSS 17T",
+    "4000": "HPI 46 12T",
+    "4007": "E5 DCSS 18T",
+    "4047": "E5LM - F15 LDZR 5,95 bar",
+    "4079": "E5 38 DHD 23T 6mm - F15 Diesel",
+    "4086": "DCSS 19T - F10 LDZR 5,95 bar",
+    "4139": "DCSS 19T - F25 LDZR 5,95 bar",
+    "4147": "E5 DCSS 23T",
+    "4164": "DCSS 19T - F15 LDZR 5,95 bar",
+    "4188": "Bosch FP-G.42-DC",
+    "4200": "DCSS 19T - F1x/F18 DZR SA1AK China",
+    "4250": "HPI 46 12T DZR 5,0 bar",
+    "4296": "Bosch XLP-CO Benzin LDZR",
+    "4400": "Bosch XLP-CO Benzin DZR",
+    "4402": "Bosch XLP-CO Benzin LDZR",
+    "4441": "HPI 46 12T LDZR 5,8 bar",
+    "4527": "Bosch XLP-CO Benzin LDZR",
+    "4529": "HPI 46 12T LDZR 5,8 bar",
+    "4700": "PL7 HPI4.6",
+    "7600": "Notlauf 7600 Umin"
+   }
+  },
+  "3000:21:21:FF": {
+   "name": "Punkt 0 Foerdermenge in l pro h",
+   "values": {
+    "1": "1 l pro h"
+   }
+  },
+  "3000:22:22:FF": {
+   "name": "Punkt 0 Mindestspannung",
+   "values": {
+    "140": "Notlauf 14V",
+    "62": "6 V",
+    "67": "6,7 V",
+    "70": "7 V",
+    "71": "7,1 V",
+    "73": "7,3 V",
+    "74": "7,4 V",
+    "75": "7,5 V",
+    "76": "7,6 V",
+    "77": "7,7 V",
+    "78": "7,8 V",
+    "79": "7,9 V",
+    "80": "8 V",
+    "82": "8,2 V",
+    "83": "8,3 V",
+    "84": "8,4 V",
+    "86": "8,6 V",
+    "88": "8,8 V",
+    "90": "9,0 V",
+    "91": "9,1 V",
+    "93": "9,3 V",
+    "94": "9,4 V"
+   }
+  },
+  "3000:23:23:FF": {
+   "name": "Punkt 1 Foerdermenge in l pro h",
+   "values": {
+    "100": "100 l pro h",
+    "150": "150 l pro h",
+    "180": "180 l pro h",
+    "2": "02 l pro h",
+    "240": "240 l pro h",
+    "40": "40 l pro h",
+    "50": "50 l pro h",
+    "60": "60 l pro h"
+   }
+  },
+  "3000:24:24:FF": {
+   "name": "Punkt 1 Mindestspannung",
+   "values": {
+    "106": "10,6 V",
+    "113": "11,3 V",
+    "120": "12 V",
+    "126": "12,6 V",
+    "129": "12,9 V",
+    "130": "13 V",
+    "135": "13,5 V",
+    "137": "13,7 V",
+    "140": "Notlauf 14V",
+    "143": "14,3 V",
+    "147": "14,7 V",
+    "62": "6 V",
+    "67": "6,7 V",
+    "70": "7 V",
+    "71": "7,1 V",
+    "73": "7,3 V",
+    "74": "7,4 V",
+    "75": "7,5 V",
+    "76": "7,6 V",
+    "77": "7,7 V",
+    "78": "7,8 V",
+    "79": "7,9 V",
+    "80": "8 V",
+    "82": "8,2 V",
+    "85": "8,5 V",
+    "88": "8,8 V",
+    "90": "9 V",
+    "91": "9,1 V",
+    "93": "9,3 V",
+    "94": "9,4 V",
+    "96": "9,6 V"
+   }
+  },
+  "3000:25:25:FF": {
+   "name": "Punkt 2 Foerdermenge in l pro h",
+   "values": {
+    "254": "254 l pro h"
+   }
+  },
+  "3000:26:26:FF": {
+   "name": "Punkt 2 Mindestspannung",
+   "values": {
+    "106": "10,6 V",
+    "120": "12 V",
+    "126": "12,6 V",
+    "129": "12,9 V",
+    "130": "13 V",
+    "135": "13,5 V",
+    "137": "13,7 V",
+    "140": "14 V",
+    "143": "14,3 V",
+    "145": "14,5 V",
+    "146": "14,6 V",
+    "147": "14,7 V",
+    "150": "15 V",
+    "153": "15,3 V",
+    "154": "15,4 V",
+    "155": "15,5 V",
+    "157": "15,7 V",
+    "158": "15,8 V",
+    "160": "16,0 V",
+    "165": "16,5 V",
+    "170": "17,0 V",
+    "180": "18 V",
+    "190": "19,0 V"
+   }
+  },
+  "3000:27:27:FF": {
+   "name": "Punkt 0 Foerdermenge",
+   "values": {
+    "1": "1 l pro h"
+   }
+  },
+  "3000:28:28:FF": {
+   "name": "Punkt 0 Maximalspannung",
+   "values": {
+    "130": "13 V",
+    "134": "13,4 V",
+    "135": "13,5 V",
+    "140": "14 V"
+   }
+  },
+  "3000:29:29:FF": {
+   "name": "Punkt 1 Foerdermenge",
+   "values": {
+    "40": "40 l/h",
+    "50": "50 l/h",
+    "60": "60 l/h"
+   }
+  },
+  "3000:30:30:FF": {
+   "name": "Punkt 1 Maximalspannung",
+   "values": {
+    "130": "13 V",
+    "134": "13,4 V",
+    "135": "13,5 V",
+    "140": "14 V"
+   }
+  },
+  "3000:31:31:FF": {
+   "name": "Punkt 2 Foerdermenge",
+   "values": {
+    "254": "254 l pro h"
+   }
+  },
+  "3000:32:32:FF": {
+   "name": "Punkt 2 Maximalspannung",
+   "values": {
+    "130": "13 V",
+    "134": "13,4 V",
+    "135": "13,5 V",
+    "140": "14 V"
+   }
+  },
+  "3000:33:33:FF": {
+   "name": "Punkt 0 Spannung",
+   "values": {
+    "100": "10,0 V",
+    "108": "10,8 V",
+    "72": "7 V",
+    "75": "7,5 V",
+    "80": "8 V",
+    "84": "8,4 V",
+    "85": "8,5 V"
+   }
+  },
+  "3000:34:35:FF": {
+   "name": "Punkt 0 Drehzahl",
+   "values": {
+    "1250": "Bosch XLP-CR Diesel",
+    "1500": "Bosch XLP-CR Diesel",
+    "1800": "Bosch XLP-CR Diesel",
+    "2500": "E3LM - F15 DR Diesel",
+    "2600": "E5LM",
+    "3000": "DPI 42 14T",
+    "3100": "Bosch FP-G.46-DC fuer F8x",
+    "3300": "DCSS 19T - F25 DZR",
+    "3348": "E5 DCSS 23T",
+    "3400": "DCSS 19T - F15 LDZR 5,95 bar",
+    "3500": "E5LM DR 5,95 bar",
+    "3750": "DHD",
+    "3800": "DCSS 17T",
+    "4000": "HPI 46 12T DZR 5,0 bar",
+    "4118": "HPI 46 12T",
+    "4200": "HPI 46 12T LDZR 5,0 bar",
+    "4242": "E5 DCSS 18T",
+    "4300": "Bosch FP-G.46-DC/42-DC",
+    "4400": "HPI 46 12T",
+    "4500": "DCSS 17T",
+    "4600": "HPI 46 12T LDZR 5,8 bar",
+    "4700": "E5 38 DHD 23T 6mm - F15 Diesel",
+    "4750": "Bosch XLP-CO Benzin",
+    "4900": "E5LM - F15 LDZR 5,95 bar",
+    "5100": "E5LM F15 LDZR 5,95 bar"
+   }
+  },
+  "3000:36:36:FF": {
+   "name": "Punkt 1 Spannung",
+   "values": {
+    "115": "11,5 V",
+    "120": "12 V",
+    "125": "12,5 V",
+    "127": "12,7 V",
+    "140": "14 V",
+    "148": "14,8 V",
+    "98": "10 V"
+   }
+  },
+  "3000:37:38:FF": {
+   "name": "Punkt 1 Drehzahl",
+   "values": {
+    "2550": "Bosch XLP-CR Diesel",
+    "2800": "Bosch XLP-CR Diesel",
+    "3650": "E3LM",
+    "3700": "Bosch XLP-CR Diesel",
+    "3750": "E3LM - F15 DR Diesel",
+    "4700": "DHD",
+    "5050": "Bosch FP-G.46-DC",
+    "5250": "DPI 42 14T",
+    "5381": "E5 DCSS 23T",
+    "5900": "DCSS 19T - F15 LDZR 5,95 bar",
+    "6100": "HPI 46 12T DZR 5,0 bar",
+    "6400": "DCSS 17T",
+    "6500": "Bosch FP-G.46-DC/42-DC",
+    "6600": "Bosch FP-G.46-DC fuer F8x",
+    "6664": "HPI 46 12T",
+    "6674": "E5 DCSS 18T",
+    "6750": "HPI 46 12T LDZR 5,0 bar",
+    "6800": "DCSS 17T",
+    "6900": "HPI 46 12T",
+    "7250": "HPI 46 12T LDZR 5,8 bar",
+    "7300": "Bosch FP-G.42-DC F8xS55",
+    "7400": "Bosch xlp-CO fuer F8x",
+    "7500": "Bosch XLP-CO Benzin",
+    "7600": "Bosch FP-G.42-DC F8xS55",
+    "7950": "Bosch XLP-CO Benzin",
+    "8000": "E5LM F15 LDZR 5,95 bar",
+    "8200": "Bosch FP-G.42-DC F8xS55",
+    "8500": "E5LM",
+    "8800": "E5LM DR 5,95 bar",
+    "9000": "E5LM F10 LDZR 6 bar"
+   }
+  },
+  "3000:3:3:FF": {
+   "name": "Punkt 1 Foerdermenge Q",
+   "values": {
+    "40": "40 l pro h",
+    "50": "50 l pro h",
+    "60": "60 l pro h"
+   }
+  },
+  "3000:4:5:FF": {
+   "name": "Punkt 1 Drehzahl n",
+   "values": {
+    "0": "PL7 DPI4.2",
+    "1100": "Bosch XLP-CR Diesel DR",
+    "1600": "Bosch XLP-CR Diesel DR",
+    "2000": "Bosch XLP-CR Diesel DR",
+    "2100": "E3LM - F15 DR Diesel",
+    "2750": "DHD",
+    "3100": "E5LM",
+    "3400": "DCSS 19T - F10 DZR + DR 5,0 bar",
+    "3500": "DCSS 19T - F25 DZR",
+    "3600": "DCSS 19T F25",
+    "3700": "HPI 46 12T",
+    "3850": "Bosch FP-G.46-DC fuer F8x",
+    "4000": "HPI 46 12T",
+    "4200": "DCSS 19T - F1x/F18 DZR SA1AK China",
+    "4250": "HPI 46 12T DZR 5,0 bar",
+    "4255": "Bosch FP-G.46-DC",
+    "4373": "DCSS 19T - F10 LDZR 5,0 bar",
+    "4400": "Bosch XLP-CO Benzin DZR",
+    "4571": "DCSS 17T",
+    "4700": "PL7 HPI4.6 DR",
+    "4712": "E5LM F15 LDZR 5,95 bar",
+    "4718": "DCSS 19T - F10 LDZR 5,95 bar",
+    "4747": "DCSS 19T - F25 LDZR 5,0 bar",
+    "4790": "E5 3850 DCSS 23T",
+    "4840": "DCSS 17T",
+    "4848": "E5LM - F15 LDZR 5,95 bar",
+    "4850": "E5LM F10 LDZR 6 bar",
+    "4858": "E5 DCSS 18T",
+    "4895": "E5 38 DHD 23T 6mm - F15 Diesel",
+    "4973": "E5 DCSS 23T",
+    "4977": "DCSS 19T - F10 LDZR 5,95 bar",
+    "5046": "DCSS 19T - F25 LDZR 5,95 bar",
+    "5055": "DCSS 19T - F15 LDZR 5,95 bar",
+    "5070": "Bosch FP-G.42-DC",
+    "5081": "HPI 46 12T LDZR 5,0 bar",
+    "5129": "HPI 46 12T LDZR 5,8 bar",
+    "5217": "HPI 46 12T LDZR 5,8 bar",
+    "5594": "Bosch XLP-CO Benzin LDZR",
+    "5644": "Bosch XLP-CO Benzin LDZR",
+    "5859": "PL7 HPI4.6 LDZR",
+    "5864": "Bosch XLP-CO Benzin LDZR",
+    "7600": "Notlauf 7600 Umin"
+   }
+  },
+  "3000:6:6:FF": {
+   "name": "Punkt 2 Foerdermenge Q",
+   "values": {
+    "75": "75 l pro h",
+    "80": "80 l pro h"
+   }
+  },
+  "3000:7:8:FF": {
+   "name": "Punkt 2 Drehzahl n",
+   "values": {
+    "1558": "Bosch XLP-CR Diesel DR",
+    "1800": "Bosch XLP-CR Diesel DR",
+    "2228": "Bosch XLP-CR Diesel DR",
+    "2440": "DPI 42 14T",
+    "2492": "E3LM - F15 DR Diesel",
+    "3224": "DHD",
+    "3823": "E5LM",
+    "3987": "DCSS 19T - F25 DZR",
+    "4087": "DCSS 19T - F10 DZR + DR 5,0 bar",
+    "4113": "DCSS 17T",
+    "4200": "DCSS 19T - F1x/F18 DZR SA1AK China",
+    "4250": "Bosch FP-G.46-DC fuer F8x",
+    "4346": "HPI 46 12T",
+    "4654": "HPI 46 12T",
+    "4720": "Bosch FP-G.46-DC",
+    "4827": "DCSS 19T - F10 LDZR 5,0 bar",
+    "4880": "HPI 46 12T DZR 5,0 bar",
+    "5012": "DCSS 17T",
+    "5044": "DCSS 19T - F25 LDZR 5,0 bar",
+    "5068": "Bosch XLP-CO Benzin DZR",
+    "5121": "E5LM DR 5,95 bar",
+    "5173": "DCSS 19T - F10 LDZR 5,95 bar",
+    "5200": "E5LM F10 LDZR 6 bar",
+    "5255": "E5 3850 DCSS 23T",
+    "5278": "DCSS 17T",
+    "5288": "PL7 HPI4.6 DR",
+    "5292": "E5 DCSS 18T",
+    "5312": "E5 38 DHD 23T 6mm - F15 Diesel",
+    "5394": "E5 DCSS 23T",
+    "5431": "DCSS 19T - F10 LDZR 5,95 bar",
+    "5509": "DCSS 19T - F15 LDZR 5,95 bar",
+    "5520": "Bosch FP-G.42-DC",
+    "5691": "HPI 46 12T LDZR 5,0 bar",
+    "5747": "HPI 46 12T LDZR 5,8 bar",
+    "5835": "HPI 46 12T LDZR 5,8 bar",
+    "5856": "E5LM - F15 LDZR 5,95 bar",
+    "5889": "Bosch XLP-CO Benzin LDZR",
+    "6202": "Bosch XLP-CO Benzin LDZR",
+    "6331": "Bosch XLP-CO Benzin LDZR",
+    "6450": "PL7 HPI4.6 LDZR",
+    "6545": "Bosch XLP-CO Benzin LDZR",
+    "7600": "Notlauf 7600 Umin"
+   }
+  },
+  "3000:9:9:FF": {
+   "name": "Punkt 3 Foerdermenge Q",
+   "values": {
+    "100": "100 l pro h"
+   }
+  },
+  "3001:0:0:FF": {
+   "name": "Drehzahldifferenz zwischen Soll und Istdrehzahl",
+   "values": {
+    "50": "2500 Upm"
+   }
+  },
+  "3001:10:10:FF": {
+   "name": "SSP-Abs. Tanklevelschwelle gesamt",
+   "values": {
+    "254": "deaktiviert"
+   }
+  },
+  "3001:11:12:FF": {
+   "name": "SSP-Abs. Laengsbeschleunigung",
+   "values": {
+    "0": "0 m/s2"
+   }
+  },
+  "3001:13:14:FF": {
+   "name": "SSP-Abs. Querbeschleunigung",
+   "values": {
+    "0": "0 m/s2"
+   }
+  },
+  "3001:15:15:FF": {
+   "name": "SSP-Abs. Timerbeschleunigung",
+   "values": {
+    "0": "0s"
+   }
+  },
+  "3001:16:16:FF": {
+   "name": "SSP-Abs. Tanklevelschwelle rechts",
+   "values": {
+    "127": "deaktiviert"
+   }
+  },
+  "3001:17:18:FF": {
+   "name": "SSP-Abs. EKP-KL-Offset",
+   "values": {
+    "0": "0 Upm"
+   }
+  },
+  "3001:19:19:FF": {
+   "name": "SSP-Abs. EKP-Spannung-Offset",
+   "values": {
+    "0": "0 V"
+   }
+  },
+  "3001:1:1:01": {
+   "name": "Regelungsart",
+   "values": {
+    "0": "Drehzahlregelung",
+    "1": "Druckregelung"
+   }
+  },
+  "3001:1:1:02": {
+   "name": "Dynamische Umschaltung der Regelungsart",
+   "values": {
+    "0": "nicht aktiv"
+   }
+  },
+  "3001:1:1:04": {
+   "name": "Sollvorgabe fuer die Druckregelung",
+   "values": {
+    "0": "Spannungsvorgabe"
+   }
+  },
+  "3001:1:1:08": {
+   "name": "Direkte Steuerung der PWM per Diagnose",
+   "values": {
+    "0": "Regelung"
+   }
+  },
+  "3001:1:1:10": {
+   "name": "DC Pumpenansteuerung direkt nach Power Up",
+   "values": {
+    "0": "Ansteuerung",
+    "1": "Keine Ansteuerung"
+   }
+  },
+  "3001:1:1:20": {
+   "name": "Spannungsbegrenzung nach unten fuer DC Motoren",
+   "values": {
+    "0": "Begrenzung nicht aktiv",
+    "1": "Begrenzung aktiv"
+   }
+  },
+  "3001:1:1:40": {
+   "name": "Spannungsbegrenzung nach oben fuer DC Motoren",
+   "values": {
+    "0": "Begrenzung nicht aktiv",
+    "1": "Begrenzung aktiv"
+   }
+  },
+  "3001:1:1:80": {
+   "name": "Diagnose Timeout",
+   "values": {
+    "0": "Aktiv nach 25s"
+   }
+  },
+  "3001:20:20:FF": {
+   "name": "Reserve 114",
+   "values": {
+    "0": "frei"
+   }
+  },
+  "3001:2:2:01": {
+   "name": "Motorart EKP",
+   "values": {
+    "0": "DC-EKP",
+    "1": "EC-EKP"
+   }
+  },
+  "3001:2:2:02": {
+   "name": "Deaktivierung Crashabschaltung nach Klemmenwechsel",
+   "values": {
+    "0": "Deaktivierung nicht aktiv",
+    "1": "Deaktivierung aktiv"
+   }
+  },
+  "3001:2:2:04": {
+   "name": "Aktivierung EKP-Vorlauf nach WUP",
+   "values": {
+    "0": "Keine Ansteuerung",
+    "1": "Ansteuerung"
+   }
+  },
+  "3001:2:2:08": {
+   "name": "Ansteuerung EKP-Nachlauf nach WUP",
+   "values": {
+    "0": "Keine Ansteuerung"
+   }
+  },
+  "3001:2:2:10": {
+   "name": "Abschaltung der SSP",
+   "values": {
+    "0": "keine SSP-Abschaltung",
+    "1": "Abschaltung SSP freigegeben"
+   }
+  },
+  "3001:2:2:60": {
+   "name": "Reserve",
+   "values": {
+    "0": "Reserve"
+   }
+  },
+  "3001:2:2:80": {
+   "name": "Signal A- oder FA-CAN",
+   "values": {
+    "0": "A-Can",
+    "1": "FA-Can"
+   }
+  },
+  "3001:3:3:0F": {
+   "name": "Filter der KL30 Messung",
+   "values": {
+    "8": "08"
+   }
+  },
+  "3001:3:3:F0": {
+   "name": "Reserve 112",
+   "values": {
+    "0": "frei"
+   }
+  },
+  "3001:4:4:FF": {
+   "name": "Reserve 113",
+   "values": {
+    "0": "frei"
+   }
+  },
+  "3001:5:5:FF": {
+   "name": "Frequenz der zyklischen Statusnachricht ueber CAN",
+   "values": {
+    "20": "1 Hz"
+   }
+  },
+  "3001:6:6:FF": {
+   "name": "Temperaturschwelle 0",
+   "values": {
+    "100": "100 Grad",
+    "119": "119 Grad",
+    "125": "125 Grad",
+    "160": "160 Grad"
+   }
+  },
+  "3001:7:7:FF": {
+   "name": "Hysterese Temperaturschwelle 0",
+   "values": {
+    "10": "10 Kelvin"
+   }
+  },
+  "3001:8:8:FF": {
+   "name": "Temperaturschwelle 1",
+   "values": {
+    "105": "105 Grad",
+    "120": "120 Grad",
+    "135": "135 Grad"
+   }
+  },
+  "3001:9:9:FF": {
+   "name": "Hysterese Temperaturschwelle 1",
+   "values": {
+    "10": "10 Kelvin"
+   }
+  },
+  "3002:0:0:FF": {
+   "name": "Max EKP-Motorspannung Diag",
+   "values": {
+    "160": "16 V"
+   }
+  },
+  "3002:11:11:FF": {
+   "name": "Reserve 211",
+   "values": {
+    "0": "frei"
+   }
+  },
+  "3002:12:12:FF": {
+   "name": "Reserve 212",
+   "values": {
+    "0": "frei"
+   }
+  },
+  "3002:13:13:FF": {
+   "name": "Max Spannung KL30",
+   "values": {
+    "180": "18 V"
+   }
+  },
+  "3002:14:14:FF": {
+   "name": "Min Spannung KL30",
+   "values": {
+    "60": "6 V"
+   }
+  },
+  "3002:15:15:FF": {
+   "name": "Keine Spannung KL30",
+   "values": {
+    "3": "0,3 V"
+   }
+  },
+  "3002:16:16:FF": {
+   "name": "Uebertemperatur Level 2",
+   "values": {
+    "130": "130 C",
+    "160": "160 C"
+   }
+  },
+  "3002:17:17:FF": {
+   "name": "Uebertemperatur Level 3",
+   "values": {
+    "150": "150 C"
+   }
+  },
+  "3002:18:18:01": {
+   "name": "Ueberwachung CAN Ansteuerungstimout",
+   "values": {
+    "0": "Nein",
+    "1": "Ja"
+   }
+  },
+  "3002:18:18:02": {
+   "name": "Ueberwachung Crash Abschaltung",
+   "values": {
+    "0": "Nein",
+    "1": "Ja"
+   }
+  },
+  "3002:18:18:04": {
+   "name": "Ueberwachung CAN Bus Off",
+   "values": {
+    "0": "Nein",
+    "1": "Ja"
+   }
+  },
+  "3002:18:18:08": {
+   "name": "Plausibilisierung Regelungsart",
+   "values": {
+    "0": "Nein",
+    "1": "Ja"
+   }
+  },
+  "3002:18:18:10": {
+   "name": "DNMT Fehlerueberwachung",
+   "values": {
+    "0": "Nein",
+    "1": "Ja"
+   }
+  },
+  "3002:18:18:E0": {
+   "name": "Reserve 213",
+   "values": {
+    "0": "frei"
+   }
+  },
+  "3002:19:19:FF": {
+   "name": "Reserve 214",
+   "values": {
+    "0": "frei"
+   }
+  },
+  "3002:1:1:FF": {
+   "name": "Min EKP-Motorspannung",
+   "values": {
+    "1": "0,1 V",
+    "10": "1 V",
+    "21": "2,1 V",
+    "23": "2,3 V",
+    "28": "2,8 V",
+    "32": "3,2 V",
+    "39": "3,9 V",
+    "40": "4 V",
+    "41": "4,1 V",
+    "42": "4,2 V",
+    "45": "4,5 V",
+    "46": "4,6 V",
+    "47": "4,7 V",
+    "48": "4,8 V",
+    "51": "5,1 V",
+    "54": "5,4 V",
+    "55": "5,5 V",
+    "57": "5,7 V",
+    "58": "5,8 V",
+    "59": "5,9 V",
+    "60": "6,0 V",
+    "61": "6,1 V",
+    "62": "6,2 V",
+    "63": "6,3 V",
+    "64": "6,4 V",
+    "68": "6,8 V",
+    "69": "6,9 V",
+    "72": "7,2 V"
+   }
+  },
+  "3002:20:20:FF": {
+   "name": "Limit Drehzahlueberwachung",
+   "values": {
+    "0": "0 Umin",
+    "255": "FF"
+   }
+  },
+  "3002:21:21:FF": {
+   "name": "Spannungslimit fuer FS-Eintraege",
+   "values": {
+    "90": "9 V"
+   }
+  },
+  "3002:22:22:FF": {
+   "name": "Min Motorstrom TLF",
+   "values": {
+    "14": "1,4 A",
+    "32": "3,2 A",
+    "33": "3,3 A",
+    "35": "3,5 A",
+    "36": "3,6 A",
+    "38": "3,8 A",
+    "39": "3,9 A",
+    "42": "4,2 A",
+    "43": "4,3 A",
+    "44": "4,4 A",
+    "47": "4,7 A",
+    "48": "4,8 A",
+    "49": "4,9 A",
+    "52": "5,2 A",
+    "53": "5,3 A",
+    "54": "5,4 A",
+    "55": "5,5 A",
+    "56": "5,6 A",
+    "59": "5,9 A",
+    "60": "6 A",
+    "61": "6,1 A",
+    "70": "7,0 A",
+    "80": "8 A",
+    "95": "9,5 A"
+   }
+  },
+  "3002:23:23:FF": {
+   "name": "Min RQAM_FU TLF",
+   "values": {
+    "0": "0",
+    "200": "200",
+    "220": "220"
+   }
+  },
+  "3002:24:24:FF": {
+   "name": "Min Fuellstand links",
+   "values": {
+    "6": "6 l",
+    "99": "99 l"
+   }
+  },
+  "3002:25:25:FF": {
+   "name": "Min Fuellstand rechts",
+   "values": {
+    "0": "0 l"
+   }
+  },
+  "3002:26:29:FF": {
+   "name": "Reserve 215",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:2:2:FF": {
+   "name": "Max EKP-Motorstrom",
+   "values": {
+    "180": "18 A",
+    "190": "19 A",
+    "200": "20 A",
+    "220": "22 A",
+    "255": "25,5 A"
+   }
+  },
+  "3002:3:3:FF": {
+   "name": "Min EKP-Motorstrom Diag",
+   "values": {
+    "1": "0,1 A",
+    "10": "1,0 A",
+    "14": "1,4 A",
+    "18": "1,8 A",
+    "19": "1,9 A",
+    "22": "2,2 A",
+    "26": "2,6 A",
+    "3": "0,3 A",
+    "32": "3,2 A",
+    "33": "3,3 A",
+    "35": "3,5 A",
+    "36": "3,6 A",
+    "38": "3,8 A",
+    "39": "3,9 A",
+    "42": "4,2 A",
+    "44": "4,4 A",
+    "47": "4,7 A",
+    "48": "4,8 A",
+    "49": "4,9 A",
+    "5": "0,5 A",
+    "52": "5,2 A",
+    "53": "5,3 A",
+    "54": "5,4 A",
+    "55": "5,5 A",
+    "56": "5,6 A",
+    "59": "5,9 A",
+    "61": "6,1 A"
+   }
+  },
+  "3002:4:4:FF": {
+   "name": "Kein EKP-Motorstrom",
+   "values": {
+    "1": "0,1 A",
+    "3": "0,3 A"
+   }
+  },
+  "3002:5:6:FF": {
+   "name": "Max pos Drehzahldiff",
+   "values": {
+    "65535": "FFFF"
+   }
+  },
+  "3002:7:8:FF": {
+   "name": "Max neg Drehzahldiff",
+   "values": {
+    "65535": "FFFF"
+   }
+  },
+  "3002:9:10:FF": {
+   "name": "Keine Drehzahl",
+   "values": {
+    "10": "10 Umin",
+    "65535": "FFFF"
+   }
+  },
+  "3003:0:1:FF": {
+   "name": "Regelparameter P",
+   "values": {
+    "1500": "1500",
+    "500": "500"
+   }
+  },
+  "3003:10:10:FF": {
+   "name": "Frequenzteiler Rippleabtastung hoch",
+   "values": {
+    "1": "1",
+    "2": "2"
+   }
+  },
+  "3003:11:11:FF": {
+   "name": "Frequenzteiler Rippleabtastung niedrig",
+   "values": {
+    "1": "1"
+   }
+  },
+  "3003:12:12:FF": {
+   "name": "Motorpole",
+   "values": {
+    "10": "10 Pole",
+    "12": "12 Pole",
+    "2": "2 Pole",
+    "4": "4 Pole",
+    "8": "8 Pole"
+   }
+  },
+  "3003:13:13:FF": {
+   "name": "Ripplefilter LP1",
+   "values": {
+    "12": "12",
+    "15": "15",
+    "20": "20",
+    "50": "50"
+   }
+  },
+  "3003:14:14:FF": {
+   "name": "Ripplefilter LP2",
+   "values": {
+    "2": "2",
+    "31": "31"
+   }
+  },
+  "3003:15:15:FF": {
+   "name": "Ripplefilter LP3",
+   "values": {
+    "10": "10",
+    "50": "50",
+    "6": "6",
+    "7": "07"
+   }
+  },
+  "3003:16:16:FF": {
+   "name": "Ripplefilter LP4",
+   "values": {
+    "1": "1",
+    "31": "31",
+    "49": "49"
+   }
+  },
+  "3003:17:17:FF": {
+   "name": "Ripple Anzahl",
+   "values": {
+    "10": "10 Rippel",
+    "12": "12 Rippel",
+    "16": "16 Rippel",
+    "8": "8 Rippel"
+   }
+  },
+  "3003:18:18:FF": {
+   "name": "Maximale Motorspannung",
+   "values": {
+    "130": "13 V",
+    "134": "13,4 V",
+    "135": "13,5 V",
+    "140": "14 V"
+   }
+  },
+  "3003:19:20:FF": {
+   "name": "Max Motordrehzahl",
+   "values": {
+    "65535": "aus",
+    "7000": "7000 Upm",
+    "7300": "7300 Upm",
+    "7600": "7600 Upm",
+    "8000": "8000 Upm",
+    "8200": "8200 Upm",
+    "9000": "9000 Upm"
+   }
+  },
+  "3003:21:21:FF": {
+   "name": "Reserve 313",
+   "values": {
+    "0": "frei"
+   }
+  },
+  "3003:22:22:FF": {
+   "name": "Reserve 314",
+   "values": {
+    "0": "frei"
+   }
+  },
+  "3003:23:23:FF": {
+   "name": "Reserve 315",
+   "values": {
+    "0": "frei"
+   }
+  },
+  "3003:24:25:FF": {
+   "name": "CommutationStartupTime",
+   "values": {
+    "0": "DC-EKP",
+    "7000": "Bosch FP",
+    "9000": "TI E5 DHD"
+   }
+  },
+  "3003:26:26:FF": {
+   "name": "BackEMFZCrossingCounterMinNumber",
+   "values": {
+    "0": "DC-EKP",
+    "2": "Bosch FP"
+   }
+  },
+  "3003:27:27:FF": {
+   "name": "Minimaler Motorstrom EC",
+   "values": {
+    "0": "DC-EKP",
+    "10": "Bosch FP fuer S55",
+    "20": "TI E5 DHD",
+    "30": "Bosch FP"
+   }
+  },
+  "3003:28:28:FF": {
+   "name": "SteuerwinkelMulitiplikator",
+   "values": {
+    "0": "DC-EKP",
+    "24": "Bosch FP"
+   }
+  },
+  "3003:29:29:FF": {
+   "name": "AlignmentTime",
+   "values": {
+    "0": "DC-EKP",
+    "4": "Bosch FP",
+    "5": "TI E5 DCSS 16T 8-Zylinder + E5 DHD",
+    "6": "TI E5 DCSS 23T 4- u. 6-Zylinder"
+   }
+  },
+  "3003:2:3:FF": {
+   "name": "Regelparameter I",
+   "values": {
+    "1200": "1200",
+    "1500": "1500",
+    "1600": "1600",
+    "3000": "3000"
+   }
+  },
+  "3003:30:30:FF": {
+   "name": "StartupTimeCounter",
+   "values": {
+    "0": "DC-EKP",
+    "5": "Bosch FP"
+   }
+  },
+  "3003:31:31:FF": {
+   "name": "MaxMissingZeroCrossings",
+   "values": {
+    "0": "DC-EKP",
+    "2": "Bosch FP"
+   }
+  },
+  "3003:32:32:FF": {
+   "name": "StartingVoltage",
+   "values": {
+    "0": "DC-EKP",
+    "60": "Bosch FP"
+   }
+  },
+  "3003:33:33:FF": {
+   "name": "Datum Tag",
+   "values": {
+    "1": "F0xN63TUE",
+    "16": "F8xS55",
+    "2": "F36",
+    "20": "F15N55/N20",
+    "23": "F07/F1xN55/N56 LDZR",
+    "24": "F85/86S63TUE",
+    "25": "F07/F1xN55/N56/N54 DR",
+    "3": "F0xN74",
+    "32": "F2x/F3xN47/N57",
+    "33": "F15N55/N20/N47/N57",
+    "34": "F1xN63TUE Alpina",
+    "35": "F1xS63",
+    "38": "F18PHEV",
+    "39": "F1x/F18N52China",
+    "4": "F1xS63",
+    "40": "F18CN",
+    "6": "F8xS55",
+    "7": "F25N55",
+    "8": "F87N55"
+   }
+  },
+  "3003:34:34:FF": {
+   "name": "Datum Monat",
+   "values": {
+    "1": "F2x/F3xN52",
+    "16": "F85/86S63TUE",
+    "17": "F1x/F18N52China",
+    "18": "F0xN63TUE",
+    "2": "F15N55/N20",
+    "24": "F25N20",
+    "3": "F18CN",
+    "32": "F25N20",
+    "4": "F25N55",
+    "5": "F1xN63TUE Alpina",
+    "6": "F15N55/N20/N47/N57",
+    "7": "F18PHEV",
+    "8": "F2x/3xN20 Flexfuel",
+    "9": "F18PHEV"
+   }
+  },
+  "3003:35:35:FF": {
+   "name": "Datum Jahr",
+   "values": {
+    "16": "2010",
+    "17": "2011",
+    "18": "2012",
+    "19": "2013",
+    "20": "2014",
+    "8": "F0xN52",
+    "9": "2009"
+   }
+  },
+  "3003:36:36:FF": {
+   "name": "Version",
+   "values": {
+    "1": "Version 1",
+    "2": "Version 2"
+   }
+  },
+  "3003:37:37:FF": {
+   "name": "Pumpen_ID",
+   "values": {
+    "1": "F0xN52",
+    "11": "F0xN54/N63",
+    "12": "F0xN55",
+    "129": "F15N55/N20",
+    "13": "F01N63TUE",
+    "130": "F15N63",
+    "131": "F85/86S63",
+    "135": "F15N47/N57",
+    "17": "F0xN57",
+    "19": "F0xN74",
+    "21": "F1xN52/N51",
+    "22": "F1x/F18N52China",
+    "23": "F07/F1xN20/N26",
+    "24": "F07/F1xN55/N56 nach 1203",
+    "25": "F18CN",
+    "26": "F18PHEV",
+    "29": "F1xS63",
+    "30": "F1xN63TUE Alpina",
+    "31": "F1xN53",
+    "32": "F07/F1xN63",
+    "33": "F07/F1xN63TUE",
+    "37": "F07/F1xN47/N57/B47",
+    "41": "F25N52",
+    "42": "F25N20",
+    "51": "F25N55",
+    "57": "F25N47/N57/B47",
+    "61": "F2x/F3xN52",
+    "62": "F2x/F3xN20/N26/B16/B38",
+    "63": "F2x/F3xN55/N56/B48/B46/B56/B58/XB1141",
+    "64": "F3xN20 Flexfuel",
+    "65": "F36N20/N55/N26/N56",
+    "67": "F36N47/N57/B37/B47",
+    "69": "F8xS55",
+    "77": "F2x/F3xN47/N57/B37/B47",
+    "81": "F15N55/N20",
+    "82": "F15N63",
+    "83": "F85/86S63",
+    "87": "F15N47/N57"
+   }
+  },
+  "3003:38:39:FF": {
+   "name": "Checksumme",
+   "values": {
+    "0": "Checksumme"
+   }
+  },
+  "3003:4:5:FF": {
+   "name": "Regelparameter D",
+   "values": {
+    "0": "0"
+   }
+  },
+  "3003:6:7:FF": {
+   "name": "Motor PWM Frequenz hoch",
+   "values": {
+    "1200": "20 kHz",
+    "2000": "12 kHz",
+    "2666": "9 kHz"
+   }
+  },
+  "3003:8:9:FF": {
+   "name": "Motor PWM Frequenz niedrig",
+   "values": {
+    "1200": "20 kHz",
+    "2000": "12 kHz",
+    "3000": "8 kHz",
+    "4800": "5 kHz"
+   }
+  },
+  "37FC:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "37FD:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Kennlinien",
+  "3001": "Funktionen",
+  "3002": "Fehlerlimits",
+  "3003": "Pumpenparameter",
+  "37FC": "CAF_ID",
+  "37FD": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

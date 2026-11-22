@@ -1,0 +1,251 @@
+{
+ "functions": {
+  "3000:0:0:01": {
+   "name": "Lenkrad_Vibration",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:02": {
+   "name": "Lenkrad_Heizung",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:04": {
+   "name": "Lenkrad_Schaltpaddles",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:08": {
+   "name": "Lenksaeulenverstellung",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:10": {
+   "name": "Hands_Off_Detection",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:1:1:FF": {
+   "name": "Offset_Dim_LIN",
+   "values": {
+    "25": "initwert"
+   }
+  },
+  "3000:2:2:FF": {
+   "name": "CTRL_HOD_CODG_CARCODE",
+   "values": {
+    "0": "invalid",
+    "1": "F001",
+    "10": "F010",
+    "11": "F011",
+    "12": "F012",
+    "13": "F013",
+    "2": "F002",
+    "6": "F006",
+    "7": "F007"
+   }
+  },
+  "3000:3:3:03": {
+   "name": "CTRL_HOD_CODG_LHZCODE",
+   "values": {
+    "0": "invalid",
+    "1": "Lenkradheizung",
+    "2": "keine Lenkradheizung"
+   }
+  },
+  "3000:3:3:3C": {
+   "name": "CTRL_HOD_CODG_LVARCODE",
+   "values": {
+    "0": "invalid",
+    "1": "SA240",
+    "2": "SA255",
+    "3": "SA710"
+   }
+  },
+  "3000:3:3:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:4:4:FF": {
+   "name": "LIN_VARIANTE_MFL",
+   "values": {
+    "0": "Basis ACC",
+    "1": "Basis ACC + SLD",
+    "112": "Sport DCC",
+    "113": "Sport DCC + SLD",
+    "2": "Basis ACC + STA",
+    "255": "invalid",
+    "3": "Basis ACC + SLD + STA",
+    "32": "Sport ACC",
+    "33": "Sport ACC + SLD",
+    "34": "Sport ACC + STA",
+    "35": "M GMBH + SLD",
+    "36": "M GMBH",
+    "37": "Sport ACC + SLD + STA",
+    "80": "Basis DCC",
+    "81": "Basis DCC + SLD"
+   }
+  },
+  "3000:5:5:FF": {
+   "name": "LIN_VARIANTE_LRE",
+   "values": {
+    "1": "lre_tlc_lhz",
+    "255": "lre_tlc"
+   }
+  },
+  "3000:6:6:03": {
+   "name": "LHZ_MEMORY_DURATION",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "15 Minuten",
+    "2": "Unendlich",
+    "3": "invalid"
+   }
+  },
+  "3000:6:6:0C": {
+   "name": "WIPER_MEMORY_DURATION",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "15 Minuten",
+    "2": "Unendlich",
+    "3": "invalid"
+   }
+  },
+  "3000:6:6:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:7:7:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:0:0:03": {
+   "name": "IO_PARA_CTR_PRG_STRTN_VIB_STW_LIN",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:0:0:0C": {
+   "name": "IO_PARA_CTR_PRG_RTRN_VIB_STW_LIN",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:0:0:30": {
+   "name": "IO_PARA_CTR_PRG_IVIB_STW_LIN",
+   "values": {
+    "2": "initwert"
+   }
+  },
+  "3001:0:0:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:1:1:0F": {
+   "name": "IO_PARA_CTR_ACDU_IVIB_STW_LIN",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3001:1:1:F0": {
+   "name": "IO_PARA_CTR_PSDU_IVIB_STW_LIN",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3001:2:2:0F": {
+   "name": "IO_PARA_CTR_AMP_VIB_STW_LIN",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3001:2:2:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:3:3:FF": {
+   "name": "IO_PARA_CTR_FREQ_VIB_STW_LIN",
+   "values": {
+    "127": "initwert"
+   }
+  },
+  "3001:4:4:FF": {
+   "name": "I_DRAW_VIB_STW_MIN",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:5:5:FF": {
+   "name": "I_DRAW_VIB_STW_MAX",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "3001:6:6:FF": {
+   "name": "I_DRAW_STWH_MIN",
+   "values": {
+    "40": "initwert"
+   }
+  },
+  "3001:7:7:FF": {
+   "name": "I_DRAW_STWH_MAX",
+   "values": {
+    "75": "initwert"
+   }
+  },
+  "3001:8:8:FF": {
+   "name": "DIAG_CTRL_VIB_SUSPEND_TIME",
+   "values": {
+    "100": "initwert"
+   }
+  },
+  "3001:9:11:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3003:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Variantencodierung",
+  "3001": "LRE Diagnose Konfiguration",
+  "3002": "CAF_ID",
+  "3003": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

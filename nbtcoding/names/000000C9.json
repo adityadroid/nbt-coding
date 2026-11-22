@@ -1,0 +1,33 @@
+{
+ "functions": {
+  "3016:0:19:FF": {
+   "name": "PWM_KENN",
+   "values": {}
+  },
+  "3060:0:17:FF": {
+   "name": "DIMM_KENN",
+   "values": {}
+  },
+  "3061:0:5:FF": {
+   "name": "OFFSET",
+   "values": {}
+  },
+  "37F0:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "37F1:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3016": "DIMMUNG",
+  "3060": "DIMMRAD",
+  "3061": "SPIEGEL_OFFSET",
+  "37F0": "CAF_ID",
+  "37F1": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

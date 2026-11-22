@@ -1,0 +1,178 @@
+{
+ "functions": {
+  "3000:0:0:0F": {
+   "name": "Menue",
+   "values": {
+    "1": "HW_Pos"
+   }
+  },
+  "3000:0:0:F0": {
+   "name": "Back",
+   "values": {
+    "2": "HW_Pos"
+   }
+  },
+  "3000:1:1:0F": {
+   "name": "Option",
+   "values": {
+    "3": "HW_Pos"
+   }
+  },
+  "3000:1:1:F0": {
+   "name": "Radio",
+   "values": {
+    "4": "HW_Pos"
+   }
+  },
+  "3000:2:2:0F": {
+   "name": "CD",
+   "values": {
+    "5": "HW_Pos"
+   }
+  },
+  "3000:2:2:F0": {
+   "name": "NAVI",
+   "values": {
+    "6": "HW_Pos"
+   }
+  },
+  "3000:3:3:0F": {
+   "name": "TEL",
+   "values": {
+    "7": "HW_Pos"
+   }
+  },
+  "3000:3:3:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:4:4:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:5:FF": {
+   "name": "Entprellzeit",
+   "values": {
+    "10": "10ms",
+    "20": "20ms",
+    "30": "30ms"
+   }
+  },
+  "3000:6:6:FF": {
+   "name": "Zeitkonstante_Langdruck",
+   "values": {
+    "20": "Dauer langer Tastendruck"
+   }
+  },
+  "3000:7:7:FF": {
+   "name": "Zeitkonstante_Dauerdruck",
+   "values": {
+    "40": "Dauer Tastenhaenger"
+   }
+  },
+  "3003:0:1:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:2:2:FF": {
+   "name": "Bus Type",
+   "values": {
+    "0": "B-CAN",
+    "1": "IK-CAN"
+   }
+  },
+  "3003:3:3:FF": {
+   "name": "Enable",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:4:4:FF": {
+   "name": "Default_Kommunikationspartner",
+   "values": {
+    "29": "Default Applikation"
+   }
+  },
+  "3003:5:5:FF": {
+   "name": "Update",
+   "values": {
+    "10": "10ms",
+    "15": "15ms",
+    "20": "20ms",
+    "25": "25ms",
+    "30": "30ms",
+    "35": "35ms",
+    "40": "40ms",
+    "45": "45ms",
+    "5": "5ms",
+    "50": "50ms"
+   }
+  },
+  "3003:6:6:FF": {
+   "name": "Mindestdimmwert",
+   "values": {
+    "5": "Mindestdimmwert"
+   }
+  },
+  "3003:7:7:FF": {
+   "name": "Bus Wecken",
+   "values": {
+    "0": "Bus Wecken"
+   }
+  },
+  "3010:0:1:FF": {
+   "name": "Geschwindigkeitsstufe 1",
+   "values": {
+    "55": "Geschwindigkeitstufe 1"
+   }
+  },
+  "3010:2:3:FF": {
+   "name": "Geschwindigkeitsstufe 2",
+   "values": {
+    "115": "Geschwindigkeitsstufe 2"
+   }
+  },
+  "3010:4:5:FF": {
+   "name": "Rastabstand",
+   "values": {
+    "3040": "Rastabstand"
+   }
+  },
+  "3010:6:6:FF": {
+   "name": "Raststufenfaktor 1",
+   "values": {
+    "2": "Raststufenfaktor 1"
+   }
+  },
+  "3010:7:7:FF": {
+   "name": "Raststufenfaktor 2",
+   "values": {
+    "5": "Raststufenfaktor 2"
+   }
+  },
+  "3021:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3022:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Tastenzuordnung",
+  "3003": "Systemoptionen",
+  "3010": "Rotation",
+  "3021": "CAF_ID",
+  "3022": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

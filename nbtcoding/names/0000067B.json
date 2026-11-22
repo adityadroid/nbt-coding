@@ -1,0 +1,2354 @@
+{
+ "functions": {
+  "3000:0:3:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:100:101:FF": {
+   "name": "C_Verzoegerungsoffset_WBK",
+   "values": {
+    "43265": "wert-0,75",
+    "49665": "wert-0,5",
+    "62465": "wert0"
+   }
+  },
+  "3000:102:119:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:10:10:03": {
+   "name": "IcmKod_B_Sportindividualisierbar",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:10:10:0C": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:10:10:F0": {
+   "name": "C_BRV",
+   "values": {
+    "0": "keine",
+    "1": "F001",
+    "2": "F010",
+    "3": "F020",
+    "4": "F025",
+    "5": "F030",
+    "6": "RR"
+   }
+  },
+  "3000:11:11:FF": {
+   "name": "IcmKod_I_Karosserie",
+   "values": {
+    "0": "F25L7_F25",
+    "1": "F25L7_F20",
+    "10": "F25L7_F35",
+    "11": "F25L7_F30H",
+    "12": "F80_0C",
+    "13": "F82_0D",
+    "14": "F83_0E",
+    "15": "F36_0F",
+    "16": "F25L7_F25A",
+    "17": "F25L7_F30A",
+    "18": "F25L7_F31A",
+    "19": "F25L7_F32A",
+    "2": "F25L7_F30",
+    "20": "F25L7_F33A",
+    "21": "F25L7_F26",
+    "22": "F25L7_F31ED",
+    "23": "F25L7_F87",
+    "24": "F25L7_F80CRT",
+    "25": "F25L7_F82GTS",
+    "26": "F25L7_F80CP",
+    "27": "RR4Coupe_1B",
+    "28": "F06_1C",
+    "29": "L6CD_F10Perf",
+    "3": "F25L7_F31",
+    "30": "L6CD_F11Perf",
+    "31": "L6CD_F18PHEV",
+    "32": "F06M6_20",
+    "33": "F06M6C",
+    "34": "L6CD_F10M5C",
+    "35": "L6CD_F12M6C",
+    "36": "L6CD_F13M6C",
+    "37": "L6CD_RR4DP",
+    "38": "L6CD_RR4LDP",
+    "39": "L6CD_RR4CabrioDP",
+    "4": "F25L7_F32",
+    "40": "L6CD_F06A",
+    "41": "L6CD_RR4HATL",
+    "42": "L6CD_RR4LHATL",
+    "43": "L6CD_F07HYDROGEN",
+    "5": "F25L7_F33",
+    "6": "F25L7_F22",
+    "7": "F25L7_F23",
+    "8": "F25L7_F24",
+    "9": "F25L7_F34"
+   }
+  },
+  "3000:120:120:01": {
+   "name": "C_AHM_vorhanden",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:120:120:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:120:120:04": {
+   "name": "C_HDC_vorhanden",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:120:120:08": {
+   "name": "C_PMA_vorhanden",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:120:120:30": {
+   "name": "C_Ext_Fahrzeugverlassenswarnung",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:120:120:C0": {
+   "name": "C_Segeln_vorhanden",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:121:121:FF": {
+   "name": "C_ax_max_skal",
+   "values": {}
+  },
+  "3000:122:122:FF": {
+   "name": "C_ax_min_skal",
+   "values": {}
+  },
+  "3000:123:126:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:127:127:FF": {
+   "name": "C_Dyn_Rollradius",
+   "values": {
+    "31": "31cm",
+    "32": "32cm",
+    "33": "33cm",
+    "34": "34cm",
+    "36": "36cm"
+   }
+  },
+  "3000:128:128:01": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:128:128:0E": {
+   "name": "C_Fahrfunktion",
+   "values": {
+    "0": "keine_funktion",
+    "1": "dcc",
+    "2": "acc_30plus",
+    "3": "acc_sng",
+    "4": "acc_premium"
+   }
+  },
+  "3000:128:128:30": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:128:128:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "2": "HS"
+   }
+  },
+  "3000:129:129:03": {
+   "name": "C_KGB_aktiv",
+   "values": {
+    "0": "deaktiv"
+   }
+  },
+  "3000:129:129:04": {
+   "name": "C_XCP_aktiv",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:129:129:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "ein"
+   }
+  },
+  "3000:129:129:F0": {
+   "name": "C_iPM_P_max",
+   "values": {
+    "0": "N54B30_Entfall"
+   }
+  },
+  "3000:12:12:FF": {
+   "name": "IcmKod_I_Motor",
+   "values": {
+    "0": "00_F25L7_N1xB16",
+    "1": "01_F25L7_N2xB20",
+    "10": "0A_L6CD_N46B20",
+    "11": "0B_L6CD_N47D20",
+    "12": "0C_L6CD_N57D30S",
+    "2": "02_F25L7_N5XB30",
+    "3": "03_F25L7_N47D20",
+    "4": "04_F25L7_N57D30",
+    "5": "05_S55B30",
+    "6": "06_F25L7_XB1141",
+    "7": "07_F25L7_N55B30TL",
+    "8": "08_L6CD_S63B44",
+    "9": "09_L6CD_N2xB20"
+   }
+  },
+  "3000:130:130:FF": {
+   "name": "C_iPM_P_min",
+   "values": {
+    "0": "N54B30_Entfall",
+    "15": "N13B16KL_075KW",
+    "17": "N47D20KL_085KW",
+    "20": "N13B16UL_100KW",
+    "21": "N47D20UL_105KW",
+    "22": "N47D20UL_110KW",
+    "24": "N47D20OL_120KW",
+    "25": "N13B16ML_125KW",
+    "26": "N52B25UL_130KW",
+    "27": "N47D20OL_135KW",
+    "28": "N26B20UL_135KW_Entfall",
+    "30": "N53B30UL_150KW",
+    "32": "N20B20ML_160KW",
+    "34": "B48B20OL_170KW",
+    "35": "N57D30ML_1xxKW",
+    "36": "N26B20OL_180KW",
+    "38": "N53B30OL_190KW",
+    "40": "N53B30OL_200KW",
+    "46": "N55B30_230KW",
+    "48": "B58B30ML_240KW",
+    "50": "Default",
+    "56": "N57D30SL_280KW",
+    "60": "N63B44_300KW",
+    "62": "S55B30P0_310KW",
+    "66": "N63B44_TUE_330KW",
+    "74": "N63B44_ALP_370KW",
+    "80": "N74B60_400KW",
+    "84": "N74B66_420KW"
+   }
+  },
+  "3000:131:131:FF": {
+   "name": "C_KAB_skal_iPM_Leistungsreserve",
+   "values": {
+    "50": "0.5"
+   }
+  },
+  "3000:132:132:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "50": "0.5"
+   }
+  },
+  "3000:133:133:FF": {
+   "name": "C_KAB_skal_Pmin_Pbergab_erkennen",
+   "values": {
+    "0": "Deafult"
+   }
+  },
+  "3000:134:134:FF": {
+   "name": "C_KAB_skal_Pmin_Pbergab_ausstieg",
+   "values": {
+    "0": "false",
+    "110": "2d2_F10_F11_F18_F25",
+    "120": "2d4_F01_F02_F07_F12_F13",
+    "130": "2d6_F01_F02_ mit_N74x_und_F04",
+    "135": "2d7_N22_und_N55",
+    "140": "2d8_RR4",
+    "150": "3d0_S106",
+    "170": "3d4_S109",
+    "220": "4d4_F03",
+    "95": "1d9_F2x_F3x"
+   }
+  },
+  "3000:135:135:FF": {
+   "name": "C_KAB_skal_Pmin_Pbergab_gerastet",
+   "values": {
+    "0": "Default"
+   }
+  },
+  "3000:136:136:FF": {
+   "name": "C_Masse_Anhaenger",
+   "values": {
+    "0": "Default",
+    "105": "2d1_F10_F11_F18_F25",
+    "115": "2d3_F0x_F12_F13_RR4",
+    "85": "1d7_F2x_F3x"
+   }
+  },
+  "3000:137:137:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "6": "Default"
+   }
+  },
+  "3000:138:138:FF": {
+   "name": "C_Variante_Bedienung",
+   "values": {
+    "0": "Tastenfeld_zweistufig"
+   }
+  },
+  "3000:139:139:07": {
+   "name": "C_Variante_Feststellbremse",
+   "values": {
+    "0": "Handbremse",
+    "1": "EMF"
+   }
+  },
+  "3000:139:139:18": {
+   "name": "C_Variante_Motor",
+   "values": {
+    "0": "Notlauf",
+    "1": "Benzin_6Zylinder",
+    "2": "Benzin_8Zylinder"
+   }
+  },
+  "3000:139:139:E0": {
+   "name": "C_Wunschgeschw_DCC_max_kmh",
+   "values": {
+    "0": "Notlauf",
+    "1": "Benzin_6Zylinder",
+    "2": "Benzin_8Zylinder",
+    "3": "Diesel6Zylinder",
+    "4": "Benzin_12Zylinder",
+    "5": "Benzin_4Zylinder",
+    "6": "Diesel4Zylinder"
+   }
+  },
+  "3000:13:13:FF": {
+   "name": "IcmKod_I_Aufbaustand",
+   "values": {
+    "0": "KSP",
+    "1": "EBG",
+    "2": "BBG",
+    "3": "Serie"
+   }
+  },
+  "3000:140:140:FF": {
+   "name": "C_Wunschgeschw_DCC_max_mph",
+   "values": {
+    "46": "230_kmh",
+    "50": "250_kmh"
+   }
+  },
+  "3000:141:141:FF": {
+   "name": "C_Wunschgeschw_min_kmh",
+   "values": {
+    "28": "140_mph",
+    "31": "155 mph"
+   }
+  },
+  "3000:142:142:FF": {
+   "name": "C_Wunschgeschw_min_mph",
+   "values": {
+    "30": "30 kmh"
+   }
+  },
+  "3000:143:143:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "20": "20 mph"
+   }
+  },
+  "3000:144:144:FF": {
+   "name": "C_CwA",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:145:145:FF": {
+   "name": "C_Laendervariante",
+   "values": {
+    "65": "065_F2x_F3x",
+    "67": "067_F8x",
+    "68": "068_F01_F02_F03_F04_F10_F11_F18",
+    "69": "069_F8x",
+    "71": "071_F12_F13",
+    "73": "073_F07_F06_M5",
+    "75": "075_F006",
+    "76": "076_F13M",
+    "79": "079_F12M",
+    "82": "082_RR5",
+    "84": "084_RR6",
+    "85": "085_RR4"
+   }
+  },
+  "3000:146:146:FF": {
+   "name": "C_NVC_aktiv_l",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "11": "Suedafrika",
+    "12": "Kanada",
+    "2": "US",
+    "22": "China",
+    "3": "Deutschland",
+    "4": "England",
+    "5": "Japan",
+    "6": "Australien"
+   }
+  },
+  "3000:147:147:01": {
+   "name": "C_NVC_Exit_no_dyn_aktiv_l",
+   "values": {
+    "0": "aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:147:147:02": {
+   "name": "C_NVC_Navi_Dynamik_aktiv_l",
+   "values": {
+    "0": "nicht aktiv"
+   }
+  },
+  "3000:147:147:04": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:147:147:18": {
+   "name": "C_SSC_VERZ_VERST",
+   "values": {
+    "0": "nicht aktiv"
+   }
+  },
+  "3000:147:147:20": {
+   "name": "C_TOR_im_Suspend",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:147:147:40": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:147:147:80": {
+   "name": "C_TOR_bzr_dyn_Ausloeseschwelle_ACC_regelt",
+   "values": {
+    "0": "Default"
+   }
+  },
+  "3000:148:148:FF": {
+   "name": "C_TOR_bzr_dyn_Ausloeseschwelle_Suspend",
+   "values": {
+    "0": "Default",
+    "48": "2.4"
+   }
+  },
+  "3000:149:149:FF": {
+   "name": "C_TOR_bzr_stat_Ausloeseschwelle_ACC_regelt",
+   "values": {
+    "36": "1.8sec",
+    "40": "2.0sec"
+   }
+  },
+  "3000:14:14:FF": {
+   "name": "IcmKod_I_Ausfuehrung",
+   "values": {
+    "0": "Andere",
+    "1": "Japan",
+    "2": "USA",
+    "3": "China",
+    "4": "UK"
+   }
+  },
+  "3000:150:150:FF": {
+   "name": "C_TOR_bzr_stat_Ausloeseschwelle_Suspend",
+   "values": {
+    "36": "1.8sec",
+    "40": "2.0sec",
+    "44": "2.2sec"
+   }
+  },
+  "3000:151:151:FF": {
+   "name": "C_ZSW_Variante_LED",
+   "values": {
+    "36": "1.8sec",
+    "40": "2.0sec"
+   }
+  },
+  "3000:152:152:03": {
+   "name": "C_ZSW_Variante_Vibration",
+   "values": {
+    "0": "Variante1",
+    "1": "Variante2",
+    "2": "Variante3"
+   }
+  },
+  "3000:152:152:0C": {
+   "name": "C_FDS_FES_Verbau",
+   "values": {
+    "0": "FDS",
+    "1": "FES",
+    "2": "MDM"
+   }
+  },
+  "3000:152:152:30": {
+   "name": "C_Dac_CCAktiv",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv",
+    "2": "MDM"
+   }
+  },
+  "3000:152:152:40": {
+   "name": "C_Dac_Aktiv",
+   "values": {
+    "0": "inaktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:152:152:80": {
+   "name": "C_Dac_FzgVariante",
+   "values": {
+    "0": "initwert",
+    "1": "01_ECE"
+   }
+  },
+  "3000:153:153:FF": {
+   "name": "C_Dac_Sensitivity",
+   "values": {
+    "0": "initwert",
+    "1": "01_ECE",
+    "2": "02_US",
+    "3": "03_ASIEN",
+    "4": "04_SONSTIGE",
+    "5": "05_ECE_LK",
+    "6": "06_US_LK",
+    "7": "07_AISEN_LK",
+    "8": "08_SONSTIGE_LK"
+   }
+  },
+  "3000:154:154:FF": {
+   "name": "C_VZA_Funktion",
+   "values": {
+    "0": "aus"
+   }
+  },
+  "3000:155:155:01": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "ein"
+   }
+  },
+  "3000:155:155:02": {
+   "name": "C_FCW_CCM_Funktion",
+   "values": {
+    "0": "disable"
+   }
+  },
+  "3000:155:155:04": {
+   "name": "C_NiVi_Funktion",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:155:155:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "enable"
+   }
+  },
+  "3000:155:155:10": {
+   "name": "C_pFGS_Funktion",
+   "values": {
+    "0": "disable"
+   }
+  },
+  "3000:155:155:20": {
+   "name": "C_KOV_Ueberwachung_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:155:155:40": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "enable"
+   }
+  },
+  "3000:155:155:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:156:167:FF": {
+   "name": "C_MF_Lenkrad",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:15:15:FF": {
+   "name": "IcmKod_B_KmTacho",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:168:168:01": {
+   "name": "C_Anpassung_FES_Modus",
+   "values": {
+    "0": "FES_nicht_verbaut",
+    "1": "FES_verbaut"
+   }
+  },
+  "3000:168:168:02": {
+   "name": "C_SARAH_Stufe",
+   "values": {
+    "0": "aus",
+    "1": "halb"
+   }
+  },
+  "3000:168:168:0C": {
+   "name": "C_DCC_Funktion_bei_DSC_Status",
+   "values": {
+    "0": "DSC_Vollsystem",
+    "1": "DTC_Modus",
+    "2": "voll"
+   }
+  },
+  "3000:168:168:F0": {
+   "name": "C_SLD_vmin_kmh",
+   "values": {
+    "0": "DSC_Vollsystem",
+    "1": "DTC_Modus"
+   }
+  },
+  "3000:169:169:FF": {
+   "name": "C_SLD_vmax_kmh",
+   "values": {
+    "30": "30kmh_unskaliert",
+    "6": "30kmh"
+   }
+  },
+  "3000:16:16:FF": {
+   "name": "IcmKod_B_S7ACA",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:170:170:FF": {
+   "name": "C_SLD_vmin_mph",
+   "values": {
+    "250": "250kmh_unskaliert",
+    "46": "230kmh",
+    "50": "250kmh"
+   }
+  },
+  "3000:171:171:FF": {
+   "name": "C_SLD_vmax_mph",
+   "values": {
+    "20": "20mph_unskaliert",
+    "4": "20mph"
+   }
+  },
+  "3000:172:172:FF": {
+   "name": "C_SLD_Funktion",
+   "values": {
+    "155": "155mph_unskaliert",
+    "28": "140mph",
+    "31": "155mph"
+   }
+  },
+  "3000:173:173:01": {
+   "name": "C_SLD_Auspraegung",
+   "values": {
+    "0": "Normal",
+    "1": "ECO_SLD"
+   }
+  },
+  "3000:173:173:0E": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "ECO_SLD"
+   }
+  },
+  "3000:173:173:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:174:174:FF": {
+   "name": "C_ANBREMSEN_LAENDERPARAMETRIERUNG",
+   "values": {
+    "0": "LAND_1"
+   }
+  },
+  "3000:175:175:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "LAND_2"
+   }
+  },
+  "3000:176:176:03": {
+   "name": "C_Stauassistent_vorhanden",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3000:176:176:04": {
+   "name": "C_aPDC_vorhanden",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:176:176:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:176:176:F0": {
+   "name": "C_PMA_Auspraegung",
+   "values": {
+    "0": "kein_PMA"
+   }
+  },
+  "3000:177:177:0F": {
+   "name": "C_Variante_Frontsensorik",
+   "values": {
+    "0": "Radar_Fusion",
+    "1": "Video only",
+    "2": "Keine Frontsensorik"
+   }
+  },
+  "3000:177:177:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "Radar_Fusion",
+    "1": "Video only",
+    "2": "Keine Frontsensorik"
+   }
+  },
+  "3000:178:182:FF": {
+   "name": "C_Gateway_Application",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:17:17:FF": {
+   "name": "IcmKod_B_S229A",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:183:183:01": {
+   "name": "C_Gateway_Diagnose",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:183:183:02": {
+   "name": "C_Gateway_NetworkManagement",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:183:183:04": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:183:183:08": {
+   "name": "C_ZSW_Programm_VibAmpl",
+   "values": {
+    "0": "Vibstaerke Programm 1"
+   }
+  },
+  "3000:183:183:30": {
+   "name": "C_ZSW_Lenkradvibration_Spurwechselwarnung_enable",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "Vibstaerke Programm 3"
+   }
+  },
+  "3000:183:183:C0": {
+   "name": "C_Abstandsstufe_init",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "Stufe_1"
+   }
+  },
+  "3000:184:184:07": {
+   "name": "C_Aufsetzen_Stand_ohne_ZO",
+   "values": {
+    "1": "aktiv",
+    "2": "Stufe_2",
+    "3": "Stufe_3",
+    "4": "Stufe_4"
+   }
+  },
+  "3000:184:184:08": {
+   "name": "C_Automatisches_Losfahren",
+   "values": {
+    "0": "automatisch",
+    "1": "fahrerbestaetigt"
+   }
+  },
+  "3000:184:184:30": {
+   "name": "C_ZSW_Funktion_Enable",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:184:184:C0": {
+   "name": "C_Automatisches_Losfahren_Wartezeit",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:185:185:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3000:186:187:FF": {
+   "name": "C_Wunschgeschw_ACC_DCC_EV_max_kmh",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:188:188:FF": {
+   "name": "C_Wunschgeschw_ACC_DCC_EV_max_mph",
+   "values": {
+    "24": "120 kmh"
+   }
+  },
+  "3000:189:189:FF": {
+   "name": "C_ZSW_Aktivierunggeschwindigkeit_Funktion_low",
+   "values": {
+    "15": "75 mph"
+   }
+  },
+  "3000:18:18:FF": {
+   "name": "IcmKod_B_S2TBA",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:190:190:3F": {
+   "name": "C_Stauerkennung_on",
+   "values": {
+    "0": "off",
+    "1": "on",
+    "2": "30 kmh",
+    "3": "50 kmh"
+   }
+  },
+  "3000:190:190:C0": {
+   "name": "C_QalcgRel_v_Tacho_aktiv_mph",
+   "values": {
+    "0": "off",
+    "1": "on"
+   }
+  },
+  "3000:191:191:3F": {
+   "name": "C_iBrake_AGB_Funktion_enable",
+   "values": {
+    "25": "25mph",
+    "30": "30mph",
+    "31": "31mph",
+    "35": "35mph",
+    "37": "37mph"
+   }
+  },
+  "3000:191:191:C0": {
+   "name": "C_QalcgRel_v_Tacho_aktiv_low_mph",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:192:192:3F": {
+   "name": "C_QalcgAfz_Variante_Baureihe",
+   "values": {
+    "22": "22mph",
+    "27": "27mph",
+    "28": "28mph",
+    "32": "32mph",
+    "34": "34mph"
+   }
+  },
+  "3000:192:192:C0": {
+   "name": "IntCcHdlDispCcDrdy1_00_DSC",
+   "values": {
+    "0": "aus"
+   }
+  },
+  "3000:193:193:01": {
+   "name": "IntCcHdlDispCcDrdy1_01_ARS",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:193:193:02": {
+   "name": "IntCcHdlDispCcDrdy1_02_EPS",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:193:193:04": {
+   "name": "IntCcHdlDispCcDrdy1_03_VDC",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:193:193:08": {
+   "name": "IntCcHdlDispCcDrdy1_04_PMA",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:193:193:10": {
+   "name": "IntCcHdlDispCcDrdy1_05",
+   "values": {
+    "0": "initwert",
+    "1": "ein"
+   }
+  },
+  "3000:193:193:20": {
+   "name": "IntCcHdlDispCcDrdy1_06",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:193:193:40": {
+   "name": "IntCcHdlDispCcDrdy1_07",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:193:193:80": {
+   "name": "IntCcHdlAliveCcDrdy1_00_DSC",
+   "values": {
+    "0": "aus"
+   }
+  },
+  "3000:194:194:01": {
+   "name": "IntCcHdlAliveCcDrdy1_01_ARS",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:194:194:02": {
+   "name": "IntCcHdlAliveCcDrdy1_02_EPS",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:194:194:04": {
+   "name": "IntCcHdlAliveCcDrdy1_03_VDC",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:194:194:08": {
+   "name": "IntCcHdlAliveCcDrdy1_04_PMA",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:194:194:10": {
+   "name": "IntCcHdlAliveCcDrdy1_05",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:194:194:20": {
+   "name": "IntCcHdlAliveCcDrdy1_06",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:194:194:40": {
+   "name": "IntCcHdlAliveCcDrdy1_07",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:194:194:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "ein"
+   }
+  },
+  "3000:195:195:FF": {
+   "name": "C_ZSW_Ueberwachung_enable",
+   "values": {
+    "0": "nicht_aktiv"
+   }
+  },
+  "3000:196:196:03": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:196:196:0C": {
+   "name": "C_Regelung_auf_stehende_Ziele",
+   "values": {
+    "0": "inaktiv"
+   }
+  },
+  "3000:196:196:30": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "Radar",
+    "2": "Video"
+   }
+  },
+  "3000:196:196:C0": {
+   "name": "C_Raddrehzahlsensoren_Richtungserkennung",
+   "values": {
+    "0": "nicht aktiv"
+   }
+  },
+  "3000:197:197:01": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "aktiv"
+   }
+  },
+  "3000:197:197:0E": {
+   "name": "C_MSA_Kopplung",
+   "values": {
+    "0": "MSA2.1"
+   }
+  },
+  "3000:197:197:10": {
+   "name": "C_Umschaltung_ACC_DCC",
+   "values": {
+    "0": "unterdrueckt",
+    "1": "zugelassen"
+   }
+  },
+  "3000:197:197:E0": {
+   "name": "C_Wunschgeschw_ACC_max_kmh",
+   "values": {
+    "0": "unterdrueckt",
+    "1": "zugelassen"
+   }
+  },
+  "3000:198:198:FF": {
+   "name": "C_Wunschgeschw_ACC_max_mph",
+   "values": {
+    "36": "180_kmh",
+    "42": "210_kmh"
+   }
+  },
+  "3000:199:199:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "22": "110_mph",
+    "26": "130_mph"
+   }
+  },
+  "3000:19:19:FF": {
+   "name": "IcmKod_B_S205A",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:200:205:FF": {
+   "name": "C_QalcgLnDt_SprmrkGueltig",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:206:206:FF": {
+   "name": "C_QalcgLnDt_Halbe_Fahrzeugbreite",
+   "values": {
+    "134": "134",
+    "214": "214",
+    "246": "246"
+   }
+  },
+  "3000:207:207:FF": {
+   "name": "C_QalcgRel_v_Tacho_aktiv_kmh",
+   "values": {
+    "107": "1,07m",
+    "90": "0.9m",
+    "93": "0,93m",
+    "95": "0,95m"
+   }
+  },
+  "3000:208:208:FF": {
+   "name": "C_QalcgRel_v_Tacho_aktiv_low_kmh",
+   "values": {
+    "40": "Default",
+    "50": "50km/h",
+    "60": "60km/h"
+   }
+  },
+  "3000:209:209:FF": {
+   "name": "C_QalcgAs_max_Sollhandmoment",
+   "values": {
+    "35": "Default",
+    "45": "45km/h",
+    "55": "55km/h"
+   }
+  },
+  "3000:20:20:03": {
+   "name": "IcmKod_B_S223A",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:20:20:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:210:210:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "25": "2,5Nm"
+   }
+  },
+  "3000:211:212:FF": {
+   "name": "C_Abstandsinfo_Schwelle_Zeitluecke",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:213:213:1F": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "0.1s",
+    "15": "1.5s",
+    "8": "0.8s",
+    "9": "0.9s"
+   }
+  },
+  "3000:213:213:20": {
+   "name": "C_Abstandsinfo_im_Uebertreten",
+   "values": {
+    "0": "aus"
+   }
+  },
+  "3000:213:213:40": {
+   "name": "C_Abstandsinfo_Funktion",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:213:213:80": {
+   "name": "C_STA_v_max_mph",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:214:214:FF": {
+   "name": "C_STA_v_max_kmh",
+   "values": {
+    "25": "25mph"
+   }
+  },
+  "3000:215:215:FF": {
+   "name": "C_PMALQ_BAUREIHE",
+   "values": {
+    "40": "40kmh"
+   }
+  },
+  "3000:216:216:FF": {
+   "name": "C_Sperrtrigger_dynamisch_RQ_PWR_EL_EPS",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:217:217:01": {
+   "name": "C_Sperrtrigger_dynamisch_DISP_CC_DRASY",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:217:217:02": {
+   "name": "C_Sperrtrigger_dynamisch_DISP_CC_PMA",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:217:217:04": {
+   "name": "C_Sperrtrigger_dynamisch_DISP_LDM_1",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:217:217:08": {
+   "name": "C_Sperrtrigger_dynamisch_DISP_LDM_2_DISP_DRASY",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:217:217:10": {
+   "name": "C_Sperrtrigger_dynamisch_DISP_PMA_2",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:217:217:20": {
+   "name": "C_Sperrtrigger_dynamisch_DISP_SW_SNC",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:217:217:40": {
+   "name": "C_Sperrtrigger_dynamisch_DISP_DCRN_ASST",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:217:217:80": {
+   "name": "C_Sperrtrigger_dynamisch_OP_PUBU_PKG",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:218:218:01": {
+   "name": "C_Sperrtrigger_dynamisch_OP_PUBU_PKG_DUR",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:218:218:02": {
+   "name": "C_Sperrtrigger_dynamisch_OP_PUBU_SVIEW",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:218:218:04": {
+   "name": "C_Sperrtrigger_dynamisch_PKG_LNG",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:218:218:08": {
+   "name": "C_Sperrtrigger_dynamisch_TAR_I_SVT_ECO",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:218:218:10": {
+   "name": "C_Sperrtrigger_dynamisch_ST_OPEL_HDC",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:218:218:20": {
+   "name": "C_Sperrtrigger_dynamisch_ST_IDRV_FAS",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:218:218:40": {
+   "name": "C_Sperrtrigger_dynamisch_ST_COOR_VIB_STW",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:218:218:80": {
+   "name": "C_Sperrtrigger_dynamisch_STAT_OBJ_COOR",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:219:219:01": {
+   "name": "C_Sperrtrigger_dynamisch_ST_PMA_2",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:219:219:02": {
+   "name": "C_Sperrtrigger_dynamisch_CTR_DISP_WARN_LNCH",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:219:219:04": {
+   "name": "C_Sperrtrigger_dynamisch_CTR_SENS_RADA_REAR",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:219:219:08": {
+   "name": "C_Sperrtrigger_dynamisch_CTR_VIB_STW",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:219:219:10": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "ein"
+   }
+  },
+  "3000:219:219:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:21:21:FF": {
+   "name": "IcmKod_B_S2VHA",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:220:221:FF": {
+   "name": "C_Sperrtrigger_statisch_RQ_TORQ_CRSH_DRDY",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:222:222:01": {
+   "name": "C_Sperrtrigger_statisch_VEH_DYNMC_DT_ESTI_VRFD",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:222:222:02": {
+   "name": "C_Sperrtrigger_statisch_V_VEH_2",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:222:222:04": {
+   "name": "C_Sperrtrigger_statisch_HGLV_VEH",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:222:222:08": {
+   "name": "C_Sperrtrigger_statisch_HGLV_VEH_FILT",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:222:222:10": {
+   "name": "C_Sperrtrigger_statisch_TAR_QTA_STRMOM_DV",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:222:222:20": {
+   "name": "C_Sperrtrigger_statisch_TAR_STMOM_DV_ACT",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:222:222:40": {
+   "name": "C_Sperrtrigger_statisch_RQ_REPAT_MX",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:222:222:80": {
+   "name": "C_Sperrtrigger_statisch_TAR_STEA_ACT",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:223:223:01": {
+   "name": "C_Sperrtrigger_statisch_TAR_LTRQD_BAX",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:223:223:02": {
+   "name": "C_Sperrtrigger_statisch_TAR_REPAT_YTRQ_BAX_ACT",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:223:223:04": {
+   "name": "C_Sperrtrigger_statisch_RQ_DIFF_BRTORQ_YMR",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:223:223:08": {
+   "name": "C_Sperrtrigger_statisch_SPEC_PRMSN_IBRK_HDC",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:223:223:10": {
+   "name": "C_Sperrtrigger_statisch_TAR_ESTP_VIRT_FTAX",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:223:223:20": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "ein"
+   }
+  },
+  "3000:223:223:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:224:239:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:22:22:FF": {
+   "name": "IcmKod_I_SkrGpsLatenz",
+   "values": {
+    "0": "Default",
+    "1": "100ms",
+    "10": "1000ms",
+    "2": "200ms",
+    "3": "300ms",
+    "4": "400ms",
+    "5": "500ms",
+    "6": "600ms",
+    "7": "700ms",
+    "8": "800ms",
+    "9": "900ms"
+   }
+  },
+  "3000:23:23:FF": {
+   "name": "IcmKod_B_S203A",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:240:240:01": {
+   "name": "Verbau5AS_DriveAssist",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:240:240:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "verbaut"
+   }
+  },
+  "3000:240:240:04": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:240:240:08": {
+   "name": "Verbau5AS_DriveAssist",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:240:240:10": {
+   "name": "Verbau5AT_DriveAssistPlus",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:240:240:20": {
+   "name": "Verbau5DP_ParkAssist",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:240:240:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:241:247:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:24:24:FF": {
+   "name": "IcmKod_B_S220A",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:25:25:FF": {
+   "name": "IcmKod_B_S704A",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:26:26:FF": {
+   "name": "IcmKod_B_S2VBA",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:27:27:FF": {
+   "name": "IcmKod_B_S3ACA",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:28:28:FF": {
+   "name": "IcmKod_B_Sportlenkung",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:29:29:FF": {
+   "name": "IcmKod_B_ECONOMIC",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:30:30:FF": {
+   "name": "IcmKod_B_ECO",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:31:31:FF": {
+   "name": "IcmKod_B_SVT",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:32:32:FF": {
+   "name": "IcmKod_B_GMV",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:33:33:FF": {
+   "name": "IcmKod_B_S5DPA",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:34:34:FF": {
+   "name": "IcmKod_B_EPS",
+   "values": {
+    "0": "noEPS",
+    "1": "TKPS_offen",
+    "2": "TKPS_begrenzt",
+    "3": "ZFLS",
+    "4": "Auto"
+   }
+  },
+  "3000:35:35:FF": {
+   "name": "IcmKod_B_HAS",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "Geregelte_HAS_verbaut",
+    "2": "Ungeregelte_HAS_verbaut"
+   }
+  },
+  "3000:36:36:01": {
+   "name": "IcmKod_B_S508A",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:36:36:02": {
+   "name": "IcmKod_B_Duenenlogik",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:36:36:04": {
+   "name": "IcmKod_B_HLenInIcm",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:36:36:08": {
+   "name": "IcmKod_B_InitEco",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:36:36:10": {
+   "name": "IcmKod_B_S5DKA",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:36:36:20": {
+   "name": "IcmKod_B_S5DLA",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:36:36:40": {
+   "name": "IcmKod_B_FPK",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:36:36:80": {
+   "name": "IcmKod_B_Spoiler",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:37:37:01": {
+   "name": "IcmKod_B_BedStab",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:37:37:02": {
+   "name": "IcmKod_B_AuskuppelnOK",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:37:37:0C": {
+   "name": "IcmKod_B_Baureihe",
+   "values": {
+    "0": "LG",
+    "1": "LK"
+   }
+  },
+  "3000:37:37:30": {
+   "name": "IcmKod_B_GPS",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:37:37:C0": {
+   "name": "C_Anzahl_Tueren",
+   "values": {
+    "0": "4 Tueren",
+    "1": "2 Tueren"
+   }
+  },
+  "3000:38:38:FF": {
+   "name": "IcmKod_B_LastFncEcoZeit",
+   "values": {
+    "0": "00_init",
+    "255": "255_"
+   }
+  },
+  "3000:39:39:FF": {
+   "name": "IcmKod_I_Sbs_mdl_no_lza_2_high",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:40:40:FF": {
+   "name": "IcmKod_I_Sbs_mdl_no_lza_2_low",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:41:41:FF": {
+   "name": "IcmKod_I_Sbs_mdl_no_lza_high",
+   "values": {
+    "0": "Default"
+   }
+  },
+  "3000:42:42:FF": {
+   "name": "IcmKod_I_Sbs_mdl_no_lza_low",
+   "values": {
+    "0": "Default"
+   }
+  },
+  "3000:43:43:FF": {
+   "name": "IcmKod_I_Sbs_aycheck_thr",
+   "values": {
+    "0": "KontrollschwelleKlein",
+    "1": "KontrollschwelleGross"
+   }
+  },
+  "3000:44:44:03": {
+   "name": "C_Verwendung_PDC_Daten",
+   "values": {
+    "0": "false",
+    "1": "true"
+   }
+  },
+  "3000:44:44:0C": {
+   "name": "C_Frontschutz_Ueberwachung_Temp_ECBA",
+   "values": {
+    "0": "false",
+    "1": "true"
+   }
+  },
+  "3000:44:44:F0": {
+   "name": "C_Lenkungsvariante",
+   "values": {
+    "0": "alle Anderen",
+    "1": "EPS",
+    "2": "EAS",
+    "3": "EPS+Adaptive Driver",
+    "4": "EAS",
+    "5": "EAS+M-Fahrwerk",
+    "6": "EAS+Adaptive Drive"
+   }
+  },
+  "3000:45:45:FF": {
+   "name": "C_VZA_M_Max_Schlepp",
+   "values": {
+    "30": "-30Nm",
+    "40": "-40Nm",
+    "45": "-45Nm",
+    "55": "-55Nm",
+    "60": "-60Nm",
+    "65": "-65Nm",
+    "70": "-70Nm",
+    "75": "-75Nm",
+    "90": "-90Nm"
+   }
+  },
+  "3000:46:46:FF": {
+   "name": "C_Variante_Hybrid",
+   "values": {
+    "0": "Default",
+    "1": "Gen2",
+    "2": "Gen2.5",
+    "3": "Gen2.5 Achshybrid",
+    "4": "Gen3",
+    "5": "BEV"
+   }
+  },
+  "3000:47:47:FF": {
+   "name": "C_PMALQ_Reglerauspraegung",
+   "values": {
+    "0": "F0x+N74",
+    "1": "F0x+N63",
+    "10": "F10+N55",
+    "11": "F10+N52",
+    "12": "F10+N47",
+    "13": "F10+N20",
+    "14": "F10+Gen2",
+    "15": "F10+PHEV",
+    "16": "F12+N63",
+    "17": "F12+N57",
+    "18": "F12+N55",
+    "19": "F10+B47",
+    "2": "F0x+N57",
+    "20": "Default",
+    "3": "F0x+N55",
+    "4": "F0x+N52",
+    "5": "F0x+Gen2",
+    "6": "F0x+N47",
+    "7": "F0x+N20",
+    "8": "F10+N63",
+    "9": "F10+N57"
+   }
+  },
+  "3000:48:48:FF": {
+   "name": "C_VZA_Stoer_Offset",
+   "values": {
+    "11": "-0.11",
+    "15": "-0.15"
+   }
+  },
+  "3000:49:50:FF": {
+   "name": "C_AchsabstandFahrzeug",
+   "values": {
+    "0": "alle Anderen",
+    "10497": "2,97",
+    "12545": "3,05",
+    "13057": "3,07",
+    "16641": "3,20",
+    "7681": "2,86",
+    "8449": "Default"
+   }
+  },
+  "3000:4:4:FF": {
+   "name": "C_DebugFrame",
+   "values": {
+    "0": "aus",
+    "1": "FESTUS QDM+FAS4",
+    "2": "FESTUS QDM",
+    "3": "FESTUS FAS4"
+   }
+  },
+  "3000:51:52:FF": {
+   "name": "C_iBrake_Offset_Maximalverzoegerung_DBC",
+   "values": {
+    "0": "Default",
+    "49665": "-0,5",
+    "62465": "0"
+   }
+  },
+  "3000:53:64:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:5:6:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:65:65:FF": {
+   "name": "C_ZSW_SensHellkUmgebEna",
+   "values": {
+    "0": "false",
+    "1": "true"
+   }
+  },
+  "3000:66:67:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:68:68:FF": {
+   "name": "C_KOV_TLC_verbaut",
+   "values": {
+    "0": "nicht verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:69:75:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:76:77:FF": {
+   "name": "HdlCalibHL_C0_Gradient_FL",
+   "values": {
+    "1630": "1630_Notlauf",
+    "1660": "1660_F12, F13",
+    "1690": "1690_F10, F11, F18",
+    "1800": "1800_M5",
+    "2090": "2090_F56",
+    "63706": "-1830_F30AWD",
+    "63736": "-1800_F2x_4WD",
+    "63764": "-1772_F8xM3",
+    "63776": "-1760_F8xM3",
+    "63786": "-1750_F3x_4WD",
+    "63846": "-1690_F2x_2WD",
+    "63856": "-1680_F3x_2WD"
+   }
+  },
+  "3000:78:78:FF": {
+   "name": "HdlCalibHL_C0_Gradient_FR_high",
+   "values": {
+    "249": "Notlauf",
+    "6": "1630_F25"
+   }
+  },
+  "3000:79:79:FF": {
+   "name": "HdlCalibHL_C0_Gradient_FR_low",
+   "values": {
+    "102": "Notlauf",
+    "132": "-1660_F12_F13",
+    "162": "-1690_F01_F02_F03_F04_F07_RR4",
+    "94": "1630_F25"
+   }
+  },
+  "3000:7:7:FF": {
+   "name": "IcmKod_I_HSS_Connect",
+   "values": {
+    "0": "00_ohne_HSS",
+    "12": "0C_nur_Luftfeder",
+    "13": "0D_Luftfeder_und_Xenon",
+    "15": "0F_VDC_oder_IAS_rest_egal",
+    "5": "05_VDC0_XENON"
+   }
+  },
+  "3000:80:81:FF": {
+   "name": "HdlCalibHL_C0_Gradient_RL",
+   "values": {
+    "1540": "1540_F30AWD",
+    "1550": "1550_F3x_RWD",
+    "1600": "1600_F2x_F12_F13",
+    "1630": "1630_F8xM3",
+    "1640": "1640 Notlauf",
+    "1670": "1670_F8xM3",
+    "1680": "1680 RR04",
+    "1700": "1700_F3x",
+    "63466": "-2070_M5"
+   }
+  },
+  "3000:82:82:FF": {
+   "name": "HdlCalibHL_C0_Gradient_RR_high",
+   "values": {
+    "249": "Notlauf",
+    "6": "F25"
+   }
+  },
+  "3000:83:83:FF": {
+   "name": "HdlCalibHL_C0_Gradient_RR_low",
+   "values": {
+    "112": "RR04",
+    "152": "Notlauf",
+    "192": "F12 F13",
+    "94": "F25"
+   }
+  },
+  "3000:84:84:FF": {
+   "name": "HdlCalibHL_S0_Offset_FL_high",
+   "values": {
+    "0": "00_00 F25",
+    "1": "352_F8xM3",
+    "2": "619_F08xM3",
+    "252": "neg08_00_M5",
+    "254": "neg05_00 F0x F1x"
+   }
+  },
+  "3000:85:85:FF": {
+   "name": "HdlCalibHL_S0_Offset_FL_low",
+   "values": {
+    "0": "00_00 F25",
+    "107": "619_F08xM3",
+    "12": "neg05_00 F0x F1x",
+    "224": "neg08_00_M5",
+    "24": "neg10_00",
+    "96": "352_F8xM3"
+   }
+  },
+  "3000:86:86:FF": {
+   "name": "HdlCalibHL_S0_Offset_FR_high",
+   "values": {
+    "0": "F25",
+    "254": "F0x F1x"
+   }
+  },
+  "3000:87:87:FF": {
+   "name": "HdlCalibHL_S0_Offset_FR_low",
+   "values": {
+    "0": "F25",
+    "12": "F0x F1x"
+   }
+  },
+  "3000:88:88:FF": {
+   "name": "HdlCalibHL_S0_Offset_RL_high",
+   "values": {
+    "0": "0000_Notlauf",
+    "2": "0700_F11",
+    "246": "-2500_F12_F13",
+    "250": "-1485_F08xM3",
+    "252": "-1000_F01_F02_F03_F04_RR4",
+    "253": "-765_F8xM3",
+    "254": "-0500_F2x_F3x"
+   }
+  },
+  "3000:89:89:FF": {
+   "name": "HdlCalibHL_S0_Offset_RL_low",
+   "values": {
+    "0": "0000_Notlauf",
+    "100": "0100_F07",
+    "12": "-0500_F2x_F3x",
+    "136": "-1400_M5",
+    "188": "0700_F11",
+    "24": "-1000_F01_F02_F03_F04_RR4",
+    "3": "-765_F8xM3",
+    "36": "-1500_F32_F33",
+    "51": "-1485_F08xM3",
+    "60": "-2500_F12_F13"
+   }
+  },
+  "3000:8:8:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:90:90:FF": {
+   "name": "HdlCalibHL_S0_Offset_RR_high",
+   "values": {
+    "0": "0000_Notlauf",
+    "2": "0700_F11",
+    "246": "-2500_F12_F13",
+    "250": "-1500_F10_F18",
+    "252": "-1000_F01_F02_F03_F04_RR4"
+   }
+  },
+  "3000:91:91:FF": {
+   "name": "HdlCalibHL_S0_Offset_RR_low",
+   "values": {
+    "0": "0000_Notlauf",
+    "100": "0100_F07",
+    "188": "0700_F11",
+    "24": "-1000_F01_F02_F03_F04_RR4",
+    "36": "-1500_F10_F18",
+    "60": "-2500_F12_F13"
+   }
+  },
+  "3000:92:92:03": {
+   "name": "C_Frontschutz_Koordination_Anbremsen_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:92:92:0C": {
+   "name": "C_Frontschutz_Koordination_DBC_Umparametrierung_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:92:92:30": {
+   "name": "C_Frontschutz_Koordination_Vorbefuellung_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:92:92:C0": {
+   "name": "C_Frontschutz_Koordination_Warnung_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:93:93:03": {
+   "name": "C_iBrake_Akutwarnung_auf_Standziele_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:93:93:0C": {
+   "name": "C_iBrake_Anbremsen_auf_Standziele_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:93:93:30": {
+   "name": "C_iBrake_Anpassung_Maximalverzoegerung_DBC_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:93:93:C0": {
+   "name": "C_iBrake_Akutwarnung_dynamisch_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:94:94:03": {
+   "name": "C_iBrake_Anbremsen_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:94:94:0C": {
+   "name": "C_iBrake_Anbremsen_iBrake5_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:94:94:30": {
+   "name": "C_iBrake_BVK_bei_Warnung_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:94:94:C0": {
+   "name": "C_iBrake_DBC_Umparametrierung_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:95:95:03": {
+   "name": "C_iBrake_Vorbefuellung_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:95:95:0C": {
+   "name": "C_iBrake_Vorwarnung_auf_Standziele_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:95:95:30": {
+   "name": "C_iBrake_Vorwarnung_dynamisch_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:95:95:C0": {
+   "name": "C_iBrake_Vorwarnung_statisch_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:96:96:03": {
+   "name": "C_iBrake_Zwangseinschaltung",
+   "values": {
+    "0": "Default"
+   }
+  },
+  "3000:96:96:0C": {
+   "name": "C_PMALQ_Disclaimer_Einparken",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:96:96:30": {
+   "name": "C_PMALQ_Disclaimer_RFK",
+   "values": {
+    "0": "aus",
+    "1": "ein"
+   }
+  },
+  "3000:96:96:C0": {
+   "name": "C_KAB_bergabansatz_on",
+   "values": {
+    "0": "false",
+    "1": "true"
+   }
+  },
+  "3000:97:97:07": {
+   "name": "C_VZA_Applikationsvariante",
+   "values": {
+    "0": "Variante1",
+    "1": "Variante2",
+    "2": "Variante3",
+    "3": "Variante4"
+   }
+  },
+  "3000:97:97:18": {
+   "name": "C_XCC_Applikationsvariante",
+   "values": {
+    "0": "Variante1",
+    "1": "Variante2"
+   }
+  },
+  "3000:97:97:E0": {
+   "name": "C_STA_Einschraenkung",
+   "values": {
+    "0": "keine Einschraenkung",
+    "1": "Autobahn",
+    "2": "Autobahnen und Landstrassen_mit_baulicher_Trennung",
+    "3": "Autobahn und Landstrassen"
+   }
+  },
+  "3000:98:98:FF": {
+   "name": "C_STA_P_Faktor",
+   "values": {
+    "0": "alle Anderen",
+    "21": "wert210",
+    "23": "wert230",
+    "25": "Default",
+    "26": "wert260"
+   }
+  },
+  "3000:99:99:FF": {
+   "name": "C_Masseoffset_WBK",
+   "values": {
+    "50": "wert0",
+    "58": "wert80",
+    "75": "wert250"
+   }
+  },
+  "3000:9:9:01": {
+   "name": "IcmKod_B_HSS_Delay",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:9:9:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:9:9:0C": {
+   "name": "C_Infospeicher_AS_enable",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3000:9:9:F0": {
+   "name": "IcmKod_I_Sensormonitoring",
+   "values": {
+    "0": "aktiv",
+    "1": "inaktiv",
+    "2": "sensitiv",
+    "4": "robust"
+   }
+  },
+  "3001:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3002:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Daten",
+  "3001": "CAF_ID",
+  "3002": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

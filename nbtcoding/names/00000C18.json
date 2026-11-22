@@ -1,0 +1,2387 @@
+{
+ "functions": {
+  "3000:0:3:FF": {
+   "name": "Variante_Typekey",
+   "values": {}
+  },
+  "3000:10:10:03": {
+   "name": "Variante_DBC_Schwelle",
+   "values": {
+    "0": "DBC-Schwelle A",
+    "1": "DBC-Schwelle B",
+    "2": "DBC-Schwelle C"
+   }
+  },
+  "3000:10:10:04": {
+   "name": "Verbaut_Spannungsmaster",
+   "values": {
+    "0": "nicht_verfuegbar",
+    "1": "verfuegbar"
+   }
+  },
+  "3000:10:10:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "31": "initwert"
+   }
+  },
+  "3000:11:11:1F": {
+   "name": "UNBELEGT",
+   "values": {
+    "31": "initwert"
+   }
+  },
+  "3000:11:11:20": {
+   "name": "Verbaut_Panoramadach",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:11:11:40": {
+   "name": "Verbaut_Sportfahrwerk",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:11:11:80": {
+   "name": "Verbaut_AktiveDaempferregelung",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:12:12:01": {
+   "name": "Verbaut_Quermomentenverteilung_hinten",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:12:12:02": {
+   "name": "Verbaut_AktiveRollstabilisierung",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:12:12:04": {
+   "name": "Verbaut_AktiveVorderachslenkung",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:12:12:08": {
+   "name": "Verbaut_HinterachsSchraeglaufRegelung",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:12:12:10": {
+   "name": "Verbaut_Anhaengermodul",
+   "values": {
+    "0": "nicht_verbaut",
+    "1": "verbaut"
+   }
+  },
+  "3000:12:12:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3000:13:15:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "16777215": "initwert"
+   }
+  },
+  "3000:16:16:01": {
+   "name": "Funktion_OBD_Secondary_1_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:02": {
+   "name": "Funktion_OBD_Secondary_2_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:04": {
+   "name": "Funktion_OBD_Secondary_3_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:16:16:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "31": "initwert"
+   }
+  },
+  "3000:17:17:0F": {
+   "name": "Variante_Motor",
+   "values": {
+    "0": "Benzin",
+    "1": "Diesel",
+    "15": "undefined",
+    "2": "Elektro"
+   }
+  },
+  "3000:17:17:F0": {
+   "name": "Variante_Getriebe",
+   "values": {
+    "0": "Handschalter",
+    "1": "Automatik",
+    "15": "undefined"
+   }
+  },
+  "3000:18:18:FF": {
+   "name": "Variante_Bremssattel_vorne",
+   "values": {
+    "0": "FN-AL 60 / 24 / 330",
+    "1": "FNR-AL 60 / 30 / 348",
+    "2": "FNR-AL 60 / 36 / 348",
+    "255": "undefined",
+    "3": "FNR-AL 60 / 36 / 374 - 76",
+    "4": "FNR-AL 60 / 36 / 374 - 90",
+    "5": "M4.42 / 36 / 395",
+    "6": "FN 60 / 30 / 332",
+    "7": "FN 60 / 30 / 348",
+    "8": "2FN 42 / 36 / 365",
+    "9": "FNR-AL 60 / 36 / 385"
+   }
+  },
+  "3000:19:19:FF": {
+   "name": "Variante_Bremssattel_hinten",
+   "values": {
+    "0": "CII 44 / 20 / 330",
+    "1": "CII 44 / 24 / 345",
+    "2": "FN 44 / 24 / 345",
+    "255": "undefined",
+    "3": "CII 44 / 24 / 370",
+    "4": "FN 44 / 24 / 370",
+    "5": "FN 44 / 40 / 402",
+    "6": "FN-AL 44 / 20 / 320",
+    "7": "FN-AL 44 / 24 / 345"
+   }
+  },
+  "3000:20:20:FF": {
+   "name": "Variante_Antrieb",
+   "values": {
+    "0": "Heck",
+    "1": "Allrad",
+    "255": "undefined"
+   }
+  },
+  "3000:21:21:FF": {
+   "name": "Variante_Hoehenstaende",
+   "values": {
+    "0": "keine Hoehenstandsinfo",
+    "1": "ICM-QL Hoehenstandsinfo-4",
+    "255": "undefined",
+    "3": "ICM-QL Hoehenstandsinfo-2"
+   }
+  },
+  "3000:22:22:07": {
+   "name": "Variante_Hybrid",
+   "values": {
+    "0": "kein Hybrid",
+    "1": "Hybrid Gen1.5",
+    "2": "Hybrid Gen2.0",
+    "3": "Hybrid Gen3.0 - HEV",
+    "4": "Hybrid Gen3.0 - PHEV",
+    "7": "undefined"
+   }
+  },
+  "3000:22:22:18": {
+   "name": "Variante_OBD",
+   "values": {
+    "0": "kein OBD",
+    "1": "OBD primary",
+    "2": "OBD secundary",
+    "3": "undefined"
+   }
+  },
+  "3000:22:22:20": {
+   "name": "Variante_Lenkwinkel",
+   "values": {
+    "0": "absolut",
+    "1": "relativ"
+   }
+  },
+  "3000:22:22:C0": {
+   "name": "Variante_Unterdrucksensor",
+   "values": {
+    "0": "kein Sensor",
+    "1": "Sensor am DSC",
+    "2": "Sensor ueber Bus",
+    "3": "undefined"
+   }
+  },
+  "3000:23:23:03": {
+   "name": "Variante_Parkbremse",
+   "values": {
+    "0": "Variante_Parkbremse_DSC_Master",
+    "1": "Variante_Parkbremse_DSC_Slave",
+    "3": "undefined"
+   }
+  },
+  "3000:23:23:04": {
+   "name": "Variante_Lenkseite",
+   "values": {
+    "0": "Rechtslenker",
+    "1": "Linkslenker"
+   }
+  },
+  "3000:23:23:08": {
+   "name": "Variante_Schwimmwinkel",
+   "values": {
+    "0": "ICM-QL",
+    "1": "intern"
+   }
+  },
+  "3000:23:23:10": {
+   "name": "Variante_Schnittstelle_BLS",
+   "values": {
+    "0": "konventionelle Schnittstelle",
+    "1": "Stromschnittstelle"
+   }
+  },
+  "3000:23:23:E0": {
+   "name": "Variante_Tandemhauptbremszylinder",
+   "values": {
+    "0": "THZ_22.2",
+    "1": "THZ_23.81",
+    "2": "THZ_25.4",
+    "3": "THZ_26.99",
+    "7": "undefined"
+   }
+  },
+  "3000:24:24:03": {
+   "name": "Variante_Raddrehzahlfuehler_VL",
+   "values": {
+    "0": "ohne_Drehrichtungserkennung",
+    "1": "mit_Drehrichtungserkennung_Invers",
+    "2": "mit_Drehrichtungserkennung_Standard",
+    "3": "undefined"
+   }
+  },
+  "3000:24:24:0C": {
+   "name": "Variante_Raddrehzahlfuehler_VR",
+   "values": {
+    "0": "ohne_Drehrichtungserkennung",
+    "1": "mit_Drehrichtungserkennung_Invers",
+    "2": "mit_Drehrichtungserkennung_Standard",
+    "3": "undefined"
+   }
+  },
+  "3000:24:24:30": {
+   "name": "Variante_Raddrehzahlfuehler_HL",
+   "values": {
+    "0": "ohne_Drehrichtungserkennung",
+    "1": "mit_Drehrichtungserkennung_Invers",
+    "2": "mit_Drehrichtungserkennung_Standard",
+    "3": "undefined"
+   }
+  },
+  "3000:24:24:C0": {
+   "name": "Variante_Raddrehzahlfuehler_HR",
+   "values": {
+    "0": "ohne_Drehrichtungserkennung",
+    "1": "mit_Drehrichtungserkennung_Invers",
+    "2": "mit_Drehrichtungserkennung_Standard",
+    "3": "undefined"
+   }
+  },
+  "3000:25:25:03": {
+   "name": "Variante_KraftschlussverhaltenStillstand",
+   "values": {
+    "0": "NIC",
+    "1": "NIC_ueber_Neutral",
+    "2": "Entfall_Kriechen",
+    "3": "undefined"
+   }
+  },
+  "3000:25:25:04": {
+   "name": "Funktion_DynamicBrakeControl_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:25:25:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3000:25:25:10": {
+   "name": "Funktion_Anhaengerschlingerlogik_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:25:25:20": {
+   "name": "Funktion_Fahrleistungsreduzierung_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:25:25:40": {
+   "name": "Funktion_Bremsbereitschaft_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:25:25:80": {
+   "name": "Funktion_Trockenbremsen_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:26:26:01": {
+   "name": "Funktion_Fadingkompensation_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:26:26:02": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3000:26:26:04": {
+   "name": "Funktion_Anfahrassistent_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:26:26:08": {
+   "name": "Funktion_AutomaticHold_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:26:26:10": {
+   "name": "Funktion_AdaptiverBremsassistent_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:26:26:20": {
+   "name": "Funktion_HydraulikBrakeBoost_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:26:26:40": {
+   "name": "Funktion_HydrauliBoostFailureCompenstation_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:26:26:80": {
+   "name": "Funktion_AktiveGefahrenbremsung_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:27:27:01": {
+   "name": "Funktion_PostCrashIBrake_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:27:27:02": {
+   "name": "Funktion_ECBA_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:27:27:1C": {
+   "name": "Funktion_ReifenPannenerkennung_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv_RPA ohne Koordinatorfunktion im DSC",
+    "2": "aktiv_RPA mit Koordinatorfunktion im DSC",
+    "3": "aktiv_RDCi mit Koordinatorfunktion im DSC",
+    "7": "undefined"
+   }
+  },
+  "3000:27:27:20": {
+   "name": "Funktion_AutomaticDriveawayRelease_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:27:27:C0": {
+   "name": "Funktion_IGR_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv_Performanceklasse_Hartanlauf",
+    "2": "aktiv_Performanceklasse_Hart_und_Softanlauf"
+   }
+  },
+  "3000:28:28:01": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3000:28:28:02": {
+   "name": "Funktion_Zielbremsung_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:28:28:04": {
+   "name": "Funktion_PBA_Vorbefuellung_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:28:28:08": {
+   "name": "UNBELEGT",
+   "values": {
+    "1": "initwert"
+   }
+  },
+  "3000:28:28:30": {
+   "name": "Funktion_LaengsMomentVerteilung_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "aktiv_Notlauf"
+   }
+  },
+  "3000:28:28:40": {
+   "name": "Funktion_GeschwindigkeitsbegrenzungCoachDoor_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:28:28:80": {
+   "name": "Funktion_HighFrequencySteering_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:29:29:01": {
+   "name": "Funktion_ACCStopAndGo_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:29:29:02": {
+   "name": "Funktion_Differenzialsperre_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:29:29:0C": {
+   "name": "Funktion_HillDecentControl_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv_kmh",
+    "2": "aktiv_mph"
+   }
+  },
+  "3000:29:29:30": {
+   "name": "Funktion_MSA_aktiv",
+   "values": {
+    "0": "nicht_aktiv - Signal nicht verfuegbar",
+    "1": "aktiv_MSA_2_1 - Signal invalid",
+    "2": "aktiv_MSA_2_2",
+    "3": "nicht_aktiv - Signal invalid"
+   }
+  },
+  "3000:29:29:C0": {
+   "name": "Funktion_Bremsbelagverschleissmodell_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv_einstufiger_Sensor",
+    "2": "aktiv_zweistufiger_Sensor"
+   }
+  },
+  "3000:30:30:01": {
+   "name": "Funktion_EntbremsteVorderachse_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:30:30:02": {
+   "name": "Funktion_Flm_BMW_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:30:30:04": {
+   "name": "Funktion_Flm_Bosch_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:30:30:38": {
+   "name": "Funktion_Kipplogik_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv",
+    "2": "aktiv eingeschraenkt",
+    "3": "aktiv Pata_aktiv",
+    "4": "aktiv_DTC_nicht_aktiv",
+    "7": "undefined"
+   }
+  },
+  "3000:30:30:40": {
+   "name": "Funktion_Bremsunterdruckmodell_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:30:30:80": {
+   "name": "Funktion_LMV_Ruckelreduzierung_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:31:31:01": {
+   "name": "Funktion_LMV_FestBremsSchutz_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:31:31:02": {
+   "name": "Funktion_LMV_KupplungsSchlupfAbbau_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:31:31:04": {
+   "name": "Funktion_LMV_HarterSchutzEingriff_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:31:31:08": {
+   "name": "Funktion_LaunchControl_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:31:31:10": {
+   "name": "Funktion_LMV_MomentenabsenkungSegeln_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:31:31:20": {
+   "name": "Funktion_ABS_Blockierdruckueberhoehung_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:31:31:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3000:4:4:FF": {
+   "name": "Variante_Testereinsatzkennung",
+   "values": {}
+  },
+  "3000:5:8:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "4294967295": "initwert"
+   }
+  },
+  "3000:9:9:01": {
+   "name": "Variante_AutoHAnzeige",
+   "values": {
+    "0": "AutoHAnzeige_vor_Druckaufbau",
+    "1": "AutoHAnzeige_nach_Druckaufbau"
+   }
+  },
+  "3000:9:9:02": {
+   "name": "Variante_SSM_Uebergabe",
+   "values": {
+    "0": "Gesteuert_ueber_QU_TAR_BRTORQ_SUM",
+    "1": "Gesteuert_ueber_RQ_TAO_SSM"
+   }
+  },
+  "3000:9:9:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "63": "initwert"
+   }
+  },
+  "3001:0:1:FF": {
+   "name": "Physik_Fahrzeugmasse",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3001:10:11:FF": {
+   "name": "Physik_Schwerpunktslage_z",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3001:12:12:FF": {
+   "name": "Physik_Schraeglaufsteifigkeit_VA",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3001:13:13:FF": {
+   "name": "Physik_Schraeglaufsteifigkeit_HA",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3001:14:15:FF": {
+   "name": "Physik_Traegheitsmoment",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3001:16:16:FF": {
+   "name": "Physik_MasseMotor",
+   "values": {
+    "50": "initwert"
+   }
+  },
+  "3001:17:17:FF": {
+   "name": "Physik_MasseRad_Ungefedert_VA",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3001:18:18:FF": {
+   "name": "Physik_MasseRad_Ungefedert_HA",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3001:19:20:FF": {
+   "name": "Physik_TraegheitsmomentRad_VA",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3001:21:22:FF": {
+   "name": "Physik_TraegheitsmomentRad_HA",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3001:23:24:FF": {
+   "name": "Physik_Cp_Vorderachse",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3001:25:26:FF": {
+   "name": "Physik_Cp_Hinterachse",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3001:27:28:FF": {
+   "name": "Physik_UebersetzungsverhaeltnisHinterachse",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3001:29:29:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "255": "initwert"
+   }
+  },
+  "3001:2:2:FF": {
+   "name": "Physik_Radradius_dynamisch",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3001:3:4:FF": {
+   "name": "Physik_Radstand",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3001:5:5:FF": {
+   "name": "Physik_Spurweite",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3001:6:7:FF": {
+   "name": "Physik_Schwerpunktslage_x",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3001:8:9:FF": {
+   "name": "Physik_Schwerpunktslage_y",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3002:0:0:FF": {
+   "name": "RPA_THDEC",
+   "values": {}
+  },
+  "3002:10:10:FF": {
+   "name": "RPA_WGCNT50Decrease",
+   "values": {}
+  },
+  "3002:11:11:FF": {
+   "name": "RPA_WGCNT50Increase",
+   "values": {}
+  },
+  "3002:12:12:FF": {
+   "name": "RPA_WGCNT75Decrease",
+   "values": {}
+  },
+  "3002:13:13:FF": {
+   "name": "RPA_WGCNT75Increase",
+   "values": {}
+  },
+  "3002:14:14:FF": {
+   "name": "RPA_WGCNTmax_R",
+   "values": {}
+  },
+  "3002:15:15:FF": {
+   "name": "RPA_NewtyreDetectMaxCnt",
+   "values": {}
+  },
+  "3002:16:16:FF": {
+   "name": "RPA_NewTyreTHDEL",
+   "values": {}
+  },
+  "3002:17:17:FF": {
+   "name": "RPA_NewTyreTHDEL2",
+   "values": {}
+  },
+  "3002:18:18:FF": {
+   "name": "RPA_NewTyreTHDEL3",
+   "values": {}
+  },
+  "3002:19:19:FF": {
+   "name": "RPA_3p1DiffStdDEL1_QOF_zero",
+   "values": {}
+  },
+  "3002:1:1:FF": {
+   "name": "RPA_THDECDEL2",
+   "values": {}
+  },
+  "3002:20:20:FF": {
+   "name": "RPA_3p1_Diff_DTS_DEL_Ratio1",
+   "values": {}
+  },
+  "3002:21:21:FF": {
+   "name": "RPA_3p1_Diff_DTS_DEL_Ratio2",
+   "values": {}
+  },
+  "3002:22:22:FF": {
+   "name": "RPA_3p1_Diff_DTS_DEL_Ratio3",
+   "values": {}
+  },
+  "3002:23:23:FF": {
+   "name": "RPA_3p1_Diff_DTS_DEL_Ratio4",
+   "values": {}
+  },
+  "3002:24:24:FF": {
+   "name": "RPA_3p1_Diff_DTS_DEL_Ratio5",
+   "values": {}
+  },
+  "3002:25:25:FF": {
+   "name": "RPA_3p1_Diff_DTS_DEL_Ratio6",
+   "values": {}
+  },
+  "3002:26:26:FF": {
+   "name": "RPA_NewTyreDetectAddToFlow",
+   "values": {}
+  },
+  "3002:27:27:FF": {
+   "name": "RPA_3p1_3P1DetectAddToFlow",
+   "values": {}
+  },
+  "3002:28:28:FF": {
+   "name": "RPA_THIDDEL",
+   "values": {}
+  },
+  "3002:29:29:FF": {
+   "name": "RPA_THIDDEL2",
+   "values": {}
+  },
+  "3002:2:2:FF": {
+   "name": "RPA_THDECDEL3",
+   "values": {}
+  },
+  "3002:30:30:FF": {
+   "name": "RPA_THIDDEL3",
+   "values": {}
+  },
+  "3002:31:31:FF": {
+   "name": "RPA_RVB0",
+   "values": {}
+  },
+  "3002:32:32:FF": {
+   "name": "RPA_RVB1",
+   "values": {}
+  },
+  "3002:33:33:FF": {
+   "name": "RPA_SPCOR",
+   "values": {}
+  },
+  "3002:34:34:FF": {
+   "name": "RPA_DwsTHVEL",
+   "values": {}
+  },
+  "3002:35:35:FF": {
+   "name": "RPA_STDRVB",
+   "values": {}
+  },
+  "3002:36:36:FF": {
+   "name": "RPA_SwitchOffTimeWhileDetect",
+   "values": {}
+  },
+  "3002:37:37:FF": {
+   "name": "RPA_SwitchOffTimeWhileSTD",
+   "values": {}
+  },
+  "3002:38:38:FF": {
+   "name": "RPA_SusCorFac",
+   "values": {}
+  },
+  "3002:39:39:FF": {
+   "name": "RPA_SusCorTH1",
+   "values": {}
+  },
+  "3002:3:3:FF": {
+   "name": "RPA_THDEL",
+   "values": {}
+  },
+  "3002:40:40:FF": {
+   "name": "RPA_RejectStdSusFront_UB",
+   "values": {}
+  },
+  "3002:41:41:FF": {
+   "name": "RPA_RejectStdSusRear_UB",
+   "values": {}
+  },
+  "3002:42:42:FF": {
+   "name": "RPA_RejectSusFront_UB",
+   "values": {}
+  },
+  "3002:43:43:FF": {
+   "name": "RPA_RejectSusRear_UB",
+   "values": {}
+  },
+  "3002:44:45:FF": {
+   "name": "RPA_SPFCF",
+   "values": {}
+  },
+  "3002:46:47:FF": {
+   "name": "RPA_SPFCR",
+   "values": {}
+  },
+  "3002:48:49:FF": {
+   "name": "RPA_TWDF",
+   "values": {}
+  },
+  "3002:4:4:FF": {
+   "name": "RPA_THDEL2",
+   "values": {}
+  },
+  "3002:50:51:FF": {
+   "name": "RPA_TWDR",
+   "values": {}
+  },
+  "3002:52:52:FF": {
+   "name": "RPA_COR1",
+   "values": {}
+  },
+  "3002:53:53:FF": {
+   "name": "RPA_COR3",
+   "values": {}
+  },
+  "3002:54:54:FF": {
+   "name": "RPA_STD_TPX",
+   "values": {}
+  },
+  "3002:55:55:FF": {
+   "name": "RPA_YawRate_Threshold_STD",
+   "values": {}
+  },
+  "3002:56:56:FF": {
+   "name": "RPA_YawRate_Threshold",
+   "values": {}
+  },
+  "3002:57:58:FF": {
+   "name": "RPA_WheelTcoeff1",
+   "values": {}
+  },
+  "3002:59:60:FF": {
+   "name": "RPA_WheelTcoeff2",
+   "values": {}
+  },
+  "3002:5:5:FF": {
+   "name": "RPA_THDEL3",
+   "values": {}
+  },
+  "3002:61:61:FF": {
+   "name": "RPA_Airsuscontrolfactor",
+   "values": {}
+  },
+  "3002:62:62:FF": {
+   "name": "RPA_C_DEL2_TH_Slope_R",
+   "values": {}
+  },
+  "3002:63:63:FF": {
+   "name": "RPA_DEL2Hintercept_R",
+   "values": {}
+  },
+  "3002:64:64:FF": {
+   "name": "RPA_THAccLN",
+   "values": {}
+  },
+  "3002:65:65:FF": {
+   "name": "RPA_THAccLT",
+   "values": {}
+  },
+  "3002:66:66:FF": {
+   "name": "RPA_LateralAccelerationStdThreshold",
+   "values": {}
+  },
+  "3002:67:67:FF": {
+   "name": "RPA_MinLateralAccelerationThreshold",
+   "values": {}
+  },
+  "3002:68:68:FF": {
+   "name": "RPA_Lat_G_TH_For_AC",
+   "values": {}
+  },
+  "3002:69:69:FF": {
+   "name": "RPA_LateralAccelerationThreshFactor",
+   "values": {}
+  },
+  "3002:6:6:FF": {
+   "name": "RPA_TH50p_DEL",
+   "values": {}
+  },
+  "3002:70:70:FF": {
+   "name": "RPA_MinYawRateThreshold",
+   "values": {}
+  },
+  "3002:71:71:FF": {
+   "name": "RPA_YawRateThreshFactor",
+   "values": {}
+  },
+  "3002:72:72:FF": {
+   "name": "RPA_STDSTPXhigh",
+   "values": {}
+  },
+  "3002:73:73:FF": {
+   "name": "RPA_YSlowerOfYawRateThreshold",
+   "values": {}
+  },
+  "3002:74:74:FF": {
+   "name": "RPA_THUSP",
+   "values": {}
+  },
+  "3002:75:75:FF": {
+   "name": "RPA_TRNRM",
+   "values": {}
+  },
+  "3002:76:76:FF": {
+   "name": "RPA_AKASP",
+   "values": {}
+  },
+  "3002:77:77:FF": {
+   "name": "RPA_AKARJ",
+   "values": {}
+  },
+  "3002:78:78:FF": {
+   "name": "RPA_HSR1",
+   "values": {}
+  },
+  "3002:79:79:FF": {
+   "name": "RPA_HSR2",
+   "values": {}
+  },
+  "3002:7:7:FF": {
+   "name": "RPA_TH75p_DEL",
+   "values": {}
+  },
+  "3002:80:80:FF": {
+   "name": "RPA_HSR3",
+   "values": {}
+  },
+  "3002:81:81:FF": {
+   "name": "RPA_QMVH1",
+   "values": {}
+  },
+  "3002:82:82:FF": {
+   "name": "RPA_QMVH2",
+   "values": {}
+  },
+  "3002:83:83:FF": {
+   "name": "RPA_default_3",
+   "values": {}
+  },
+  "3002:84:84:FF": {
+   "name": "RPA_default_4",
+   "values": {}
+  },
+  "3002:85:85:FF": {
+   "name": "RPA_default_5",
+   "values": {}
+  },
+  "3002:86:86:FF": {
+   "name": "RPA_Variantcoding",
+   "values": {
+    "10": "wert_0A",
+    "11": "wert_0B",
+    "13": "wert_0D",
+    "15": "wert_0F"
+   }
+  },
+  "3002:87:87:FF": {
+   "name": "RPA_LogicProof",
+   "values": {}
+  },
+  "3002:88:88:FF": {
+   "name": "RPA_CarldOfCodingData",
+   "values": {}
+  },
+  "3002:89:89:FF": {
+   "name": "RPA_LFD_Nummer_Codierdaten",
+   "values": {}
+  },
+  "3002:8:8:FF": {
+   "name": "RPA_WGCNTDecrease",
+   "values": {}
+  },
+  "3002:9:9:FF": {
+   "name": "RPA_WGCNTIncrease",
+   "values": {}
+  },
+  "3003:0:0:01": {
+   "name": "Debug_SupplierInterface_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:02": {
+   "name": "Debug_Speicherzugriff_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:0:0:0C": {
+   "name": "Debug_DSC_Degradierung",
+   "values": {
+    "0": "Degradierung keine",
+    "1": "Degradierung ABS_RFE",
+    "2": "Degradierung ABS_RFE und EMF_Degrade",
+    "3": "Degradierung EBD-Notlauf"
+   }
+  },
+  "3003:0:0:F0": {
+   "name": "Debug_Frame_FR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv_Layout_SYS1",
+    "2": "aktiv_Layout_SYS2",
+    "3": "aktiv_Layout_ASW1",
+    "4": "aktiv_Layout_ASW2",
+    "7": "aktiv_Layout_RDCI"
+   }
+  },
+  "3003:1:1:01": {
+   "name": "Debug_XCP_aktiv",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3003:1:1:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "127": "initwert"
+   }
+  },
+  "3003:2:7:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "281474976710655": "initwert"
+   }
+  },
+  "3004:0:0:01": {
+   "name": "RDCi_TPMS_MARKET",
+   "values": {
+    "0": "EU",
+    "1": "USA"
+   }
+  },
+  "3004:0:0:02": {
+   "name": "RDCi_DELAY_PREWARN_ENABLE",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3004:0:0:04": {
+   "name": "RDCi_PREWARN_ENABLE",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3004:0:0:08": {
+   "name": "RDCi_STAT_INIT",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3004:0:0:10": {
+   "name": "RDCi_PREWARN_FUELSTOP",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3004:0:0:20": {
+   "name": "RDCi_PREWARN_IGNITION",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3004:0:0:40": {
+   "name": "RDCi_PREC_RESET",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3004:0:0:80": {
+   "name": "RDCi_WARN_DELAY",
+   "values": {
+    "0": "disable",
+    "1": "enable"
+   }
+  },
+  "3004:10:10:FF": {
+   "name": "RDCi_P_INIT_RANGE_MAX",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:11:11:FF": {
+   "name": "RDCi_TIMEOUT_PREWARN",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:12:12:FF": {
+   "name": "RDCi_DT_AMB_PREWARN",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:13:13:FF": {
+   "name": "RDCi_P_INIT_VA_0",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:14:14:FF": {
+   "name": "RDCi_P_INIT_HA_0",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:15:15:FF": {
+   "name": "RDCi_P_INIT_VA_1",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:16:16:FF": {
+   "name": "RDCi_P_INIT_HA_1",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:17:19:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "16777215": "initwert"
+   }
+  },
+  "3004:1:1:FF": {
+   "name": "RDCi_T_REF_SHIFT",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:2:2:FF": {
+   "name": "RDCi_UIA_TH_C",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:3:3:FF": {
+   "name": "RDCi_UIW_TH_C",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:4:4:FF": {
+   "name": "RDCi_UIA_TH_NC",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:5:5:FF": {
+   "name": "RDCi_UIW_TH_NC",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:6:6:FF": {
+   "name": "RDCi_P_DIST_PREWARN_MIN",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:7:7:FF": {
+   "name": "RDCi_MIN_RCP_FA",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:8:8:FF": {
+   "name": "RDCi_MIN_RCP_RA",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3004:9:9:FF": {
+   "name": "RDCi_DELTA_P_L_R",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3005:0:0:FF": {
+   "name": "BBV_Korrekturfaktor_VA",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3005:10:11:FF": {
+   "name": "BBV_MdFaktor_Endbelag_VA",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3005:12:13:FF": {
+   "name": "BBV_MdFaktor_Endbelag_HA",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3005:14:15:FF": {
+   "name": "BBV_Belagdicke_Neufahrzeug_VA",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3005:16:17:FF": {
+   "name": "BBV_Belagdicke_Neufahrzeug_HA",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3005:1:1:FF": {
+   "name": "BBV_Korrekturfaktor_HA",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3005:2:3:FF": {
+   "name": "BBV_Umschaltdicke_MdFaktor_VA",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3005:4:5:FF": {
+   "name": "BBV_Umschaltdicke_MdFaktor_HA",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3005:6:7:FF": {
+   "name": "BBV_MdFaktor_Anfangsbelag_VA",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3005:8:9:FF": {
+   "name": "BBV_MdFaktor_Anfangsbelag_HA",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3006:0:0:03": {
+   "name": "FLM_kmSchwell",
+   "values": {}
+  },
+  "3006:0:0:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "63": "initwert"
+   }
+  },
+  "3006:10:10:FF": {
+   "name": "FLM_Fak_S2_LBK01",
+   "values": {}
+  },
+  "3006:11:11:FF": {
+   "name": "FLM_Fak_S3_LBK01",
+   "values": {}
+  },
+  "3006:12:12:0F": {
+   "name": "FLM_Schw_B_LBK01",
+   "values": {}
+  },
+  "3006:12:12:F0": {
+   "name": "FLM_Schw_NB1_LBK01",
+   "values": {}
+  },
+  "3006:13:13:0F": {
+   "name": "FLM_Schw_NB2_LBK01",
+   "values": {}
+  },
+  "3006:13:13:F0": {
+   "name": "FLM_Schw_E_LBK01",
+   "values": {}
+  },
+  "3006:14:14:0F": {
+   "name": "FLM_Lim_LBK02",
+   "values": {}
+  },
+  "3006:14:14:F0": {
+   "name": "FLM_Spare_LBK02",
+   "values": {}
+  },
+  "3006:15:15:FF": {
+   "name": "FLM_Fak_S1_LBK02",
+   "values": {}
+  },
+  "3006:16:16:FF": {
+   "name": "FLM_Fak_S2_LBK02",
+   "values": {}
+  },
+  "3006:17:17:FF": {
+   "name": "FLM_Fak_S3_LBK02",
+   "values": {}
+  },
+  "3006:18:18:0F": {
+   "name": "FLM_Schw_B_LBK02",
+   "values": {}
+  },
+  "3006:18:18:F0": {
+   "name": "FLM_Schw_NB1_LBK02",
+   "values": {}
+  },
+  "3006:19:19:0F": {
+   "name": "FLM_Schw_NB2_LBK02",
+   "values": {}
+  },
+  "3006:19:19:F0": {
+   "name": "FLM_Schw_E_LBK02",
+   "values": {}
+  },
+  "3006:1:1:FF": {
+   "name": "FLM_Reserve",
+   "values": {}
+  },
+  "3006:20:20:0F": {
+   "name": "FLM_Lim_LBK03",
+   "values": {}
+  },
+  "3006:20:20:F0": {
+   "name": "FLM_Spare_LBK03",
+   "values": {}
+  },
+  "3006:21:21:FF": {
+   "name": "FLM_Fak_S1_LBK03",
+   "values": {}
+  },
+  "3006:22:22:FF": {
+   "name": "FLM_Fak_S2_LBK03",
+   "values": {}
+  },
+  "3006:23:23:FF": {
+   "name": "FLM_Fak_S3_LBK03",
+   "values": {}
+  },
+  "3006:24:24:0F": {
+   "name": "FLM_Schw_B_LBK03",
+   "values": {}
+  },
+  "3006:24:24:F0": {
+   "name": "FLM_Schw_NB1_LBK03",
+   "values": {}
+  },
+  "3006:25:25:0F": {
+   "name": "FLM_Schw_NB2_LBK03",
+   "values": {}
+  },
+  "3006:25:25:F0": {
+   "name": "FLM_Schw_E_LBK03",
+   "values": {}
+  },
+  "3006:26:26:0F": {
+   "name": "FLM_Lim_LBK04",
+   "values": {}
+  },
+  "3006:26:26:F0": {
+   "name": "FLM_Spare_LBK04",
+   "values": {}
+  },
+  "3006:27:27:FF": {
+   "name": "FLM_Fak_S1_LBK04",
+   "values": {}
+  },
+  "3006:28:28:FF": {
+   "name": "FLM_Fak_S2_LBK04",
+   "values": {}
+  },
+  "3006:29:29:FF": {
+   "name": "FLM_Fak_S3_LBK04",
+   "values": {}
+  },
+  "3006:2:2:0F": {
+   "name": "FLM_Lim_LBK00",
+   "values": {}
+  },
+  "3006:2:2:F0": {
+   "name": "FLM_Spare_LBK00",
+   "values": {}
+  },
+  "3006:30:30:0F": {
+   "name": "FLM_Schw_B_LBK04",
+   "values": {}
+  },
+  "3006:30:30:F0": {
+   "name": "FLM_Schw_NB1_LBK04",
+   "values": {}
+  },
+  "3006:31:31:0F": {
+   "name": "FLM_Schw_NB2_LBK04",
+   "values": {}
+  },
+  "3006:31:31:F0": {
+   "name": "FLM_Schw_E_LBK04",
+   "values": {}
+  },
+  "3006:32:32:0F": {
+   "name": "FLM_Lim_LBK05",
+   "values": {}
+  },
+  "3006:32:32:F0": {
+   "name": "FLM_Spare_LBK05",
+   "values": {}
+  },
+  "3006:33:33:FF": {
+   "name": "FLM_Fak_S1_LBK05",
+   "values": {}
+  },
+  "3006:34:34:FF": {
+   "name": "FLM_Fak_S2_LBK05",
+   "values": {}
+  },
+  "3006:35:35:FF": {
+   "name": "FLM_Fak_S3_LBK05",
+   "values": {}
+  },
+  "3006:36:36:0F": {
+   "name": "FLM_Schw_B_LBK05",
+   "values": {}
+  },
+  "3006:36:36:F0": {
+   "name": "FLM_Schw_NB1_LBK05",
+   "values": {}
+  },
+  "3006:37:37:0F": {
+   "name": "FLM_Schw_NB2_LBK05",
+   "values": {}
+  },
+  "3006:37:37:F0": {
+   "name": "FLM_Schw_E_LBK05",
+   "values": {}
+  },
+  "3006:38:38:0F": {
+   "name": "FLM_Lim_LBK06",
+   "values": {}
+  },
+  "3006:38:38:F0": {
+   "name": "FLM_Spare_LBK06",
+   "values": {}
+  },
+  "3006:39:39:FF": {
+   "name": "FLM_Fak_S1_LBK06",
+   "values": {}
+  },
+  "3006:3:3:FF": {
+   "name": "FLM_Fak_S1_LBK00",
+   "values": {}
+  },
+  "3006:40:40:FF": {
+   "name": "FLM_Fak_S2_LBK06",
+   "values": {}
+  },
+  "3006:41:41:FF": {
+   "name": "FLM_Fak_S3_LBK06",
+   "values": {}
+  },
+  "3006:42:42:0F": {
+   "name": "FLM_Schw_B_LBK06",
+   "values": {}
+  },
+  "3006:42:42:F0": {
+   "name": "FLM_Schw_NB1_LBK06",
+   "values": {}
+  },
+  "3006:43:43:0F": {
+   "name": "FLM_Schw_NB2_LBK06",
+   "values": {}
+  },
+  "3006:43:43:F0": {
+   "name": "FLM_Schw_E_LBK06",
+   "values": {}
+  },
+  "3006:44:44:0F": {
+   "name": "FLM_Lim_LBK07",
+   "values": {}
+  },
+  "3006:44:44:F0": {
+   "name": "FLM_Spare_LBK07",
+   "values": {}
+  },
+  "3006:45:45:FF": {
+   "name": "FLM_Fak_S1_LBK07",
+   "values": {}
+  },
+  "3006:46:46:FF": {
+   "name": "FLM_Fak_S2_LBK07",
+   "values": {}
+  },
+  "3006:47:47:FF": {
+   "name": "FLM_Fak_S3_LBK07",
+   "values": {}
+  },
+  "3006:48:48:0F": {
+   "name": "FLM_Schw_B_LBK07",
+   "values": {}
+  },
+  "3006:48:48:F0": {
+   "name": "FLM_Schw_NB1_LBK07",
+   "values": {}
+  },
+  "3006:49:49:0F": {
+   "name": "FLM_Schw_NB2_LBK07",
+   "values": {}
+  },
+  "3006:49:49:F0": {
+   "name": "FLM_Schw_E_LBK07",
+   "values": {}
+  },
+  "3006:4:4:FF": {
+   "name": "FLM_Fak_S2_LBK00",
+   "values": {}
+  },
+  "3006:50:50:0F": {
+   "name": "FLM_Lim_LBK08",
+   "values": {}
+  },
+  "3006:50:50:F0": {
+   "name": "FLM_Spare_LBK08",
+   "values": {}
+  },
+  "3006:51:51:FF": {
+   "name": "FLM_Fak_S1_LBK08",
+   "values": {}
+  },
+  "3006:52:52:FF": {
+   "name": "FLM_Fak_S2_LBK08",
+   "values": {}
+  },
+  "3006:53:53:FF": {
+   "name": "FLM_Fak_S3_LBK08",
+   "values": {}
+  },
+  "3006:54:54:0F": {
+   "name": "FLM_Schw_B_LBK08",
+   "values": {}
+  },
+  "3006:54:54:F0": {
+   "name": "FLM_Schw_NB1_LBK08",
+   "values": {}
+  },
+  "3006:55:55:0F": {
+   "name": "FLM_Schw_NB2_LBK08",
+   "values": {}
+  },
+  "3006:55:55:F0": {
+   "name": "FLM_Schw_E_LBK08",
+   "values": {}
+  },
+  "3006:56:56:0F": {
+   "name": "FLM_Lim_LBK09",
+   "values": {}
+  },
+  "3006:56:56:F0": {
+   "name": "FLM_Spare_LBK09",
+   "values": {}
+  },
+  "3006:57:57:FF": {
+   "name": "FLM_Fak_S1_LBK09",
+   "values": {}
+  },
+  "3006:58:58:FF": {
+   "name": "FLM_Fak_S2_LBK09",
+   "values": {}
+  },
+  "3006:59:59:FF": {
+   "name": "FLM_Fak_S3_LBK09",
+   "values": {}
+  },
+  "3006:5:5:FF": {
+   "name": "FLM_Fak_S3_LBK00",
+   "values": {}
+  },
+  "3006:60:60:0F": {
+   "name": "FLM_Schw_B_LBK09",
+   "values": {}
+  },
+  "3006:60:60:F0": {
+   "name": "FLM_Schw_NB1_LBK09",
+   "values": {}
+  },
+  "3006:61:61:0F": {
+   "name": "FLM_Schw_NB2_LBK09",
+   "values": {}
+  },
+  "3006:61:61:F0": {
+   "name": "FLM_Schw_E_LBK09",
+   "values": {}
+  },
+  "3006:62:62:0F": {
+   "name": "FLM_Lim_LBK10",
+   "values": {}
+  },
+  "3006:62:62:F0": {
+   "name": "FLM_Spare_LBK10",
+   "values": {}
+  },
+  "3006:63:63:FF": {
+   "name": "FLM_Fak_S1_LBK10",
+   "values": {}
+  },
+  "3006:64:64:FF": {
+   "name": "FLM_Fak_S2_LBK10",
+   "values": {}
+  },
+  "3006:65:65:FF": {
+   "name": "FLM_Fak_S3_LBK10",
+   "values": {}
+  },
+  "3006:66:66:0F": {
+   "name": "FLM_Schw_B_LBK10",
+   "values": {}
+  },
+  "3006:66:66:F0": {
+   "name": "FLM_Schw_NB1_LBK10",
+   "values": {}
+  },
+  "3006:67:67:0F": {
+   "name": "FLM_Schw_NB2_LBK10",
+   "values": {}
+  },
+  "3006:67:67:F0": {
+   "name": "FLM_Schw_E_LBK10",
+   "values": {}
+  },
+  "3006:68:68:0F": {
+   "name": "FLM_Lim_LBK11",
+   "values": {}
+  },
+  "3006:68:68:F0": {
+   "name": "FLM_Spare_LBK11",
+   "values": {}
+  },
+  "3006:69:69:FF": {
+   "name": "FLM_Fak_S1_LBK11",
+   "values": {}
+  },
+  "3006:6:6:0F": {
+   "name": "FLM_Schw_B_LBK00",
+   "values": {}
+  },
+  "3006:6:6:F0": {
+   "name": "FLM_Schw_NB1_LBK00",
+   "values": {}
+  },
+  "3006:70:70:FF": {
+   "name": "FLM_Fak_S2_LBK11",
+   "values": {}
+  },
+  "3006:71:71:FF": {
+   "name": "FLM_Fak_S3_LBK11",
+   "values": {}
+  },
+  "3006:72:72:0F": {
+   "name": "FLM_Schw_B_LBK11",
+   "values": {}
+  },
+  "3006:72:72:F0": {
+   "name": "FLM_Schw_NB1_LBK11",
+   "values": {}
+  },
+  "3006:73:73:0F": {
+   "name": "FLM_Schw_NB2_LBK11",
+   "values": {}
+  },
+  "3006:73:73:F0": {
+   "name": "FLM_Schw_E_LBK11",
+   "values": {}
+  },
+  "3006:74:74:0F": {
+   "name": "FLM_Lim_LBK12",
+   "values": {}
+  },
+  "3006:74:74:F0": {
+   "name": "FLM_Spare_LBK12",
+   "values": {}
+  },
+  "3006:75:75:FF": {
+   "name": "FLM_Fak_S1_LBK12",
+   "values": {}
+  },
+  "3006:76:76:FF": {
+   "name": "FLM_Fak_S2_LBK12",
+   "values": {}
+  },
+  "3006:77:77:FF": {
+   "name": "FLM_Fak_S3_LBK12",
+   "values": {}
+  },
+  "3006:78:78:0F": {
+   "name": "FLM_Schw_B_LBK12",
+   "values": {}
+  },
+  "3006:78:78:F0": {
+   "name": "FLM_Schw_NB1_LBK12",
+   "values": {}
+  },
+  "3006:79:79:0F": {
+   "name": "FLM_Schw_NB2_LBK12",
+   "values": {}
+  },
+  "3006:79:79:F0": {
+   "name": "FLM_Schw_E_LBK12",
+   "values": {}
+  },
+  "3006:7:7:0F": {
+   "name": "FLM_Schw_NB2_LBK00",
+   "values": {}
+  },
+  "3006:7:7:F0": {
+   "name": "FLM_Schw_E_LBK00",
+   "values": {}
+  },
+  "3006:80:80:0F": {
+   "name": "FLM_Lim_LBK13",
+   "values": {}
+  },
+  "3006:80:80:F0": {
+   "name": "FLM_Spare_LBK13",
+   "values": {}
+  },
+  "3006:81:81:FF": {
+   "name": "FLM_Fak_S1_LBK13",
+   "values": {}
+  },
+  "3006:82:82:FF": {
+   "name": "FLM_Fak_S2_LBK13",
+   "values": {}
+  },
+  "3006:83:83:FF": {
+   "name": "FLM_Fak_S3_LBK13",
+   "values": {}
+  },
+  "3006:84:84:0F": {
+   "name": "FLM_Schw_B_LBK13",
+   "values": {}
+  },
+  "3006:84:84:F0": {
+   "name": "FLM_Schw_NB1_LBK13",
+   "values": {}
+  },
+  "3006:85:85:0F": {
+   "name": "FLM_Schw_NB2_LBK13",
+   "values": {}
+  },
+  "3006:85:85:F0": {
+   "name": "FLM_Schw_E_LBK13",
+   "values": {}
+  },
+  "3006:86:86:0F": {
+   "name": "FLM_Lim_LBK14",
+   "values": {}
+  },
+  "3006:86:86:F0": {
+   "name": "FLM_Spare_LBK14",
+   "values": {}
+  },
+  "3006:87:87:FF": {
+   "name": "FLM_Fak_S1_LBK14",
+   "values": {}
+  },
+  "3006:88:88:FF": {
+   "name": "FLM_Fak_S2_LBK14",
+   "values": {}
+  },
+  "3006:89:89:FF": {
+   "name": "FLM_Fak_S3_LBK14",
+   "values": {}
+  },
+  "3006:8:8:0F": {
+   "name": "FLM_Lim_LBK01",
+   "values": {}
+  },
+  "3006:8:8:F0": {
+   "name": "FLM_Spare_LBK01",
+   "values": {}
+  },
+  "3006:90:90:0F": {
+   "name": "FLM_Schw_B_LBK14",
+   "values": {}
+  },
+  "3006:90:90:F0": {
+   "name": "FLM_Schw_NB1_LBK14",
+   "values": {}
+  },
+  "3006:91:91:0F": {
+   "name": "FLM_Schw_NB2_LBK14",
+   "values": {}
+  },
+  "3006:91:91:F0": {
+   "name": "FLM_Schw_E_LBK14",
+   "values": {}
+  },
+  "3006:9:9:FF": {
+   "name": "FLM_Fak_S1_LBK01",
+   "values": {}
+  },
+  "3007:0:0:FF": {
+   "name": "Teilliste_ABS",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:10:10:FF": {
+   "name": "Teilliste_HDC",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:11:11:FF": {
+   "name": "Teilliste_LDM",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:12:12:FF": {
+   "name": "Teilliste_Bremsbereitschaft",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:13:13:FF": {
+   "name": "Teilliste_Bremsunterdruckmodell",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:14:14:FF": {
+   "name": "Teilliste_BremseVA",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:15:15:FF": {
+   "name": "Teilliste_BremseHA",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:16:16:FF": {
+   "name": "Teilliste_Rekuperation",
+   "values": {
+    "0": "initwert",
+    "255": "undefined"
+   }
+  },
+  "3007:17:17:FF": {
+   "name": "Teilliste_HBB",
+   "values": {
+    "0": "initwert",
+    "255": "undefined"
+   }
+  },
+  "3007:18:18:FF": {
+   "name": "Teilliste_Powertrain",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:19:27:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "4722366482869645213695": "initwert"
+   }
+  },
+  "3007:1:1:FF": {
+   "name": "Teilliste_ASC_1",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:28:28:FF": {
+   "name": "Teilliste_FZR_FailSafe",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:29:29:FF": {
+   "name": "Teilliste_RMI_FailSafe",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:2:2:FF": {
+   "name": "Teilliste_ASC_2",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:3:3:FF": {
+   "name": "Teilliste_ASC_3",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:4:4:FF": {
+   "name": "Teilliste_ASC_4",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:5:5:FF": {
+   "name": "Teilliste_FZR",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:6:6:FF": {
+   "name": "Teilliste_ASL",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:7:7:FF": {
+   "name": "Teilliste_RMI",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:8:8:FF": {
+   "name": "Teilliste_CCC",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3007:9:9:FF": {
+   "name": "Teilliste_FLM",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:0:1:FF": {
+   "name": "FZR_MzAmpl_Overst",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:100:100:FF": {
+   "name": "LDM_P_MSA_pVehicleSSMHoldOffOffset",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:101:101:FF": {
+   "name": "LDM_BMW_P_vhcNRollPrevOver",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:102:103:FF": {
+   "name": "LDM_BMW_P_SSMFxDriveOffOffset",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:104:105:FF": {
+   "name": "LDM_BMW_P_SSMFxDriveOffROffset",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:106:107:FF": {
+   "name": "LDM_BMW_P_SSMFxDriveOffMPropNuenOffset",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:108:108:FF": {
+   "name": "LDM_BMW_P_EPBMechRollPrev_nWssEdges",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:109:109:FF": {
+   "name": "LDM_BMW_P_EPBMechRollPrev_vRadMax",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:110:110:FF": {
+   "name": "LDM_BMW_P_EPBMechRollPrev_vRadMin",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:111:111:FF": {
+   "name": "LDM_BMW_P_EPBtMechRollPrevMin",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:112:112:FF": {
+   "name": "LDM_P_MSAPred_RollerTestBench",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:113:115:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "16777215": "initwert"
+   }
+  },
+  "3009:116:127:FF": {
+   "name": "CCC_MLCay",
+   "values": {
+    "79228162514264337593543950335": "undefined"
+   }
+  },
+  "3009:128:135:FF": {
+   "name": "LDM_P_SSMpThresholdMax",
+   "values": {
+    "18446744073709551615": "undefined"
+   }
+  },
+  "3009:136:147:FF": {
+   "name": "LDM_P_MSA_pVehicleSSMHoldOn",
+   "values": {
+    "79228162514264337593543950335": "undefined"
+   }
+  },
+  "3009:148:151:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "4294967295": "initwert"
+   }
+  },
+  "3009:152:159:FF": {
+   "name": "CCC_CoPCCC",
+   "values": {
+    "18446744073709551615": "undefined"
+   }
+  },
+  "3009:160:167:FF": {
+   "name": "CCC_CoMPerm",
+   "values": {
+    "18446744073709551615": "undefined"
+   }
+  },
+  "3009:168:179:FF": {
+   "name": "CCC_fLwDyn",
+   "values": {
+    "79228162514264337593543950335": "undefined"
+   }
+  },
+  "3009:180:187:FF": {
+   "name": "CCC_CoMPermDTC",
+   "values": {
+    "18446744073709551615": "undefined"
+   }
+  },
+  "3009:188:189:FF": {
+   "name": "EAMP_AxsUncertaintyThreshold",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:190:192:FF": {
+   "name": "EAMP_SasUncertaintyThreshold",
+   "values": {
+    "16777215": "undefined"
+   }
+  },
+  "3009:193:194:FF": {
+   "name": "EAMP_TarYawExtUncertaintyThreshold",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:195:196:FF": {
+   "name": "EAMP_YrsUncertaintyThreshold",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:197:197:FF": {
+   "name": "BDW_ptgtHold",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:198:198:FF": {
+   "name": "BDW_tHold",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:199:199:FF": {
+   "name": "BDW_IntRedFak",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:20:31:FF": {
+   "name": "LDM_P_MSAPred_pDriverHystThrAct",
+   "values": {
+    "79228162514264337593543950335": "undefined"
+   }
+  },
+  "3009:2:3:FF": {
+   "name": "PCIB_P_SCM_AxTar_FrontCrash",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:32:37:FF": {
+   "name": "LDM_P_AVHRollOutpMCThrMax",
+   "values": {
+    "281474976710655": "undefined"
+   }
+  },
+  "3009:38:38:FF": {
+   "name": "LDM_P_SlopeForwardSlopeThrActManGearbox",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:39:39:FF": {
+   "name": "LDM_P_SlopeForwardSlopeThrAct",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "3009:40:63:FF": {
+   "name": "ASC_PTCGain_CPTP",
+   "values": {
+    "6277101735386680763835789423207666416102355444464034512895": "undefined"
+   }
+  },
+  "3009:4:5:FF": {
+   "name": "PCIB_P_AEB_MaxHoldTime",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:64:65:FF": {
+   "name": "ASC_TCS_CUS_PTC_MPTIStep_MPTIDSC_kMMotDSC1",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:66:67:FF": {
+   "name": "ASC_TCS_CUS_PTC_MPTIStep_MPTIDSC_kMMotDSC2",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:68:69:FF": {
+   "name": "LDM_BMW_P_AVHButton_pMCThr",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:6:7:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "65535": "initwert"
+   }
+  },
+  "3009:70:71:FF": {
+   "name": "LDM_BMW_P_AVHpMCThrAct",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:72:73:FF": {
+   "name": "LDM_BMW_P_skidActSlope",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:74:75:FF": {
+   "name": "LDM_BMW_P_skidYrsThr",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:76:77:FF": {
+   "name": "LDM_BMW_P_StandStillLimit",
+   "values": {
+    "65535": "undefined"
+   }
+  },
+  "3009:78:89:FF": {
+   "name": "LDM_BMW_P_SSMFxDriveOffSlopeOffset",
+   "values": {
+    "79228162514264337593543950335": "undefined"
+   }
+  },
+  "3009:8:19:FF": {
+   "name": "LDM_P_MSAPred_pDriverHystThrDeact",
+   "values": {
+    "79228162514264337593543950335": "undefined"
+   }
+  },
+  "3009:90:98:FF": {
+   "name": "LDM_P_AVHRollOutpTarget",
+   "values": {
+    "4722366482869645213695": "undefined"
+   }
+  },
+  "3009:99:99:FF": {
+   "name": "LDM_P_SlopeForwardSlopeThrActNuenDeact",
+   "values": {
+    "255": "undefined"
+   }
+  },
+  "300C:0:1:FF": {
+   "name": "BMW_Werksnummer",
+   "values": {}
+  },
+  "300D:0:2:FF": {
+   "name": "Haendlernummer",
+   "values": {}
+  },
+  "300D:3:5:FF": {
+   "name": "Codierdatum",
+   "values": {}
+  },
+  "300E:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "300F:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Allgemein",
+  "3001": "Physik",
+  "3002": "RPA",
+  "3003": "Debug",
+  "3004": "RDCi",
+  "3005": "BBV",
+  "3006": "Flm",
+  "3007": "Teillisten",
+  "3009": "Applikationsparameter",
+  "300C": "Werkskennung",
+  "300D": "Nachverfolgung",
+  "300E": "CAF_ID",
+  "300F": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

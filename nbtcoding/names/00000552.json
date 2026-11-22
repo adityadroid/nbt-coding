@@ -1,0 +1,914 @@
+{
+ "functions": {
+  "3000:0:23:FF": {
+   "name": "Mode 0",
+   "values": {
+    "1033509269026844431475511084187705799865977012318909118117": "initwert",
+    "1501016549497423354612631718299455170748914829227169559813": "F11",
+    "1527068973692188066695162237426944921476225848364941858053": "F25",
+    "1594306093114532974292347218806327624606567479811896784389": "F10",
+    "1945440256337068540505764151797288990067159617664245048581": "F07",
+    "1989594161686494376883695361148668319303325522530409067525": "F13",
+    "2208836805035874546306231386137583712329860205725320881413": "F11",
+    "2240923430399940431599677814775036959178773081040408032261": "F25",
+    "2265444108815552585968538451669165840788832559011570398213": "F25",
+    "2480154715901495645388214213112794214404155629960446957573": "F26",
+    "2512366328925660548089878737095403992644330881027741792005": "RR5",
+    "2512366328925705149580286182935404209293996964657735612165": "RR4",
+    "2943093731024653990221380172623703632970220894105547191813": "F02",
+    "2967422097735922276594338901932581603124166375001177863685": "F01",
+    "3467207957212629567865297189697635769923107524402468963589": "F25",
+    "3957318436221161471729203586461522278887471826157034677509": "F06"
+   }
+  },
+  "3000:120:120:FF": {
+   "name": "Schalter",
+   "values": {
+    "255": "initwert"
+   }
+  },
+  "3000:24:47:FF": {
+   "name": "Mode 1",
+   "values": {
+    "1033562397545782655134962535863773567783672582760015738371": "initwert",
+    "1033562397545782655134962535864083052793493927828740519427": "initwert",
+    "1033562397545782655134962535868725327940814103859612235267": "initwert",
+    "1153139313431983669206193165818770293716728275779728061957": "RR4",
+    "1206873573886067556948938026457929947354447026129597043717": "F02",
+    "1254092457157800737621064235067560538408526186292021970437": "F25",
+    "1278612385811610357833802500585946413856393910844117103877": "F25",
+    "1356961220355684304674681866738344212217748405569378989061": "F07",
+    "1447283053385815155574244925201392351419095578480781571589": "F11",
+    "1566913129920953788711008463368076998852663867766691140101": "F02",
+    "1946971642615162563689912546991022736990378365820490617349": "F01",
+    "1947069284060968632825925818266055600173573696946895598341": "F11",
+    "2242743642987586046008497764126620419033186281073666307589": "RR4",
+    "2330000506824077399370961091889243384956323904937464763141": "F07",
+    "2480154715901495646419658791761577394016773936484559968261": "F26",
+    "2480154715901495646419658893176101291560486821601103927301": "F26",
+    "2945967534273742036875155881191299490062846730916558419205": "F25",
+    "3511747256124859975553795785028934498588679454659784880899": "F18",
+    "3511747256124859975553795785028934498588679454659784880901": "F10",
+    "3526974532088781752258751419939807638130455310381846246661": "F01",
+    "3526974532088781752258751419939808847056274925011020952837": "F02",
+    "3646509558426137020968280905598948875863434558441323631365": "F01",
+    "3871690635087400556592074389002406174948811611190240941061": "F01",
+    "3913164907870516343068876719795620539953627271574071948293": "F10",
+    "5094718218671961785448683903479952587338447115459836130309": "RR4",
+    "5874662692846878328739227410802372198401917796705504662533": "F07",
+    "6256445625459862615519389758146526904892910056678971814917": "F11",
+    "6260947705255553019339446788147923946548552680921375322883": "F25",
+    "6260947705255553019339446788147929991177650754067248853763": "F25",
+    "6260947705255553019339446788147929991177650754067248853765": "F25",
+    "766950811266758552682565843612882274032432266029205566469": "F13"
+   }
+  },
+  "3000:48:71:FF": {
+   "name": "Mode 2",
+   "values": {
+    "1033539574724729223533999696576416280126702094590723634691": "initwert",
+    "1033539574724729223533999696579511130224915545277971445251": "initwert",
+    "1153139313420521086174112079446011190768080792638768690693": "RR4",
+    "1206873573886067556948938026457929871796583300215273624581": "F02",
+    "1206873573886067556948938026457929947354447026129597043717": "F02",
+    "1254092831302219894671164434136031261367450018582240839173": "F25",
+    "1278613134100448671596394564604867798670885241853997102341": "F25",
+    "1356961594500103461385828926880850198361240021311882146821": "F11",
+    "1447283053385815155574229348310797404123096152924998612485": "F11",
+    "1566913878209792103155478912413330998979306044279595799045": "F02",
+    "1947069284060968632825925818266055600173573696946895598341": "F11",
+    "2330192068766663335760550595386235607640646456554851472133": "F07",
+    "2480154715901495645388214213112794214404155629960446957573": "F26",
+    "2480154715901495646419658791764053274095344697034358216709": "F26",
+    "2847888567958581445587386660701533761888615360715360187653": "F25",
+    "2923268192363548974445177319067732769926453681404201935621": "F07",
+    "3223540423760614292804237350233401189447958034042908456197": "F01",
+    "3511747256124859975553795785028934498588679454659784880901": "F10",
+    "3913164907870516343068876719795620464432657033807167632389": "F10",
+    "5094718218671961786469505042756927878559768303858306331397": "RR4",
+    "5099316092609553416147038296111075866352460718905480319493": "F01",
+    "6260948827688810489482187372409967598407274844875966001925": "F25",
+    "6260948827688810489482187372409973643036372918021839532805": "F25",
+    "767046966382437226650820253315171723607745785973249946629": "F13"
+   }
+  },
+  "3000:72:95:FF": {
+   "name": "Mode 3",
+   "values": {
+    "1965421453674298307939224564004137432786838129914979698181": "F01",
+    "1965421453674298307939224564005994342845766200327328384517": "initwert",
+    "1965421453674298307939224564010946103002907721426924881413": "initwert"
+   }
+  },
+  "3000:96:119:FF": {
+   "name": "Mode 4",
+   "values": {
+    "491360139252754036273063771680469106397327606439938621440": "F02",
+    "491360139252772765414539100133498130535720650962297159680": "F02",
+    "491360139286625296966190952983287814336975471160143642624": "F06",
+    "491360139294988076415639936661363708689218606724886298624": "RR5",
+    "491360139294991125345647548269996340525701195368060944384": "F26",
+    "491360139298065579253037162654895637810844080612711596032": "RR4",
+    "491360139298738172872433916598315757475528527865270239232": "F01",
+    "491360139298756902013909245051344781613921572387628777472": "F01",
+    "491360139298756902354191611972283245077296179819396988928": "F01",
+    "491360139395096121271561537022779084551762494093464174592": "F11",
+    "491360139395096121611843903943717548015137101525232386048": "F11",
+    "491360139425071894422109896695115601490081495796649295872": "initwert",
+    "491360139425090623563585225148144625628474540319007834112": "initwert",
+    "491360139425090623903867592069083089091849147750776045568": "initwert",
+    "491360139435418917860794882192246758488567927771219623936": "F26",
+    "491360139506220734936121999057990032167743886909532798976": "F13",
+    "491360139509275936688038327507441962107722105004083904512": "F25",
+    "491360139509275937028320694428380425571096712435852115968": "F07",
+    "491360139532468711694510175574639109111276400970303537152": "F10",
+    "491360139532468712034792542495577572574651008402071748608": "F10",
+    "491360139538200003210532545722013788707347029877340504064": "F02",
+    "491360139538200003550814912642952252170721637309108715520": "F02"
+   }
+  },
+  "3001:0:0:FF": {
+   "name": "Codierdaten SiNe",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:10:10:FF": {
+   "name": "Second alarm level y-axis",
+   "values": {
+    "10": "1.0_Grad",
+    "11": "1.1_Grad",
+    "12": "1.2_Grad",
+    "13": "1.3_Grad",
+    "14": "1.4_Grad",
+    "15": "1.5_Grad",
+    "7": "0.7_Grad",
+    "8": "0.8_Grad",
+    "9": "0.9_Grad"
+   }
+  },
+  "3001:11:11:FF": {
+   "name": "Second alarm reset level y-axis",
+   "values": {
+    "10": "1.0_Grad",
+    "11": "1.1_Grad",
+    "12": "1.2_Grad",
+    "13": "1.3_Grad",
+    "14": "1.4_Grad",
+    "15": "1.5_Grad",
+    "6": "0.6_Grad",
+    "7": "0.7_Grad",
+    "8": "0.8_Grad",
+    "9": "0.9_Grad"
+   }
+  },
+  "3001:12:12:FF": {
+   "name": "Counter alarm level y-axis",
+   "values": {
+    "14": "initwert",
+    "16": "faktor_16"
+   }
+  },
+  "3001:13:13:FF": {
+   "name": "Drift compensation time",
+   "values": {
+    "6": "initwert"
+   }
+  },
+  "3001:14:14:FF": {
+   "name": "Noise correction time",
+   "values": {
+    "8": "initwert"
+   }
+  },
+  "3001:15:15:FF": {
+   "name": "Arming time",
+   "values": {
+    "51": "initwert"
+   }
+  },
+  "3001:16:16:FF": {
+   "name": "Rearm time delay",
+   "values": {
+    "39": "initwert"
+   }
+  },
+  "3001:17:17:FF": {
+   "name": "Alarm type",
+   "values": {
+    "145": "ece",
+    "152": "gb",
+    "154": "gb",
+    "8": "initwert"
+   }
+  },
+  "3001:18:18:FF": {
+   "name": "Alarm duration time with external supply",
+   "values": {
+    "57": "initwert"
+   }
+  },
+  "3001:19:19:FF": {
+   "name": "Alarm duration time in self-powering mode",
+   "values": {
+    "52": "initwert"
+   }
+  },
+  "3001:1:1:FF": {
+   "name": "Maximum drift x-axis",
+   "values": {
+    "4": "initwert"
+   }
+  },
+  "3001:20:20:FF": {
+   "name": "Alarm pause duration",
+   "values": {
+    "28": "initwert"
+   }
+  },
+  "3001:21:21:FF": {
+   "name": "Duty cycle with external supply",
+   "values": {
+    "60": "initwert"
+   }
+  },
+  "3001:22:22:FF": {
+   "name": "Duty cycle with external supply and reduced power sound request",
+   "values": {
+    "35": "initwert"
+   }
+  },
+  "3001:23:23:FF": {
+   "name": "Duty cycle with internal battery",
+   "values": {
+    "51": "initwert"
+   }
+  },
+  "3001:24:24:FF": {
+   "name": "Min temperatur for self powering alarm",
+   "values": {
+    "236": "initwert"
+   }
+  },
+  "3001:25:25:FF": {
+   "name": "Max temperatur for self powering alarm",
+   "values": {
+    "60": "initwert"
+   }
+  },
+  "3001:26:26:FF": {
+   "name": "Threshold temperature for power consumption reduction",
+   "values": {
+    "251": "initwert"
+   }
+  },
+  "3001:27:27:FF": {
+   "name": "Duty cycle in power consumption reduction due to temperature",
+   "values": {
+    "40": "initwert"
+   }
+  },
+  "3001:28:28:FF": {
+   "name": "USA minimum frequency",
+   "values": {
+    "135": "initwert"
+   }
+  },
+  "3001:29:29:FF": {
+   "name": "USA maximum frequency",
+   "values": {
+    "165": "initwert"
+   }
+  },
+  "3001:2:2:FF": {
+   "name": "Alarm level x-axis",
+   "values": {
+    "10": "1.0_Grad",
+    "11": "1.1_Grad",
+    "12": "1.2_Grad",
+    "7": "0.7_Grad",
+    "8": "0.8_Grad",
+    "9": "0.9_Grad"
+   }
+  },
+  "3001:30:30:FF": {
+   "name": "USA sweep frequency",
+   "values": {
+    "25": "initwert"
+   }
+  },
+  "3001:31:31:FF": {
+   "name": "ECE frequency",
+   "values": {
+    "143": "initwert"
+   }
+  },
+  "3001:32:32:FF": {
+   "name": "ECE modulationfrequency",
+   "values": {
+    "20": "initwert"
+   }
+  },
+  "3001:33:33:FF": {
+   "name": "Buzzer level low",
+   "values": {
+    "2": "initwert",
+    "3": "level_3",
+    "4": "level_4",
+    "5": "level_5",
+    "6": "level_6",
+    "7": "level_7"
+   }
+  },
+  "3001:34:34:FF": {
+   "name": "Buzzer level high",
+   "values": {
+    "10": "level_10",
+    "11": "level_11",
+    "12": "level_12",
+    "13": "level_13",
+    "14": "level_14",
+    "15": "level_15",
+    "16": "level_16",
+    "3": "initwert",
+    "5": "level_5",
+    "6": "level_6",
+    "7": "level_7",
+    "8": "level_8",
+    "9": "level_9"
+   }
+  },
+  "3001:35:35:FF": {
+   "name": "Buzzer frequency",
+   "values": {
+    "121": "initwert"
+   }
+  },
+  "3001:36:36:FF": {
+   "name": "Buzzer duration",
+   "values": {
+    "10": "initwert"
+   }
+  },
+  "3001:37:39:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:3:3:FF": {
+   "name": "Alarm reset level x-axis",
+   "values": {
+    "10": "1.0_Grad",
+    "11": "1.1_Grad",
+    "12": "1.2_Grad",
+    "7": "0.7_Grad",
+    "8": "0.8_Grad",
+    "9": "0.9_Grad"
+   }
+  },
+  "3001:40:40:FF": {
+   "name": "FZD LIN-Konfiguration",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:4:4:FF": {
+   "name": "Second alarm level x-axis",
+   "values": {
+    "10": "1.0_Grad",
+    "11": "1.1_Grad",
+    "12": "1.2_Grad",
+    "7": "0.7_Grad",
+    "8": "0.8_Grad",
+    "9": "0.9_Grad"
+   }
+  },
+  "3001:5:5:FF": {
+   "name": "Second alarm reset level x-axis",
+   "values": {
+    "10": "1.0_Grad",
+    "11": "1.1_Grad",
+    "12": "1.2_Grad",
+    "7": "0.7_Grad",
+    "8": "0.8_Grad",
+    "9": "0.9_Grad"
+   }
+  },
+  "3001:6:6:FF": {
+   "name": "Counter alarm level x-axis",
+   "values": {
+    "14": "initwert",
+    "16": "faktor_16"
+   }
+  },
+  "3001:7:7:FF": {
+   "name": "Maximum drift y-axis",
+   "values": {
+    "4": "initwert"
+   }
+  },
+  "3001:8:8:FF": {
+   "name": "Alarm level y-axis",
+   "values": {
+    "10": "1.0_Grad",
+    "11": "1.1_Grad",
+    "12": "1.2_Grad",
+    "13": "1.3_Grad",
+    "14": "1.4_Grad",
+    "15": "1.5_Grad",
+    "7": "0.7_Grad",
+    "8": "0.8_Grad",
+    "9": "0.9_Grad"
+   }
+  },
+  "3001:9:9:FF": {
+   "name": "Alarm reset level y-axis",
+   "values": {
+    "10": "1.0_Grad",
+    "11": "1.1_Grad",
+    "12": "1.2_Grad",
+    "13": "1.3_Grad",
+    "14": "1.4_Grad",
+    "15": "1.5_Grad",
+    "7": "0.7_Grad",
+    "8": "0.8_Grad",
+    "9": "0.9_Grad"
+   }
+  },
+  "3002:0:0:01": {
+   "name": "NG-Ref-Zeit",
+   "values": {
+    "0": "30s",
+    "1": "60s"
+   }
+  },
+  "3002:0:0:02": {
+   "name": "Authentisierung",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:04": {
+   "name": "Abschaltung Ltg.-Ueberwachung",
+   "values": {
+    "0": "8,5V",
+    "1": "9,5V"
+   }
+  },
+  "3002:0:0:08": {
+   "name": "Ltg.-Ueberwachung",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:10": {
+   "name": "Panikalarm",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:20": {
+   "name": "Notlauf FZG-Hupe",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:40": {
+   "name": "Motorfernstart",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:80": {
+   "name": "Akkustische Signalisierung Heckklappe reversieren CA",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:1:1:0F": {
+   "name": "Triggeranzahl Klappen",
+   "values": {
+    "0": "Anzahl_00",
+    "1": "Anzahl_01",
+    "10": "Anzahl_10",
+    "11": "Anzahl_11",
+    "12": "Anzahl_12",
+    "13": "Anzahl_13",
+    "14": "Anzahl_14",
+    "15": "Anzahl_15",
+    "2": "Anzahl_02",
+    "3": "Anzahl_03",
+    "4": "Anzahl_04",
+    "6": "Anzahl_06",
+    "7": "Anzahl_07",
+    "8": "Anzahl_08",
+    "9": "Anzahl_09"
+   }
+  },
+  "3002:1:1:F0": {
+   "name": "Triggeranzahl Sensoren",
+   "values": {
+    "0": "Anzahl_00",
+    "1": "Anzahl_01",
+    "10": "Anzahl_10",
+    "11": "Anzahl_11",
+    "12": "Anzahl_12",
+    "13": "Anzahl_13",
+    "14": "Anzahl_14",
+    "15": "Anzahl_15",
+    "2": "Anzahl_02",
+    "3": "Anzahl_03",
+    "4": "Anzahl_04",
+    "6": "Anzahl_06",
+    "7": "Anzahl_07",
+    "8": "Anzahl_08",
+    "9": "Anzahl_09"
+   }
+  },
+  "3002:2:2:01": {
+   "name": "Innenraumschutz",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:02": {
+   "name": "Neigungssensor",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:04": {
+   "name": "el. FH hinten",
+   "values": {
+    "0": "nicht vorhanden",
+    "1": "vorhanden"
+   }
+  },
+  "3002:2:2:08": {
+   "name": "Hotelstellung",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:10": {
+   "name": "Lautstaerke Akkustische Quittterung tageszeitabhaengig",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:20": {
+   "name": "Anzahl Triggerungen RDC",
+   "values": {
+    "0": "1 mal"
+   }
+  },
+  "3002:2:2:40": {
+   "name": "Retriggerung durch Klappenkontakt",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:2:2:80": {
+   "name": "Typ Innenraum",
+   "values": {
+    "0": "Limousine",
+    "1": "Touring"
+   }
+  },
+  "3002:3:3:0F": {
+   "name": "Zeitfenster Deaktivierung NG-US",
+   "values": {
+    "1": "01sek",
+    "10": "10sek",
+    "11": "11sek",
+    "12": "12sek",
+    "13": "13sek",
+    "14": "14sek",
+    "15": "15sek",
+    "2": "02sek",
+    "3": "03sek",
+    "4": "04sek",
+    "5": "05sek",
+    "6": "06sek",
+    "7": "07sek",
+    "8": "08sek",
+    "9": "09sek"
+   }
+  },
+  "3002:3:3:10": {
+   "name": "Optische Alarmausgabe Blinker",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:3:3:20": {
+   "name": "Optische Alarmausgabe Abblendlicht",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:3:3:40": {
+   "name": "Optische Alarmausgabe Fernlicht",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:3:3:80": {
+   "name": "Optische Quittierung bei HK schliessen bei CA FZG",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:4:4:01": {
+   "name": "Optische Quittierung Schaerfen",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:4:4:02": {
+   "name": "Optische Quittierung Schaerfen mit Klappenbetrachtung",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:4:4:04": {
+   "name": "Optische Quittierung Entschaerfen",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:4:4:08": {
+   "name": "Akkustische Quittierung Schaerfen",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:4:4:10": {
+   "name": "Akkustische Quittierung Schaerfen mit Klappenbeachtung",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:4:4:20": {
+   "name": "Akkustische Quittierung Entschaerfen",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:4:4:40": {
+   "name": "DWA verbaut",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:4:4:80": {
+   "name": "akkustische Alarmausgabe nachts",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:5:5:01": {
+   "name": "Telefonfkt. MMI",
+   "values": {
+    "0": "aktiv"
+   }
+  },
+  "3002:5:5:02": {
+   "name": "Akkustische Alarmausgabe",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:5:5:04": {
+   "name": "zusaetzlicher IRS",
+   "values": {
+    "0": "aktiv"
+   }
+  },
+  "3002:5:5:08": {
+   "name": "Aussenraumsensor",
+   "values": {
+    "0": "aktiv"
+   }
+  },
+  "3002:5:5:10": {
+   "name": "FZG-ID Transponder",
+   "values": {
+    "0": "aktiv"
+   }
+  },
+  "3002:5:5:20": {
+   "name": "Satellitenortung",
+   "values": {
+    "0": "aktiv"
+   }
+  },
+  "3002:5:5:40": {
+   "name": "Bordnetzanpassung Funkschluessel Panikmode",
+   "values": {
+    "0": "Signal Panikmode ALT",
+    "1": "Signal Panikmode NEU"
+   }
+  },
+  "3002:5:5:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:0:0:FF": {
+   "name": "T inrush",
+   "values": {
+    "15": "initwert"
+   }
+  },
+  "3003:10:11:FF": {
+   "name": "Thermomanagement Schwellwert Erhoeht - Uebertemperatur",
+   "values": {
+    "970": "initwert"
+   }
+  },
+  "3003:12:13:FF": {
+   "name": "Thermomanagement Schwellwert Uebertemperatur - Erhoeht",
+   "values": {
+    "1712": "initwert"
+   }
+  },
+  "3003:14:15:FF": {
+   "name": "Thermomanagement, Zeit f. Uebergang Normal - Erhoeht",
+   "values": {
+    "30": "initwert"
+   }
+  },
+  "3003:16:17:FF": {
+   "name": "Thermomanagement, Zeit f. Uebergang Erhoeht - Normal",
+   "values": {
+    "420": "initwert"
+   }
+  },
+  "3003:18:19:FF": {
+   "name": "Thermomanagement, Zeit f. Uebergang Erhoeht - Uebertemp",
+   "values": {
+    "10": "initwert"
+   }
+  },
+  "3003:1:1:FF": {
+   "name": "Ubat soll",
+   "values": {
+    "128": "initwert"
+   }
+  },
+  "3003:20:21:FF": {
+   "name": "Thermomanagement, Zeit f. Uebergang Uebertemp - Erhoeht",
+   "values": {
+    "200": "initwert"
+   }
+  },
+  "3003:22:23:FF": {
+   "name": "Maske ungltige SHD Tastenwerte",
+   "values": {
+    "63976": "initwert"
+   }
+  },
+  "3003:24:24:3F": {
+   "name": "Zaehlerwert Exponent X",
+   "values": {
+    "10": "initwert"
+   }
+  },
+  "3003:24:24:C0": {
+   "name": "Zaehlwert Exponent Y",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:25:25:FF": {
+   "name": "SHD-Hallsensordiagnosesint8 TH_OPEN_LOAD_MIN",
+   "values": {
+    "233": "initwert"
+   }
+  },
+  "3003:26:26:FF": {
+   "name": "SHD-Hallsensordiagnosesint8 TH_OPEN_LOAD_MAX",
+   "values": {
+    "21": "initwert"
+   }
+  },
+  "3003:27:27:FF": {
+   "name": "SHD-Hallsensordiagnose sint8 TH_SHORT2VBATT",
+   "values": {
+    "31": "initwert"
+   }
+  },
+  "3003:28:28:FF": {
+   "name": "SHD-Hallsensordiagnose sint8 TH_NORMAL",
+   "values": {
+    "233": "initwert"
+   }
+  },
+  "3003:29:29:FF": {
+   "name": "SHD-Hallsensordiagnose uint8 TH_SHORT2GND",
+   "values": {
+    "33": "initwert"
+   }
+  },
+  "3003:2:2:FF": {
+   "name": "Schwellwert Kurzschlusserkennung Makeup",
+   "values": {
+    "34": "initwert"
+   }
+  },
+  "3003:30:30:0F": {
+   "name": "SHD-Hallsensordiagnose uint4 MAX_ERROR_CNT",
+   "values": {
+    "9": "initwert"
+   }
+  },
+  "3003:30:30:F0": {
+   "name": "SHD-Hallsensordiagnose uint4 MAX_OK_CNT",
+   "values": {
+    "9": "initwert"
+   }
+  },
+  "3003:31:31:FF": {
+   "name": "Supplier Factory Mode",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:3:3:FF": {
+   "name": "Schwellwert Leitungsbrucherkennung Makeup",
+   "values": {
+    "7": "initwert"
+   }
+  },
+  "3003:4:4:FF": {
+   "name": "Schwellwert Kurzschlusserkennung Leseleuchten hinten",
+   "values": {
+    "21": "initwert"
+   }
+  },
+  "3003:5:5:FF": {
+   "name": "Schwellwert Leitungsbrucherkennung Leseleuchten hinten",
+   "values": {
+    "1": "Kardanische Leuchte",
+    "7": "initwert"
+   }
+  },
+  "3003:6:7:FF": {
+   "name": "Thermomanagement Schwellwert Normal - Erhoeht",
+   "values": {
+    "1306": "initwert"
+   }
+  },
+  "3003:8:9:FF": {
+   "name": "Thermomanagement Schwellwert Erhoeht-Normal",
+   "values": {
+    "2294": "initwert"
+   }
+  },
+  "3004:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3005:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Ultraschallparameter",
+  "3001": "LIN - SINe",
+  "3002": "DWA",
+  "3003": "Innenlicht",
+  "3004": "CAF_ID",
+  "3005": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

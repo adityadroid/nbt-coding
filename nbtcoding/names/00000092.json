@@ -1,0 +1,713 @@
+{
+ "functions": {
+  "3000:0:0:03": {
+   "name": "KLIMA_SG_ART_Z",
+   "values": {
+    "0": "basis_2_zonig",
+    "1": "high_2_5_zonig",
+    "2": "high_4_zonig_mit_FKA"
+   }
+  },
+  "3000:0:0:04": {
+   "name": "MEMORY_UMLUFT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:08": {
+   "name": "SITZHEIZUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:10": {
+   "name": "SITZLUEFTUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:20": {
+   "name": "HECKKLIMAANLAGE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:40": {
+   "name": "SICHERHEITSFAHRZEUG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:80": {
+   "name": "PATT_MODUL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:10:10:FF": {
+   "name": "TAKT_AKTIVZEIT_HHS",
+   "values": {
+    "20": "f01_f02_mit_SA356",
+    "30": "f01_f02",
+    "40": "f07"
+   }
+  },
+  "3000:11:11:01": {
+   "name": "ENDLAGENSCHALTER_BEL_4Z",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:11:11:FE": {
+   "name": "ABLAUF_HEIZZEIT_TAKTUNG",
+   "values": {
+    "10": "f01_f02",
+    "20": "f01_f02_mit_SA356",
+    "30": "f15"
+   }
+  },
+  "3000:12:12:FF": {
+   "name": "PATT_BETRIEBSCOUNTER",
+   "values": {
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6"
+   }
+  },
+  "3000:13:13:01": {
+   "name": "MSA_FUNKTION_IHKA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:02": {
+   "name": "MSA_INNENTEMPLIM_NORM_AV_EA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:04": {
+   "name": "MSA_INNENTEMPLIM_NORM_AV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:08": {
+   "name": "MSA_Akustik_EA_AV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:10": {
+   "name": "MSA_Ekk_Limit_EA_AV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:20": {
+   "name": "EA_AV_OBD_OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:40": {
+   "name": "MSA_DEFROST_AV_EA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:13:13:80": {
+   "name": "MSA_MAX_AC_AV_EA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:01": {
+   "name": "MSA_AKTIVIERUNG_AC_EA",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:02": {
+   "name": "MSA_ZUHEIZBETRIEB_SH_AV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:3C": {
+   "name": "ANHEBUNG_TEMP_VD_MIN",
+   "values": {
+    "0": "plus3K",
+    "1": "plus2K",
+    "2": "plus1K",
+    "3": "plus0K"
+   }
+  },
+  "3000:14:14:40": {
+   "name": "HEIZSCHLANGENSYMBOL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:14:14:80": {
+   "name": "MSA_SCHUBANSTEUERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:1F": {
+   "name": "TEMPERATUR_OFFSET",
+   "values": {
+    "0": "plus3K",
+    "1": "plus2K",
+    "2": "plus1K",
+    "3": "plus0K",
+    "4": "minus1K",
+    "5": "minus2K",
+    "6": "minus3K"
+   }
+  },
+  "3000:15:15:60": {
+   "name": "WASSERMANAGEMENT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:15:15:80": {
+   "name": "WASSERMANAGEMENT_ART",
+   "values": {
+    "0": "Geblaeseeingriff",
+    "1": "TFLBetrieb"
+   }
+  },
+  "3000:16:16:1F": {
+   "name": "TEMPERATUR_OFFSET_FOND",
+   "values": {
+    "0": "plus3K",
+    "1": "plus2K",
+    "2": "plus1K",
+    "3": "plus0K",
+    "4": "minus1K",
+    "5": "minus2K",
+    "6": "minus3K"
+   }
+  },
+  "3000:16:16:60": {
+   "name": "BELUEFTUNGSMOTORE",
+   "values": {
+    "1": "4_MOTORE",
+    "2": "2_MOTORE",
+    "3": "1_MOTOR"
+   }
+  },
+  "3000:16:16:80": {
+   "name": "MotorN74",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:17:17:FF": {
+   "name": "BAUREIHE",
+   "values": {
+    "1": "F01 und RR4 und RR05 und RR06",
+    "10": "F10",
+    "11": "F11",
+    "12": "F12",
+    "13": "F13",
+    "15": "F15",
+    "16": "F16",
+    "18": "F18",
+    "2": "F02",
+    "3": "F03",
+    "4": "F04",
+    "6": "F06",
+    "7": "F07"
+   }
+  },
+  "3000:18:18:FF": {
+   "name": "SCHALTPUNKTANHEBUNG_GRENZE_T_AUSSEN",
+   "values": {
+    "30": "30_Grad_C",
+    "90": "90_Grad_C"
+   }
+  },
+  "3000:19:19:01": {
+   "name": "CC_HEIZ_LUEFT_STAND_AKTIV",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:02": {
+   "name": "HEISSLAND_ABSENKUNG_T_FUSS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:04": {
+   "name": "KMV_AKTIV_BESCHLAG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:08": {
+   "name": "KMV_AKTIV_SCHLUESSEL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:10": {
+   "name": "KMV_LANGSAM_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:20": {
+   "name": "CC_RELEV_LAUFZEITRED",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:40": {
+   "name": "ECO_FUNKTION",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:19:19:80": {
+   "name": "4-ZONEN_OHNE_FONDGEBLAESE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:01": {
+   "name": "ERHALTUNGSKUEHLEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:02": {
+   "name": "GERUCHSSTARTVERRIEGELUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:04": {
+   "name": "STANDHEIZUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:08": {
+   "name": "STANDLUEFTEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:10": {
+   "name": "ZUHEIZUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:20": {
+   "name": "PTC",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:40": {
+   "name": "PSEUDOZUHEIZEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:80": {
+   "name": "ZUSATZHEIZLEISTUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:01": {
+   "name": "KMV_ABSCH_UEBER_T_VD_SOLL_RAMPE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:02": {
+   "name": "WASSERVENTILE OFFEN OFF",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:04": {
+   "name": "BELUEFTUNGSPFEIFEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:08": {
+   "name": "RLSB SENSOR",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:10": {
+   "name": "KLIMA 3. SITZREIHE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:20": {
+   "name": "AUTARKER ENTERTAINMENT MODE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:20:20:40": {
+   "name": "Unterscheidung Nachrichtenlaenge ST_PCOL fuer ET-Fall L6",
+   "values": {
+    "0": "aktiv",
+    "1": "nicht aktiv"
+   }
+  },
+  "3000:20:20:80": {
+   "name": "Standheizung Abfahrtzeitskonzept",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:21:21:01": {
+   "name": "Ladetimer",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:21:21:0E": {
+   "name": "Hybridvarianten",
+   "values": {
+    "0": "kein Hybrid",
+    "1": "Hybrid Gen 1",
+    "2": "Hybrid Gen 2",
+    "3": "Hybrid Gen 3"
+   }
+  },
+  "3000:21:21:10": {
+   "name": "Vorkonditionierung Klima",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:21:21:20": {
+   "name": "IBK Standheizung",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:21:21:40": {
+   "name": "OBD Relevanz",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:21:21:80": {
+   "name": "Heizen Umluft",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:01": {
+   "name": "Komponentenschutz Standverbraucherabschaltung",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:02": {
+   "name": "EDHPulspaket",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:22:22:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:23:23:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:2:2:01": {
+   "name": "WASSERPUMPE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:02": {
+   "name": "ELEKTR_MOTORWASSERPUMPE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:04": {
+   "name": "UMWAELZPUMPE",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:08": {
+   "name": "CABRIOPROGRAMM",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:10": {
+   "name": "BESCHLAGVERMEIDUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:20": {
+   "name": "VERH_OELABSCHEIDUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:40": {
+   "name": "PANORAMADACH",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:2:2:80": {
+   "name": "ALKS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:01": {
+   "name": "AC_AUS_BEI_KL_15_AUS",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:02": {
+   "name": "KENNFELDKUEHLUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:04": {
+   "name": "MOTOR",
+   "values": {
+    "0": "benzin",
+    "1": "diesel"
+   }
+  },
+  "3000:3:3:08": {
+   "name": "KOMPRESSOR_KUPPLUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:30": {
+   "name": "KOMPRESSOR_TYP",
+   "values": {
+    "0": "r134a_gross",
+    "1": "r134a_klein",
+    "2": "EKK_r134a"
+   }
+  },
+  "3000:3:3:40": {
+   "name": "SCHEIBENWASCHEN_UL",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:3:3:80": {
+   "name": "VA_IGNORIEREN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:4:4:FF": {
+   "name": "KMV_UEBERSETZUNG",
+   "values": {
+    "110": "s85B50",
+    "125": "n26",
+    "128": "n51_n52_n53_n54_n55_n56_n58_n20_n21",
+    "135": "n63_n74",
+    "138": "b47",
+    "150": "n47_n57"
+   }
+  },
+  "3000:5:5:01": {
+   "name": "LDA_B_KLIMABEREITSCHAFT",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:5:5:02": {
+   "name": "GLEITENDE_VERDAMPFERTEMP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:5:5:04": {
+   "name": "TRANSPORTSICHERUNG",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:5:5:08": {
+   "name": "AC_NICHT_EIN_BEI_AUTO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:5:5:10": {
+   "name": "OFF_MEMORY",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:5:5:20": {
+   "name": "WASSERMANAGEMENT_GEBL_ABSENKUNG",
+   "values": {
+    "0": "maxGrenze",
+    "1": "Absenkung"
+   }
+  },
+  "3000:5:5:40": {
+   "name": "WASSERMANAGEMENT_FL_BESCHL_PRIO",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:5:5:80": {
+   "name": "STANDKUEHLEN",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:6:6:FF": {
+   "name": "ERSTE_HEIZZEIT_HHS_A",
+   "values": {
+    "0": "f01_f02_mit_SA356",
+    "10": "f01_f02"
+   }
+  },
+  "3000:7:7:FF": {
+   "name": "ERSTE_HEIZZEIT_HHS_B",
+   "values": {
+    "15": "f01_f02_mit_SA356",
+    "17": "f01_f02"
+   }
+  },
+  "3000:8:8:FF": {
+   "name": "ZWEITE_HEIZZEIT_HHS",
+   "values": {
+    "5": "f01_f02"
+   }
+  },
+  "3000:9:9:FF": {
+   "name": "TAKTDAUER_HHS",
+   "values": {
+    "30": "f01_f02_mit_SA356",
+    "90": "f01_f02"
+   }
+  },
+  "3001:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3002:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "IHKA_Codierdaten",
+  "3001": "CAF_ID",
+  "3002": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

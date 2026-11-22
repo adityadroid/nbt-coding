@@ -1,0 +1,106 @@
+{
+ "functions": {
+  "3000:0:0:01": {
+   "name": "Klemmenansteuerung",
+   "values": {
+    "0": "KL30F",
+    "1": "KL30B"
+   }
+  },
+  "3000:0:0:02": {
+   "name": "RP-Botschaften",
+   "values": {
+    "0": "RP-AUS",
+    "1": "RP-EIN"
+   }
+  },
+  "3000:0:0:04": {
+   "name": "Getriebevariante",
+   "values": {
+    "0": "Automatik",
+    "1": "Handschalter"
+   }
+  },
+  "3000:0:0:08": {
+   "name": "ADR_AKTIV",
+   "values": {
+    "0": "ADR_Aus",
+    "1": "ADR_Ein"
+   }
+  },
+  "3000:0:0:10": {
+   "name": "Rueckrollverhinderung",
+   "values": {
+    "0": "Rueckrollverhinderung_AUS",
+    "1": "Rueckrollverhinderung_EIN"
+   }
+  },
+  "3000:0:0:20": {
+   "name": "Auto Apply",
+   "values": {
+    "0": "Auto Apply aus",
+    "1": "Auto Applay ein"
+   }
+  },
+  "3000:0:0:C0": {
+   "name": "UNBELEGT",
+   "values": {
+    "3": "initwert"
+   }
+  },
+  "3000:14:16:FF": {
+   "name": "Codierdatum",
+   "values": {}
+  },
+  "3000:17:19:FF": {
+   "name": "Haendlernummer",
+   "values": {}
+  },
+  "3000:1:1:FF": {
+   "name": "dynamischer_Radumfang",
+   "values": {
+    "112": "I12_Wert",
+    "27": "L6_Wert",
+    "97": "F25_Wert"
+   }
+  },
+  "3000:2:2:FF": {
+   "name": "Fahrzeugmasse",
+   "values": {
+    "100": "Masse2000kg",
+    "105": "Masse2100kg",
+    "110": "Masse2200kg",
+    "115": "Masse2300kg",
+    "120": "Masse2400kg",
+    "125": "Masse2500kg",
+    "130": "Masse2600kg",
+    "255": "default",
+    "80": "Masse1600kg",
+    "85": "Masse1700kg",
+    "90": "Masse1800kg",
+    "95": "Masse1900kg"
+   }
+  },
+  "3000:3:13:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "309485009821345068724781055": "initwert"
+   }
+  },
+  "3003:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3004:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Kodierdaten",
+  "3003": "CAF_ID",
+  "3004": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

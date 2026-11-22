@@ -1,0 +1,1767 @@
+{
+ "functions": {
+  "3000:0:0:07": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:0:0:08": {
+   "name": "ANHAENGERKUPPLUNG",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:10": {
+   "name": "WANDERKENNUNG",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:20": {
+   "name": "ANBAUTEIL_VORN",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:0:0:C0": {
+   "name": "TONAUSGABE_LSP",
+   "values": {
+    "0": "keine_Tonausgabe",
+    "1": "Tonausgabe_hinten",
+    "2": "Tonausgabe_vorn",
+    "3": "Tonausgabe_vorn_und_hinten"
+   }
+  },
+  "3000:1:1:01": {
+   "name": "AKUSTIK_RECHTS_LINKS",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:02": {
+   "name": "AKUSTISCHE_FEHLERMELDUNG",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:04": {
+   "name": "AUTOMATIK_GETRIEBE",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3000:1:1:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:2:2:07": {
+   "name": "ANZAHL_WANDLER_HINTEN",
+   "values": {
+    "0": "0 Wandler",
+    "1": "1 Wandler",
+    "2": "2 Wandler",
+    "3": "3 Wandler",
+    "4": "4 Wandler",
+    "5": "5 Wandler",
+    "6": "6 Wandler"
+   }
+  },
+  "3000:2:2:38": {
+   "name": "ANZAHL_WANDLER_VORN",
+   "values": {
+    "0": "0 Wandler",
+    "1": "1 Wandler",
+    "2": "2 Wandler",
+    "3": "3 Wandler",
+    "4": "4 Wandler",
+    "5": "5 Wandler",
+    "6": "6 Wandler"
+   }
+  },
+  "3000:2:2:40": {
+   "name": "ANZAHL_ASIC",
+   "values": {
+    "0": "1 Asic",
+    "1": "2 Asic"
+   }
+  },
+  "3000:2:2:80": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3000:3:3:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:0:0:FF": {
+   "name": "MESSBEREICH_HINTEN_SEITE",
+   "values": {
+    "0": "4-Kanal"
+   }
+  },
+  "3001:10:10:FF": {
+   "name": "LAUTSTAERKE_HINTEN",
+   "values": {
+    "50": "F001"
+   }
+  },
+  "3001:11:11:FF": {
+   "name": "LAUTSTAERKE_VORN",
+   "values": {
+    "50": "F001"
+   }
+  },
+  "3001:12:12:FF": {
+   "name": "FREQUENZ_TONGEBER_VORN",
+   "values": {
+    "100": "F001"
+   }
+  },
+  "3001:13:13:FF": {
+   "name": "FREQUENZ_TONGEBER_HINTEN",
+   "values": {
+    "100": "F001"
+   }
+  },
+  "3001:14:14:FF": {
+   "name": "FREQUENZ_FEHLERTON",
+   "values": {
+    "100": "F001"
+   }
+  },
+  "3001:15:15:FF": {
+   "name": "V_OFF",
+   "values": {
+    "0": "F001",
+    "16": "F001"
+   }
+  },
+  "3001:16:16:FF": {
+   "name": "A_HYSTERESE_FK",
+   "values": {
+    "1": "F001"
+   }
+  },
+  "3001:17:17:01": {
+   "name": "ABSTAND_DAUERTON_KOPPLUNG",
+   "values": {
+    "1": "F001"
+   }
+  },
+  "3001:17:17:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:18:18:FF": {
+   "name": "ABSTAND_TONKOPPLUNG",
+   "values": {
+    "30": "F001"
+   }
+  },
+  "3001:19:20:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:1:1:FF": {
+   "name": "MESSBEREICH_HINTEN_AUSSEN",
+   "values": {
+    "60": "4-Kanal"
+   }
+  },
+  "3001:2:2:FF": {
+   "name": "MESSBEREICH_HINTEN_MITTE",
+   "values": {
+    "150": "4-Kanal"
+   }
+  },
+  "3001:3:3:FF": {
+   "name": "MESSBEREICH_VORN_SEITE",
+   "values": {
+    "0": "4-Kanal",
+    "60": "5-Kanal"
+   }
+  },
+  "3001:4:4:FF": {
+   "name": "MESSBEREICH_VORN_AUSSEN",
+   "values": {
+    "60": "4-Kanal",
+    "70": "5-Kanal"
+   }
+  },
+  "3001:5:5:FF": {
+   "name": "MESSBEREICH_VORN_MITTE",
+   "values": {
+    "70": "4-Kanal"
+   }
+  },
+  "3001:6:6:FF": {
+   "name": "DAUERTON_BEREICH_HINTEN",
+   "values": {
+    "25": "F001"
+   }
+  },
+  "3001:7:7:FF": {
+   "name": "DAUERTON_BEREICH_VORN",
+   "values": {
+    "25": "F001"
+   }
+  },
+  "3001:8:8:FF": {
+   "name": "AHK_OFFSET",
+   "values": {
+    "0": "Offset_0",
+    "11": "Offset_1",
+    "12": "Offset_3",
+    "13": "Offset_4"
+   }
+  },
+  "3001:9:9:FF": {
+   "name": "AHK_AUSBLENDUNG",
+   "values": {
+    "0": "inaktiv",
+    "25": "F01-F04",
+    "26": "F01-F04 M-Sportpaket",
+    "27": "F11",
+    "28": "F07",
+    "30": "F25 M-Sportpaket",
+    "31": "F25",
+    "33": "F07 LCI",
+    "35": "F10, F18 LCI"
+   }
+  },
+  "3002:0:0:FF": {
+   "name": "ABSTAND_HINTEN_SEITE_AUSSEN",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3002:10:10:FF": {
+   "name": "ABSTAND_VORN_MITTE_MITTE",
+   "values": {
+    "0": "F01-F04 5-Kanal",
+    "56": "F25",
+    "57": "RR04",
+    "58": "F12, F13, F06 M-Sportpaket",
+    "59": "F12, F13, F06",
+    "60": "F25",
+    "61": "F25 M-Sportpaket",
+    "62": "F07 4-Kanal",
+    "63": "F10,F11,F18",
+    "75": "F01-F04 4-Kanal"
+   }
+  },
+  "3002:11:11:FF": {
+   "name": "OFFSET_VORN_SEITE",
+   "values": {
+    "0": "F07 0-Kanal",
+    "1": "F01-F04 4-Kanal"
+   }
+  },
+  "3002:12:12:FF": {
+   "name": "OFFSET_VORN_AUSSEN",
+   "values": {
+    "0": "F07 0-Kanal",
+    "1": "F01-F04 4-Kanal",
+    "2": "F12, F13, F06 M-Sportpaket",
+    "3": "F01-F04 5-Kanal",
+    "5": "F25",
+    "6": "F25"
+   }
+  },
+  "3002:13:13:FF": {
+   "name": "OFFSET_VORN_MITTE",
+   "values": {
+    "0": "F07 0-Kanal",
+    "1": "F12, F13, F06 M-Sportpaket",
+    "2": "F01-F04 4-Kanal",
+    "3": "F01-F04 5-Kanal"
+   }
+  },
+  "3002:14:15:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:1:1:FF": {
+   "name": "ABSTAND_HINTEN_AUSSEN_MITTE",
+   "values": {
+    "0": "F12, F18",
+    "44": "F25 M-Sportpaket",
+    "45": "F25",
+    "46": "F10, F18",
+    "47": "F10, F18 LCI",
+    "48": "F07 LCI",
+    "49": "F01-F04",
+    "50": "F07",
+    "51": "F01-F04 M-Sportpaket",
+    "54": "F07 M-Sportpaket",
+    "55": "F07 M-Sportpaket"
+   }
+  },
+  "3002:2:2:FF": {
+   "name": "ABSTAND_HINTEN_MITTE_MITTE",
+   "values": {
+    "0": "F12, F18",
+    "45": "F10, F18",
+    "46": "F01-F04",
+    "47": "F01-F04 M-Sportpaket",
+    "48": "RR04",
+    "49": "F07",
+    "50": "F10, F18 M-Sportpaket, M5",
+    "54": "F12, F13, F06",
+    "58": "F07 LCI"
+   }
+  },
+  "3002:3:3:FF": {
+   "name": "OFFSET_HINTEN_SEITE",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3002:4:4:FF": {
+   "name": "OFFSET_HINTEN_AUSSEN",
+   "values": {
+    "0": "F01-F04",
+    "1": "F07 LCI M-Sportpaket",
+    "2": "F12, F13, F06",
+    "4": "F07 M-Sportpaket"
+   }
+  },
+  "3002:5:5:FF": {
+   "name": "OFFSET_HINTEN_MITTE",
+   "values": {
+    "0": "F01-F04 M-Sportpaket",
+    "1": "F01-F04",
+    "2": "F07 M-Sportpaket"
+   }
+  },
+  "3002:6:7:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3002:8:8:FF": {
+   "name": "ABSTAND_VORN_SEITE_AUSSEN",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "46": "F01-F04 5-Kanal M-Sportpaket",
+    "47": "F01-F04 5-Kanal",
+    "48": "F01-F04 5-Kanal"
+   }
+  },
+  "3002:9:9:FF": {
+   "name": "ABSTAND_VORN_AUSSEN_MITTE",
+   "values": {
+    "0": "F07 0-Kanal",
+    "37": "F01-F04 5-Kanal",
+    "38": "F01-F04 5-Kanal",
+    "39": "F01-F04 5-Kanal",
+    "48": "F01-F04 4-Kanal",
+    "50": "F25",
+    "51": "F10,F11,F18",
+    "52": "F12, F13, F06",
+    "53": "F07 4-Kanal",
+    "54": "RR04",
+    "55": "RR05",
+    "57": "F12, F13 M6, F06 M"
+   }
+  },
+  "3003:0:0:FF": {
+   "name": "SCHWELLENWERT_1_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:10:10:FF": {
+   "name": "SCHWELLENWERT_11_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:11:11:FF": {
+   "name": "SCHWELLENWERT_12_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:12:12:01": {
+   "name": "MESSDAUER_HINTEN_SEITE",
+   "values": {
+    "0": "fest",
+    "1": "variabel"
+   }
+  },
+  "3003:12:12:02": {
+   "name": "ANFANGSWERT_HINTEN_SEITE",
+   "values": {
+    "0": "100_prozent",
+    "1": "1_wert_schwelle"
+   }
+  },
+  "3003:12:12:0C": {
+   "name": "SKALIERUNG_HINTEN_SEITE",
+   "values": {
+    "0": "0_35",
+    "1": "0_50",
+    "2": "0_65",
+    "3": "0_80"
+   }
+  },
+  "3003:12:12:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:1:1:FF": {
+   "name": "SCHWELLENWERT_2_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:2:2:FF": {
+   "name": "SCHWELLENWERT_3_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:3:3:FF": {
+   "name": "SCHWELLENWERT_4_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:4:4:FF": {
+   "name": "SCHWELLENWERT_5_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:5:5:FF": {
+   "name": "SCHWELLENWERT_6_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:6:6:FF": {
+   "name": "SCHWELLENWERT_7_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:7:7:FF": {
+   "name": "SCHWELLENWERT_8_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:8:8:FF": {
+   "name": "SCHWELLENWERT_9_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3003:9:9:FF": {
+   "name": "SCHWELLENWERT_10_HS",
+   "values": {
+    "0": "F01-F04"
+   }
+  },
+  "3004:0:0:FF": {
+   "name": "SCHWELLENWERT_1_HA",
+   "values": {
+    "10": "F01-F04",
+    "13": "F01-F04 LCI",
+    "15": "F07 M-Sportpaket"
+   }
+  },
+  "3004:10:10:FF": {
+   "name": "SCHWELLENWERT_11_HA",
+   "values": {
+    "13": "RR04",
+    "14": "F07",
+    "15": "F07 M-Sportpaket",
+    "16": "F01-F04 M-Sportpaket",
+    "17": "F07 LCI",
+    "18": "F10, F18",
+    "19": "F01-F04 LCI",
+    "20": "F10, F18 LCI",
+    "21": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "22": "RR04",
+    "25": "F01-F04",
+    "26": "RR05"
+   }
+  },
+  "3004:11:11:FF": {
+   "name": "SCHWELLENWERT_12_HA",
+   "values": {
+    "10": "RR04",
+    "13": "F07",
+    "14": "F10, F18 M-Sportpaket, M5",
+    "15": "F01-F04 M-Sportpaket",
+    "16": "F25",
+    "17": "F01-F04 LCI",
+    "18": "F10, F18 LCI",
+    "20": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "22": "RR04",
+    "23": "F01-F04"
+   }
+  },
+  "3004:12:12:01": {
+   "name": "MESSDAUER_HINTEN_AUSSEN",
+   "values": {
+    "0": "fest",
+    "1": "variabel"
+   }
+  },
+  "3004:12:12:02": {
+   "name": "ANFANGSWERT_HINTEN_AUSSEN",
+   "values": {
+    "0": "100_prozent",
+    "1": "1_wert_schwelle"
+   }
+  },
+  "3004:12:12:0C": {
+   "name": "SKALIERUNG_HINTEN_AUSSEN",
+   "values": {
+    "0": "0_35",
+    "1": "0_50",
+    "2": "0_65",
+    "3": "0_80"
+   }
+  },
+  "3004:12:12:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3004:1:1:FF": {
+   "name": "SCHWELLENWERT_2_HA",
+   "values": {
+    "10": "F01-F04",
+    "13": "F01-F04 LCI",
+    "14": "F12, F13, F06",
+    "15": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "19": "F07 M-Sportpaket"
+   }
+  },
+  "3004:2:2:FF": {
+   "name": "SCHWELLENWERT_3_HA",
+   "values": {
+    "10": "F07",
+    "12": "F10, F18 M-Sportpaket, M5",
+    "13": "F01-F04 LCI",
+    "14": "F01-F04",
+    "15": "F25 M-Sportpaket",
+    "17": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "18": "F12, F13, F06",
+    "22": "F07 M-Sportpaket"
+   }
+  },
+  "3004:3:3:FF": {
+   "name": "SCHWELLENWERT_4_HA",
+   "values": {
+    "10": "RR04",
+    "12": "F07",
+    "13": "F07 LCI",
+    "14": "F11 LCI",
+    "15": "F01-F04 LCI",
+    "17": "F01-F04",
+    "20": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "21": "F12, F13, F06",
+    "25": "F07 M-Sportpaket"
+   }
+  },
+  "3004:4:4:FF": {
+   "name": "SCHWELLENWERT_5_HA",
+   "values": {
+    "10": "F25",
+    "12": "F07",
+    "13": "F07 LCI M-Sportpaket",
+    "14": "F07",
+    "15": "F07 LCI",
+    "16": "F01-F04 LCI",
+    "17": "F11 LCI",
+    "18": "F10, F18",
+    "19": "F01-F04 M-Sportpaket",
+    "20": "F01-F04",
+    "21": "RR04",
+    "22": "F12, F13, F06",
+    "24": "F07 M-Sportpaket",
+    "26": "F07 M-Sportpaket"
+   }
+  },
+  "3004:5:5:FF": {
+   "name": "SCHWELLENWERT_6_HA",
+   "values": {
+    "13": "F07 LCI M-Sportpaket",
+    "14": "F25",
+    "15": "RR04",
+    "16": "F07",
+    "17": "F07 LCI",
+    "18": "F11",
+    "19": "F01-F04 LCI",
+    "20": "F01-F04 M-Sportpaket",
+    "21": "F10, F18 M-Sportpaket, M5",
+    "22": "F01-F04",
+    "23": "F07 M-Sportpaket",
+    "24": "RR04",
+    "26": "F07 M-Sportpaket"
+   }
+  },
+  "3004:6:6:FF": {
+   "name": "SCHWELLENWERT_7_HA",
+   "values": {
+    "15": "F07 LCI M-Sportpaket",
+    "16": "RR04",
+    "17": "F07 LCI",
+    "18": "F07",
+    "19": "F12, F13, F06",
+    "20": "F01-F04 M-Sportpaket",
+    "21": "F01-F04 LCI",
+    "22": "F01-F04",
+    "23": "F10, F18",
+    "24": "RR04",
+    "25": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "26": "F07 M-Sportpaket"
+   }
+  },
+  "3004:7:7:FF": {
+   "name": "SCHWELLENWERT_8_HA",
+   "values": {
+    "16": "RR04",
+    "17": "F07 LCI M-Sportpaket",
+    "18": "F07 LCI",
+    "19": "F07",
+    "20": "F01-F04 M-Sportpaket",
+    "21": "F01-F04 LCI",
+    "22": "F11 M-Sportpaket, M5",
+    "23": "F10, F18 LCI",
+    "24": "F10, F18",
+    "25": "F01-F04",
+    "26": "F12, F13, F06 M-Sportpaket, M6, F06 M"
+   }
+  },
+  "3004:8:8:FF": {
+   "name": "SCHWELLENWERT_9_HA",
+   "values": {
+    "15": "RR04",
+    "16": "F07",
+    "17": "F07 LCI",
+    "18": "F07",
+    "19": "F01-F04 LCI",
+    "20": "F11",
+    "21": "F11 LCI",
+    "22": "F07 M-Sportpaket",
+    "23": "F10, F18",
+    "25": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "27": "RR05",
+    "28": "F01-F04"
+   }
+  },
+  "3004:9:9:FF": {
+   "name": "SCHWELLENWERT_10_HA",
+   "values": {
+    "15": "F07",
+    "16": "F07",
+    "17": "F07 LCI",
+    "18": "F01-F04 M-Sportpaket",
+    "19": "F01-F04 LCI",
+    "20": "F11 LCI",
+    "21": "F10, F18",
+    "22": "RR04",
+    "23": "F10, F18 LCI",
+    "24": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "26": "F01-F04",
+    "27": "RR05"
+   }
+  },
+  "3005:0:0:FF": {
+   "name": "SCHWELLENWERT_1_HM",
+   "values": {
+    "10": "F01-F04",
+    "13": "F01-F04 LCI",
+    "15": "F25 M-Sportpaket"
+   }
+  },
+  "3005:10:10:FF": {
+   "name": "SCHWELLENWERT_11_HM",
+   "values": {
+    "12": "F07",
+    "13": "RR04",
+    "14": "F07 M-Sportpaket",
+    "15": "RR04",
+    "16": "F07",
+    "17": "F07 LCI M-Sportpaket",
+    "18": "F10, F18",
+    "20": "F10, F18 M-Sportpaket, M5",
+    "22": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "24": "F01-F04 LCI",
+    "25": "F01-F04",
+    "26": "RR05",
+    "28": "F10, F18 LCI",
+    "31": "F11 LCI"
+   }
+  },
+  "3005:11:11:FF": {
+   "name": "SCHWELLENWERT_12_HM",
+   "values": {
+    "10": "RR04",
+    "12": "F07",
+    "13": "F07 M-Sportpaket",
+    "14": "F07",
+    "15": "F07 LCI M-Sportpaket",
+    "16": "F12, F13, F06",
+    "18": "F10, F18 M-Sportpaket, M5",
+    "19": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "21": "F25",
+    "22": "F01-F04 LCI",
+    "23": "F01-F04",
+    "25": "F07 LCI",
+    "27": "F10, F18 LCI",
+    "31": "F11 LCI"
+   }
+  },
+  "3005:12:12:01": {
+   "name": "MESSDAUER_HINTEN_MITTE",
+   "values": {
+    "0": "fest",
+    "1": "variabel"
+   }
+  },
+  "3005:12:12:02": {
+   "name": "ANFANGSWERT_HINTEN_MITTE",
+   "values": {
+    "0": "100_prozent",
+    "1": "1_wert_schwelle"
+   }
+  },
+  "3005:12:12:0C": {
+   "name": "SKALIERUNG_HINTEN_MITTE",
+   "values": {
+    "0": "0_35",
+    "1": "0_50",
+    "2": "0_65",
+    "3": "0_80"
+   }
+  },
+  "3005:12:12:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3005:1:1:FF": {
+   "name": "SCHWELLENWERT_2_HM",
+   "values": {
+    "10": "F01-F04",
+    "13": "F01-F04 LCI",
+    "15": "F25 M-Sportpaket"
+   }
+  },
+  "3005:2:2:FF": {
+   "name": "SCHWELLENWERT_3_HM",
+   "values": {
+    "10": "F07",
+    "12": "F10, F18 M-Sportpaket, M5",
+    "13": "F01-F04 LCI",
+    "14": "F01-F04",
+    "15": "F25 M-Sportpaket"
+   }
+  },
+  "3005:3:3:FF": {
+   "name": "SCHWELLENWERT_4_HM",
+   "values": {
+    "10": "RR04",
+    "12": "F07",
+    "13": "F07 LCI",
+    "14": "F11",
+    "15": "F01-F04 LCI",
+    "16": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "17": "F01-F04",
+    "18": "F10, F18 M-Sportpaket, M5",
+    "19": "RR04"
+   }
+  },
+  "3005:4:4:FF": {
+   "name": "SCHWELLENWERT_5_HM",
+   "values": {
+    "10": "F25",
+    "12": "F07",
+    "13": "F07 LCI M-Sportpaket",
+    "14": "F07",
+    "15": "RR04",
+    "16": "F01-F04 LCI",
+    "17": "F12, F13, F06",
+    "18": "F10, F18",
+    "19": "F11",
+    "20": "F01-F04",
+    "22": "F10, F18 M-Sportpaket, M5"
+   }
+  },
+  "3005:5:5:FF": {
+   "name": "SCHWELLENWERT_6_HM",
+   "values": {
+    "11": "F07",
+    "13": "F07 LCI M-Sportpaket",
+    "14": "F25",
+    "15": "F07",
+    "17": "F07 LCI",
+    "18": "F11",
+    "19": "F01-F04 LCI",
+    "20": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "21": "F01-F04 M-Sportpaket",
+    "22": "F01-F04",
+    "23": "F11",
+    "25": "F10, F18 M-Sportpaket, M5"
+   }
+  },
+  "3005:6:6:FF": {
+   "name": "SCHWELLENWERT_7_HM",
+   "values": {
+    "14": "F07 M-Sportpaket",
+    "15": "F07 LCI M-Sportpaket",
+    "16": "F07",
+    "18": "F12, F13, F06",
+    "19": "F10, F18",
+    "20": "F01-F04 LCI",
+    "21": "F01-F04 M-Sportpaket",
+    "22": "F01-F04",
+    "23": "F10, F18",
+    "24": "F10, F18 LCI",
+    "25": "F11 M-Sportpaket, M5",
+    "26": "F10, F18 M-Sportpaket, M5"
+   }
+  },
+  "3005:7:7:FF": {
+   "name": "SCHWELLENWERT_8_HM",
+   "values": {
+    "14": "F07",
+    "16": "F07 M-Sportpaket",
+    "17": "F07",
+    "18": "RR04",
+    "19": "F10, F18",
+    "22": "F01-F04 LCI",
+    "23": "F01-F04 M-Sportpaket",
+    "24": "F10, F18",
+    "25": "F01-F04",
+    "26": "F11 M-Sportpaket, M5",
+    "27": "F10, F18 LCI"
+   }
+  },
+  "3005:8:8:FF": {
+   "name": "SCHWELLENWERT_9_HM",
+   "values": {
+    "14": "F07",
+    "15": "RR04",
+    "16": "F07",
+    "17": "F07 LCI M-Sportpaket",
+    "18": "F07",
+    "19": "F11",
+    "22": "F01-F04 LCI",
+    "23": "F10, F18",
+    "24": "F10, F18 M-Sportpaket, M5",
+    "25": "F11",
+    "26": "F01-F04 M-Sportpaket",
+    "27": "RR05",
+    "28": "F01-F04",
+    "29": "F10, F18 LCI",
+    "30": "F11 LCI"
+   }
+  },
+  "3005:9:9:FF": {
+   "name": "SCHWELLENWERT_10_HM",
+   "values": {
+    "12": "F07",
+    "15": "F07",
+    "16": "F07 M-Sportpaket",
+    "17": "F07 LCI M-Sportpaket",
+    "18": "F07",
+    "19": "F11",
+    "20": "F12, F13, F06",
+    "21": "F10, F18",
+    "22": "F10, F18 M-Sportpaket, M5",
+    "23": "F11",
+    "24": "F01-F04 LCI",
+    "25": "F12, F13, F06 M-Sportpaket, M6, F06 M",
+    "26": "F01-F04",
+    "27": "RR05",
+    "30": "F10, F18 LCI",
+    "31": "F11 LCI"
+   }
+  },
+  "3006:0:0:FF": {
+   "name": "SCHWELLENWERT_1_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "10": "F01-F04 5-Kanal",
+    "13": "F01-F04 5-Kanal LCI"
+   }
+  },
+  "3006:10:10:FF": {
+   "name": "SCHWELLENWERT_11_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "21": "F01-F04 5-Kanal LCI",
+    "24": "F01-F04 5-Kanal"
+   }
+  },
+  "3006:11:11:FF": {
+   "name": "SCHWELLENWERT_12_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "21": "F01-F04 5-Kanal LCI",
+    "24": "F01-F04 5-Kanal"
+   }
+  },
+  "3006:12:12:01": {
+   "name": "MESSDAUER_VORN_SEITE",
+   "values": {
+    "0": "fest",
+    "1": "variabel"
+   }
+  },
+  "3006:12:12:02": {
+   "name": "ANFANGSWERT_VORN_SEITE",
+   "values": {
+    "0": "100_prozent",
+    "1": "1_wert_schwelle"
+   }
+  },
+  "3006:12:12:0C": {
+   "name": "SKALIERUNG_VORN_SEITE",
+   "values": {
+    "0": "0_35",
+    "1": "0_50",
+    "2": "0_65",
+    "3": "0_80"
+   }
+  },
+  "3006:12:12:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3006:1:1:FF": {
+   "name": "SCHWELLENWERT_2_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "10": "F01-F04 5-Kanal",
+    "13": "F01-F04 5-Kanal LCI"
+   }
+  },
+  "3006:2:2:FF": {
+   "name": "SCHWELLENWERT_3_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "10": "F01-F04 5-Kanal",
+    "13": "F01-F04 5-Kanal LCI"
+   }
+  },
+  "3006:3:3:FF": {
+   "name": "SCHWELLENWERT_4_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "13": "F01-F04 5-Kanal LCI",
+    "14": "F01-F04 5-Kanal",
+    "15": "F01-F04 5-Kanal M-Sportpaket"
+   }
+  },
+  "3006:4:4:FF": {
+   "name": "SCHWELLENWERT_5_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "15": "F01-F04 5-Kanal",
+    "17": "F01-F04 5-Kanal M-Sportpaket"
+   }
+  },
+  "3006:5:5:FF": {
+   "name": "SCHWELLENWERT_6_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "18": "F01-F04 5-Kanal LCI",
+    "20": "F01-F04 5-Kanal",
+    "22": "F01-F04 5-Kanal M-Sportpaket"
+   }
+  },
+  "3006:6:6:FF": {
+   "name": "SCHWELLENWERT_7_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "20": "F01-F04 5-Kanal LCI",
+    "22": "F01-F04 5-Kanal"
+   }
+  },
+  "3006:7:7:FF": {
+   "name": "SCHWELLENWERT_8_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "21": "F01-F04 5-Kanal LCI",
+    "24": "F01-F04 5-Kanal"
+   }
+  },
+  "3006:8:8:FF": {
+   "name": "SCHWELLENWERT_9_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "21": "F01-F04 5-Kanal LCI",
+    "24": "F01-F04 5-Kanal"
+   }
+  },
+  "3006:9:9:FF": {
+   "name": "SCHWELLENWERT_10_VS",
+   "values": {
+    "0": "F01-F04 4-Kanal",
+    "21": "F01-F04 5-Kanal LCI",
+    "24": "F01-F04 5-Kanal"
+   }
+  },
+  "3007:0:0:FF": {
+   "name": "SCHWELLENWERT_1_VA",
+   "values": {
+    "10": "F01-F04 4-Kanal",
+    "13": "F01-F04 5-Kanal LCI",
+    "15": "F25"
+   }
+  },
+  "3007:10:10:FF": {
+   "name": "SCHWELLENWERT_11_VA",
+   "values": {
+    "10": "RR04",
+    "12": "F07 M-Sportpaket",
+    "13": "F07",
+    "14": "RR04",
+    "18": "F07 LCI",
+    "19": "F10, F11, F18 M-Sportpaket",
+    "20": "F01-F04 4-Kanal",
+    "21": "F07 M-Sportpaket",
+    "22": "F10, F11, F18 M5",
+    "24": "F01-F04 5-Kanal",
+    "26": "F25 M-Sportpaket",
+    "27": "F12, F13, F06 M-Sportpaket",
+    "28": "F01-F04 5-Kanal LCI"
+   }
+  },
+  "3007:11:11:FF": {
+   "name": "SCHWELLENWERT_12_VA",
+   "values": {
+    "10": "F07",
+    "13": "F10, F11, F18 LCI",
+    "14": "F12, F13, F06",
+    "18": "F07 LCI",
+    "20": "F01-F04 4-Kanal",
+    "22": "RR04",
+    "23": "F12, F13, F06 M-Sportpaket",
+    "24": "F01-F04 5-Kanal",
+    "25": "F25 M-Sportpaket",
+    "28": "F01-F04 5-Kanal LCI"
+   }
+  },
+  "3007:12:12:01": {
+   "name": "MESSDAUER_VORN_AUSSEN",
+   "values": {
+    "0": "fest",
+    "1": "variabel"
+   }
+  },
+  "3007:12:12:02": {
+   "name": "ANFANGSWERT_VORN_AUSSEN",
+   "values": {
+    "0": "100_prozent",
+    "1": "1_wert_schwelle"
+   }
+  },
+  "3007:12:12:0C": {
+   "name": "SKALIERUNG_VORN_AUSSEN",
+   "values": {
+    "0": "0_35",
+    "1": "0_50",
+    "2": "0_65",
+    "3": "0_80"
+   }
+  },
+  "3007:12:12:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3007:1:1:FF": {
+   "name": "SCHWELLENWERT_2_VA",
+   "values": {
+    "10": "F01-F04 4-Kanal",
+    "13": "F01-F04 5-Kanal LCI",
+    "14": "F12, F13, F06 M-Sportpaket",
+    "15": "F25"
+   }
+  },
+  "3007:2:2:FF": {
+   "name": "SCHWELLENWERT_3_VA",
+   "values": {
+    "10": "F01-F04 4-Kanal",
+    "12": "F10, F11, F18 M5",
+    "13": "F01-F04 5-Kanal LCI",
+    "14": "F07 M-Sportpaket",
+    "15": "F12, F13 M6, F06 M",
+    "16": "F12, F13, F06 M-Sportpaket",
+    "17": "RR05",
+    "18": "F25"
+   }
+  },
+  "3007:3:3:FF": {
+   "name": "SCHWELLENWERT_4_VA",
+   "values": {
+    "10": "F12, F13, F06",
+    "12": "F07",
+    "13": "F01-F04 5-Kanal LCI",
+    "14": "F01-F04 4-Kanal",
+    "15": "F01-F04 5-Kanal M-Sportpaket",
+    "16": "F07 M-Sportpaket",
+    "18": "F12, F13, F06",
+    "19": "F12, F13, F06 M-Sportpaket",
+    "20": "RR05"
+   }
+  },
+  "3007:4:4:FF": {
+   "name": "SCHWELLENWERT_5_VA",
+   "values": {
+    "10": "F12, F13, F06",
+    "11": "F07",
+    "12": "RR04",
+    "13": "F07",
+    "14": "F07 LCI",
+    "15": "F01-F04 4-Kanal",
+    "17": "F01-F04 5-Kanal M-Sportpaket",
+    "19": "F10, F11, F18 M5",
+    "20": "F12, F13, F06",
+    "21": "F12, F13 M6, F06 M",
+    "22": "F12, F13, F06 M-Sportpaket",
+    "23": "RR05"
+   }
+  },
+  "3007:5:5:FF": {
+   "name": "SCHWELLENWERT_6_VA",
+   "values": {
+    "11": "F12, F13, F06",
+    "12": "F07",
+    "14": "F10, F11, F18 LCI",
+    "15": "F07",
+    "16": "F07 LCI",
+    "17": "F07 M-Sportpaket",
+    "18": "F01-F04 5-Kanal LCI",
+    "19": "F10, F11, F18 M-Sportpaket",
+    "20": "F01-F04 4-Kanal",
+    "21": "F10, F11, F18 M5",
+    "22": "F01-F04 5-Kanal M-Sportpaket",
+    "23": "F12, F13, F06",
+    "24": "F12, F13 M6, F06 M",
+    "25": "F12, F13, F06 M-Sportpaket",
+    "26": "RR05"
+   }
+  },
+  "3007:6:6:FF": {
+   "name": "SCHWELLENWERT_7_VA",
+   "values": {
+    "13": "F12, F13, F06",
+    "15": "F07",
+    "16": "F07",
+    "17": "F10, F11, F18",
+    "18": "F07 LCI",
+    "20": "F01-F04 4-Kanal",
+    "21": "F01-F04 5-Kanal LCI",
+    "22": "F01-F04 5-Kanal",
+    "23": "F10, F11, F18 M5",
+    "24": "F12, F13, F06",
+    "25": "RR04",
+    "26": "F12, F13, F06 M-Sportpaket",
+    "27": "RR05"
+   }
+  },
+  "3007:7:7:FF": {
+   "name": "SCHWELLENWERT_8_VA",
+   "values": {
+    "14": "F12, F13, F06",
+    "16": "F07 M-Sportpaket",
+    "17": "F07",
+    "18": "F07 LCI",
+    "20": "F01-F04 4-Kanal",
+    "21": "F10, F11, F18 M-Sportpaket",
+    "23": "F01-F04 5-Kanal LCI",
+    "24": "F01-F04 5-Kanal",
+    "25": "F12, F13, F06",
+    "26": "F25 M-Sportpaket",
+    "28": "RR05",
+    "30": "F12, F13, F06 M-Sportpaket"
+   }
+  },
+  "3007:8:8:FF": {
+   "name": "SCHWELLENWERT_9_VA",
+   "values": {
+    "15": "F12, F13, F06",
+    "16": "F07 M-Sportpaket",
+    "17": "F10, F11, F18 LCI",
+    "18": "F07",
+    "19": "F12, F13 M6, F06 M",
+    "20": "F01-F04 4-Kanal",
+    "21": "RR04",
+    "22": "F10, F11, F18 M-Sportpaket",
+    "23": "F12, F13, F06",
+    "24": "F01-F04 5-Kanal",
+    "25": "F10, F11, F18 M5",
+    "26": "F01-F04 5-Kanal LCI",
+    "27": "F25 M-Sportpaket",
+    "28": "RR05",
+    "29": "F10, F11, F18 M5",
+    "30": "F12, F13, F06 M-Sportpaket"
+   }
+  },
+  "3007:9:9:FF": {
+   "name": "SCHWELLENWERT_10_VA",
+   "values": {
+    "13": "RR04",
+    "14": "F07 M-Sportpaket",
+    "16": "F07",
+    "17": "F10, F11, F18",
+    "18": "F07 LCI",
+    "20": "F01-F04 4-Kanal",
+    "21": "F10, F11, F18 M-Sportpaket",
+    "22": "RR04",
+    "24": "F01-F04 5-Kanal",
+    "26": "F01-F04 5-Kanal LCI",
+    "27": "F25 M-Sportpaket",
+    "28": "RR05",
+    "29": "F12, F13, F06 M-Sportpaket"
+   }
+  },
+  "3008:0:0:FF": {
+   "name": "SCHWELLENWERT_1_VM",
+   "values": {
+    "10": "F01-F04 4-Kanal",
+    "13": "F01-F04 5-Kanal LCI",
+    "15": "F25"
+   }
+  },
+  "3008:10:10:FF": {
+   "name": "SCHWELLENWERT_11_VM",
+   "values": {
+    "10": "RR04",
+    "14": "RR04",
+    "15": "F12, F13, F06",
+    "17": "F10, F11, F18",
+    "18": "F07",
+    "19": "F12, F13 M6, F06 M",
+    "20": "F01-F04 4-Kanal",
+    "22": "F07 M-Sportpaket",
+    "23": "F25",
+    "24": "F01-F04 5-Kanal",
+    "26": "F10, F11, F18 M-Sportpaket",
+    "27": "F12, F13, F06 M-Sportpaket",
+    "28": "F07 LCI",
+    "31": "F01-F04 5-Kanal LCI"
+   }
+  },
+  "3008:11:11:FF": {
+   "name": "SCHWELLENWERT_12_VM",
+   "values": {
+    "10": "RR04",
+    "12": "F12, F13, F06",
+    "15": "F10, F11, F18",
+    "16": "F10, F11, F18",
+    "17": "F07 M-Sportpaket",
+    "18": "F12, F13, F06",
+    "19": "F07",
+    "20": "F01-F04 4-Kanal",
+    "21": "F07 M-Sportpaket",
+    "22": "RR04",
+    "23": "F12, F13, F06 M-Sportpaket",
+    "24": "F01-F04 5-Kanal",
+    "25": "F25",
+    "28": "F01-F04 5-Kanal LCI",
+    "31": "F10, F11, F18 LCI"
+   }
+  },
+  "3008:12:12:01": {
+   "name": "MESSDAUER_VORN_MITTE",
+   "values": {
+    "0": "fest",
+    "1": "variabel"
+   }
+  },
+  "3008:12:12:02": {
+   "name": "ANFANGSWERT_VORN_MITTE",
+   "values": {
+    "0": "100_prozent",
+    "1": "1_wert_schwelle"
+   }
+  },
+  "3008:12:12:0C": {
+   "name": "SKALIERUNG_VORN_MITTE",
+   "values": {
+    "0": "0_35",
+    "1": "0_50",
+    "2": "0_65",
+    "3": "0_80"
+   }
+  },
+  "3008:12:12:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3008:1:1:FF": {
+   "name": "SCHWELLENWERT_2_VM",
+   "values": {
+    "10": "F01-F04 4-Kanal",
+    "13": "F01-F04 5-Kanal LCI",
+    "14": "F12, F13, F06 M-Sportpaket",
+    "15": "F25",
+    "16": "F12, F13 M6, F06 M"
+   }
+  },
+  "3008:2:2:FF": {
+   "name": "SCHWELLENWERT_3_VM",
+   "values": {
+    "10": "F01-F04 4-Kanal",
+    "12": "F07",
+    "13": "F01-F04 5-Kanal LCI",
+    "15": "F25",
+    "16": "F12, F13, F06 M-Sportpaket",
+    "17": "RR05",
+    "19": "F12, F13 M6, F06 M"
+   }
+  },
+  "3008:3:3:FF": {
+   "name": "SCHWELLENWERT_4_VM",
+   "values": {
+    "10": "F12, F13, F06",
+    "14": "F01-F04 4-Kanal",
+    "15": "F01-F04 5-Kanal M-Sportpaket",
+    "16": "F01-F04 5-Kanal LCI",
+    "17": "F07 M-Sportpaket",
+    "18": "F12, F13, F06",
+    "19": "F12, F13, F06 M-Sportpaket",
+    "20": "RR05",
+    "22": "F12, F13 M6, F06 M"
+   }
+  },
+  "3008:4:4:FF": {
+   "name": "SCHWELLENWERT_5_VM",
+   "values": {
+    "12": "RR04",
+    "15": "F01-F04 4-Kanal",
+    "17": "F01-F04 5-Kanal M-Sportpaket",
+    "18": "F07",
+    "19": "F01-F04 5-Kanal LCI",
+    "20": "F07 LCI",
+    "21": "F10, F11, F18 M-Sportpaket",
+    "22": "F12, F13, F06 M-Sportpaket",
+    "23": "RR05",
+    "25": "F12, F13 M6, F06 M"
+   }
+  },
+  "3008:5:5:FF": {
+   "name": "SCHWELLENWERT_6_VM",
+   "values": {
+    "15": "RR04",
+    "18": "F12, F13, F06",
+    "19": "F10, F11, F18",
+    "20": "F01-F04 4-Kanal",
+    "22": "F01-F04 5-Kanal LCI",
+    "23": "F07 LCI",
+    "24": "F10, F11, F18 M-Sportpaket",
+    "25": "F12, F13, F06 M-Sportpaket",
+    "26": "RR05",
+    "28": "F12, F13 M6, F06 M"
+   }
+  },
+  "3008:6:6:FF": {
+   "name": "SCHWELLENWERT_7_VM",
+   "values": {
+    "17": "RR04",
+    "20": "F01-F04 4-Kanal",
+    "21": "F12, F13, F06",
+    "22": "F01-F04 5-Kanal",
+    "23": "F07 LCI",
+    "24": "F07 M-Sportpaket",
+    "25": "F01-F04 5-Kanal LCI",
+    "26": "F10, F11, F18 M-Sportpaket",
+    "27": "RR05",
+    "31": "F12, F13 M6, F06 M"
+   }
+  },
+  "3008:7:7:FF": {
+   "name": "SCHWELLENWERT_8_VM",
+   "values": {
+    "18": "RR04",
+    "20": "F01-F04 4-Kanal",
+    "21": "F12, F13, F06",
+    "22": "F07",
+    "23": "F25",
+    "24": "F01-F04 5-Kanal",
+    "25": "F07 LCI",
+    "26": "F25",
+    "27": "F10, F11, F18 LCI",
+    "28": "F01-F04 5-Kanal LCI",
+    "30": "F12, F13, F06 M-Sportpaket"
+   }
+  },
+  "3008:8:8:FF": {
+   "name": "SCHWELLENWERT_9_VM",
+   "values": {
+    "17": "RR04",
+    "19": "F12, F13, F06",
+    "20": "F01-F04 4-Kanal",
+    "21": "RR04",
+    "22": "F07",
+    "23": "F12, F13, F06",
+    "24": "F01-F04 5-Kanal",
+    "25": "F12, F13 M6, F06 M",
+    "27": "F07 LCI",
+    "28": "RR05",
+    "29": "F10, F11, F18 M-Sportpaket",
+    "30": "F10, F11, F18 LCI",
+    "31": "F01-F04 5-Kanal LCI"
+   }
+  },
+  "3008:9:9:FF": {
+   "name": "SCHWELLENWERT_10_VM",
+   "values": {
+    "13": "RR04",
+    "17": "F12, F13, F06",
+    "18": "RR04",
+    "19": "F10, F11, F18",
+    "20": "F01-F04 4-Kanal",
+    "21": "F07",
+    "22": "F12, F13 M6, F06 M",
+    "23": "F07 M-Sportpaket",
+    "24": "F01-F04 5-Kanal",
+    "27": "F25",
+    "28": "F07 LCI",
+    "29": "F12, F13, F06 M-Sportpaket",
+    "31": "F01-F04 5-Kanal LCI"
+   }
+  },
+  "3009:0:0:FF": {
+   "name": "T_AUFSTART",
+   "values": {
+    "50": "F001"
+   }
+  },
+  "3009:10:12:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:13:13:07": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:13:13:08": {
+   "name": "AKTIVIERUNG_RUECKWAERTSROLLEN",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:13:13:10": {
+   "name": "RUECKWAERTSKOMPATIBILITAET",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:13:13:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:14:14:01": {
+   "name": "PMA",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:14:14:02": {
+   "name": "TVC",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:14:14:04": {
+   "name": "RVC",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3009:14:14:F8": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:15:15:FF": {
+   "name": "V_SCHWELLE_1",
+   "values": {
+    "1": "Abschaltschwelle_0-Kanal_vorn",
+    "20": "Abschaltschwelle_bis_09-09",
+    "36": "Abschaltschwelle_ab_09-09"
+   }
+  },
+  "3009:16:16:FF": {
+   "name": "V_SCHWELLE_2",
+   "values": {
+    "0": "Abschaltschwelle_0-Kanal_vorn",
+    "15": "Abschaltschwelle_ab_09-09",
+    "20": "Abschaltschwelle_bis_09-09"
+   }
+  },
+  "3009:17:17:FF": {
+   "name": "D_SCHWELLE_1",
+   "values": {
+    "1": "Abschaltschwelle_0-Kanal_vorn",
+    "20": "Abschaltschwelle_bis_09-09",
+    "50": "Abschaltschwelle_ab_09-09"
+   }
+  },
+  "3009:18:18:FF": {
+   "name": "D_SCHWELLE_2",
+   "values": {
+    "0": "Abschaltschwelle_0-Kanal_vorn",
+    "10": "Abschaltschwelle_ab_09-09",
+    "20": "Abschaltschwelle_bis_09-09"
+   }
+  },
+  "3009:19:29:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:1:1:FF": {
+   "name": "T_START",
+   "values": {
+    "50": "F001"
+   }
+  },
+  "3009:2:2:FF": {
+   "name": "T_SHUTDOWN",
+   "values": {
+    "50": "F001"
+   }
+  },
+  "3009:3:3:FF": {
+   "name": "T_AKTIVIERUNG",
+   "values": {
+    "0": "F001"
+   }
+  },
+  "3009:4:4:FF": {
+   "name": "T_DEAKTIVIERUNG",
+   "values": {
+    "50": "F001"
+   }
+  },
+  "3009:5:5:FF": {
+   "name": "A_HYSTERESE",
+   "values": {
+    "0": "00",
+    "2": "02"
+   }
+  },
+  "3009:6:6:FF": {
+   "name": "T_AKTIVIERUNGSVERZOEGERUNG",
+   "values": {
+    "0": "F001"
+   }
+  },
+  "3009:7:7:FF": {
+   "name": "V_OFF_PF_R",
+   "values": {
+    "30": "F001"
+   }
+  },
+  "3009:8:8:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3009:9:9:FF": {
+   "name": "FS_TRIGGER_FAKTOR",
+   "values": {
+    "3": "F001"
+   }
+  },
+  "300A:0:0:FF": {
+   "name": "T_MIN_EVENT",
+   "values": {
+    "10": "F001",
+    "100": "F001",
+    "25": "F001"
+   }
+  },
+  "300A:10:10:FF": {
+   "name": "SCHWELLE_ALIVE",
+   "values": {
+    "5": "F001"
+   }
+  },
+  "300A:11:11:FF": {
+   "name": "SCHWELLE_APP_CRC",
+   "values": {
+    "5": "F001"
+   }
+  },
+  "300A:12:12:FF": {
+   "name": "SCHWELLE_BUS_OFF",
+   "values": {
+    "3": "F001"
+   }
+  },
+  "300A:13:13:01": {
+   "name": "SCHWELLE_AKUSTIK",
+   "values": {
+    "0": "F001"
+   }
+  },
+  "300A:13:13:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300A:14:14:FF": {
+   "name": "TIMEOUT_AKUSTIK",
+   "values": {
+    "20": "F001"
+   }
+  },
+  "300A:15:15:FF": {
+   "name": "TIMEOUT_HU_AUFGESTARTET",
+   "values": {
+    "20": "F001"
+   }
+  },
+  "300A:16:19:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300A:1:1:FF": {
+   "name": "T_MIN_KEINE_USPANN",
+   "values": {
+    "30": "F001"
+   }
+  },
+  "300A:2:2:01": {
+   "name": "UEBERTRAG",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "300A:2:2:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "300A:3:3:FF": {
+   "name": "SCHWELLE_SG_INTERNER",
+   "values": {
+    "100": "F001"
+   }
+  },
+  "300A:4:4:FF": {
+   "name": "SCHWELLE_UNTER_UEBERSPANNUNG",
+   "values": {
+    "5": "F001"
+   }
+  },
+  "300A:5:5:FF": {
+   "name": "SCHWELLE_WANDLERVERSORGUNG",
+   "values": {
+    "5": "F001"
+   }
+  },
+  "300A:6:6:FF": {
+   "name": "SCHWELLE_WANDLERLEITUNG",
+   "values": {
+    "6": "F001"
+   }
+  },
+  "300A:7:7:FF": {
+   "name": "SCHWELLE_WANDLERFEHLER",
+   "values": {
+    "5": "F001"
+   }
+  },
+  "300A:8:8:FF": {
+   "name": "SCHWELLE_TIMEOUT",
+   "values": {
+    "25": "F001"
+   }
+  },
+  "300A:9:9:FF": {
+   "name": "SCHWELLE_SIGNAL_UNGUELTIG",
+   "values": {
+    "10": "F001"
+   }
+  },
+  "300B:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "300C:0:67:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "VARIANTENCODIERUNG",
+  "3001": "FAHRZEUGKONFIGURATION",
+  "3002": "WANDLERKONFIGURATION",
+  "3003": "SCHWELLENWERTE_HINTEN_SEITE",
+  "3004": "SCHWELLENWERTE_HINTEN_AUSSEN",
+  "3005": "SCHWELLENWERTE_HINTEN_MITTE",
+  "3006": "SCHWELLENWERTE_VORN_SEITE",
+  "3007": "SCHWELLENWERTE_VORN_AUSSEN",
+  "3008": "SCHWELLENWERTE_VORN_MITTE",
+  "3009": "PARK_MASTER",
+  "300A": "FEHLERKONFIGURATION",
+  "300B": "CAF_ID",
+  "300C": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

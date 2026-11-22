@@ -1,0 +1,219 @@
+{
+ "functions": {
+  "3700:0:0:01": {
+   "name": "MIL",
+   "values": {
+    "0": "OFF",
+    "1": "ON"
+   }
+  },
+  "3700:0:0:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3700:1:1:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3700:2:3:FF": {
+   "name": "VMAX",
+   "values": {
+    "0": "255",
+    "1": "250",
+    "10": "257",
+    "11": "247",
+    "12": "216",
+    "13": "228",
+    "14": "220",
+    "2": "210",
+    "221": "n221",
+    "232": "n232",
+    "238": "n238",
+    "243": "n243",
+    "244": "n244",
+    "245": "n245",
+    "254": "n254",
+    "256": "n256",
+    "3": "230",
+    "4": "240",
+    "5": "236",
+    "6": "235",
+    "7": "198",
+    "8": "215",
+    "9": "233"
+   }
+  },
+  "3700:4:4:FF": {
+   "name": "Leistungsklasse",
+   "values": {
+    "0": "initwert",
+    "1": "uuL",
+    "2": "uL",
+    "3": "oL",
+    "4": "TL",
+    "5": "SL",
+    "6": "Alpina"
+   }
+  },
+  "3700:5:7:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3701:0:1:FF": {
+   "name": "OWI_NEU",
+   "values": {
+    "16434": "wert_10_US"
+   }
+  },
+  "3701:10:10:FF": {
+   "name": "MSA-Startervariante",
+   "values": {
+    "0": "KSopt0 ohne Startersperre",
+    "1": "KSopt0 mit Startersperre",
+    "2": "KSopt150 ohne Startersperre",
+    "3": "KSopt150 mit Startersperre"
+   }
+  },
+  "3701:11:11:FF": {
+   "name": "Segeln",
+   "values": {
+    "0": "OFF",
+    "1": "ON"
+   }
+  },
+  "3701:12:12:FF": {
+   "name": "Segeln_CPL",
+   "values": {
+    "254": "ON",
+    "255": "OFF"
+   }
+  },
+  "3701:13:13:FF": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3701:14:14:0F": {
+   "name": "AFS-Kennlinie",
+   "values": {
+    "0": "AFS-Kennlinie_Basis",
+    "1": "AFS-Kennlinie_Nordland",
+    "2": "AFS-Kennlinie_Rippe28"
+   }
+  },
+  "3701:14:14:F0": {
+   "name": "APH_Anti-Power-Hop",
+   "values": {
+    "0": "APH_aktiv",
+    "1": "APH_Inaktiv"
+   }
+  },
+  "3701:15:15:FF": {
+   "name": "BDS_Brennraumdrucksensor",
+   "values": {
+    "0": "BDS_inaktiv"
+   }
+  },
+  "3701:2:2:01": {
+   "name": "iGR",
+   "values": {
+    "0": "OFF",
+    "1": "ON"
+   }
+  },
+  "3701:2:2:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3701:3:3:03": {
+   "name": "SPA",
+   "values": {
+    "0": "OFF",
+    "1": "ON"
+   }
+  },
+  "3701:3:3:FC": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3701:4:4:01": {
+   "name": "MSA",
+   "values": {
+    "0": "OFF",
+    "1": "ON"
+   }
+  },
+  "3701:4:4:FE": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3701:5:5:FF": {
+   "name": "Generatortyp",
+   "values": {
+    "1": "BSD",
+    "2": "LIN",
+    "3": "SGR LIN"
+   }
+  },
+  "3701:6:6:FF": {
+   "name": "AfH",
+   "values": {
+    "0": "nicht aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3701:7:7:FF": {
+   "name": "EKP",
+   "values": {
+    "0": "A-CAN",
+    "1": "FA-CAN",
+    "2": "FPC"
+   }
+  },
+  "3701:8:8:FF": {
+   "name": "mls-mi",
+   "values": {
+    "0": "mi",
+    "1": "mls"
+   }
+  },
+  "3701:9:9:FF": {
+   "name": "MSA-Version",
+   "values": {
+    "0": "MSA 2.1",
+    "1": "MSA 2.2",
+    "2": "MSA 2.3",
+    "3": "MSA 2.5"
+   }
+  },
+  "37F0:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "37F1:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3700": "MIT_ZEITLIMIT",
+  "3701": "OHNE_ZEITLIMIT",
+  "37F0": "CAF_ID",
+  "37F1": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}

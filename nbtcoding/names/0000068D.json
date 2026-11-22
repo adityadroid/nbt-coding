@@ -1,0 +1,94 @@
+{
+ "functions": {
+  "3000:0:0:FF": {
+   "name": "AEREA_CODE_DVD",
+   "values": {}
+  },
+  "3001:0:0:01": {
+   "name": "MultiChannel",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:02": {
+   "name": "DVD_AUDIO_AOP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:04": {
+   "name": "DVD_AUDIO_AS_DVD_VIDEO",
+   "values": {
+    "0": "aktiv"
+   }
+  },
+  "3001:0:0:08": {
+   "name": "DVD_VIDEO_AOP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3001:0:0:F0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3001:1:1:FF": {
+   "name": "DVD_VIDEO_AOP_TIMEOUT",
+   "values": {}
+  },
+  "3002:0:0:01": {
+   "name": "MP3_LIST_MHP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:02": {
+   "name": "MP3_INSTANCE_NR",
+   "values": {}
+  },
+  "3002:0:0:04": {
+   "name": "0x420_AudioDiskInfo_MHP",
+   "values": {
+    "0": "nicht_aktiv",
+    "1": "aktiv"
+   }
+  },
+  "3002:0:0:18": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert",
+    "1": "CHINA_CP936",
+    "2": "JAPAN_JIS_X0208_1997"
+   }
+  },
+  "3002:0:0:E0": {
+   "name": "UNBELEGT",
+   "values": {
+    "0": "initwert"
+   }
+  },
+  "3003:0:7:FF": {
+   "name": "CAF_ID",
+   "values": {}
+  },
+  "3004:0:131:FF": {
+   "name": "SIGNATURE",
+   "values": {}
+  }
+ },
+ "groups": {
+  "3000": "Laendercode",
+  "3001": "MultiChannel",
+  "3002": "Datenuebertragung",
+  "3003": "CAF_ID",
+  "3004": "SIGNATURE"
+ },
+ "module": "",
+ "source": "Open CAFD Map untrimmed names (github.com/shamair28/OpenCAFDMap, MIT)"
+}
