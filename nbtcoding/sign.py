@@ -51,9 +51,10 @@ def content_digest(coding: dict, content_dgs) -> bytes:
     return hashlib.md5(blob).digest()
 
 
-def load_key(btld: str) -> Key | None:
-    """The NCD key for a BTLD, from keys/ncd_<btld>.json (as evocode writes it). None if not present."""
-    for name in ("ncd_%s.json" % btld.lower(), "ncd_%s.json" % btld.upper()):
+def load_key(btld: str, kind: str = "ncd") -> Key | None:
+    """A recovered key for a BTLD, from keys/<kind>_<btld>.json (kind: 'ncd' coding key, 'l3' SecurityAccess). None if
+    not present. Both are written by evocode's recover-key and kept out of git."""
+    for name in ("%s_%s.json" % (kind, btld.lower()), "%s_%s.json" % (kind, btld.upper())):
         path = os.path.join(KEYS_DIR, name)
         if os.path.exists(path):
             with open(path, encoding="utf-8") as f:
