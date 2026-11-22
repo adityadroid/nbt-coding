@@ -46,6 +46,67 @@ def _offline(cafd_id: str) -> dict:
     }
 
 
+def _probes() -> dict:
+    """Saved car probes (newest first) and, per module, what can be shown from them without the car."""
+    import glob, json
+    files = sorted(glob.glob(os.path.join(decode_mod.BACKUP_DIR, "probe-*.json")), reverse=True)
+    out = []
+    for path in files:
+        try:
+            with open(path, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        mods = []
+        for m in d.get("modules", []):
+            cafd = next((e for e in m.get("svk", []) if e.get("class") == "CAFD"), None)
+            mods.append({"addr": m.get("addr"), "name": m.get("name", ""),
+                         "cafd": cafd["id"] if cafd else "", "cafd_version": cafd["version"] if cafd else "",
+                         "datagroups": len(m.get("datagroups", {})),
+                         "decodable": bool(cafd and decode_mod.find_cafd_xml(cafd["id"]))})
+        out.append({"file": os.path.basename(path), "saved": d.get("saved", ""), "modules": mods})
+    return {"probes": out}
+
+
+def _probe(fname: str, addr: str) -> dict:
+    """One module from a saved probe: its coding decoded with its CAFD (offline, no car)."""
+    import json
+    if "/" in fname or not fname.startswith("probe-") or not fname.endswith(".json"):
+        return {"error": "bad probe file name"}
+    try:
+        with open(os.path.join(decode_mod.BACKUP_DIR, fname), encoding="utf-8") as fh:
+            d = json.load(fh)
+    except (OSError, ValueError) as e:
+        return {"error": "cannot read %s: %s" % (fname, e)}
+    m = next((x for x in d.get("modules", []) if x.get("addr", "").upper() == addr.upper()), None)
+    if not m:
+        return {"error": "module %s not in %s" % (addr, fname)}
+    cafd = next((e for e in m.get("svk", []) if e.get("class") == "CAFD"), None)
+    raw = {k.upper(): v for k, v in m.get("datagroups", {}).items()}
+    if not cafd:
+        return {"error": "module %s reported no CAFD (nothing codeable)" % addr}
+    xml = decode_mod.find_cafd_xml(cafd["id"])
+    if not xml:
+        return {"error": "no coding file for CAFD %s %s yet: put cafd_%s.caf.%s into cafd/ (from PSdZData)"
+                         % (cafd["id"], cafd["version"], cafd["id"].lower(), cafd["version"].replace(".", "_")),
+                "raw_datagroups": raw}
+    c = caf_mod.parse(xml)
+    coding = {a: bytes.fromhex(h) for a, h in raw.items()}
+    # the CAF names datagroups like "3000"; the probe stored "%04X": match case-insensitively
+    by_upper = {dg.addr.upper(): dg.addr for dg in c.datagroups}
+    coding = {by_upper.get(a, a): b for a, b in coding.items()}
+    overlay = names_mod.load(c.cafd_id)
+    feats = decode_mod.build_features(c, coding, overlay)
+    res = {"module": "%s %s" % (m.get("addr"), m.get("name", "")), "cafd_id": c.cafd_id, "version": c.version,
+           "car_version": cafd["version"], "source": fname,
+           "read_datagroups": sorted(coding), "features": decode_mod.features_to_json(feats)}
+    if c.version != cafd["version"]:
+        res["warning"] = ("coding file is version %s but the car has %s: settings may sit at other places; "
+                          "get cafd_%s.caf.%s before trusting (or writing) anything"
+                          % (c.version, cafd["version"], cafd["id"].lower(), cafd["version"].replace(".", "_")))
+    return res
+
+
 def _read(module: str) -> dict:
     if module not in ecu_mod.MODULES:
         return {"error": "unknown module %s" % module}
@@ -118,6 +179,10 @@ class Handler(BaseHTTPRequestHandler):
         elif parsed.path == "/api/offline":
             cafd = (q.get("cafd") or [""])[0]
             self._json(_offline(cafd) if cafd else {"error": "cafd required"})
+        elif parsed.path == "/api/probes":
+            self._json(_probes())
+        elif parsed.path == "/api/probe":
+            self._json(_probe((q.get("file") or [""])[0], (q.get("module") or [""])[0]))
         elif parsed.path == "/api/read":
             module = (q.get("module") or [""])[0]
             self._json(_read(module) if module else {"error": "module required"})
