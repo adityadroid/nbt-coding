@@ -15,3 +15,6 @@ __pycache__/
 venv/
 *.egg-info/
 .DS_Store
+# Recovered NCD coding-signature keys (private exponent) — NEVER commit.
+/keys/*
+!/keys/.gitkeep
