@@ -107,11 +107,20 @@ def _req(conn, uds: bytes, tgt: int) -> bytes:
     return r
 
 
+WRITE_ALL = {"HU_NBT"}
+
+
 def commit(conn, tgt: int, module: str, before: dict, after: dict, caf, ncd_key: sign.Key, l3_key: sign.Key,
-           *, dry_run: bool = True, unlock: str = "", have_backup: bool = False, tester_id: int = 0) -> dict:
+           *, dry_run: bool = True, unlock: str = "", have_backup: bool = False, tester_id: int = 0,
+           cps_if_empty: bytes = b"") -> dict:
     """Execute (or rehearse) the write. Real write refused unless dry_run is False AND unlock==UNLOCK AND have_backup
     AND the module's signer is proven. Reads everything back and checks the coding signature before the reset."""
     p = plan(before, after, caf, ncd_key, module)
+    if module in WRITE_ALL and p["changed"]:
+        # the head unit checks the signature only over datagroups written in this session: write every one, signature
+        # last (car 2026-11-23: writing just 3000 + 3007 failed CheckCodingSignature and emptied 37FE)
+        sig = "%04X" % p["sign_dg"]
+        p["changed"] = sorted(a for a in p["after"] if a != sig) + [sig]
     if dry_run:
         return {"dry_run": True, "steps": p["steps"], "changed": p["changed"]}
     if unlock != UNLOCK:
@@ -125,6 +134,8 @@ def commit(conn, tgt: int, module: str, before: dict, after: dict, caf, ncd_key:
     # module keep the new coding; without it the module drops the change at the reset (car, FRM, 2026-11-22).
     cps_resp = _req(conn, bytes([0x22, DID_CPS >> 8, DID_CPS & 0xFF]), tgt)
     cps = cps_resp[3:] if cps_resp and cps_resp[0] == 0x62 else b""
+    if (not cps or all(b == 0xFF for b in cps)) and cps_if_empty:
+        cps = cps_if_empty   # recovery: a failed signature check left the stamp empty (HU_NBT, car 2026-11-23)
     if not cps or all(b == 0xFF for b in cps):
         raise RuntimeError("the module's coding production stamp (37FE) is empty; refusing to write")
     _req(conn, bytes([0x10, SESSION_EXTENDED]), tgt)
