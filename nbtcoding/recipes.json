@@ -53,7 +53,8 @@
           "Aktiv"
         ]
       ],
-      "test": "Lock with the key: a short chirp."
+      "test": "Lock with the key: a short chirp.",
+      "status": "CAS part written 2026-11-23, no chirp: the head unit's ACOUSTICAL_LOCK_CONFIRM is off too (see hu-lock-horn-key-cooling)."
     },
     "mirror-fold-door-handle": {
       "title": "Fold mirrors and close windows by holding the door-handle lock area",
@@ -112,6 +113,48 @@
       ],
       "test": "Only with the car locked, in P, nobody inside, outdoors. Try the BMW remote-start gesture (lock, then hold the 3rd button for ZEIT_REMOTE_KEY_3RD_BUTTON). Watch for Check Control messages; revert from the backup if anything looks wrong.",
       "status": "Research 2026-11-22: no report of these CAS4 switches working on any F-series. Forum consensus: the key never sends the start request and CAS4 will not start without a key inside. BMW's factory remote start (SA 1CR) is G-series, petrol only, and needs a DME FSC. Kept only as a reversible experiment; see bmw/PLAN-remote-climate.md."
+    },
+    "hu-lock-horn-key-cooling": {
+      "title": "Head unit: lock-horn setting and key-button parked cooling menu",
+      "risk": "medium (head unit carries the Android Auto mod; needs NBTCODING_ALLOW_HU=1)",
+      "steps": [
+        [
+          "HU_NBT",
+          "ACOUSTICAL_LOCK_CONFIRM",
+          "aktiv"
+        ],
+        [
+          "HU_NBT",
+          "KEY_CONF_COMFORT_COOLING",
+          "aktiv"
+        ]
+      ],
+      "test": "After the head unit restarts: iDrive Settings > Doors/Key: an acoustic lock confirmation option (tick it, lock: chirp); key button assignment offers parked cooling/ventilation. Check Android Auto and Car health still open.",
+      "status": "written and verified 2026-11-23 (head unit needs every datagroup written; first try failed and was recovered)"
+    },
+    "consumption-km-l": {
+      "title": "Fuel economy shown in km/l",
+      "risk": "low",
+      "steps": [
+        [
+          "KOMBI",
+          "VERBRAUCH",
+          "km_l"
+        ]
+      ],
+      "test": "Trip computer average/current consumption reads km/l. If iDrive Settings > Units overrides it, pick km/l there."
+    },
+    "climate-off-memory": {
+      "title": "Climate remembers OFF after a restart",
+      "risk": "low (IHKA)",
+      "steps": [
+        [
+          "IHKA",
+          "OFF_MEMORY",
+          "aktiv"
+        ]
+      ],
+      "test": "Switch the climate off, switch the car off and on: it stays off."
     }
   }
 }
