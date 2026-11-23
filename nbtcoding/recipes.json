@@ -155,6 +155,28 @@
         ]
       ],
       "test": "Switch the climate off, switch the car off and on: it stays off."
+    },
+    "lock-chirp-no-alarm": {
+      "title": "EXPERIMENT: lock chirp through the car horn on a car without alarm",
+      "risk": "medium (FZD thinks an alarm is fitted; the horn may sound on a real alarm trigger)",
+      "steps": [
+        [
+          "FZD",
+          "DWA verbaut",
+          "aktiv"
+        ],
+        [
+          "FZD",
+          "Akkustische Quittierung Schaerfen",
+          "aktiv"
+        ],
+        [
+          "FZD",
+          "Notlauf FZG-Hupe",
+          "aktiv"
+        ]
+      ],
+      "test": "Lock with the key: chirp? Unlock with the key, open a door: no horn. Lock, unlock with the button on the door handle / key, open: no horn. Any trouble: restore the FZD backup."
     }
   }
 }
