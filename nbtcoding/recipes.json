@@ -176,7 +176,8 @@
           "aktiv"
         ]
       ],
-      "test": "Lock with the key: chirp? Unlock with the key, open a door: no horn. Lock, unlock with the button on the door handle / key, open: no horn. Any trouble: restore the FZD backup."
+      "test": "Lock with the key: chirp? Unlock with the key, open a door: no horn. Lock, unlock with the button on the door handle / key, open: no horn. Any trouble: restore the FZD backup.",
+      "status": "tried 2026-11-23: no chirp and no iDrive option (with iDrive restarted); restored. The chirp needs the alarm siren."
     }
   }
 }
