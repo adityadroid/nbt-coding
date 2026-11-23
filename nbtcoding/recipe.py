@@ -83,7 +83,11 @@ def on_car(recipe: dict, do_write: bool) -> int:
     from . import server
     unlock = ""
     if do_write:
-        print("Writing %s. Engine running or charger on. Type %s to go on:" % (recipe["title"], write.UNLOCK))
+        mods = {m for m, _ in grouped(recipe)}
+        # car 2026-11-23: the CAS reset at the end of a CAS write switches the ignition off and stops a running engine
+        power = ("ENGINE OFF, ignition on (charger if you can). The CAS restart at the end switches the ignition off"
+                 if "CAS" in mods else "Engine running or charger on")
+        print("Writing %s. %s. Type %s to go on:" % (recipe["title"], power, write.UNLOCK))
         unlock = input("> ").strip()
         if unlock != write.UNLOCK:
             print("not confirmed, nothing written"); return 1
