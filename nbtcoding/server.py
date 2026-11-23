@@ -40,7 +40,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 HOST = "127.0.0.1"
 PORT = int(os.environ.get("NBT_CODING_PORT") or os.environ.get("PORT") or "8733")
 from .modules import MODULES as _ALL
-WRITE_MODULES = tuple(m[1] for m in _ALL if m[1] != "HU_NBT")
+WRITE_MODULES = tuple(m[1] for m in _ALL if m[1] not in edit_mod.NEVER)
 PLAN_TTL = 600
 PENDING: dict[str, dict] = {}
 CAR_LOCK = threading.Lock()          # one car conversation at a time

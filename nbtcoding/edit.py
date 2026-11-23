@@ -13,10 +13,16 @@ built from. Pure Python standard library.
 """
 from __future__ import annotations
 
+import os
+
 from . import caf as caf_mod
 from . import modules, sign, write
 
 NEVER = {"HU_NBT": "the head unit carries the Android Auto mod; coding it is off-limits in this tool"}
+# Owner override, one run at a time (Adi, 2026-11-23: lock-horn menu + key cooling menu live in the head unit's coding).
+# Coding writes the CAFD only, not the file system the Android Auto mod lives in; its signer is proven like the rest.
+if os.environ.get("NBTCODING_ALLOW_HU") == "1":
+    NEVER = {}
 
 
 def writable(module: str) -> tuple[bool, str]:
